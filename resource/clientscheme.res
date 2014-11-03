@@ -18,18 +18,39 @@ Scheme
 	//////////////////////// COLORS ///////////////////////////
 	Colors
 	{
+   
+      //custom colors
+      //solarized
+      "base03"       "0    43  54 255"
+      "base02"       "7    54  66 255"
+      "base01"       "88  110 117 255"
+      "base00"       "101 123 131 255"
+      "base0"        "131 148 150 255"
+      "base1"        "147 161 161 255"
+      "base2"        "238 232 213 255"
+      "base3"        "253 246 227 255"
+      "yellow"       "181 137   0 255" 
+      "orange"       "203  75  22 255" 
+      "red"          "220  50  47 255"   
+      "magenta"      "211  54 130 255"
+      "violet"       "108 113 196 255" 
+      "blue"         "38  139 210 255" 
+      "cyan"         "42  161 152 255" 
+      "green"        "133 153   0 255"  
+
+
 		// base colors
-		"Orange"			"178 82 22 255"
+		//"Orange"			"178 82 22 255"
 		"OrangeDim"			"178 82 22 120"
 		"LightOrange"		"188 112 0 128"
 		"GoalOrange"		"255 133 0"
 		"TFOrange"			"145 73 59 255"
 		
 		"White"				"235 235 235 255"
-		"Red"				"192 28 0 140"
+		//"Red"				"192 28 0 140"
 		"RedSolid"			"192 28 0 255"
-		"Blue"				"0 28 162 140"
-		"Yellow"			"251 235 202 255"
+		//"Blue"				"0 28 162 140"
+		//"Yellow"			"251 235 202 255"
 		"TransparentYellow"	"251 235 202 140"
 		//"Black"				"0 0 0 255"
 		//Changed black to a NTSC safe color
@@ -171,6 +192,7 @@ Scheme
 		"UpgradeSelectedBg"		"249 138 83 255"
 		"UpgradeDisabledFg"		"64 59 52 255"
 		"UpgradeDisabledBg"		"79 77 68 255"
+
 	}
 
 	///////////////////// BASE SETTINGS ////////////////////////
@@ -2395,8 +2417,322 @@ Scheme
 				"additive"	"0"
 			}
 		}
-
-	}
+      
+      //
+      //////////////// CUSTOM FONTS ////////////////////////////////
+      //
+      "incon4"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "4"
+            "antialias" "1"
+         }
+      }
+      "incon8"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "8"
+            "antialias" "1"
+         }
+      }
+      "incon10"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "10"
+            "antialias" "1"
+         }
+      }      
+      "incon12"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "12"
+            "antialias" "1"
+         }
+      }
+      "incon16"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "16"
+            "antialias" "1"
+         }
+      }
+      "incon20"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "20"
+            "antialias" "1"
+         }
+      }
+      "incon24"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "24"
+            "antialias" "1"
+         }
+      }
+      "incon28"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "28"
+            "antialias" "1"
+         }
+      }
+      "incon32"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "32"
+            "antialias" "1"
+         }
+      }
+      "incon36"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "36"
+            "antialias" "1"
+         }
+      }
+      "incon40"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "40"
+            "antialias" "1"
+         }
+      }
+      "incon44"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "44"
+            "antialias" "1"
+         }
+      }
+      "incon48"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "48"
+            "antialias" "1"
+         }
+      }
+      "incon52"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "52"
+            "antialias" "1"
+         }
+      }
+      "incon56"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "56"
+            "antialias" "1"
+         }
+      }
+      "incon60"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "60"
+            "antialias" "1"
+         }
+      }
+      "incon64"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "64"
+            "antialias" "1"
+         }
+      }
+      "inconb4"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "4"
+            "antialias" "1"
+         }
+      }
+      "inconb8"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "8"
+            "antialias" "1"
+         }
+      }
+      "inconb10"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "10"
+            "antialias" "1"
+         }
+      }      
+      "inconb12"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "12"
+            "antialias" "1"
+         }
+      }
+      "inconb16"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "16"
+            "antialias" "1"
+         }
+      }
+      "inconb20"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "20"
+            "antialias" "1"
+         }
+      }
+      "inconb24"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "24"
+            "antialias" "1"
+         }
+      }
+      "inconb28"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "28"
+            "antialias" "1"
+         }
+      }
+      "inconb32"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "32"
+            "antialias" "1"
+         }
+      }
+      "inconb36"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "36"
+            "antialias" "1"
+         }
+      }
+      "inconb40"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "40"
+            "antialias" "1"
+         }
+      }
+      "inconb44"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "44"
+            "antialias" "1"
+         }
+      }
+      "inconb48"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "48"
+            "antialias" "1"
+         }
+      }
+      "inconb52"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "52"
+            "antialias" "1"
+         }
+      }
+      "inconb56"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "56"
+            "antialias" "1"
+         }
+      }
+      "inconb60"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "60"
+            "antialias" "1"
+         }
+      }
+      "inconb64"
+      {
+         "1"
+         {
+            "name"      "Inconsolata Bold"
+            "tall"      "64"
+            "antialias" "1"
+         }
+      }
+   
+   
+   }
+   
+   
+   
 
 	//
 	//////////////////// BORDERS //////////////////////////////
@@ -4301,6 +4637,16 @@ Scheme
 			{
 				"range" "0x0000 0xFFFF"
 			}
-		}			
+		}
+      "7"
+      {
+         "font" "resource/fonts/Inconsolata-Regular.ttf"
+         "name" "Inconsolata"
+      }
+      "8"
+      {
+         "font" "resource/fonts/Inconsolata-Bold.ttf"
+         "name" "Inconsolata Bold"      
+      }
 	}
 }
