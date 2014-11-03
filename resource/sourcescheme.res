@@ -131,141 +131,215 @@ Scheme
 		TextEntry.SelectedBgColor	        "TFOrangeBright"
 	}
 	
+   //these fonts work to change console and server browser text
+   //however unsure 
+      //which font controls server info window
+      //which font controls console input
+      //which font controls achievement group text
+      //which font controls server browser tabs
+      //which font controls server browser filter text
+   
 	Fonts
 	{
-		"MainMenuFont"
+      "DebugFixed"
 		{
-			"1"	[$WIN32]
+			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"18"
+				"name"		"Inconsolata"
+				"tall"		"10"
 				"weight"	"500"
-				"additive"	"0"
 				"antialias" "1"
+			}
+		}
+		// fonts are used in order that they are listed
+		"DebugFixedSmall"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"7"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		"DefaultFixedOutline"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"10"
+				"weight"	"0"
+				"outline"	"1"
+			}
+		}
+		"Default"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"500"
+			}
+		}
+		"DefaultBold"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"1000"
+			}
+		}
+		"DefaultUnderline"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"500"
+				"underline" "1"
+			}
+		}
+		"DefaultSmall"    //controls console tab completion text, server browser listings
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"0"
+			}
+		}
+		"DefaultSmallDropShadow"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"13"
+				"weight"	"0"
+				"dropshadow" "1"
+			}
+		}
+		"DefaultVerySmall"      //unsure what this does
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"12"
+				"weight"	"0"
+			}
+		}
+
+		"DefaultLarge"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"18"
+				"weight"	"0"
+			}
+		}
+		"UiBold"    //unsure what this does
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"12"
+				"weight"	"1000"
 			}
 		}
 		"MenuLarge"
 		{
-			"1"	[$X360]
-			{
-				"tall_hidef"		"24"
-			}
-		}
-
-		"ServerBrowserTitle"
-		{
 			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"35"
-				"tall_lodef"	"40"
-				"weight"	"500"
-				"additive"	"0"
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"600"
 				"antialias" "1"
 			}
 		}
 
-		"Default" [$OSX]
+		"ConsoleText"     //controls console output text
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"14"
+				"name"		"Inconsolata"
+				"tall"		"16"
 				"weight"	"500"
 			}
 		}
 
-		"ServerBrowserSmall"
-		{
-			"1"
-			{
-				"name"		"Tahoma"
-				"tall"		"16"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"480 599"
-			}
-			"2"
-			{
-				"name"		"Tahoma"
-				"tall"		"16"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"600 767"
-			}
-			"3"
-			{
-				"name"		"Tahoma"
-				"tall"		"16"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"768 1023"
-				"antialias"	"1"
-			}
-			"4"
-			{
-				"name"		"Tahoma"
-				"tall"		"19"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"1024 1199"
-				"antialias"	"1"
-			}
-			"5"
-			{
-				"name"		"Tahoma"
-				"tall"		"19"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"1200 6000"
-				"antialias"	"1"
-			}
-		}
 		
-				
-		AchievementItemTitle	[$WIN32]
+		"DefaultFixed"    //unsure what this does
 		{
 			"1"
 			{
-				"name"		"Arial" [!$OSX]
-				"name"		"Verdana Bold" [$OSX]
-				"weight"		"1500"
-				"tall"			"16" [!$OSX]
-				"tall"			"18" [$OSX]
-				"antialias"		"1"
-			}
-		}
-		
-		AchievementItemTitleLarge	[$WIN32]
-		{
-			"1"
-			{
-				"name"		"Arial" [!$OSX]
-				"name"		"Verdana Bold" [$OSX]
-				"weight"		"1500"
-				"tall"			"18" [!$OSX]
-				"tall"			"19" [$OSX]
-				"antialias"		"1"
-			}
-		}
-		
-		AchievementItemDescription	[$WIN32]
-		{
-			"1"
-			{
-				"name"		"Arial" [!$OSX]
-				"name"		"Verdana" [$OSX]
-				"weight"		"1000"
-				"tall"			"14" [!$OSX]
-				"tall"			"12" [$OSX]
-				"antialias"		"1" [!$OSX]
+				"name"		"Inconsolata"
+				"tall"		"10"
+				"weight"	"0"
 			}
 		}
 
+		"DefaultFixedDropShadow"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"10"
+				"weight"	"0"
+				"dropshadow" "1"
+			}
+		}
+
+		"CloseCaption_Normal"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"500"
+			}
+		}
+		"CloseCaption_Italic"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"500"
+				"italic"	"1"
+			}
+		}
+		"CloseCaption_Bold"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"900"
+			}
+		}
+		"CloseCaption_BoldItalic"
+		{
+			"1"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	"900"
+				"italic"	"1"
+			}
+		}
+	}
+
+      
 	}
 	
 	CustomFontFiles
 	{
+      "1"
+      {
+         "font" "resource/fonts/Inconsolata-Regular.ttf"
+         "name" "Inconsolata"
+      }
 		"9"
 		{
 			"font" "resource/TF2Build.ttf"
