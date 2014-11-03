@@ -1,4 +1,4 @@
-solarhud
-========
+tf2basehud
+==========
 
-Solarized Theme Hud for TF2 based heavily on Ell's Hud
+Team Fortress 2's original/basic HUD. Use this to start customizing your own.
