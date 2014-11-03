@@ -1,5 +1,22 @@
 "Resource/HudLayout.res"
 {
+   //////////////////// CROSSHAIRS ///////////////////////////
+   "CrosshairPlus"
+	{
+		"controlName" "CExLabel"
+		"fieldName" "CrosshairPlus"
+		"font" "incon24"
+		"fgcolor" "magenta"
+		"labelText" "+"
+		"xpos" "c-97"
+		"ypos" "c-97"
+		"wide" "193"
+		"tall" "193"
+		"visible" "1"
+		"enabled" "1"
+		"textAlignment" "center"
+	}
+
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"
@@ -11,20 +28,16 @@
 		"tall"	"480"
 	}
 
-	HudWeaponAmmo
-	{
-		"fieldName" "HudWeaponAmmo"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	"r95"	[$WIN32]
-		"xpos_minmode"	"r85"	[$WIN32]
-		"ypos"	"r55"	[$WIN32]
-		"ypos_minmode"	"r36"	[$WIN32]
-		"xpos"	"r131"	[$X360]
-		"ypos"	"r77"	[$X360]
-		"wide"	"94"
-		"tall"	"45"
-	}
+   HudWeaponAmmo
+   {
+      "fieldName" "HudWeaponAmmo"
+      "visible"   "1"
+      "enabled"   "1"
+      "xpos"      "c0"  
+      "ypos"      "330" 
+      "wide"      "192"
+      "tall"      "60"
+   }
 	
 	HudObjectiveStatus
 	{
@@ -76,14 +89,10 @@
 		"fieldName"		"HudMedicCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r138"	[$WIN32]
-		"xpos_minmode"	"r100"	[$WIN32]
-		"ypos"			"r69"	[$WIN32]
-		"ypos_minmode"	"r34"	[$WIN32]
-		"xpos"			"r174"	[$X360]
-		"ypos"			"r90"	[$X360]
-		"wide"			"200"
-		"tall"			"100"
+      "xpos"         "c48" 
+      "ypos"         "330"
+      "wide"         "100"
+      "tall"         "60"
 	}
 	
 	HudDemomanCharge
@@ -565,7 +574,7 @@
 		"tall"	 "480"
 	}
 
-	HudMenu
+	HudMenu     //sourcemod panels
 	{
 		"fieldName" "HudMenu"
 		"visible" "1"
@@ -574,9 +583,9 @@
 		"tall"	 "480"
 		"zpos" "1"
 
-		"TextFont"				"Default"
-		"ItemFont"				"Default"
-		"ItemFontPulsing"		"Default"
+		"TextFont"				"incon12"
+		"ItemFont"				"incon12"
+		"ItemFontPulsing"		"incon12"
 	}
 
 	HudSpellMenu
