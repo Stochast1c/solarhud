@@ -330,9 +330,6 @@ Scheme
 		}
 	}
 
-      
-	}
-	
 	CustomFontFiles
 	{
       "1"
