@@ -973,7 +973,7 @@
 		"tall"			"160"		
 	}
 
-	"HudChat"
+	"HudChat"      //this does absolutely nothing
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName" 		"HudChat"

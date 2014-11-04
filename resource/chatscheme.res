@@ -145,7 +145,7 @@ Scheme
 		RichText.SelectedTextColor		"base00"
 		RichText.SelectedBgColor		"base3"
 
-		ScrollBar.Wide					17
+		ScrollBar.Wide					0
 
 		ScrollBarButton.FgColor				"White"
 		ScrollBarButton.BgColor				"Blank"
@@ -232,6 +232,9 @@ Scheme
 	//////////////////////// FONTS /////////////////////////////
 	//
 	// describes all the fonts
+   
+   //for whatever reason the font size for the chat is much smaller than value
+   //exceptions for this are right clicking in chat history and the filter box
 	Fonts
 	{
 
@@ -240,7 +243,7 @@ Scheme
 			"1"
 			{
 				"name"		"Inconsolata"
-				"tall"		"20"
+				"tall"		"24"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
 				"antialias"	"1"
@@ -298,7 +301,7 @@ Scheme
 			"1"
 			{
 				"name"		"Inconsolata"
-				"tall"		"20"	
+				"tall"		"24"	
 				"weight"	"500"
 				"antialias"    "1"
 			}
