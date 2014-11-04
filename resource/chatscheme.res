@@ -15,12 +15,30 @@ Scheme
 	// this is a list of all the colors used by the scheme
 	Colors
 	{
-		// base colors
+      //solarized
+      "base03"       "0    43  54 255"
+      "base02"       "7    54  66 255"
+      "base01"       "88  110 117 255"
+      "base00"       "101 123 131 255"
+      "base0"        "131 148 150 255"
+      "base1"        "147 161 161 255"
+      "base2"        "238 232 213 255"
+      "base3"        "253 246 227 255"
+      "yellow"       "181 137   0 255" 
+      "orange"       "203  75  22 255" 
+      "red"          "220  50  47 255"   
+      "magenta"      "211  54 130 255"
+      "violet"       "108 113 196 255" 
+      "blue"         "38  139 210 255" 
+      "cyan"         "42  161 152 255" 
+      "green"        "133 153   0 255"  
+     
+      //base colors
 		"White"				"255 255 255 255"
 		"OffWhite"			"216 216 216 255"
 		"DullWhite"			"142 142 142 255"
 		"Orange"			"255 155 0 255"
-		"TransparentBlack"		"0 0 0 128"
+		"TransparentBlack"		"253 246 227 255"
 		"Black"				"0 0 0 255"
 
 		"Blank"				"0 0 0 0"
@@ -46,27 +64,23 @@ Scheme
 		Button.DepressedBgColor			"Blank"
 		Button.FocusBorderColor			"Black"
 		
-		CheckButton.TextColor			"OffWhite"
-		CheckButton.SelectedTextColor	"White"
-		CheckButton.BgColor				"TransparentBlack"
+		CheckButton.TextColor			"base0"
+		CheckButton.SelectedTextColor	"base00"
+		CheckButton.BgColor				"base03"
 		CheckButton.Border1  			"Border.Dark" 		// the left checkbutton border
 		CheckButton.Border2  			"Border.Bright"		// the right checkbutton border
-		CheckButton.Check				"White"				// color of the check itself
+		CheckButton.Check				"base0"				// color of the check itself
 
 		ComboBoxButton.ArrowColor		"DullWhite"
 		ComboBoxButton.ArmedArrowColor	"White"
 		ComboBoxButton.BgColor			"Blank"
 		ComboBoxButton.DisabledBgColor	"Blank"
 
-		"Chat.TypingText"		"White"
-
 		Frame.TitleTextInsetX			16
 		Frame.ClientInsetX				8
 		Frame.ClientInsetY				6
-		Frame.BgColor					"160 160 160 128"	[$WIN32]
-		Frame.BgColor					"80 80 80 192"		[$X360]
-		Frame.OutOfFocusBgColor			"160 160 160 32"	[$WIN32]
-		Frame.OutOfFocusBgColor			"80 80 80 192"		[$X360]
+		Frame.BgColor					"base3"	
+		Frame.OutOfFocusBgColor			"base2"	
 		Frame.FocusTransitionEffectTime	"0.3"	// time it takes for a window to fade in/out on focus/out of focus
 		Frame.TransitionEffectTime		"0.3"	// time it takes for a window to fade in/out on open/close
 		Frame.AutoSnapRange				"0"
@@ -82,41 +96,42 @@ Scheme
 		FrameSystemButton.DisabledIcon	""
 		FrameTitleBar.Font				"UiBold"		[$WIN32]
 		FrameTitleBar.Font				"DefaultLarge"	[$WIN32]
-		FrameTitleBar.TextColor			"White"
-		FrameTitleBar.BgColor			"Blank"
+		FrameTitleBar.TextColor			"base00"
+		FrameTitleBar.BgColor			"base3"
 		FrameTitleBar.DisabledTextColor	"255 255 255 192"
 		FrameTitleBar.DisabledBgColor	"Blank"
 
 		GraphPanel.FgColor				"White"
-		GraphPanel.BgColor				"TransparentBlack"
+		GraphPanel.BgColor				"base3"
 
-		Label.TextDullColor				"DullWhite"
-		Label.TextColor					"OffWhite"
-		Label.TextBrightColor				"White"
-		Label.SelectedTextColor				"White"
-		Label.BgColor					"TransparentBlack"
+      //The "say :  " in the chat input line
+		Label.TextDullColor				"base02"
+		Label.TextColor					"base02"
+		Label.TextBrightColor				"base02"
+		Label.SelectedTextColor				"base0"
+		Label.BgColor					"253 246 227 0"
 		Label.DisabledFgColor1			"117 117 117 255"
 		Label.DisabledFgColor2			"30 30 30 255"
 
-		ListPanel.TextColor					"OffWhite"
+		ListPanel.TextColor					"base00"
 		ListPanel.TextBgColor				"Blank"
-		ListPanel.BgColor					"TransparentBlack"
-		ListPanel.SelectedTextColor			"Black"
-		ListPanel.SelectedBgColor			"Orange"
-		ListPanel.SelectedOutOfFocusBgColor	"255 155 0 128"
-		ListPanel.EmptyListInfoTextColor	"OffWhite"
+		ListPanel.BgColor					"base3"
+		ListPanel.SelectedTextColor			"base0"
+		ListPanel.SelectedBgColor			"base03"
+		ListPanel.SelectedOutOfFocusBgColor	"base02"
+		ListPanel.EmptyListInfoTextColor	"base1"
 
-		Menu.TextColor					"White"
-		Menu.BgColor					"160 160 160 64"
-		Menu.ArmedTextColor				"Black"
-		Menu.ArmedBgColor				"Orange"
+		Menu.TextColor					"base00"
+		Menu.BgColor					"base3"
+		Menu.ArmedTextColor				"base0"
+		Menu.ArmedBgColor				"base03"
 		Menu.TextInset					"6"
 
 		Panel.FgColor					"Blank"
-		Panel.BgColor					"DullWhite"
+		Panel.BgColor					"base3"
 
 		ProgressBar.FgColor				"White"
-		ProgressBar.BgColor				"TransparentBlack"
+		ProgressBar.BgColor				"base3"
 
 		PropertySheet.TextColor			"OffWhite"
 		PropertySheet.SelectedTextColor	"White"
@@ -125,10 +140,10 @@ Scheme
 		RadioButton.TextColor			"DullWhite"
 		RadioButton.SelectedTextColor	"White"
 
-		RichText.TextColor				"OffWhite"
-		RichText.BgColor				"TransparentBlack"
-		RichText.SelectedTextColor		"Black"
-		RichText.SelectedBgColor		"Orange"
+		RichText.TextColor				"base0"
+		RichText.BgColor				"base03"
+		RichText.SelectedTextColor		"base00"
+		RichText.SelectedBgColor		"base3"
 
 		ScrollBar.Wide					17
 
@@ -145,13 +160,13 @@ Scheme
 		SectionedListPanel.HeaderTextColor	"White"
 		SectionedListPanel.HeaderBgColor	"Blank"
 		SectionedListPanel.DividerColor		"Black"
-		SectionedListPanel.TextColor		"DullWhite"
-		SectionedListPanel.BrightTextColor	"White"
-		SectionedListPanel.BgColor			"TransparentBlack"
-		SectionedListPanel.SelectedTextColor			"Black"
-		SectionedListPanel.SelectedBgColor				"Orange"
-		SectionedListPanel.OutOfFocusSelectedTextColor	"Black"
-		SectionedListPanel.OutOfFocusSelectedBgColor	"255 155 0 128"
+		SectionedListPanel.TextColor		"base0"
+		SectionedListPanel.BrightTextColor	"base0"
+		SectionedListPanel.BgColor			"base03"
+		SectionedListPanel.SelectedTextColor			"base0"
+		SectionedListPanel.SelectedBgColor				"base03"
+		SectionedListPanel.OutOfFocusSelectedTextColor	"base1"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"base02"
 
 		Slider.NobColor				"108 108 108 255"
 		Slider.TextColor			"180 180 180 255"
@@ -159,22 +174,24 @@ Scheme
 		Slider.DisabledTextColor1	"117 117 117 255"
 		Slider.DisabledTextColor2	"30 30 30 255"
 
-		TextEntry.TextColor			"OffWhite"
-		TextEntry.BgColor			"TransparentBlack"
-		TextEntry.CursorColor		"OffWhite"
-		TextEntry.DisabledTextColor	"DullWhite"
-		TextEntry.DisabledBgColor	"Blank"
-		TextEntry.SelectedTextColor	"Black"
-		TextEntry.SelectedBgColor	"Orange"
-		TextEntry.OutOfFocusSelectedBgColor	"255 155 0 128"
-		TextEntry.FocusEdgeColor	"0 0 0 196"
+      //chat entry colors
+  		"Chat.TypingText"		                "base02"
+		TextEntry.TextColor			          "base02"    //this is not the text color
+		TextEntry.BgColor			             "253 246 227 0"
+		TextEntry.CursorColor		          "base02"
+		TextEntry.DisabledTextColor	       "base1"
+		TextEntry.DisabledBgColor	          "Blank"
+		TextEntry.SelectedTextColor	       "base0"
+		TextEntry.SelectedBgColor	          "base03"
+		TextEntry.OutOfFocusSelectedBgColor	 "base02"
+		TextEntry.FocusEdgeColor	          "base03"
 
 		ToggleButton.SelectedTextColor	"White"
 
 		Tooltip.TextColor			"0 0 0 196"
 		Tooltip.BgColor				"Orange"
 
-		TreeView.BgColor			"TransparentBlack"
+		TreeView.BgColor			"base03"
 
 		WizardSubPanel.BgColor		"Blank"
 
@@ -198,9 +215,9 @@ Scheme
 		NewGame.SelectionColor		"0 0 0 255"	[$X360]
 		NewGame.DisabledColor		"128 128 128 196"
 
-		TFColors.ChatTextYellow		"251 235 202 255"
-		TFColors.ChatTextTeamBlue	"153 204 255 255"
-		TFColors.ChatTextTeamRed	"255 63 53 255"
+		TFColors.ChatTextYellow		"base02"     //chat history base text
+		TFColors.ChatTextTeamBlue	"blue"
+		TFColors.ChatTextTeamRed	"red"
 	}
 
 	//////////////////////// BITMAP FONT FILES /////////////////////////////
@@ -222,45 +239,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"12"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"480 599"
-			}
-			"2"
-			{
-				"name"		"Verdana"
-				"tall"		"13"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"600 767"
-			}
-			"3"
-			{
-				"name"		"Verdana"
-				"tall"		"14"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"768 1023"
-				"antialias"	"1"
-			}
-			"4"
-			{
-				"name"		"Verdana"
-				"tall"		"16"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"1024 1199"
-				"antialias"	"1"
-			}
-			"5"
-			{
-				"name"		"Verdana"
+				"name"		"Inconsolata"
 				"tall"		"20"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
-				"yres"	"1200 6000"
 				"antialias"	"1"
 			}
 		}
@@ -315,48 +297,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"12"	[$WIN32]
-				"tall"		"15"	[$X360]
-				"weight"	"700"
-				"yres"		"480 599"
-				"dropshadow"	"1"
-			}
-			"2"
-			{
-				"name"		"Verdana"
-				"tall"		"14"	[$WIN32]
-				"tall"		"17"	[$X360]
-				"weight"	"700"
-				"yres"		"600 767"
-				"dropshadow"	"1"
-			}
-			"3"
-			{
-				"name"		"Verdana"
-				"tall"		"15"	[$WIN32]
-				"tall"		"18"	[$X360]
-				"weight"	"700"
-				"yres"		"768 1023"
-				"dropshadow"	"1"
-			}
-			"4"
-			{
-				"name"		"Verdana"
-				"tall"		"17"	[$WIN32]
-				"tall"		"20"	[$X360]
-				"weight"	"700"
-				"yres"		"1024 1199"
-				"dropshadow"	"1"
-			}
-			"5"
-			{
-				"name"		"Verdana"
-				"tall"		"22"	[$WIN32]
-				"tall"		"25"	[$X360]
-				"weight"	"700"
-				"yres"		"1200 10000"
-				"dropshadow"	"1"
+				"name"		"Inconsolata"
+				"tall"		"20"	
+				"weight"	"500"
+				"antialias"    "1"
 			}
 		}
 
@@ -766,6 +710,11 @@ Scheme
 	CustomFontFiles
 	{
 		"1"		"resource/HALFLIFE2.ttf"
-		"2"		"resource/HL2EP2.ttf"		
-	}
+		"2"		"resource/HL2EP2.ttf"
+      "3"
+      {
+         "font" "resource/fonts/Inconsolata-Regular.ttf"
+         "name" "Inconsolata"
+      }      
+   }
 }

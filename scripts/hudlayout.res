@@ -979,8 +979,7 @@
 		"fieldName" 		"HudChat"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"10"	[$WIN32]
-		"xpos"			"42"	[$X360]
+		"xpos"			"0"	
 		"ypos"			"275"
 		"wide"	 		"320"
 		"tall"	 		"120"
