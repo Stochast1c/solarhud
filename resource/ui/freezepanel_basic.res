@@ -70,7 +70,7 @@
 		"xpos"			"r320"
 		"ypos"			"93"		
 		"wide"			"267"		
-		"tall"			"200"		
+		"tall"			"250"		
 		"visible"		"1"
 
 		"FreezePanelBG"
@@ -115,12 +115,12 @@
 			"brighttext"		"0"
 		}
 		
-		"FreezePanelHealth"
+		"FreezePanelHealth"     //health underneath player name
 		{
 			"ControlName"	"CTFFreezePanelHealth"
 			"fieldName"		"FreezePanelHealth"
-			"xpos"			"0"
-			"ypos"			"168"
+			"xpos"			"-5"
+			"ypos"			"180"
 			"zpos"			"1"
 			"wide"			"48"
 			"tall"			"24"
