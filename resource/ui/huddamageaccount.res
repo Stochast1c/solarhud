@@ -6,10 +6,28 @@
 		"text_x"				"0"
 		"text_y"				"0"
 		"delta_item_end_y"		"0"
-		"PositiveColor"			"0 255 0 255"
-		"NegativeColor"			"255 0 0 255"
-		"delta_lifetime"		"1.5"
-		"delta_item_font"		"HudFontSmall"
-		"delta_item_font_big"	"HudFontMedium"
+		"PositiveColor"			"yellow"
+		"NegativeColor"			"base0"
+		"delta_lifetime"		"1"
+		"delta_item_font"		"incon24"
+		"delta_item_font_big"	"incon24"
 	}
+     
+  	"CDamageAccountValue"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"CDamageAccountValue"
+		"font"			"incon24"
+		"fgcolor"		"red"
+		"xpos"			"c-70"
+		"ypos"			"342"
+		"zpos"			"5"
+		"wide"			"131"
+		"tall"			"33"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"center"	
+		"labelText"		"%metal%"
+	}
+
 }
