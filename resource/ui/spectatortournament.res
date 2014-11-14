@@ -249,7 +249,7 @@
 		"ControlName"	"Panel"
 		"fieldName"		"TopBar"
 		"visible"		"0"
-		"tall"			"33"
+		"tall"			"0"
 	}
 	"BottomBar"
 	{
@@ -270,17 +270,18 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ReinforcementsLabel"
-		"xpos"			"c-150"
-		"ypos"			"32"
-		"wide"			"300"
-		"tall"			"18"
+		"xpos"			"c-121"
+		"ypos"			"c-30"
+		"wide"			"600"
+		"tall"			"25"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#game_respawntime_in_secs"
-		"textAlignment"		"center"
-		"font"			"HudFontSmall"
+		"textAlignment"		"west"
+		"font"			"incon24"
+      "fgcolor"      "base0"
 		
 		if_mvm
 		{
