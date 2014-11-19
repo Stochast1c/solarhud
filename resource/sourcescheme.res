@@ -7,7 +7,27 @@ Scheme
 	// this is a list of all the colors used by the scheme
 	Colors
 	{
-	    "TFDarkBrown"               "60 56 53 255"
+      //custom colors
+      //solarized
+      "base03"       "0    43  54 255"
+      "base02"       "7    54  66 255"
+      "base01"       "88  110 117 255"
+      "base00"       "101 123 131 255"
+      "base0"        "131 148 150 255"
+      "base1"        "147 161 161 255"
+      "base2"        "238 232 213 255"
+      "base3"        "253 246 227 255"
+      "yellow"       "181 137   0 255" 
+      "orange"       "203  75  22 255" 
+      "red"          "220  50  47 255"   
+      "magenta"      "211  54 130 255"
+      "violet"       "108 113 196 255" 
+      "blue"         "38  139 210 255" 
+      "cyan"         "42  161 152 255" 
+      "green"        "133 153   0 255"  
+
+	    //base colors
+       "TFDarkBrown"               "60 56 53 255"
 	    "TFDarkBrownTransparent"    "60 56 53 190"
 	    "TFTanBright"               "236 227 203 150"
 	    "TFTanLight"                "201 188 162 150"
