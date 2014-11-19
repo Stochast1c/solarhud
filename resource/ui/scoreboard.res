@@ -4,10 +4,10 @@
 	{
 		"ControlName"		"CTFClientScoreBoardDialog"
 		"fieldName"		"scoreinfo"
-		"xpos"			"cs-0.5"
-		"ypos"			"31"
-		"wide"			"640"
-		"tall"			"448"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -23,19 +23,18 @@
 	}
 	"BlueScoreBG"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"		"EditablePanel"
 		"fieldName"		"BlueScoreBG"
 		"xpos"			"-2"
 		"ypos"			"9"
 		"wide"			"324"
-		"tall"			"71"
+		"tall"			"67"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/score_panel_blue_bg"
-		"scaleImage"		"1"
-		
+	   "bgcolor_override"      "base3"
+   	
 		if_mvm
 		{
 			"visible"		"0"
@@ -43,19 +42,18 @@
 	}
 	"RedScoreBG"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"		"EditablePanel"
 		"fieldName"		"RedScoreBG"
 		"xpos"			"316"
 		"ypos"			"9"
 		"wide"			"324"
-		"tall"			"71"
+		"tall"			"67"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/score_panel_red_bg"
-		"scaleImage"		"1"
-		
+	   "bgcolor_override"   "base3"
+	
 		if_mvm
 		{
 			"visible"		"0"
@@ -74,7 +72,8 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFThinLineBorder"
+		"border"		""
+      "bgcolor_override"      "253 246 227 127"  //base3 transparent
 		
 		if_mvm
 		{
@@ -86,7 +85,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamLabel"
-		"font"			"ScoreboardTeamNameLarge"
+		"font"			"incon24"
+      "fgcolor"      "blue"
 		"labelText"		"%blueteamname%"
 		"textAlignment"		"west"
 		"xpos"			"10" 
@@ -107,7 +107,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamScore"
-		"font"			"ScoreboardTeamScore"
+		"font"			"incon24"
+      "fgcolor"      "blue"
 		"labelText"		"%blueteamscore%"
 		"textAlignment"		"east"
 		"xpos"			"190"
@@ -140,8 +141,8 @@
 		"tall"			"55"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		
 		if_mvm
 		{
@@ -152,7 +153,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamPlayerCount"
-		"font"			"ScoreboardMedium"
+		"font"			"incon16"
+      "fgcolor"      "blue"
 		"labelText"		"%blueteamplayercount%"
 		"textAlignment"		"west"
 		"xpos"			"135"
@@ -173,7 +175,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"RedTeamLabel"
-		"font"			"ScoreboardTeamNameLarge"
+		"font"			"incon24"
+      "fgcolor"      "red"
 		"labelText"		"%redteamname%"
 		"textAlignment"		"east"
 		"xpos"			"490" 
@@ -194,7 +197,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"RedTeamScore"
-		"font"			"ScoreboardTeamScore"
+		"font"			"incon24"
+      "fgcolor"      "red"
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
 		"xpos"			"330"
@@ -227,8 +231,8 @@
 		"tall"			"55"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		
 		if_mvm
 		{
@@ -239,7 +243,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"RedTeamPlayerCount"
-		"font"			"ScoreboardMedium"
+		"font"			"incon16"
+      "fgcolor"      "red"
 		"labelText"		"%redteamplayercount%"
 		"textAlignment"		"east"
 		"xpos"			"375"
@@ -260,7 +265,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ServerLabel"
-		"font"			"ScoreboardVerySmall"
+		"font"			"incon12"
+      "fgcolor"      "base00"
 		"labelText"		"%server%"
 		"textAlignment"		"west"
 		"xpos"			"11"
@@ -284,11 +290,11 @@
 		"font"			"incon20"
       "fgcolor"      "cyan"
 		"labelText"		"%servertimeleft%"
-		"textAlignment"		"east"
-		"xpos"			"305"
-		"ypos"			"60"
-		"wide"			"300"
-		"tall"			"20"
+		"textAlignment"		"center"
+		"xpos"			"c-39"  //center-wide/2
+		"ypos"			"-2"
+		"wide"			"78"
+		"tall"			"19"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -296,11 +302,11 @@
 		
 		if_mvm
 		{
-			"ypos"			"0"
+			"visible"			"0"
 		}
 	}							
 	"BluePlayerList"
-	{
+	{  //this controls players on the scoreboard, but not their font (in clientscheme), or their color (nowhere)
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"BluePlayerList"
 		"xpos"			"5"
@@ -313,17 +319,18 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"3"
-		"linespacing"	"22"
+		"linespacing"	"12"
 		"fgcolor"		"blue"
-		
+		"font_override"         "incon12"
+
 		if_mvm
 		{
 			"visible"		"0"
 		}
 	}
 	"RedPlayerList"
-	{
-		"ControlName"	"SectionedListPanel"
+	{	
+   	"ControlName"	"SectionedListPanel"
 		"fieldName"		"RedPlayerList"
 		"xpos"			"325"
 		"ypos"			"72"
@@ -335,7 +342,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"3"
-		"linespacing"	"22"
+		"linespacing"	"12"
 		"textcolor"		"red"
 		
  		if_mvm
@@ -369,7 +376,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Spectators"
-		"font"			"ScoreboardVerySmall"
+		"font"			"incon8"
+      "fgcolor"      "base1"
 		"labelText"		"%spectators%"
 		"textAlignment"		"west"
 		"xpos"			"115"
@@ -391,7 +399,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SpectatorsInQueue"
-		"font"			"ScoreboardVerySmall"
+		"font"			"incon8"
+      "fgcolor"      "base1"
 		"labelText"		"%waitingtoplay%"
 		"textAlignment"		"west"
 		"xpos"			"115"
@@ -420,41 +429,41 @@
 		"tall"			"70"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"	
 		"fillcolor"		"0 0 0 153"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"visible"		"0"
 		}
 	}
 	"ClassImage"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ClassImage"
-		"xpos"			"22"
-		"ypos"			"350"	
+		"xpos"			"99999"
+		"ypos"			"99999"	
 		"zpos"			"3"
 		"wide"			"92"
 		"tall"			"92"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"../hud/class_scoutred"
 		"scaleImage"		"1"	
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"visible"		"0"
 		}
 	}
 	"PlayerNameLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"PlayerNameLabel"
-		"font"			"ScoreboardMedium"
+		"font"			"incon20"
 		"labelText"		"%playername%"
 		"textAlignment"		"west"
 		"xpos"			"115"
@@ -464,12 +473,12 @@
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"visible"		"0"
 			"wide"			"175"
 		}
 	}	
@@ -477,7 +486,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"mapname"
-		"font"			"ScoreboardMedium"
+		"font"			"incon16"
+      "fgcolor"      "base00"
 		"labelText"		"%mapname%"
 		"textAlignment"	"east"
 		"xpos"			"415"
@@ -489,7 +499,6 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor"		"236 227 203 255"
 
 		if_mvm
 		{
@@ -507,8 +516,8 @@
 		"tall"			"1"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"	
 		"fillcolor"		"127 127 127 153"
 		"PaintBackgroundType"	"0"

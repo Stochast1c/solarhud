@@ -60,13 +60,15 @@ Scheme
 		"TransparentBlack"	"0 0 0 196"
 		"TransparentLightBlack"	"0 0 0 90"
 		"FooterBGBlack"		"52 48 55 255"
+	
+      //modified: blue,red,base1	
+		"HUDBlueTeam"		"38 139 210 255"
+		"HUDRedTeam"		"220 50 47 255"
+		"HUDSpectator"		"147 161 161 255"
+		"HUDBlueTeamSolid"	"38 139 210 255"
+		"HUDRedTeamSolid"	"220 50 47 255"
 		
-		"HUDBlueTeam"		"104 124 155 127"
-		"HUDRedTeam"		"180 92 77 127"
-		"HUDSpectator"		"124 124 124 127"
-		"HUDBlueTeamSolid"	"104 124 155 255"
-		"HUDRedTeamSolid"	"180 92 77 255"
-		"HUDDeathWarning"	"255 0 0 255"
+      "HUDDeathWarning"	"255 0 0 255"
 		"HudWhite"			"255 255 255 255"
 		"HudOffWhite"		"200 187 161 255"
 		"HudBlack"			"65 65 65 255"
@@ -453,67 +455,17 @@ Scheme
 		// fonts listed later in the order will only be used if they fulfill a range not already filled
 		// if a font fails to load then the subsequent fonts will replace
 		"Default"
+      //controls scoreboard player text
+      //right surf panel text
 		{
-			"1"
-			{
-				"name"		"Verdana"
-				"tall"		"12"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"480 599"
-			}
-			"2"
-			{
-				"name"		"Verdana"
-				"tall"		"13"	[$WIN32]
-				"tall"		"20"	[$X360]
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"600 767"
-			}
-			"3"
-			{
-				"name"		"Verdana"
-				"tall"		"14"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"768 1023"
-				"antialias"	"1"
-			}
-			"4"
-			{
-				"name"		"Verdana"
-				"tall"		"20"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"1024 1199"
-				"antialias"	"1"
-			}
-			"5"
-			{
-				"name"		"Verdana"
-				"tall"		"24"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"1200 6000"
-				"antialias"	"1"
-			}
 			"6"
 			{
-				"name"		"Verdana"
+				"name"		"Inconsolata"
 				"tall"		"12"
 				"range" 		"0x0000 0x00FF"
-				"weight"		"900"
+				"weight"		"500"
+            "antialias" "1"
 			}
-			"7"
-			{
-				"name"		"Arial"
-				"tall"		"12"
-				"range" 		"0x0000 0x00FF"
-				"weight"		"800"
-			}
-
-			
 		}
 		"DefaultUnderline"
 		{
