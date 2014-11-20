@@ -41,20 +41,20 @@ Scheme
 
 		// base colors
 		//"Orange"			"178 82 22 255"
-		"OrangeDim"			"178 82 22 120"
+		"OrangeDim"			"203 75 22 120"   //orange, trans
 		"LightOrange"		"188 112 0 128"
 		"GoalOrange"		"255 133 0"
-		"TFOrange"			"145 73 59 255"
+		"TFOrange"			"203 75 22 255"   //orange
 		
 		"White"				"235 235 235 255"
 		//"Red"				"192 28 0 140"
-		"RedSolid"			"192 28 0 255"
+		"RedSolid"			"220 50 47 255"  //red
 		//"Blue"				"0 28 162 140"
 		//"Yellow"			"251 235 202 255"
-		"TransparentYellow"	"251 235 202 140"
-		//"Black"				"0 0 0 255"
+		"TransparentYellow"	"181 137 0 140" //yellow trans
+		//"Black"				"0 0 0 255"    //commented out by valve
 		//Changed black to a NTSC safe color
-		"GreenSolid"		 "76 107 34 255"
+		"GreenSolid"		 "133 153 0 255"  //green
 		
 		"Black"				"46 43 42 255"
 		"TransparentBlack"	"0 0 0 196"
@@ -68,20 +68,20 @@ Scheme
 		"HUDBlueTeamSolid"	"38 139 210 255"
 		"HUDRedTeamSolid"	"220 50 47 255"
 		
-      "HUDDeathWarning"	"255 0 0 255"
+      "HUDDeathWarning"	"220 50 47 255"  //red
 		"HudWhite"			"255 255 255 255"
 		"HudOffWhite"		"200 187 161 255"
 		"HudBlack"			"65 65 65 255"
-		"ProgressBarBlue"	"91 122 142 255"
+		"ProgressBarBlue"	"38 138 210 255"  //blue
 		
-		"CreditsGreen"		"94 150 49 255"
+		"CreditsGreen"		"133 153 0 255"   //green
 		
 		"Gray"				"178 178 178 255"
 
 		"Blank"				"0 0 0 0"
-		"ForTesting"		"255 0 0 32"
-		"ForTesting_Magenta"	"255 0 255 255"
-		"ForTesting_MagentaDim"	"255 0 255 120"
+		"ForTesting"		"220 50 47 32"    //red trans
+		"ForTesting_Magenta"	"211 54 130 255"  //magenta
+		"ForTesting_MagentaDim"	"211 54 130 120"  //magenta trans
 
 		"HudPanelForeground"		"123 110 59 184"
 		"HudPanelBackground"		"123 110 59 184"
@@ -107,7 +107,7 @@ Scheme
 		"StoreGreen"			"76 107 34 255"
 		
 		// Building HUD Specific
-		"LowHealthRed"		"255 0 0 255"
+		"LowHealthRed"		"220 50 47 255"   //red
 		"ProgressOffWhite"	"251 235 202 255"
 		"ProgressBackground"	"250 234 201 51"
 		"HealthBgGrey"		"72 71 69 255"
@@ -119,8 +119,8 @@ Scheme
 		
 		"BuildMenuActive"	"248 231 198 255"
 		
-		"DisguiseMenuIconRed"	"192 56 63 255"
-		"DisguiseMenuIconBlue"	"92 128 166 255"
+		"DisguiseMenuIconRed"	"220 50 47 255"   //red
+		"DisguiseMenuIconBlue"	"38 138 210 255"  //blue
 
  		"MatchmakingDialogTitleColor"			"200 184 151 255"
  		"MatchmakingMenuItemBackground"			"46 43 42 255"
@@ -177,10 +177,10 @@ Scheme
 		"QualityColorCollectors_GreyedOut"		"60 0 0 255"
 
 		
-		"SaleGreen"								"76 107 34 255"
+		"SaleGreen"								"133 153 0 255"   //green
 		
-		"LightRed"								"200 80 60 255"
-		"LighterRed"							"220 100 80 255"
+		"LightRed"								"220 50 47 255"   //red
+		"LighterRed"							"220 50 47 255"   //red
 		"LighterDarkBrown"						"59 54 48 255"
 		"DarkBrown"								"41 37 38 255"
 		
