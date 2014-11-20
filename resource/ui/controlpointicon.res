@@ -51,10 +51,10 @@
 
 	"CapNumPlayers"
 	{	
-		"ControlName"		"Label"
+		"ControlName"		"CExLabel"
 		"fieldName"		"CapNumPlayers"
-		"font"			"CapPlayerFont"
-		"font_minmode"			"CapPlayerFontSmall"
+		"font"			"incon16"
+      "fgcolor"      "green"
 		"xpos"			"15"
 		"xpos_minmode"			"10"
 		"ypos"			"4"
@@ -70,8 +70,6 @@
 		"enabled"		"1"
 		"labelText"		"#ControlPointIconCappers"
 		"textAlignment"		"west"
-		"dulltext"		"0"
-		"brighttext"		"0"
 	}
 
 	"OverlayImage"
@@ -110,8 +108,8 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"wrap"			"0"
-		"font"			"ControlPointTimer"
-		"font_minmode"	"ControlPointTimerSmaller"
+		"font"			"incon16"
+      "fgcolor"      "magenta"
 	}
 				
 	"CPTimerBG"

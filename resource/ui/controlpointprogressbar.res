@@ -1,3 +1,6 @@
+//this is the popup that appears when
+//you are standing on a cp
+
 "Resource/UI/ControlPointProgressBar.res"
 {
 	"ControlPointProgressBar"
