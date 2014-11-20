@@ -284,7 +284,8 @@
 		}
 	}
 	"ServerTimeLeft"
-	{//resize me
+	{//unfortunately for this to work properly the tf_language file
+    //needs to remove "Server time left remaining: " text
 		"ControlName"		"CExLabel"
 		"fieldName"		"ServerTimeLeft"
 		"font"			"incon20"
