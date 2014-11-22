@@ -89,7 +89,7 @@
       "fgcolor"      "blue"
 		"labelText"		"%blueteamname%"
 		"textAlignment"		"east"
-		"xpos"			"c-164"  //label_width+score_width+players_width 
+		"xpos"			"c-165"  //label_width+score_width+players_width+1 since red gets center 
 		"ypos"			"r16"
 		"wide"			"140"
 		"tall"			"16"
@@ -157,7 +157,7 @@
       "fgcolor"      "blue"
 		"labelText"		"%blueteamplayercount%"
 		"textAlignment"		"west"
-		"xpos"			"c-26"   //one more than red, not sure why it is off
+		"xpos"			"c-26"   //one more than red, since red uses c, blue can't sit at the same coordinate without overlapping so blue needs c-1
 		"ypos"			"r10"
 		"wide"			"10"     
 		"tall"			"10"
