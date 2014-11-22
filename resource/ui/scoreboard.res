@@ -1,3 +1,9 @@
+//The column title names and the white line
+//underneath them still exist find a way to remove
+
+//right now the whiteline is obscured by mainbg not being transparent
+//column names use tf_language
+
 "Resource/UI/Scoreboard.res"
 {
 	"scores"
@@ -63,18 +69,20 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"MainBG"
-		"xpos"			"0"
-		"ypos"			"60"
+		"xpos"			"c-310"
+		"ypos"         "r208"
+      "ypos_minmode"			"r88" 
 		"zpos"			"-1"
-		"wide"			"640"
-		"tall"			"388"
+		"wide"			"620"
+		"tall"			"192"      	
+		"tall_minmode"			"72" 
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"border"		""
-      "bgcolor_override"      "253 246 227 0"//127  //base3 transparent
-		
+      "bgcolor_override"      "base3"		
+
 		if_mvm
 		{
 			"ypos"			"0"
@@ -310,19 +318,20 @@
 	{  //this controls players on the scoreboard, but not their font (in clientscheme), or their color (nowhere)
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"BluePlayerList"
-		"xpos"			"5"
-		"ypos"			"72"
+		"xpos"			"c-310"
+		"ypos"			"r219"
+		"ypos_minmode"			"r99"
 		"zpos"			"20"
 		"wide"			"310"
-		"tall"			"280"	
+		"tall"			"203"      //16 people -> 12*17????, minus 1 to remove next line from showing	
+		"tall_minmode"			"83" //6 people -> 12*7????, minus 1 to remove next line from showing	
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"autoresize"	"3"
+		"autoresize"	"0"
 		"linespacing"	"12"
 		"fgcolor"		"blue"
-		"font_override"         "incon12"
 
 		if_mvm
 		{
@@ -333,16 +342,18 @@
 	{	
    	"ControlName"	"SectionedListPanel"
 		"fieldName"		"RedPlayerList"
-		"xpos"			"325"
-		"ypos"			"72"
+		"xpos"			"c"
+		"ypos"			"r219"
+		"ypos_minmode"			"r99"
 		"zpos"			"20"
 		"wide"			"310"
-		"tall"			"280"	
+		"tall"			"203"      	
+		"tall_minmode"			"83" 
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"autoresize"	"3"
+		"autoresize"	"0"
 		"linespacing"	"12"
 		"textcolor"		"red"
 		
@@ -355,19 +366,21 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"VerticalLine"
-		"xpos"			"319"
-		"ypos"			"70"
+		"xpos"			"c-1"
+		"ypos"         "r208"      //mirror mainbg dimensions
+      "ypos_minmode"			"r88" 
 		"zpos"			"2"
 		"wide"			"2"
-		"tall"			"292"
+		"tall"			"192"      	
+		"tall_minmode"			"72" 
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 153"
+		"fillcolor"		"base01"
 		"PaintBackgroundType"	"0"
-		
+	
 		if_mvm
 		{
 			"visible"		"0"
