@@ -157,7 +157,7 @@
       "fgcolor"      "blue"
 		"labelText"		"%blueteamplayercount%"
 		"textAlignment"		"west"
-		"xpos"			"c-25"
+		"xpos"			"c-26"   //one more than red, not sure why it is off
 		"ypos"			"r10"
 		"wide"			"10"     
 		"tall"			"10"
