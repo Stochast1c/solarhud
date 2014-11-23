@@ -11,7 +11,6 @@ It is highly recommended that you clone the hud rather than download and extract
    and modified to an acceptable standard
 
 Major things left to do:
-   scoreboard
    tournament mode ready
    tournament mode gui
    control points
