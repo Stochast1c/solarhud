@@ -90,212 +90,175 @@
 		"wrap"			"1"
 		"centerwrap"	"1"
 	}
-	"MapLabel"
+	"MapLabel"  //unnecessary since on scoreboard
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"MapLabel"
-		"font"			"HudFontSmall"
-		"font_hidef"		"HudFontMedium"
-		"xpos"			"r260"	[$WIN32]
-		"ypos"			"16"	[$WIN32]
-		"xpos"			"r285"	[$X360]
-		"ypos"			"32"	[$X360]
-		"wide"			"240"	[$WIN32]
-		"wide"			"220"	[$X360]
-		"tall"			"20"
-		"tall_hidef"		"30"
+		"font"			"incon16"
+		"xpos"			"r260"
+		"ypos"			"16"
+		"wide"			"240"	
+		"tall"			"16"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"visible_minmode"		"0"
-		"enabled"		"1"
-		"labelText"		"map: cp_bridge"
+		"enabled"		"0"
+		"labelText"		"cp_bridge"
 		"textAlignment"		"east"
+      "fgcolor_override"      "base00"
 	}
-	"ClassOrTeamLabel"
+	"ClassOrTeamLabel"   //button to press to change teams
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ClassOrTeamLabel"
 		"xpos"			"c-85"
-		"xpos_hidef"	"c-65"
-		"xpos_lodef"	"40"
 		"ypos"			"68"
-		"ypos_hidef"	"90"
-		"ypos_lodef"	"30"	
 		"wide"			"170"
-		"wide_hidef"	"130"
-		"wide_lodef"	"220"
 		"tall"			"15"
-		"tall_lodef"	"25"
 		"zpos"			"2"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
+		"visible"		"0"	
 		"visible_minmode"		"0"
-		"visible"		"0"	[$X360]
-		"enabled"		"1"
+		"visible"		"0"	
+		"enabled"		"0"
 		"labelText"		"#TF_Spectator_ChangeTeam"
 		"textAlignment"		"center"
 		"textAlignment_lodef"		"north-west"
-		"font"			"SpectatorKeyHints"
-		"font_hidef"	"HudFontSmallest"
-		"font_lodef"	"HudFontSmall"
-		"wrap_lodef"			"1"
+		"font"			"incon12"
+      "fgcolor_override"      "base00"
 	}
+
+   //camera controls
+   //apparently these have a shadow 
 	"SwitchCamModeKeyLabel"
-	{
+ 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeKeyLabel"
-		"xpos"			"5"		[$WIN32]
-		"ypos"			"10"	[$WIN32]
-		"xpos"			"53"	[$X360]
-		"ypos"			"40"	[$X360]
-		"wide"			"60"	[$WIN32]
-		"wide"			"60"	[$X360]
+		"xpos"			"999995"		
+		"ypos"			"10"	
+		"wide"			"60"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
+		"visible"		"0"	
 		"visible_minmode"		"0"
-		"visible"		"0"	[$X360]
-		"enabled"		"1"
+		"enabled"		"0"
 		"labelText"		"#TF_Spectator_ChangeTeam"
 		"textAlignment"		"east"
-		"font"			"SpectatorKeyHints"
+		"font"			"incon12"
+      "fgcolor_override"      "base00"
 		
 	}
 	"SwitchCamModeLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"10"	[$WIN32]
-		"xpos"			"128"	[$X360]
-		"ypos"			"40"	[$X360]		
-		"wide"			"125"	[$WIN32]
-		"wide"			"95"	[$X360]		
+		"xpos"			"9999980"	
+		"ypos"			"10"
+		"wide"			"125"	
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
-		"visible"		"0"	[$X360]
-		"enabled"		"1"
+		"visible"		"0"	
+		"enabled"		"0"
 		"labelText"		"#TF_Spectator_SwitchCamMode"
 		"textAlignment"		"west"
-		"font"			"SpectatorKeyHints"
+		"font"			"incon12"
+      "fgcolor_override"      "base00"
 	}
 	"CycleTargetFwdKeyLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdKeyLabel"
-		"xpos"			"5"	[$WIN32]
-		"ypos"			"20"	[$WIN32]
-		"xpos"			"53"	[$X360]
-		"ypos"			"50"	[$X360]		
-		"wide"			"60"	[$WIN32]
-		"wide"			"60"	[$X360]
+		"xpos"			"999995"
+		"ypos"			"20"
+		"wide"			"60"	
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
+		"visible"		"0"	
 		"visible_minmode"		"0"
-		"visible"		"0"	[$X360]
-		"enabled"		"1"
+		"enabled"		"0"
 		"labelText"		"#TF_Spectator_ClassOrTeamKey"
 		"textAlignment"		"east"
-		"font"			"SpectatorKeyHints"
+		"font"			"incon12"
+      "fgcolor_override"      "base00"
 	}
 	"CycleTargetFwdLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"20"	[$WIN32]
-		"xpos"			"128"	[$X360]
-		"ypos"			"50"	[$X360]		
-		"wide"			"125"	[$WIN32]
-		"wide"			"95"	[$X360]	
+		"xpos"			"9999980"	
+		"ypos"			"20"
+		"wide"			"125"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
-		"visible"		"0"	[$X360]
-		"enabled"		"1"
+		"enabled"		"0"
 		"labelText"		"#TF_Spectator_CycleTargetFwd"
 		"textAlignment"		"west"
-		"font"			"SpectatorKeyHints"
+		"font"			"incon12"
+      "fgcolor_override"      "base00"
 	}
 	"CycleTargetRevKeyLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevKeyLabel"
-		"xpos"			"5"	[$WIN32]
-		"ypos"			"30"	[$WIN32]
-		"xpos"			"53"	[$X360]
-		"ypos"			"60"	[$X360]		
-		"wide"			"60"	[$WIN32]
-		"wide"			"60"	[$X360]		
+		"xpos"			"999995"
+		"ypos"			"30"
+		"wide"			"60"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
-		"visible"		"0"	[$X360]
-		"enabled"		"1"
+		"enabled"		"0"
 		"labelText"		"#TF_Spectator_ClassOrTeamKey"
 		"textAlignment"		"east"
-		"font"			"SpectatorKeyHints"
+		"font"			"incon12"
+      "fgcolor_override"      "base00"
 	}
 	"CycleTargetRevLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"30"	[$WIN32]
-		"xpos"			"128"	[$X360]
-		"ypos"			"60"	[$X360]		
-		"wide"			"125"	[$WIN32]
-		"wide"			"95"	[$X360]
+		"xpos"			"9999980"
+		"ypos"			"30"
+		"wide"			"125"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
-		"visible"		"0"	[$X360]
-		"enabled"		"1"
+		"enabled"		"0"
 		"labelText"		"#TF_Spectator_CycleTargetRev"
 		"textAlignment"		"west"
-		"font"			"SpectatorKeyHints"
+		"font"			"incon12"
+      "fgcolor_override"      "base00"
 	}
 	"TipLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"TipLabel"
 		"xpos"			"15"
-		"xpos_hidef"	"60"
-		"xpos_lodef"	"45"
 		"ypos"			"r67"
-		"ypos_lodef"		"28"
-		"ypos_hidef"		"35"
 		"wide"			"145"
-		"wide_hidef"	"230"
-		"wide_lodef"	"240"
 		"tall"			"64"
-		"tall_hidef"	"70"
-		"tall_lodef"	"70"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"visible_minmode"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"labelText"		"%tip%"
-		"textAlignment"		"center"	[$WIN32]
-		"textAlignment"		"north-west"	[$X360]
-		"font"			"SpectatorKeyHints"
-		"font_hidef"	"HudFontSmall"
-		"font_lodef"	"DefaultVerySmall"
+		"textAlignment"		"center"	
+		"font"			"incon12"
+      "fgcolor_override"      "base00"
 		"wrap"			"1"
 	}
 	"itempanel"
