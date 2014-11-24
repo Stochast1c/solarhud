@@ -34,11 +34,11 @@ Scheme
       "green"        "133 153   0 255"  
      
       //base colors
-		"White"				"255 255 255 255"
-		"OffWhite"			"216 216 216 255"
-		"DullWhite"			"142 142 142 255"
-		"Orange"			"255 155 0 255"
-		"TransparentBlack"		"253 246 227 255"
+		"White"				"255 0 0 255"
+		"OffWhite"			"0 0 255 255"
+		"DullWhite"			"0 255 0 255"
+		//"Orange"			"255 155 0 255"
+		"TransparentBlack"		"255 255 0 255"
 		"Black"				"0 0 0 255"
 
 		"Blank"				"0 0 0 0"
