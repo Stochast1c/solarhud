@@ -178,9 +178,6 @@ Scheme
       TextEntry.BgColor                  "base3"       //console input line bg, server browser filter text input bg
 
       Console.DevTextColor    "yellow"   //doesn't do anything???
-      Console.ColorBgColor         "magenta"
-      Console.DisabledTextColor     "cyan"
-      Console.FgColor         "orange"
       Console.TextColor       "base00"    //text typed in history	
    }
 	
