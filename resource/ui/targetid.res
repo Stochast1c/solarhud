@@ -89,16 +89,16 @@
 		"textAlignment"		"west"
       "fgcolor"      "yellow"
    }
-	"TargetDataLabel"
+	"TargetDataLabel"    //ubercharge%
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"TargetDataLabel"
 		"font"			"incon8"
-		"xpos"	"30"
-		"ypos"	"12"
+		"xpos"	"0"   //doesn't change anything
+		"ypos"	"24"
 		"zpos"			"1"
 		"wide"			"280"
-		"tall"			"15"
+		"tall"			"8"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%targetdata%"
