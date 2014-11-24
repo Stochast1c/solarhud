@@ -65,6 +65,7 @@
 		"wide"			"48"
 		"tall"			"24"
 		"visible"		"1"
+      "visible_minmode" "0"
 		"enabled"		"1"
       "labelText"    "%Health%"
       "font"         "incon20"

@@ -96,6 +96,7 @@
 		"font"			"incon8"
 		"xpos"	"0"   //doesn't change anything
 		"ypos"	"24"
+      "ypos_minmode"    "99999"
 		"zpos"			"1"
 		"wide"			"280"
 		"tall"			"8"
@@ -112,6 +113,7 @@
 		"xpos"      	"0"
 		"ypos"			"5"
 		"wide"			"48"
+      "wide_minmode"    "0"
 		"tall"			"24"
 		"visible"		"0"
 		"enabled"		"0"	
@@ -128,6 +130,7 @@
 		"fieldName"		"AmmoIcon"
 		"xpos"			"64"
 		"ypos"			"25"
+      "ypos_minmode"    "99999"
 		"zpos"			"12"
 		"wide"			"8"
 		"tall"			"8"

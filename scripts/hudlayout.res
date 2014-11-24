@@ -37,6 +37,7 @@
       "ypos"      "330" 
       "wide"      "192"
       "tall"      "60"
+      "tall_minmode"    "0"
    }
 	
 	HudObjectiveStatus
@@ -494,6 +495,7 @@
 		"ypos"	 "0"	
 		"wide"	 "628"
 		"tall"	 "468"
+      "tall_minmode"    "0"
 
 		"MaxDeathNotices" "4"
 		"IconScale"	  "0.35"
