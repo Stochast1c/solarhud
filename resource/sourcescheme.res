@@ -107,7 +107,7 @@ Scheme
 		
       //pop-up menu, menu colors (console and server browser are the notable examples) 
 		Frame.BgColor					"base3"    //automatically transparent for console text history
-		Frame.OutOfFocusBgColor			"base1"
+		Frame.OutOfFocusBgColor			"base2"
 		FrameGrip.Color1				"base01"   //bottom right grip
 		FrameGrip.Color2				"blank"   //shadow for grip
 		FrameTitleButton.FgColor		"base00"    //x button
