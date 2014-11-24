@@ -270,7 +270,6 @@
 		"ypos"		"285"
 		"wide"	 	"252"
 		"tall"	 	"35"
-		"tall_minmode"	 	"28"
 		"priority"	"40"
 		"priority_lodef"	"5"
 
@@ -290,7 +289,6 @@
 		"ypos"		"250"
 		"wide"	 	"252"
 		"tall"	 	"35"
-		"tall_minmode"	 	"28"
 		"priority"	"40"
 		"priority_lodef" "35"
 		
@@ -304,10 +302,9 @@
 		"visible" 	"0"
 		"enabled" 	"1"
 		"xpos"		"c-126"
-		"ypos"		"335"
+		"ypos"		"305"
 		"wide"	 	"252"
 		"tall"	 	"35"
-		"tall_minmode"	 	"28"
 		"priority"	"35"
 
 		if_vr
