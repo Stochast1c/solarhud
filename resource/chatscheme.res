@@ -206,9 +206,6 @@ Scheme
 		MainMenu.Inset				"32"
 		MainMenu.Backdrop			"0 0 0 156"
 
-		Console.TextColor			"OffWhite"
-		Console.DevTextColor		"White"
-
 		NewGame.TextColor			"White"
 		NewGame.FillColor			"0 0 0 255"
 		NewGame.SelectionColor		"Orange"	[$WIN32]

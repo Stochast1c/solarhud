@@ -49,8 +49,11 @@ Scheme
 
       "QuickListBGDeselected"		"0 0 255 255"
       "QuickListBGSelected"               "0 0 255 255"
+      
+      "White"     "101 123 131 255"    //tab title text, base00
+      "OffWhite"  "147 161 161 255"    //tab background title text, base1
 
-          
+    
 	    // background colors, comments by valve
 		"ControlBG"			"0 0 255 255"		// background color of controls
 		"ControlDarkBG"		"0 0 255 255"		// darker background color; used for background of scrollbars
@@ -173,7 +176,13 @@ Scheme
 		TextEntry.SelectedBgColor	        "base03"
       TextEntry.SelectedTextColor          "base0"
       TextEntry.BgColor                  "base3"       //console input line bg, server browser filter text input bg
-	}
+
+      Console.DevTextColor    "yellow"   //doesn't do anything???
+      Console.ColorBgColor         "magenta"
+      Console.DisabledTextColor     "cyan"
+      Console.FgColor         "orange"
+      Console.TextColor       "base00"    //text typed in history	
+   }
 	
    //these fonts work to change console and server browser text
    //however unsure 
