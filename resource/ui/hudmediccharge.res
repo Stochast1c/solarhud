@@ -33,10 +33,8 @@
       "tabPosition"   "0"
 		"labelText"		"#TF_UberchargeMinHUD"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
 		"font"			"inconb52"
-      "fgcolor"      "Black"
+      "fgcolor"      "base00"
 
 	}
 
@@ -175,9 +173,9 @@
 		"ypos"			"17"
 		"wide"			"36"
 		"tall"			"36"
-		"visible"		"1"
+		"visible"		"0"
 		"visible_minmode"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			"../hud/ico_health_cluster"
 		"scaleImage"	"1"	
 	}	
