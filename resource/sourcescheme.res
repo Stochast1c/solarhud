@@ -26,129 +26,153 @@ Scheme
       "cyan"         "42  161 152 255" 
       "green"        "133 153   0 255"  
 
-	    //base colors
-       "TFDarkBrown"               "60 56 53 255"
-	    "TFDarkBrownTransparent"    "60 56 53 190"
-	    "TFTanBright"               "236 227 203 150"
-	    "TFTanLight"                "201 188 162 150"
-	    "TFTanMedium"               "131 121 104 150"
-	    
-	    "TFTanLightBright"          "229 223 211 90"
-	    "TFTanLightDark"            "96 90 78 90"
-	    
-	    "TFOrangeBright"            "156 82 33 255"
-	    
-	    "TFTextBright"              "251 236 203 150"
-	    "TFTextLight"               "201 188 162 255"
-	    "TFTextMedium"              "131 121 104 255"
-	    "TFTextMediumDark"          "104 96 83 255"
-	    "TFTextBlack"               "42 39 37 255"
-	    "TFTextDull"                "131 121 104 255"
+      "blank"				"0 0 0 0"
 
-	    "TFMediumBrown"		"69 64 58 255"
+      //base colors, these are all blue, any undefined text options should appear
+      //to be very obvious
+      "TFDarkBrown"               "0 0 255 255"
+      "TFDarkBrownTransparent"    "0 0 255 255"
+      "TFTanBright"               "0 0 255 255"
+      "TFTanLight"                "0 0 255 255"
+      "TFTanMedium"               "0 0 255 255"
 
-	    "QuickListBGDeselected"		"69 64 58 255"
-	    "QuickListBGSelected"               "131 121 104 150"
-	    
-	    "Blank"				"0 0 0 0"
-	    
-	    // background colors
-		"ControlBG"			"76 88 68 255"		// background color of controls
-		"ControlDarkBG"		"90 106 80 255"		// darker background color; used for background of scrollbars
-		"WindowBG"			"62 70 55 255"		// background color of text edit panes (chat, text entries, etc.)
-		"SelectionBG"		"90 84 75 255"	// background color of any selected text or menu item
-		"SelectionBG2"		"69 64 57 255"		// selection background in window w/o focus
-		"ListBG"			"39 36 34 255"		// background of server browser, buddy list, etc.
+      "TFTanLightBright"          "0 0 255 255"
+      "TFTanLightDark"            "0 0 255 255"
+      "TFOrangeBright"            "0 0 255 255"
+      "TFTextBright"              "0 0 255 255" 
+      "TFTextLight"               "0 0 255 255"
+      "TFTextMedium"              "0 0 255 255"
+      "TFTextMediumDark"          "0 0 255 255"
+      "TFTextBlack"               "0 0 255 255"
+      "TFTextDull"                "0 0 255 255"
+      "TFMediumBrown"		        "0 0 255 255"
+
+      "QuickListBGDeselected"		"0 0 255 255"
+      "QuickListBGSelected"               "0 0 255 255"
+
+          
+	    // background colors, comments by valve
+		"ControlBG"			"0 0 255 255"		// background color of controls
+		"ControlDarkBG"		"0 0 255 255"		// darker background color; used for background of scrollbars
+		"WindowBG"			"0 0 0 255"		// background color of text edit panes (chat, text entries, etc.)
+		"SelectionBG"		"0 0 0 255"	// background color of any selected text or menu item
+		"SelectionBG2"		"0 0 0 255"		// selection background in window w/o focus
+		"ListBG"			"0 0 0 255"	// background of server browser, buddy list, etc.
 	}
 	BaseSettings
 	{
-		// scheme-specific colors
-		Border.Bright					"TFTanLightDark"	// the lit side of a control
-		Border.Dark						"TFTanLightDark"		// the dark/unlit side of a control
-		Border.Selection				"BorderSelection"			// the additional border color for displaying the default/selected button
+		//scheme-specific colors, any colors that appear to do nothing 
+      //on my first glance are colored red for future debugging
+      
+      //button borders
+      //dark makes the button pop or sink in, selection is bolder than dark
+		Border.Bright					"base1"	// the lit side of a control
+		Border.Dark						"base1"		// the dark/unlit side of a control
+		Border.Selection				"base03"			// the additional border color for displaying the default/selected button
 
-		Button.TextColor				"TFDarkBrown"
-		Button.BgColor					"TFTanLight"
-		Button.ArmedTextColor			"TFDarkBrown"
-		Button.ArmedBgColor				"TFTanBright"
-		Button.DepressedTextColor		"TFDarkBrown"
-		Button.DepressedBgColor			"TFTanLight"	
-		Button.FocusBorderColor			"TransparentBlack"
-		
-		CheckButton.TextColor			"TFTextBright"
-		CheckButton.SelectedTextColor		"TFTextBright"
-		CheckButton.BgColor				"ListBG"
-		CheckButton.HighlightFgColor		"TFTextMedium"
-		CheckButton.ArmedBgColor		"Blank"
-		CheckButton.DepressedBgColor		"Blank"
-		CheckButton.Border1  			"Border.Dark" 		// the left checkbutton border
-		CheckButton.Border2  			"Border.Bright"		// the right checkbutton border
-		CheckButton.Check				"TFTanBright"	// color of the check itself
-		CheckButton.DisabledBgColor	    "ListBG"
+      //any and all buttons that aren't off the following types
+		Button.TextColor				"base00"
+		Button.BgColor					"base2"
+		Button.ArmedTextColor			"base0"
+		Button.ArmedBgColor				"base02"
+		Button.DepressedTextColor		"base0"
+		Button.DepressedBgColor			"base03"	
+		Button.FocusBorderColor			"red"    //doesn't do anything
 
-		ToggleButton.SelectedTextColor	"TFTextBright"
+      //checkbox buttons	
+		CheckButton.TextColor			"base00"
+		CheckButton.SelectedTextColor		"base01"
+		CheckButton.BgColor				"base3"
+		CheckButton.HighlightFgColor		"base01"
+		CheckButton.ArmedBgColor		"base2"
+		CheckButton.DepressedBgColor		"base2"
+		CheckButton.Border1  			"base01" 		// the left/upper checkbutton border
+		CheckButton.Border2  			"base01"		// the right/lower checkbutton border
+		CheckButton.Check				"base00"	// color of the check itself
+		CheckButton.DisabledBgColor	    "base1"
+
+      //filters button text
+		ToggleButton.SelectedTextColor	"base00"
+	
+      //combo boxes, does not have definition for armedbgcolor	
+		ComboBoxButton.ArrowColor		"base00"
+		ComboBoxButton.ArmedArrowColor	"base01"
+		ComboBoxButton.BgColor			"base3"
+		ComboBoxButton.DisabledBgColor	"base3"
 		
-		ComboBoxButton.ArrowColor		"TFTanLight"
-		ComboBoxButton.ArmedArrowColor	"TFTanBright"
-		ComboBoxButton.BgColor			"Blank"
-		ComboBoxButton.DisabledBgColor	"Blank"
+      //no radio buttons to check, but assuming this works
+		RadioButton.TextColor		"base00"
+		RadioButton.SelectedTextColor	"base01"
+		RadioButton.ArmedTextColor	"base01"
 		
-		RadioButton.TextColor		"TFTextBright"
-		RadioButton.SelectedTextColor	"TFTextBright"
-		RadioButton.ArmedTextColor	"TFTextMedium"
+      //pop-up menu, menu colors (console and server browser are the notable examples) 
+		Frame.BgColor					"base3"    //automatically transparent for console text history
+		Frame.OutOfFocusBgColor			"base1"
+		FrameGrip.Color1				"base01"   //bottom right grip
+		FrameGrip.Color2				"blank"   //shadow for grip
+		FrameTitleButton.FgColor		"base00"    //x button
+		FrameTitleBar.Font			"DefaultLarge"
+		FrameTitleBar.TextColor			"base00"
+		FrameTitleBar.DisabledTextColor	"base01"
 		
-		Frame.BgColor					"TFDarkBrown"
-		Frame.OutOfFocusBgColor			"TFDarkBrownTransparent"
-		FrameGrip.Color1				"TFTanMedium"
-		FrameGrip.Color2				"TFDarkBrown"
-		FrameTitleButton.FgColor		"TFTanBright"
-		FrameTitleBar.Font			"DefaultLarge"		[$WIN32]
-		FrameTitleBar.TextColor			"TFTanBright"
-		FrameTitleBar.DisabledTextColor	"TFTanLight"
+		//pop-up menu colors, except some fonts
+      Label.TextDullColor				"base1"  //options extra text color
+		Label.TextColor					"base00"    //title for input line color
+		Label.TextBrightColor			"base01"    //doesn't appear to be used    
+		Label.SelectedTextColor			"base00"  //button text color 
+		Label.BgColor					"base3"    //bg title of options 
+		Label.DisabledFgColor1			"base1"	//disabled options text color
+		Label.DisabledFgColor2			"blank"  //disabled options text color	shadow????
+
+		//server browser
+		ListPanel.TextColor					"base00" 
+		ListPanel.BgColor					"base3"     
+		ListPanel.SelectedBgColor			"base03"
+      ListPanel.SelectedTextColor        "base0"
+		ListPanel.SelectedOutOfFocusBgColor	"base02"
+		ListPanel.SelectedOutOfFocusTextColor	"base00"    //now that is a mouthful of a command
 		
-		Label.TextDullColor				"TFTextDull"
-		Label.TextColor					"TFTextBright"
-		Label.TextBrightColor			"TFTextBright"
-		Label.SelectedTextColor			"TFTextBright"
-		Label.BgColor					"Blank"
-		Label.DisabledFgColor1			"TFTextDull"	
-		Label.DisabledFgColor2			"Blank"	
-		
-		ListPanel.TextColor					"TFTextBright"
-		ListPanel.BgColor					"ListBG"
-		ListPanel.SelectedBgColor			"SelectionBG"
-		ListPanel.SelectedOutOfFocusBgColor	"SelectionBG2"
-		
-		MainMenu.TextColor			"TanLight"			[$WIN32]
-		MainMenu.ArmedTextColor		"117 107 94 255"	[$WIN32]
+		MainMenu.TextColor			"red"			    //doesn't do anything
+		MainMenu.ArmedTextColor		"red"	          //doesn't do anything
 		MainMenu.Inset				"32"
 		
-		Menu.TextInset					"6"
-		Menu.FgColor			"TFTextLight"
-		Menu.BgColor			"ListBG"
-		Menu.ArmedFgColor		"TFTextBright"
-		Menu.ArmedBgColor		"TFOrangeBright"
-		Menu.DividerColor		"BorderDark"
+		//console suggestion color, any popup-menu options color
+      Menu.TextInset					"6"
+		Menu.FgColor			"red" //doesn't do anything
+		Menu.BgColor			"base3"
+      Menu.TextColor       "base00"
+		Menu.ArmedFgColor		"red"  //doesn't do anything
+      Menu.ArmedTextColor  "base0"  //armed = selected, seriously use a standard format
+		Menu.ArmedBgColor		"base03"
+		Menu.DividerColor		"red"    //doesn't do anything
 		
-		ScrollBarButton.FgColor				"TFDarkBrown"
-		ScrollBarButton.BgColor				"TFTanLight"
-		ScrollBarButton.ArmedFgColor		"TFDarkBrown"
-		ScrollBarButton.ArmedBgColor		"TFTanBright"
-		ScrollBarButton.DepressedFgColor	"TFDarkBrown"
-		ScrollBarButton.DepressedBgColor	"TFTanLight"
+		//scrollbar buttons, Hey they named something decently well
+      ScrollBarButton.FgColor				"base00"
+		ScrollBarButton.BgColor				"base2"
+		ScrollBarButton.ArmedFgColor		"base0"
+		ScrollBarButton.ArmedBgColor		"base02"
+		ScrollBarButton.DepressedFgColor	"base0"
+		ScrollBarButton.DepressedBgColor	"base03"
 
-		ScrollBarSlider.BgColor				"TFTanMedium"		// this isn't really used
-		ScrollBarSlider.FgColor				"TFTanLight"		// handle with which the slider is grabbed
+
+      //this isn't really used, handle with which the slider is grabbed
+		//liars, this controls scrollbar bar bg and fg colors
+      ScrollBarSlider.BgColor				"base2"		
+		ScrollBarSlider.FgColor				"base00"			
+
+      //horizontal sliders for numerical settings (sensitivity, accel, etc.)
+      Slider.NobColor				"base1"		
+		Slider.TextColor			"base00"
+		Slider.TrackColor			"base2"
+		Slider.DisabledTextColor1	"base1"
+      Slider.DisabledTextColor2	"blank"
 		
-		Slider.NobColor				"TFTanLight"		
-		Slider.TextColor			"TFTextBright"
-		Slider.TrackColor			"ListBG"
-		Slider.DisabledTextColor1	"TFTextMediumDark"
-        Slider.DisabledTextColor2	"Blank"
-		
-		TextEntry.TextColor			        "TFTextBright"
-		TextEntry.DisabledTextColor	        "TFTextMedium"
-		TextEntry.SelectedBgColor	        "TFOrangeBright"
+		//pop-up menu color on input line
+      TextEntry.TextColor			        "base00"     //console input, server browser filter text input, 
+		TextEntry.DisabledTextColor	        "base1"   //server browser game input text
+		TextEntry.SelectedBgColor	        "base03"
+      TextEntry.SelectedTextColor          "base0"
+      TextEntry.BgColor                  "base3"       //console input line bg, server browser filter text input bg
 	}
 	
    //these fonts work to change console and server browser text
