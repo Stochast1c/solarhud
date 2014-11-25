@@ -177,8 +177,13 @@ Scheme
       TextEntry.SelectedTextColor          "base0"
       TextEntry.BgColor                  "base3"       //console input line bg, server browser filter text input bg
 
-      Console.DevTextColor    "yellow"   //doesn't do anything???
-      Console.TextColor       "base00"    //text typed in history	
+      //console colors except generated text history
+      Console.DevTextColor    "yellow"   //console on hud text
+      Console.TextColor       "base0"    //text typed in history
+      RichText.TextColor      "green"    //doesn't do anything???
+      RichText.BgColor        "base03"   //bg color of console, overrides alpha'd panel as bg
+      RichText.SelectedTextColor    "base00"
+      RichText.SelectedBgColor      "base3"	
    }
 	
    //these fonts work to change console and server browser text
