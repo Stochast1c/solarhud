@@ -18,7 +18,7 @@ Major things left to do:
    winpanel
    stopwatch mode timer
    main menu
-   team selection
+   team selection - done to a working state
    class selection
    item charge
    demo stickies
