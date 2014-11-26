@@ -1,4 +1,9 @@
 "Resource/UI/TeamMenu.res"
+//this is currently just a provisional element.  Eventually change bg to base3 and add a team color border and use team color text
+//sizing is also highly provisional
+
+//each team is a button,bg,(playercount), and name text
+//consider braking into individual elements for readability/easier adjusting.
 {
 	"team"
 	{
@@ -67,153 +72,95 @@
 	{
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton0"
-		"xpos"			"c-29"
-		"ypos"			"101"
+		"xpos"			"c-50"
+		"ypos"			"c-50"
 		"zpos"			"3"
-		"wide"			"124"
-		"tall"			"310"
-		"autoResize"	"0"
-		"pinCorner"		"2"
+		"wide"			"50"
+		"tall"			"50"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"3"
-		"labelText"		"&3"	[$WIN32]
-		"labelText"		""		[$X360]
-		"textAlignment"	"south-west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"paintborder"	"0"
+		"labelText"		""
 		"command"		"jointeam blue"
 		"team"				"3"		// team blue
-		"associated_model"	"bluedoor"
 		"hover"				"2.0"
-		"font"			"MenuMainTitle"
-		"fgcolor"		"255 255 255 255"
 	}
 
 	"teambutton1"
 	{
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton1"
-		"xpos"			"c159"
-		"ypos"			"101"
+		"xpos"			"c"
+		"ypos"			"c-50"
 		"zpos"			"3"
-		"wide"			"124"
-		"tall"			"310"
-		"autoResize"	"0"
-		"pinCorner"		"2"
+		"wide"			"50"
+		"tall"			"50"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"4"
-		"labelText"		"&4"	[$WIN32]
-		"labelText"		""		[$X360]
-		"textAlignment"	"south-west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"paintborder"	"0"
+		"labelText"		""
 		"command"		"jointeam red"
 		"team"				"2"		// team red
-		"associated_model"	"reddoor"	
-		"hover"				"2.0"
-		"font"			"MenuMainTitle"
-		"fgcolor"		"255 255 255 255"
 	}
 
 	"teambutton2"
 	{
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton2"
-		"xpos"			"c-290"
-		"ypos"			"101"
+		"xpos"			"c-25"
+		"ypos"			"c"
 		"zpos"			"3"
-		"wide"			"124"
-		"tall"			"310"
-		"autoResize"	"0"
-		"pinCorner"		"2"
+		"wide"			"50"
+		"tall"			"25"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"1"
-		"labelText"		"&1"	[$WIN32]
-		"labelText"		""		[$X360]
-		"textAlignment"	"south-west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"paintborder"	"0"
+		"labelText"		""
 		"command"		"jointeam auto"
-		"associated_model"	"autodoor"
-		"font"			"MenuMainTitle"
-		"fgcolor"		"255 255 255 255"
 	}
 	
 	"teambutton3"
 	{
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton3"
-		"xpos"			"c-140"
-		"ypos"			"232"
+		"xpos"			"c-25"
+		"ypos"			"c25"
 		"zpos"			"3"
-		"wide"			"82"
-		"tall"			"57"
-		"autoResize"	"0"
-		"pinCorner"		"2"
+		"wide"			"50"
+		"tall"			"25"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"2"
-		"labelText"		"&2"	[$WIN32]
-		"labelText"		""		[$X360]
-		"textAlignment"	"south-west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"paintborder"	"0"
+		"labelText"		""	
 		"command"		"jointeam spectate"
-		"associated_model"	"spectate"	
-		"font"			"MenuMainTitle"
-		"fgcolor"		"255 255 255 255"
 	}
 	
-	"CancelButton" [$WIN32] 
+	"CancelButton"    //disabled, just press team select key again to remove
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"CancelButton"
-		"xpos"			"r190"
-		"xpos_hidef"			"r200"
+		"xpos"			"r19099999"
 		"ypos"			"r40"
-		"ypos_lodef"			"r64"
-		"ypos_hidef"			"r54"
 		"zpos"			"6"
 		"wide"			"150"
 		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"2"
 		"visible"		"0"
-		"enabled"		"1"
-		"tabPosition"	"0"
+		"enabled"		"0"
 		"labelText"		"#TF_Cancel"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
 		"command"		"cancelmenu"
-		"font"			"MenuSmallFont"
+		"font"			"incon16"
 	}
 	
-	"TeamMenuSelect"
+	"TeamMenuSelect"  //disabled
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TeamMenuSelect"
 		"xpos"			"30"
-		"xpos_lodef"			"52"
-		"xpos_hidef"			"72"
 		"ypos"			"r40"
-		"ypos_lodef"			"r60"
-		"ypos_hidef"			"r54"
 		"zpos"			"6"
 		"wide"			"450"
 		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"visible_lodef"		"0"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"labelText"		"#TF_SelectATeam"
 		"textAlignment"	"west"
 		"dulltext"		"0"
@@ -221,63 +168,76 @@
 		"font"			"MenuMainTitle"
 		"fgcolor"		"HudOffWhite"
 	}
+
+   "TeamMenuBlue"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TeamMenuBlue"
+		"xpos"			"c-50"  
+		"ypos"			"c-50"
+		"zpos"			"1"
+		"wide"			"50" 
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#TF_BlueTeam_Name"
+		"textAlignment"	"center"
+		"font"			"incon16"
+		"fgcolor"		"base00"
+	}
+
+	"TeamMenuRed"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TeamMenuRed"
+		"xpos"			"c" 
+		"ypos"			"c-50"
+		"zpos"			"1"
+		"wide"			"50" 
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#TF_RedTeam_Name"
+		"textAlignment"	"center"
+		"font"			"incon16"
+		"fgcolor"		"base00"
+	}
 	
 	"TeamMenuAuto"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TeamMenuAuto"
-		"xpos"			"c-280" [$WIN32] 
-		"xpos"			"c-276" [$X360]
-		"xpos_lodef"			"c-255"
-		"xpos_hidef"			"c-260"
-		"ypos"			"55"
-		"ypos_lodef"			"72"
-		"ypos_hidef"			"65"
+		"xpos"			"c-25" 
+		"ypos"			"c"
 		"zpos"			"1"
-		"wide"			"102" [$WIN32] 
-		"wide"			"94" [$X360]
-		"tall"			"24"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"wide"			"50"  
+		"tall"			"25"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_Random"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"wrap"			"0"
-		"font"			"MenuSmallFont"
-		"fgcolor"		"black"
+		"font"			"incon16"
+		"fgcolor"		"violet"
 	}
 	
 	"TeamMenuSpectate"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TeamMenuSpectate"
-		"xpos"			"c-112"
-		"xpos_lodef"			"c-125"
-		"xpos_hidef"			"c-109"
-		"ypos"			"255"
-		"ypos_lodef"	"292"
+		"xpos"			"c-25"
+		"ypos"			"c25"
 		"zpos"			"1"
-		"wide"			"44"
-		"wide_lodef"	"70"
-		"tall"			"20"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"wide"			"50"
+		"tall"			"25"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_Spectate"
-		"textAlignment"	"north"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"wrap"			"0"
-		"font"			"MenuSmallestFont"
-		"font_lodef"	"MenuSmallFont"
-		"fgcolor"		"white"
+		"textAlignment"	"center"
+		"font"			"incon12"
+		"fgcolor"		"green"
 	}
 
-	"MenuBG"
+	"MenuBG" //disabled
 	{
 		"ControlName"	"CModelPanel"
 		"fieldName"		"MenuBG"
@@ -288,8 +248,8 @@
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"fov"			"20"
 		
 		"model"
@@ -307,7 +267,7 @@
 		}
 	}	
 	
-	"ShadedBar"
+	"ShadedBar"    //disabled
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"ShadedBar"
@@ -322,8 +282,8 @@
 		"tall_hidef"			"65"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"	
 		"image"			"loadout_bottom_gradient"
 		"tileImage"		"1"
@@ -334,51 +294,89 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BlueCount"
-		"xpos"			"c5"
-		"xpos_lodef"			"c8"
-		"ypos"			"53"
-		"ypos_lodef"			"72"
-		"ypos_hidef"	"63"
+		"xpos"			"c-50"
+		"ypos"			"c-16"
 		"zpos"			"1"
-		"wide"			"90"
-		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"wide"			"50"
+		"tall"			"16"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%bluecount%"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"1"
-		"font"			"TeamMenuBold"
-		"fgcolor"		"black"
+		"font"			"incon16"
+		"fgcolor"		"base00"
 	}		
 	
 	"RedCount"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"RedCount"
-		"xpos"			"c193"
-		"xpos_lodef"			"c176"
-		"ypos"			"53"
-		"ypos_lodef"			"72"
-		"ypos_hidef"	"63"
+		"xpos"			"c"
+		"ypos"			"c-16"
 		"zpos"			"1"
-		"wide"			"90"
-		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"wide"			"50"
+		"tall"			"16"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%redcount%"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"1"
-		"font"			"TeamMenuBold"
-		"fgcolor"		"black"
+		"font"			"incon16"
+		"fgcolor"		"base00"
 	}	
+
+   "BlueBG"
+   {
+      "ControlName"     "EditablePanel"
+      "fieldName"       "BlueBG"
+      "xpos"      "c-50"
+      "ypos"      "c-50"
+      "wide"      "50"
+      "tall"      "50"
+      "visible"   "1"
+      "enabled"   "1"
+      "bgcolor_override"   "blue"
+   }
 	
-	"bluedoor"
+   "RedBG"
+   {
+      "ControlName"     "EditablePanel"
+      "fieldName"       "RedBG"
+      "xpos"      "c"
+      "ypos"      "c-50"
+      "wide"      "50"
+      "tall"      "50"
+      "visible"   "1"
+      "enabled"   "1"
+      "bgcolor_override"   "red"
+   }
+   
+   "SpectateBG"
+   {
+      "ControlName"     "EditablePanel"
+      "fieldName"       "SpectateBG"
+      "xpos"      "c-25"
+      "ypos"      "c"
+      "wide"      "50"
+      "tall"      "25"
+      "visible"   "1"
+      "enabled"   "1"
+      "bgcolor_override"   "base3"
+   }
+	
+   "RandomBG"
+   {
+      "ControlName"     "EditablePanel"
+      "fieldName"       "RandomBG"
+      "xpos"      "c-25"
+      "ypos"      "c25"
+      "wide"      "50"
+      "tall"      "25"
+      "visible"   "1"
+      "enabled"   "1"
+      "bgcolor_override"   "base03"
+   }
+	
+	"bluedoor"  //disabled
 	{
 		"ControlName"	"CModelPanel"
 		"fieldName"		"bluedoor"
@@ -389,8 +387,8 @@
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"fov"			"20"
 		
 		"model"
@@ -451,7 +449,7 @@
 		}
 	}	
 	
-	"reddoor"
+	"reddoor"   //disabled
 	{
 		"ControlName"	"CModelPanel"
 		"fieldName"		"reddoor"
@@ -462,8 +460,8 @@
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"fov"			"20"
 		
 		"model"
@@ -524,7 +522,7 @@
 		}
 	}		
 	
-	"autodoor"
+	"autodoor"  //disabled
 	{
 		"ControlName"	"CModelPanel"
 		"fieldName"		"autodoor"
@@ -535,8 +533,8 @@
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"fov"			"20"
 		
 		"model"
@@ -573,7 +571,7 @@
 		}
 	}		
 	
-	"spectate"
+	"spectate"  //disabled
 	{
 		"ControlName"	"CModelPanel"
 		"fieldName"		"spectate"
@@ -584,8 +582,8 @@
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"fov"			"20"
 		
 		"model"
