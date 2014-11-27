@@ -47,16 +47,18 @@ Scheme
       "TFTextDull"                "0 0 255 255"
       "TFMediumBrown"		        "0 0 255 255"
 
-      "QuickListBGDeselected"		"0 0 255 255"
-      "QuickListBGSelected"               "0 0 255 255"
+      //server browser quick play show servers
+      "QuickListBGDeselected"		"253 246 227 255"
+      "QuickListBGSelected"               "253 246 227 255"    //making this not deselected causes the control to look terrible
+                                                               //font on control have their own bg that doesn't get overridden
       
       "White"     "101 123 131 255"    //tab title text, base00
       "OffWhite"  "147 161 161 255"    //tab background title text, base1
 
     
 	    // background colors, comments by valve
-		"ControlBG"			"0 0 255 255"		// background color of controls
-		"ControlDarkBG"		"0 0 255 255"		// darker background color; used for background of scrollbars
+		"ControlBG"			"255 0 255 255"		// background color of controls
+		"ControlDarkBG"		"0 255 255 255"		// darker background color; used for background of scrollbars
 		"WindowBG"			"0 0 0 255"		// background color of text edit panes (chat, text entries, etc.)
 		"SelectionBG"		"0 0 0 255"	// background color of any selected text or menu item
 		"SelectionBG2"		"0 0 0 255"		// selection background in window w/o focus
