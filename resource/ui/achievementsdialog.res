@@ -1,6 +1,7 @@
 //------------------------------------
 // Achievements Dialog
 //------------------------------------
+//this is for everything on the panel except the list of achievements
 "AchievementsDialog.res"
 {	
 	"AchievementsDialog"
@@ -18,7 +19,7 @@
 		"tabPosition"				"0"
 		"settitlebarvisible"		"1"
 		"title"						"#GameUI_Achievements_Title"
-		"borderwidth"				"15"
+      "border"       "base00Border"
 	}
 	
 	"Back" //back button
@@ -66,15 +67,15 @@
 		"ypos"		"136"
 		"wide"		"600"
 		"tall"		"268"
-		"fillcolor"	"32 32 32 255"
+		"fillcolor"	"base3"
 		"zpos"	"-3"
 		"visible"		"1"
 		"enabled"		"1"
 		"pinCorner"		"0"
 		"autoResize"		"3"
 	}
-	
-	"PercentageBarBackground" //light grey overall percentage
+
+	"PercentageBarBackground" //overall percentage bg
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"PercentageBarBackground"
@@ -82,13 +83,13 @@
 		"ypos"		"67"
 		"wide"		"584"
 		"tall"		"16"
-		"fillcolor"	"60 56 53 255"
+		"fillcolor"	"base1"
 		"zpos"	"-2"
 		"visible"		"0"
 		"enabled"		"1"
 	}
 	
-	"PercentageBar" //dark grey current completed
+	"PercentageBar" //overall current completed
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"PercentageBar"
@@ -96,13 +97,13 @@
 		"ypos"		"67"
 		"wide"		"0"
 		"tall"		"16"
-		"fillcolor"	"156 82 33 255"
+		"fillcolor"	"yellow"
 		"zpos"	"-1"
 		"visible"		"0"
 		"enabled"		"1"
 	}
 	
-	"PercentageText" //Percent Text inside the percentage field
+	"PercentageText" //Percent Text inside the percentage field, overall progress
 	{
 		"ControlName"		"Label"
 		"fieldName"		"PercentageText"
@@ -110,18 +111,12 @@
 		"ypos"		"46"
 		"wide"		"200"
 		"tall"		"20"
-		"autoResize"		"0"
-		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"		"0"
 		"labelText"		"0%"
 		"textAlignment"		"east"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"		"0"
-		"fillcolor"	"255 255 255 255"
-		"font"		"AchievementItemDescription"	//"defaultlarg"
+      "fgcolor_override"      "magenta"
+		"font"		"incon12"	
 	}
 	
 	"achievement_pack_combo"
@@ -139,13 +134,14 @@
 	
 	"ProgressBackground" // dark box around progress bar and 'achievements earned' label
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"		"EditablePanel"
 		"fieldName"		"ProgressBackground"
 		"xpos"		"15"
 		"ypos"		"42"
 		"wide"		"600"
 		"tall"		"50"
-		"fillcolor"	"32 32 32 255"
+		"bgcolor"	"base3"
+      "border"    "base00Border"
 		"zpos"	"-3"
 		"visible"		"1"
 		"enabled"		"1"
