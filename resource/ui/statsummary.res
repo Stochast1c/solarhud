@@ -12,9 +12,9 @@
 		"enabled"	"1"
 	}
 
-	"MainBackground"
+	"MainBackground"     //loading panel for stats
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"		"EditablePanel"
 		"fieldName"		"MainBackground"
 		"xpos"			"0"
 		"ypos"			"0"
@@ -22,11 +22,10 @@
 		"tall"			"480"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			""
-		"scaleImage"		"1"
-	}	
+      "bgcolor_override"      "base3"	
+   }	   
 
-	"MapInfo"
+	"MapInfo"      //loading panel once past 3bars
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"	"MapInfo"
@@ -36,23 +35,9 @@
 		"tall"		"480"
 		"visible"	"0"
 		"enabled"	"1"
-		"bgcolor_override"	"46 43 42 255"
+		"bgcolor_override"	"base3"
 	
-		"Background"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"Background"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"640"
-			"tall"			"480"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"stamp_background_map"
-			"scaleImage"		"1"
-		}
-
-		"MapImage"
+		"MapImage"     //little pictures of the map
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"MapImage"
@@ -98,7 +83,8 @@
 			{
 				"ControlName"		"CExLabel"
 				"fieldName"		"ActualLabel"
-				"font"			"HudFontSmallBold"
+				"font"			"incon16"
+            "fgcolor_override"   "cyan"
 				"labelText"		"#TF_Contributed"
 				"textAlignment"		"center"
 				"xpos"			"10"
@@ -134,7 +120,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Title"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
 			"labelText"		"%title%"
 			"textAlignment"	"north"
 			"xpos"			"c20"
@@ -146,13 +132,13 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override" "255 181 50 255"
+			"fgcolor_override" "yellow"
 		}
 		"MapAuthors"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"MapAuthors"
-			"font"			"HudFontSmallBold"
+			"font"			"incon12"
 			"labelText"		"%authors%"
 			"textAlignment"	"north"
 			"xpos"			"c20"
@@ -160,11 +146,9 @@
 			"zpos"			"2"
 			"wide"			"275"
 			"tall"			"275"
-			"autoResize"	"0"
-			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"wrap"			"0"
+         "fgcolor_override"     "magenta"
 		}
 
 		"MapLeaderboardTitle"
@@ -187,11 +171,11 @@
 		}
 	}
 
-	"OnYourWayLabel"
+	"OnYourWayLabel"     //Text is name of label
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"OnYourWayLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
 		"labelText"		"#LoadingMap"
 		"textAlignment"		"center"
 		"xpos"			"c+10"
@@ -199,17 +183,15 @@
 		"zpos"			"40"
 		"wide"			"285"
 		"tall"			"35"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fgcolor_override" "173 168 148 255"
+		"visible"		"0"
+		"enabled"		"0"
+		"fgcolor_override" "base00"
 	}					
 	"MapLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"MapLabel"
-		"font"			"HudFontMediumBigBold"
+		"font"			"incon20"
 		"labelText"		"%maplabel%"
 		"textAlignment"		"center"
 		"xpos"			"c-25"
@@ -217,16 +199,15 @@
 		"zpos"			"50"
 		"wide"			"350"
 		"tall"			"35"
-		"autoResize"	"0"
-		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+      "fgcolor_override"   "cyan"
 	}
 	"MapType"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"MapType"
-		"font"			"HudFontSmallBold"
+		"font"			"incon12"
 		"labelText"		"%maptype%"
 		"textAlignment"	"center"
 		"xpos"			"c-25"
@@ -234,10 +215,9 @@
 		"zpos"			"50"
 		"wide"			"350"
 		"tall"			"35"
-		"autoResize"	"0"
-		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+      "fgcolor_override"   "magenta"
 	}					
 	"StatData"
 	{
@@ -2600,13 +2580,13 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TipImage"
-		"xpos"			"c-285"
+		"xpos"			"c-28599999"
 		"ypos"			"412"
 		"zpos"			"12"
 		"wide"			"35"
 		"tall"			"35"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			""	
 		"scaleImage"	"1"	
 	}
@@ -2620,38 +2600,30 @@
 		"textAlignment"			"west"
 		"textAlignment_hidef"		"north-west"
 		"textAlignment_lodef"		"north-west"
-		"xpos"			"c-245"
-		"xpos_lodef"			"c-180"
-		"xpos_hidef"			"c-180"
+		"xpos"			"c-24599999"
 		"ypos"			"405"
-		"ypos_hidef"			"362"
-		"ypos_lodef"			"362"
 		"zpos"			"12"
 		"wide"			"350"
-		"wide_hidef"		"360"
-		"wide_lodef"		"360"
 		"tall"			"48"
-		"tall_hidef"	"60"
-		"tall_lodef"	"60"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"wrap"			"1"
 	}
-	"NextTipButton" [$WIN32]
+	"NextTipButton" 
 	{
 		"ControlName"		"Button"
 		"fieldName"		"NextTipButton"
-		"xpos"			"c-248"
+		"xpos"			"c-24899999"
 		"ypos"			"310"
 		"zpos"			"6"
 		"wide"			"90"
 		"tall"			"15"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"labelText"		"#TF_NextTip"
 		"textAlignment"	"center"
