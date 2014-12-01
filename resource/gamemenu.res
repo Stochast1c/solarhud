@@ -5,7 +5,6 @@
 		"label"			"#MMenu_ResumeGame"
 		"command"		"ResumeGame"
 		"OnlyInGame"	"1"
-		"subimage" "icon_resume"
 	}
 	"QuickplayButton"
 	{
@@ -23,23 +22,20 @@
 	}
 	"PlayPVEButton"
 	{
-		"label" "#MMenu_PlayCoop" 
+		"label" "MvM" 
 		"command" "playpve"
-		"subimage" "glyph_coop"
 		"OnlyAtMenu" "1"
 	}
 	"ServerBrowserButton"
 	{
 		"label" "#MMenu_Servers" 
 		"command" "OpenServerBrowser"
-		"subimage" "glyph_server_browser"
 		"OnlyAtMenu" "1"
 	} 
 	"ChangeServerButton"
 	{
 		"label" "#MMenu_ChangeServer" 
 		"command" "OpenServerBrowser"
-		"subimage" "glyph_server_browser"
 		"OnlyInGame" "1"
 	}
 	"ReplayBrowserButton"
@@ -87,7 +83,6 @@
 	{
 		"label" "#MMenu_CharacterSetup"
 		"command" "engine open_charinfo"
-		"subimage" "glyph_items"
 	}
 
 	// These buttons are only shown while in-game
@@ -116,4 +111,41 @@
 		"subimage" "icon_whistle"
 		"tooltip" "#MMenu_RequestCoach"
 	}
+   "QuitButton"
+   {
+      "label"        "#TF_Quit_Title"
+      "command"      "engine replay_confirmquit"
+      "OnlyAtMenu"   "1"
+   }
+   "DisconnectButton"
+   {
+      "label"        "#GameUI_GameMenu_Disconnect"
+      "command"      "engine disconnect"
+      "OnlyInGame"   "1"
+   }
+   "MinmodeButton"
+   {
+      "label"     "Toggle Minmode"
+      "command"      "engine toggle cl_hud_minmode" 
+   }
+   "ResurfedButton"
+   {
+      "label"     "ReSurfed"
+      "command"      "engine connect 216.52.143.58:27015"
+   }
+   "ReSusurfedButton"
+   {
+      "label"     "ReSuSurfed"
+      "command"      "engine connect 162.248.92.11:27015"
+   }
+   "AusAdvButton"
+   {
+      "label"     "Aus Adv"
+      "command"      "engine connect 125.63.61.72:27016"
+   }
+   "AusBegButton"
+   {
+      "label"     "Aus Beginner"
+      "command"      "engine connect 125.63.61.72:27015"
+   }
 }
