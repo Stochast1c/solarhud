@@ -2692,6 +2692,127 @@ Scheme
 	// describes all the border types
 	Borders
 	{
+		base00Border
+		{
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
+		}
+		orangeBorder
+		{
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "orange"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "orange"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "orange"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "orange"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "orange"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "orange"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "orange"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "orange"
+					"offset" "1 1"
+				}
+			}
+		}
+
 		NoBorder
 		{
 			"inset" "0 0 0 0"
