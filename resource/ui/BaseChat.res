@@ -6,8 +6,8 @@
 		"fieldName" 		"HudChat"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"3"
-		"ypos"			"270"
+		"xpos"			"r303"      //right side of screen to avoid clipping with sm dialog boxes
+		"ypos"			"r108"
 		"wide"	 		"300"
 		"tall"	 		"105"
 		"PaintBackgroundType"	"1"
