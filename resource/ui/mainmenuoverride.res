@@ -305,7 +305,7 @@
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"border"		"base00Border"
-      "bgcolor"      "base2"
+      "bgcolor_override"      "base2"
 		
 		"TipSubLabel"
 		{
@@ -795,8 +795,8 @@
 		"xpos"			"3"
 		"ypos"			"28"
 		"zpos"			"10"
-		"wide"			"32"
-		"tall"			"32"
+		"wide"			"20"
+		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -808,34 +808,18 @@
 		"navRight"		"Notifications_Panel"
 		"navToRelay"	"Notifications_ShowButtonPanel_SB"
 		
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"16"
-			"ypos"			"0"
-			"zpos"			"3"
-			"wide"			"16"
-			"tall"			"16"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"glyph_achievements"
-			"scaleImage"	"1"
-			"drawcolor" "green"
-		}				
-		
 		"Notifications_CountLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Notifications_CountLabel"
 			"font"			"incon12"
 			"labelText"		"%noticount%"
-			"textAlignment"	"center"
-			"xpos"			"16"
-			"ypos"			"0"
+			"textAlignment"	"right"
+			"xpos"			"12"
+			"ypos"			"1"
 			"zpos"			"4"
-			"wide"			"16"
-			"tall"			"16"
+			"wide"			"8"
+			"tall"			"8"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -845,21 +829,19 @@
 	
 		"Notifications_ShowButtonPanel_SB"  //this is the actual button
 		{
-			"ControlName"	"CExImageButton"
+			"ControlName"	"CExButton"
 			"fieldName"		"Notifications_ShowButtonPanel_SB"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"
-			"wide"			"32"
-			"tall"			"32"
+			"wide"			"20"
+			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"3"
 			"visible"		"1"
 			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		""
+			"labelText"		"!"
 			"font"			"incon20"
-         "fgcolor_override"   "yellow"
 			"textAlignment"	"center"
 			"default"		"1"
 
@@ -871,24 +853,14 @@
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			"paintbackground" "0"
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"255 255 255 255"
-			
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"0"
-				"ypos"			"0"
-				"zpos"			"1"
-				"wide"			"32"
-				"tall"			"32"
-				"visible"		"1"
-				"enabled"		"1"
-				"image"			"button_Alert"
-				"scaleImage"	"1"
-			}
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "yellow"
+         "defaultBgColor_override"     "base2"
+         "armedFgColor_override"       "yellow"
+         "armedBgColor_override"       "base03"
+         "depressedFgColor_override"   "yellow"
+         "depressedBgColor_override"   "base03"
+         
 		}
 	}
 	
@@ -896,8 +868,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_Panel"
-		"xpos"			"c0"
-		"ypos"			"102"
+		"xpos"			"3"
+		"ypos"			"32"
 		"zpos"			"10"
 		"wide"			"210"
 		"tall"			"80"
@@ -992,7 +964,7 @@
 			"wide"			"210"
 			"tall"			"135"
 			"PaintBackgroundType"	"2"
-			"fgcolor_override"	"117 107 94 255"
+			"fgcolor_override"	"cyan"
 			
 			"Notifications_Control"
 			{
