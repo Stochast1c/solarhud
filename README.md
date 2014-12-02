@@ -19,7 +19,8 @@ Major things left to do:
    koth timers
    winpanel
    stopwatch mode timer
-   main menu
+   main menu - colors setup
+   outline popup panels (serverbrowser, console, options, etc.)
    team selection - done to a working state
    class selection - dont to a working state
    item charge
