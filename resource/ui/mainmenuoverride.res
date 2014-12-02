@@ -134,27 +134,12 @@
 	   "bgcolor_override"      "base3"	
 	}
 					
-	"TFLogoImage"     //replace this with SOLARHUD (underlined), each letter is a different accent color, underline is base03
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"TFLogoImage"
-		"xpos"			"c-290"
-		"ypos"			"24"
-		"zpos"			"-99"
-		"wide"			"256"
-		"tall"			"64"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../logo/new_tf2_logo"
-		"scaleImage"	"1"
-	}	
-
    "LogoLabel"
    {
       "ControlName"  "EditablePanel"
       "fieldName"    "LogoLabel"
-      "xpos"         "c-290"
-      "ypos"         "24"
+      "xpos"         "c-128"  //centered
+      "ypos"         "3"      //away from the very top 
       "wide"         "256"
       "tall"         "66"
       "visible"      "1"
@@ -286,7 +271,7 @@
          "fieldName"       "Line"
          "bgcolor_override"         "base03"
          "xpos"            "0"
-         "ypos"            "52"     //apparently 64pt != 64 tall
+         "ypos"            "52"     //apparently 64pt != 64 tall for non dangling letters (p,g,q)
          "wide"            "256"
          "tall"            "2"
          "visible"         "1"
@@ -308,7 +293,7 @@
 		"scaleImage"	"1"
 	}
 	
-	"TooltipPanel"
+	"TooltipPanel"    //may need to resize/color
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"TooltipPanel"
@@ -319,13 +304,14 @@
 		"tall"			"50"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"border"		"base00Border"
+      "bgcolor"      "base2"
 		
 		"TipSubLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TipSubLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
 			"labelText"		"%tipsubtext%"
 			"textAlignment"	"center"
 			"xpos"			"20"
@@ -337,7 +323,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"117 107 94 255"
+			"fgcolor_override"	"base00"
 			"wrap"			"1"
 		}
 		
@@ -345,7 +331,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TipLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon16"
 			"labelText"		"%tiptext%"
 			"textAlignment"	"center"
 			"xpos"			"20"
@@ -357,7 +343,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"235 226 202 255"
+			"fgcolor_override"	"yellow"
 			"auto_wide_tocontents" "1"
 		}
 	}	
@@ -806,7 +792,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"c228"
+		"xpos"			"3"
 		"ypos"			"28"
 		"zpos"			"10"
 		"wide"			"32"
@@ -835,14 +821,14 @@
 			"enabled"		"1"
 			"image"			"glyph_achievements"
 			"scaleImage"	"1"
-			"drawcolor" "210 125 33 255"
+			"drawcolor" "green"
 		}				
 		
 		"Notifications_CountLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Notifications_CountLabel"
-			"font"			"HudFontSmallestBold"
+			"font"			"incon12"
 			"labelText"		"%noticount%"
 			"textAlignment"	"center"
 			"xpos"			"16"
@@ -854,10 +840,10 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"255 255 255 255"
+			"fgcolor_override"	"magenta"
 		}
 	
-		"Notifications_ShowButtonPanel_SB"
+		"Notifications_ShowButtonPanel_SB"  //this is the actual button
 		{
 			"ControlName"	"CExImageButton"
 			"fieldName"		"Notifications_ShowButtonPanel_SB"
@@ -872,14 +858,16 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		""
-			"font"			"HudFontSmallestBold"
+			"font"			"incon20"
+         "fgcolor_override"   "yellow"
 			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
 			"default"		"1"
 
 			"Command"		"noti_show"
 			"navActivate"	"<QuickplayButton"
+
+         "border_default"       "base00Border"
+         "border_armed"         "orangeBorder"
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
@@ -915,8 +903,9 @@
 		"tall"			"80"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"paintbackground"	"0"
-		"border"		"MainMenuHighlightBorder"
+		"paintbackground"	"1"
+      "bgcolor_override"      "base2"
+		"border"		"base00Border"
 
 		"navUp"			"MOTD_ShowButtonPanel"
 		"navDown"		"SettingsButton"
@@ -939,7 +928,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"incon12"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -979,7 +968,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Notifications_TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon16"
 			"labelText"		"%notititle%"
 			"textAlignment"	"north-west"
 			"xpos"			"12"
@@ -990,7 +979,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"46 43 42 255"
+			"fgcolor_override"	"base00"
 			"wrap"			"1"
 		}
 		
@@ -1200,59 +1189,6 @@
 			"depressedBgColor_override"   "base03"
 		}
 	}
-
-
-	"QuickplayChangeButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"QuickplayChangeButton"
-		"xpos"			"99999"
-   }
-	"RequestCoachButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"RequestCoachButton"
-		"xpos"			"99999"
-   }
-	"SteamWorkshopButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"SteamWorkshopButton"
-		"xpos"			"99999"
-   }
-	"GeneralStoreButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"GeneralStoreButton"
-		"xpos"			"99999"
-   }
-	"CreateServerButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"CreateServerButton"
-		"xpos"			"99999"
-   }
-		
-	"TrainingButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"TrainingButton"
-		"xpos"			"99999"
-   }
-
-	"QuickPlayButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"QuickPlayButton"
-		"xpos"			"99999"
-   }
-
-	"ReplayBrowserButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"ReplayBrowserButton"
-		"xpos"			"99999"
-   }
 
 	"ServerBrowserButton"
 	{
@@ -1854,4 +1790,70 @@
 			"depressedBgColor_override"   "base03"
 		}
 	}
+	"TFLogoImage"     //disabled, try removing to see if it is removed
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TFLogoImage"
+		"xpos"			"c-290"
+		"ypos"			"24"
+		"zpos"			"-99"
+		"wide"			"256"
+		"tall"			"64"
+		"visible"		"0"
+		"enabled"		"0"
+		"image"			"../logo/new_tf2_logo"
+		"scaleImage"	"1"
+	}	
+   //removed buttons
+	"QuickplayChangeButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"QuickplayChangeButton"
+		"xpos"			"99999"
+   }
+	"RequestCoachButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"RequestCoachButton"
+		"xpos"			"99999"
+   }
+	"SteamWorkshopButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"SteamWorkshopButton"
+		"xpos"			"99999"
+   }
+	"GeneralStoreButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"GeneralStoreButton"
+		"xpos"			"99999"
+   }
+	"CreateServerButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"CreateServerButton"
+		"xpos"			"99999"
+   }
+		
+	"TrainingButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"TrainingButton"
+		"xpos"			"99999"
+   }
+
+	"QuickPlayButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"QuickPlayButton"
+		"xpos"			"99999"
+   }
+
+	"ReplayBrowserButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"ReplayBrowserButton"
+		"xpos"			"99999"
+   }
 }
