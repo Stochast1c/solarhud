@@ -111,13 +111,15 @@
 	}
    "QuitButton"
    {
-      "label"        "#TF_Quit_Title"
+      "label"        "x"
+      "tooltip"        "#TF_Quit_Title"
       "command"      "engine replay_confirmquit"
       "OnlyAtMenu"   "1"
    }
    "DisconnectButton"
    {
-      "label"        "#GameUI_GameMenu_Disconnect"
+      "label"        "x"
+      "tooltip"        "#GameUI_GameMenu_Disconnect"
       "command"      "engine disconnect"
       "OnlyInGame"   "1"
    }
@@ -125,6 +127,26 @@
    {
       "label"     "Toggle Minmode"
       "command"      "engine toggle cl_hud_minmode" 
+   }
+   "Chi1Button"
+   {
+      "label"     "Chi 1 DM"
+      "command"      "engine connect 216.52.143.58:27015"
+   }
+   "Chi2Button"
+   {
+      "label"     "Chi 2 DM"
+      "command"      "engine connect 162.248.92.11:27015"
+   }
+   "Dal1Button"
+   {
+      "label"     "Dal 1 DM"
+      "command"      "engine connect 125.63.61.72:27016"
+   }
+   "Dal2Button"
+   {
+      "label"     "Dal 2 DM"
+      "command"      "engine connect 125.63.61.72:27015"
    }
    "ResurfedButton"
    {
