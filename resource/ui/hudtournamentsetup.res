@@ -1,8 +1,10 @@
+//would like for this to be repositioned, not sure how
+
 "Resource/UI/HudTournamentSetup.res"
 {
 	"HudTournamentSetupBG"
 	{
-		"ControlName"		"ScalableImagePanel"
+		"ControlName"		"EditablePanel"
 		"fieldName"		"HudTournamentSetupBG"
 		"xpos"			"0"
 		"ypos"			"0"
@@ -13,93 +15,80 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../HUD/tournament_panel_brown"
+      "bgcolor_override"   "base3"
 
-
-		"src_corner_height"	"23"				// pixels inside the image
-		"src_corner_width"	"23"
-		
-		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"8"	
 	}
 
 	"TournamentSetupLabel"
 	{	
-		"ControlName"		"Label"
+		"ControlName"		"CExLabel"
 		"fieldName"		"TournamentLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
+      "fgcolor"      "base00"
 		"xpos"			"8"
 		"ypos"			"0"
 		"zpos"			"1"
 		"wide"			"180"
 		"tall"			"35"
-		"autoResize"		"0"
-		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"wrap"			"0"
 		"labelText"		"%tournamentstatelabel%"
-		"textAlignment"		"west"
+		"textAlignment"		"center"
 	}
 
 	"TournamentTeamNameLabel"
 	{	
-		"ControlName"		"Label"
+		"ControlName"		"CExLabel"
 		"fieldName"		"TournamentTeamNameLabel"
-		"font"			"HudFontSmallest"
-		"xpos"			"67"
+		"font"			"incon12"
+      "fgcolor"      "base00"
+		"xpos"			"30"
 		"ypos"			"28"
 		"zpos"			"1"
-		"wide"			"74"
-		"tall"			"15"
-		"autoResize"		"0"
-		"pinCorner"		"0"
+		"wide"			"60"
+		"tall"			"12"
 		"visible"		"1"
 		"enabled"		"1"
-		"wrap"			"0"
 		"labelText"		"#Tournament_TeamNamePanel"
-		"textAlignment"		"west"
+		"textAlignment"		"east"
 	}
 
 	"TournamentNameEdit"
 	{
 		"ControlName"		"TextEntry"
 		"fieldName"		"TournamentNameEdit"
-		"xpos"		"8"
-		"ypos"		"27"
-		"wide"		"120"
-		"tall"		"16"
-		"autoResize"		"0"
-		"pinCorner"		"0"
+      "font"      "incon12"      //doesn't do anything
+		"xpos"		"92"
+		"ypos"		"28"
+		"wide"		"88"
+		"tall"		"12"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"		"0"
 		"textHidden"		"0"
 		"editable"		"1"
-		"maxchars"		"5"
+		"maxchars"		"6"      //max allowed
 		"NumericInputOnly"	"0"
-		"unicode"		"0"
-		"wrap"			"0"
-		"fgcolor_override"		"235 226 202 255"
-		"bgcolor_override"	"0 0 0 255"
+		"unicode"		"1"
+		"fgcolor_override"		"base00"
+		"bgcolor_override"	"base2"
 		"labelText"		"%teamname%"
 		"textAlignment"		"west"
 	}
 
-	"HudTournamentNameBG"
-	{
+	"HudTournamentNameBG"      //not sure what this does
+	{                          //makes a white panel, needs to be removed
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"HudTournamentNameBG"
-		"xpos"		"8"
+		"xpos"		"999998"
 		"ypos"		"28"
 		"wide"		"50"
 		"tall"		"14"
 		"zpos"		"0"
 		"autoResize"	"0"
 		"pinCorner"	"0"
-		"visible"	"1"
-		"enabled"	"1"
-		"fillcolor"	"0 0 0 255"
+		"visible"	"0"
+		"enabled"	"0"
+		"fillcolor"	"base03"
 		"scaleImage"	"1"
 	}
 
@@ -112,40 +101,51 @@
 		"wide"		"70"
 		"tall"		"14"
 		"zpos"		"0"
-		"autoResize"	"0"
-		"pinCorner"		"2"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"Not Ready"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
 		"command"		"teamnotready"
 		"default"		"1"
-		"font"			"HudFontSmallestBold"
-		"fgcolor"		"Red"
+		"font"			"incon12"
+      
+      "border_default"  "base00Border"
+      "paintbackground"	"1"      //let's you change button bg
+
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base0"
+      "armedBgColor_override"       "base03"
+      "depressedFgColor_override"   "base0"
+      "depressedBgColor_override"   "base03"
+
 	}
 
 	"TournamentReadyButton"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"TournamentReadyButton"
-		"xpos"		"96"
+		"xpos"		"102"
 		"ypos"		"46"
 		"wide"		"70"
 		"tall"		"14"
 		"zpos"		"0"
-		"autoResize"	"0"
-		"pinCorner"		"2"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"Ready"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
 		"command"		"teamready" 
 		"default"		"1"
-		"font"			"HudFontSmallestBold"
-		"fgcolor"		"FooterBGBlack"
+		"font"			"incon12"
+      
+      "border_default"  "base00Border"
+      "paintbackground"	"1"      //let's you change button bg
+
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base0"
+      "armedBgColor_override"       "base03"
+      "depressedFgColor_override"   "base0"
+      "depressedBgColor_override"   "base03"
 	}
 }
