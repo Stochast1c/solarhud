@@ -12,8 +12,8 @@
 		"autoResize"	"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"PaintBackgroundType"	"2"
-		"bgcolor_override"	"base3trans"
+		"PaintBackground"	"1"
+		"bgcolor_override"	"base03trans"
 	}
 	
 	"SplashLabel"
@@ -29,6 +29,6 @@
 		"wide"			"500"
 		"tall"			"50"
 		"autoResize"	"0"
-		"fgcolor"		"base00"
+		"fgcolor"		"base00" //doesn't do anything
 	}
 }

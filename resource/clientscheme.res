@@ -38,9 +38,17 @@ Scheme
       "cyan"         "42  161 152 255" 
       "green"        "133 153   0 255"  
 
+      "base03trans"       "0    43  54 150"
+      "base02trans"       "7    54  66 150"
+      "base01trans"       "88  110 117 150"
+      "base00trans"       "101 123 131 150"
+      "base0trans"        "131 148 150 150"
+      "base1trans"        "147 161 161 150"
+      "base2trans"        "238 232 213 150"
       "base3trans"        "253 246 227 150"
+		
 
-		// base colors
+      // base colors
 		//"Orange"			"178 82 22 255"
 		"OrangeDim"			"203 75 22 120"   //orange, trans
 		"LightOrange"		"188 112 0 128"
