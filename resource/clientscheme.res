@@ -38,6 +38,7 @@ Scheme
       "cyan"         "42  161 152 255" 
       "green"        "133 153   0 255"  
 
+      "base3trans"        "253 246 227 150"
 
 		// base colors
 		//"Orange"			"178 82 22 255"
