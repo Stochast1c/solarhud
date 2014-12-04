@@ -4,8 +4,11 @@
 	{
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
+      "visible_minmode" "0"
 		"enabled"		"1"
-		"xpos"			"94"	
+      "enabled_minmode" "0"
+		"xpos"			"94"
+      "xpos_minmode"    "99999"	
 		"ypos"			"r52"	
 		"wide"			"100"
 		"tall"			"50"
@@ -13,7 +16,7 @@
 		"MeterBG"		"Gray"
 	}
 	
-	"ItemEffectMeterBG"
+	"ItemEffectMeterBG"  //disabled
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"ItemEffectMeterBG"
@@ -48,9 +51,8 @@
 		"tabPosition"			"0"
 		"labelText"				"#TF_KillStreak"
 		"textAlignment"			"center"
-		"dulltext"				"0"
-		"brighttext"			"0"
 		"font"					"incon16"
+      "fgcolor"            "yellow"
 	}
 
 	"ItemEffectMeter"
@@ -71,8 +73,6 @@
 		"visible"				"0"
 		"enabled"				"0"
 		"textAlignment"			"Left"
-		"dulltext"				"0"
-		"brighttext"			"0"
 	}					
 	
 	"ItemEffectMeterCount"
@@ -91,5 +91,6 @@
 		"labelText"				"%progresscount%"
 		"textAlignment"			"north"
 		"font"					"incon16"
+      "fgcolor"            "orange"
 	}
 }

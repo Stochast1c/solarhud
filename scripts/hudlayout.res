@@ -1374,11 +1374,14 @@
 	{
 		"fieldName"		"CTFKillStreakNotice"
 		"xpos"			"0"			
+      "xpos_minmode" "99999"
 		"ypos"			"0"
 		"wide"			"640"
 		"tall"			"480"
 		"visible"		"1"
+      "visible_minmode"    "0"
 		"enabled"		"1"
+      "enabled_minmode"    "0"
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
 	}
