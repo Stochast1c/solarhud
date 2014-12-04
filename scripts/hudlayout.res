@@ -210,6 +210,7 @@
 	{
 		"fieldName"				"CHudAccountPanel"
 		"xpos"					"c57"
+      "xpos_minmode"       "99999"
 		"ypos"					"c30"	
 		"wide"					"116"
 		"tall"  				"180"
@@ -824,6 +825,7 @@
 	{
 		"fieldName"				"HudControlPointIcons"
 		"xpos"					"0"
+      "xpos_minmode"       "99999"
 		"ypos"					"410"
 		"wide"					"f0"
 		"tall"					"200"
