@@ -1,3 +1,4 @@
+// eyelander
 "Resource/UI/HudItemEffectMeter_Demoman.res"
 {
 	HudItemEffectMeter

@@ -1,3 +1,4 @@
+// cow mangler 5000
 "Resource/UI/HudItemEffectMeter_ParticleCannon.res"
 {
 	HudItemEffectMeter

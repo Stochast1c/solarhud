@@ -1,3 +1,4 @@
+// spy-cicle
 "Resource/UI/HudItemEffectMeter_SpyKnife.res"
 {
 	HudItemEffectMeter

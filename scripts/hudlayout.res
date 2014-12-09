@@ -68,22 +68,26 @@
 		"red_active_xpos_minmode"	"105"
 	}	
 
+
+   // sandman, wrap assassin, buff banner, battalian's backup, concheror, phlogistinator, sandvich, buffalo steak sandvich, jarate, invis watch, cloak and dagger, dead ringer
+
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r162"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
-		"ypos"			"r52"	[$WIN32]
-		"ypos_minmode"	"r50"	[$WIN32]
-		"xpos"			"r194"	[$X360]
-		"ypos"			"r74"	[$X360]
+      "visible_minmode"    "0"
+      "enabled_minmode"    "0"
+		"xpos"			"r162"
+		"xpos_minmode"	"99999"
+		"ypos"			"r52"	
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
+
+   // all mediguns
 	
 	HudMedicCharge
 	{
@@ -96,6 +100,8 @@
       "tall"         "60"
 	}
 	
+   // stickybomb launcher, scottish resistance, sticky jumper, chargin' targe, splendid screen, tide turner
+
 	HudDemomanCharge
 	{
 		"fieldName"		"HudDemomanCharge"
@@ -114,6 +120,8 @@
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}	
+
+   // huntsman
 
 	HudBowCharge
 	{

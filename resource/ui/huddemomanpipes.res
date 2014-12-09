@@ -1,3 +1,5 @@
+// stickies, shields
+
 "Resource/UI/HudDemomanPipes.res"
 {
 	"background"

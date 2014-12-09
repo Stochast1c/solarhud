@@ -1,3 +1,4 @@
+// soda-popper, baby face's blaster
 "Resource/UI/HudItemEffectMeter_SodaPopper.res"
 {
 	HudItemEffectMeter

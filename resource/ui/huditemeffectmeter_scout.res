@@ -1,3 +1,4 @@
+//bonk, crit-a-cola, mad milk
 "Resource/UI/HudItemEffectMeter_Scout.res"
 {
 	HudItemEffectMeter

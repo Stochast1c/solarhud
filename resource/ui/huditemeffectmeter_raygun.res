@@ -1,3 +1,4 @@
+//bison
 "Resource/UI/HudItemEffectMeter_Raygun.res"
 {
 	HudItemEffectMeter

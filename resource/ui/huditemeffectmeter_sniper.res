@@ -1,3 +1,4 @@
+// bazaar bargain
 "Resource/UI/HudItemEffectMeter_Sniper.res"
 {
 	HudItemEffectMeter

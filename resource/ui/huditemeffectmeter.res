@@ -1,3 +1,5 @@
+//sandman, wrap assassin, buff banner, battalian's backup, concheror, phlogistinator, sandvich, buffalo steak sandvich, jarate, invis watch, cloak and dagger, dead ringer
+
 "Resource/UI/HudItemEffectMeter.res"
 {
 	HudItemEffectMeter

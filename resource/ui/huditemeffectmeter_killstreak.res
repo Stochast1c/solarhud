@@ -1,3 +1,4 @@
+//killstreaks
 "Resource/UI/HudItemEffectMeter_Demoman.res"
 {
 	HudItemEffectMeter
