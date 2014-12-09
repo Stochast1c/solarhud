@@ -17,7 +17,7 @@ Major things left to do:
    tournament mode spec gui
    control points - trying to blow up the images looks horrible with their border, try if you can use editablepanels or if changing the border works
    koth timers
-   winpanel
+   winpanel - override team color definition
    stopwatch mode timer
    outline popup panels (serverbrowser, console, options, etc.)
    team selection - done to a working state

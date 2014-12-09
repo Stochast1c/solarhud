@@ -8,9 +8,9 @@
       "visible_minmode" "0"
 		"enabled"		"1"
       "enabled_minmode" "0"
-		"xpos"			"94"
+		"xpos"			"c-132"
       "xpos_minmode"    "99999"	
-		"ypos"			"r52"	
+		"ypos"			"377"	
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -36,27 +36,25 @@
 		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
 	}
 	
-	"ItemEffectMeterLabel"
+	"ItemEffectMeterLabel"  //The word Streak, currently disabled, but positioned if you want it on
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"25"
-		"ypos"					"27"
+		"xpos"					"0"
+		"ypos"					"0"
 		"zpos"					"2"
-		"wide"					"41"
+		"wide"					"50"
 		"tall"					"16"
-		"autoResize"			"1"
-		"pinCorner"				"2"
-		"visible"				"1"
-		"enabled"				"1"
+		"visible"				"0"
+		"enabled"				"0"
 		"tabPosition"			"0"
 		"labelText"				"#TF_KillStreak"
-		"textAlignment"			"center"
+		"textAlignment"			"west"
 		"font"					"incon16"
-      "fgcolor"            "yellow"
+      "fgcolor_override"            "yellow"
 	}
 
-	"ItemEffectMeter"
+	"ItemEffectMeter"    //Nothing???
 	{	
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ItemEffectMeter"
@@ -76,21 +74,20 @@
 		"textAlignment"			"Left"
 	}					
 	
-	"ItemEffectMeterCount"
+	"ItemEffectMeterCount"     //number of kills
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"25"
-		"ypos"					"10"
+		"xpos"					"46"
+		"ypos"					"0"
 		"zpos"					"2"
-		"wide"					"40"
-		"tall"					"20"	
-		"pinCorner"				"2"
+		"wide"					"24"
+		"tall"					"16"	
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"%progresscount%"
-		"textAlignment"			"north"
+		"textAlignment"			"east"
 		"font"					"incon16"
       "fgcolor"            "orange"
 	}

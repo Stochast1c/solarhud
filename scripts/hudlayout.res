@@ -872,10 +872,11 @@
 		"fieldName"				"WinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-150"
-		"ypos"					"215"
-		"wide"					"300"
-		"tall"					"300"
+		"xpos"					"0"
+      "xpos_minmode"       "99999"
+		"ypos"					"0"
+		"wide"					"f0"
+		"tall"					"480"
 	}
 
 	ArenaWinPanel
@@ -883,10 +884,10 @@
 		"fieldName"				"ArenaWinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-225"
-		"ypos"					"250"
-		"wide"					"450"
-		"tall"					"218"
+		"xpos"					"0"
+		"ypos"					"0"
+		"wide"					"f0"
+		"tall"					"480"
 	}
 	
 	PVEWinPanel
