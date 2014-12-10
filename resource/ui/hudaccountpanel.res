@@ -2,7 +2,7 @@
 {
 	"CHudAccountPanel"
 	{
-		"delta_item_x"			"16"
+		"delta_item_x"			"-2"
 		"delta_item_start_y"	"90"
 		"delta_item_end_y"		"70"
 		"PositiveColor"			"green"
@@ -34,15 +34,11 @@
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"MetalIcon"
-		"xpos"			"19"
-		"xpos_lodef"	"12"
+		"xpos"			"0"
 		"ypos"			"116"
-		"ypos_lodef"	"112"
 		"zpos"			"1"
 		"wide"			"10"
-		"wide_lodef"	"15"
 		"tall"			"10"
-		"tall_lodef"	"15"
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"	
@@ -54,7 +50,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AccountValue"
-		"xpos"			"28"
+		"xpos"			"10"
 		"ypos"			"108"
 		"zpos"			"2"
 		"wide"			"55"

@@ -33,7 +33,7 @@
       "fieldName" "HudWeaponAmmo"
       "visible"   "1"
       "enabled"   "1"
-      "xpos"      "c0"  
+      "xpos"      "c-11" //to align clips 
       "ypos"      "330" 
       "wide"      "192"
       "tall"      "60"
@@ -76,10 +76,7 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-      "visible_minmode"    "0"
-      "enabled_minmode"    "0"
 		"xpos"			"r162"
-		"xpos_minmode"	"99999"
 		"ypos"			"r52"	
 		"wide"			"100"
 		"tall"			"50"
@@ -217,7 +214,7 @@
 	CHudAccountPanel  //metal
 	{
 		"fieldName"				"CHudAccountPanel"
-		"xpos"					"c57"
+		"xpos"					"c63"
       "xpos_minmode"       "99999"
 		"ypos"					"c30"	
 		"wide"					"116"

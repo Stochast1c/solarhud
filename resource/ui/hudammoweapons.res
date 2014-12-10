@@ -1,5 +1,56 @@
 "Resource/UI/HudAmmoWeapons.res"
 {
+	"AmmoInClip"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoInClip"
+		"font"			"inconb52"
+		"fgcolor"		"base00"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"5"
+		"wide"			"96"
+		"tall"			"60"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"east"	
+		"labelText"		"%Ammo%"
+		
+	}		
+	"AmmoInReserve"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoInReserve"
+		"font"			"inconb24"
+		"fgcolor"		"base1"
+      "xpos"          "96"
+      "ypos"          "0" 
+      "zpos"          "1"
+      "wide"          "96"
+      "tall"          "60" 
+		"visible"		 "1"
+		"enabled"		 "1"
+		"textAlignment"	"west"		
+		"labelText"		"%AmmoInReserve%"
+	}		
+	"AmmoNoClip"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoNoClip"
+		"font"			"inconb52"
+		"fgcolor"		"base00"
+      "xpos"          "71"    //since using an odd number for clip weapons
+      "ypos"          "0" 
+      "zpos"          "1"
+      "wide"          "192"
+      "tall"          "60" 
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"west"		
+		"labelText"		"%Ammo%"
+	}	
+
+   //removed stuff
 	"HudWeaponAmmoBG"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -36,23 +87,6 @@
 		"teambg_3"		"../hud/ammo_blue_bg"
 		"teambg_3_lodef"	"../hud/ammo_blue_bg_lodef"			
 	}
-	"AmmoInClip"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"AmmoInClip"
-		"font"			"inconb52"
-		"fgcolor"		"base00"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"5"
-		"wide"			"96"
-		"tall"			"60"
-		"visible"		"1"
-		"enabled"		"1"
-		"textAlignment"	"east"	
-		"labelText"		"%Ammo%"
-		
-	}		
 	"AmmoInClipShadow"
 	{
 		"ControlName"	"CExLabel"
@@ -70,22 +104,6 @@
 		"labelText"		"%Ammo%"
 		
 	}						
-	"AmmoInReserve"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"AmmoInReserve"
-		"font"			"inconb24"
-		"fgcolor"		"base1"
-      "xpos"          "96"
-      "ypos"          "0" 
-      "zpos"          "1"
-      "wide"          "96"
-      "tall"          "60" 
-		"visible"		 "1"
-		"enabled"		 "1"
-		"textAlignment"	"west"		
-		"labelText"		"%AmmoInReserve%"
-	}		
 	"AmmoInReserveShadow"
 	{
 		"ControlName"	"CExLabel"
@@ -104,23 +122,6 @@
 		"textAlignment"	"south-west"		
 		"labelText"		"%AmmoInReserve%"
 	}									
-	"AmmoNoClip"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"AmmoNoClip"
-		"font"			"inconb52"
-		"fgcolor"		"base00"
-      "xpos"          "0"
-      "ypos"          "0" 
-      "zpos"          "1"
-      "wide"          "192"
-      "tall"          "60" 
-		"visible"		"1"
-		"enabled"		"1"
-		"textAlignment"	"center"		
-		"labelText"		"%Ammo%"
-		
-	}	
 	"AmmoNoClipShadow"
 	{
 		"ControlName"	"CExLabel"

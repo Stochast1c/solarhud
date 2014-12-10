@@ -1,3 +1,5 @@
+//this isn't sized nicely, need to resize things here
+
 "Resource/UI/HudPlayerHealth.res"
 {	
 	// player health data
@@ -5,10 +7,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
-      "xpos"         "c-192"
+      "xpos"         "0"
       "ypos"         "330" 
 		"zpos"			"2"
-		"wide"			"250"
+		"wide"			"550"
 		"tall"			"120"
 		"visible"		"1"
       "visible_minmode" "0"
@@ -62,15 +64,15 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"0"
+		"xpos"			"c-260"
 		"ypos"			"0"
 		"zpos"			"5"
-		"wide"			"192"
+		"wide"			"200"
 		"tall"			"60"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%Health%"
-		"textAlignment"	"center"	
+		"textAlignment"	"east"	
 		"font"			"inconb52"
 		"fgcolor"		"base00"
 	}								
