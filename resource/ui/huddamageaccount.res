@@ -20,8 +20,8 @@
 		"font"			"incon24"
 		"fgcolor"		"red"
 		"xpos"			"c-70"
-		"ypos"			"342"
-		"zpos"			"5"
+		"ypos"			"344"    //fit inbetween the two item meters
+		"zpos"			"15"
 		"wide"			"131"
 		"tall"			"33"
 		"visible"		"1"

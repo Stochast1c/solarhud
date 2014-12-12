@@ -11,7 +11,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-60"
-		"ypos"			"r109"	
+		"ypos"			"346"	
 		"wide"			"120"
 		"tall"			"50"
 		"MeterFG"		"base00"
@@ -22,16 +22,6 @@
 
 	}
 
-	
-	"ItemEffectMeterBG"
-	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"99999"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-	
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
@@ -42,7 +32,6 @@
 		"wide"					"120"
 		"tall"					"6"
 		"visible"				"1"
-		"textAlignment_minmode"			"center"
 		"enabled"				"1"
 		"labelText"				"#TF_Ball"
 		"textAlignment"			"center"
@@ -68,4 +57,15 @@
       "bgcolor_override"     "base03"
 		"textAlignment"			"Left"
 	}					
+	
+   //disabled
+   "ItemEffectMeterBG"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"ItemEffectMeterBG"
+		"xpos"			"99999"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+	
 }
