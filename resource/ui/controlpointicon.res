@@ -26,38 +26,22 @@
 		"enabled"	"1"
 	}	
 
-	"CapPlayerImage"
-	{
-		"ControlName"	"ImagePanel"		
-		"fieldName"	"CapPlayerImage"
-		"xpos"		"0"
-		"ypos"		"0"
-		"zpos"		"3"
-		"wide"		"7"
-		"tall"		"14"
-		"visible"	"0"
-		"enabled"	"1"
-		"image"		"capture_icon"
-		"scaleImage"	"1"
-	}
 
 	"CapNumPlayers"
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"CapNumPlayers"
 		"font"			"incon16"
-      "fgcolor"      "green"
-		"xpos"			"10"
-		"ypos"			"3"
+      "fgcolor_override"      "yellow"    //flashes yellow then stays black
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"4"
-		"wide"			"14"
+		"wide"			"21"
 		"tall"			"21"
-		"autoResize"		"0"
-		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"#ControlPointIconCappers"
-		"textAlignment"		"west"
+		"labelText"		"%numcappers%"
+		"textAlignment"		"center"
 	}
 
 	"OverlayImage"
@@ -75,7 +59,7 @@
 		"scaleImage"	"1"
 	}
 	
-	"CPTimerLabel"
+	"CPTimerLabel"    //not sure what this is
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CPTimerLabel"
@@ -108,5 +92,19 @@
 		"enabled"		"1"
 		"image"			"../sprites/obj_icons/icon_obj_timer"	
 		"scaleImage"	"1"	
+	}
+	"CapPlayerImage"  //disabled, need to make wide/tall 0 to remove
+	{
+		"ControlName"	"ImagePanel"		
+		"fieldName"	"CapPlayerImage"
+		"xpos"		"0"
+		"ypos"		"0"
+		"zpos"		"3"
+		"wide"		"0"
+		"tall"		"0"
+		"visible"	"0"
+		"enabled"	"0"
+		"image"		"capture_icon"
+		"scaleImage"	"1"
 	}
 }
