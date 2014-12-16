@@ -13,16 +13,8 @@ It is highly recommended that you clone the hud rather than download and extract
    and modified to an acceptable standard
 
 Major things left to do:
-   tournament mode ready - done except font for textentry for team name, clientscheme???, need to reposition, done in hudanimations_tf
    tournament mode spec gui
    control points - trying to blow up the images looks horrible with their border, try if you can use editablepanels or if changing the border works
-   koth timers
-   winpanel - override team color definition
    stopwatch mode timer
    outline popup panels (serverbrowser, console, options, etc.)
-   team selection - done to a working state
-   class selection - done to a working state
-   item charge - positioned, not colored perfectly
-   demo stickies - positioned and colored
    loading menu - colored, added font, need to remove giant bg panels and modify the stats panel
-   motd menu - removed completely, may consider adding back if I can change the source to the most recent tf.tv news
