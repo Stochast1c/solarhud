@@ -337,12 +337,10 @@
 		"fieldName" "BuildingStatus_Engineer"
 		"visible"	"1"
 		"enabled"	"1"
+      "xpos_minmode"    "99999"
+      "ypos_minmode"    "99999"
 		"xpos"		"0"
-		"xpos_hidef"		"32"
-		"xpos_lodef"		"40"
 		"ypos"		"0"
-		"ypos_hidef"		"16"
-		"ypos_lodef"		"25"
 		"wide"		"640"
 		"tall"		"480"
 		
@@ -1241,7 +1239,10 @@
 		"wide"			"200"
 		"tall"			"280"
 		"visible"		"1"
-		"enabled"		"1"	
+		"enabled"		"1"
+      "visible_minmode" "0"
+      "enabled_minmode" "0"
+      "xpos_minmode"    "99999"
 	}
 	
 	HudTrainingInfoMsg
