@@ -44,6 +44,7 @@
 		"visible"		"1"
 		"enabled"		"1"
       "bgcolor_override"      "base3"
+      "border"       "base00border"
 	}	
 
    "OffclassBG"
@@ -54,11 +55,12 @@
       "xpos_minmode" "99999"  //if adding back other classes this must be changed
 		"ypos"			"c10"
 		"zpos"			"0"		
-		"wide"			"70"
+		"wide"			"74"
 		"tall"			"80"
 		"visible"		"1"
 		"enabled"		"1"
       "bgcolor_override"      "base3"
+      "border"       "base00border"
 	}	
 
 	"MainLabel"
@@ -1011,11 +1013,11 @@
 		"enabled"		"1"
 		"labelText"		"%numScout%"
 		"textAlignment"	"east"
-		"font"			"incon16"
+		"font"			"incon16num"
 		"fgcolor"		"base00"
 	}	
 	
-	"numSoldier" [$WIN32]
+	"numSoldier" 
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSoldier"
@@ -1029,11 +1031,11 @@
 		"enabled"		"1"
 		"labelText"		"%numSoldier%"
 		"textAlignment"	"east"
-		"font"			"incon16"
+		"font"			"incon16num"
 		"fgcolor"		"base00"
 	}		
 	
-	"numPyro" [$WIN32]
+	"numPyro" 
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numPyro"
@@ -1042,7 +1044,7 @@
 		"ypos"			"c26"
       "ypos_minmode" "c20"
 		"zpos"			"5"
-		"wide"			"20"
+		"wide"			"24"
       "wide_minmode" "40"
 		"tall"			"12"
       "tall_minmode" "16"
@@ -1050,12 +1052,12 @@
 		"enabled"		"1"
 		"labelText"		"%numPyro%"
 		"textAlignment"	"east"
-		"font"			"incon12"
-      "font_minmode" "incon16"
+		"font"			"incon12num"
+      "font_minmode" "incon16num"
 		"fgcolor"		"base00"
 	}			
 	
-	"numDemoman" [$WIN32]
+	"numDemoman" 
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numDemoman"
@@ -1069,11 +1071,11 @@
 		"enabled"		"1"
 		"labelText"		"%numDemoman%"
 		"textAlignment"	"east"
-		"font"			"incon16"
+		"font"			"incon16num"
 		"fgcolor"		"base00"
 	}				
 	
-	"numHeavy" [$WIN32]
+	"numHeavy" 
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numHeavy"
@@ -1081,17 +1083,17 @@
       "xpos_minmode" "99999"
 		"ypos"			"c38"
 		"zpos"			"5"
-		"wide"			"20"
+		"wide"			"24"
 		"tall"			"12"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%numHeavy%"
 		"textAlignment"	"east"
-		"font"			"incon12"
+		"font"			"incon12num"
 		"fgcolor"		"base00"
 	}					
 	
-	"numEngineer" [$WIN32]
+	"numEngineer" 
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numEngineer"
@@ -1100,7 +1102,7 @@
 		"ypos"			"c50"
       "ypos_minmode" "c40"
 		"zpos"			"5"
-		"wide"			"20"
+		"wide"			"24"
       "wide_minmode" "40"
 		"tall"			"12"
       "tall_minmode" "16"
@@ -1108,12 +1110,12 @@
 		"enabled"		"1"
 		"labelText"		"%numEngineer%"
 		"textAlignment"	"east"
-		"font"			"incon12"
-      "font_minmode" "incon16"
+		"font"			"incon12num"
+      "font_minmode" "incon16num"
 		"fgcolor"		"base00"
 	}						
 	
-	"numMedic" [$WIN32]
+	"numMedic"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numMedic"
@@ -1127,11 +1129,11 @@
 		"enabled"		"1"
 		"labelText"		"%numMedic%"
 		"textAlignment"	"east"
-		"font"			"incon16"
+		"font"			"incon16num"
 		"fgcolor"		"base00"
 	}							
 	
-	"numSniper" [$WIN32]
+	"numSniper" 
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSniper"
@@ -1140,7 +1142,7 @@
 		"ypos"			"c62"
       "ypos_minmode" "c60"
 		"zpos"			"5"
-		"wide"			"20"
+		"wide"			"24"
       "wide_minmode" "40"
 		"tall"			"12"
       "tall_minmode" "16"
@@ -1148,12 +1150,12 @@
 		"enabled"		"1"
 		"labelText"		"%numSniper%"
 		"textAlignment"	"east"
-		"font"			"incon12"
-      "font_minmode" "incon16"
+		"font"			"incon12num"
+      "font_minmode" "incon16num"
 		"fgcolor"		"base00"
 	}						
 	
-	"numSpy" [$WIN32]
+	"numSpy"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSpy"
@@ -1162,7 +1164,7 @@
 		"ypos"			"c74"
       "ypos_minmode" "c80"
 		"zpos"			"5"
-		"wide"			"20"
+		"wide"			"24"
       "wide_minmode" "40"
 		"tall"			"12"
       "tall_minmode" "16"
@@ -1170,8 +1172,8 @@
 		"enabled"		"1"
 		"labelText"		"%numSpy%"
 		"textAlignment"	"east"
-		"font"			"incon12"
-      "font_minmode" "incon16"
+		"font"			"incon12num"
+      "font_minmode" "incon16num"
 		"fgcolor"		"base00"
 	}								
 	
