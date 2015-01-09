@@ -2382,6 +2382,8 @@ Scheme
       //
       //////////////// CUSTOM FONTS ////////////////////////////////
       //
+
+
       "incon4"
       {
          "1"
@@ -2690,6 +2692,42 @@ Scheme
       }
    
    
+      "incon10num"
+      {
+         "1"
+         {
+            "name"      "Numbers"
+            "tall"      "12"
+            "antialias" "1"
+         }
+      }
+      "incon12num"
+      {
+         "1"
+         {
+            "name"      "Numbers"
+            "tall"      "12"
+            "antialias" "1"
+         }
+      }
+      "incon16num"
+      {
+         "1"
+         {
+            "name"      "Numbers"
+            "tall"      "16"
+            "antialias" "1"
+         }
+      }
+      "incon20num"
+      {
+         "1"
+         {
+            "name"      "Numbers"
+            "tall"      "20"
+            "antialias" "1"
+         }
+      }
    }
    
    
@@ -4730,5 +4768,11 @@ Scheme
          "font" "resource/fonts/Inconsolata-Bold.ttf"
          "name" "Inconsolata Bold"      
       }
+      "9"
+      {
+         "font" "resource/fonts/Numbers.ttf"
+         "name" "Numbers"      
+      }
+
 	}
 }
