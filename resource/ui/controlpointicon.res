@@ -31,7 +31,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"CapNumPlayers"
-		"font"			"incon16"
+		"font"			"incon16num"
       "fgcolor_override"      "yellow"    //flashes yellow then stays black
 		"xpos"			"0"
 		"ypos"			"0"
@@ -40,7 +40,7 @@
 		"tall"			"21"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"%numcappers%"
+		"labelText"		"#ControlPointIconCappers"
 		"textAlignment"		"center"
 	}
 
