@@ -36,7 +36,7 @@
 		"fieldName"		"MainBG"
 		"xpos"			"c"
 		"ypos"			"c"
-		"zpos"			"0"		
+		"zpos"			"-1"  //so on top of offclassbg so border looks good		
 		"wide"			"100"
 		"tall"			"100"
 		"autoResize"	"0"
@@ -51,11 +51,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"OffclassBG"
-		"xpos"			"c100"
+		"xpos"			"c99" //so no double border
       "xpos_minmode" "99999"  //if adding back other classes this must be changed
 		"ypos"			"c10"
-		"zpos"			"0"		
-		"wide"			"74"
+		"zpos"			"-2"		
+		"wide"			"75"
 		"tall"			"80"
 		"visible"		"1"
 		"enabled"		"1"
