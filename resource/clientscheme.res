@@ -2697,7 +2697,7 @@ Scheme
          "1"
          {
             "name"      "Numbers"
-            "tall"      "12"
+            "tall"      "10"
             "antialias" "1"
          }
       }
@@ -2728,6 +2728,45 @@ Scheme
             "antialias" "1"
          }
       }
+
+      "incon10class"
+      {
+         "1"
+         {
+            "name"      "Class Limits"
+            "tall"      "10"
+            "antialias" "1"
+         }
+      }
+      "incon12class"
+      {
+         "1"
+         {
+            "name"      "Class Limits"
+            "tall"      "12"
+            "antialias" "1"
+         }
+      }
+      "incon16class"
+      {
+         "1"
+         {
+            "name"      "Class Limits"
+            "tall"      "16"
+            "antialias" "1"
+         }
+      }
+      "incon20class"
+      {
+         "1"
+         {
+            "name"      "Class Limits"
+            "tall"      "20"
+            "antialias" "1"
+         }
+      }
+
+
    }
    
    
@@ -4773,6 +4812,10 @@ Scheme
          "font" "resource/fonts/Numbers.ttf"
          "name" "Numbers"      
       }
-
+      "10"
+      {
+         "font" "resource/fonts/ClassLimits.ttf"
+         "name" "Class Limits"      
+      }
 	}
 }
