@@ -24,6 +24,39 @@
 		"fillcolor" 	"TransparentBlack"
 	}
 
+	"MedigunInfoRedBackground"
+	{
+		"ControlName" 	"ScalableImagePanel"
+		"fieldName" 	"MedigunInfoRedBackground"
+		"xpos" 			"2"
+		"ypos"			"19"
+		"zpos" 			"1"
+		"wide" 			"160"
+		"tall" 			"18"
+		"autoResize" 	"0"
+		"pinCorner"		"0"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"drawcolor" 	"base3"
+      "border"       "base00border"
+	}
+	
+	"MedigunInfoBluBackground"
+	{
+		"ControlName" 	"ScalableImagePanel"
+		"fieldName" 	"MedigunInfoBluBackground"
+		"xpos" 			"2"
+		"ypos"			"1"
+		"zpos" 			"1"
+		"wide" 			"160"
+		"tall" 			"18"
+		"autoResize" 	"0"
+		"pinCorner"		"0"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"drawcolor" 	"base3"
+      "border"       "base00border"
+	}
    "MedigunAdvantageBackground"
 	{
 		"ControlName" 	"ScalableImagePanel"
@@ -77,23 +110,6 @@
 		"fgcolor_override"		"blue"
 	}
 
-	"MedigunInfoRedBackground"
-	{
-		"ControlName" 	"ScalableImagePanel"
-		"fieldName" 	"MedigunInfoRedBackground"
-		"xpos" 			"2"
-		"ypos"			"19"
-		"zpos" 			"1"
-		"wide" 			"160"
-		"tall" 			"18"
-		"autoResize" 	"0"
-		"pinCorner"		"0"
-		"visible" 		"1"
-		"enabled" 		"1"
-		"drawcolor" 	"base3"
-      "border"       "base00border"
-	}
-	
 	
 	"MedigunInfoRedChargeLabel"  //charge percentages
 	{
@@ -155,22 +171,6 @@
 		"scaleImage"	"1"	
 	}
 	
-	"MedigunInfoBluBackground"
-	{
-		"ControlName" 	"ScalableImagePanel"
-		"fieldName" 	"MedigunInfoBluBackground"
-		"xpos" 			"2"
-		"ypos"			"0"
-		"zpos" 			"1"
-		"wide" 			"160"
-		"tall" 			"18"
-		"autoResize" 	"0"
-		"pinCorner"		"0"
-		"visible" 		"1"
-		"enabled" 		"1"
-		"drawcolor" 	"base3"
-      "border"       "base00border"
-	}
 	
 	
 	"MedigunInfoBluChargeLabel"
