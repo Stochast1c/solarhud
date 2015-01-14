@@ -19,7 +19,7 @@
 		"team2_player_delta_x"				"47"
 		"team2_player_delta_y"				"0"
 		
-		"playerpanels_kv"
+		"playerpanels_kv"    //I don't think this does anything
 		{
 			"visible"		"0"
 			"wide"			"50"
