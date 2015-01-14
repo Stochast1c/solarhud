@@ -10,19 +10,19 @@
 		"pinCorner"		"0"
 		"enabled"		"1"
 				
-		"team1_player_base_offset_x"		"-75"
-		"team1_player_base_y"				"0"
-		"team1_player_delta_x"				"-47"
-		"team1_player_delta_y"				"0"
-		"team2_player_base_offset_x"		"25"
-		"team2_player_base_y"				"0"
-		"team2_player_delta_x"				"47"
-		"team2_player_delta_y"				"0"
+		"team1_player_base_offset_x"		""
+		"team1_player_base_y"				"174"    //c-delta*2
+		"team1_player_delta_x"				"0"
+		"team1_player_delta_y"				"-33"    //team1 counts backwards
+		"team2_player_base_offset_x"		"0"
+		"team2_player_base_y"				"273"    //c+delta
+		"team2_player_delta_x"				"0"
+		"team2_player_delta_y"				"33"     //team2 counts forwards
 		
 		"playerpanels_kv"
 		{
 			"visible"		"0"
-			"wide"			"50"
+			"wide"			"164"
 			"tall"			"33"
 			"zpos"			"1"
 			
@@ -33,18 +33,20 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"playername"
-				"font"			"DefaultVerySmall"
-				"xpos"			"5"
-				"ypos"			"24"
+				"font"			"incon12"
+				"xpos"			"50"
+				"ypos"			"0"
 				"zpos"			"5"
-				"wide"			"50"
-				"tall"			"8"
+				"wide"			"150"
+				"tall"			"18"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%playername%"
-				"textAlignment"	"north-west"
-				//"fgcolor"		"235 226 202 255"
+				"textAlignment"	"west"
+				"fgcolor"		"white"  //can't use team specific colors
+                                     //could change bg for these see
+                                     //http://teamfortress.tv/thread/14663/spectatortournament-res-help
 					
 				if_mvm
 				{
@@ -100,7 +102,7 @@
 				}
 			}
 			
-			"HealthIcon"
+			"HealthIcon"   //health numbers
 			{
 				"ControlName"		"EditablePanel"
 				"fieldName"			"HealthIcon"
