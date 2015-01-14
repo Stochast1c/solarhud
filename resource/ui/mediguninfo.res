@@ -5,8 +5,8 @@
 		"ControlName"	"Frame"
 		"fieldName"		"MedigunInfo"
 		"xpos"			"0"
-		"ypos"			"0"
-		"wide"			"164"
+		"ypos"			"221"  //c-tall/2
+		"wide"			"188"
 		"tall"			"38"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -15,79 +15,224 @@
 		"tabPosition"	"0"
 	}
 	
-	"MedigunInfoBackground"
+	"MedigunInfoBackground"    //disabled
 	{
 		"ControlName" 	"ImagePanel"
 		"fieldName" 	"MedigunInfoBackground"
-		"xpos" 			"0"
-		"ypos"			"0"
-		"zpos" 			"0"
-		"wide"			"164"
-		"tall"			"38"
+		"visible" 		"0"
+		"enabled" 		"0"
+		"fillcolor" 	"TransparentBlack"
+	}
+
+   "MedigunAdvantageBackground"
+	{
+		"ControlName" 	"ScalableImagePanel"
+		"fieldName" 	"MedigunAdvantageBackground"
+		"xpos" 			"161"
+		"ypos"			"12"  //mediguninfo_tall/2 - tall
+		"zpos" 			"1"
+		"wide" 			"20"
+		"tall" 			"14"
 		"autoResize" 	"0"
 		"pinCorner"		"0"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"fillcolor" 	"TransparentBlack"
+		"drawcolor" 	"base3"
+      "border"       "base00border"
 	}
 	
+	"MedigunInfoRedChargeAdvantageLabel"
+	{
+		"ControlName"	"VariableLabel"
+		"fieldName"		"MedigunInfoRedChargeAdvantageLabel"
+		"xpos"			"162"
+		"ypos"			"12"
+		"zpos"			"1"
+		"wide"			"18"
+		"tall"			"14"
+		"autoResize"	"1"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"+%redadvantage%%"
+		"textAlignment"	"east"
+		"font"			"incon8"
+		"fgcolor_override"		"red"
+	}
+	
+	"MedigunInfoBluChargeAdvantageLabel"
+	{
+		"ControlName"	"VariableLabel"
+		"fieldName"		"MedigunInfoBluChargeAdvantageLabel"
+		"xpos"			"162"
+		"ypos"			"12"
+		"zpos"			"1"
+		"wide"			"18"
+		"tall"			"14"
+		"autoResize"	"1"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"+%bluadvantage%%"
+		"textAlignment"	"east"
+		"font"			"incon8"
+		"fgcolor_override"		"blue"
+	}
+
 	"MedigunInfoRedBackground"
 	{
 		"ControlName" 	"ScalableImagePanel"
 		"fieldName" 	"MedigunInfoRedBackground"
 		"xpos" 			"2"
-		"ypos"			"20"
+		"ypos"			"19"
 		"zpos" 			"1"
 		"wide" 			"160"
-		"tall" 			"16"
+		"tall" 			"18"
 		"autoResize" 	"0"
 		"pinCorner"		"0"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"drawcolor" 	"HUDRedTeam"
+		"drawcolor" 	"base3"
+      "border"       "base00border"
 	}
 	
-	"MedigunInfoRedNameLabel"
-	{
-		"ControlName"	"VariableLabel"
-		"fieldName"		"MedigunInfoRedNameLabel"
-		"xpos"			"165"
-		"ypos"			"21"
-		"zpos"			"2"
-		"wide"			"200"
-		"tall"			"14"
-		"autoResize"	"1"
-		"visible"		"0"
-		"enabled"		"0"
-		"labelText"		"%redname%"
-		"tabPosition"	"0"
-		"textAlignment"	"left"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"font"			"DefaultVerySmall"
-		"fgcolor"		"HudWhite"
-	}
 	
-	"MedigunInfoRedChargeLabel"
+	"MedigunInfoRedChargeLabel"  //charge percentages
 	{
 		"ControlName"	"VariableLabel"
 		"fieldName"		"MedigunInfoRedChargeLabel"
-		"xpos"			"147"
+		"xpos"			"136"
 		"ypos"			"21"
 		"zpos"			"2"
-		"wide"			"14"
+		"wide"			"24"
 		"tall"			"14"
 		"autoResize"	"1"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%redcharge%%"
 		"tabPosition"	"0"
-		"textAlignment"	"center"
+		"textAlignment"	"east"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"DefaultVerySmall"
-		"fgcolor"		"HudWhite"
+		"font"			"incon12"
+		"fgcolor_override"		"red"
 	}
+
+	
+	"MedigunInfoRedChargeMeter"
+	{
+		"ControlName"		"ImageProgressBar"
+		"fieldName"			"MedigunInfoRedChargeMeter"
+		"font"				"Default"
+		"xpos"				"19"
+		"ypos"				"21"
+		"zpos"				"2"
+		"wide"				"117"
+		"tall"				"14"				
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"1"
+		"enabled"			"1"
+		"textAlignment"		"Left"
+		"dulltext"			"0"
+		"brighttext"		"0"
+		"bgcolor_override"	"base1"
+		"fgcolor_override" 	"red"
+		"direction"			"east"
+		"variable"			"redcharge"
+	}
+	
+	
+	"MedigunInfoRedChargeTypeIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MedigunInfoRedChargeTypeIcon"
+		"xpos"			"3"
+		"ypos"			"21"
+		"zpos"			"2"
+		"wide"			"14"
+		"tall"			"14"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+	}
+	
+	"MedigunInfoBluBackground"
+	{
+		"ControlName" 	"ScalableImagePanel"
+		"fieldName" 	"MedigunInfoBluBackground"
+		"xpos" 			"2"
+		"ypos"			"0"
+		"zpos" 			"1"
+		"wide" 			"160"
+		"tall" 			"18"
+		"autoResize" 	"0"
+		"pinCorner"		"0"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"drawcolor" 	"base3"
+      "border"       "base00border"
+	}
+	
+	
+	"MedigunInfoBluChargeLabel"
+	{
+		"ControlName"	"VariableLabel"
+		"fieldName"		"MedigunInfoBluChargeLabel"
+		"xpos"			"136"
+		"ypos"			"3"
+		"zpos"			"2"
+		"wide"			"24"
+		"tall"			"14"
+		"autoResize"	"1"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%blucharge%%"
+		"tabPosition"	"0"
+		"textAlignment"	"east"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"incon12"
+		"fgcolor_override"		"blue"
+	}
+
+	"MedigunInfoBluChargeMeter"
+	{
+		"ControlName"		"ImageProgressBar"
+		"fieldName"			"MedigunInfoBluChargeMeter"
+		"font"				"Default"
+		"xpos"				"19"
+		"ypos"				"3"
+		"zpos"				"2"
+		"wide"				"117"
+		"tall"				"14"				
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"1"
+		"enabled"			"1"
+		"textAlignment"		"Left"
+		"dulltext"			"0"
+		"brighttext"		"0"
+		"bgcolor_override"	"base1"
+		"fgcolor_override" 	"blue"
+		"direction"			"east"
+		"variable"			"blucharge"
+	}
+	
+	
+	"MedigunInfoBluChargeTypeIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MedigunInfoBluChargeTypeIcon"
+		"xpos"			"3"
+		"ypos"			"3"
+		"zpos"			"2"
+		"wide"			"14"
+		"tall"			"14"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+	}
+
+   //vacc stuff
 
 	"MedigunInfoRedIndividualChargesLabel"
 	{
@@ -109,51 +254,6 @@
 		"font"			"DefaultVerySmall"
 		"fgcolor"		"HudWhite"
 	}
-	
-	"MedigunInfoRedChargeAdvantageLabel"
-	{
-		"ControlName"	"VariableLabel"
-		"fieldName"		"MedigunInfoRedChargeAdvantageLabel"
-		"xpos"			"165"
-		"ypos"			"21"
-		"zpos"			"2"
-		"wide"			"50"
-		"tall"			"14"
-		"autoResize"	"1"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"+%redadvantage%%"
-		"tabPosition"	"0"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"font"			"DefaultVerySmall"
-		"fgcolor"		"HudWhite"
-	}
-	
-	"MedigunInfoRedChargeMeter"
-	{
-		"ControlName"		"ImageProgressBar"
-		"fieldName"			"MedigunInfoRedChargeMeter"
-		"font"				"Default"
-		"xpos"				"19"
-		"ypos"				"21"
-		"zpos"				"2"
-		"wide"				"126"
-		"tall"				"14"				
-		"autoResize"		"0"
-		"pinCorner"			"0"
-		"visible"			"1"
-		"enabled"			"1"
-		"textAlignment"		"Left"
-		"dulltext"			"0"
-		"brighttext"		"0"
-		"bgcolor_override"	"ProgressBackground"
-		"fgcolor_override" 	"ProgressOffWhite"
-		"direction"			"east"
-		"variable"			"redcharge"
-	}
-	
 	"MedigunInfoRedChargeMeter1"
 	{
 		"ControlName"		"ImageProgressBar"
@@ -245,78 +345,6 @@
 		"direction"			"east"
 		"variable"			"redcharge4"
 	}
-	
-	"MedigunInfoRedChargeTypeIcon"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"MedigunInfoRedChargeTypeIcon"
-		"xpos"			"3"
-		"ypos"			"21"
-		"zpos"			"2"
-		"wide"			"14"
-		"tall"			"14"
-		"visible"		"1"
-		"enabled"		"1"
-		"scaleImage"	"1"	
-	}
-	
-	"MedigunInfoBluBackground"
-	{
-		"ControlName" 	"ScalableImagePanel"
-		"fieldName" 	"MedigunInfoBluBackground"
-		"xpos" 			"2"
-		"ypos"			"2"
-		"zpos" 			"1"
-		"wide" 			"160"
-		"tall" 			"16"
-		"autoResize" 	"0"
-		"pinCorner"		"0"
-		"visible" 		"1"
-		"enabled" 		"1"
-		"drawcolor" 	"HUDBlueTeam"
-	}
-	
-	"MedigunInfoBluNameLabel"
-	{
-		"ControlName"	"VariableLabel"
-		"fieldName"		"MedigunInfoBluNameLabel"
-		"xpos"			"165"
-		"ypos"			"3"
-		"zpos"			"2"
-		"wide"			"200"
-		"tall"			"14"
-		"autoResize"	"1"
-		"visible"		"0"
-		"enabled"		"0"
-		"labelText"		"%bluname%"
-		"tabPosition"	"0"
-		"textAlignment"	"left"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"font"			"DefaultVerySmall"
-		"fgcolor"		"HudWhite"
-	}
-	
-	"MedigunInfoBluChargeLabel"
-	{
-		"ControlName"	"VariableLabel"
-		"fieldName"		"MedigunInfoBluChargeLabel"
-		"xpos"			"147"
-		"ypos"			"3"
-		"zpos"			"2"
-		"wide"			"14"
-		"tall"			"14"
-		"autoResize"	"1"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"%blucharge%%"
-		"tabPosition"	"0"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"font"			"DefaultVerySmall"
-		"fgcolor"		"HudWhite"
-	}
 
 	"MedigunInfoBluIndividualChargesLabel"
 	{
@@ -338,51 +366,6 @@
 		"font"			"DefaultVerySmall"
 		"fgcolor"		"HudWhite"
 	}
-	
-	"MedigunInfoBluChargeAdvantageLabel"
-	{
-		"ControlName"	"VariableLabel"
-		"fieldName"		"MedigunInfoBluChargeAdvantageLabel"
-		"xpos"			"165"
-		"ypos"			"3"
-		"zpos"			"2"
-		"wide"			"50"
-		"tall"			"14"
-		"autoResize"	"1"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"+%bluadvantage%%"
-		"tabPosition"	"0"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"font"			"DefaultVerySmall"
-		"fgcolor"		"HudWhite"
-	}
-	
-	"MedigunInfoBluChargeMeter"
-	{
-		"ControlName"		"ImageProgressBar"
-		"fieldName"			"MedigunInfoBluChargeMeter"
-		"font"				"Default"
-		"xpos"				"19"
-		"ypos"				"3"
-		"zpos"				"2"
-		"wide"				"126"
-		"tall"				"14"				
-		"autoResize"		"0"
-		"pinCorner"			"0"
-		"visible"			"1"
-		"enabled"			"1"
-		"textAlignment"		"Left"
-		"dulltext"			"0"
-		"brighttext"		"0"
-		"bgcolor_override"	"ProgressBackground"
-		"fgcolor_override" 	"ProgressOffWhite"
-		"direction"			"east"
-		"variable"			"blucharge"
-	}
-	
 	"MedigunInfoBluChargeMeter1"
 	{
 		"ControlName"		"ImageProgressBar"
@@ -474,18 +457,46 @@
 		"direction"			"east"
 		"variable"			"blucharge4"
 	}
-	
-	"MedigunInfoBluChargeTypeIcon"
+
+	"MedigunInfoRedNameLabel"  //disabled 
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"MedigunInfoBluChargeTypeIcon"
-		"xpos"			"3"
-		"ypos"			"3"
+		"ControlName"	"VariableLabel"
+		"fieldName"		"MedigunInfoRedNameLabel"
+		"xpos"			"9165"
+		"ypos"			"9921"
 		"zpos"			"2"
-		"wide"			"14"
+		"wide"			"200"
 		"tall"			"14"
-		"visible"		"1"
-		"enabled"		"1"
-		"scaleImage"	"1"	
+		"autoResize"	"1"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		"%redname%"
+		"tabPosition"	"0"
+		"textAlignment"	"left"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"DefaultVerySmall"
+		"fgcolor"		"blue"   //can't change color
+	}
+
+	"MedigunInfoBluNameLabel"  //disabled
+	{
+		"ControlName"	"VariableLabel"
+		"fieldName"		"MedigunInfoBluNameLabel"
+		"xpos"			"9165"
+		"ypos"			"9993"
+		"zpos"			"2"
+		"wide"			"200"
+		"tall"			"14"
+		"autoResize"	"1"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		"%bluname%"
+		"tabPosition"	"0"
+		"textAlignment"	"left"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"DefaultVerySmall"
+		"fgcolor"		"HudWhite"
 	}
 }
