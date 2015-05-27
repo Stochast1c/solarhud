@@ -82,7 +82,7 @@ Scheme
 		Button.ArmedBgColor				"base02"
 		Button.DepressedTextColor		"base0"
 		Button.DepressedBgColor			"base03"	
-		Button.FocusBorderColor			"red"    //doesn't do anything
+		Button.FocusBorderColor			"magenta"    //doesn't do anything
 
       //checkbox buttons	
 		CheckButton.TextColor			"base00"
@@ -137,19 +137,19 @@ Scheme
 		ListPanel.SelectedOutOfFocusBgColor	"base02"
 		ListPanel.SelectedOutOfFocusTextColor	"base00"    //now that is a mouthful of a command
 		
-		MainMenu.TextColor			"red"			    //doesn't do anything
-		MainMenu.ArmedTextColor		"red"	          //doesn't do anything
+		MainMenu.TextColor			"magenta"			    //doesn't do anything
+		MainMenu.ArmedTextColor		"magenta"	          //doesn't do anything
 		MainMenu.Inset				"32"
 		
 		//console suggestion color, any popup-menu options color
       Menu.TextInset					"6"
-		Menu.FgColor			"red" //doesn't do anything
+		Menu.FgColor			"magenta" //doesn't do anything
 		Menu.BgColor			"base3"
       Menu.TextColor       "base00"
-		Menu.ArmedFgColor		"red"  //doesn't do anything
+		Menu.ArmedFgColor		"magenta"  //doesn't do anything
       Menu.ArmedTextColor  "base0"  //armed = selected, seriously use a standard format
 		Menu.ArmedBgColor		"base03"
-		Menu.DividerColor		"red"    //doesn't do anything
+		Menu.DividerColor		"magenta"    //doesn't do anything
 		
 		//scrollbar buttons, Hey they named something decently well
       ScrollBarButton.FgColor				"base00"
@@ -180,9 +180,9 @@ Scheme
       TextEntry.BgColor                  "base3"       //console input line bg, server browser filter text input bg
 
       //console colors except generated text history
-      Console.DevTextColor    "yellow"   //console on hud text
+      Console.DevTextColor    "magenta"  //console on hud text
       Console.TextColor       "base0"    //text typed in history
-      RichText.TextColor      "green"    //doesn't do anything???
+      RichText.TextColor      "magenta"    //doesn't do anything???
       RichText.BgColor        "base03"   //bg color of console, overrides alpha'd panel as bg
       RichText.SelectedTextColor    "base00"
       RichText.SelectedBgColor      "base3"	
