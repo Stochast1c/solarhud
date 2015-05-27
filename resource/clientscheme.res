@@ -47,6 +47,7 @@ Scheme
       "base2trans"        "238 232 213 150"
       "base3trans"        "253 246 227 150"
 		
+      "base3trans50"        "253 246 227 50"
 
       // base colors, cannot use references to above color names must use rgba
 		//"Orange"			"178 82 22 255"

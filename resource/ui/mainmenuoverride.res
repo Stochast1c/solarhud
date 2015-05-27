@@ -119,20 +119,86 @@
 			}
 		}
 	}	
-	
-	"BackgroundOverride"    //Background is an uneditable panel
+
+   "BackgroundAtMenu"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldName"		"BackgroundOverride"
+		"fieldname"		"BackgroundAtMenu"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"-100"      //background is -200, needs to be above that
+		"zpos"			"-100"
 		"wide"			"f0"
 		"tall"			"480"
 		"visible"		"1"
-		"enabled"		"1"
-	   "bgcolor_override"      "base3"	
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f0"
+			"tall"			"480"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon24"
+			"textAlignment"	"center"
+			
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base3"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base3"
+         "armedBgColor_override"       "base3"
+			"depressedFgColor_override"   "base3"
+			"depressedBgColor_override"   "base3"
+		}
 	}
+	"BackgroundInGame"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"BackgroundInGame"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-100"
+		"wide"			"f0"
+		"tall"			"480"
+		"visible"		"1"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f0"
+			"tall"			"480"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon24"
+			"textAlignment"	"center"
+			
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base3trans50"
+         "defaultBgColor_override"     "base3trans50"
+         "armedFgColor_override"       "base3trans50"
+         "armedBgColor_override"       "base3trans50"
+			"depressedFgColor_override"   "base3trans50"
+			"depressedBgColor_override"   "base3trans50"
+		}
+	}
+	//"BackgroundOverride"    //Background is an uneditable panel
+	//{
+	//	"ControlName"	"EditablePanel"
+	//	"fieldName"		"BackgroundOverride"
+	//	"xpos"			"0"
+	//	"ypos"			"0"
+	//	"zpos"			"-100"      //background is -200, needs to be above that
+	//	"wide"			"f0"
+	//	"tall"			"480"
+	//	"visible"		"1"
+	//	"enabled"		"1"
+	// "bgcolor_override"      "base3"	
+	//}
 					
    "LogoLabel"
    {
@@ -1993,7 +2059,49 @@
 		"enabled"		"0"
 		"image"			"../logo/new_tf2_logo"
 		"scaleImage"	"1"
+	}
+
+	"mouseoveritempanel"
+	{
+		"ControlName"	"CItemModelPanel"
+		"fieldName"		"mouseoveritempanel"
+		"xpos"			"c-70"
+		"ypos"			"270"
+		"zpos"			"100"
+		"wide"			"300"
+		"tall"			"300"
+		"visible"		"0"
+		"bgcolor_override"		"0 0 0 0"
+		"noitem_textcolor"		"117 107 94 255"
+		"PaintBackgroundType"	"2"
+		"paintborder"	"1"
+		"border"		"MainMenuBGBorder"
+		
+		"text_ypos"			"20"
+		"text_center"		"1"
+		"model_hide"		"1"
+		"resize_to_text"	"1"
+		"padding_height"	"15"
+		
+		"attriblabel"
+		{
+			"font"			"ItemFontAttribLarge"
+			"xpos"			"0"
+			"ypos"			"30"
+			"zpos"			"2"
+			"wide"			"140"
+			"tall"			"60"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"%attriblist%"
+			"textAlignment"	"center"
+			"fgcolor"		"117 107 94 255"
+			"centerwrap"	"1"
+		}
 	}	
+
    //removed buttons
 	"QuickplayChangeButton"
 	{

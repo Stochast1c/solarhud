@@ -1,5 +1,19 @@
 "GameMenu" [$WIN32]
 {
+   "BackgroundAtMenu"
+   {
+      "label"  ""
+      "command"   "echo"
+      "OnlyAtMenu"   "1"
+   }
+   "BackgroundInGame"
+   {
+      "label"  ""
+      "command"   "echo"
+      "OnlyInGame"   "1"
+   }
+
+
 	"ResumeGameButton"
 	{
 		"label"			"#MMenu_ResumeGame"
