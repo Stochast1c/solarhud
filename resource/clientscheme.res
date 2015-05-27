@@ -48,7 +48,7 @@ Scheme
       "base3trans"        "253 246 227 150"
 		
 
-      // base colors
+      // base colors, cannot use references to above color names must use rgba
 		//"Orange"			"178 82 22 255"
 		"OrangeDim"			"203 75 22 120"   //orange, trans
 		"LightOrange"		"188 112 0 128"
@@ -66,7 +66,7 @@ Scheme
 		"GreenSolid"		 "133 153 0 255"  //green
 		
 		"Black"				"46 43 42 255"
-		"TransparentBlack"	"0 0 0 196"
+		"TransparentBlack"	"0 0 0 196"  //controls a bunch of stuff, biggest mystery is background on team select menu
 		"TransparentLightBlack"	"0 0 0 90"
 		"FooterBGBlack"		"52 48 55 255"
 	
@@ -92,9 +92,10 @@ Scheme
 		"ForTesting_Magenta"	"211 54 130 255"  //magenta
 		"ForTesting_MagentaDim"	"211 54 130 120"  //magenta trans
 
-		"HudPanelForeground"		"123 110 59 184"
-		"HudPanelBackground"		"123 110 59 184"
-		"HudPanelBorder"			"255 255 255 102"
+      //unsure what these are for
+		"HudPanelForeground"		"211  54 130 255"  //magenta
+		"HudPanelBackground"		" 42 161 152 255"  //violet
+		"HudPanelBorder"			"108 113 196 255"  //cyan
 
 		"HudProgressBarActive"		"240 207 78 255"
 		"HudProgressBarInActive"	"140 120 73 255"
@@ -159,12 +160,12 @@ Scheme
 		"QualityColorrarity3"					"204 204 250 255"
 		"QualityColorrarity4"					"134 80 172 255"
 		"QualityColorVintage"					"71 98 145 255"
-		"QualityColorUnique"					"255 215 0 255"
+		"QualityColorUnique"					   "181 137  0 255"   //yellow
 		"QualityColorCommunity"					"112 176 74 255"
 		"QualityColorDeveloper"					"165 15 121 255"
 		"QualityColorSelfMade"					"112 176 74 255"
 		"QualityColorCustomized"				"71 98 145 255"
-		"QualityColorStrange"					"207 106 50 255"
+		"QualityColorStrange"					"203  75  22 255"  //orange
 		"QualityColorCompleted"					"134 80 172 255"
 		"QualityColorHaunted"					"56 243 171 255"
 		"QualityColorCollectors"				"170 0 0 255"
@@ -312,7 +313,7 @@ Scheme
 		Menu.ArmedBgColor				"TanLight"
 		Menu.TextInset					"6"
 
-		Chat.TypingText					"Orange"
+		Chat.TypingText					"base00"
 
 		Panel.FgColor					"Gray"
 		Panel.BgColor					"Blank"
@@ -329,12 +330,12 @@ Scheme
 		"BuildingHealthBar.Health"		"ProgressOffWhite"
 		"BuildingHealthBar.LowHealth"	"LowHealthRed"
 
-		PropertySheet.TextColor			"Orange"
-		PropertySheet.SelectedTextColor	"Orange"
+		PropertySheet.TextColor			"cyan"
+		PropertySheet.SelectedTextColor	"cyan"
 		PropertySheet.TransitionEffectTime	"0.25"	// time to change from one tab to another
 
-		RadioButton.TextColor			"Orange"
-		RadioButton.SelectedTextColor	"Orange"
+		RadioButton.TextColor			"green"
+		RadioButton.SelectedTextColor	"green"
 
 		RichText.TextColor				"Gray"
 		RichText.BgColor				"Blank"
@@ -351,11 +352,11 @@ Scheme
 		ScrollBarSlider.FgColor				"Gray"		// nob color
 		ScrollBarSlider.BgColor				"Blank"		// slider background color
 
-		SectionedListPanel.HeaderTextColor	"Orange"
+		SectionedListPanel.HeaderTextColor	"magenta"
 		SectionedListPanel.HeaderBgColor	"Blank"
 		SectionedListPanel.DividerColor		"Black"
-		SectionedListPanel.TextColor		"Orange"
-		SectionedListPanel.BrightTextColor	"Orange"
+		SectionedListPanel.TextColor		"magenta"
+		SectionedListPanel.BrightTextColor	"magenta"
 		SectionedListPanel.BgColor			"TransparentLightBlack"
 		SectionedListPanel.SelectedTextColor			"Black"
 		SectionedListPanel.SelectedBgColor				"Red"
@@ -378,7 +379,7 @@ Scheme
 		TextEntry.OutOfFocusSelectedBgColor	"Blank"
 		TextEntry.FocusEdgeColor	"Blank"
 
-		ToggleButton.SelectedTextColor	"Orange"
+		ToggleButton.SelectedTextColor	"red"
 
 		Tooltip.TextColor			"TransparentBlack"
 		Tooltip.BgColor				"Red"
@@ -404,8 +405,8 @@ Scheme
 		HudCaptureProgressBar.InActive	"HudProgressBarInActive"
 
 		// scheme-specific colors
-		"FgColor"		"Orange"
-		"BgColor"		"TransparentBlack"
+      "FgColor"		"base00"    //sm on screen text color	
+		"BgColor"		"magenta"
 
 		"ViewportBG"		"Blank"
 		"TeamSpec"			"204 204 204 255"
@@ -416,21 +417,22 @@ Scheme
 		"HudIcon_Green"		"0 160 0 255"
 		"HudIcon_Red"		"160 0 0 255"
 
-		// CHudMenu
-		"ItemColor"		"255 167 42 200"	// default 255 167 42 255
-		"MenuColor"		"233 208 173 255"
-		"MenuBoxBg"		"0 0 0 100"
+		// CHudMenu  
+      //sourcemod menu panels: e.g. sm_admin, sm_pr, sm_add
+		"ItemColor"		"yellow"	// options you can select
+		"MenuColor"		"base00"  // text
+		"MenuBoxBg"		"base3trans"   //background
 
 		// weapon selection colors
-		"SelectionNumberFg"		"251 235 202 255"
-		"SelectionTextFg"		"251 235 202 255"
-		"SelectionEmptyBoxBg" 	"0 0 0 80"
-		"SelectionBoxBg" 		"0 0 0 80"
-		"SelectionSelectedBoxBg" "0 0 0 190"
+		"SelectionNumberFg"		"green"
+		"SelectionTextFg"		"cyan"
+		"SelectionEmptyBoxBg" 	"red"
+		"SelectionBoxBg" 		"yellow"
+		"SelectionSelectedBoxBg" "magenta"
 
 		// Hint message colors
-		"HintMessageFg"			"255 255 255 255"
-		"HintMessageBg" 		"0 0 0 60"
+		"HintMessageFg"			"blue"
+		"HintMessageBg" 		"253 246 227 100"  //base3 transparent, background box of surf timer timepanel
 
 		"ProgressBarFg"			"255 30 13 255"
 
