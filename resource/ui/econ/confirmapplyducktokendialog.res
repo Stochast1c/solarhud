@@ -1,8 +1,8 @@
-"Resource/UI/ConfirmApplyDecodeDialog.res"
+"Resource/UI/ConfirmApplyDuckTokenDialog.res"
 {
-	"ConfirmApplyDecodeDialog"
+	"ConfirmApplyDuckTokenDialog"
 	{
-		"fieldName"				"ConfirmApplyDecodeDialog"
+		"fieldName"				"ConfirmApplyDuckTokenDialog"
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-200"
@@ -205,7 +205,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"ConfirmLabel"
 		"font"			"HudFontSmall"
-		"labelText"		"%confirm_text%"
+		"labelText"		"#ToolDuckTokenConfirm"
 		"textAlignment"	"center"
 		"xpos"			"20"
 		"ypos"			"80"
@@ -219,25 +219,6 @@
 		"fgcolor_override" "200 80 60 255"
 	}
 
-	"OptionalAppendLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"OptionalAppendLabel"
-		"font"			"HudFontSmall"
-		"labelText"		"%optional_append%"
-		"textAlignment"	"center"
-		"xpos"			"20"
-		"ypos"			"120"
-		"zpos"			"0"
-		"wide"			"360"
-		"tall"			"60"
-		"autoResize"	"1"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
-	}
-	
 	"CancelButton"
 	{
 		"ControlName"	"CExButton"
