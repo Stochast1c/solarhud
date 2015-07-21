@@ -1,3 +1,5 @@
+//unsure what this does
+
 "Resource/UI/HudAchievementTrackerItem.res"
 {	
 	"ItemAttributeProgressPanel"
@@ -32,7 +34,9 @@
 		"tall"			"f0"
 		"zpos"			"4"
 		//"textinsetx"	"400"
-		"font"			"QuestObjectiveText"
+		"font"			"incon8"
+      "fgcolor"      "red"
+      "fgcolor_override"   "red"
 
 		"wrap"				"1"
 		"TextAlignment"		"north-west"
@@ -51,7 +55,7 @@
 		"tall"			"f0"
 		"zpos"			"4"
 		"visible"		"0"
-		"font"			"QuestObjectiveTracker_DescBlur"
+		"font"			"incon8"
 		"textinsetx"	"5"
 		"textAlignment"		"north-west"
 		"wrap"			"1"

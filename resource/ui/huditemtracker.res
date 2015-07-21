@@ -1,3 +1,5 @@
+//active contract display
+
 "Resource/UI/HudAchievementTrackerItem.res"
 {	
 	"ItemTrackerPanel"
@@ -26,7 +28,7 @@
 		"disabled_bar_bg_color_override"	"150 134 101 51"
 	}
 
-	"ItemName"
+	"ItemName"     //contract title
 	{
 		"ControlName"	"Label"
 		"fieldName"		"ItemName"
@@ -37,15 +39,15 @@
 		"tall"			"18"
 		"zpos"			"4"
 		"textinsetx"	"5"
-		"fgcolor_override"		"235 226 202 255"
-		"font"			"AchievementTracker_Name"
+		"fgcolor_override"		"yellow"
+		"font"			"incon18"
 		//"wrap"			"1"
 		"TextAlignment"		"north-east"
 		"proportionaltoparent" "1"
 	}
 
 	
-	"ProgressBarBG"
+	"ProgressBarBG"   //background of contract completion bar
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"ProgressBarBG"
@@ -58,7 +60,7 @@
 		"enabled"		"1"
 		"proportionaltoparent" "1"
 
-		"bgcolor_override"		"250 234 201 51"
+		"bgcolor_override"		"base3"
 
 		"PointsLabel"
 		{
@@ -70,13 +72,14 @@
 			"wide"			"f0"
 			"tall"			"f0"
 			"zpos"			"1"
-			"font"			"QuestObjectiveTracker_Desc"
+			"font"			"incon8"
+         "fgcolor_override"   "yellow"
 			"textinsety"	"-1"
 			"TextAlignment"		"center"
 			"proportionaltoparent" "1"
 		}
 
-		"ProgressBarStandardHighlight" // current completed
+		"ProgressBarStandardHighlight" // fgcolor of bar immediately when task completed
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"ProgressBarStandardHighlight"
@@ -84,13 +87,13 @@
 			"ypos"			"0"
 			"wide"			"f0"
 			"tall"			"f0"
-			"bgcolor_override"		"0 255 0 255"
+			"bgcolor_override"		"yellow"
 			"zpos"			"2"
 			"visible"		"1"
 			"enabled"		"1"
 			"proportionaltoparent" "1"
 
-			"PointsLabelInvert"
+			"PointsLabelInvert"     //shows up when bar is filling up past text
 			{
 				"ControlName"	"Label"
 				"fieldName"		"PointsLabelInvert"
@@ -100,15 +103,15 @@
 				"wide"			"f0"
 				"tall"			"f0"
 				"zpos"			"8"
-				"font"			"ItemTrackerScore_InGame"
+				"font"			"incon8"
 				"textinsety"	"-1"
 				"TextAlignment"		"center"
 				"proportionaltoparent" "1"
-				"fgcolor_override"	"Black"
+				"fgcolor_override"	"yellow"
 			}
 		}
 
-		"ProgressBarStandard" // current completed
+		"ProgressBarStandard" // fgcolor of current completed bar
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"ProgressBarStandard"
@@ -121,9 +124,9 @@
 			"enabled"		"1"
 			"proportionaltoparent" "1"
 
-			"bgcolor_override"		"251 235 202 255"
+			"bgcolor_override"		"base00"
 
-			"PointsLabelInvert"
+			"PointsLabelInvert"     //color when bar covers text
 			{
 				"ControlName"	"Label"
 				"fieldName"		"PointsLabelInvert"
@@ -133,15 +136,15 @@
 				"wide"			"f0"
 				"tall"			"f0"
 				"zpos"			"8"
-				"font"			"ItemTrackerScore_InGame"
+				"font"			"incon8"
 				"textinsety"	"-1"
 				"TextAlignment"		"center"
 				"proportionaltoparent" "1"
-				"fgcolor_override"	"Black"
+				"fgcolor_override"	"yellow"
 			}
 		}
 
-		"ProgressBarBonusHighlight"
+		"ProgressBarBonusHighlight"   //When completed base contract, bonus points
 		{
 			"ControlName"		"EditablePanel"
 			"fieldName"			"ProgressBarBonusHighlight"
@@ -187,7 +190,7 @@
 			"enabled"			"1"
 			"proportionaltoparent" "1"
 
-			"bgcolor_override"	"199 212 255 255"
+			"bgcolor_override"	"red"
 
 			"PointsLabelInvert"
 			{
@@ -209,7 +212,7 @@
 	}
 
 
-	"CompletedContainer"
+	"CompletedContainer"    //completed contracts
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CompletedContainer"

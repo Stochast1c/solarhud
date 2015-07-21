@@ -1,3 +1,4 @@
+//disabled contracts
 "Resource/UI/HudAchievementTrackerItem.res"
 {	
 	"ItemAttributeTracker"
@@ -27,7 +28,7 @@
 		"border"	"QuestStatusBorder"
 		"paintborder"	"2"
 		
-		"Header"
+		"Header"    //number of inactive contracts
 		{
 			"ControlName"	"Label"
 			"fieldName"		"Header"
@@ -38,14 +39,14 @@
 			"tall"			"18"
 			"zpos"			"4"
 			"textinsetx"	"5"
-			"fgcolor_override"		"235 226 202 255"
-			"font"			"AchievementTracker_Name"
+			"fgcolor_override"		"base00"
+			"font"			"incon18"
 			//"wrap"			"1"
 			"TextAlignment"		"north-east"
 			"proportionaltoparent" "1"
 		}
-
-		"CallToAction"
+         
+		"CallToAction"    //text to press button to show folder
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CallToAction"
@@ -56,14 +57,15 @@
 			"tall"			"f0"
 			"zpos"			"4"
 			"textinsetx"	"5"
-			"fgcolor_override"		"235 226 202 255"
-			"font"			"QuestObjectiveTracker_Desc"
+			"fgcolor_override"		"base1"
+			"font"			"incon10"
 			//"wrap"			"1"
 			"TextAlignment"		"north-east"
 			"proportionaltoparent" "1"
 		}
 
-		"Image"
+      //disabled
+		"Image"     //picture of a folder
 		{
 			"ControlName"	"CTFImagePanel"
 			"fieldName"		"Image"
@@ -72,8 +74,8 @@
 			"zpos"			"0"
 			"wide"			"o1"
 			"tall"			"p0.8"
-			"visible"		"1"
-			"enabled"		"1"
+			"visible"		"0"
+			"enabled"		"0"
 			"image"			"tf2_folder_icon"
 			"scaleImage"	"1"	
 			"proportionaltoparent"	"1"	
