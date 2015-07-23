@@ -58,7 +58,7 @@
 			"zpos"			"4"
 			"textinsetx"	"5"
 			"fgcolor_override"		"base1"
-			"font"			"incon10"
+			"font"			"incon8"
 			//"wrap"			"1"
 			"TextAlignment"		"north-east"
 			"proportionaltoparent" "1"

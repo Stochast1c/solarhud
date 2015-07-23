@@ -107,7 +107,7 @@
 				"textinsety"	"-1"
 				"TextAlignment"		"center"
 				"proportionaltoparent" "1"
-				"fgcolor_override"	"yellow"
+				"fgcolor_override"	"yellow"    //impossible to see, but only temporary and another color looks ugly
 			}
 		}
 
@@ -157,7 +157,7 @@
 			"enabled"			"1"
 			"proportionaltoparent" "1"
 
-			"bgcolor_override"	"150 160 255 255"
+			"bgcolor_override"	"yellow"
 
 			"PointsLabelInvert"
 			{
@@ -173,7 +173,7 @@
 				"textinsety"	"-1"
 				"TextAlignment"		"center"
 				"proportionaltoparent" "1"
-				"fgcolor_override"	"Black"
+				"fgcolor_override"	"yellow" //see standard highlight
 			}
 		}
 
@@ -190,7 +190,7 @@
 			"enabled"			"1"
 			"proportionaltoparent" "1"
 
-			"bgcolor_override"	"red"
+			"bgcolor_override"	"base03"
 
 			"PointsLabelInvert"
 			{
@@ -206,23 +206,23 @@
 				"textinsety"	"-1"
 				"TextAlignment"		"center"
 				"proportionaltoparent" "1"
-				"fgcolor_override"	"Black"
+				"fgcolor_override"	"yellow"
 			}
 		}
 	}
 
 
-	"CompletedContainer"    //completed contracts
+	"CompletedContainer"    //completed contracts, large and ugly and really no need, disabled
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CompletedContainer"
-		"xpos"			"rs1"		
+		"xpos"			"9999"//rs1"		
 		"ypos"			"0"		
 		"zpos"			"3"
 		"wide"			"f0"
 		"tall"			"25"
-		"visible"		"1"
-		"enabled"		"1"	
+		"visible"		"0"
+		"enabled"		"0"	
 
 		"proportionaltoparent" "1"
 
@@ -238,7 +238,7 @@
 			"zpos"			"4"
 			"textinsetx"	"5"
 			"fgcolor_override"		"White"
-			"font"			"AchievementTracker_NameGlow"
+			"font"			"incon12"
 			//"wrap"			"1"
 			"TextAlignment"		"north-east"
 			"proportionaltoparent" "1"
@@ -256,7 +256,7 @@
 			"zpos"			"4"
 			"textinsetx"	"5"
 			"fgcolor_override"		"235 226 202 255"
-			"font"			"QuestObjectiveTracker_Desc"
+			"font"			"incon12"
 			//"wrap"			"1"
 			"TextAlignment"		"north-east"
 			"proportionaltoparent" "1"
@@ -274,7 +274,7 @@
 			"zpos"			"4"
 			"textinsetx"	"5"
 			"fgcolor_override"		"White"
-			"font"			"QuestObjectiveTracker_DescBlur"
+			"font"			"incon12"
 			//"wrap"			"1"
 			"TextAlignment"		"north-east"
 			"proportionaltoparent" "1"
