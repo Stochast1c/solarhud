@@ -2311,7 +2311,7 @@
 	}
 
 
-   "EventPromo"
+   "EventPromo"   //In Game ads, disabled because annoying
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"EventPromo"
@@ -2320,7 +2320,7 @@
 		"zpos"			"-60"
 		"wide"			"320"
 		"tall"			"f0"
-		"visible"		"1"
+		"visible"		"0"
 		"PaintBackgroundType"	"0"
 
 			
