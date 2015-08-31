@@ -3043,6 +3043,127 @@ Scheme
 				}
 			}
 		}
+		base1Border
+		{
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 1"
+				}
+			}
+		}
+      menutabborder
+		{
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 2"
+				}
+				"3"
+				{
+					"color" "base00"
+					"offset" "2 3"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "2 1"
+				}
+				"3"
+				{
+					"color" "base00"
+					"offset" "3 2"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+				"3"
+				{
+					"color" "base00"
+					"offset" "2 2"
+				}
+			}
+		}
 		orangeBorder
 		{
 			"inset" "0 0 1 1"
