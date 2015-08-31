@@ -111,7 +111,7 @@ Scheme
 		"HudTrainingHint"			"212 160 23 255"
 		
 		"TanDark"				"117 107 94 255"
-		"TanLight"				"235 226 202 255"
+		"TanLight"				"235 0 0 255"     //this is THE default color in the game
 		"TanDarker"				"46 43 42 255"
 		
 		"StoreDarkTan"			"131 121 104 255"
@@ -280,11 +280,12 @@ Scheme
 		CheckButton.Border2  			"Yellow"		// the right checkbutton border
 		CheckButton.Check				"Yellow"		// color of the check itself
 		CheckButton.HighlightFgColor	"Yellow"
-		
-		ComboBoxButton.ArrowColor		"TanLight"
-		ComboBoxButton.ArmedArrowColor	"TanLight"
-		ComboBoxButton.BgColor			"Blank"
-		ComboBoxButton.DisabledBgColor	"Blank"
+	
+      //controls only the arrow square	
+		ComboBoxButton.ArrowColor		"base00"
+		ComboBoxButton.ArmedArrowColor	"base01"
+		ComboBoxButton.BgColor			"base3"
+		ComboBoxButton.DisabledBgColor	"base2"
 
 		Frame.BgColor					"TransparentBlack"
 		Frame.OutOfFocusBgColor			"TransparentBlack"
@@ -326,10 +327,11 @@ Scheme
 		ListPanel.SelectedOutOfFocusBgColor	"Red"
 		ListPanel.EmptyListInfoTextColor	"Orange"
 
-		Menu.TextColor					"TanLight"
-		Menu.BgColor					"TransparentBlack"
-		Menu.ArmedTextColor				"TanDark"
-		Menu.ArmedBgColor				"TanLight"
+      //combo box options colors
+		Menu.TextColor					"base00"
+		Menu.BgColor					"base3"
+		Menu.ArmedTextColor				"base01"
+		Menu.ArmedBgColor				"base2"
 		Menu.TextInset					"6"
 
 		Chat.TypingText					"base00"
@@ -3363,7 +3365,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "TanLight"
+					"color" "base00"
 					"offset" "0 1"
 				}
 			}
@@ -3372,7 +3374,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "TanLight"
+					"color" "base00"
 					"offset" "1 0"
 				}
 			}
@@ -3381,7 +3383,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "TanLight"
+					"color" "base00"
 					"offset" "0 0"
 				}
 			}
@@ -3390,7 +3392,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "TanLight"
+					"color" "base00"
 					"offset" "0 0"
 				}
 			}
@@ -3402,7 +3404,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "TanDark"
+					"color" "base01"
 					"offset" "0 1"
 				}
 			}
@@ -3411,7 +3413,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "TanDark"
+					"color" "base01"
 					"offset" "1 0"
 				}
 			}
@@ -3420,7 +3422,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "TanDark"
+					"color" "base01"
 					"offset" "0 0"
 				}
 			}
@@ -3429,7 +3431,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "TanDark"
+					"color" "base01"
 					"offset" "0 0"
 				}
 			}

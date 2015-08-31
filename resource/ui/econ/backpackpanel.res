@@ -14,9 +14,9 @@
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
-		"infocus_bgcolor_override" "46 43 42 255"
-		"outoffocus_bgcolor_override" "46 43 42 255"
+		"bgcolor_override"	"base3"
+		"infocus_bgcolor_override" "yellow"    //unsure what this does
+		"outoffocus_bgcolor_override" "magenta"   //unsure what this does
 		
 		"item_xpos_offcenter_a"	"-310"
 		"item_xpos_offcenter_b"	"165"
@@ -102,8 +102,8 @@
 			"wide"			"54"
 			"tall"			"42"
 			"visible"		"0"
-			"bgcolor_override"		"0 0 0 0"
-			"noitem_textcolor"		"117 107 94 255"
+			"bgcolor_override"		"0 0 0 0"   //unsure what this does
+			"noitem_textcolor"		"117 107 94 255"  //unsure what this does
 			"PaintBackgroundType"	"2"
 			"paintborder"	"1"
 			
@@ -174,11 +174,12 @@
 		"enabled"		"1"
 		"fgcolor_override" "200 80 60 255"
 	}
-	"ClassLabel"
+	"ClassLabel"   //The word Backpack on screen???WHAT ARE YOU DOING VALVE
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ClassLabel"
-		"font"			"HudFontMediumSmallBold"
+		"font"			"incon24"
+      "fgcolor"      "base00"
 		"labelText"		"#ClassBeingEquipped"
 		"textAlignment"	"west"
 		"xpos"			"c-280"
@@ -209,11 +210,11 @@
 		"drawcolor"		"112 176 74 255"
 	}
 
-	"ShowRarityComboBox"
+	"ShowRarityComboBox"    //only the selected colors, other items in list not colored
 	{
 		"ControlName"		"ComboBox"
 		"fieldName"			"ShowRarityComboBox"
-		"Font"				"HudFontSmallestBold"
+		"Font"				"incon12"
 		"wrap"				"0"
 		"xpos"				"c-85"
 		"ypos"				"37"
@@ -230,14 +231,16 @@
 		"NumericInputOnly"	"0"
 		"unicode"			"0"
 		"default"			"0"
-		
-		"fgcolor_override"	"235 226 202 255"
-		"bgcolor_override"	"0 0 0 0"
-		"disabledFgColor_override" "235 226 202 255"
-		"disabledBgColor_override" "0 0 0 0"
-		"selectionColor_override" "0 0 0 0"
-		"selectionTextColor_override" "235 226 202 255"
-		"defaultSelectionBG2Color_override" "0 0 0 0"
+	
+      //magenta means does nothing...
+      //the options are set in clientscheme: Menu. settings	
+		"fgcolor_override"	"base00"
+		"bgcolor_override"	"base3"
+		"disabledFgColor_override" "magenta"
+		"disabledBgColor_override" "magenta"
+		"selectionColor_override" "base3"
+		"selectionTextColor_override" "base00"
+		"defaultSelectionBG2Color_override" "magenta"
 	}	
 	
 	"ShowBaseItemsCheckbox"
@@ -338,7 +341,7 @@
 		"fieldName"		"mouseoveritempanel"
 		"xpos"			"c-70"
 		"ypos"			"270"
-		"zpos"			"100"
+		"zpos"			"102"
 		"wide"			"300"
 		"tall"			"300"
 		"visible"		"0"
@@ -401,72 +404,72 @@
 		}
 	}
 	
-	//"PrevPageButton"
-	//{
-	//	"ControlName"	"CExButton"
-	//	"fieldName"		"PrevPageButton"
-	//	"xpos"			"c195"
-	//	"ypos"			"290"
-	//	"zpos"			"1"
-	//	"wide"			"20"
-	//	"tall"			"20"
-	//	"autoResize"	"0"
-	//	"pinCorner"		"0"
-	//	"visible"		"1"
-	//	"enabled"		"1"
-	//	"tabPosition"	"0"
-	//	"labelText"		"<"
-	//	"font"			"HudFontSmallBold"
-	//	"textAlignment"	"center"
-	//	"dulltext"		"0"
-	//	"brighttext"	"0"
-	//	"Command"		"prevpage"
-	//	"sound_depressed"	"UI/buttonclick.wav"
-	//	"sound_released"	"UI/buttonclickrelease.wav"
-	//}		
-	//
-	//"CurPageLabel"
-	//{
-	//	"ControlName"	"CExLabel"
-	//	"fieldName"		"CurPageLabel"
-	//	"font"			"HudFontSmallBold"
-	//	"labelText"		"%backpackpage%"
-	//	"textAlignment"	"center"
-	//	"xpos"			"c220"
-	//	"ypos"			"290"
-	//	"zpos"			"1"
-	//	"wide"			"40"
-	//	"tall"			"20"
-	//	"autoResize"	"1"
-	//	"pinCorner"		"0"
-	//	"visible"		"1"
-	//	"enabled"		"1"
-	//	"fgcolor_override" "200 80 60 255"
-	//}
-	//
-	//"NextPageButton"
-	//{
-	//	"ControlName"	"CExButton"
-	//	"fieldName"		"NextPageButton"
-	//	"xpos"			"c265"
-	//	"ypos"			"290"
-	//	"zpos"			"1"
-	//	"wide"			"20"
-	//	"tall"			"20"
-	//	"autoResize"	"0"
-	//	"pinCorner"		"0"
-	//	"visible"		"1"
-	//	"enabled"		"1"
-	//	"tabPosition"	"0"
-	//	"labelText"		">"
-	//	"font"			"HudFontSmallBold"
-	//	"textAlignment"	"center"
-	//	"dulltext"		"0"
-	//	"brighttext"	"0"
-	//	"Command"		"nextpage"
-	//	"sound_depressed"	"UI/buttonclick.wav"
-	//	"sound_released"	"UI/buttonclickrelease.wav"
-	//}		
+	"PrevPageButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"PrevPageButton"
+		"xpos"			"c195"
+		"ypos"			"290"
+		"zpos"			"1"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"<"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"Command"		"prevpage"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+	}		
+	
+	"CurPageLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"CurPageLabel"
+		"font"			"HudFontSmallBold"
+		"labelText"		"%backpackpage%"
+		"textAlignment"	"center"
+		"xpos"			"c220"
+		"ypos"			"290"
+		"zpos"			"1"
+		"wide"			"40"
+		"tall"			"20"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fgcolor_override" "200 80 60 255"
+	}
+	
+	"NextPageButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"NextPageButton"
+		"xpos"			"c265"
+		"ypos"			"290"
+		"zpos"			"1"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		">"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"Command"		"nextpage"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+	}		
 	
 	"DragToNextPageButton"
 	{
