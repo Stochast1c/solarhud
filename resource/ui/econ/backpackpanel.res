@@ -57,13 +57,21 @@
 				"wide"			"25"
 				"tall"			"13"
 				"visible"		"1"
-				"bgcolor_override"		"0 0 0 0"
-				"noitem_textcolor"		"117 107 94 255"
+				"noitem_textcolor"		"violet"
 				"PaintBackgroundType"	"2"
 				"paintborder"	"1"
+            "border_default"       "base00border"
 				"textAlignment"	"center"
 				"labelText"		"%page%"
-				"font"				"HudFontSmallestBold"
+				"font"				"incon12"
+
+            "defaultFgColor_override"     "base00"
+            "defaultBgColor_override"     "base3"
+            "armedFgColor_override"       "base0"
+            "armedBgColor_override"       "base03"
+            "depressedFgColor_override"   "base0"
+            "depressedBgColor_override"   "base03"
+
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
 			}
@@ -160,7 +168,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CaratLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon14"
 		"labelText"		">>"
 		"textAlignment"	"west"
 		"xpos"			"c-300"
@@ -172,7 +180,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "yellow"
 	}
 	"ClassLabel"   //The word Backpack on screen???WHAT ARE YOU DOING VALVE
 	{
@@ -193,7 +201,7 @@
 		"enabled"		"1"
 	}
 	
-	"tool_icon"
+	"tool_icon"    //unsure what this is for
 	{
 		"ControlName"	"ScalableImagePanel"
 		"fieldName"		"tool_icon"
@@ -243,12 +251,12 @@
 		"defaultSelectionBG2Color_override" "magenta"
 	}	
 	
-	"ShowBaseItemsCheckbox"
+	"ShowBaseItemsCheckbox"    //colors controls in clientscheme, Checkbox.
 	{
 		"ControlName"	"CheckButton"
 		"fieldName"		"ShowBaseItemsCheckbox"
 		"labelText"		"#ShowBaseItemsCheckBox"
-		"Font"			"HudFontSmallestBold"
+		"Font"			"incon16"
 		"textAlignment"	"east"
 		"xpos"			"c-70"
 		"ypos"			"15"
@@ -263,11 +271,11 @@
 		"brighttext"	"0"
 	}
 
-	"NameFilterLabel"
+	"NameFilterLabel"    //The words "Search" above the box
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NameFilterLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon12"
 		"labelText"		"#Store_NameFilterLabel"
 		"textAlignment"	"west"
 		"xpos"			"c+137"
@@ -279,17 +287,18 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor"		"StoreDarkTan"
+		"fgcolor"		"base00"
 	}
 
+   //cannot set a border for this element
 	"NameFilterTextEntry"
 	{
 		"ControlName"		"TextEntry"
 		"fieldName"		"NameFilterTextEntry"
-		"xpos"		"c+137"
-		"ypos"		"15"
-		"wide"		"90"
-		"tall"		"19"
+		"xpos"		"c+138"
+		"ypos"		"16"
+		"wide"		"88"
+		"tall"		"16"  //not sure why had to shrink by 3
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -298,17 +307,31 @@
 		"textHidden"		"0"
 		"editable"		"1"
 		"unicode"		"1"
-		"fgcolor_override"	"117 107 94 255"
-		"bgcolor_override"	"251 235 202 255"
+		"fgcolor_override"	"base00"
+		"bgcolor_override"	"base3"
 		"paintbackgroundtype" "2"
-		"font"		"HudFontSmallest"
+		"font"		"incon16"
 	}
-	
+   
+   //border for above element
+   "NameFilterBorder"
+   {
+      "ControlName"     "EditablePanel"
+      "fieldName"       "NameFilterBorder"
+      "xpos"            "c+137"
+		"ypos"		"15"
+		"wide"		"90"
+  		"tall"		"19"
+      "bgcolor_override"   "base3"
+      "border"    "base00border"
+   }
+
+	//same rules as other combo box
 	"SortByComboBox"
 	{
 		"ControlName"		"ComboBox"
 		"fieldName"			"SortByComboBox"
-		"Font"				"HudFontSmallestBold"
+		"Font"				"HudFontSmallestBold"   //this is hardcoded, must be changed through the font definition in clientscheme
 		"xpos"				"c137"
 		"ypos"				"37"
 		"zpos"				"1"
@@ -325,13 +348,13 @@
 		"unicode"			"0"
 		"default"			"0"
 		
-		"fgcolor_override"	"235 226 202 255"
-		"bgcolor_override"	"0 0 0 0"
-		"disabledFgColor_override" "235 226 202 255"
-		"disabledBgColor_override" "0 0 0 0"
-		"selectionColor_override" "0 0 0 0"
-		"selectionTextColor_override" "235 226 202 255"
-		"defaultSelectionBG2Color_override" "0 0 0 0"
+		"fgcolor_override"	"base00"
+		"bgcolor_override"	"base3"
+		"disabledFgColor_override" "magenta"
+		"disabledBgColor_override" "magenta"
+		"selectionColor_override" "base3"
+		"selectionTextColor_override" "base00"
+		"defaultSelectionBG2Color_override" "magenta"
 	}	
 
 	
@@ -548,15 +571,15 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ShowExplanationsButton"
-		"xpos"			"c275"
-		"ypos"			"10"
+		"xpos"			"99999"//c275"
+		"ypos"			"9999910"
 		"zpos"			"100"
 		"wide"			"20"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"labelText"		"?"
 		"font"			"HudFontSmallBold"

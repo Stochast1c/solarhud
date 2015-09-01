@@ -110,9 +110,9 @@ Scheme
 		// training
 		"HudTrainingHint"			"212 160 23 255"
 		
-		"TanDark"				"117 107 94 255"
-		"TanLight"				"235 0 0 255"     //this is THE default color in the game
-		"TanDarker"				"46 43 42 255"
+      "TanDark"				"238 232 213 255"       //base2
+		"TanLight"				"101 123 131 255"     //this is THE default color in the game - base00
+		"TanDarker"				"253 246 227 255"       //base3
 		
 		"StoreDarkTan"			"131 121 104 255"
 		"StoreGreen"			"76 107 34 255"
@@ -273,13 +273,15 @@ Scheme
 		Button.DepressedTextColor		"Black"
 		Button.DepressedBgColor			"TFOrange"
 
-		CheckButton.TextColor			"Yellow"
-		CheckButton.SelectedTextColor	"Yellow"
-		CheckButton.BgColor				"TransparentBlack"
-		CheckButton.Border1  			"Yellow" 		// the left checkbutton border
-		CheckButton.Border2  			"Yellow"		// the right checkbutton border
-		CheckButton.Check				"Yellow"		// color of the check itself
-		CheckButton.HighlightFgColor	"Yellow"
+      //unsure what checkbuttons this controls, does not control adv options (actually...)
+      //does control backpack show stock items
+		CheckButton.TextColor			"base00"
+		CheckButton.SelectedTextColor	"base00"
+		CheckButton.BgColor				"base3"  //does affect adv options check boxes
+		CheckButton.Border1  			"base00" 		// the left checkbutton border
+		CheckButton.Border2  			"base00"		// the right checkbutton border
+		CheckButton.Check				   "base00"		// color of the check itself
+		CheckButton.HighlightFgColor	"base00"
 	
       //controls only the arrow square	
 		ComboBoxButton.ArrowColor		"base00"
@@ -390,15 +392,15 @@ Scheme
 		Slider.DisabledTextColor1	"117 117 117 255"
 		Slider.DisabledTextColor2	"30 30 30 255"
 
-		TextEntry.TextColor			"Gray"
-		TextEntry.BgColor			"Blank"
-		TextEntry.CursorColor		"Gray"
-		TextEntry.DisabledTextColor	"Gray"
+		TextEntry.TextColor			"base00"
+		TextEntry.BgColor			"base3"
+		TextEntry.CursorColor		"base00"
+		TextEntry.DisabledTextColor	"base1"
 		TextEntry.DisabledBgColor	"Blank"
-		TextEntry.SelectedTextColor	"TanLight"
-		TextEntry.SelectedBgColor	"Gray"
-		TextEntry.OutOfFocusSelectedBgColor	"Blank"
-		TextEntry.FocusEdgeColor	"Blank"
+		TextEntry.SelectedTextColor	"base0"
+		TextEntry.SelectedBgColor	"base03"
+		TextEntry.OutOfFocusSelectedBgColor	"base02"
+		TextEntry.FocusEdgeColor	"base00"
 
 		ToggleButton.SelectedTextColor	"red"
 
@@ -996,10 +998,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"11"
-				"weight"	"500"
-				"additive"	"0"
+				"name"		"Inconsolata"
+				"tall"		"12"
 				"antialias" "1"
 			}
 		}
