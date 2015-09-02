@@ -131,6 +131,7 @@
 			
 			"itemmodelpanel"
 			{
+            "inventory_image_type"  "1"   //high quality item image
 				"use_item_rendertarget" "0"
 				"allow_rot"				"0"
 			}
