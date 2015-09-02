@@ -191,7 +191,8 @@
 		{	
 			"ControlName"	"CExLabel"
 			"fieldName"		"RecedeTime"
-			"font"		"ItemFontAttribSmall"		
+			"font"		"ItemFontAttribSmall"
+         "fgcolor"   "base3"     //same reason as capnumplayers		
 			"xpos"		"23"			
 			"ypos"		"53"			
 			"zpos"			"2"
@@ -395,6 +396,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"CapNumPlayers"
 			"font"		"ItemFontAttribSmall"
+         "fgcolor"   "base3"  //cart is a team colored image, just use white as text color to show up
 			"xpos"		"25"
 			"ypos"		"53"
 			"zpos"			"4"
