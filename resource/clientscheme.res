@@ -3552,16 +3552,65 @@ Scheme
 			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"5"	
 		}
-		TFFatLineBorder
+		TFFatLineBorder      //dead spectator hud outline
 		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"../hud/color_panel_brown"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 1"
+				}
+			}
 		}
 		TFFatLineBorderRedBGOpaque
 		{
@@ -3585,27 +3634,125 @@ Scheme
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"11"	
 		}
-		TFFatLineBorderRedBG
+		TFFatLineBorderRedBG    //red spectator hud outline
 		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"../hud/color_panel_red"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "red"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "red"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "red"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "red"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "red"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "red"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "red"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "red"
+					"offset" "1 1"
+				}
+			}
 		}
-		TFFatLineBorderBlueBG
+		TFFatLineBorderBlueBG      //blue spectator hud outline
 		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"../hud/color_panel_blu"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "blue"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "blue"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "blue"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "blue"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "blue"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "blue"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "blue"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "blue"
+					"offset" "1 1"
+				}
+			}
 		}
 
 		ToolTipBorder

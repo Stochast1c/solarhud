@@ -25,6 +25,8 @@
 			"wide"			"164"
 			"tall"			"33"
 			"zpos"			"1"
+         "bgcolor_override"   "base3"
+         //outlines hardcoded to TFFatLineBorder[RedBG/BlueBG]
 			
 			"color_ready"	"0 255 0 220"
 			"color_notready"	"0 0 0 220"
@@ -44,7 +46,7 @@
 				"visible"		"1"
 				"labelText"		"%playername%"
 				"textAlignment"	"west"
-				"fgcolor"		"white"  //can't use team specific colors
+				"fgcolor"		"base00"  //can't use team specific colors
                                      //could change bg for these see
                                      //http://teamfortress.tv/thread/14663/spectatortournament-res-help
 					
