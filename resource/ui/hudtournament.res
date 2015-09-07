@@ -1,6 +1,6 @@
 "Resource/UI/HudTournament.res"
 {
-	HudTournament
+	HudTournament     
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"				"HudTournament"
@@ -10,41 +10,44 @@
 		"wide"					"f0"
 		"tall"					"480"
 
-		"team1_player_base_offset_x"		"-75"
-		"team1_player_base_y"				"0"
-		"team1_player_delta_x"				"-47"
-		"team1_player_delta_y"				"0"
-		"team2_player_base_offset_x"		"25"
-		"team2_player_base_y"				"0"
-		"team2_player_delta_x"				"47"
-		"team2_player_delta_y"				"0"
+		"team1_player_base_offset_x"		""
+		"team1_player_base_y"				"201"    //2px above medigun info from statusspec 
+		"team1_player_delta_x"				"0"
+		"team1_player_delta_y"				"-20"    //team1 counts backwards
+		"team2_player_base_offset_x"		"0"
+		"team2_player_base_y"				"259"    //2px below medigun info from statusspec
+		"team2_player_delta_x"				"0"
+		"team2_player_delta_y"				"20"     //team2 counts forwards
 		
-		"playerpanels_kv"    //I don't think this does anything
+		"playerpanels_kv"    //copied directly from hud spec tournament   
 		{
 			"visible"		"0"
 			"wide"			"50"
 			"tall"			"33"
 			"zpos"			"1"
+         "bgcolor_override"   "base3"
 			
-			"color_ready"	"0 255 0 220"
+			"color_ready"	"0 255 0 220"     //these do nothing
 			"color_notready"	"0 0 0 220"
 										  			
 			"playername"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"playername"
-				"font"			"DefaultVerySmall"
-				"xpos"			"5"
-				"ypos"			"24"
+				"font"			"incon12"
+				"xpos"			"20"
+				"ypos"			"0"
 				"zpos"			"5"
-				"wide"			"50"
-				"tall"			"8"
+				"wide"			"93"
+				"tall"			"20"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%playername%"
-				"textAlignment"	"north-west"
-				//"fgcolor"		"235 226 202 255"
+				"textAlignment"	"west"
+				"fgcolor"		"base00"  //can't use team specific colors
+                                     //could change bg for these see
+                                     //http://teamfortress.tv/thread/14663/spectatortournament-res-help
 					
 				if_mvm
 				{
@@ -53,6 +56,24 @@
 					"wide"			"48"
 					"textAlignment"		"center"
 					"font"				"PlayerPanelPlayerName"
+				}
+
+				if_competitive
+				{
+					"xpos"				"20"
+					"ypos"				"0"
+					"wide"				"93"
+					"textAlignment"		"west"
+					"font"				"incon12"
+				}
+
+				if_readymode
+				{
+					"xpos"				"20"
+					"ypos"				"0"
+					"wide"				"93"
+					"textAlignment"		"west"
+					"font"				"incon12"
 				}
 			}
 			
@@ -63,8 +84,8 @@
 				"xpos"			"2"
 				"ypos"			"2"
 				"zpos"			"2"
-				"wide"			"22"
-				"tall"			"22"
+				"wide"			"16"
+				"tall"			"16"
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			"../hud/class_scoutred"
@@ -72,10 +93,28 @@
 				
 				if_mvm
 				{
-					"xpos"			"5"
-					"ypos"			"4"
-					"wide"			"20"
-					"tall"			"20"
+               "xpos"			"2"
+               "ypos"			"2"
+               "wide"			"16"
+               "tall"			"16"
+					"image"			"../vgui/hud_connecting"
+				}
+
+				if_competitive
+				{
+               "xpos"			"2"
+               "ypos"			"2"
+               "wide"			"16"
+               "tall"			"16"
+					"image"			"../vgui/hud_connecting"
+				}
+
+				if_readymode
+				{
+               "xpos"			"2"
+               "ypos"			"2"
+               "wide"			"16"
+               "tall"			"16"
 					"image"			"../vgui/hud_connecting"
 				}
 			}
@@ -90,13 +129,23 @@
 				"wide"			"20"
 				"tall"			"20"
 				"visible"		"0"
-				"enabled"		"1"
+				"enabled"		"0"
 				"bgcolor_override"		"Black"
 				"PaintBackgroundType"	"0"
 				
 				if_mvm
 				{
-					"visible"		"1"
+					"visible"		"0"
+				}
+
+				if_competitive
+				{
+					"visible"		"0"
+				}
+
+				if_readymode
+				{
+					"visible"		"0"
 				}
 			}
 			
@@ -118,12 +167,43 @@
 				"TextColor"					"HudOffWhite"
 			}
 			
-			"ReadyBG"
+			"ReadyBG"      //disabled
 			{
 				"ControlName"		"ScalableImagePanel"
 				"fieldName"		"ReadyBG"
-				"xpos"			"30"
-				"ypos"			"6"
+				"xpos"			"9999946"
+				"ypos"			"999992"
+				"zpos"			"-1"
+				"wide"			"0"
+				"tall"			"0"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"0"
+				"enabled"		"0"
+				"image"			"../HUD/tournament_panel_brown"
+
+				if_mvm
+				{
+					"visible"		"0"
+				}
+				
+				if_competitive
+				{
+					"visible"		"0"
+				}
+				
+				if_readymode
+				{
+					"visible"		"0"
+				}		
+			}
+			
+         "ReadyBackground"    //Serves same purpose as stock ReadyBG except can set the bg here
+         {
+				"ControlName"		"EditablePanel"
+				"fieldName"		"ReadyBackground"
+				"xpos"			"146"
+				"ypos"			"2"
 				"zpos"			"-1"
 				"wide"			"16"
 				"tall"			"16"
@@ -131,26 +211,32 @@
 				"pinCorner"		"0"
 				"visible"		"0"
 				"enabled"		"1"
-				"image"			"../HUD/tournament_panel_brown"
+            "bgcolor_override"   "base2"
+            "border"       "base00border"
 
-				"src_corner_height"	"22"				// pixels inside the image
-				"src_corner_width"	"22"
-			
-				"draw_corner_width"	"3"				// screen size of the corners ( and sides ), proportional
-				"draw_corner_height" 	"3"
 				
 				if_mvm
 				{
 					"visible"		"1"
-				}	
+				}
+				
+				if_competitive
+				{
+					"visible"		"1"
+				}
+				
+				if_readymode
+				{
+					"visible"		"1"
+				}		
 			}
-			
-			"ReadyImage"
+
+			"ReadyImage"   //unsure how to change color
 			{
 				"ControlName"		"ImagePanel"
 				"fieldName"		"ReadyImage"
-				"xpos"			"32"
-				"ypos"			"8"
+				"xpos"			"148"
+				"ypos"			"4"
 				"zpos"			"0"
 				"wide"			"12"
 				"tall"			"12"
@@ -162,6 +248,16 @@
 				"scaleImage"		"1"
 
 				if_mvm
+				{
+					"visible"		"1"
+				}
+
+				if_competitive
+				{
+					"visible"		"1"
+				}
+
+				if_readymode
 				{
 					"visible"		"1"
 				}
@@ -208,7 +304,7 @@
 				}
 			}
 			
-			"specindex"
+			"specindex"    //disabled
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"specindex"
@@ -220,7 +316,7 @@
 				"tall"			"8"
 				"autoResize"	"0"
 				"pinCorner"		"0"
-				"visible"		"1"
+				"visible"		"0"
 				"labelText"		"%specindex%"
 				"textAlignment"	"north-west"
 				//"fgcolor"		"235 226 202 255"
@@ -230,6 +326,18 @@
 			{
 				"wide"		"55"
 				"tall"		"35"
+			}
+						
+			if_competitive
+			{
+				"wide"		"164"
+				"tall"		"20"
+			}
+
+			if_readymode
+			{
+				"wide"		"164"
+				"tall"		"20"
 			}
 		}
 		
@@ -243,7 +351,36 @@
 			"team1_player_base_y"			"66"
 			"team2_player_base_y"			"66"
 			"team2_player_delta_x"			"52"
-		}		
+		}
+		
+		if_competitive
+		{
+			"xpos"							"0"
+			"ypos"							"0"
+			"wide"							"f0"
+			"tall"							"480"
+
+			"team1_player_base_y"			"66"
+			"team2_player_base_y"			"66"
+			"team2_player_delta_x"			"52"
+			"team2_player_base_offset_x"	"5"
+		}
+		
+		if_readymode
+		{
+			"xpos"							"0"
+			"ypos"							"0"
+			"wide"							"f0"
+			"tall"							"480"
+
+         "team1_player_base_offset_x"		""
+         "team1_player_base_y"				"201"    //2px above medigun info from statusspec 
+         "team1_player_delta_x"				"0"
+         "team1_player_delta_y"				"-20"    //team1 counts backwards
+         "team2_player_base_offset_x"		"0"
+         "team2_player_base_y"				"259"    //2px below medigun info from statusspec
+         "team2_player_delta_x"				"0"
+         "team2_player_delta_y"				"20"     //team2 counts forwards		}	
 	}
 
 	"HudTournamentBG"
