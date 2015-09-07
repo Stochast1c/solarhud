@@ -60,15 +60,15 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
 		"xpos"			"0"
-		"ypos"			"5"
+		"ypos"			"0"
 		"zpos"			"5"
 		"wide"			"25"
-		"tall"			"18"
+		"tall"			"20"
 		"visible"		"1"
 		"enabled"		"1"
       "labelText"    "%Health%"
       "font"         "incon16"
-      "fgcolor"      "base1"
+      "fgcolor"      "base00"
 		"textAlignment"	"east"  //east doesn't work
 	}								
 }

@@ -11,19 +11,19 @@
 		"enabled"		"1"
 				
 		"team1_player_base_offset_x"		""
-		"team1_player_base_y"				"174"    //c-delta*2
+		"team1_player_base_y"				"201"    //2px above medigun info from statusspec 
 		"team1_player_delta_x"				"0"
-		"team1_player_delta_y"				"-33"    //team1 counts backwards
+		"team1_player_delta_y"				"-20"    //team1 counts backwards
 		"team2_player_base_offset_x"		"0"
-		"team2_player_base_y"				"273"    //c+delta
+		"team2_player_base_y"				"259"    //2px below medigun info from statusspec
 		"team2_player_delta_x"				"0"
-		"team2_player_delta_y"				"33"     //team2 counts forwards
+		"team2_player_delta_y"				"20"     //team2 counts forwards
 		
 		"playerpanels_kv"
 		{
 			"visible"		"0"
 			"wide"			"164"
-			"tall"			"33"
+			"tall"			"20"
 			"zpos"			"1"
          "bgcolor_override"   "base3"
          //outlines hardcoded to TFFatLineBorder[RedBG/BlueBG]
@@ -36,11 +36,11 @@
 				"ControlName"	"CExLabel"
 				"fieldName"		"playername"
 				"font"			"incon12"
-				"xpos"			"50"
+				"xpos"			"20"
 				"ypos"			"0"
 				"zpos"			"5"
-				"wide"			"150"
-				"tall"			"18"
+				"wide"			"93"
+				"tall"			"20"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -67,8 +67,8 @@
 				"xpos"			"2"
 				"ypos"			"2"
 				"zpos"			"2"
-				"wide"			"22"
-				"tall"			"22"
+				"wide"			"16"
+				"tall"			"16"
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			"../hud/class_scoutred"
@@ -94,7 +94,7 @@
 				"wide"			"20"
 				"tall"			"20"
 				"visible"		"0"
-				"enabled"		"1"
+				"enabled"		"0"
 				"bgcolor_override"		"Black"
 				"PaintBackgroundType"	"0"
 				
@@ -108,11 +108,11 @@
 			{
 				"ControlName"		"EditablePanel"
 				"fieldName"			"HealthIcon"
-				"xpos"				"22"
-				"ypos"				"-3"
+				"xpos"				"137"    //width - 2 - wide
+				"ypos"				"0"
 				"zpos"				"3"
-				"wide"				"32"
-				"tall"				"32"
+				"wide"				"25"
+				"tall"				"20"
 				"visible"			"1"
 				"enabled"			"1"	
 				"HealthBonusPosAdj"	"10"
@@ -175,18 +175,16 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"respawntime"
-				"font"			"DefaultSmall"
-				"xpos"			"30"
-				"ypos"			"18"
-				"zpos"			"5"
-				"wide"			"23"
-				"tall"			"10"
-				"autoResize"	"0"
-				"pinCorner"		"0"
+				"font"			"incon16num"
+				"xpos"				"137"    //width - 2 - wide
+				"ypos"				"0"
+				"zpos"				"5"
+				"wide"				"25"
+				"tall"				"20"
 				"visible"		"1"
 				"labelText"		"%respawntime%"
-				"textAlignment"	"west"
-				//"fgcolor"		"235 226 202 255"
+				"textAlignment"	"east"
+				"fgcolor"		"base1"
 				
 				if_mvm
 				{
@@ -198,21 +196,21 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"chargeamount"
-				"font"			"DefaultSmall"
-				"xpos"			"25"
-				"ypos"			"17"
+				"font"			"incon12"
+				"xpos"			"114"
+				"ypos"			"0"
 				"zpos"			"6"
-				"wide"			"25"
-				"tall"			"15"
+				"wide"			"24"
+				"tall"			"20"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%chargeamount%"
-				"textAlignment"	"north"
-				"fgcolor"		"0 255 0 255"
+				"textAlignment"	"east"
+				"fgcolor"		"base1"
 			}
 			
-			"specindex"
+			"specindex"    //disabled
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"specindex"
@@ -224,7 +222,7 @@
 				"tall"			"8"
 				"autoResize"	"0"
 				"pinCorner"		"0"
-				"visible"		"1"
+				"visible"		"0"
 				"labelText"		"%specindex%"
 				"textAlignment"	"north-west"
 				//"fgcolor"		"235 226 202 255"
