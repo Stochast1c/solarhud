@@ -3856,7 +3856,7 @@ Scheme
 			"backgroundtype" "2"
 		}
 
-		LoadoutItemMouseOverBorder
+		LoadoutItemMouseOverBorder    //not sure what this is for
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
@@ -3867,32 +3867,131 @@ Scheme
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"11"	
 		}
-		LoadoutItemPopupBorder
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"button_holder_central"
-			"src_corner_height"		"32"				// pixels inside the image
-			"src_corner_width"		"32"
-			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+		LoadoutItemPopupBorder     //popup panel, cannot set background color???
+      {
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
 		}
+
 		
-		BackpackItemGrayedOut
+		BackpackItemGrayedOut      //items that can't be clicked on (crafting, equip, etc.)
 		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			"color"					"Black"
-			
-			"image"					"backpack_rect_color"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base1"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base1"
+					"offset" "1 1"
+				}
+			}
 		}
+
 		
-		BackpackItemGrayedOut_Selected
+		BackpackItemGrayedOut_Selected      //not sure if this is even possible
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
@@ -3906,40 +4005,188 @@ Scheme
 		}
 		
 		// Standard ------------------------------------------------------------------------------------------------
-		BackpackItemBorder
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"backpack_rect"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+		BackpackItemBorder      //default selectable item
+      {
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
 		}
-		BackpackItemMouseOverBorder
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"backpack_rect_mouseover"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+
+		BackpackItemMouseOverBorder   //moused over 
+      {
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 1"
+				}
+			}
 		}
-		BackpackItemSelectedBorder
+		BackpackItemSelectedBorder    //selected item
 		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"backpack_rect_selected"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 1"
+				}
+			}
 		}
-		BackpackItemGreyedOutBorder
+		BackpackItemGreyedOutBorder   //not sure what this is for
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
@@ -3951,7 +4198,7 @@ Scheme
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"11"	
 		}
-		BackpackItemGreyedOutSelectedBorder
+		BackpackItemGreyedOutSelectedBorder    //this goes with above
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
