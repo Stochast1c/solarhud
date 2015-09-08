@@ -153,11 +153,11 @@
 			{
 				"ControlName"		"EditablePanel"
 				"fieldName"			"HealthIcon"
-				"xpos"				"22"
-				"ypos"				"-3"
+				"xpos"				"100"
+				"ypos"				"0"
 				"zpos"				"3"
-				"wide"				"32"
-				"tall"				"32"
+				"wide"				"25"
+				"tall"				"20"
 				"visible"			"1"
 				"enabled"			"1"	
 				"HealthBonusPosAdj"	"10"
@@ -268,11 +268,11 @@
 				"ControlName"	"CExLabel"
 				"fieldName"		"respawntime"
 				"font"			"DefaultSmall"
-				"xpos"			"30"
-				"ypos"			"18"
+				"xpos"			"50"
+				"ypos"			"0"
 				"zpos"			"5"
 				"wide"			"23"
-				"tall"			"10"
+				"tall"			"20"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -373,14 +373,16 @@
 			"wide"							"f0"
 			"tall"							"480"
 
-         "team1_player_base_offset_x"		""
+         //the only things that do stuff right now are the ones in the above section 
+         "team1_player_base_offset_x"		"0"
          "team1_player_base_y"				"201"    //2px above medigun info from statusspec 
          "team1_player_delta_x"				"0"
          "team1_player_delta_y"				"-20"    //team1 counts backwards
          "team2_player_base_offset_x"		"0"
          "team2_player_base_y"				"259"    //2px below medigun info from statusspec
-         "team2_player_delta_x"				"0"
-         "team2_player_delta_y"				"20"     //team2 counts forwards		}	
+         "team2_player_delta_x"				"20"
+         "team2_player_delta_y"				"20"     //team2 counts forwards		
+      }	
 	}
 
 	"HudTournamentBG"
