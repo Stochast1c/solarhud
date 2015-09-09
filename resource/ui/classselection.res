@@ -78,7 +78,7 @@
       "labelText_minmode"  "Surf"
 		"textAlignment"	"center"
 		"font"			"incon20"
-		"fgcolor"		"base01"
+		"fgcolor"		"base00"
 	}
 
 	"OffclassLabel"
@@ -96,7 +96,7 @@
       "labelText_minmode"     ""    //if adding back other classes then this must be changed
 		"textAlignment"	"center"
 		"font"			"incon16"
-		"fgcolor"		"base01"
+		"fgcolor"		"base00"
 	}
 
 	"scout"
@@ -126,9 +126,9 @@
 		
 		"fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 
       "border_default" "NoBorder"
 			
@@ -189,9 +189,9 @@
 			
 		"fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 			
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -253,9 +253,9 @@
 		
       "fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 		
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -315,9 +315,9 @@
 		
 		"fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 		
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -373,9 +373,9 @@
 		
 		"fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 		
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -436,9 +436,9 @@
 		
 		"fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 		
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -497,9 +497,9 @@
 		
 		"fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 		
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -559,9 +559,9 @@
 		
 		"fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 		
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -621,9 +621,9 @@
 		
 		"fgcolor"			"base00"             //basecolor
 		"defaultFgColor_override" "base00"     //rolloff color
-		"armedFgColor_override" "orange"       //doesn't appear
+		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
-		"selectedFgColor_override" "orange"
+		"selectedFgColor_override" "base02"
 		
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -719,19 +719,19 @@
 		}				
 	}
 		
-	"CancelButton" [$WIN32] 
+	"CancelButton" [$WIN32]  //disabled 
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"CancelButton"
-		"xpos"			"c-295"
-		"ypos"			"r38"
+		"xpos"			"99999"//c-295"
+		"ypos"			"99999"//r38"
 		"zpos"			"6"
-		"wide"			"100"
-		"tall"			"25"
+		"wide"			"0"//100"
+		"tall"			"0"//25"
 		"autoResize"	"0"
 		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"labelText"		"#TF_ClassMenu_Cancel"
 		"textAlignment"	"center"
@@ -744,11 +744,11 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"EditLoadoutButton"
-		"xpos"			"r180"
-		"ypos"			"r38"
+		"xpos"			"c"
+		"ypos"			"c100"
 		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"25"
+		"wide"			"100"
+		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -757,7 +757,18 @@
 		"labelText"		"#EditLoadout"
 		"textAlignment"	"center"
 		"Command"		"openloadout"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
+      
+      "border_default"	"base00border"
+      "border_armed"		"base00border"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base02"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base02"
+      "depressedBgColor_override"   "base2"
 	}
 
 	"ResetButton" [$WIN32] 
