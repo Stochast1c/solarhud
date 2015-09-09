@@ -3339,13 +3339,74 @@ Scheme
 			"backgroundtype" "2"
 		}
 
+      //this might actually control all buttons, but what I know it doesn't control are as follows
+      // ok button in adv options, steam profile and cancel in trading 
+      //the border for mouseover and clicked aren't here, might never exist
+
+      // valve comment v
+		// this is the border used for default buttons (the button that gets pressed when you hit enter)
 		ButtonBorder
 		{
-			"inset" "0 0 0 0"
-			"backgroundtype" "2"
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
 		}
 
-		// this is the border used for default buttons (the button that gets pressed when you hit enter)
+      //these don't control anything :((((
 		ButtonKeyFocusBorder
 		{
 			"inset" "0 0 0 0"
