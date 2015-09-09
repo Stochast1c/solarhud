@@ -111,7 +111,7 @@
 		}
 	}
 	
-	"BackButton"
+	"BackButton"      //this button much like the footer above override all other button definitions
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"BackButton"
@@ -126,7 +126,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_BackCarat"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -134,6 +134,17 @@
 		"Command"		"back"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+
+      "border_default"	"base00border"
+      "border_armed"		"orangeborder"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base0"
+      "armedBgColor_override"       "base03"
+      "depressedFgColor_override"   "base0"
+      "depressedBgColor_override"   "base03"
 	}		
 	
 	"NotificationsPresentPanel"
