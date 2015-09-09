@@ -129,6 +129,8 @@
 		"armedFgColor_override" "orange"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
+
+      "border_default" "NoBorder"
 			
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
@@ -191,6 +193,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
 			
+      "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"
@@ -254,6 +257,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
 		
+      "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"
@@ -315,6 +319,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
 		
+      "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"
@@ -372,6 +377,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
 		
+      "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"
@@ -434,6 +440,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
 		
+      "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"
@@ -494,6 +501,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
 		
+      "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"
@@ -555,6 +563,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
 		
+      "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"
@@ -616,6 +625,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "orange"
 		
+      "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"

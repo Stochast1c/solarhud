@@ -83,6 +83,7 @@
 		"command"		"jointeam blue"
 		"team"				"3"		// team blue
 		"hover"				"2.0"
+      "border_default"    "NoBorder"
 	}
 
 	"teambutton1"
@@ -99,6 +100,7 @@
 		"labelText"		""
 		"command"		"jointeam red"
 		"team"				"2"		// team red
+      "border_default"    "NoBorder"
 	}
 
 	"teambutton2"
@@ -114,6 +116,7 @@
 		"enabled"		"1"
 		"labelText"		""
 		"command"		"jointeam auto"
+      "border_default"    "NoBorder"
 	}
 	
 	"teambutton3"
@@ -129,6 +132,7 @@
 		"enabled"		"1"
 		"labelText"		""	
 		"command"		"jointeam spectate"
+      "border_default"    "NoBorder"
 	}
 	
 	"CancelButton"    //disabled, just press team select key again to remove
