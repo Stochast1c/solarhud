@@ -1823,6 +1823,8 @@
       "sound_depressed"	"UI/buttonclick.wav"
       "sound_released"	"UI/buttonclickrelease.wav"
 
+      "border_default"       "NoBorder"
+
       "paintbackground"	"1"      //let's you change button bg
       "defaultFgColor_override"     "violet"
       "defaultBgColor_override"     "blank"
