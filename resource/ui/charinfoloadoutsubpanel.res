@@ -510,7 +510,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SelectLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"labelText"		"#SelectClassLoadout"
 		"textAlignment"	"north"
 		"xpos"			"0"
@@ -522,7 +522,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "117 107 94 255"
+		"fgcolor_override" "base00"
 	}
 	"LoadoutChangesLabel"
 	{
@@ -566,19 +566,19 @@
 		"visible"			"0"
 	}
 	
-	"ShowExplanationsButton"
+	"ShowExplanationsButton"   //disabled
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ShowExplanationsButton"
-		"xpos"			"c275"
-		"ypos"			"10"
+		"xpos"			"99999"//c275"
+		"ypos"			"9999910"
 		"zpos"			"100"
-		"wide"			"20"
-		"tall"			"20"
+		"wide"			"0"//20"
+		"tall"			"0"//20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"labelText"		"?"
 		"font"			"HudFontSmallBold"
