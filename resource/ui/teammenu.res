@@ -187,7 +187,7 @@
 		"labelText"		"#TF_BlueTeam_Name"
 		"textAlignment"	"center"
 		"font"			"incon16"
-		"fgcolor"		"base00"
+		"fgcolor"		"blue"
 	}
 
 	"TeamMenuRed"
@@ -204,7 +204,7 @@
 		"labelText"		"#TF_RedTeam_Name"
 		"textAlignment"	"center"
 		"font"			"incon16"
-		"fgcolor"		"base00"
+		"fgcolor"		"red"
 	}
 	
 	"TeamMenuAuto"
@@ -238,7 +238,7 @@
 		"labelText"		"#TF_Spectate"
 		"textAlignment"	"center"
 		"font"			"incon12"
-		"fgcolor"		"green"
+		"fgcolor"		"base1"
 	}
 
 	"MenuBG" //disabled
@@ -308,7 +308,7 @@
 		"labelText"		"%bluecount%"
 		"textAlignment"	"center"
 		"font"			"incon16"
-		"fgcolor"		"base00"
+		"fgcolor"		"blue"
 	}		
 	
 	"RedCount"
@@ -325,7 +325,7 @@
 		"labelText"		"%redcount%"
 		"textAlignment"	"center"
 		"font"			"incon16"
-		"fgcolor"		"base00"
+		"fgcolor"		"red"
 	}	
 
    "BlueBG"
@@ -338,7 +338,8 @@
       "tall"      "50"
       "visible"   "1"
       "enabled"   "1"
-      "bgcolor_override"   "blue"
+      "bgcolor_override"   "base3"
+      "border"    "base00Border"
    }
 	
    "RedBG"
@@ -351,7 +352,8 @@
       "tall"      "50"
       "visible"   "1"
       "enabled"   "1"
-      "bgcolor_override"   "red"
+      "bgcolor_override"   "base3"
+      "border"    "base00Border"
    }
    
    "SpectateBG"
@@ -365,6 +367,7 @@
       "visible"   "1"
       "enabled"   "1"
       "bgcolor_override"   "base3"
+      "border"    "base00Border"
    }
 	
    "RandomBG"
@@ -377,7 +380,8 @@
       "tall"      "25"
       "visible"   "1"
       "enabled"   "1"
-      "bgcolor_override"   "base03"
+      "bgcolor_override"   "base3"
+      "border"    "base00Border"
    }
 	
 	"bluedoor"  //disabled
