@@ -29,8 +29,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"	"MapInfo"
-		"xpos"		"0"
-		"ypos"		"0"
+		"xpos"		"999990"
+		"ypos"		"999990"
 		"wide"		"f0"
 		"tall"		"480"
 		"visible"	"0"
@@ -171,15 +171,15 @@
 		}
 	}
 
-	"OnYourWayLabel"     //Text is name of label
+	"OnYourWayLabel"     //Text is name of label, disabled
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"OnYourWayLabel"
 		"font"			"incon16"
 		"labelText"		"#LoadingMap"
 		"textAlignment"		"center"
-		"xpos"			"c+10"
-		"ypos"			"30"
+		"xpos"			"c+1099999"
+		"ypos"			"3099999"
 		"zpos"			"40"
 		"wide"			"285"
 		"tall"			"35"
@@ -187,31 +187,31 @@
 		"enabled"		"0"
 		"fgcolor_override" "base00"
 	}					
-	"MapLabel"
+	"MapLabel"     //map name
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"MapLabel"
-		"font"			"incon20"
+		"font"			"incon48"
 		"labelText"		"%maplabel%"
 		"textAlignment"		"center"
-		"xpos"			"c-25"
-		"ypos"			"55"
+		"xpos"			"0"
+		"ypos"			"c-50"
 		"zpos"			"50"
-		"wide"			"350"
-		"tall"			"35"
+		"wide"			"f0"
+		"tall"			"100"
 		"visible"		"1"
 		"enabled"		"1"
-      "fgcolor_override"   "cyan"
+      "fgcolor_override"   "base00"
 	}
-	"MapType"
+	"MapType"   //disabled
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"MapType"
 		"font"			"incon12"
 		"labelText"		"%maptype%"
 		"textAlignment"	"center"
-		"xpos"			"c-25"
-		"ypos"			"80"
+		"xpos"			"c-2599999"
+		"ypos"			"8099999"
 		"zpos"			"50"
 		"wide"			"350"
 		"tall"			"35"
