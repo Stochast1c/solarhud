@@ -91,7 +91,7 @@
 		"fieldName"		"DemoLoad"
 		"xpos"		"12"
 		"ypos"		"32"
-		"wide"		"54"
+		"wide"		"60"
 		"tall"		"24"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -350,7 +350,7 @@
 		"fieldName"		"DemoProgressLabelTime"
 		"xpos"		"13"
 		"ypos"		"165"
-		"wide"		"302"    //as long as no zpos then this fits snuggly under goto button
+		"wide"		"280"    //as long as no zpos then this fits snuggly under goto button
 		"tall"		"24"
 		"autoResize"		"0"
 		"pinCorner"		"0"
