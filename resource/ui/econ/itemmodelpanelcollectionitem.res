@@ -42,7 +42,8 @@
 		"wide"			"f0"
 		"tall"			"f0"
 		"visible"		"1"
-		"bgcolor_override"		"0 0 0 0"
+		"bgcolor_override"		"base3"
+      "paintborder"  "1"
 		
 		"itemmodelpanel"
 		{

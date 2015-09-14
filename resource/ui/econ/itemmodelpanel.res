@@ -39,10 +39,12 @@
 		"fieldName"		"MainContentsContainer"
 		"xpos"			"0"
 		"ypos"			"0"
-		"wide"			"f0"
-		"tall"			"f0"
+		"wide"			"f0"     //because this is f0 this takes up the entire panel, required for autoResizing
+		"tall"			"f0"     //border gets cut off on right and bottom
 		"visible"		"1"
-		"bgcolor_override"		"0 0 0 0"
+		"bgcolor_override"		"base3"     //by setting this the mouseover panels now appear ontop of screen
+      //borders set though clientscheme  BackpackItemBorder_
+      "paintborder"  "1"
 
 		"itemmodelpanel"
 		{

@@ -1,3 +1,4 @@
+//can only control button size and font here, colors set through clientscheme under econ.button.preset and button.
 "Resource/UI/LoadoutPresetPanel.res"
 {
 	"loadout_preset_panel"
@@ -15,7 +16,7 @@
 			"visible"		"0"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"font"			"HudFontMediumSmallBold"
+			"font"			"incon20"
 			"textAlignment"	"center"
 			"textinsetx"	"0"
 			"dulltext"		"0"

@@ -14,9 +14,9 @@
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
-		"infocus_bgcolor_override" "46 43 42 255"
-		"outoffocus_bgcolor_override" "46 43 42 255"
+		"bgcolor_override"	"base3"  //bg
+		"infocus_bgcolor_override" "46 43 42 255"    //nothing?
+		"outoffocus_bgcolor_override" "46 43 42 255" //nothing?
 		
 		"item_xpos_offcenter_a"	"-310"
 		"item_xpos_offcenter_b"	"165"
@@ -78,7 +78,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		"+"
-			"font"			"HudFontSmallBold"
+			"font"			"incon12"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -87,8 +87,8 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 		}
 	}
-	
-	"CaratLabel"
+   
+   "CaratLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CaratLabel"
@@ -175,6 +175,7 @@
 		"tileImage"		"1"
 		"tileVertically" "0"
 	}				
+
 	
 	"classmodelpanel"
 	{
@@ -276,7 +277,7 @@
 		"wide"			"250"
 		"tall"			"300"
 		"visible"		"0"
-		"bgcolor_override"		"0 0 0 0"
+		"bgcolor_override"		"base3"
 		"noitem_textcolor"		"117 107 94 255"
 		"PaintBackgroundType"	"2"
 		"paintborder"	"1"
@@ -308,7 +309,7 @@
 		"centerwrap"	"1"
 	}
 	
-	"loadout_preset_panel"
+	"loadout_preset_panel"     //buttons are in loadoutpresetpanel, this just controls the row of buttons
 	{
 		"ControlName"	"CLoadoutPresetPanel"
 		"FieldName"		"loadout_preset_panel"
