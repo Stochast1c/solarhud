@@ -143,21 +143,24 @@ Scheme
 		"MatchmakingMenuItemDescriptionColor"	"200 184 151 255"
 		
 		"HTMLBackground"						"95 92 101 255"
-		
-		"ItemAttribLevel"						"117 107 94 255"
-		"ItemAttribNeutral"						"235 226 202 255"
-		"ItemAttribPositive"					"153 204 255 255"
-		"ItemAttribNegative"					"255 64 64 255"
+	
+      // ************ item attribute colors	********
+		"ItemAttribLevel"						   "101 123 131 255"       //base00 - level color and strange counters
+		"ItemAttribNeutral"						"101 123 131 255"       //magenta - extra description / lore text
+		"ItemAttribPositive"					   "38  139 210 255"       //blue - plus attributes
+		"ItemAttribNegative"					   "220  50  47 255"       //red - negative attributes
 
-		"ItemSetName"							"225 255 15 255"
-		"ItemSetItemEquipped"					"149 175 12 255"
-		"ItemSetItemMissing"					"139 137 137 255"
-		"ItemIsotope"							"225 255 15 255"
-		"ItemBundleItem"						"149 175 12 255"
-		"ItemLimitedUse"						"0 160 0 255"
-		"ItemFlags"								"117 107 94 255"
-		"ItemLimitedQuantity"					"225 209 0 255"
-		
+		"ItemSetName"							   "181 137   0 255"       //yellow - item set name
+		"ItemSetItemEquipped"					" 88 110 117 255"       //base01 
+		"ItemSetItemMissing"					   "147 161 161 255"       //base1
+		"ItemIsotope"							   "211  54 130 255"       //magenta - ???
+		"ItemBundleItem"						   "211  54 130 255"       //magenta - ???
+		"ItemLimitedUse"						   "133 153   0 255"       //green 
+		"ItemFlags"								   "211  54 130 255"       //magenta - ???
+		"ItemLimitedQuantity"					"181 137   0 255"       //yellow - limited level
+      // *********************************************	
+
+	
 		"QualityColorNormal"					"178 178 178 255"
 		"QualityColorUnique"					   "181 137  0 255"     //yellow
 		"QualityColorVintage"					"38  139 210 255"    //blue
@@ -390,11 +393,11 @@ Scheme
 		SectionedListPanel.OutOfFocusSelectedTextColor	"Black"
 		SectionedListPanel.OutOfFocusSelectedBgColor	"255 255 255 32"
 
-		Slider.NobColor				"108 108 108 255"
-		Slider.TextColor			"127 140 127 255"
-		Slider.TrackColor			"31 31 31 255"
-		Slider.DisabledTextColor1	"117 117 117 255"
-		Slider.DisabledTextColor2	"30 30 30 255"
+		Slider.NobColor				"base01"
+		Slider.TextColor			"base00"
+		Slider.TrackColor			"base0"
+		Slider.DisabledTextColor1	"base1"
+		Slider.DisabledTextColor2	"magenta"
 
 		TextEntry.TextColor			"base00"
 		TextEntry.BgColor			"base3"
@@ -436,10 +439,11 @@ scrim tonight around 10:30edt?
       "FgColor"		"base00"    //sm on screen text color	
 		"BgColor"		"magenta"
 
+      //unsure what these colors control
 		"ViewportBG"		"Blank"
-		"TeamSpec"			"204 204 204 255"
-		"TeamRed"			"255 64 64 255"
-		"TeamBlue"			"153 204 255 255"
+		"TeamSpec"			"orange"
+		"TeamRed"			"green"
+		"TeamBlue"			"magenta"
 
 		"MapDescriptionText"	"Gray" // the text used in the map description window
 		"HudIcon_Green"		"0 160 0 255"
@@ -2102,36 +2106,30 @@ scrim tonight around 10:30edt?
 			}
 		}
 		
-		"ItemFontNameSmallest"
+		"ItemFontNameSmallest"     //really long names
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"Inconsolata"
 				"tall"		"8"
-				"weight"	"500"
-				"additive"	"0"
 				"antialias" "1"
 			}
 		}
-		"ItemFontNameSmall"
+		"ItemFontNameSmall"     //long names
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"9"
-				"weight"	"500"
-				"additive"	"0"
+				"name"		"Inconsolata"
+				"tall"		"10"
 				"antialias" "1"
 			}
 		}
-		"ItemFontNameLarge"
+		"ItemFontNameLarge"     //short names
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"Inconsolata"
 				"tall"		"12"
-				"weight"	"500"
-				"additive"	"0"
 				"antialias" "1"
 			}
 		}
@@ -2167,15 +2165,13 @@ scrim tonight around 10:30edt?
 				"antialias" 	"1"
 			}
 		}
-		"ItemFontAttribLarge"
+		"ItemFontAttribLarge"      //item descriptions
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary"
-				"tall"		"11"
-				"weight"	"500"
-				"additive"	"0"
-				"antialias" 	"1"
+				"name"		"Inconsolata"
+				"tall"		"12"
+				"antialias" "1"
 			}
 		}	
 		

@@ -1,3 +1,5 @@
+//need to find outline for default weapons / no color outline
+
 "Resource/UI/FullLoadoutPanel.res"
 {
 	"class_loadout_panel"
@@ -42,7 +44,7 @@
 			"tall"			"70"
 			"visible"		"0"
 			"bgcolor_override"		"0 0 0 0"
-			"noitem_textcolor"		"117 107 94 255"
+			"noitem_textcolor"		"base1"     //slot name
 			"PaintBackgroundType"	"2"
 			"paintborder"	"1"
 			
@@ -60,6 +62,7 @@
 			
 			"itemmodelpanel"
 			{
+            "inventory_image_type"  "1"   //high quality item image
 				"use_item_rendertarget" "0"
 				"allow_rot"				"0"
 			}
@@ -92,7 +95,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CaratLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon14"
 		"labelText"		">>"
 		"textAlignment"	"west"
 		"xpos"			"c-300"
@@ -104,13 +107,14 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "yellow"
 	}
 	"ClassLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ClassLabel"
-		"font"			"HudFontMediumBold"
+		"font"			"incon24"
+      "fgcolor"      "base00"
 		"labelText"		"#ClassBeingEquipped"
 		"textAlignment"	"west"
 		"xpos"			"c-280"
@@ -128,10 +132,10 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"TauntCaratLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon14"
 		"labelText"		">>"
 		"textAlignment"	"west"
-		"xpos"			"c-150"
+		"xpos"			"c-175"
 		"ypos"			"20"
 		"zpos"			"1"
 		"wide"			"20"
@@ -140,16 +144,17 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "yellow"
 	}
 	"TauntLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TauntLabel"
-		"font"			"HudFontMediumBold"
+		"font"			"incon24"
+      "fgcolor_override"   "base00"
 		"labelText"		"#TF_Taunt"
 		"textAlignment"	"west"
-		"xpos"			"c-130"
+		"xpos"			"c-155"
 		"ypos"			"15"
 		"zpos"			"1"
 		"wide"			"240"
@@ -160,7 +165,7 @@
 		"enabled"		"1"
 	}
 	
-	"TopLine"
+	"TopLine"   //disabled
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TopLine"
@@ -169,8 +174,8 @@
 		"zpos"			"2"
 		"wide"			"610"
 		"tall"			"10"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"loadout_dotted_line"
 		"tileImage"		"1"
 		"tileVertically" "0"
@@ -445,15 +450,17 @@
 		"tall"			"75"
 		"autoResize"	"1"
 		"visible"		"0"
-		"bgcolor_override"		"69 64 63 255"
+		"bgcolor_override"		"base2"
 		"PaintBackgroundType"	"2"
+      "border"       "base00Border"
 	}
 
 	"TauntHintLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TauntHintLabel"
-		"font"			"ItemFontAttribLarge"
+		"font"			"incon12"
+      "fgcolor_override"   "base00"
 		"xpos"			"c90"
 		"ypos"			"20"
 		"zpos"			"1"	
@@ -472,7 +479,10 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CharacterLoadoutButton"
-		"labelText"		""
+		"labelText"		"L"
+      "defaultFgColor_override"  "base00"
+      "font"         "incon20"
+      "textAlignment"   "center"
 		"xpos"			"c-25"
 		"ypos"			"c90"
 		"zpos"			"2"
@@ -490,27 +500,16 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"4"
-			"ypos"			"4"
-			"zpos"			"1"
-			"wide"			"17"
-			"tall"			"17"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"glyph_items"
-		}
 	}
 
 	"TauntLoadoutButton"
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"TauntLoadoutButton"
-		"labelText"		""
+		"labelText"		"T"
+      "defaultFgColor_override"  "base00"
+      "font"         "incon20"
+      "textAlignment"   "center"
 		"xpos"			"c2"
 		"ypos"			"c90"
 		"zpos"			"2"
@@ -527,24 +526,9 @@
 		"Command"		"tauntloadout"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"4"
-			"ypos"			"4"
-			"zpos"			"1"
-			"wide"			"17"
-			"tall"			"17"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"../hud/ico_reel"
-		}
 	}
 
-	"TauntsExplanation"
+	"TauntsExplanation"     //moving this does not work, tf_show_taunt_explanation_in_class_loadout 0
 	{
 		"ControlName"	"CExplanationPopup"
 		"fieldName"		"TauntsExplanation"

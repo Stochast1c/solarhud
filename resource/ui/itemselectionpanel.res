@@ -15,7 +15,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
-		"bgcolor_override"	"46 43 42 255"
+		"bgcolor_override"	"base3"
 		
 		"item_ypos"		"60"
 		"item_ydelta"	"80"
@@ -91,7 +91,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CaratLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon14"
 		"labelText"		">>"
 		"textAlignment"	"west"
 		"xpos"			"c-300"
@@ -103,13 +103,14 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "yellow"
 	}
 	"ClassLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ClassLabel"
-		"font"			"HudFontMediumBold"
+		"font"			"incon24"
+      "fgcolor_override"   "base00"
 		"labelText"		"#ClassBeingEquipped"
 		"textAlignment"	"west"
 		"xpos"			"c-280"
@@ -127,7 +128,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NameFilterLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon12"
 		"labelText"		"#Store_NameFilterLabel"
 		"textAlignment"	"west"
 		"xpos"			"c+205"
@@ -139,18 +140,18 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor"		"StoreDarkTan"
+		"fgcolor"		"base00"
 	}
 
 	"NameFilterTextEntry"
 	{
 		"ControlName"		"TextEntry"
 		"fieldName"		"NameFilterTextEntry"
-		"xpos"		"c+205"
-		"ypos"		"15"
+		"xpos"		"c+206"
+		"ypos"		"16"
 		"zpos"		"2"
-		"wide"		"90"
-		"tall"		"19"
+		"wide"		"88"
+		"tall"		"16"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -159,13 +160,27 @@
 		"textHidden"		"0"
 		"editable"		"1"
 		"unicode"		"1"
-		"fgcolor_override"	"117 107 94 255"
-		"bgcolor_override"	"251 235 202 255"
+		"fgcolor_override"	"base00"
+		"bgcolor_override"	"base3"
 		"paintbackgroundtype" "2"
-		"font"		"HudFontSmallest"
+		"font"		"incon16"
 	}
+
+   //border for above element
+   "NameFilterBorder"
+   {
+      "ControlName"     "EditablePanel"
+      "fieldName"       "NameFilterBorder"
+      "xpos"            "c+205"
+		"ypos"		"15"
+		"wide"		"90"
+  		"tall"		"19"
+      "bgcolor_override"   "base3"
+      "border"    "base00border"
+   }
+
 	
-	"TopLine"
+	"TopLine"      //disabled
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TopLine"
@@ -174,13 +189,13 @@
 		"zpos"			"2"
 		"wide"			"610"
 		"tall"			"10"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"loadout_dotted_line"
 		"tileImage"		"1"
 		"tileVertically" "0"
 	}				
-	"BottomLine"
+	"BottomLine"   //disabled
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"BottomLine"
@@ -189,8 +204,8 @@
 		"zpos"			"2"
 		"wide"			"610"
 		"tall"			"10"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"loadout_dotted_line"
 		"tileImage"		"1"
 		"tileVertically" "0"
@@ -200,13 +215,13 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ItemSlotLabel"
-		"font"			"HudFontMediumBold"
+		"font"			"incon24"
 		"labelText"		"#PrimaryWeapon"
-		"textAlignment"	"west"
-		"xpos"			"c-55"
+		"textAlignment"	"center"
+		"xpos"			"0"
 		"ypos"			"15"
 		"zpos"			"1"
-		"wide"			"375"
+		"wide"			"f0"
 		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -218,7 +233,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NoItemsLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"labelText"		"#NoItemsToEquip"
 		"textAlignment"	"center"
 		"xpos"			"c-300"
@@ -230,7 +245,7 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "base00"
 	}
 	
 	"CancelButton"
@@ -292,7 +307,8 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#Selection_ShowBackpack"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
+      "defaultfgcolor_override"  "base00" 
 		"textAlignment"	"center"
 		"textinsetx"	"50"
 		"dulltext"		"0"
@@ -301,7 +317,7 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
-	"ShowSelection"
+	"ShowSelection"   //View Valid Items (on full backpack screen)
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ShowSelection"
@@ -316,7 +332,8 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#Selection_ShowSelection"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
+      "defaultfgcolor_override"  "base00" 
 		"textAlignment"	"center"
 		"textinsetx"	"50"
 		"dulltext"		"0"
@@ -341,7 +358,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"<"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -354,7 +371,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CurPageLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
 		"labelText"		"%backpackpage%"
 		"textAlignment"	"center"
 		"xpos"			"c220"
@@ -366,7 +383,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "base00"
 	}
 	
 	"NextPageButton"
@@ -384,7 +401,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		">"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -393,7 +410,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}		
 	
-	"mouseoveritempanel"
+	"mouseoveritempanel"    //not sure what this is for, seems to be controlled elsewhere (itemmodelpanel)
 	{
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"mouseoveritempanel"
