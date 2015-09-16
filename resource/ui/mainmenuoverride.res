@@ -11,7 +11,7 @@
 		"wide"			"f0"
 		"tall"			"480"
 		
-//		"bgcolor_override"	"0 0 0 240"
+		"bgcolor_override"	"base3"   //once picture background is gone this loads before background panel can load
 		
 		"update_url"	"http://store.steampowered.com/news/?filter=updates&appids=440"
 		"blog_url"		"http://www.teamfortress.com/"
