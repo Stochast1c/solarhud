@@ -31,8 +31,8 @@
 		"class_distance_min"		"7"
 		"class_distance_max"		"100"
 
-		"itemcountcolor"			"200 80 60 255"
-		"itemcountcolor_noitems"	"117 107 94 255"
+		"itemcountcolor"			"yellow"      //number of items in backpack as well as description text for button
+		"itemcountcolor_noitems"	"green"     //not sure what controls
 	}
 	
 	"scout"
@@ -433,15 +433,16 @@
 		"wrap"			"0"
 	}
 	
-	"ClassLabel"
+	"ClassLabel"   //Class Name
 	{
-		"ControlName"	"Label"
+		"ControlName"	"CExLabel"
 		"fieldName"		"ClassLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon24"
+      "fgcolor_override"   "base00"
 		"labelText"		"classname"
-		"textAlignment"	"north"
+		"textAlignment"	"center"
 		"xpos"			"0"
-		"ypos"			"200"
+		"ypos"			"190"
 		"zpos"			"1"
 		"wide"			"300"
 		"tall"			"30"
@@ -450,11 +451,11 @@
 		"visible"		"0"
 		"enabled"		"1"
 	}
-	"ItemsLabel"
+	"ItemsLabel"   //Number of items in backpack, color is set above: itemcountcolor
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ItemsLabel"
-		"font"			"HudFontSmall"
+		"font"			"incon14"
 		"labelText"		"classname"
 		"textAlignment"	"north"
 		"xpos"			"0"
@@ -474,7 +475,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NoSteamLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"labelText"		"#NoSteamNoItems"
 		"textAlignment"	"north"
 		"xpos"			"0"
@@ -486,13 +487,13 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "magenta"
 	}
 	"NoGCLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NoGCLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"labelText"		"#NoGCNoItems"
 		"textAlignment"	"north"
 		"xpos"			"0"
@@ -504,9 +505,9 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "magenta"
 	}
-	"SelectLabel"
+	"SelectLabel"     //title of the menu page
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SelectLabel"
@@ -524,11 +525,11 @@
 		"enabled"		"1"
 		"fgcolor_override" "base00"
 	}
-	"LoadoutChangesLabel"
+	"LoadoutChangesLabel"      //load changes will take effect on respawn
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"LoadoutChangesLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"labelText"		"#LoadoutChangesUpdate"
 		"textAlignment"	"north"
 		"xpos"			"0"
@@ -540,7 +541,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "yellow"
 	}
 	
 	"class_loadout_panel"
