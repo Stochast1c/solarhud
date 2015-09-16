@@ -161,8 +161,8 @@ Scheme
       // *********************************************	
 
 	
-		"QualityColorNormal"					"178 178 178 255"
-		"QualityColorUnique"					   "181 137  0 255"     //yellow
+		"QualityColorNormal"					   "101 123 131 255"    //base00
+		"QualityColorUnique"					   "181 137   0 255"    //yellow
 		"QualityColorVintage"					"38  139 210 255"    //blue
       "QualityColorrarity1"					"133 153   0 255"    //genuine - green
 		"QualityColorStrange"					"203  75  22 255"    //orange
@@ -3896,17 +3896,67 @@ scrim tonight around 10:30edt?
 			"draw_corner_height" 	"11"	
 		}
 		
-		EconItemBorder
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"loadout_rect"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+		EconItemBorder    //class loadout slot - why is this not using quality color normal like the others 
+      {
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "QualityColorNormal"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "QualityColorNormal"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "QualityColorNormal"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "QualityColorNormal"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "QualityColorNormal"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "QualityColorNormal"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "QualityColorNormal"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "QualityColorNormal"
+					"offset" "1 1"
+				}
+			}
 		}
+
 		Econ.Button.Border.Default
 		{
 			"inset" "0 0 0 0"
@@ -3918,17 +3968,67 @@ scrim tonight around 10:30edt?
 			"backgroundtype" "2"
 		}
 
-		LoadoutItemMouseOverBorder    //not sure what this is for
-		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"loadout_rect_mouseover"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+		LoadoutItemMouseOverBorder    //class loadout slot item mouseover
+      {
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base03"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base03"
+					"offset" "1 1"
+				}
+			}
 		}
+
 		LoadoutItemPopupBorder     //popup panel, cannot set background color???
       {
 			"inset" "0 0 1 1"
