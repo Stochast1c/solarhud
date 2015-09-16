@@ -18,7 +18,7 @@ Scheme
       "base2"        "238 232 213 255"
       "base3"        "253 246 227 255"
       "yellow"       "181 137   0 255" 
-      "orange"       "203  75  22 255" 
+      "orange"       "203  75  22 255"    //also controls the highlight on options, may consider changing this color
       "red"          "220  50  47 255"   
       "magenta"      "211  54 130 255"
       "violet"       "108 113 196 255" 
