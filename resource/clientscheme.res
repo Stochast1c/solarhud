@@ -411,7 +411,6 @@ Scheme
 
 		ToggleButton.SelectedTextColor	"red"
 
-scrim tonight around 10:30edt?
 		Tooltip.TextColor			"TransparentBlack"
 		Tooltip.BgColor				"Red"
 
