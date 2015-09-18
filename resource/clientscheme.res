@@ -89,7 +89,7 @@ Scheme
 		
 		"CreditsGreen"		"133 153 0 255"   //green
 		
-		"Gray"				"178 178 178 255"
+		"Gray"				" 0 0 255 255"    //testing
 
 		"Blank"				"0 0 0 0"
 		"ForTesting"		"220 50 47 32"    //red trans
@@ -372,15 +372,15 @@ Scheme
 		RichText.SelectedTextColor		"Gray"
 		RichText.SelectedBgColor		"Red"
 
-		ScrollBarButton.FgColor				"Gray"
-		ScrollBarButton.BgColor				"Blank"
-		ScrollBarButton.ArmedFgColor		"Gray"
-		ScrollBarButton.ArmedBgColor		"Blank"
-		ScrollBarButton.DepressedFgColor	"Black"
-		ScrollBarButton.DepressedBgColor	"Blank"
+		ScrollBarButton.FgColor				"base00"
+		ScrollBarButton.BgColor				"base2"
+		ScrollBarButton.ArmedFgColor		"base0"
+		ScrollBarButton.ArmedBgColor		"base02"
+		ScrollBarButton.DepressedFgColor	"base0"
+		ScrollBarButton.DepressedBgColor	"base03"
 
-		ScrollBarSlider.FgColor				"Gray"		// nob color
-		ScrollBarSlider.BgColor				"Blank"		// slider background color
+		ScrollBarSlider.FgColor				"base00"		// nob color
+		ScrollBarSlider.BgColor				"base2"		// slider background color
 
 		SectionedListPanel.HeaderTextColor	"magenta"
 		SectionedListPanel.HeaderBgColor	"Blank"
@@ -3330,13 +3330,121 @@ Scheme
 		ScrollBarButtonBorder
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+			}
 		}
 
 		ScrollBarButtonDepressedBorder
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+			}
 		}
 
       //this might actually control all buttons, but what I know it doesn't control are as follows
