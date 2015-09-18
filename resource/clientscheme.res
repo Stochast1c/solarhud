@@ -350,8 +350,9 @@ Scheme
 
 		HTML.BgColor					"Blank"
 
-		ProgressBar.FgColor				"ProgressOffWhite"
-		ProgressBar.BgColor				"ProgressBackground"
+      //hud progress bar, finding server through quickplay, etc.
+		ProgressBar.FgColor				"base01"
+		ProgressBar.BgColor				"base2"
 
 		CircularProgressBar.FgColor		"White"
 		CircularProgressBar.BgColor		"White"
@@ -465,7 +466,7 @@ Scheme
 		"HintMessageFg"			"blue"
 		"HintMessageBg" 		"253 246 227 100"  //base3 transparent, background box of surf timer timepanel
 
-		"ProgressBarFg"			"255 30 13 255"
+		"ProgressBarFg"			"magenta"      //no idea what for
 
 		// Top-left corner of the menu on the main screen
 		"Main.Menu.X"		"32"

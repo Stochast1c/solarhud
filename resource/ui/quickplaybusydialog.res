@@ -13,7 +13,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"bgcolor_override"	"0 0 0 200"
+		"bgcolor_override"	"base3trans"    //screen background
 	}
 
 	"BusyContainer"
@@ -32,7 +32,7 @@
 		"tabPosition"		"0"
 		"PaintBackgroundType"	"0"
 		"paintbackground"		"1"
-		"border"				"QuickplayBorder"
+		"border"				"base00Border"
 
 		"Background"
 		{
@@ -47,14 +47,16 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"		"0"
-			"bgcolor_override"	"40 37 37 255"
+         "paintbackground" "1"
+			"bgcolor_override"	"base3"
 		}
 
 		"TitleLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
+         "fgcolor_override"   "base00"
 			"textAlignment"	"center"
 			"xpos"			"0"
 			"ypos"			"15"
@@ -65,6 +67,19 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+		}
+
+      "ProgressBorder"      
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"ProgressBorder"
+			"xpos"		"19"
+			"ypos"		"39"
+			"wide"		"412"
+			"tall"		"32"
+			"visible"		"1"
+			"enabled"		"1"
+         "bgcolor_override"      "base00"
 		}
 
 		"Progress"
@@ -81,11 +96,12 @@
 			"enabled"		"1"
 		}
 
-		"NumServers"
+		"NumServers"   //Game Servers meeting search criteria
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"NumServers"
-			"font"			"HudFontSmallestBold"
+			"font"			"incon16"
+         "fgcolor_override"      "base00"
 			"labelText"		"%numservers%"
 			"textAlignment"	"center"
 			"xpos"			"0"
@@ -114,7 +130,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		"#Cancel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
 			"textAlignment"	"center"
 			"textinsetx"	"50"
 			"dulltext"		"0"
@@ -122,6 +138,10 @@
 			"Command"		"user_close"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
+         
+         "defaultFgColor_override"  "base00"
+         "armedFgColor_override"  "base01"
+         "depressedFgColor_override"  "base01"
 		}			
 		
 	}
