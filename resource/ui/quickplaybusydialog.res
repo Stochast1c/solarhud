@@ -126,6 +126,8 @@
 		
 	}
 
+
+   //cannot set results panel color, most likely set through clientscheme   
 	"ResultsContainer"
 	{
 		"ControlName"	"EditablePanel"
@@ -142,7 +144,7 @@
 		"tabPosition"		"0"
 		"PaintBackgroundType"	"0"
 		"paintbackground"		"1"
-		"border"				"QuickplayBorder"
+		"border"				"base00Border"
 
 		"Background"
 		{
@@ -157,14 +159,15 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"		"0"
-			"bgcolor_override"	"40 37 37 255"
+			"bgcolor_override"	"base3"
 		}
 
 		"TitleLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontMediumBold"
+			"font"			"incon20"
+         "fgcolor_override"   "base00"
 			"labelText"		"#TF_MM_ResultsDialog_Title"
 			"textAlignment"	"center"
 			"xpos"			"0"
@@ -206,7 +209,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		"#TF_Quickplay_Connect"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
 			"textAlignment"	"center"
 			"textinsetx"	"50"
 			"dulltext"		"0"
@@ -214,6 +217,10 @@
 			"Command"		"ConnectToServer"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
+
+         "defaultFgColor_override"  "base00"
+         "armedFgColor_override"  "base01"
+         "depressedFgColor_override"  "base01"
 		}
 
 		"CancelButton"
@@ -231,7 +238,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		"#Cancel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
 			"textAlignment"	"center"
 			"textinsetx"	"50"
 			"dulltext"		"0"
@@ -239,6 +246,10 @@
 			"Command"		"user_close"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
+         
+         "defaultFgColor_override"  "base00"
+         "armedFgColor_override"  "base01"
+         "depressedFgColor_override"  "base01"
 		}			
 		
 	}
