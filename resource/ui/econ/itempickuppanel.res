@@ -15,10 +15,10 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"settitlebarvisible"	"0"
-		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
-		"infocus_bgcolor_override" "46 43 42 255"
-		"outoffocus_bgcolor_override" "46 43 42 255"
+		"PaintBackgroundType"	"2"
+		"bgcolor_override"	"base3"
+		"infocus_bgcolor_override" "base3"
+		"outoffocus_bgcolor_override" "base2"
 		
 		"modelpanels_spacing"		"40"
 		"modelpanels_width"			"500"
@@ -62,7 +62,7 @@
 		"wide"			"36"
 		"tall"			"36"
 		"visible"		"1"
-		"bgcolor_override" "0 0 0 255"
+		"bgcolor_override" "base00"
 	}
 	
 	"classimage"
@@ -84,7 +84,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ItemsFoundLabel"
-		"font"			"HudFontMediumBigBold"
+		"font"			"incon32"
+      "fgcolor_override"   "base00"
 		"labelText"		"#NewItemsAcquired"
 		"textAlignment"	"center"
 		"xpos"			"0"
@@ -102,7 +103,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SelectedItemFoundMethodLabel"
-		"font"			"HudFontMediumSmallBold"
+		"font"			"incon32"
+      "fgcolor_override"   "base00"
 		"labelText"		""
 		"textAlignment"	"center"
 		"xpos"			"0"
@@ -116,11 +118,12 @@
 		"enabled"		"1"
 	}
 	
-	"ItemCountLabel"
+	"ItemCountLabel"     //The word item above the count
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ItemCountLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon10"
+      "fgcolor_override"   "base00"
 		"labelText"		"#Item"
 		"textAlignment"	"north-west"
 		"xpos"			"c-245"
@@ -137,7 +140,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SelectedItemNumberLabel"
-		"font"			"HudFontMediumBigBold"
+		"font"			"incon24"
+      "fgcolor_override"   "base00"
 		"labelText"		"#SelectedItemNumber"
 		"textAlignment"	"north-west"
 		"xpos"			"c-245"
@@ -166,7 +170,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#NextItem"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon12"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -189,7 +193,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#PreviousItem"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon12"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -213,7 +217,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#CloseItemPanel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon24"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -221,6 +225,16 @@
 		"default"		"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+
+      "border_default"  "base00Border"
+
+      "defaultFgColor_override" "base00"
+      "defaultBgColor_override" "base3"
+      "armedFgColor_override" "base01"
+      "armedBgColor_override" "base2"
+      "depressedFgColor_override" "base03"
+      "depressedBgColor_override" "base2"
+
 	}
 	"OpenLoadoutButton"
 	{
@@ -237,13 +251,22 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"%loadouttext%"
-		"font"			"HudFontSmallBold"
+		"font"			"incon24"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"changeloadout"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+      
+      "border_default"  "base00Border"
+
+      "defaultFgColor_override" "base00"
+      "defaultBgColor_override" "base3"
+      "armedFgColor_override" "base01"
+      "armedBgColor_override" "base2"
+      "depressedFgColor_override" "base03"
+      "depressedBgColor_override" "base2"
 	}
 	
 	"DiscardButton"
@@ -261,7 +284,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		""
-		"font"			"HudFontSmallBold"
+		"font"			"incon12"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -269,12 +292,16 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 
-		"defaultBgColor_override" "117 107 94 255"
-		"armedBgColor_override" "145 73 59 255"
-		"depressedBgColor_override" "117 107 94 255"
 			
-		"image_drawcolor"	"235 226 202 255"		
-		"image_armedcolor"	"235 226 202 255"		
+      "defaultFgColor_override" "base00"
+      "defaultBgColor_override" "base3"
+      "armedFgColor_override" "base01"
+      "armedBgColor_override" "base2"
+      "depressedFgColor_override" "base03"
+      "depressedBgColor_override" "base2"
+		
+      "image_drawcolor"	"base00"		
+		"image_armedcolor"	"base01"		
 		
 		"SubImage"
 		{
