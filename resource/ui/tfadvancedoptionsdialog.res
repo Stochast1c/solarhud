@@ -1,3 +1,5 @@
+//cannot set checkbox check color, text color, and outline color
+//as a result forcing panel bg to base03 to show the white text color
 "Resource\UI\TFAdvancedOptionsDialog.res"
 {
 	"TFAdvancedOptionsDialog"
@@ -13,12 +15,12 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"bgcolor_override"		"46 43 42 255"
+		"bgcolor_override"		"base3"
 		"paintbackgroundtype"	"2"
 		"settitlebarvisible"	""
 		"paintborder"			"1"
-		"paintbackground"		"0"
-		"border"				"GrayDialogBorder"
+		"paintbackground"		"1"
+		"border"				"base00Border"
 		
 		"control_w"			"500"
 		"control_h"			"25"
@@ -29,7 +31,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TitleLabel"
-		"font"			"HudFontMediumBold"
+		"font"			"incon32"
 		"labelText"		"#TF_AdvancedOptions"
 		"textAlignment"	"center"
 		"xpos"			"0"
@@ -41,7 +43,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "base00"
 	}
 	"CancelButton"
 	{
@@ -58,7 +60,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#Cancel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -66,7 +68,19 @@
 		"Command"		"Close"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+      
+      "border_default"	"base00border"
+      "border_armed"		"base00border"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
 	}
+
 	"OkButton"
 	{
 		"ControlName"	"CExButton"
@@ -82,7 +96,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#GameUI_Ok"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -90,9 +104,20 @@
 		"Command"		"Ok"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+
+      "border_default"	"base00border"
+      "border_armed"		"base00border"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
 	}
 	
-	"PanelListPanel"
+	"PanelListPanel"     //panel that all options are located in
 	{
 		"ControlName"		"CPanelListPanel"
 		"fieldName"		"PanelListPanel"
@@ -105,7 +130,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"bgcolor_override"	"0 0 0 0"
+		"bgcolor_override"	"base03"
 	}
 	
 	"TooltipPanel"
@@ -119,13 +144,14 @@
 		"tall"			"50"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"border"		"base00Border"
+      "bgcolor_override"   "base2"
 		
 		"TipLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TipLabel"
-			"font"			"HudFontSmallest"
+			"font"			"incon12"
 			"labelText"		"%tiptext%"
 			"textAlignment"	"center"
 			"xpos"			"20"
@@ -137,7 +163,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"235 226 202 255"
+			"fgcolor_override"	"base01"
 			"wrap"			"1"
 			//"centerwrap"	"1"
 		}

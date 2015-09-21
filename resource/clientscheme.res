@@ -250,13 +250,14 @@ Scheme
 		
 		Replay.RenderDialog.BgColor							"LighterDarkBrown"
 		
+      //not sure
 		Econ.Dialog.BgColor									"Blank"
 		Econ.Button.BgColor									"green"
-		Econ.Button.FgColor									"TanLight"
+		Econ.Button.FgColor									"violet"
 		Econ.Button.ArmedBgColor							"yellow"
-		Econ.Button.ArmedFgColor							"TanLight"
+		Econ.Button.ArmedFgColor							"cyan"
 		Econ.Button.DepressedBgColor						"magenta"
-		Econ.Button.DepressedFgColor						"Black"
+		Econ.Button.DepressedFgColor						"orange"
 	
       //loadout preset buttons, the one that is selected	
 		Econ.Button.PresetDefaultColorFg					"base0"
@@ -271,20 +272,21 @@ Scheme
 		Border.Selection				"Gray"			// the additional border color for displaying the default/selected button
 
       //controls (at least): unselected loadout preset and taunt/item buttons
-		Button.TextColor				"base1"
+		Button.TextColor				"base00"
 		Button.BgColor					"base3"    //not selected color
-		Button.ArmedTextColor			"base00"
+		Button.ArmedTextColor			"base01"
 		Button.ArmedBgColor				"base2"  // mouseover color
-		Button.SelectedTextColor		"TanLight"
+		Button.SelectedTextColor		"base01"
 		Button.SelectedBgColor			"yellow"    //nothing?
-		Button.DepressedTextColor		"Black"
+		Button.DepressedTextColor		"base03"
 		Button.DepressedBgColor			"magenta"   //nothing   
 
       //unsure what checkbuttons this controls, does not control adv options (actually...)
       //does control backpack show stock items
 		CheckButton.TextColor			"base00"
 		CheckButton.SelectedTextColor	"base00"
-		CheckButton.BgColor				"base3"  //does affect adv options check boxes
+		CheckButton.BgColor				"base03"  //does affect adv options check boxes
+                                              //adv options check and text color appear to be hardcoded to white???
 		CheckButton.Border1  			"base00" 		// the left checkbutton border
 		CheckButton.Border2  			"base00"		// the right checkbutton border
 		CheckButton.Check				   "base00"		// color of the check itself
