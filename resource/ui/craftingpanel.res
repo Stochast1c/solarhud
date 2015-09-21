@@ -15,10 +15,10 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
-		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
-		"infocus_bgcolor_override" "46 43 42 255"
-		"outoffocus_bgcolor_override" "46 43 42 255"
+		"PaintBackgroundType"	"2"
+		"bgcolor_override"	"base3"
+		"infocus_bgcolor_override" "base3"
+		"outoffocus_bgcolor_override" "base3"
 
 		"item_ypos"						"85"
 		"output_item_ypos"				"255"		
@@ -52,7 +52,7 @@
 			"inset_eq_x"	"2"
 			"inset_eq_y"	"2"
 
-			"MainContentsContainer"
+			"MainContentsContainer"    //item panels for the crafting recipe
 			{
 				"ControlName"	"EditablePanel"
 				"fieldName"		"MainContentsContainer"
@@ -69,7 +69,7 @@
 					"allow_rot"				"0"
 				}
 			
-				"namelabel"
+				"namelabel"    
 				{
 					"ControlName"	"CExLabel"
 					"fieldName"		"namelabel"
@@ -84,16 +84,16 @@
 					"enabled"		"1"
 					"labelText"		"%itemname%"
 					"textAlignment"	"south"
-					"fgcolor"		"235 226 202 255"
+               "fgcolor_override"   "base00"
 					"wrap"			"1"
 					"centerwrap"	"1"
 				}
 			}
 		}
 		
-		"recipebuttons_kv"
+		"recipebuttons_kv"      //crafting buttons (e.g. craft scrap metal)
 		{
-			"font"			"HudFontSmallestBold"
+			"font"			"incon12"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"
@@ -106,12 +106,15 @@
 			"centerwrap"	"0"
 			"textAlignment" "west"
 			"textinsetx"	"0"
-			"defaultFgColor_override" "117 107 94 255"
-			"defaultBgColor_override" "0 0 0 0"
-			"armedFgColor_override" "235 226 202 255"
-			"armedBgColor_override" "0 0 0 0"
-			"depressedFgColor_override" "178 82 22 255"
-			"depressedBgColor_override" "0 0 0 0"
+		
+         "border_default"  "NoBorder"
+	
+         "defaultFgColor_override" "base00"
+			"defaultBgColor_override" "base3"
+			"armedFgColor_override" "base01"
+			"armedBgColor_override" "base2"
+			"depressedFgColor_override" "base03"
+			"depressedBgColor_override" "base2"
 		}
 		
 		"filter_xoffset"	"-290"
@@ -140,11 +143,11 @@
 		}	
 	}
 	
-	"ClassLabel"
+	"ClassLabel"   //Select a blueprint to use
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ClassLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
 		"labelText"		"#CraftStep1"
 		"textAlignment"	"north-west"
 		"xpos"			"c-290"
@@ -156,7 +159,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 187 161 255"
+		"fgcolor_override" "base00"
 	}
 	
 	"selectedrecipecontainer"
@@ -169,13 +172,13 @@
 		"wide"			"300"
 		"tall"			"350"
 		"PaintBackgroundType"	"2"
-		"bgcolor_override"	"200 187 161 0"
+		"bgcolor_override"	"base3"
 
 		"RecipeTitle"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"RecipeTitle"
-			"font"			"HudFontSmallBold"
+			"font"			"incon16"
 			"labelText"		"%recipetitle%"
 			"textAlignment"	"west"
 			"xpos"			"0"
@@ -187,7 +190,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"200 187 161 255"
+			"fgcolor"		"base00"
 			"wrap"			"1"
 		}
 		
@@ -195,7 +198,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"RecipeInputStringLabel"
-			"font"			"ItemFontAttribLarge"
+			"font"			"incon12"
 			"labelText"		"%recipeinputstring%"
 			"textAlignment"	"north-west"
 			"xpos"			"0"
@@ -207,7 +210,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"153 204 255 255"
+			"fgcolor"		"yellow"
 			"wrap"			"1"
 		}
 	
@@ -215,7 +218,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"InputLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon12"
 			"labelText"		"#Craft_Recipe_Inputs"
 			"textAlignment"	"north-west"
 			"xpos"			"0"
@@ -227,13 +230,13 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"117 107 94 255"
+			"fgcolor"		"red"
 		}
 		"OutputLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"OutputLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon12"
 			"labelText"		"#Craft_Recipe_Outputs"
 			"textAlignment"	"north-west"
 			"xpos"			"0"
@@ -245,7 +248,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"117 107 94 255"
+			"fgcolor"		"blue"
 		}
 		
 		"CraftButton"
@@ -263,14 +266,24 @@
 			"enabled"		"0"
 			"tabPosition"	"0"
 			"labelText"		"#CraftConfirm"
-			"font"			"HudFontMediumBold"
+			"font"			"incon24"
 			"textAlignment"	"center"
-			"textinsetx"	"50"
+			"textinsetx"	"0"
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"Command"		"craft"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
+         
+         "border_default"  "base00Border"
+         "border_disabled" "base1Border"
+   	
+         "defaultFgColor_override" "base00"
+			"defaultBgColor_override" "base3"
+			"armedFgColor_override" "base01"
+			"armedBgColor_override" "base2"
+			"depressedFgColor_override" "base03"
+			"depressedBgColor_override" "base2"
 		}			
 		
 		"FreeAccountLabel"
@@ -289,6 +302,14 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+         "border_default"  "NoBorder"
+	
+         "defaultFgColor_override" "base00"
+			"defaultBgColor_override" "base3"
+			"armedFgColor_override" "base01"
+			"armedBgColor_override" "base2"
+			"depressedFgColor_override" "base03"
+			"depressedBgColor_override" "base2"
 			"wrap"			"1"
 			"fgcolor"		"178 82 22 255"
 		}
@@ -336,6 +357,8 @@
 		"fgcolor_override"	"59 54 48 255"
 		"bgcolor_override"	"200 187 161 0"
 		"autohide_buttons" "1"
+      
+      "border"          "base00Border"
 	}
 	"recipecontainer"
 	{
@@ -347,7 +370,7 @@
 		"wide"			"280"
 		"tall"			"240"
 		"PaintBackgroundType"	"2"
-		"bgcolor_override"	"200 187 161 0"
+		"bgcolor_override"	"base3"
 	}
 	
 	"mouseoveritempanel"
@@ -419,7 +442,7 @@
 		}
 	}
 	
-	"TooltipPanel"
+	"TooltipPanel"    //mouseover the 4 categories
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"TooltipPanel"
@@ -430,13 +453,14 @@
 		"tall"			"50"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"border"		"base00Border"
+      "bgcolor_override"   "base3"
 		
 		"TipLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TipLabel"
-			"font"			"HudFontSmallest"
+			"font"			"incon14"
 			"labelText"		"%tiptext%"
 			"textAlignment"	"center"
 			"xpos"			"20"
@@ -448,7 +472,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"235 226 202 255"
+			"fgcolor_override"	"base00"
 			"wrap"			"1"
 			"centerwrap"	"1"
 		}

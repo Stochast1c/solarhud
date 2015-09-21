@@ -281,6 +281,7 @@ Scheme
 		Button.DepressedTextColor		"base03"
 		Button.DepressedBgColor			"magenta"   //nothing   
 
+
       //unsure what checkbuttons this controls, does not control adv options (actually...)
       //does control backpack show stock items
 		CheckButton.TextColor			"base00"
@@ -329,7 +330,7 @@ Scheme
 		Label.SelectedTextColor			"White"
 		Label.BgColor					"Blank"
 		Label.DisabledFgColor1			"Blank"
-		Label.DisabledFgColor2			"Black"
+		Label.DisabledFgColor2			"base1"   //craft button 
 
 		ListPanel.TextColor					"Orange"
 		ListPanel.BgColor					"TransparentBlack"

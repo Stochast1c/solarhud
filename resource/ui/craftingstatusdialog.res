@@ -9,13 +9,13 @@
 		"ypos"					"200"
 		"wide"					"200"
 		"tall"					"110"
-		"bgcolor_override"		"46 43 42 0"
-		"paintbackgroundtype"	"0"
+		"bgcolor_override"		"base2"
+		"paintbackgroundtype"	"2"
 		"settitlebarvisible"	"0"
-		"border"				"GrayDialogBorder"
+		"border"				"base00Border"
 	}
 	
-	"CenterPositioner"
+	"CenterPositioner"   //no idea what this is for
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"CenterPositioner"
@@ -43,11 +43,11 @@
 		"visible"		"0"
 	}
 
-	"TitleLabel"
+	"TitleLabel"      //crafting status text
 	{	
-		"ControlName"		"Label"
+		"ControlName"		"CExLabel"
 		"fieldName"		"TitleLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"0"
@@ -61,7 +61,7 @@
 		"centerwrap"	"1"
 		"labelText"		"%updatetext%"
 		"textAlignment"		"center"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "base01"
 		"bgcolor_override" "0 0 0 0"
 		"auto_wide_tocontents" "1"
 		
@@ -69,9 +69,9 @@
         "pin_corner_to_sibling"        "4"          
         "pin_to_sibling_corner"        "4"          	
 	}
-	"EllipsesLabel"
+	"EllipsesLabel"      //progress on crafting
 	{	
-		"ControlName"		"Label"
+		"ControlName"		"CExLabel"
 		"fieldName"		"EllipsesLabel"
 		"font"			"HudFontSmallBold"
 		"xpos"			"0"
@@ -85,7 +85,7 @@
 		"enabled"		"1"
 		"labelText"		"%ellipses%"
 		"textAlignment"		"west"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "yellow"
 		"bgcolor_override" "0 0 0 0"
 		
 		"pin_to_sibling"               "TitleLabel"
@@ -108,7 +108,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#GameUI_Ok"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -116,5 +116,15 @@
 		"Command"		"close"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+
+      "border_default"  "base00Border"
+
+      "defaultFgColor_override" "base00"
+      "defaultBgColor_override" "base3"
+      "armedFgColor_override" "base01"
+      "armedBgColor_override" "base2"
+      "depressedFgColor_override" "base03"
+      "depressedBgColor_override" "base2"
+
 	}
 }
