@@ -48,9 +48,11 @@ Scheme
       "TFMediumBrown"		        "0 0 255 255"
 
       //server browser quick play show servers
-      "QuickListBGDeselected"		"253 246 227 255"
-      "QuickListBGSelected"               "253 246 227 255"    //making this not deselected causes the control to look terrible
+      "QuickListBGDeselected"		         "253 246 227 255"    //base3
+      "QuickListBGSelected"               "  0  43  54 255"    //base03
+                                                               //making this not deselected causes the control to look terrible
                                                                //font on control have their own bg that doesn't get overridden
+                                                               //by setting label.bgcolor to blank this no longer looks terrible
       
       "White"     "101 123 131 255"    //tab title text, base00
       "OffWhite"  "147 161 161 255"    //tab background title text, base1
@@ -124,8 +126,8 @@ Scheme
       Label.TextDullColor				"base1"  //options extra text color
 		Label.TextColor					"base00"    //title for input line color
 		Label.TextBrightColor			"base01"    //doesn't appear to be used    
-		Label.SelectedTextColor			"base00"  //button text color 
-		Label.BgColor					"base3"    //bg title of options 
+		Label.SelectedTextColor			"base0"  //button text color 
+		Label.BgColor					"blank"    //bg title of options - setting to blank to let the panel itself control selected colors, since there is no SelectedBgColor
 		Label.DisabledFgColor1			"base1"	//disabled options text color
 		Label.DisabledFgColor2			"blank"  //disabled options text color	shadow????
 
