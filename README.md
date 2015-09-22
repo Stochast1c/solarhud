@@ -14,13 +14,12 @@ It is highly recommended that you clone the hud rather than download and extract
    and modified to an acceptable standard
 
 #Major things left to do:
-   
-- control points - trying to blow up the images looks horrible with their border, try if you can use editablepanels or if changing the border works
+
+- join server html panel and map info
 
 - stopwatch mode timer
 
-- outline popup panels (serverbrowser, console, options, etc.)
+- MVM
 
-- loading menu - colored, added font, need to remove giant bg panels and modify the stats panel
+- store menu 
 
-- menus from mainmenu (loadout, store, etc.)
