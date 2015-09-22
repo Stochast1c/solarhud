@@ -1,4 +1,4 @@
-"Resource/UI/TextWindowCustomServer.res"  //html motd, using !log, .ss
+"Resource/UI/TextWindowCustomServer.res"  //html motd, using !log, .ss as well as custom server htmlmotd's
 {
 	"info"
 	{
@@ -15,26 +15,41 @@
 		"tabPosition"			"0"
 		"settitlebarvisible"	"0"
 	}
+
+   "BGPanel"
+   {	
+		"ControlName"			"EditablePanel"
+		"fieldName"				"BGPanel"
+		"xpos"					"c-222"
+		"ypos"					"16"
+      "zpos"               "-1"
+		"wide"					"444"
+		"tall"					"400"
+		"visible"				"1"
+		"enabled"				"1"
+      "bgcolor_override"   "base3"
+      "border"             "base00Border"
+   }
 	
 	"TFMessageTitle"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TFMessageTitle"
-		"xpos"			"c-184"
-		"ypos"			"95"
+		"xpos"			"c-222"
+		"ypos"			"20"
 		"zpos"			"1"
-		"wide"			"420"
+		"wide"			"444"
 		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_WELCOME"
-		"textAlignment"	"west"
+		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"ChalkboardTitle"
-		"fgcolor"		"White"
+		"font"			"incon20"
+		"fgcolor"		"base00"
 	}	
 
 	"TextMessage"
@@ -49,19 +64,19 @@
 	{
 		"ControlName"	"CExRichText"
 		"fieldName"		"TFTextMessage"
-		"font"			"ChalkboardText"
-		"xpos"			"c-184"
-		"ypos"			"125"
+		"font"			"incon12"
+		"xpos"			"c-200"
+		"ypos"			"50"
 		"zpos"			"1"
-		"wide"			"415"
-		"tall"			"240"
+		"wide"			"99999"     //this forces the scrollbar offscreen
+		"tall"			"350"
 		"autoResize"	"3"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"paintborder"	"0"
 		"textAlignment"	"northwest"
-		"fgcolor"		"Gray"
+		"fgcolor"		"base00"
 	}
 
 	"HTMLMessage"     //sized to fit logs snuggly down to team stats for 6s
