@@ -15,7 +15,9 @@ It is highly recommended that you clone the hud rather than download and extract
 
 #Major things left to do:
 
-- join server html panel and map info
+- engineer building panels and build menu
+
+- spy disguise panels and sapping menu
 
 - stopwatch mode timer
 
