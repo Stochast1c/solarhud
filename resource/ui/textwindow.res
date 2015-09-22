@@ -15,8 +15,24 @@
 		"tabPosition"			"0"
 		"settitlebarvisible"	"0"
 	}
+
+   "BGPanel"
+   {	
+		"ControlName"			"EditablePanel"
+		"fieldName"				"BGPanel"
+		"xpos"					"0"
+		"ypos"					"0"
+      "zpos"               "-1"
+		"wide"					"f0"
+		"tall"					"480"
+		"visible"				"1"
+		"enabled"				"1"
+      "bgcolor_override"   "base3"
+      "border"             "base00Border"
 	
-	"TFMessageTitle"
+   }
+
+   "TFMessageTitle"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TFMessageTitle"
@@ -33,8 +49,8 @@
 		"textAlignment"	"west"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"ChalkboardTitle"
-		"fgcolor"		"White"
+		"font"			"incon20"
+		"fgcolor"		"base00"
 	}	
 
 	"TextMessage"
@@ -49,11 +65,11 @@
 	{
 		"ControlName"	"CExRichText"
 		"fieldName"		"TFTextMessage"
-		"font"			"ChalkboardText"
+		"font"			"incon12"
 		"xpos"			"c-184"
 		"ypos"			"125"
 		"zpos"			"1"
-		"wide"			"415"
+		"wide"			"99999"     //this forces the scrollbar offscreen
 		"tall"			"240"
 		"autoResize"	"3"
 		"pinCorner"		"0"
@@ -61,7 +77,7 @@
 		"enabled"		"1"
 		"paintborder"	"0"
 		"textAlignment"	"northwest"
-		"fgcolor"		"Gray"
+		"fgcolor"		"base00"
 	}
 
 	"HTMLMessage"
@@ -80,16 +96,31 @@
 		"tabPosition"		"0"
 		"paintborder"	"0"
 	}
-	
-	"ok"
+
+   "okborder"  //for some reason the border doesn't show until clicking on scrollbar"
 	{
-		"ControlName"		"CExButton"
-		"fieldName"		"ok"
+		"ControlName"		"EditablePanel"
+		"fieldName"		"okborder"
 		"xpos"			"r190"
 		"ypos"			"r40"
 		"zpos"			"6"
 		"wide"			"150"
 		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+      "border"       "base00Border"
+      "bgcolor_override"   "base3"
+   }
+
+	"ok"
+	{
+		"ControlName"		"CExButton"
+		"fieldName"		"ok"
+		"xpos"			"r189"
+		"ypos"			"r39"
+		"zpos"			"6"
+		"wide"			"148"
+		"tall"			"27"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -102,22 +133,32 @@
 		"wrap"		"0"
 		"command"		"okay"
 		"default"		"1"
-		"font"			"MenuSmallFont"
+		"font"			"incon24"
+
+      "paintborder"     "1"
+      "border_default"  "base00Border"
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
 	}
 	
-	"MenuBG"
+	"MenuBG"    //disabled
 	{
 		"ControlName"	"CModelPanel"
 		"fieldName"		"MenuBG"
-		"xpos"			"0"
-		"ypos"			"0"
+		"xpos"			"999990"
+		"ypos"			"999990"
 		"zpos"			"0"		
 		"wide"			"f0"
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"fov"			"20"
 		
 		"model"
@@ -133,19 +174,19 @@
 		}
 	}
 	
-	"ShadedBar"
+	"ShadedBar"    //disabled
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"ShadedBar"
-		"xpos"			"0"
-		"ypos"			"r50"
+		"xpos"			"999990"
+		"ypos"			"99999"//r50"
 		"zpos"			"5"
 		"wide"			"f0"
 		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"	
 		"image"			"loadout_bottom_gradient"
 		"tileImage"		"1"

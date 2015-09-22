@@ -14,52 +14,63 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}
-	
+
+   "MapInfoBackground"
+   {	
+    	"ControlName"	"EditablePanel"
+		"fieldName"		"MapInfoBackground"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+      "bgcolor_override"   "base3"
+      "border"       "base00Border"
+   }
+ 
 	"MapInfoTitle"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"MapInfoTitle"
-		"xpos"			"c-184"
-		"xpos_lodef"			"c-174"	
-		"xpos_hidef"			"c-174"
-		"ypos"			"95"
-		"ypos_lodef"			"110"
+		"xpos"			"0"
+		"ypos"			"c-25"
 		"zpos"			"1"
-		"wide"			"225"
-		"tall"			"24"
+		"wide"			"f0"
+		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%mapname%"
-		"textAlignment"	"west"
-		"font"			"ChalkboardTitle"
-		"fgcolor"		"White"
+		"textAlignment"	"center"
+		"font"			"incon48"
+		"fgcolor"		"base00"
 	}
 	
 	"MapInfoType"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"MapInfoType"
-		"xpos"			"c-184"
-		"xpos_lodef"			"c-174"
-		"xpos_hidef"			"c-174"
-		"ypos"			"125"
-		"ypos_lodef"			"140"
+		"xpos"			"0"
+		"ypos"			"c25"
 		"zpos"			"1"
-		"wide"			"225"
-		"tall"			"24"
+		"wide"			"f0"
+		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%gamemode%"
-		"textAlignment"	"west"
-		"font"			"ChalkboardText"
-		"fgcolor"		"Gray"
+		"textAlignment"	"center"
+		"font"			"incon24"
+		"fgcolor"		"yellow"
 	}	
 	
-	"MapInfoText"
+	"MapInfoText"     //disabled, do not need to be told how to play
 	{
 		"ControlName"	"CExRichText"
 		"fieldName"		"MapInfoText"
@@ -78,23 +89,19 @@
 		"tall_lodef"	"200"
 		"autoResize"	"3"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"paintborder"	"0"
 		"textAlignment"	"northwest"
 		"fgcolor"		"Gray"
 	}
 	
-	"MapImage"
+	"MapImage"  //disabled
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MapImage"
-		"xpos"			"c10"
-		"xpos_lodef"			"c35"
-		"xpos_hidef"			"c35"
-		"ypos"			"75"
-		"ypos_lodef"			"100"
-		"ypos_hidef"			"100"
+		"xpos"			"99999"//c10"
+		"ypos"			"99999"//75"
 		"zpos"			"2"
 		"wide"			"275"
 		"wide_hidef"			"225"
@@ -103,7 +110,7 @@
 		"tall_hidef"			"225"
 		"tall_lodef"	"225"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			""
 		"scaleImage"	"1"		
 	}
@@ -131,8 +138,17 @@
 		"brighttext"	"0"
 		"command"		"continue"
 		"default"		"1"
-		"font"			"MenuSmallFont"
-		"fgcolor"		"Black"
+		"font"			"incon24"
+
+      "paintborder"     "1"
+      "border_default"  "base00Border"
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
 	}
 	
 	"MapInfoWatchIntro" [$WIN32]
@@ -156,8 +172,17 @@
 		"brighttext"	"0"
 		"command"		"intro"
 		"default"		"1"
-		"font"			"MenuSmallFont"
-		"fgcolor"		"Black"
+		"font"			"incon24"
+      
+      "paintborder"     "1"
+      "border_default"  "base00Border"
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
 	}
 	
 	"MapInfoBack" [$WIN32]
@@ -181,23 +206,32 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"command"		"back"
-		"font"			"MenuSmallFont"
-		"fgcolor"		"Black"
+		"font"			"incon24"
+      
+      "paintborder"     "1"
+      "border_default"  "base00Border"
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
 	}
 	
-	"MenuBG"
+	"MenuBG"    //disabled
 	{
 		"ControlName"	"CModelPanel"
 		"fieldName"		"MenuBG"
-		"xpos"			"0"
-		"ypos"			"0"
+		"xpos"			"999990"
+		"ypos"			"999990"
 		"zpos"			"0"		
 		"wide"			"f0"
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"fov"			"20"
 		
 		"model"
@@ -215,23 +249,19 @@
 		}
 	}					
 
-	"ShadedBar"
+	"ShadedBar"    //disabled
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"ShadedBar"
-		"xpos"			"0"
-		"ypos"			"r50"
-		"ypos_lodef"			"r74"
-		"ypos_hidef"			"r65"
+		"xpos"			"999990"
+		"ypos"			"99999"//r50"
 		"zpos"			"5"
-		"wide"			"f0"
-		"tall"			"50"
-		"tall_lodef"			"74"
-		"tall_hidef"			"65"
+		"wide"			"0"//f0"
+		"tall"			"0"//50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"	
 		"image"			"loadout_bottom_gradient"
 		"tileImage"		"1"
