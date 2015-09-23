@@ -51,11 +51,11 @@
 					
 				if_mvm
 				{
-					"xpos"				"4"
-					"ypos"				"25"
-					"wide"			"48"
+					"xpos"				"20"
+					"ypos"				"0"
+					"wide"			"93"
 					"textAlignment"		"center"
-					"font"				"PlayerPanelPlayerName"
+					"font"				"incon12"
 				}
 
 				if_competitive
@@ -324,8 +324,8 @@
 			
 			if_mvm
 			{
-				"wide"		"55"
-				"tall"		"35"
+				"wide"		"164"
+				"tall"		"20"
 			}
 						
 			if_competitive
@@ -343,15 +343,21 @@
 		
 		if_mvm
 		{
-			"xpos"					"c-250"
-			"ypos"					"0"
-			"wide"					"500"
-			"tall"					"480"
+			"xpos"							"0"
+			"ypos"							"0"
+			"wide"							"f0"
+			"tall"							"480"
 
-			"team1_player_base_y"			"66"
-			"team2_player_base_y"			"66"
-			"team2_player_delta_x"			"52"
-		}
+         //the only things that do stuff right now are the ones in the above section 
+         "team1_player_base_offset_x"		"0"
+         "team1_player_base_y"				"201"    //2px above medigun info from statusspec 
+         "team1_player_delta_x"				"0"
+         "team1_player_delta_y"				"-20"    //team1 counts backwards
+         "team2_player_base_offset_x"		"0"
+         "team2_player_base_y"				"259"    //2px below medigun info from statusspec
+         "team2_player_delta_x"				"20"
+         "team2_player_delta_y"				"20"     //team2 counts forwards		
+      }	
 		
 		if_competitive
 		{
@@ -502,6 +508,11 @@
       "visible"         "1"
       "enabled"         "1"
       "bgcolor_override"         "blue"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
    }
 
    "SepBarRed"
@@ -515,6 +526,11 @@
       "visible"         "1"
       "enabled"         "1"
       "bgcolor_override"         "red"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
    }
 
    "CondLabelBG"
@@ -529,6 +545,11 @@
 		"visible"		"1"
 		"enabled"		"1"
       "bgcolor_override"      "base3"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
    }
       
    
