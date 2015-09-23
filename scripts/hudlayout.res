@@ -339,8 +339,8 @@
 		"enabled"	"1"
       "xpos_minmode"    "99999"
       "ypos_minmode"    "99999"
-		"xpos"		"0"
-		"ypos"		"0"
+		"xpos"		"-11"
+		"ypos"		"-8"  //318 buttons at bottom
 		"wide"		"640"
 		"tall"		"480"
 		
@@ -1232,9 +1232,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudAchievementTracker"
-		"xpos"			"5"
-		"NormalY"		"10"
-		"EngineerY"		"170"
+		"xpos"			"-5"
+		"NormalY"		"0"
+		"EngineerY"		"175"
 		"zpos"			"2"
 		"wide"			"200"
 		"tall"			"280"

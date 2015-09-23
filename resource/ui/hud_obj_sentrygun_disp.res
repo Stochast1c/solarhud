@@ -1,4 +1,4 @@
-"Resource/UI/hud_obj_sentrygun_disp.res"
+"Resource/UI/hud_obj_sentrygun_disp.res"  //extra sentry in mvm
 {
 	"BuildingStatusItem"
 	{
@@ -15,10 +15,10 @@
 		"tabPosition"	"0"
 	}
 	
-	"Background"
+   "NewBG"
 	{
-		"ControlName"	"CIconPanel"
-		"fieldName"		"Background"
+		"ControlName"	"EditablePanel"
+		"fieldName"		"NewBG"
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
@@ -26,10 +26,26 @@
 		"tall"			"22"
 		"visible"		"1"
 		"enabled"		"1"
+      "bgcolor_override"      "base3"
+      "border"       "base00Border"
+	}
+	
+	"Background"      //disabled
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"Background"
+		"xpos"			"999990"
+		"ypos"			"999990"
+		"zpos"			"-1"
+		"wide"			"120"
+		"tall"			"22"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_background_disabled"
 		"iconColor"		"255 255 255 255"
 	}
+
 	
 	"Icon_Sentry_1"
 	{
@@ -43,7 +59,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_sentrygun_1"
-		"iconColor"		"255 255 255 255"
+		"iconColor"		"base00"
 	}
 	
 	"NotBuiltPanel"
@@ -52,25 +68,29 @@
 		"fieldName"		"NotBuiltPanel"
 		"xpos"			"0"
 		"ypos"			"0"
-		"wide"			"160"
-		"tall"			"20"
+      "zpos"         "1"
+		"wide"			"120"
+		"tall"			"22"
 		"visible"		"1"
+      "border"       "base00Border"
 
 		"NotBuiltLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"NotBuiltLabel"
-			"font"			"DefaultVerySmall"
-			"xpos"			"60"
+			"font"			"incon12"
+         "fgcolor"      "base00"
+         "bgcolor_override"      "base3"
+			"xpos"			"0"
 			"ypos"			"0"
-			"wide"			"200"
-			"tall"			"20"
+			"wide"			"127"    //centered
+			"tall"			"22"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"#Building_hud_disp_sentry_not_built"
-			"textAlignment"	"Left"
+			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
 		}
@@ -83,7 +103,7 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"160"
-		"tall"			"20"
+		"tall"			"22"
 		"visible"		"0"
 		
 		"Icon_Upgrade_1"
@@ -99,7 +119,7 @@
 			"enabled"		"0"
 			"scaleImage"	"1"	
 			"icon"			""
-			"iconColor"		"255 255 255 255"
+			"iconColor"		"base00"
 		}
 	
 		"AlertTray"
@@ -130,7 +150,7 @@
 			"enabled"		"0"
 			"scaleImage"	"1"	
 			"icon"			"obj_status_icon_wrench"
-			"iconColor"		"255 255 255 255"
+			"iconColor"		"base00"
 		}
 		
 		"SapperIcon"
@@ -154,19 +174,34 @@
 			"ControlName"	"CBuildingHealthBar"
 			"fieldName"		"Health"
 			"font"			"Default"
-			"xpos"			"13"
-			"ypos"			"4"
+			"xpos"			"9"
+			"ypos"			"2"
 			"wide"			"8"
-			"tall"			"15"
+			"tall"			"18"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"textAlignment"	"Left"
 			"dulltext"		"0"
-			"brighttext"	"0"	
+			"brighttext"	"0"
+         "bgcolor_override"   "base03"
+         "border"       "base3border"	
 		}
-		
+		"HealthBG"
+		{	
+			"ControlName"	"EditablePanel"
+			"fieldName"		"HealthBG"
+			"xpos"			"0"
+			"ypos"			"0"
+         "zpos"         "-1"
+			"wide"			"25"
+			"tall"			"22"
+			"visible"		"1"
+			"enabled"		"1"
+         "bgcolor_override"   "base03"
+		}
+
 		"BuildingPanel"
 		{
 			"ControlName"	"EditablePanel"
@@ -181,7 +216,8 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"BuildingLabel"
-				"font"			"DefaultSmall"
+				"font"			"incon10"
+            "fgcolor_override"   "base00"
 				"xpos"			"0"
 				"ypos"			"18"
 				"wide"			"200"
@@ -212,6 +248,9 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+            "bgcolor_override"   "base2"
+            "border"       "base00Border"
+            "fgcolor_override"   "base01"
 			}
 		}
 		
@@ -238,18 +277,19 @@
 				"enabled"		"0"
 				"scaleImage"	"1"
 				"image"			"../hud/hud_obj_status_kill_64"
-				"drawcolor"		"ProgressOffWhite"
+				"drawcolor"		"base00"
 			}
 						
 			"KillsLabel"
 			{	
 				"ControlName"	"CExLabel"
 				"fieldName"		"KillsLabel"
-				"font"			"DefaultSmall"
+				"font"			"incon12"
+            "fgcolor"      "base00"
 				"xpos"			"12"
-				"ypos"			"6"
+				"ypos"			"4"
 				"wide"			"200"
-				"tall"			"22"
+				"tall"			"12"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"0"
@@ -273,7 +313,7 @@
 				"enabled"		"1"
 				"scaleImage"	"1"
 				"image"			"../hud/hud_obj_status_ammo_64"
-				"drawcolor"		"ProgressOffWhite"
+				"drawcolor"	   "base00"	
 			}
 			
 			"Shells"
@@ -292,6 +332,9 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+            "bgcolor_override"   "base03"    //cant modify ammo color from offwhite
+            "border"       "base00Border"
+            "fgcolor_override"   "base01"
 			}
 		}
 	}
