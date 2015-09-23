@@ -1,27 +1,28 @@
 "Resource/UI/build_menu/base_already_built.res"
 {
-	"ItemNameLabel"
+	"ItemNameLabel"   //building name
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"ItemNameLabel"
-		"font"			"Default"
-		"xpos"			"6"
+		"font"			"incon20"
+      "fgcolor_override"   "base1"
+		"xpos"			"1"
 		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"84"
-		"tall"			"15"
+		"wide"			"98"
+		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_Object_Sentry"
 		"labelText_lodef"		"#TF_Object_Sentry_360"
-		"textAlignment"	"Left"
+		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 	}
 	
-	"ItemBackground"	
+	"ItemBackground"  //disabled, background
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"ItemBackground"
@@ -30,34 +31,33 @@
 		"zpos"			"0"
 		"wide"			"98"
 		"tall"			"105"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
-		"icon"			"hud_menu_item_bg_outline"
-		"iconColor"		"ProgressOffWhiteTransparent"
+		"icon"			"hud_menu_item_bg"
+		"iconColor"		"yellow"
 	}
 	
-	"CantBuildReason"
+	"CantBuildReason" 
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CantBuildReason"
-		"font"			"Default"
-		"xpos"			"10"
-		"ypos"			"48"
+		"font"			"incon12"
+		"fgcolor"		"base1"
+		"xpos"			"1"
+		"ypos"			"20"
 		"zpos"			"2"
-		"wide"			"80"
-		"tall"			"18"
+		"wide"			"98"
+		"tall"			"16"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#Hud_Menu_Build_Already_Built"
 		"textAlignment"	"Center"
-		"dulltext"		"0"
-		"brighttext"	"0"
 	}
 	
-	"MetalIcon"	
+   "MetalIcon"	   //disabled
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"MetalIcon"
@@ -66,38 +66,38 @@
 		"zpos"			"1"
 		"wide"			"10"
 		"tall"			"10"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"ico_metal"
-		"iconColor"		"TanDark"
+		"iconColor"		"base00"
 	}
 	
-	"CostLabel"
+	"CostLabel"    //disabled
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CostLabel"
-		"font"			"HudFontSmall"
-		"fgcolor"		"TanDark"
-		"xpos"			"23"
-		"ypos"			"17"
+		"font"			"incon16"
+		"fgcolor"		"base00"
+		"xpos"			"1"
+		"ypos"			"20"
 		"zpos"			"1"
-		"wide"			"84"
-		"tall"			"13"
+		"wide"			"98"
+		"tall"			"16"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"labelText"		"%metal%"
-		"textAlignment"	"Left"	
+		"textAlignment"	"center"
 	}
 	
-	"ModeLabel"
+	"ModeLabel"    //no idea
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"ModeLabel"
 		"font"			"DefaultSmall"
-		"fgcolor"		"TanDark"
+		"fgcolor"		"magenta"
 		"xpos"			"33"
 		"ypos"			"17"
 		"zpos"			"1"
@@ -110,8 +110,8 @@
 		"labelText"		""
 		"textAlignment"	"East"	
 	}
-		
-	"NumberBg"	
+	
+	"NumberBg"	   //disabled, the key to press
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"NumberBg"
@@ -120,19 +120,19 @@
 		"zpos"			"0"
 		"wide"			"18"
 		"tall"			"18"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"ico_key_blank"
 		"iconColor"		"255 255 255 255"
 	}
 	
-	"NumberLabel"
+	"NumberLabel"     //disabled
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"HudMenuNumberFont"
-		"fgcolor"		"Black"
+		"font"			"incon12"
+		"fgcolor"		"base00"
 		"xpos"			"0"
 		"ypos"			"98"
 		"zpos"			"1"
@@ -140,8 +140,8 @@
 		"tall"			"18"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"labelText"		"1"
 		"textAlignment"	"Center"
 		"dulltext"		"1"
