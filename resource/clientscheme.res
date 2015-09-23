@@ -3109,6 +3109,66 @@ Scheme
 				}
 			}
 		}
+		base3Border
+		{
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base3"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base3"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base3"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base3"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base3"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base3"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base3"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base3"
+					"offset" "1 1"
+				}
+			}
+		}
       menutabborder
 		{
 			"inset" "0 0 1 1"
