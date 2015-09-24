@@ -164,39 +164,41 @@
 			"tall"			"31"
 			"visible"		"1"
 			"enabled"		"1"	
-			"icon"			"obj_status_alert_background"
+			"icon"			""    //obj_status_alert_background"
 		}
 
 		"WrenchIcon"
 		{
 			"ControlName"	"CIconPanel"
 			"fieldName"		"WrenchIcon"
-			"xpos"			"121"
-			"ypos"			"5"
+			"xpos"			"120"
+			"ypos"			"0"
 			"zpos"			"1"
-			"wide"			"19"
-			"tall"			"19"
+			"wide"			"20"
+			"tall"			"31"
 			"visible"		"0"
 			"enabled"		"1"
 			"scaleImage"	"1"	
 			"icon"			"obj_status_icon_wrench"
 			"iconColor"		"base00"
+         "bgcolor_override"   "red"
 		}
 		
 		"SapperIcon"
 		{
 			"ControlName"	"CIconPanel"
 			"fieldName"		"SapperIcon"
-			"xpos"			"117"
-			"ypos"			"3"
+			"xpos"			"120"
+			"ypos"			"0"
 			"zpos"			"1"
-			"wide"			"25"
-			"tall"			"25"
+			"wide"			"20"
+			"tall"			"31"
 			"visible"		"0"
 			"enabled"		"1"
 			"scaleImage"	"1"	
 			"icon"			"obj_status_icon_sapper"
-			"iconColor"		"255 255 255 255"
+			"iconColor"		"base00"
+         "bgcolor_override"   "red"
 		}
 
 		"Health"    //can't set color for warning and normal?
