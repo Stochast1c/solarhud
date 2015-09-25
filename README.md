@@ -17,8 +17,6 @@ It is highly recommended that you clone the hud rather than download and extract
 
 - spy disguise panels and sapping menu
 
-- stopwatch mode timer
-
 - MVM
 
 - store menu 
