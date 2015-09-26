@@ -9505,15 +9505,64 @@ Scheme
 		
 		NotificationDefault
 		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"alert_rect"
-			"src_corner_height"		"32"				// pixels inside the image
-			"src_corner_width"		"32"
-			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
-		}
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "yellow"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "yellow"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "yellow"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "yellow"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "yellow"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "yellow"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "yellow"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "yellow"
+					"offset" "1 1"
+				}
+			}
+		}	
 		MainMenuButtonDefault
 		{
 			"bordertype"			"scalable_image"
