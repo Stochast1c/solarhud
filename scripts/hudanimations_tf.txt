@@ -818,8 +818,8 @@ event RespecEarnedPulseEndLoss
 
 event RDPositiveScorePulse
 {
-	Animate Score FgColor	"25 255 25 255"		Linear 0.0 0.0
-	Animate Score FgColor	"TanLight"			Linear 0.1 0.2
+	Animate Score FgColor	"green"		Linear 0.0 0.0
+	Animate Score FgColor	"yellow"			Linear 0.1 0.2
 
 	Animate Score Position	"3 5"		Deaccel 0.0 0.05
 	Animate Score Position	"3 10"		Accel 0.05 0.2
@@ -828,10 +828,10 @@ event RDPositiveScorePulse
 	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
 }
 
-event RDNegativeScorePulse
+event RDNegativeScorePulse    //score a point in pd
 {
-	Animate Score FgColor	"255 75 75 255"		Linear 0.0 0.0
-	Animate Score FgColor	"TanLight"			Linear 0.1 0.2
+	Animate Score FgColor	"magenta"		Linear 0.0 0.0
+	Animate Score FgColor	"yellow"			Linear 0.1 0.2
 
 	Animate Score Position	"3 5"		Deaccel 0.0 0.05
 	Animate Score Position	"3 10"		Accel 0.05 0.2
