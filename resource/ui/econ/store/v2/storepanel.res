@@ -33,7 +33,7 @@
 	
 	"BackgroundHeader"
 	{
-		"ControlName"	"ImagePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"BackgroundHeader"
 		"xpos"			"0"
 		"ypos"			"0"
@@ -42,12 +42,11 @@
 		"tall"			"120"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"loadout_header"
-		"tileImage"		"1"
+		"bgcolor_override"   "base3"
 	}				
-	"BackgroundFooter"
+	"BackgroundFooter"   
 	{
-		"ControlName"	"ImagePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"BackgroundFooter"
 		"xpos"			"0"
 		"ypos"			"420"
@@ -56,23 +55,21 @@
 		"tall"			"60"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"loadout_bottom_gradient"
-		"tileImage"		"1"
-	}				
+      "bgcolor_override"      "base3"
+	}						
 	"FooterLine"
 	{
-		"ControlName"	"ImagePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"FooterLine"
 		"xpos"			"0"
 		"ypos"			"420"
 		"zpos"			"2"
 		"wide"			"f0"
-		"tall"			"10"
+		"tall"			"2"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"loadout_solid_line"
-		"scaleImage"	"1"
-	}				
+      "bgcolor_override"      "base00"
+   }					
 	
 	"Sheet"
 	{
@@ -86,30 +83,30 @@
 		
 		"HeaderLine"
 		{
-			"ControlName"	"ImagePanel"
+			"ControlName"	"EditablePanel"
 			"fieldName"		"HeaderLine"
 			"xpos"			"0"
 			"ypos"			"32"
 			"zpos"			"5"
 			"wide"			"f0"
-			"tall"			"10"
+			"tall"			"2"
 			"visible"		"1"
 			"enabled"		"1"
-			"image"			"loadout_solid_line"
-			"scaleImage"	"1"
-		}				
+         "bgcolor_override"      "base00"
+		}					
 		
 		"tabskv"
 		{
-			"textinsetx"		"6"
-			"textAlignment"		"center"
-			"font"				"HudFontSmallBold"
-			"selectedcolor"		"200 187 161 255"
-			"unselectedcolor"	"130 120 104 255"	
-			"defaultBgColor_override"	"46 43 42 255"
-			"paintbackground"	"0"
-			"activeborder_override"	"OutlinedGreyBox"
-			"normalborder_override" "OutlinedDullGreyBox"
+			"textinsetx"		"20"
+			"font"				"incon32"
+         "textAlignment"   "center"
+			"selectedcolor"		"base00"
+			"unselectedcolor"	"base1"	
+			"defaultbgcolor_override"	"base3"
+			"paintbackground"	"2"
+         "paintborder"     "1"
+			"activeborder_override"	"menutabborder"
+			"normalborder_override" "base1border"
 		}
 	}
 	
@@ -128,7 +125,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_BackCarat"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -136,6 +133,16 @@
 		"Command"		"close"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+
+      "border_default"	"base00border"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
 	}		
 	
 	"armory_panel"
@@ -208,7 +215,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#Store_Checkout"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -216,6 +223,14 @@
 		"Command"		"checkout"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-	}	
-	
+      "border_default"	"base00border"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
+	}		
 }

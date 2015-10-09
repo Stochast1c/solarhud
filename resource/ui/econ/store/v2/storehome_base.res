@@ -15,9 +15,9 @@
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
-		"infocus_bgcolor_override" "46 43 42 255"
-		"outoffocus_bgcolor_override" "46 43 42 255"
+		"bgcolor_override"	"base3"
+		"infocus_bgcolor_override" "yellow"
+		"outoffocus_bgcolor_override" "magenta"
 		
 		"item_controls_xoffset"	"2"
 		"item_controls_yoffset"	"2"
@@ -35,11 +35,11 @@
 		
 		"item_backdrop_zpos"				"1"
 		"show_item_backdrop"				"1"
-		"item_backdrop_color"				"24 22 20 255"
-		"item_backdrop_left_margin"			"11"
-		"item_backdrop_right_margin"		"11"
-		"item_backdrop_top_margin"			"9"
-		"item_backdrop_bottom_margin"		"42"
+		"item_backdrop_color"				"238 232 213 255"    //must be numbers, base2
+		"item_backdrop_left_margin"			"5"
+		"item_backdrop_right_margin"		"5"
+		"item_backdrop_top_margin"			"5"
+		"item_backdrop_bottom_margin"		"5"
 		"item_backdrop_paintbackgroundtype"	"2"
 
 		"item_backdrop_zpos"				"1"
@@ -282,24 +282,23 @@
 			"tabPosition"		"0"
 			"textAlignment"		"center"
 			"scaleImage"		"1"
-			"font"			"HudFontSmallestBold"
+			"font"			"incon12"
 			
-			"fgcolor"	"124 114 99 255"
-			"defaultBgColor_override" "38 35 33 255"
-			"defaultFgColor_override" "124 114 99 255"
-			"armedBgColor_override" "30 30 30 255"
-			"armedFgColor_override" "124 114 99 255"
-			"selectedBgColor_override" "10 10 10 255"
-			"selectedFgColor_override"	"235 227 203 255"
+			"paintborder"		"1"
+         "border_default"	"base00border"
+         "border"	"base00border"
+         
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "selectedFgColor_override"   "base03"
+         "selectedBgColor_override"   "base2"
 			
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"sound_armed"		"UI/buttonrollover.wav"
-			
-			"paintbackground"	"1"
-			"paintborder"		"1"
-			
-			"border"				"ButtonBorder"
 			
 			"stayselectedonclick"	"1"
 			"keyboardinputenabled"	"0"
