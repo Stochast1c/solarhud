@@ -113,9 +113,9 @@ Scheme
 		// training
 		"HudTrainingHint"			"212 160 23 255"
 		
-      "TanDark"				"238 232 213 255"       //base2
+      "TanDark"				"101 123 131 255"     //base00 - advanced options text color (and checkbox outline and check)
 		"TanLight"				"101 123 131 255"     //this is THE default color in the game - base00
-		"TanDarker"				"253 246 227 255"       //base3
+		"TanDarker"				"255 0 255 255"       //purple for debugging, not sure what this color controls
 		
 		"StoreDarkTan"			"131 121 104 255"
 		"StoreGreen"			"76 107 34 255"
@@ -286,8 +286,8 @@ Scheme
       //does control backpack show stock items
 		CheckButton.TextColor			"base00"
 		CheckButton.SelectedTextColor	"base00"
-		CheckButton.BgColor				"base03"  //does affect adv options check boxes
-                                              //adv options check and text color appear to be hardcoded to white???
+		CheckButton.BgColor				"base3"  //does affect adv options check boxes
+                                              //adv options check and text color are hardcoded to tandark 
 		CheckButton.Border1  			"base00" 		// the left checkbutton border
 		CheckButton.Border2  			"base00"		// the right checkbutton border
 		CheckButton.Check				   "base00"		// color of the check itself

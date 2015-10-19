@@ -1,5 +1,4 @@
-//cannot set checkbox check color, text color, and outline color
-//as a result forcing panel bg to base03 to show the white text color
+//checkbox check color, text color, and outline color are hardcoded to TanDark
 "Resource\UI\TFAdvancedOptionsDialog.res"
 {
 	"TFAdvancedOptionsDialog"
@@ -130,7 +129,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"bgcolor_override"	"base03"
+		"bgcolor_override"	"base3"
 	}
 	
 	"TooltipPanel"
