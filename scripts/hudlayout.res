@@ -1,21 +1,38 @@
 "Resource/HudLayout.res"
 {
    //////////////////// CROSSHAIRS ///////////////////////////
-   "CrosshairPlus"
+   "Crosshair1"
 	{
 		"controlName" "CExLabel"
-		"fieldName" "CrosshairPlus"
-		"font" "incon24"
-		"fgcolor" "magenta"
-		"labelText" "+"
-		"xpos" "c-97"
-		"ypos" "c-97"
-		"wide" "193"
-		"tall" "193"
+		"fieldName" "Crosshair1"
+		"font" "kcross20"
+		"fgcolor" "yellow"
+		"labelText" "l"
+		"xpos" "c-25"
+		"ypos" "c-25"
+		"wide" "50"
+		"tall" "50"
 		"visible" "1"
 		"enabled" "1"
 		"textAlignment" "center"
 	}
+   "Crosshair2"
+	{
+		"controlName" "CExLabel"
+		"fieldName" "Crosshair2"
+		"font" "kcross20"
+		"fgcolor" "yellow"
+		"labelText" "d"
+		"xpos" "c-25"
+		"ypos" "c-25"
+		"wide" "50"
+		"tall" "50"
+		"visible" "1"
+		"enabled" "1"
+		"textAlignment" "center"
+	}
+   ////////////////////////////////////////////////////////////
+
 
 	HudPlayerStatus
 	{
