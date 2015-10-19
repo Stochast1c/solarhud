@@ -130,6 +130,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
 
+      "paintborder"  "0"
       "border_default" "NoBorder"
 			
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -192,8 +193,10 @@
 		"armedFgColor_override" "base02"       //doesn't appear
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
-			
+		
+      "paintborder"  "0"
       "border_default" "NoBorder"
+   
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"sound_armed"		"UI/buttonrollover.wav"
@@ -257,6 +260,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
 		
+      "paintborder"  "0"
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
@@ -319,6 +323,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
 		
+      "paintborder"  "0"
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
@@ -377,6 +382,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
 		
+      "paintborder"  "0"
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
@@ -440,6 +446,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
 		
+      "paintborder"  "0"
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
@@ -501,6 +508,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
 		
+      "paintborder"  "0"
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
@@ -563,6 +571,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
 		
+      "paintborder"  "0"
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
@@ -625,6 +634,7 @@
 		"depressedFgColor_override" "yellow"   //doesn't appear
 		"selectedFgColor_override" "base02"
 		
+      "paintborder"  "0"
       "border_default" "NoBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
