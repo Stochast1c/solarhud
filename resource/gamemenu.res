@@ -182,12 +182,12 @@
    }
    "AusAdvButton"
    {
-      "label"     "Aus Adv"
-      "command"      "engine connect 125.63.61.72:27016"
+      "label"     "EUSurfed"
+      "command"      "engine connect 81.19.208.35:27015"
    }
    "AusBegButton"
    {
-      "label"     "Aus Beginner"
-      "command"      "engine connect 125.63.61.72:27015"
+      "label"     "EUeuSurfed"
+      "command"      "engine connect 81.19.208.35:27030"
    }
 }
