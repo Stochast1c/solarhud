@@ -2118,7 +2118,7 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		"ItemFontNameSmall"     //long names
+		"ItemFontNameSmall"     //long names AND gun mettle name and collection
 		{
 			"1"
 			{
@@ -2158,12 +2158,12 @@ Scheme
 				"antialias" 	"1"
 			}
 		}
-		ItemFontAttribSmallv2
+		ItemFontAttribSmallv2      //gunmettle descriptions
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"8"
+				"name"		"Inconsolata"
+				"tall"		"9"   //8 has a funny display bug with the ) symbol
 				"antialias" "1"
 				"weight"	"500"
 			}

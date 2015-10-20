@@ -1,3 +1,11 @@
+//fonts are all set in clientscheme
+//    ItemFontAttribSmallv2
+//       collection series list (items in the collection)
+//       attribute font
+//    ItemFontNameSmall
+//       item name
+//       collection name
+
 "Resource/UI/ItemModelPanelCollectionItem.res"
 {
 	"mouseoveritempanel"
