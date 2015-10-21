@@ -69,6 +69,6 @@
       "font"         "incon20"
       "fgcolor"      "base0"
       "labelText"    "%health%"
-		"textAlignment"	"East"	
+		"textAlignment"	"center"	
 	}								
 }

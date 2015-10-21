@@ -8,7 +8,7 @@
 		"screenshot_move_panel_to_corner"	"1"
 	}
 
-	"itempanel"
+	"itempanel"    //positioned against right wall, expands to bottom of screen for larger itempanels
 	{
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"itempanel"
@@ -67,10 +67,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"FreezePanelBase"
-		"xpos"			"r320"
-		"ypos"			"93"		
-		"wide"			"267"		
-		"tall"			"250"		
+		"xpos"			"0"
+		"ypos"			"0"		
+		"wide"			"f0"		
+		"tall"			"480"		
 		"visible"		"1"
 
 		"FreezePanelBG"
@@ -115,12 +115,12 @@
 			"brighttext"		"0"
 		}
 		
-		"FreezePanelHealth"     //health underneath player name
+		"FreezePanelHealth"     //health centered on screen under crosshair 
 		{
 			"ControlName"	"CTFFreezePanelHealth"
 			"fieldName"		"FreezePanelHealth"
-			"xpos"			"-5"
-			"ypos"			"180"
+			"xpos"			"c-24"
+			"ypos"			"245"    //just below crosshair
 			"zpos"			"1"
 			"wide"			"48"
 			"tall"			"24"
@@ -128,34 +128,35 @@
 			"enabled"		"1"	
 			"HealthBonusPosAdj"	"9"
 			"HealthDeathWarning"	"0.49"
+         //the settings for the health are set in freezepanelkillerhealth.res
 			"TFFont"		"incon20"         //unused????
 			"HealthDeathWarningColor"	"red"
 			"TextColor"		"base0"        //unused????
 		}	
 
-		"FreezeLabelKiller"
-		{	         //this should work but is apparently placing the text at xpos 18 rather than 50 why?
+		"FreezeLabelKiller"     //I think this is positioned relative to the avatar image rather than using the xpos value
+		{	         
 			"ControlName"	"CExLabel"
 			"fieldName"		"FreezeLabelKiller"
 			"font"			"incon12"
          "fgcolor"      "base0"
-			"xpos"			"50"
-			"ypos"			"172"
+			"xpos"			"0"
+			"ypos"			"217"    //just above crosshair
 			"zpos"			"5"
-			"wide"			"252"
+			"wide"			"200"  //this controls the xpos
 			"tall"			"18"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%killername%"
-			"textAlignment"		"West"
+			"textAlignment"		"west"   //there is something else funny at play, works oddly
 		}
 
 		"AvatarImage"
 		{
 			"ControlName"		"CAvatarImagePanel"
 			"fieldName"		"AvatarImage"
-			"xpos"			"8"
-			"ypos"			"0"
+			"xpos"			"c-30"
+			"ypos"			"233"
 			"zpos"			"0"
 			"wide"			"14"
 			"tall"			"14"
@@ -166,18 +167,18 @@
 			"color_outline"		"52 48 45 255"
 		}	
 		
-		"NemesisSubPanel"
+		"NemesisSubPanel"    //disabled since this panel only will make people on tilt, dominated
 		{
 			"ControlName"		"EditablePanel"
 			"fieldName"		"NemesisSubPanel"
-			"xpos"			"-50"		// FIXME
-			"ypos"			"130"
+			"xpos"			"99999275"		//somewhat centered, spacing is funny due to offset nature of following elements
+			"ypos"			"99999130"
 			"zpos"			"4"
 			"wide"			"306"
 			"tall"			"38"
 			"visible"		"1"
 
-			"NemesisPanelBG"
+			"NemesisPanelBG"     //disabled
 			{
 				"ControlName"		"ScalableImagePanel"
 				"fieldName"		"NemesisPanelBG"
@@ -186,8 +187,8 @@
 				"zpos"			"5"
 				"wide"			"161"
 				"tall"			"30"
-				"visible"		"1"
-				"enabled"		"1"
+				"visible"		"0"
+				"enabled"		"0"
 				"image"			"../hud/color_panel_brown"
 				"scaleImage"		"1"	
 				
@@ -211,11 +212,12 @@
 				"image"			"../hud/leaderboard_nemesis_freezecam"
 				"scaleImage"	"1"	
 			}		
-			"NemesisLabel"
+			"NemesisLabel"    //the word nemesis
 			{	
 				"ControlName"		"Label"
 				"fieldName"		"NemesisLabel"
-				"font"			"HudFontMediumSmall"
+				"font"			"incon16"
+            "fgcolor_override"   "yellow"
 				"xpos"			"134"
 				"ypos"			"10"
 				"zpos"			"6"
@@ -228,11 +230,12 @@
 				"labelText"		"%nemesisname%"
 				"textAlignment"		"west"
 			}
-			"NemesisLabel2"
+			"NemesisLabel2"      //not sure what this controls
 			{	
 				"ControlName"		"Label"
 				"fieldName"		"NemesisLabel2"
-				"font"			"DefaultSmall"
+				"font"			"incon12"
+            "fgcolor_override"      "magenta"
 				"xpos"			"134"
 				"ypos"			"10"
 				"zpos"			"6"
@@ -248,15 +251,15 @@
 		}
 	}
 		
-	"ScreenshotPanel"
+	"ScreenshotPanel"    //take a screenshot, disabled
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"ScreenshotPanel"
-		"xpos"			"c-83"
-		"ypos"			"50"
+		"xpos"			"99999"//c-83"
+		"ypos"			"9999950"
 		"zpos"			"2"
-		"wide"			"166"
-		"tall"			"40"
+		"wide"			"0"
+		"tall"			"0"
 		"visible"		"0"
 			
 		"ScreenshotPanelBG"
