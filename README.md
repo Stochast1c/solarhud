@@ -1,7 +1,7 @@
 solarhud
 ==========
 
-A solarized themed hud for TF2 that is heavily based on Ell's Hud using the Inconsolata Font
+A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
 The main goal of this mod is to completely overwrite all colors and fonts
    while keeping the minimal but very legible style of ell's hud.
