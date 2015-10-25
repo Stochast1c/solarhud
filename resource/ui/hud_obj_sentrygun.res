@@ -233,14 +233,14 @@
          "bgcolor_override"   "red"
 		}
 		
-		"Health"    //can't set color for warning and normal?
+		"Health"    //color for health and healthwarning set in clientscheme, BuildingHealthBar 
 		{	
 			"ControlName"	"CBuildingHealthBar"
 			"fieldName"		"Health"
 			"font"			"Default"
-			"xpos"			"9"
+			"xpos"			"7"
 			"ypos"			"3"
-			"wide"			"8"
+			"wide"			"11"
 			"tall"			"54"
 			"autoResize"	"0"
 			"pinCorner"		"0"

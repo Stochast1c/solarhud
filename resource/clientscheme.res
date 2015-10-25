@@ -360,9 +360,9 @@ Scheme
 		CircularProgressBar.FgColor		"White"
 		CircularProgressBar.BgColor		"White"
 		
-		"BuildingHealthBar.BgColor"		"HealthBgGrey"
-		"BuildingHealthBar.Health"		"ProgressOffWhite"
-		"BuildingHealthBar.LowHealth"	"LowHealthRed"
+		"BuildingHealthBar.BgColor"		"cyan"   //overridden in panel file
+		"BuildingHealthBar.Health"		"base3"     //using a base03 background, with a base3 outline for the health bar, looks weird with base0   
+		"BuildingHealthBar.LowHealth"	"red"
 
 		PropertySheet.TextColor			"cyan"
 		PropertySheet.SelectedTextColor	"cyan"
