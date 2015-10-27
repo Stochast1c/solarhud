@@ -177,14 +177,14 @@ Scheme
 		"QualityColorrarity2"					"141 131 75 255"     //not associated with anything
 		"QualityColorrarity3"					"204 204 250 255"    //not associated with anything
 		"QualityColorCompleted"					"134 80 172 255"     //not associated with anything
-
-		"ItemRarityDefault"						"131 0 0 255"        //for items without qualities
-		"ItemRarityCommon"						"181 137   0 255"    //civilian - yellow
-		"ItemRarityUncommon"					"133 153   0 255"        //freelance - green
-		"ItemRarityRare"						"42  161 152 255"        //mercenary - cyan
-		"ItemRarityMythical"					"38  139 210 255"        //commando - blue
-		"ItemRarityLegendary"					"108 113 196 255"     //assassin - violet
-		"ItemRarityAncient"						"211  54 130 255"      //elite - magenta
+      
+		"ItemRarityDefault"						"211  54 130 255"    //for items without qualities - magenta
+		"ItemRarityCommon"						"108 113 196 255"    //civilian - violet
+		"ItemRarityUncommon"					   " 38 139 210 255"        //freelance - blue
+		"ItemRarityRare"						   "133 153   0 255"        //mercenary - green
+		"ItemRarityMythical"					   "181 137   0 255"        //commando - yellow
+		"ItemRarityLegendary"					"203  75  22 255"     //assassin - orange
+		"ItemRarityAncient"						"220  50  47 255"      //elite - red
 		
       //Have no idea what these greyed out colors are for---
       "ItemRarityDefault_GreyedOut"			"44 42 40 255"
