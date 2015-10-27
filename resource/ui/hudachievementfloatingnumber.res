@@ -25,7 +25,7 @@
 		"visible"		"1"
 		"enabled"		"1"
       "fgcolor_override"   "base00"
-		"font"			"incon16"	//AchievementTracker_Name
+		"font"			"incon12"	//AchievementTracker_Name
 		"textAlignment"		"north-west"
 	}
 }
