@@ -153,7 +153,19 @@ Scheme
 		Menu.ArmedBgColor		"base03"
 		Menu.DividerColor		"magenta"    //doesn't do anything
 		
-		//scrollbar buttons, Hey they named something decently well
+      //options key bindings, may exist as stand-alone hud file OptionsSubKeyboard.res, this also probably controls other things, but can't think of any	
+      SectionedListPanel.HeaderTextColor	            "yellow"
+		SectionedListPanel.HeaderBgColor	               "blue"      //does nothing?
+		SectionedListPanel.DividerColor		            "base00"
+		SectionedListPanel.TextColor		               "base00"    //does not appear in options key bindings, uses bright
+		SectionedListPanel.BrightTextColor	            "base00"    //default text color in options key bindings
+		SectionedListPanel.BgColor			               "base3"
+		SectionedListPanel.SelectedTextColor			   "base0"
+		SectionedListPanel.SelectedBgColor				   "base03"
+		SectionedListPanel.OutOfFocusSelectedTextColor	"base00"
+		SectionedListPanel.OutOfFocusSelectedBgColor	   "base03"	
+		
+      //scrollbar buttons, Hey they named something decently well
       ScrollBarButton.FgColor				"base00"
 		ScrollBarButton.BgColor				"base2"
 		ScrollBarButton.ArmedFgColor		"base0"
