@@ -1826,11 +1826,11 @@
       "border_default"       "NoBorder"
 
       "paintbackground"	"1"      //let's you change button bg
-      "defaultFgColor_override"     "violet"
+      "defaultFgColor_override"     "magenta"
       "defaultBgColor_override"     "blank"
-      "armedFgColor_override"       "violet"
+      "armedFgColor_override"       "magenta"
       "armedBgColor_override"       "blank"
-      "depressedFgColor_override"   "violet"
+      "depressedFgColor_override"   "magenta"
       "depressedBgColor_override"   "blank"
 	}
 
