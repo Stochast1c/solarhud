@@ -24,8 +24,8 @@
 		"tall"			"32"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor"		"TanLight"
-		"font"			"ScoreboardMediumSmall"	//AchievementTracker_Name
+      "fgcolor_override"   "base00"
+		"font"			"incon16"	//AchievementTracker_Name
 		"textAlignment"		"north-west"
 	}
 }
