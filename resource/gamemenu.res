@@ -153,22 +153,22 @@
    "Chi1Button"
    {
       "label"     "Chi 1 DM"
-      "command"      "engine connect 216.52.143.58:27015"
+      "command"      "engine connect 64.74.97.61:27015"
    }
    "Chi2Button"
    {
       "label"     "Chi 2 DM"
-      "command"      "engine connect 162.248.92.11:27015"
+      "command"      "engine connect 74.91.124.243:27015"
    }
    "Dal1Button"
    {
       "label"     "Dal 1 DM"
-      "command"      "engine connect 125.63.61.72:27016"
+      "command"      "engine connect 74.91.114.228:27015"
    }
    "Dal2Button"
    {
       "label"     "Dal 2 DM"
-      "command"      "engine connect 125.63.61.72:27015"
+      "command"      "engine connect 74.91.114.34:27015"
    }
    "ResurfedButton"
    {
