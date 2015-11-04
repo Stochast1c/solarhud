@@ -1446,10 +1446,10 @@
    }
 
    //change the following buttons to custom commands
-	"Chi1Button"
+	"customserver1"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"Chi1Button"
+		"fieldname"		"customserver1"
 		"xpos"			"60"
 		"ypos"			"100"
 		"zpos"			"12"
@@ -1489,10 +1489,10 @@
 			"depressedBgColor_override"   "base03"
 		}
 	}
-	"Chi2Button"
+	"customserver2"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"Chi2Button"
+		"fieldname"		"customserver2"
 		"xpos"			"60"
 		"ypos"			"120"
 		"zpos"			"12"
@@ -1533,10 +1533,10 @@
 			"depressedBgColor_override"   "base03"
 		}
 	}
-	"Dal1Button"
+	"customserver3"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"Dal1Button"
+		"fieldname"		"customserver3"
 		"xpos"			"60"
 		"ypos"			"140"
 		"zpos"			"12"
@@ -1577,10 +1577,10 @@
 			"depressedBgColor_override"   "base03"
 		}
 	}
-	"Dal2Button"
+	"customserver4"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"Dal2Button"
+		"fieldname"		"customserver4"
 		"xpos"			"60"
 		"ypos"			"160"
 		"zpos"			"12"
@@ -1622,10 +1622,10 @@
 		}
 	}
 
-	"ReSurfedButton"
+	"customserver5"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"ResurfedButton"
+		"fieldname"		"customserver5"
 		"xpos"			"185"
 		"ypos"			"100"
 		"zpos"			"12"
@@ -1665,10 +1665,10 @@
 			"depressedBgColor_override"   "base03"
 		}
 	}
-	"ReSuSurfedButton"
+	"customserver6"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"ReSuSurfedButton"
+		"fieldname"		"customserver6"
 		"xpos"			"185"
 		"ypos"			"120"
 		"zpos"			"12"
@@ -1709,10 +1709,10 @@
 			"depressedBgColor_override"   "base03"
 		}
 	}
-	"AusAdvButton"
+	"customserver7"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"AusAdvButton"
+		"fieldname"		"customserver7"
 		"xpos"			"185"
 		"ypos"			"140"
 		"zpos"			"12"
@@ -1753,10 +1753,10 @@
 			"depressedBgColor_override"   "base03"
 		}
 	}
-	"AusBegButton"
+	"customserver8"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"AusBegButton"
+		"fieldname"		"customserver8"
 		"xpos"			"185"
 		"ypos"			"160"
 		"zpos"			"12"

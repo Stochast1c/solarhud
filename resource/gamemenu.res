@@ -150,44 +150,44 @@
       "label"     "Toggle Minmode"
       "command"      "engine toggle cl_hud_minmode" 
    }
-   "Chi1Button"
+   "customserver1"
    {
-      "label"     "Chi 1 DM"
-      "command"      "engine connect 64.74.97.61:27015"
+      "label"     "See"
+      "command"      "engine customserver1"
    }
-   "Chi2Button"
+   "customserver2"
    {
-      "label"     "Chi 2 DM"
-      "command"      "engine connect 74.91.124.243:27015"
+      "label"     "to"
+      "command"      "engine customserver2"
    }
-   "Dal1Button"
+   "customserver3"
    {
-      "label"     "Dal 1 DM"
-      "command"      "engine connect 74.91.114.228:27015"
+      "label"     "these"
+      "command"      "engine customserver3"
    }
-   "Dal2Button"
+   "customserver4"
    {
-      "label"     "Dal 2 DM"
-      "command"      "engine connect 74.91.114.34:27015"
+      "label"     "work"
+      "command"      "engine customserver4"
    }
-   "ResurfedButton"
+   "customserver5"
    {
-      "label"     "ReSurfed"
-      "command"      "engine connect 216.52.143.58:27015"
+      "label"     "Readme"
+      "command"      "engine customserver5"
    }
-   "ReSusurfedButton"
+   "customserver6"
    {
-      "label"     "ReSuSurfed"
-      "command"      "engine connect 162.248.92.11:27015"
+      "label"     "make"
+      "command"      "engine customserver6"
    }
-   "AusAdvButton"
+   "customserver7"
    {
-      "label"     "EuSurfed"
-      "command"      "engine connect 81.19.208.35:27030"
+      "label"     "buttons"
+      "command"      "engine customserver7"
    }
-   "AusBegButton"
+   "customserver8"
    {
-      "label"     "EuEuSurfed"
-      "command"      "engine connect 81.19.208.35:27015"
+      "label"     "correctly"
+      "command"      "engine customserver8"
    }
 }
