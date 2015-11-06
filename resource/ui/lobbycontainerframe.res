@@ -35,7 +35,7 @@
 	
 	"BackgroundHeader"
 	{
-		"ControlName"	"ImagePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"BackgroundHeader"
 		"xpos"			"0"
 		"ypos"			"0"
@@ -44,12 +44,11 @@
 		"tall"			"120"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"loadout_header"
-		"tileImage"		"1"
+      "bgcolor_override"      "base3"
 	}				
 	"BackgroundFooter"
 	{
-		"ControlName"	"ImagePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"BackgroundFooter"
 		"xpos"			"0"
 		"ypos"			"420"
@@ -58,22 +57,20 @@
 		"tall"			"60"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"loadout_bottom_gradient"
-		"tileImage"		"1"
+      "bgcolor_override"      "base3"
 	}				
 	"FooterLine"
 	{
-		"ControlName"	"ImagePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"FooterLine"
 		"xpos"			"0"
 		"ypos"			"420"
 		"zpos"			"2"
 		"wide"			"f0"
-		"tall"			"10"
+		"tall"			"2"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"loadout_solid_line"
-		"scaleImage"	"1"
+      "bgcolor_override"      "base00"
 	}				
 	
 	"Sheet"
@@ -88,58 +85,65 @@
 		
 		"HeaderLine"
 		{
-			"ControlName"	"ImagePanel"
+			"ControlName"	"EditablePanel"
 			"fieldName"		"HeaderLine"
 			"xpos"			"0"
 			"ypos"			"32"
 			"zpos"			"5"
 			"wide"			"f0"
-			"tall"			"10"
+			"tall"			"2"
 			"visible"		"1"
 			"enabled"		"1"
-			"image"			"loadout_solid_line"
-			"scaleImage"	"1"
+         "bgcolor_override"      "base00"
 		}				
 		
 		"tabskv"
 		{
-			"textinsetx"		"40"
-			"font"				"HudFontMediumBold"
-			"selectedcolor"		"200 187 161 255"
-			"unselectedcolor"	"130 120 104 255"	
-			"defaultBgColor_override"	"46 43 42 255"
-			"paintbackground"	"0"
-			"activeborder_override"	"OutlinedGreyBox"
-			"normalborder_override" "OutlinedDullGreyBox"
+			"textinsetx"		"20"  //when using center how much total padding around text for the tab
+			"font"				"incon32"
+         "textAlignment"   "center"
+			"selectedcolor"		"base00"
+			"unselectedcolor"	"base1"	
+			"defaultbgcolor_override"	"base3"
+			"paintbackground"	"2"
+         "paintborder"     "1"
+			"activeborder_override"	"menutabborder"
+			"normalborder_override" "base1border"
 		}
 	}
 
-	"BackButton"
+	"BackButton"   //button is colored as if it were armed when intially entering the menu, valve bug?
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"BackButton"
-		"xpos"			"c-305"
+		"xpos"			"c-295"
 		"ypos"			"437"
 		"zpos"			"2"
-		"wide"			"180"
+		"wide"			"100"
 		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"font"			"HudFontSmallBold"
+		"labelText"		"#TF_BackCarat"
+		"font"			"incon20"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
 		"Command"		"back"
-
-		"NavUp"			"PlayNowButton"
-		"NavRight"		"LearnMoreButton"
-
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-	}
+
+      "border_default"	"base00border"
+      "border_armed"		"orangeborder"    
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
+	}	
 
 	"WaitingForLeaderLabel"
 	{
@@ -201,30 +205,41 @@
 
 	"NextButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"NextButton"
-		"xpos"			"c+120"
-		"ypos"			"437"
-		"zpos"			"2"
-		"wide"			"180"
-		"tall"			"25"
-		"autoResize"	"0"
-		//"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"Command"		"next"
+      "ControlName"	"CExImageButton"
+      "fieldName"		"NextButton"
+      "xpos"			"c+120"
+      "ypos"			"437"
+      "zpos"			"2"
+      "wide"			"180"
+      "tall"			"25"
+      "autoResize"	"0"
+      //"pinCorner"		"3"
+      "visible"		"1"
+      "enabled"		"1"
+      "tabPosition"	"0"
+      "font"			"incon20"
+      "textAlignment"	"center"
+      "dulltext"		"0"
+      "brighttext"	"0"
+      "Command"		"next"
 
-		"NavUp"			"StartPartyButton"
-		"NavDown"		"LearnMoreButton"
-		"NavLeft"		"LearnMoreButton"
+      "NavUp"			"StartPartyButton"
+      "NavDown"		"LearnMoreButton"
+      "NavLeft"		"LearnMoreButton"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
+      "sound_depressed"	"UI/buttonclick.wav"
+      "sound_released"	"UI/buttonclickrelease.wav"
+
+      "border_default"	"base00border"
+      "border_armed"		"orangeborder"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
 	}
 
 	"PlayNowButton"
@@ -397,12 +412,29 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_Matchmaking_StartParty"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"textinsetx"	"50"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"start_party"
+
+      "border_default"	"base00border"
+      "border_armed"		"orangeborder"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
+
+		if_competitive
+		{
+			"xpos"			"c+120"
+			"ypos"			"375"
+		}
 
 		"NavUp"			"Sheet"
 		"NavDown"		"NextButton"

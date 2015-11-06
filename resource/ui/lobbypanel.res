@@ -15,7 +15,7 @@
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
+		"bgcolor_override"	"base3"
 
 		"NavToRelay"	"MvMTourOfDutyGroupBox"
 		"NavDown"		"MvMEconItemsGroupBox"
@@ -1470,7 +1470,7 @@
 		"fieldName"		"PartyActiveGroupBox"
 		"xpos"			"c+100"
 		"ypos"		"10"
-		"zpos"		"-1"
+		"zpos"		"1"
 		"wide"		"200"
 		"tall"		"330"
 		"visible"	"0"
@@ -1479,6 +1479,11 @@
 		"NavDown"		"<<NextButton"
 		"NavLeft"		"<<Sheet"
 		"NavRight"		"<<StartPartyButton"
+
+		"if_competitive"
+		{
+			"ypos"		"35"
+		}
 
 		"PartyGroupBox"
 		{
@@ -1491,8 +1496,8 @@
 			"tall"		"160"
 			"PaintBackgroundType"	"0"
 			"paintbackground"		"1"
-			"bgcolor_override"	"0 0 0 200"
-			"border"		"QuickplayBorder"
+			"bgcolor_override"	"base3"
+			"border"		"base00border"
 
 			"NavToRelay"	"InviteButton"
 
@@ -1500,7 +1505,8 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"PartyLabel"
-				"font"			"HudFontMediumBold"
+				"font"			"incon20"
+            "fgcolor_override"   "base00"
 				"labelText"		"#TF_Matchmaking_Party"
 				"textAlignment"	"west"
 				"xpos"			"5"
@@ -1525,7 +1531,7 @@
 				"enabled"		"1"
 				"tabPosition"	"0"
 				"labelText"		"#TF_Matchmaking_Invite"
-				"font"			"HudFontSmallBold"
+				"font"			"incon20"
 				"textAlignment"	"center"
 				"dulltext"		"0"
 				"brighttext"	"0"
@@ -1534,6 +1540,17 @@
 
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
+
+            "border_default"	"base00border"
+            "border_armed"		"orangeborder"
+
+            "paintbackground"	"1"      //let's you change button bg
+            "defaultFgColor_override"     "base00"
+            "defaultBgColor_override"     "base3"
+            "armedFgColor_override"       "base01"
+            "armedBgColor_override"       "base2"
+            "depressedFgColor_override"   "base01"
+            "depressedBgColor_override"   "base2"
 			}
 
 			"TourLevelImage"
@@ -1575,22 +1592,23 @@
 			"zpos"			"0"
 			"wide"			"200"
 			"tall"			"110"
-			"bgcolor_override"	"0 0 0 200"
-			"border"		"QuickplayBorder"
+			"bgcolor_override"	"base3"
+			"border"		"base00border"
 		}
 
 		"ChatTextEntry"
 		{
 			"ControlName"	"TextEntry"
 			"fieldName"		"ChatTextEntry"
-			"font"			"ChatFont"
+			"font"			"incon12"
 			"xpos"			"0"
 			"ypos"			"290"
 			"zpos"			"0"
 			"wide"			"200"
 			"tall"			"20"
-			"bgcolor_override"	"0 0 0 200"
-			"border"		"QuickplayBorder"
+			"bgcolor_override"	"base2"
+         "paintborder"  "1"
+			"border"		"base00border"
 		}
 	}
 
@@ -1618,5 +1636,211 @@
 		"zpos"		"-1"
 		"wide"		"200"
 		"tall"		"20"
+	}
+
+	"CompetitiveModeGroupBox"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"CompetitiveModeGroupBox"
+		"xpos"		"c-350"
+		"ypos"		"10"
+		"zpos"		"-1"
+		"wide"		"f0"
+		"tall"		"470"
+		"visible"	"1"
+		"enabled"	"1"
+		//"border"	"MainMenuHighlightBorder"
+
+		"LadderLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"LadderLabel"
+			"xpos"			"60"
+			"ypos"			"20"
+			"zpos"			"0"
+			"wide"			"60"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"fgcolor_override"	"base00"
+			"textAlignment"	"west"
+			"labelText"		"LADDER:"
+		}
+
+		// Dropdown
+		"CompetitiveModeComboBox"
+		{
+			"ControlName"		"ComboBox"
+			"fieldName"			"CompetitiveModeComboBox"
+			"Font"				"HudFontSmallestBold"
+			"xpos"				"130"
+			"ypos"				"21"
+			"zpos"				"0"
+			"wide"				"85"
+			"tall"				"15"
+			"autoResize"		"0"
+			"pinCorner"			"0"
+			"visible"			"1"
+			"enabled"			"1"
+			"textHidden"		"0"
+			"editable"			"0"
+			"maxchars"			"-1"
+			"NumericInputOnly"	"0"
+			"unicode"			"0"
+			"default"			"0"
+		
+			"fgcolor_override"	"base00"
+			"bgcolor_override"	"base3"
+			"disabledFgColor_override" "base1"
+			"disabledBgColor_override" "base3"
+			"selectionColor_override" "base3"   //selection as it appears after selection, mouseover in the dropdown controlled in clientscheme
+			"selectionTextColor_override" "base00"
+			"defaultSelectionBG2Color_override" "0 0 0 0"
+		}
+
+		"RankLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"RankLabel"
+			"xpos"			"60"
+			"ypos"			"44"
+			"zpos"			"0"
+			"wide"			"100"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"fgcolor_override"	"base00"
+			"textAlignment"	"west"
+			"labelText"		"RANK:"
+		}
+
+		"RankIcon"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"RankIcon"
+			"xpos"			"130"
+			"ypos"			"73"
+			"zpos"			"0"
+			"wide"			"100"
+			"tall"			"100"
+			"visible"		"1"
+			"enabled"		"1"
+			"mouseinputenabled" "0"
+			"image"			"pve/mvm_loot_image"
+			"scaleImage"	"1"
+		}
+
+		"RankTitle"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"RankTitle"
+			"xpos"			"130"
+			"ypos"			"44"
+			"zpos"			"0"
+			"wide"			"150"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"fgcolor_override"	"yellow"
+			"textAlignment"	"west"
+			"labelText"		"%ranktitle%"
+		}
+
+		// Default image
+		"ModeImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"ModeImage"
+			"xpos"			"85"
+			"ypos"			"75"
+			"zpos"			"0"
+			"wide"			"130"
+			"tall"			"130"
+			"visible"		"0"
+			"enabled"		"1"
+			"mouseinputenabled" "0"
+			"image"			"main_menu/meta_cityonfire512"
+			"scaleImage"	"1"
+		}
+
+		"Leaderboard6v6"
+		{
+			"ControlName"	"CLadderLobbyLeaderboard"
+			"fieldName"		"Leaderboard6v6"
+			"xpos"			"c+20"
+			"ypos"			"20"
+			"zpos"			"0"
+			"wide"			"300"
+			"tall"			"300"
+			"visible"		"1"
+			"enabled"		"1"
+			"mouseinputenabled" "0"
+			"scaleImage"	"1"
+			"entry_step"	"25"
+		}
+
+		"Leaderboard9v9"
+		{
+			"ControlName"	"CLadderLobbyLeaderboard"
+			"fieldName"		"Leaderboard9v9"
+			"xpos"			"c+20"
+			"ypos"			"20"
+			"zpos"			"0"
+			"wide"			"300"
+			"tall"			"300"
+			"visible"		"1"
+			"enabled"		"1"
+			"mouseinputenabled" "0"
+			"scaleImage"	"1"
+			"entry_step"	"25"
+		}
+
+		"StatsLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"StatsLabel"
+			"xpos"			"120"
+			"ypos"			"195"
+			"zpos"			"0"
+			"wide"			"150"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"fgcolor_override"	"base00"
+			"textAlignment"	"west"
+			"labelText"		"Stats"
+		}
+
+		"StatLine"
+		{
+			"ControlName"		"EditablePanel"
+			"fieldName"			"StatLine"
+			"xpos"				"p0.05"
+			"ypos"				"215"
+			"zpos"				"1"
+			"wide"				"240"
+			"tall"				"2"
+			"visible"			"1"
+			"proportionaltoparent" "1"
+			"bgcolor_override"	"base00"
+		}
+
+		"StatList"
+		{
+			"ControlName"	"SectionedListPanel"
+			"fieldName"		"StatList"
+			"xpos"			"55"
+			"ypos"			"210"
+			"zpos"			"0"
+			"wide"			"245"
+			"tall"			"150"
+			"autoresize"	"3"
+			"linespacing"	"16"
+			"bgcolor_override"	"blank"
+		}
 	}
 }
