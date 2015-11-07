@@ -10,6 +10,10 @@ This HUD is tailored for 6s players and surfers, though a few easy tweaks will m
 
 It is highly recommended that you clone the hud rather than download and extract the zip.  This hud is under constant renovation until everything has been converted and modified to an acceptable standard.
 
+##How to Change Main Menu Server Buttons
+
+The server buttons use a custom alias to store the server ip's that you want the servers to connect to.  These aliases should be set in a config file that exec'd at launch (e.g. autoexec.cfg) and follow the format, "customserver#".  For example, "alias customserver1 connect 192.168.0.1".  There are eight custom server buttons to support all your server connection needs, and are labeled row first then column.  In other words the servers count down 1->4 then 5->8.  To change the button names, navigate to resource/gamemenu.res, find the definitions for the customserver# (the very bottom of the file), and change the label text to your server preference.
+
 ##How to Switch Themes
 
 To switch between light and dark colorschemes (the default is light), swap the base colors in source and client scheme: base0↔base00, base3↔base03, etc.
