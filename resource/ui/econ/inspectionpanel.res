@@ -10,9 +10,9 @@
 		"tall"			"f0"
 		"visible"		"0"
 		"proportionaltoparent"	"1"
-		"bgcolor_override"	"30 25 25 245"
+		"bgcolor_override"	"base3trans"
 
-		"BGImage"
+		"BGImage"   //disabled
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"BGImage"
@@ -21,8 +21,8 @@
 			"zpos"			"1"
 			"wide"			"o1"
 			"tall"			"p0.75"
-			"visible"		"1"
-			"enabled"		"1"
+			"visible"		"0"
+			"enabled"		"0"
 			"image"			"item_carousel_bg"
 			"scaleImage"	"1"
 			"proportionaltoparent" "1"
@@ -35,12 +35,12 @@
 		"fieldName"		"ItemName"
 		"xpos"			"cs-0.5"
 		"ypos"			"35"
-		"zpos"			"5"
+		"zpos"			"4"
 		"wide"			"o2"
 		"tall"			"p0.5"
 		"visible"		"1"
 		"bgcolor_override"		"0 0 0 0"
-		"noitem_textcolor"		"117 107 94 255"
+		"noitem_textcolor"		"magenta"   //no idea what this controls
 		"PaintBackgroundType"	"2"
 		"paintborder"	"0"
 		"mouseinputenabled"	"0"
@@ -133,8 +133,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CloseButton"
-		"xpos"			"c92"
-		"ypos"			"c-98"
+		"xpos"			"c179"   //right - wide_button of itemname
+		"ypos"			"35"     //top of itemname
 		"zpos"			"100"
 		"wide"			"20"
 		"tall"			"20"
@@ -156,6 +156,7 @@
 		"actionsignallevel" "2"
 			
 		"paintbackground"	"0"
+      "paintborder"     "0"
 
 		"pin_to_sibling"		"MainContainer"
 		"pin_corner_to_sibling"	"PIN_BOTTOMLEFT"
@@ -164,9 +165,11 @@
 		"defaultFgColor_override" "46 43 42 255"
 		"armedFgColor_override" "200 80 60 255"
 		"depressedFgColor_override" "46 43 42 255"
-			
-		"image_drawcolor"	"150 60 45 255"
-		"image_armedcolor"	"200 80 60 255"
+	   
+      //needs to be numbers, cannot use clientscheme definitions
+		"image_drawcolor" 	"220  50  47 255"    //red
+		"image_armedcolor"	"211  54 130 255"    //magenta
+
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -183,6 +186,20 @@
 			"proportionaltoparent" "1"
 		}				
 	}	
+
+   "ExtraBG"      //covers entire panel size, fills in gap between itemname and team select buttons
+   {
+      "ControlName"     "EditablePanel"
+      "fieldName"       "ExtraBG"
+      "xpos"            "c-201"
+      "ypos"            "33"
+      "zpos"            "1"
+      "wide"            "402"    //full width causes a line to appear on right side
+      "tall"            "277"    //just below team buttons
+      "bgcolor_override"         "base3"
+      "border"          "base00Border"
+   }
+ 
 
 	"TeamNavPanel"
 	{
@@ -227,7 +244,8 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"sound_armed"		"UI/buttonrollover.wav"
-			
+		
+         //indicators for whether or not clicked on	
 			"paintbackground"	"0"
 			"paintbackgroundtype"	"0"
 			"defaultBgColor_Override"	"0 0 0 255"

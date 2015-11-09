@@ -2136,14 +2136,12 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		"ItemFontNameLarger"
+		"ItemFontNameLarger"    //for inspection panel
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"Inconsolata"
 				"tall"		"18"
-				"weight"	"500"
-				"additive"	"0"
 				"antialias" "1"
 			}
 		}
@@ -2188,14 +2186,12 @@ Scheme
 				"antialias" "1"
 			}
 		}	
-		"ItemFontAttribLarger"
+		"ItemFontAttribLarger"     //item inspection panel
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary"
+				"name"		"Inconsolata"
 				"tall"		"14"
-				"weight"	"500"
-				"additive"	"0"
 				"antialias" 	"1"
 			}
 		}	
