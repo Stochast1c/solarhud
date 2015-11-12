@@ -250,14 +250,14 @@ Scheme
 		
 		Replay.RenderDialog.BgColor							"LighterDarkBrown"
 		
-      //not sure
-		Econ.Dialog.BgColor									"Blank"
-		Econ.Button.BgColor									"green"
-		Econ.Button.FgColor									"violet"
-		Econ.Button.ArmedBgColor							"yellow"
-		Econ.Button.ArmedFgColor							"cyan"
-		Econ.Button.DepressedBgColor						"magenta"
-		Econ.Button.DepressedFgColor						"orange"
+      //popup panels
+		Econ.Dialog.BgColor									"base3"
+		Econ.Button.BgColor									"base3"
+		Econ.Button.FgColor									"base00"
+		Econ.Button.ArmedBgColor							"base2"
+		Econ.Button.ArmedFgColor							"base01"
+		Econ.Button.DepressedBgColor						"base2"
+		Econ.Button.DepressedFgColor						"base03"
 	
       //loadout preset buttons, the one that is selected	
 		Econ.Button.PresetDefaultColorFg					"base0"
@@ -3324,6 +3324,66 @@ Scheme
 				"2"
 				{
 					"color" "base00"
+					"offset" "1 1"
+				}
+			}
+		}
+		base01Border
+		{
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
 					"offset" "1 1"
 				}
 			}
