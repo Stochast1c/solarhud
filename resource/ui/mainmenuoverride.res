@@ -1186,10 +1186,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"PlayPVEButton"
-		"xpos"			"55999"
-		"ypos"			"400"
+		"xpos"			"255"
+		"ypos"			"255"
 		"zpos"			"11"
-		"wide"			"50"
+		"wide"			"56"
 		"tall"			"20"
 		"visible"		"1"
 
@@ -1204,7 +1204,7 @@
 			"fieldName"		"SubButton"
 			"xpos"			"0"
 			"ypos"			"0"
-			"wide"			"50"
+			"wide"			"56"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
@@ -2230,87 +2230,53 @@
 		}
 	}
 
-   "PlayCompetitiveButton"
+   "PlayCompButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"PlayCompetitiveButton"
-		"xpos"			"c-285"
-		"ypos"			"180"
-		"zpos"			"11"
-		"wide"			"270"
-		"tall"			"36"
-		"visible"		"0"
-		"enabled"		"0"
-		"PaintBackgroundType"	"0"
+		"fieldname"		"PlayCompButton"
+		"xpos"			"55"
+		"ypos"			"255"
+		"zpos"			"21"
+		"wide"			"200"
+		"tall"			"20"
+		"visible"		"1"
+		"enabled"		"1"
 
 		//"navUp"			"PlayPVEButton"
 	//	"navDown"		"ServerBrowserButton"
 	//	"navRight"		"Notifications_ShowButtonPanel"
-		"navToRelay"	"SubButton"
+	//	"navToRelay"	"SubButton"
+
 
 		"SubButton"
 		{
-			"ControlName"	"CExImageButton"
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
 			"fieldName"		"SubButton"
 			"xpos"			"0"
 			"ypos"			"0"
-			"wide"			"250"
-			"tall"			"26"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"0"
-			"enabled"		"0"
-			"tabPosition"	"0"
-			"textinsetx"	"25"
-			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"west"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"default"		"1"
+			"wide"			"200"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
-			"paintbackground"	"0"
-			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
-			
-			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
-
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"6"
-				"ypos"			"6"
-				"zpos"			"1"
-				"wide"			"14"
-				"tall"			"14"
-				"visible"		"1"
-				"enabled"		"1"
-				"scaleImage"	"1"
-			}
-		}
-
-		"CompetitiveBetaImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldname"		"CompetitiveBetaImage"
-			"xpos"			"223"
-			"ypos"			"3"
-			"zpos"			"12"
-			"wide"			"20"
-			"tall"			"20"
-			"visible"		"1"
-			"image"			"beta"
-			"scaleImage"	"1"
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
 		}
 	}
+
+	
 
 
    "EventPromo"   //In Game ads, disabled because annoying
