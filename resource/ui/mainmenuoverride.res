@@ -186,7 +186,8 @@
 			"depressedBgColor_override"   "base3trans50"
 		}
 	}
-	//"BackgroundOverride"    //Background is an uneditable panel
+	
+   //"BackgroundOverride"    //disabled because using a separate background for in game and at menu
 	//{
 	//	"ControlName"	"EditablePanel"
 	//	"fieldName"		"BackgroundOverride"
@@ -344,8 +345,1336 @@
          "enabled"         "1"
       }
    }
+
+	"AchievementsButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"AchievementsButton"
+		"xpos"			"151"
+		"ypos"			"3"
+		"zpos"			"3"
+		"wide"			"32"
+		"tall"			"64"
+		"visible"		"1"
+      "enabled"      "1"
+
+		"Command"		"OpenAchievementsDialog"
+		"labelText"		"a"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+      "font"			"incon64"
+      "textAlignment"	"center"
+      "sound_depressed"	"UI/buttonclick.wav"
+      "sound_released"	"UI/buttonclickrelease.wav"
+
+      "border_default"       "NoBorder"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "magenta"
+      "defaultBgColor_override"     "blank"
+      "armedFgColor_override"       "magenta"
+      "armedBgColor_override"       "blank"
+      "depressedFgColor_override"   "magenta"
+      "depressedBgColor_override"   "blank"
+	}
+
+   "PlayCompButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"PlayCompButton"
+		"xpos"			"55"
+		"ypos"			"58"
+		"zpos"			"21"
+		"wide"			"200"
+		"tall"			"26"
+		"visible"		"1"
+		"enabled"		"1"
+
+		//"navUp"			"PlayPVEButton"
+	   //	"navDown"		"ServerBrowserButton"
+	   //	"navRight"		"Notifications_ShowButtonPanel"
+	   //	"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"200"
+			"tall"			"26"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon24"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+   "PlayPVEButton"      //MvM
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"PlayPVEButton"
+		"xpos"			"255"
+		"ypos"			"58"
+		"zpos"			"11"
+		"wide"			"56"
+		"tall"			"26"
+		"visible"		"1"
+
+		"navUp"			"QuickplayChangeButton"
+		"navDown"		"CharacterSetupButton"
+		"navRight"		"Notifications_ShowButtonPanel"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"56"
+			"tall"			"26"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon24"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+	"ServerBrowserButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"ServerBrowserButton"
+		"xpos"			"55"
+		"ypos"			"84"
+		"zpos"			"11"
+		"wide"			"256"
+		"tall"			"26"
+		"visible"		"1"
+
+		"navUp"			"QuickplayChangeButton"
+		"navDown"		"CharacterSetupButton"
+		"navRight"		"Notifications_ShowButtonPanel"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"256"
+			"tall"			"26"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon24"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
 	
-	"TFCharacterImage"   //disabled
+	"ChangeServerButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"ChangeServerButton"
+		"xpos"			"55"
+		"ypos"			"84"
+		"zpos"			"11"
+		"wide"			"256"
+		"tall"			"26"
+		"visible"		"1"
+
+		"navUp"			"QuickplayChangeButton"
+		"navDown"		"CharacterSetupButton"
+		"navRight"		"Notifications_ShowButtonPanel"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"256"
+			"tall"			"26"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon24"
+			"textAlignment"	"west"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+	"CallVoteButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"CallVoteButton"
+		"xpos"			"280"
+		"ypos"			"84"
+		"zpos"			"12"
+		"wide"			"26"
+		"tall"			"26"
+		"visible"		"1"
+
+		"navLeft"		"ResumeGameButton"
+		"navDown"		"QuickplayChangeButton"
+		"navRight"		"MutePlayersButton"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"26"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+         "font"			"incon20"
+         "textAlignment"	"center"
+         "sound_depressed"	"UI/buttonclick.wav"
+         "sound_released"	"UI/buttonclickrelease.wav"
+         
+         "border_default"	"base00border"
+         "border_armed"		"orangeborder"
+
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+         "depressedFgColor_override"   "base0"
+         "depressedBgColor_override"   "base03"
+		}
+	}
+	"MutePlayersButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"MutePlayersButton"
+		"xpos"			"254"
+		"ypos"			"84"
+		"zpos"			"12"
+		"wide"			"26"
+		"tall"			"26"
+		"visible"		"1"
+
+		"navLeft"		"CallVoteButton"
+		"navDown"		"QuickplayChangeButton"
+		"navRight"		"RequestCoachButton"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"26"
+			"tall"			"26"
+			"visible"		"1"
+			"enabled"		"1"
+         "font"			"incon20"
+         "textAlignment"	"center"
+         "sound_depressed"	"UI/buttonclick.wav"
+         "sound_released"	"UI/buttonclickrelease.wav"
+         
+         "border_default"	"base00border"
+         "border_armed"		"orangeborder"
+
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+         "depressedFgColor_override"   "base0"
+         "depressedBgColor_override"   "base03"
+		}
+	}
+
+   "ServerHLine"
+   {
+      "ControlName"  "EditablePanel"
+      "fieldName"    "ServerHLine"
+      "xpos"         "55"
+      "ypos"         "112"
+      "zpos"         "-1"
+      "wide"         "256"
+      "tall"         "1"
+      "visible"      "1"
+      "enabled"      "1"
+      "bgcolor_override"   "base01"
+   }
+
+   "ServerVLine"
+   {
+      "ControlName"  "EditablePanel"
+      "fieldName"    "ServerVLine"
+      "xpos"         "182"
+      "ypos"         "112"
+      "zpos"         "-1"
+      "wide"         "1"
+      "tall"         "85"
+      "visible"      "1"
+      "enabled"      "1"
+      "bgcolor_override"   "base01"
+   }
+
+   "ServerButtonsPanel"
+   {
+      "ControlName"  "EditablePanel"
+      "fieldName"    "ServerButtonsPanel"
+      "xpos"         "55"
+      "ypos"         "110"
+      "zpos"         "-2"
+      "wide"         "256"
+      "tall"         "91"
+      "visible"      "1"
+      "enabled"      "1"
+      "bgcolor_override"   "base2"
+   }
+
+   //change the following buttons to custom commands
+	"customserver1"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"customserver1"
+		"xpos"			"60"
+		"ypos"			"115"
+		"zpos"			"12"
+		"wide"			"120"
+		"tall"			"20"
+		"visible"		"1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"120"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+	"customserver2"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"customserver2"
+		"xpos"			"60"
+		"ypos"			"135"
+		"zpos"			"12"
+		"wide"			"120"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"120"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+	"customserver3"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"customserver3"
+		"xpos"			"60"
+		"ypos"			"155"
+		"zpos"			"12"
+		"wide"			"120"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"120"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+	"customserver4"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"customserver4"
+		"xpos"			"60"
+		"ypos"			"175"
+		"zpos"			"12"
+		"wide"			"120"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"120"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+	"customserver5"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"customserver5"
+		"xpos"			"185"
+		"ypos"			"115"
+		"zpos"			"12"
+		"wide"			"120"
+		"tall"			"20"
+		"visible"		"1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"120"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+	"customserver6"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"customserver6"
+		"xpos"			"185"
+		"ypos"			"135"
+		"zpos"			"12"
+		"wide"			"120"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"120"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+	"customserver7"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"customserver7"
+		"xpos"			"185"
+		"ypos"			"155"
+		"zpos"			"12"
+		"wide"			"120"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"120"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+	"customserver8"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"customserver8"
+		"xpos"			"185"
+		"ypos"			"175"
+		"zpos"			"12"
+		"wide"			"120"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"120"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+	"MinmodeButton"      //buttons defined in gamemenu.res need to have this format to keep text
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"MinmodeButton"
+		"xpos"			"55"
+		"ypos"			"200"
+		"zpos"			"12"
+		"wide"			"256"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"256"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+	"SettingsButton"        //normal options
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"SettingsButton"
+		"xpos"			"55"
+		"ypos"			"220"
+		"zpos"			"1"
+		"wide"			"128"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		"Command"		"OpenOptionsDialog"
+		"labelText"		"#GameUI_GameMenu_Options"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+      "font"			"incon20"
+      "textAlignment"	"center"
+      "sound_depressed"	"UI/buttonclick.wav"
+      "sound_released"	"UI/buttonclickrelease.wav"
+      
+      "border_default"	"base00border"
+      "border_armed"		"orangeborder"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base0"
+      "armedBgColor_override"       "base03"
+      "depressedFgColor_override"   "base0"
+      "depressedBgColor_override"   "base03"
+	}
+	
+	"TF2SettingsButton"     //adv options
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"TF2SettingsButton"
+		"xpos"			"183"
+		"ypos"			"220"
+		"zpos"			"1"
+		"wide"			"128"
+		"tall"			"20"
+		"visible"		"1"
+      "enabled"      "1"
+
+		"Command"		"opentf2options"
+		"labelText"		"#MMenu_AdvOptions"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+      "font"			"incon20"
+      "textAlignment"	"center"
+      "sound_depressed"	"UI/buttonclick.wav"
+      "sound_released"	"UI/buttonclickrelease.wav"
+      
+      "border_default"	"base00border"
+      "border_armed"		"orangeborder"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base0"
+      "armedBgColor_override"       "base03"
+      "depressedFgColor_override"   "base0"
+      "depressedBgColor_override"   "base03"
+	}
+
+   "CharacterSetupButton"     //Items
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"CharacterSetupButton"
+		"xpos"			"55"
+		"ypos"			"240"
+		"zpos"			"11"
+		"wide"			"256"
+		"tall"			"16"
+		"visible"		"1"
+
+		"navUp"			"ChangeServerButton"
+		"navDown"		"ReplayBrowserButton"
+		"navRight"		"GeneralStoreButton"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"256"
+			"tall"			"16"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+
+	"Notifications_ShowButtonPanel"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"Notifications_ShowButtonPanel"
+		"xpos"			"55"
+		"ypos"			"256"
+		"zpos"			"10"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"navUp"			"MOTD_ShowButtonPanel"
+		"navDown"		"SettingsButton"
+		"navLeft"		"QuickplayButton"
+		"navRight"		"Notifications_Panel"
+		"navToRelay"	"Notifications_ShowButtonPanel_SB"
+		
+		"Notifications_CountLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"Notifications_CountLabel"
+			"font"			"incon12"
+			"labelText"		"%noticount%"
+			"textAlignment"	"right"
+			"xpos"			"12"
+			"ypos"			"1"
+			"zpos"			"4"
+			"wide"			"8"
+			"tall"			"8"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor_override"	"magenta"
+		}
+	
+		"Notifications_ShowButtonPanel_SB"  //this is the actual button
+		{
+			"ControlName"	"CExButton"
+			"fieldName"		"Notifications_ShowButtonPanel_SB"
+			"xpos"			"0"
+			"ypos"			"0"
+			"zpos"			"1"
+			"wide"			"20"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"!"
+			"font"			"incon20"
+			"textAlignment"	"center"
+			"default"		"1"
+
+			"Command"		"noti_show"
+			"navActivate"	"<QuickplayButton"
+
+         "border_default"       "base00Border"
+         "border_armed"         "orangeBorder"
+
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "yellow"
+         "defaultBgColor_override"     "base2"
+         "armedFgColor_override"       "yellow"
+         "armedBgColor_override"       "base03"
+         "depressedFgColor_override"   "yellow"
+         "depressedBgColor_override"   "base03"
+         
+		}
+	}
+	
+	"Notifications_Panel"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"Notifications_Panel"
+		"xpos"			"55"
+		"ypos"			"256"
+		"zpos"			"10"
+		"wide"			"210"
+		"tall"			"80"
+		"visible"		"0"
+		"PaintBackgroundType"	"2"
+		"paintbackground"	"1"
+      "bgcolor_override"      "base2"
+		"border"		"base00Border"
+
+		"navUp"			"MOTD_ShowButtonPanel"
+		"navDown"		"SettingsButton"
+		"navLeft"		"Notifications_ShowButtonPanel"
+		"navRight"		"MOTD_ShowButtonPanel"
+		"navToRelay"	"Notifications_CloseButton"
+		
+		"Notifications_CloseButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"Notifications_CloseButton"
+			"xpos"			"186"
+			"ypos"			"8"
+			"zpos"			"10"
+			"wide"			"14"
+			"tall"			"14"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"labeltext"		""
+			"font"			"incon12"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"0"
+
+			"Command"		"noti_hide"
+			"navActivate"	"<QuickplayButton"
+
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+			
+			"image_drawcolor"	"117 107 94 255"
+			"image_armedcolor"	"200 80 60 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"14"
+				"tall"			"14"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"close_button"
+				"scaleImage"	"1"
+			}				
+		}		
+	
+		"Notifications_TitleLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"Notifications_TitleLabel"
+			"font"			"incon16"
+			"labelText"		"%notititle%"
+			"textAlignment"	"north-west"
+			"xpos"			"12"
+			"ypos"			"8"
+			"wide"			"250"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor_override"	"base00"
+			"wrap"			"1"
+		}
+		
+		"Notifications_Scroller"
+		{
+			"ControlName"	"ScrollableEditablePanel"
+			"fieldName"		"Notifications_Scroller"
+			"xpos"			"8"
+			"ypos"			"25"
+			"wide"			"210"
+			"tall"			"135"
+			"PaintBackgroundType"	"2"
+			"fgcolor_override"	"cyan"
+			
+			"Notifications_Control"
+			{
+				"ControlName"	"CMainMenuNotificationsControl"
+				"fieldName"		"Notifications_Control"
+				"xpos"			"0"
+				"ypos"			"0"
+				"wide"			"220"
+				"tall"			"135"
+				"visible"		"1"
+			}
+		}
+	}	
+
+
+   "QuestLogButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"QuestLogButton"
+		"xpos"			"c228"
+		"ypos"			"28"
+		"zpos"			"1"
+		"wide"			"32"
+		"tall"			"32"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		
+		//"navUp"			"Notifications_Panel"
+		//"navLeft"		"SettingsButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f0"
+			"tall"			"f0"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"labelText"		""
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"command"		"questlog"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"actionsignallevel" "2"
+			"proportionaltoparent"	"1"
+				
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"paintbackground"	"0"
+			"paintborder"		"0"
+			"image_drawcolor"	"235 226 202 255"
+			"image_armedcolor"	"255 255 255 255"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"1"
+				"wide"			"f0"
+				"tall"			"f0"
+				"visible"		"1"
+				"enabled"		"1"
+				"scaleImage"	"1"
+				"image"			"button_quests"
+
+				"proportionaltoparent"	"1"
+				"mouseinputenabled"	"0"
+				"keyboardinputenabled" "0"
+			}		
+		}
+		
+		"NotificationsContainer"
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"NotificationsContainer"
+			"xpos"			"rs1"
+			"ypos"			"0"
+			"zpos"			"10"
+			"wide"			"16"
+			"tall"			"16"
+			"visible"		"0"
+			"proportionaltoparent"	"1"
+			"mouseinputenabled"	"0"
+			"keyboardinputenabled" "0"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"3"
+				"wide"			"16"
+				"tall"			"16"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"glyph_achievements"
+				"scaleImage"	"1"
+				"drawcolor" "210 125 33 255"
+				"proportionaltoparent"	"1"
+			}				
+		
+			"Notifications_CountLabel"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"Notifications_CountLabel"
+				"font"			"HudFontSmallestBold"
+				"labelText"		"%noticount%"
+				"textAlignment"	"center"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"4"
+				"wide"			"16"
+				"tall"			"16"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"1"
+				"enabled"		"1"
+				"fgcolor_override"	"255 255 255 255"
+				"proportionaltoparent"	"1"
+			}
+		}
+	}
+
+	"QuitButton"      //buttons defined in gamemenu.res need to have this format to keep text
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"QuitButton"
+		"xpos"			"r16"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"16"
+		"tall"			"16"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"16"
+			"tall"			"16"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"textAlignment"	"center"
+         "textInsetx"      "20"
+         "textInsety"      "-4"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+	"DisconnectButton"      //buttons defined in gamemenu.res need to have this format to keep text
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"DisconnectButton"
+		"xpos"			"r16"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"16"
+		"tall"			"16"
+		"visible"		"1"
+      "enabled"      "1"
+
+		//"navLeft"		"MutePlayersButton"
+		//"navRight"		"Notifications_ShowButtonPanel"
+		//"navDown"		"QuickplayChangeButton"
+		//"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"16"
+			"tall"			"16"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"textAlignment"	"center"
+         "textInsetx"      "20"
+         "textInsety"      "-4"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"base00border"
+			"border_armed"		"orangeborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base0"
+         "armedBgColor_override"       "base03"
+			"depressedFgColor_override"   "base0"
+			"depressedBgColor_override"   "base03"
+		}
+	}
+
+
+	
+
+   //removed buttons or unused buttons
+	"QuickplayChangeButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"QuickplayChangeButton"
+		"xpos"			"99999"
+   }
+	"RequestCoachButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"RequestCoachButton"
+		"xpos"			"99999"
+   }
+	"SteamWorkshopButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"SteamWorkshopButton"
+		"xpos"			"99999"
+   }
+	"GeneralStoreButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"GeneralStoreButton"
+		"xpos"			"99999"
+   }
+	"CreateServerButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"CreateServerButton"
+		"xpos"			"99999"
+   }
+		
+	"TrainingButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"TrainingButton"
+		"xpos"			"99999"
+   }
+
+	"QuickPlayButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"QuickPlayButton"
+		"xpos"			"99999"
+   }
+
+	"ReplayBrowserButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"ReplayBrowserButton"
+		"xpos"			"99999"
+   }
+	
+   "TFCharacterImage"   //disabled
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TFCharacterImage"
@@ -412,8 +1741,7 @@
 		}
 	}	
 	
-	
-	"MOTD_ShowButtonPanel"
+	"MOTD_ShowButtonPanel"     //disabled
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_ShowButtonPanel"
@@ -480,7 +1808,7 @@
 		}
 	}
 	
-	"MOTD_Panel"
+	"MOTD_Panel"               //disabled
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_Panel"
@@ -852,197 +2180,6 @@
 		}
 	}	
 	
-	"Notifications_ShowButtonPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"55"
-		"ypos"			"241"
-		"zpos"			"10"
-		"wide"			"20"
-		"tall"			"20"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-
-		"navUp"			"MOTD_ShowButtonPanel"
-		"navDown"		"SettingsButton"
-		"navLeft"		"QuickplayButton"
-		"navRight"		"Notifications_Panel"
-		"navToRelay"	"Notifications_ShowButtonPanel_SB"
-		
-		"Notifications_CountLabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"Notifications_CountLabel"
-			"font"			"incon12"
-			"labelText"		"%noticount%"
-			"textAlignment"	"right"
-			"xpos"			"12"
-			"ypos"			"1"
-			"zpos"			"4"
-			"wide"			"8"
-			"tall"			"8"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fgcolor_override"	"magenta"
-		}
-	
-		"Notifications_ShowButtonPanel_SB"  //this is the actual button
-		{
-			"ControlName"	"CExButton"
-			"fieldName"		"Notifications_ShowButtonPanel_SB"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"1"
-			"wide"			"20"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"!"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"default"		"1"
-
-			"Command"		"noti_show"
-			"navActivate"	"<QuickplayButton"
-
-         "border_default"       "base00Border"
-         "border_armed"         "orangeBorder"
-
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-         "paintbackground"	"1"      //let's you change button bg
-         "defaultFgColor_override"     "yellow"
-         "defaultBgColor_override"     "base2"
-         "armedFgColor_override"       "yellow"
-         "armedBgColor_override"       "base03"
-         "depressedFgColor_override"   "yellow"
-         "depressedBgColor_override"   "base03"
-         
-		}
-	}
-	
-	"Notifications_Panel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"Notifications_Panel"
-		"xpos"			"55"
-		"ypos"			"241"
-		"zpos"			"10"
-		"wide"			"210"
-		"tall"			"80"
-		"visible"		"0"
-		"PaintBackgroundType"	"2"
-		"paintbackground"	"1"
-      "bgcolor_override"      "base2"
-		"border"		"base00Border"
-
-		"navUp"			"MOTD_ShowButtonPanel"
-		"navDown"		"SettingsButton"
-		"navLeft"		"Notifications_ShowButtonPanel"
-		"navRight"		"MOTD_ShowButtonPanel"
-		"navToRelay"	"Notifications_CloseButton"
-		
-		"Notifications_CloseButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"Notifications_CloseButton"
-			"xpos"			"186"
-			"ypos"			"8"
-			"zpos"			"10"
-			"wide"			"14"
-			"tall"			"14"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labeltext"		""
-			"font"			"incon12"
-			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"default"		"0"
-
-			"Command"		"noti_hide"
-			"navActivate"	"<QuickplayButton"
-
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-
-			"paintbackground"	"0"
-			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
-			
-			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"200 80 60 255"
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"0"
-				"ypos"			"0"
-				"zpos"			"1"
-				"wide"			"14"
-				"tall"			"14"
-				"visible"		"1"
-				"enabled"		"1"
-				"image"			"close_button"
-				"scaleImage"	"1"
-			}				
-		}		
-	
-		"Notifications_TitleLabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"Notifications_TitleLabel"
-			"font"			"incon16"
-			"labelText"		"%notititle%"
-			"textAlignment"	"north-west"
-			"xpos"			"12"
-			"ypos"			"8"
-			"wide"			"250"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fgcolor_override"	"base00"
-			"wrap"			"1"
-		}
-		
-		"Notifications_Scroller"
-		{
-			"ControlName"	"ScrollableEditablePanel"
-			"fieldName"		"Notifications_Scroller"
-			"xpos"			"8"
-			"ypos"			"25"
-			"wide"			"210"
-			"tall"			"135"
-			"PaintBackgroundType"	"2"
-			"fgcolor_override"	"cyan"
-			
-			"Notifications_Control"
-			{
-				"ControlName"	"CMainMenuNotificationsControl"
-				"fieldName"		"Notifications_Control"
-				"xpos"			"0"
-				"ypos"			"0"
-				"wide"			"220"
-				"tall"			"135"
-				"visible"		"1"
-			}
-		}
-	}	
-	
 	"HTMLContainer"      //not sure what this is for
 	{
 		"ControlName"	"EditablePanel"
@@ -1094,50 +2231,6 @@
 		}
 	}
 	
-	"CharacterSetupButton"     //Items
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"CharacterSetupButton"
-		"xpos"			"55"
-		"ypos"			"225"
-		"zpos"			"11"
-		"wide"			"256"
-		"tall"			"16"
-		"visible"		"1"
-
-		"navUp"			"ChangeServerButton"
-		"navDown"		"ReplayBrowserButton"
-		"navRight"		"GeneralStoreButton"
-		"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"256"
-			"tall"			"16"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon16"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-
 	"ResumeGameButton"      //disabled, just press esc
 	{
 		"ControlName"	"EditablePanel"
@@ -1182,872 +2275,6 @@
 		}
 	}
 	
-   "PlayPVEButton"      //disabled, find a decent place for this
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"PlayPVEButton"
-		"xpos"			"255"
-		"ypos"			"255"
-		"zpos"			"11"
-		"wide"			"56"
-		"tall"			"20"
-		"visible"		"1"
-
-		"navUp"			"QuickplayChangeButton"
-		"navDown"		"CharacterSetupButton"
-		"navRight"		"Notifications_ShowButtonPanel"
-		"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"56"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-
-	"ServerBrowserButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"ServerBrowserButton"
-		"xpos"			"55"
-		"ypos"			"72"
-		"zpos"			"11"
-		"wide"			"256"
-		"tall"			"26"
-		"visible"		"1"
-
-		"navUp"			"QuickplayChangeButton"
-		"navDown"		"CharacterSetupButton"
-		"navRight"		"Notifications_ShowButtonPanel"
-		"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"256"
-			"tall"			"26"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon24"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	
-	"ChangeServerButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"ChangeServerButton"
-		"xpos"			"55"
-		"ypos"			"72"
-		"zpos"			"11"
-		"wide"			"256"
-		"tall"			"26"
-		"visible"		"1"
-
-		"navUp"			"QuickplayChangeButton"
-		"navDown"		"CharacterSetupButton"
-		"navRight"		"Notifications_ShowButtonPanel"
-		"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"256"
-			"tall"			"26"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon24"
-			"textAlignment"	"west"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-
-	"CallVoteButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"CallVoteButton"
-		"xpos"			"280"
-		"ypos"			"72"
-		"zpos"			"12"
-		"wide"			"26"
-		"tall"			"26"
-		"visible"		"1"
-
-		"navLeft"		"ResumeGameButton"
-		"navDown"		"QuickplayChangeButton"
-		"navRight"		"MutePlayersButton"
-		"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"26"
-			"tall"			"26"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-         "font"			"incon20"
-         "textAlignment"	"center"
-         "sound_depressed"	"UI/buttonclick.wav"
-         "sound_released"	"UI/buttonclickrelease.wav"
-         
-         "border_default"	"base00border"
-         "border_armed"		"orangeborder"
-
-         "paintbackground"	"1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-         "depressedFgColor_override"   "base0"
-         "depressedBgColor_override"   "base03"
-		}
-	}
-	"MutePlayersButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"MutePlayersButton"
-		"xpos"			"254"
-		"ypos"			"72"
-		"zpos"			"12"
-		"wide"			"26"
-		"tall"			"26"
-		"visible"		"1"
-
-		"navLeft"		"CallVoteButton"
-		"navDown"		"QuickplayChangeButton"
-		"navRight"		"RequestCoachButton"
-		"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"26"
-			"tall"			"26"
-			"visible"		"1"
-			"enabled"		"1"
-         "font"			"incon20"
-         "textAlignment"	"center"
-         "sound_depressed"	"UI/buttonclick.wav"
-         "sound_released"	"UI/buttonclickrelease.wav"
-         
-         "border_default"	"base00border"
-         "border_armed"		"orangeborder"
-
-         "paintbackground"	"1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-         "depressedFgColor_override"   "base0"
-         "depressedBgColor_override"   "base03"
-		}
-	}
-
-   "ServerHLine"
-   {
-      "ControlName"  "EditablePanel"
-      "fieldName"    "ServerHLine"
-      "xpos"         "55"
-      "ypos"         "99"
-      "zpos"         "-1"
-      "wide"         "256"
-      "tall"         "1"
-      "visible"      "1"
-      "enabled"      "1"
-      "bgcolor_override"   "base03"
-   }
-
-   "ServerVLine"
-   {
-      "ControlName"  "EditablePanel"
-      "fieldName"    "ServerVLine"
-      "xpos"         "182"
-      "ypos"         "99"
-      "zpos"         "-1"
-      "wide"         "1"
-      "tall"         "86"
-      "visible"      "1"
-      "enabled"      "1"
-      "bgcolor_override"   "base03"
-   }
-
-   "ServerButtonsPanel"
-   {
-      "ControlName"  "EditablePanel"
-      "fieldName"    "ServerButtonsPanel"
-      "xpos"         "55"
-      "ypos"         "97"
-      "zpos"         "-2"
-      "wide"         "256"
-      "tall"         "88"
-      "visible"      "1"
-      "enabled"      "1"
-      "bgcolor_override"   "base2"
-   }
-
-   //change the following buttons to custom commands
-	"customserver1"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"customserver1"
-		"xpos"			"60"
-		"ypos"			"100"
-		"zpos"			"12"
-		"wide"			"120"
-		"tall"			"20"
-		"visible"		"1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"120"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	"customserver2"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"customserver2"
-		"xpos"			"60"
-		"ypos"			"120"
-		"zpos"			"12"
-		"wide"			"120"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"120"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	"customserver3"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"customserver3"
-		"xpos"			"60"
-		"ypos"			"140"
-		"zpos"			"12"
-		"wide"			"120"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"120"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	"customserver4"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"customserver4"
-		"xpos"			"60"
-		"ypos"			"160"
-		"zpos"			"12"
-		"wide"			"120"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"120"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-
-	"customserver5"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"customserver5"
-		"xpos"			"185"
-		"ypos"			"100"
-		"zpos"			"12"
-		"wide"			"120"
-		"tall"			"20"
-		"visible"		"1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"120"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	"customserver6"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"customserver6"
-		"xpos"			"185"
-		"ypos"			"120"
-		"zpos"			"12"
-		"wide"			"120"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"120"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	"customserver7"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"customserver7"
-		"xpos"			"185"
-		"ypos"			"140"
-		"zpos"			"12"
-		"wide"			"120"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"120"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	"customserver8"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"customserver8"
-		"xpos"			"185"
-		"ypos"			"160"
-		"zpos"			"12"
-		"wide"			"120"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"120"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	
-	"AchievementsButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"AchievementsButton"
-		"xpos"			"151"
-		"ypos"			"3"
-		"zpos"			"3"
-		"wide"			"32"
-		"tall"			"64"
-		"visible"		"1"
-      "enabled"      "1"
-
-		"Command"		"OpenAchievementsDialog"
-		"labelText"		"a"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-      "font"			"incon64"
-      "textAlignment"	"center"
-      "sound_depressed"	"UI/buttonclick.wav"
-      "sound_released"	"UI/buttonclickrelease.wav"
-
-      "border_default"       "NoBorder"
-
-      "paintbackground"	"1"      //let's you change button bg
-      "defaultFgColor_override"     "magenta"
-      "defaultBgColor_override"     "blank"
-      "armedFgColor_override"       "magenta"
-      "armedBgColor_override"       "blank"
-      "depressedFgColor_override"   "magenta"
-      "depressedBgColor_override"   "blank"
-	}
-
-	"TF2SettingsButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"TF2SettingsButton"
-		"xpos"			"183"
-		"ypos"			"205"
-		"zpos"			"1"
-		"wide"			"128"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		"Command"		"opentf2options"
-		"labelText"		"#MMenu_AdvOptions"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-      "font"			"incon20"
-      "textAlignment"	"center"
-      "sound_depressed"	"UI/buttonclick.wav"
-      "sound_released"	"UI/buttonclickrelease.wav"
-      
-      "border_default"	"base00border"
-      "border_armed"		"orangeborder"
-
-      "paintbackground"	"1"      //let's you change button bg
-      "defaultFgColor_override"     "base00"
-      "defaultBgColor_override"     "base3"
-      "armedFgColor_override"       "base0"
-      "armedBgColor_override"       "base03"
-      "depressedFgColor_override"   "base0"
-      "depressedBgColor_override"   "base03"
-	}
-
-	"SettingsButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SettingsButton"
-		"xpos"			"55"
-		"ypos"			"205"
-		"zpos"			"1"
-		"wide"			"128"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		"Command"		"OpenOptionsDialog"
-		"labelText"		"#GameUI_GameMenu_Options"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-      "font"			"incon20"
-      "textAlignment"	"center"
-      "sound_depressed"	"UI/buttonclick.wav"
-      "sound_released"	"UI/buttonclickrelease.wav"
-      
-      "border_default"	"base00border"
-      "border_armed"		"orangeborder"
-
-      "paintbackground"	"1"      //let's you change button bg
-      "defaultFgColor_override"     "base00"
-      "defaultBgColor_override"     "base3"
-      "armedFgColor_override"       "base0"
-      "armedBgColor_override"       "base03"
-      "depressedFgColor_override"   "base0"
-      "depressedBgColor_override"   "base03"
-	}
-	
-	"QuitButton"      //buttons defined in gamemenu.res need to have this format to keep text
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"QuitButton"
-		"xpos"			"r16"
-		"ypos"			"0"
-		"zpos"			"1"
-		"wide"			"16"
-		"tall"			"16"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"16"
-			"tall"			"16"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon16"
-			"textAlignment"	"center"
-         "textInsetx"      "20"
-         "textInsety"      "-4"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-
-	"DisconnectButton"      //buttons defined in gamemenu.res need to have this format to keep text
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"DisconnectButton"
-		"xpos"			"r16"
-		"ypos"			"0"
-		"zpos"			"1"
-		"wide"			"16"
-		"tall"			"16"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"16"
-			"tall"			"16"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon16"
-			"textAlignment"	"center"
-         "textInsetx"      "20"
-         "textInsety"      "-4"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-	
-	
-	"MinmodeButton"      //buttons defined in gamemenu.res need to have this format to keep text
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"MinmodeButton"
-		"xpos"			"55"
-		"ypos"			"185"
-		"zpos"			"12"
-		"wide"			"256"
-		"tall"			"20"
-		"visible"		"1"
-      "enabled"      "1"
-
-		//"navLeft"		"MutePlayersButton"
-		//"navRight"		"Notifications_ShowButtonPanel"
-		//"navDown"		"QuickplayChangeButton"
-		//"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"256"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-
 	"TFLogoImage"     //disabled, try removing to see if it is removed
 	{
 		"ControlName"	"ImagePanel"
@@ -2103,181 +2330,6 @@
 			"centerwrap"	"1"
 		}
 	}
-
-
-   "QuestLogButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"QuestLogButton"
-		"xpos"			"c228"
-		"ypos"			"28"
-		"zpos"			"1"
-		"wide"			"32"
-		"tall"			"32"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		
-		//"navUp"			"Notifications_Panel"
-		//"navLeft"		"SettingsButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"f0"
-			"tall"			"f0"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"textinsetx"	"25"
-			"labelText"		""
-			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
-			"command"		"questlog"
-			"textAlignment"	"west"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"default"		"1"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			"actionsignallevel" "2"
-			"proportionaltoparent"	"1"
-				
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			"paintbackground"	"0"
-			"paintborder"		"0"
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"255 255 255 255"
-
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"cs-0.5"
-				"ypos"			"cs-0.5"
-				"zpos"			"1"
-				"wide"			"f0"
-				"tall"			"f0"
-				"visible"		"1"
-				"enabled"		"1"
-				"scaleImage"	"1"
-				"image"			"button_quests"
-
-				"proportionaltoparent"	"1"
-				"mouseinputenabled"	"0"
-				"keyboardinputenabled" "0"
-			}		
-		}
-		
-		"NotificationsContainer"
-		{
-			"ControlName"	"EditablePanel"
-			"fieldName"		"NotificationsContainer"
-			"xpos"			"rs1"
-			"ypos"			"0"
-			"zpos"			"10"
-			"wide"			"16"
-			"tall"			"16"
-			"visible"		"0"
-			"proportionaltoparent"	"1"
-			"mouseinputenabled"	"0"
-			"keyboardinputenabled" "0"
-
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"cs-0.5"
-				"ypos"			"cs-0.5"
-				"zpos"			"3"
-				"wide"			"16"
-				"tall"			"16"
-				"visible"		"1"
-				"enabled"		"1"
-				"image"			"glyph_achievements"
-				"scaleImage"	"1"
-				"drawcolor" "210 125 33 255"
-				"proportionaltoparent"	"1"
-			}				
-		
-			"Notifications_CountLabel"
-			{
-				"ControlName"	"CExLabel"
-				"fieldName"		"Notifications_CountLabel"
-				"font"			"HudFontSmallestBold"
-				"labelText"		"%noticount%"
-				"textAlignment"	"center"
-				"xpos"			"cs-0.5"
-				"ypos"			"cs-0.5"
-				"zpos"			"4"
-				"wide"			"16"
-				"tall"			"16"
-				"autoResize"	"0"
-				"pinCorner"		"0"
-				"visible"		"1"
-				"enabled"		"1"
-				"fgcolor_override"	"255 255 255 255"
-				"proportionaltoparent"	"1"
-			}
-		}
-	}
-
-   "PlayCompButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"PlayCompButton"
-		"xpos"			"55"
-		"ypos"			"255"
-		"zpos"			"21"
-		"wide"			"200"
-		"tall"			"20"
-		"visible"		"1"
-		"enabled"		"1"
-
-		//"navUp"			"PlayPVEButton"
-	//	"navDown"		"ServerBrowserButton"
-	//	"navRight"		"Notifications_ShowButtonPanel"
-	//	"navToRelay"	"SubButton"
-
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"200"
-			"tall"			"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"font"			"incon20"
-			"textAlignment"	"center"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
-   
-			"paintbackground"	"1"      //let's you change button bg
-			"defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
-		}
-	}
-
-	
-
 
    "EventPromo"   //In Game ads, disabled because annoying
 	{
@@ -2563,58 +2615,4 @@
 			"angles_z"		"0"
 		}
 	}
-
-
-   //removed buttons
-	"QuickplayChangeButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"QuickplayChangeButton"
-		"xpos"			"99999"
-   }
-	"RequestCoachButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"RequestCoachButton"
-		"xpos"			"99999"
-   }
-	"SteamWorkshopButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"SteamWorkshopButton"
-		"xpos"			"99999"
-   }
-	"GeneralStoreButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"GeneralStoreButton"
-		"xpos"			"99999"
-   }
-	"CreateServerButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"CreateServerButton"
-		"xpos"			"99999"
-   }
-		
-	"TrainingButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"TrainingButton"
-		"xpos"			"99999"
-   }
-
-	"QuickPlayButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"QuickPlayButton"
-		"xpos"			"99999"
-   }
-
-	"ReplayBrowserButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"ReplayBrowserButton"
-		"xpos"			"99999"
-   }
 }
