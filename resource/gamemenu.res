@@ -150,42 +150,42 @@
    }
    "customserver1"
    {
-      "label"     "See"
+      "label"     "EliteSurf"
       "command"      "engine customserver1"
    }
    "customserver2"
    {
-      "label"     "to"
+      "label"     "ReSurfed"
       "command"      "engine customserver2"
    }
    "customserver3"
    {
-      "label"     "these"
+      "label"     "ImSurfed"
       "command"      "engine customserver3"
    }
    "customserver4"
    {
-      "label"     "work"
+      "label"     "SuSurfed"
       "command"      "engine customserver4"
    }
    "customserver5"
    {
-      "label"     "Readme"
+      "label"     "EuSurfed"
       "command"      "engine customserver5"
    }
    "customserver6"
    {
-      "label"     "make"
+      "label"     "EuImSurfed"
       "command"      "engine customserver6"
    }
    "customserver7"
    {
-      "label"     "buttons"
+      "label"     "EuEuSurfed"
       "command"      "engine customserver7"
    }
    "customserver8"
    {
-      "label"     "correctly"
+      "label"     "AusSurfed"
       "command"      "engine customserver8"
    }
 }
