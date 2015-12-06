@@ -17,8 +17,10 @@
 		"tabPosition"				"0"
 		"settitlebarvisible"		"0"
 		"pinCorner"					"0"
-		"ProgressBarColor" 	"200 184 148 255" [$WIN32]
+		"ProgressBarColor" 	   "base01" 
 		"PaintBackgroundType"	"2"
+      "bgcolor_override"      "base2"    //color of panel containing achievement
+      "border"                "base00border"
 	}
 			
 	"AchievementIcon"
@@ -35,14 +37,15 @@
 			
 	"AchievementName"
 	{
-		"ControlName"	"label"
+		"ControlName"	"label"     //label does work for color
 		"fieldName"		"AchievementName"
 		"labeltext"		"name"
 		"xpos"			"70"
 		"ypos"			"2"
 		"wide"			"400"
 		"tall"			"20"
-		"font"			"AchievementItemTitle"
+		"font"			"incon20"      
+      "fgcolor_override"   "yellow"
 		"textAlignment"		"west"
 	}
 	
@@ -55,7 +58,8 @@
 		"ypos"			"22"
 		"wide"			"490"
 		"tall"			"40"
-		"font"			"AchievementItemDescription"
+		"font"			"incon16"     
+      "fgcolor_override"   "base00"
 		"wrap"			"1"
 		"textAlignment"		"north-west"
 	}
@@ -68,13 +72,14 @@
 		"ypos"		"42"
 		"wide"		"350"
 		"tall"		"12"
-		"fillcolor"	"32 32 32 255"
+		"fillcolor"	"base2"
+      "border"    "base00border"
 		"zpos"	"-1"
 		"visible"		"0"
 		"enabled"		"1"
 	}
-	
-	"PercentageBar" // current completed
+
+	"PercentageBar" // current completed, actaually does nothing
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PercentageBar"
@@ -106,9 +111,10 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 		"wrap"		"0"
-		"font"			"AchievementItemDescription"
+		"font"			"incon16"
 	}
-	"ShowOnHUD"
+
+	"ShowOnHUD"    //bottom of checkbox is cut off
 	{
 		"ControlName"		"CheckButton"
 		"fieldName"		"ShowOnHUD"
@@ -126,6 +132,6 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 		"wrap"		"0"
-		"font"			"AchievementItemDescription"
+		"font"			"incon16"
 	}
 }
