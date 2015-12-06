@@ -83,10 +83,11 @@
 		"ypos"		"67"
 		"wide"		"584"
 		"tall"		"16"
-		"fillcolor"	"base1"
+		"fillcolor"	"base2"
 		"zpos"	"-2"
 		"visible"		"0"
 		"enabled"		"1"
+      "border"       "base01Border_noleft"
 	}
 	
 	"PercentageBar" //overall current completed
@@ -97,10 +98,11 @@
 		"ypos"		"67"
 		"wide"		"0"
 		"tall"		"16"
-		"fillcolor"	"yellow"
+		"fillcolor"	"base01"
 		"zpos"	"-1"
 		"visible"		"0"
 		"enabled"		"1"
+      "border"    "base01Border_noright"
 	}
 	
 	"PercentageText" //Percent Text inside the percentage field, overall progress
@@ -115,8 +117,8 @@
 		"enabled"		"1"
 		"labelText"		"0%"
 		"textAlignment"		"east"
-      "fgcolor_override"      "magenta"
-		"font"		"incon12"	
+      "fgcolor_override"      "base01"
+		"font"		"incon20"	
 	}
 	
 	"achievement_pack_combo"
@@ -140,7 +142,7 @@
 		"ypos"		"42"
 		"wide"		"600"
 		"tall"		"50"
-		"bgcolor"	"base3"
+		"bgcolor"	"base2"
       "border"    "base00Border"
 		"zpos"	"-3"
 		"visible"		"1"
@@ -153,7 +155,7 @@
 		"fieldName"		"AchievementsEarnedLabel"
 		"xpos"		"23"
 		"ypos"		"46"
-		"wide"		"200"
+		"wide"		"300"
 		"tall"		"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -165,8 +167,8 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 		"wrap"		"0"
-		"fillcolor"	"255 255 255 255"
-		"font"		"AchievementItemDescription"	//"defaultlarg"
+		"font"		"incon20"
+      "fgcolor_override"   "base01"
 	}
 	
 	"HideAchieved"
@@ -187,6 +189,7 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 		"wrap"		"0"
-		"font"			"AchievementItemDescription"
+		"font"			"incon16"
+      "fgcolor_override"   "yellow"
 	}
 }
