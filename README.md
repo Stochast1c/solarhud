@@ -17,7 +17,7 @@ This hud supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-kn
 
 ##How to Change Main Menu Server Buttons
 
-The server buttons use a custom alias to store the server ip's that you want the servers to connect to.  These aliases should be set in a config file that gets exec'd at launch (e.g. autoexec.cfg) and follow the format, "alias customserver# <server ip>".  For example, "alias customserver1 connect 192.168.1.1".  There are eight custom server buttons to support all your server connection needs, and are labeled row first then column.  In other words the servers count down 1->4 then 5->8.  To change the button names, navigate to resource/gamemenu.res, find the definitions for the customserver# (the very bottom of the file), and change the label text to your server preference.
+The server buttons use a custom alias to store the server ip's that you want the servers to connect to.  These aliases should be set in a config file that gets exec'd at launch (e.g. autoexec.cfg) and follow the format, "alias customserver# connect \<server ip\>".  For example, "alias customserver1 connect 192.168.1.1".  There are eight custom server buttons to support all your server connection needs, and are labeled row first then column.  In other words the servers count down 1->4 then 5->8.  To change the button names, navigate to resource/gamemenu.res, find the definitions for the customserver# (the very bottom of the file), and change the label text to your server preference.
 
 ##How to Switch Themes
 
