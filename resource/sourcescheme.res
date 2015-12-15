@@ -714,6 +714,15 @@ Scheme
             "antialias" "1"
          }
       }
+      "incon14"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "14"
+            "antialias" "1"
+         }
+      }
       "incon16"
       {
          "1"

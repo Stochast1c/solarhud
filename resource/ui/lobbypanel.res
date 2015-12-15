@@ -310,7 +310,7 @@
 		"tall"		"350"
 		"visible"	"1"
 		"enabled"	"1"
-		"border"	"MainMenuHighlightBorder"
+		"border"	"base00border"
 		
 		"MannVsMachineLabel"
 		{
@@ -322,9 +322,8 @@
 			"wide"			"370"
 			"tall"			"25"
 			"labelText"		"#TF_MvM_HeaderMannVsMachine"
-			"font"			"HudFontMediumBold"
-			//"fgcolor_override"	"89 81 71 255"
-			"fgcolor_override"	"201 79 57 255"
+			"font"			"incon32"
+			"fgcolor_override"	"yellow"
 			"textAlignment"	"west"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
@@ -334,12 +333,12 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"MannVsMachineExplanation"
-			"font"			"HudFontSmall"
-			"fgcolor_override"	"89 81 71 255"
+			"font"			"incon16"
+			"fgcolor_override"	"base00"
 			"labelText"		"#TF_MvM_MannVsMachineExplaination"
 			"textAlignment"	"north-west"
 			"xpos"			"15"
-			"ypos"			"30"
+			"ypos"			"28"
 			"zpos"			"0"
 			"wide"			"400"
 			"tall"			"40"
@@ -359,6 +358,7 @@
 			"enabled"		"1"
 			"mouseinputenabled" "0"
 			"image"			"illustrations/gamemode_mvm"
+         "drawcolor"    "base3"
 			"scaleImage"	"1"
 		}
 	}
@@ -379,8 +379,8 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"PlayForBraggingRightsExplanation"
-			"font"			"HudFontSmall"
-			"fgcolor_override"	"89 81 71 255"
+			"font"			"incon14"
+			"fgcolor_override"	"base00"
 			"labelText"		"#TF_MvM_BraggingRightsExplaination"
 			"textAlignment"	"north-west"
 			"xpos"			"15"
@@ -408,8 +408,8 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"PlayOnCommunityServerExplanation"
-			"font"			"HudFontSmall"
-			"fgcolor_override"	"89 81 71 255"
+			"font"			"incon14"
+			"fgcolor_override"	"base00"
 			"labelText"		"#TF_MvM_PracticeExplaination"
 			"textAlignment"	"north-west"
 			"xpos"			"15"
@@ -421,7 +421,7 @@
 		}
 	}
 
-	"MvMTourOfDutyGroupBox"
+	"MvMTourOfDutyGroupBox"    //select a mission
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MvMTourOfDutyGroupBox"
@@ -436,64 +436,64 @@
 		"NavLeft"		"MvMSelectChallengeGroupBox"
 		"NavRight"		"PartyActiveGroupBox"
 
-		"ChallengeLabel"
+		"ChallengeLabel"     //tour of duty
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"ChallengeLabel"
-			"font"			"HudFontMediumSmallBold"
+			"font"			"incon16"
 			"labelText"		"#TF_MvM_TourOfDuty"
-			"textAlignment"	"south-west"
+			"textAlignment"	"center"
 			"xpos"			"0"
-			"ypos"			"0"
+			"ypos"			"10"
 			"zpos"			"0"
-			"wide"			"400"
-			"tall"			"26"
-			"fgcolor_override"	"250 114 45 255"
+			"wide"			"150"
+			"tall"			"20"
+			"fgcolor_override"	"yellow"
 		}
 
 		"DifficultyLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DifficultyLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
 			"labelText"		"#TF_MvM_Difficulty"
-			"textAlignment"	"south-west"
-			"xpos"			"189"
-			"ypos"			"0"
+			"textAlignment"	"center"
+			"xpos"			"170"
+			"ypos"			"10"
 			"zpos"			"0"
 			"wide"			"100"
-			"tall"			"24"
-			"fgcolor_override"	"250 114 45 255"
+			"tall"			"20"
+			"fgcolor_override"	"yellow"
 		}
 
-		"CompleteLabel"
+		"CompleteLabel"   //progress
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CompleteLabel"
-			"font"			"HudFontSmall"
+			"font"		   "incon16"	
 			"labelText"		"#TF_MvM_TourOfDutyProgress"
-			"textAlignment"	"south-west"
-			"xpos"			"279"
-			"ypos"			"0"
+			"textAlignment"	"center"
+			"xpos"			"260"
+			"ypos"			"10"
 			"zpos"			"0"
-			"wide"			"80"
-			"tall"			"24"
-			"fgcolor_override"	"250 114 45 255"
+			"wide"			"70"
+			"tall"			"20"
+			"fgcolor_override"	"yellow"
 		}
 
-		"TourLevelLabel"
+		"TourLevelLabel"     //tour number, not perfectly aligned vertically since cutting off the number portion of the word
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TourLevelLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
 			"labelText"		"#TF_MvM_TourNumber"
-			"textAlignment"	"south-west"
-			"xpos"			"345"
-			"ypos"			"0"
+			"textAlignment"	"north"
+			"xpos"			"323"
+			"ypos"			"12"
 			"zpos"			"0"
 			"wide"			"80"
-			"tall"			"26"
-			"fgcolor_override"	"250 114 45 255"
+			"tall"			"16"
+			"fgcolor_override"	"yellow"
 		}
 
 		"TourlistGroupBox"
@@ -507,12 +507,12 @@
 			"tall"			"197"
 			"PaintBackgroundType"	"2"
 			"paintbackground"		"1"
-			"bgcolor_override"	"0 0 0 200"
-			"border"		"QuickplayBorder"
+			"bgcolor_override"	"base3"
+			"border"		"base00border"
 
 			"NavToRelay"	"TourList"
 
-			"GreyOutPanel"
+			"GreyOutPanel"    //not sure what this controls
 			{
 				"ControlName"	"EditablePanel"
 				"fieldName"		"GreyOutPanel"
@@ -522,20 +522,21 @@
 				"wide"			"400"
 				"tall"			"225"
 				"visible"		"0"
-				"bgcolor_override"	"128 128 128 128"
+				"bgcolor_override"	"yellow"
 			}
 
-			"TourList"
+			"TourList"     //not sure how to set font and font color
 			{
 				"ControlName"	"SectionedListPanel"
 				"fieldName"		"TourList"
-				"font"			"HudFontSmall"
+				"font"			"incon20"
 				"xpos"			"0"
 				"ypos"			"5"
 				"zpos"			"0"
 				"wide"			"400"
 				"tall"			"197"
 				"linespacing"	"12"
+            "bgcolor_override"   "base03"    //can't change font color      
 			}
 		}
 
@@ -543,7 +544,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"TourDifficultyWarning"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
 			"labelText"		"#TF_MVM_Tour_ExpertDifficulty_Warning"
 			"xpos"		"30"
 			"ypos"		"100"
@@ -554,7 +555,7 @@
 			"visible"	"1"
 			"enabled"	"1"
 			"wrap"		"1"
-			"fgcolor_override"	"250 114 45 255"
+			"fgcolor_override"	"magenta"
 		}
 	}
 
@@ -569,8 +570,8 @@
 		"tall"		"120"
 		"PaintBackgroundType"	"2"
 		"paintbackground"		"1"
-		"bgcolor_override"	"0 0 0 200"
-		"border"		"QuickplayBorder"
+		"bgcolor_override"	"base3"
+		"border"		"base00border"
 
 		"TourLootImage"
 		{
@@ -592,7 +593,8 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"ToorLootTitle"
-			"font"			"HudFontSmallBold"
+			"font"			"incon24"
+         "fgcolor_override"   "yellow"
 			"labelText"		"#TF_MvM_TourLootTitle"
 			"textAlignment"	"west"
 			"xpos"			"10"
@@ -606,19 +608,20 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"ToorLootDetailLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon14"
+         "fgcolor_override"   "base00"
 			"labelText"		"%tour_loot_detail%"
 			"textAlignment"	"west"
 			"wrap"			"1"
 			"xpos"			"10"
-			"ypos"			"30"
+			"ypos"			"40"
 			"zpos"			"0"
 			"wide"			"280"
-			"tall"			"50"
+			"tall"			"60"
 		}
 	}
 
-	"MvMEconItemsGroupBox"
+	"MvMEconItemsGroupBox"     //tickets in backpack and store links when in mission select screen
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MvMEconItemsGroupBox"
@@ -627,8 +630,8 @@
 		"zpos"			"-1"
 		"wide"			"400"
 		"tall"			"120"
-		"bgcolor_override"	"0 0 0 200"
-		"border"		"QuickplayBorder"
+		"bgcolor_override"	"base3"
+		"border"		"base00border"
 
 		"NavToRelay"	"OpenHelpButton"
 		"NavUp"			"MvMTourOfDutyGroupBox"
@@ -639,42 +642,54 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"InventoryTitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
+         "fgcolor_override"   "yellow"
 			"labelText"		"#TF_MvM_InventoryTitle"
 			"textAlignment"	"west"
 			"xpos"			"8"
-			"ypos"			"5"
+			"ypos"			"3"
 			"zpos"			"0"
 			"wide"			"200"
-			"tall"			"30"
+			"tall"			"20"
 		}
 
-		"OpenHelpButton"
+		"OpenHelpButton"     //disabled
 		{
-			"ControlName"	"CExButton"
-			"fieldName"		"OpenHelpButton"
-			"xpos"			"175"
-			"ypos"			"10"
-			"zpos"			"2"
-			"wide"			"20"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		"?"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"command" "open_help"
-			"button_activation_type"	"1"	// only on press
+         "ControlName"	"CExButton"
+         "fieldName"		"OpenHelpButton"
+         "xpos"			"9999175"
+         "ypos"			"10"
+         "zpos"			"2"
+         "wide"			"20"
+         "tall"			"20"
+         "autoResize"	"0"
+         "pinCorner"		"3"
+         "visible"		"1"
+         "enabled"		"1"
+         "tabPosition"	"0"
+         "labelText"		"?"
+         "font"			"incon20"
+         "textAlignment"	"center"
+         "dulltext"		"0"
+         "brighttext"	"0"
+         "command" "open_help"
+         "button_activation_type"	"1"	// only on press
 
-			"NavDown"		"OpenStoreButton2"
+         "NavDown"		"OpenStoreButton2"
 
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
+         "sound_depressed"	"UI/buttonclick.wav"
+         "sound_released"	"UI/buttonclickrelease.wav"
+
+         "border_default"	"base00border"
+         "border_armed"		"base01border"
+
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
 		}
 
 		"MannUpTicketImage"
@@ -697,44 +712,55 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"MannUpTicketCountLabel"
-			"font"			"HudFontMediumBold"
+			"font"			"incon24"
 			"labelText"		"%ticket_count%"
-			"textAlignment"	"north-west"
-			"fgcolor_override"	"201 79 57 255"
+			"textAlignment"	"west"
+			"fgcolor_override"	"base00"
 			"xpos"			"70"
-			"ypos"			"79"
+			"ypos"			"82"
 			"zpos"			"1"
 			"wide"			"60"
-			"tall"			"30"
+			"tall"			"20"
 			"mouseinputenabled" "0"
 		}
 
 		"OpenStoreButton"
 		{
-			"ControlName"	"CExButton"
-			"fieldName"		"OpenStoreButton"
-			"xpos"			"95"
-			"ypos"			"82"
-			"zpos"			"2"
-			"wide"			"100"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		"#TF_MvM_BuyMore"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"command" "open_store_ticket"
+         "ControlName"	"CExButton"
+         "fieldName"		"OpenStoreButton"
+         "xpos"			"95"
+         "ypos"			"82"
+         "zpos"			"2"
+         "wide"			"100"
+         "tall"			"20"
+         "autoResize"	"0"
+         "pinCorner"		"3"
+         "visible"		"1"
+         "enabled"		"1"
+         "tabPosition"	"0"
+         "labelText"		"#TF_MvM_BuyMore"
+         "font"			"incon20"
+         "textAlignment"	"center"
+         "dulltext"		"0"
+         "brighttext"	"0"
+         "command" "open_store_ticket"
 
-			"NavUp"			"OpenStoreButton2"
-			"NavDown"		"<<BackButton"
+         "NavUp"			"OpenStoreButton2"
+         "NavDown"		"<<BackButton"
 
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
+         "sound_depressed"	"UI/buttonclick.wav"
+         "sound_released"	"UI/buttonclickrelease.wav"
+
+         "border_default"	"base00border"
+         "border_armed"		"base01border"
+
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
 		}
 
 		"SquadSurplusImage"
@@ -742,7 +768,7 @@
 			"ControlName"	"ImagePanel"
 			"fieldName"		"SquadSurplusImage"
 			"xpos"			"6"
-			"ypos"			"24"
+			"ypos"			"17"
 			"zpos"			"0"
 			"wide"			"60"
 			"tall"			"60"
@@ -757,71 +783,84 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"SquadSurplusCountLabel"
-			"font"			"HudFontMediumBold"
+			"font"			"incon24"
 			"labelText"		"%voucher_count%"
-			"textAlignment"	"north-west"
-			"fgcolor_override"	"201 79 57 255"
+			"textAlignment"	"west"
+			"fgcolor_override"	"base00"
 			"xpos"			"70"
-			"ypos"			"43"
+			"ypos"			"39"
 			"zpos"			"1"
 			"wide"			"60"
-			"tall"			"30"
+			"tall"			"20"
 			"mouseinputenabled" "0"
 		}
 
 		"OpenStoreButton2"
 		{
-			"ControlName"	"CExButton"
-			"fieldName"		"OpenStoreButton2"
-			"xpos"			"95"
-			"ypos"			"46"
-			"zpos"			"2"
-			"wide"			"100"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		"#TF_MvM_BuyMore"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"command" "open_store_voucher"
+         "ControlName"	"CExButton"
+         "fieldName"		"OpenStoreButton2"
+         "xpos"			"95"
+         "ypos"			"39"
+         "zpos"			"2"
+         "wide"			"100"
+         "tall"			"20"
+         "autoResize"	"0"
+         "pinCorner"		"3"
+         "visible"		"1"
+         "enabled"		"1"
+         "tabPosition"	"0"
+         "labelText"		"#TF_MvM_BuyMore"
+         "font"			"incon20"
+         "textAlignment"	"center"
+         "dulltext"		"0"
+         "brighttext"	"0"
+         "command" "open_store_voucher"
 
-			"NavUp"			"OpenHelpButton"
-			"NavDown"		"OpenStoreButton"
+         "NavUp"			"OpenHelpButton"
+         "NavDown"		"OpenStoreButton"
 
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
+         "sound_depressed"	"UI/buttonclick.wav"
+         "sound_released"	"UI/buttonclickrelease.wav"
+
+         "border_default"	"base00border"
+         "border_armed"		"base01border"
+
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
 		}
 
-		"SquadSurplusCheckButton"
+		"SquadSurplusCheckButton"     //can't modify through this element
 		{
 			"ControlName"		"CheckButton"
 			"fieldName"		"SquadSurplusCheckButton"
 			"xpos"		"240"
-			"ypos"		"43"
+			"ypos"		"36"
 			"zpos"		"2"
 			"wide"		"25"
 			"tall"		"25"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
+         "fgcolor_override"   "base00" //does nothing
 			"labelText"		""
 		}
 
-		"ActivateSquadSurplusLabel"
+		"ActivateSquadSurplusLabel"   //label for the above element
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"SquadSurplusCheckLabel"
-			"font"			"HudFontSmallestBold"
+			"font"			"incon14"
+         "fgcolor_override"   "base00"
 			"labelText"		"#TF_MvM_ActivateSquadSurplus"
 			"textAlignment"	"north-west"
 			"wrap"			"1"
 			"xpos"			"268"
-			"ypos"			"46"
+			"ypos"			"28"
 			"zpos"			"0"
-			"wide"			"120"
+			"wide"			"140"
 			"tall"			"60"
 		}
 	}
@@ -892,30 +931,41 @@
 
 		"MannUpNowButton"
 		{
-			"ControlName"	"CExButton"
-			"fieldName"		"MannUpNowButton"
-			"xpos"			"10"
-			"ypos"			"85"
-			"zpos"			"2"
-			"wide"			"120"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		"#TF_MvM_MannUpNow"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"command" "mann_up_now"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
+         "ControlName"	"CExButton"
+         "fieldName"		"MannUpNowButton"
+         "xpos"			"10"
+         "ypos"			"85"
+         "zpos"			"2"
+         "wide"			"120"
+         "tall"			"20"
+         "autoResize"	"0"
+         "pinCorner"		"3"
+         "visible"		"1"
+         "enabled"		"1"
+         "tabPosition"	"0"
+         "labelText"		"#TF_MvM_MannUpNow"
+         "font"			"incon20"
+         "textAlignment"	"center"
+         "dulltext"		"0"
+         "brighttext"	"0"
+         "command" "mann_up_now"
+         "sound_depressed"	"UI/buttonclick.wav"
+         "sound_released"	"UI/buttonclickrelease.wav"
+
+         "border_default"	"base00border"
+         "border_armed"		"base01border"
+
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
 		}
 	}
 
-	"MvMSelectChallengeGroupBox"
+	"MvMSelectChallengeGroupBox"     //mission in the tour
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MvMSelectChallengeGroupBox"
@@ -932,61 +982,76 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"ChallengeLabel"
-			"font"			"HudFontMediumSmallBold"
+			"font"			"incon24"
 			"labelText"		"%tour_name%"
-			"textAlignment"	"south-west"
+			"textAlignment"	"west"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"0"
 			"wide"			"400"
 			"tall"			"26"
-			"fgcolor_override"	"250 114 45 255"
+			"fgcolor_override"	"yellow"
 		}
 
 		"CompleteLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CompleteLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
 			"labelText"		"%complete_heading%"
-			"textAlignment"	"south-west"
-			"xpos"			"264"
-			"ypos"			"0"
+			"textAlignment"	"west"
+			"xpos"			"290"
+			"ypos"			"2"
 			"zpos"			"0"
-			"wide"			"100"
+			"wide"			"80"
 			"tall"			"24"
-			"fgcolor_override"	"250 114 45 255"
+			"fgcolor_override"	"base00"
 		}
 
-		"TourLevelImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"TourLevelImage"
-			"xpos"			"342"
-			"ypos"			"-10"
+      "ColonLabel"
+      {
+			"ControlName"	"CExLabel"
+			"fieldName"		"ColonLabel"
+			"font"			"incon20"
+			"labelText"		":"
+			"textAlignment"	"center"
+			"xpos"			"366"
+			"ypos"			"2"
 			"zpos"			"0"
-			"wide"			"60"
-			"tall"			"60"
-			"visible"		"1"
-			"enabled"		"1"
-			"mouseinputenabled" "0"
-			"image"			"../hud/mvm_tours"
-			"scaleImage"	"1"
+			"wide"			"7"
+			"tall"			"24"
+			"fgcolor_override"	"base00"
 		}
 
 		"TourLevelLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TourLevelLabel"
-			"font"			"HudFontMediumSmallBold"
+			"font"			"incon20"
 			"labelText"		"%tour_level%"
-			"textAlignment"	"south"
-			"xpos"			"357"
-			"ypos"			"0"
+			"textAlignment"	"west"
+			"xpos"			"373"
+			"ypos"			"2"
 			"zpos"			"0"
 			"wide"			"30"
-			"tall"			"26"
-			"fgcolor_override"	"0 0 0 255"
+			"tall"			"24"
+			"fgcolor_override"	"base00"
+		}
+
+		"TourLevelImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"TourLevelImage"
+			"xpos"			"99999342"
+			"ypos"			"-10"
+			"zpos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"mouseinputenabled" "0"
+			"image"			"../hud/mvm_tours"
+			"scaleImage"	"1"
 		}
 
 		"ChallengeListGroupBox"
@@ -1000,8 +1065,8 @@
 			"tall"			"197"
 			"PaintBackgroundType"	"2"
 			"paintbackground"		"1"
-			"bgcolor_override"	"0 0 0 200"
-			"border"		"QuickplayBorder"
+			"bgcolor_override"	"base03"    //can't modify challenge list, text color is default white
+			"border"		"base00border"
 
 			"NavToRelay"	"ChallengeList"
 
@@ -1015,10 +1080,10 @@
 				"wide"			"400"
 				"tall"			"225"
 				"visible"		"0"
-				"bgcolor_override"	"128 128 128 128"
+				"bgcolor_override"	"magenta"
 			}
 
-			"ChallengeList"
+			"ChallengeList"      //can't modify things here
 			{
 				"ControlName"	"SectionedListPanel"
 				"fieldName"		"ChallengeList"
@@ -1078,7 +1143,6 @@
 			"visible"	"1"
 			"enabled"	"1"
 		}
-
 	}
 
 	"SearchActiveGroupBox"
@@ -1542,7 +1606,7 @@
 				"sound_released"	"UI/buttonclickrelease.wav"
 
             "border_default"	"base00border"
-            "border_armed"		"orangeborder"
+            "border_armed"		"base01border"
 
             "paintbackground"	"1"      //let's you change button bg
             "defaultFgColor_override"     "base00"
@@ -1621,21 +1685,23 @@
 		"zpos"		"-1"
 		"wide"		"200"
 		"tall"		"20"
-		"font"			"HudFontSmall"
+		"font"			"incon16"
+      //color set in clientscheme.res
 		"labelText"		"#TF_Matchmaking_JoinInProgress"
 	}
 
-	"JoinLateValueLabel"
+	"JoinLateValueLabel"    //not idea what this controls
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"JoinLateValueLabel"
-		"font"			"HudFontSmall"
+		"font"			"incon16"
 		"textAlignment"	"west"
 		"xpos"		"c+100"
 		"ypos"		"325"
 		"zpos"		"-1"
 		"wide"		"200"
 		"tall"		"20"
+      "fgcolor_override"   "magenta"
 	}
 
 	"CompetitiveModeGroupBox"
