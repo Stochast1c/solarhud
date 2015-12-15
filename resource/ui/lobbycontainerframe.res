@@ -113,7 +113,7 @@
 	}
 
 	"BackButton"   //button is colored as if it were armed when intially entering the menu, valve bug?
-	{
+	{              //after joining a party this button becomes ""<< leave party" and is impossible to fit nicely
 		"ControlName"	"CExButton"
 		"fieldName"		"BackButton"
 		"xpos"			"c-295"
@@ -134,7 +134,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 
       "border_default"	"base00border"
-      "border_armed"		"orangeborder"    
+      "border_armed"		"base01border"    
 
       "paintbackground"	"1"      //let's you change button bg
       "defaultFgColor_override"     "base00"
@@ -176,31 +176,42 @@
 
 	"LearnMoreButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"LearnMoreButton"
-		"xpos"			"c-101"
-		"ypos"			"437"
-		"zpos"			"2"
-		"wide"			"195"
-		"tall"			"25"
-		"autoResize"	"0"
-		//"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"#TF_MvM_LearnMore"
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"Command"		"learn_more"
+      "ControlName"	"CExImageButton"
+      "fieldName"		"LearnMoreButton"
+      "xpos"			"c-101"
+      "ypos"			"437"
+      "zpos"			"2"
+      "wide"			"195"
+      "tall"			"25"
+      "autoResize"	"0"
+      //"pinCorner"		"3"
+      "visible"		"1"
+      "enabled"		"1"
+      "tabPosition"	"0"
+      "labelText"		"#TF_MvM_LearnMore"
+      "font"			"incon20"
+      "textAlignment"	"center"
+      "dulltext"		"0"
+      "brighttext"	"0"
+      "Command"		"learn_more"
 
-		"NavUp"			"PracticeButton"
-		"NavLeft"		"BackButton"
-		"NavRight"		"NextButton"
+      "NavUp"			"PracticeButton"
+      "NavLeft"		"BackButton"
+      "NavRight"		"NextButton"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
+      "sound_depressed"	"UI/buttonclick.wav"
+      "sound_released"	"UI/buttonclickrelease.wav"
+
+      "border_default"	"base00border"
+      "border_armed"		"base01border"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
 	}
 
 	"NextButton"
@@ -231,7 +242,7 @@
       "sound_released"	"UI/buttonclickrelease.wav"
 
       "border_default"	"base00border"
-      "border_armed"		"orangeborder"
+      "border_armed"		"base01border"
 
       "paintbackground"	"1"      //let's you change button bg
       "defaultFgColor_override"     "base00"
@@ -242,43 +253,46 @@
       "depressedBgColor_override"   "base2"
 	}
 
-	"PlayNowButton"
+	"PlayNowButton"      //mvm mann up
 	{
-		"ControlName"	"CExButton"
-		"fieldName"		"PlayNowButton"
-		"xpos"			"c-295"
-		"ypos"			"303"
-		"zpos"			"20"
-		"wide"			"180"
-		"tall"			"40"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"#TF_MvM_MannUp"
-		"font"			"HudFontMediumBold"
-		"textAlignment"	"center"
-		"textinsetx"	"50"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"Command"		"mannup"
+      "ControlName"	"CExButton"
+      "fieldName"		"PlayNowButton"
+      "xpos"			"c-295"
+      "ypos"			"303"
+      "zpos"			"20"
+      "wide"			"180"
+      "tall"			"40"
+      "autoResize"	"0"
+      "pinCorner"		"0"
+      "visible"		"1"
+      "enabled"		"1"
+      "tabPosition"	"0"
+      "labelText"		"#TF_MvM_MannUp"
+      "font"			"incon32"
+      "textAlignment"	"center"
+      "textinsetx"	"50"
+      "dulltext"		"0"
+      "brighttext"	"0"
+      "Command"		"mannup"
 
-		"NavUp"			"Sheet"
-		"NavDown"		"BackButton"
-		"NavLeft"		"Sheet"
-		"NavRight"		"PracticeButton"
+      "NavUp"			"Sheet"
+      "NavDown"		"BackButton"
+      "NavLeft"		"Sheet"
+      "NavRight"		"PracticeButton"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
+      "sound_depressed"	"UI/buttonclick.wav"
+      "sound_released"	"UI/buttonclickrelease.wav"
 
-		"border_default"	"MainMenuButtonDefault"
-		"border_armed"		"MainMenuButtonArmed"
-		"paintbackground"	"0"
-			
-		"defaultFgColor_override" "46 43 42 255"
-		"armedFgColor_override" "235 226 202 255"
-		"depressedFgColor_override" "46 43 42 255"
+      "border_default"	"base00border"
+      "border_armed"		"base01border"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
 	}
 
 	"MannUpDisabledLabel"
@@ -299,7 +313,7 @@
 		"bgcolor_override"				"0 0 0 240"
 	}
 
-	"PracticeButton"
+	"PracticeButton"  //mvm boot camp
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"PracticeButton"
@@ -314,7 +328,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_MvM_BootCamp"
-		"font"			"HudFontMediumBold"
+		"font"			"incon32"
 		"textAlignment"	"center"
 		"textinsetx"	"50"
 		"dulltext"		"0"
@@ -329,13 +343,16 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 
-		"border_default"	"MainMenuButtonDefault"
-		"border_armed"		"MainMenuButtonArmed"
-		"paintbackground"	"0"
-			
-		"defaultFgColor_override" "46 43 42 255"
-		"armedFgColor_override" "235 226 202 255"
-		"depressedFgColor_override" "46 43 42 255"
+      "border_default"	"base00border"
+      "border_armed"		"base01border"
+
+      "paintbackground"	"1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
 	}
 
 	"PlayWithFriendsExplanation"
@@ -349,14 +366,15 @@
 		"tall"			"285"
 		"PaintBackgroundType"	"0"
 		"paintbackground"		"1"
-		"bgcolor_override"	"0 0 0 200"
-		"border"		"QuickplayBorder"
+		"bgcolor_override"	"base3"
+		"border"		"base00border"
 
 		"PlayWithFriendsExplanationTitle"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"PlayWithFriendsExplanationTitle"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
+         "fgcolor_override"   "base00"
 			"labelText"		"#TF_Matchmaking_PlayWithFriends"
 			"textAlignment"	"center"
 			"xpos"			"0"
@@ -378,6 +396,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"pve/mvm_friends_image"
+         "drawcolor"    "base3"
 			"scaleImage"	"1"
 		}
 
@@ -385,7 +404,8 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"PlayWithFriendsExplanationLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon12"
+         "fgcolor_override"   "base00"
 			"labelText"		"#TF_MvM_PlayWithFriendsExplanation"
 			"textAlignment"	"north-west"
 			"xpos"			"10"
@@ -420,7 +440,7 @@
 		"Command"		"start_party"
 
       "border_default"	"base00border"
-      "border_armed"		"orangeborder"
+      "border_armed"		"base01border"
 
       "paintbackground"	"1"      //let's you change button bg
       "defaultFgColor_override"     "base00"
