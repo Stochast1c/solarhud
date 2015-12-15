@@ -865,7 +865,7 @@
 		}
 	}
 
-	"MvMPracticeGroupBox"
+	"MvMPracticeGroupBox"      //bottom box in boot camp
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MvMPracticeGroupBox"
@@ -876,8 +876,8 @@
 		"tall"		"120"
 		"PaintBackgroundType"	"2"
 		"paintbackground"		"1"
-		"bgcolor_override"	"0 0 0 200"
-		"border"		"QuickplayBorder"
+		"bgcolor_override"	"base3"
+		"border"		"base00border"
 
 		"NavToRelay"	"MannUpNowButton"
 		"NavUp"			"MvMEconItemsGroupBox"
@@ -888,7 +888,7 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"NoMannUpImage"
-			"xpos"			"250"
+			"xpos"			"280"
 			"ypos"			"6"
 			"zpos"			"0"
 			"wide"			"110"
@@ -904,7 +904,8 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"NoMannUpTitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
+         "fgcolor_override"   "yellow"
 			"labelText"		"#TF_MvM_NoMannUpTitle"
 			"textAlignment"	"west"
 			"xpos"			"10"
@@ -918,7 +919,8 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"NoMannUpDescriptionLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon14"
+         "fgcolor_override"   "base00"
 			"labelText"		"#TF_MvM_NoMannUpDescription"
 			"textAlignment"	"west"
 			"wrap"			"1"
@@ -929,14 +931,14 @@
 			"tall"			"50"
 		}
 
-		"MannUpNowButton"
+		"MannUpNowButton"    //words do not center properly, forcing centering
 		{
          "ControlName"	"CExButton"
          "fieldName"		"MannUpNowButton"
          "xpos"			"10"
          "ypos"			"85"
          "zpos"			"2"
-         "wide"			"120"
+         "wide"			"128"
          "tall"			"20"
          "autoResize"	"0"
          "pinCorner"		"3"
@@ -945,7 +947,7 @@
          "tabPosition"	"0"
          "labelText"		"#TF_MvM_MannUpNow"
          "font"			"incon20"
-         "textAlignment"	"center"
+         "textAlignment"	"east"
          "dulltext"		"0"
          "brighttext"	"0"
          "command" "mann_up_now"
@@ -1145,7 +1147,7 @@
 		}
 	}
 
-	"SearchActiveGroupBox"
+	"SearchActiveGroupBox"     //matchmaking/mvm/quickplay party searching for servers
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"SearchActiveGroupBox"
@@ -1156,17 +1158,18 @@
 		"tall"		"330"
 		"PaintBackgroundType"	"0"
 		"paintbackground"		"1"
-		"bgcolor_override"	"0 0 0 200"
-		"border"		"QuickplayBorder"
+		"bgcolor_override"	"base3"
+		"border"		"base00border"
 
-		"SearchActiveTitle"
+		"SearchActiveTitle"     //"Searching..."
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"SearchActiveTitle"
-			"font"			"HudFontMediumBold"
+			"font"			"incon32"
+         "fgcolor_override"   "base01"
 			"labelText"		"#TF_Matchmaking_Searching"
-			"xpos"		"30"
-			"ypos"		"20"
+			"xpos"		"20"
+			"ypos"		"10"
 			"zpos"			"2"
 			"wide"		"340"
 			"tall"		"40"
@@ -1175,11 +1178,12 @@
 			"enabled"	"1"
 		}
 
-		"NearbyColumnHead"
+		"NearbyColumnHead"   
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"NearbyColumnHead"
-			"font"			"HudFontSmall"
+			"font"			"incon20"
+         "fgcolor_override"   "base00"
 			"labelText"		"#TF_Matchmaking_Nearby"
 			"xpos"		"190"
 			"ypos"		"50"
@@ -1195,9 +1199,10 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"WorldwideColumnHead"
-			"font"			"HudFontSmall"
+			"font"			"incon20"
+         "fgcolor_override"   "base00"
 			"labelText"		"#TF_Matchmaking_Worldwide"
-			"xpos"		"280"
+			"xpos"		"290"
 			"ypos"		"50"
 			"zpos"			"2"
 			"wide"		"90"
@@ -1211,9 +1216,10 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"PlayersInGameLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
+         "fgcolor_override"   "violet"
 			"labelText"		"#TF_Matchmaking_ActivePlayers"
-			"xpos"		"30"
+			"xpos"		"20"
 			"ypos"		"70"
 			"zpos"			"2"
 			"wide"		"300"
@@ -1227,9 +1233,10 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"PlayersInGameTotalLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
+         "fgcolor_override"   "cyan"
 			"labelText"		"#TF_Matchmaking_Total"
-			"xpos"		"60"
+			"xpos"		"50"
 			"ypos"		"90"
 			"zpos"			"2"
 			"wide"		"130"
@@ -1239,45 +1246,48 @@
 			"enabled"	"1"
 		}
 
-			"PlayersInGameTotalNearbyValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"PlayersInGameTotalNearbyValue"
-				"font"			"HudFontSmall"
-				"xpos"		"190"
-				"ypos"		"90"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "PlayersInGameTotalNearbyValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"PlayersInGameTotalNearbyValue"
+         "font"			"incon16"
+         "fgcolor_override"   "cyan"
+         "xpos"		"190"
+         "ypos"		"90"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
-			"PlayersInGameTotalWorldwideValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"PlayersInGameTotalWorldwideValue"
-				"font"			"HudFontSmall"
-				"xpos"		"280"
-				"ypos"		"90"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "PlayersInGameTotalWorldwideValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"PlayersInGameTotalWorldwideValue"
+         "font"			"incon16"
+         "fgcolor_override"   "cyan"
+         "xpos"		"290"
+         "ypos"		"90"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
 		"PlayersInGameMatchingLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"PlayersInGameMatchingLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
+         "fgcolor_override"   "blue"
 			"labelText"		"#TF_Matchmaking_Compatible"
-			"xpos"		"60"
+			"xpos"		"50"
 			"ypos"		"110"
 			"zpos"			"2"
 			"wide"		"130"
@@ -1287,45 +1297,48 @@
 			"enabled"	"1"
 		}
 
-			"PlayersInGameMatchingNearbyValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"PlayersInGameMatchingNearbyValue"
-				"font"			"HudFontSmall"
-				"xpos"		"190"
-				"ypos"		"110"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "PlayersInGameMatchingNearbyValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"PlayersInGameMatchingNearbyValue"
+         "font"			"incon16"
+         "fgcolor_override"   "blue"
+         "xpos"		"190"
+         "ypos"		"110"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
-			"PlayersInGameMatchingWorldwideValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"PlayersInGameMatchingWorldwideValue"
-				"font"			"HudFontSmall"
-				"xpos"		"280"
-				"ypos"		"110"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "PlayersInGameMatchingWorldwideValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"PlayersInGameMatchingWorldwideValue"
+         "font"			"incon16"
+         "fgcolor_override"   "blue"
+         "xpos"		"290"
+         "ypos"		"110"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
 		"PlayersSearchingLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"PlayersSearchingLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
+         "fgcolor_override"   "yellow"
 			"labelText"		"#TF_Matchmaking_SearchingPlayers"
-			"xpos"		"30"
+			"xpos"		"20"
 			"ypos"		"140"
 			"zpos"			"2"
 			"wide"		"300"
@@ -1339,9 +1352,10 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"PlayersSearchingTotalLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
+         "fgcolor_override"   "magenta"
 			"labelText"		"#TF_Matchmaking_Total"
-			"xpos"		"60"
+			"xpos"		"50"
 			"ypos"		"160"
 			"zpos"			"2"
 			"wide"		"130"
@@ -1351,45 +1365,48 @@
 			"enabled"	"1"
 		}
 
-			"PlayersSearchingTotalNearbyValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"PlayersSearchingTotalNearbyValue"
-				"font"			"HudFontSmall"
-				"xpos"		"190"
-				"ypos"		"160"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "PlayersSearchingTotalNearbyValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"PlayersSearchingTotalNearbyValue"
+         "font"			"incon16"
+         "fgcolor_override"   "magenta"
+         "xpos"		"190"
+         "ypos"		"160"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
-			"PlayersSearchingTotalWorldwideValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"PlayersSearchingTotalWorldwideValue"
-				"font"			"HudFontSmall"
-				"xpos"		"280"
-				"ypos"		"160"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "PlayersSearchingTotalWorldwideValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"PlayersSearchingTotalWorldwideValue"
+         "font"			"incon16"
+         "fgcolor_override"   "magenta"
+         "xpos"		"290"
+         "ypos"		"160"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
 		"PlayersSearchingMatchingLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"PlayersSearchingMatchingLabel"
-			"font"			"HudFontSmall"
+			"font"			"incon16"
+         "fgcolor_override"   "red"
 			"labelText"		"#TF_Matchmaking_Compatible"
-			"xpos"		"60"
+			"xpos"		"50"
 			"ypos"		"180"
 			"zpos"			"2"
 			"wide"		"130"
@@ -1399,45 +1416,48 @@
 			"enabled"	"1"
 		}
 
-			"PlayersSearchingMatchingNearbyValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"PlayersSearchingMatchingNearbyValue"
-				"font"			"HudFontSmall"
-				"xpos"		"190"
-				"ypos"		"180"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "PlayersSearchingMatchingNearbyValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"PlayersSearchingMatchingNearbyValue"
+         "font"			"incon16"
+         "fgcolor_override"   "red"
+         "xpos"		"190"
+         "ypos"		"180"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
-			"PlayersSearchingMatchingWorldwideValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"PlayersSearchingMatchingWorldwideValue"
-				"font"			"HudFontSmall"
-				"xpos"		"280"
-				"ypos"		"180"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "PlayersSearchingMatchingWorldwideValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"PlayersSearchingMatchingWorldwideValue"
+         "font"			"incon16"
+         "fgcolor_override"   "red"
+         "xpos"		"290"
+         "ypos"		"180"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
 		"EmptyGameserversLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"EmptyGameserversLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
+         "fgcolor_override"   "green"
 			"labelText"		"#TF_Matchmaking_EmptyGameservers"
-			"xpos"		"30"
+			"xpos"		"20"
 			"ypos"		"210"
 			"zpos"			"2"
 			"wide"		"300"
@@ -1447,39 +1467,41 @@
 			"enabled"	"1"
 		}
 
-			"EmptyGameserversMatchingNearbyValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"EmptyGameserversMatchingNearbyValue"
-				"font"			"HudFontSmall"
-				"xpos"		"190"
-				"ypos"		"210"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "EmptyGameserversMatchingNearbyValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"EmptyGameserversMatchingNearbyValue"
+         "font"			"incon16"
+         "fgcolor_override"   "green"
+         "xpos"		"190"
+         "ypos"		"210"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
-			"EmptyGameserversMatchingWorldwideValue"
-			{
-				"ControlName"		"CExLabel"
-				"fieldName"		"EmptyGameserversMatchingWorldwideValue"
-				"font"			"HudFontSmall"
-				"xpos"		"280"
-				"ypos"		"210"
-				"zpos"			"2"
-				"wide"		"90"
-				"tall"		"20"
-				"textAlignment"	"north-east"
-				"visible"	"1"
-				"enabled"	"1"
-				"labelText"		"?"
-			}
+      "EmptyGameserversMatchingWorldwideValue"
+      {
+         "ControlName"		"CExLabel"
+         "fieldName"		"EmptyGameserversMatchingWorldwideValue"
+         "font"			"incon16"
+         "fgcolor_override"   "green"
+         "xpos"		"290"
+         "ypos"		"210"
+         "zpos"			"2"
+         "wide"		"90"
+         "tall"		"20"
+         "textAlignment"	"north-east"
+         "visible"	"1"
+         "enabled"	"1"
+         "labelText"		"?"
+      }
 
-		"PartyHasLeaverGroupBox"
+		"PartyHasLeaverGroupBox"      //unsure what this controls
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"PartyHasLeaverGroupBox"
@@ -1524,7 +1546,6 @@
 				"wrap"		"1"
 				"fgcolor_override"	"250 114 45 255"
 			}
-
 		}
 	}
 
