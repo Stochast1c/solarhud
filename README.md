@@ -39,7 +39,5 @@ If you see a color that is not in the solarized colorscheme or an element that i
 
 - spy disguise panels and sapping menu
 
-- MVM
-
 - store menu 
 
