@@ -4,8 +4,8 @@
 	{
 		"ControlName"		"CWaveStatusPanel"
 		"fieldName"			"WaveStatusPanel"
-		"xpos"				"0"
-		"ypos"				"8"
+		"xpos"				"c-300"
+		"ypos"				"0"
 		"zpos"				"0"
 		"wide"				"600"
 		"tall"				"67"
@@ -19,24 +19,25 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PopFileLabel"
-		"font"			"ScoreboardMedium"
+		"font"			"incon16"
+      "fgcolor"      "base00"
 		"labelText"		"%popfile%"
 		"textAlignment"	"east"
-		"xpos"			"290"
-		"ypos"			"375"
-		"wide"			"290"
-		"tall"			"20"
-		"fgcolor"		"tanlight"
+		"xpos"			"r365"
+		"ypos"			"r16"
+		"zpos"			"3"
+		"wide"			"365"
+		"tall"			"16"
 	}
 
 	"DifficultyContainer"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"DifficultyContainer"
-		"xpos"			"425"
-		"ypos"			"30"
-		"wide"			"150"
-		"tall"			"20"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"f0"
 		"visible"		"1"
 		
 		"DifficultyLabel"
@@ -46,7 +47,7 @@
 			"font"			"HudFontSmallest"
 			"labelText"		"#TF_MvM_Difficulty"
 			"textAlignment"	"center"
-			"xpos"			"0"
+			"xpos"			"999990"
 			"ypos"			"0"
 			"wide"			"150"
 			"tall"			"10"
@@ -57,18 +58,18 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DifficultyValue"
-			"font"			"HudFontSmallBold"
+			"font"			"incon8"
+         "fgcolor"      "base1"
 			"labelText"		"%difficultyvalue%"
-			"textAlignment"	"center"
-			"xpos"			"0"
-			"ypos"			"9"
-			"wide"			"150"
-			"tall"			"10"
-			"fgcolor"		"tanlight"
+			"textAlignment"	"east"
+			"xpos"			"r100"
+			"ypos"			"r18"
+			"wide"			"100"
+			"tall"			"8"
 		}
 	}
 	
-	"PlayerListBackground"
+	"PlayerListBackground"  //disabled
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"PlayerListBackground"
@@ -77,8 +78,8 @@
 		"zpos"			"-1"
 		"wide"			"550"
 		"tall"			"150"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"../hud/tournament_panel_brown"
 		
 		"scaleImage"		"1"
@@ -90,11 +91,11 @@
 		"draw_corner_height" 	"5"	
 	}
 	
-	"MvMPlayerList"
+	"MvMPlayerList"   //the scoreboard
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"MvMPlayerList"
-		"xpos"			"35"
+		"xpos"			"c-265"
 		"ypos"			"79"
 		"wide"			"530"
 		"tall"			"150"
@@ -111,13 +112,13 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CreditStatsContainer"
-		"xpos"			"100"
+		"xpos"			"c-200"
 		"ypos"			"230"
 		"wide"			"400"
 		"tall"			"205"
 		"visible"		"1"
 		
-		"CreditStatsBackground"
+		"CreditStatsBackground"    //disabled
 		{
 			"ControlName"		"ScalableImagePanel"
 			"fieldName"		"CreditStatsBackground"
@@ -128,8 +129,8 @@
 			"tall"			"135"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
+			"visible"		"0"
+			"enabled"		"0"
 			"image"			"../HUD/tournament_panel_brown"
 
 			"src_corner_height"	"22"				// pixels inside the image

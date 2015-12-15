@@ -46,7 +46,7 @@
    	
 		if_mvm
 		{
-			"visible"		"0"
+			"visible"		"1"
 		}
 	}
 	"RedScoreBG"
@@ -65,7 +65,7 @@
 	
 		if_mvm
 		{
-			"visible"		"0"
+			"visible"		"1"
 		}
 	}
 	"MainBG"
@@ -88,8 +88,10 @@
 
 		if_mvm
 		{
-			"ypos"			"0"
-			"tall"			"448"
+			//"ypos"			"0"
+			//"tall"			"448"
+         "visible"   "0"
+         "enabled"   "0"
 		}
 	}							
 	"BlueTeamLabel"
@@ -291,7 +293,6 @@
 		
 		if_mvm
 		{
-			"ypos"			"0"
 		}
 	}
 	"ServerTimeLeft"
@@ -409,7 +410,6 @@
 		
 		if_mvm
 		{
-			"ypos"		"428"
 		}
 	}	
 	"SpectatorsInQueue"
@@ -495,8 +495,6 @@
 		
 		if_mvm
 		{
-			"visible"		"0"
-			"wide"			"175"
 		}
 	}	
 	"MapName"
@@ -517,9 +515,10 @@
 		"visible"		"1"
 		"enabled"		"1"
 
-		if_mvm
+		if_mvm   //using mission name in this place
 		{
-			"visible"		"0"
+         "visible"   "0"
+         "enabled"   "0"
 		}
 	}						
 	"HorizontalLine"
@@ -541,7 +540,6 @@
 		
 		if_mvm
 		{
-			"visible"		"1"
 		}
 	}
 	"PlayerScoreLabel"
@@ -794,10 +792,10 @@
 		
 		if_mvm
 		{  //this needs to be modified
-         "xpos"      "0"
+         "xpos"      "999990"
          "ypos"      "0"
-			"visible"		"1"
-         "enabled"   "1"
+			"visible"		"0"
+         "enabled"   "0"
 		}
 
 		"KillsLabel"
@@ -1374,7 +1372,7 @@
 		"ypos"				"0"
 		"zpos"				"10"
 		"wide"				"f0"
-		"tall"				"480"
+		"tall"				"f0"
 		"visible"			"0"
 		"enabled"			"1"
 		

@@ -37,9 +37,5 @@ If you see a color that is not in the solarized colorscheme or an element that i
 
 #Major things left to do:
 
-- spy disguise panels and sapping menu
-
-- MVM
-
 - store menu 
 
