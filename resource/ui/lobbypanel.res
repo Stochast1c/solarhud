@@ -993,17 +993,17 @@
 			"fgcolor_override"	"yellow"
 		}
 
-		"CompleteLabel"
+		"CompleteLabel"   //when in a tour, the word complete, when in boot camp, the word difficulty
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CompleteLabel"
 			"font"			"incon20"
 			"labelText"		"%complete_heading%"
-			"textAlignment"	"west"
-			"xpos"			"290"
+			"textAlignment"	"east"
+			"xpos"			"267"
 			"ypos"			"2"
 			"zpos"			"0"
-			"wide"			"80"
+			"wide"			"100"
 			"tall"			"24"
 			"fgcolor_override"	"base00"
 		}
