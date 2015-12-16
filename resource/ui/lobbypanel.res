@@ -1686,15 +1686,26 @@
 			"ControlName"	"TextEntry"
 			"fieldName"		"ChatTextEntry"
 			"font"			"incon12"
+			"xpos"			"1"
+			"ypos"			"291"
+			"zpos"			"0"
+			"wide"			"198"
+			"tall"			"18"
+			"bgcolor_override"	"base2"
+		}
+      "ChatTextEntryBorder"   //can't set a border with above element
+      {
+			"ControlName"	"EditablePanel"
+			"fieldName"		"ChatTextEntryBorder"
 			"xpos"			"0"
 			"ypos"			"290"
 			"zpos"			"0"
 			"wide"			"200"
 			"tall"			"20"
-			"bgcolor_override"	"base2"
+			"bgcolor_override"	"blank"
          "paintborder"  "1"
 			"border"		"base00border"
-		}
+      }
 	}
 
 	"JoinLateCheckButton"
