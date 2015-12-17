@@ -517,7 +517,7 @@
 		"IconScale"	  "0.35"
 		"LineHeight"	  "16"
 		"LineSpacing"	  "0"
-		"CornerRadius"	  "3"
+		"CornerRadius"	  "0"
 		"RightJustify"	  "1"	// If 1, draw notices from the right
 		
 		"TextFont"		"Incon12"
@@ -527,8 +527,8 @@
 		"IconColor"		"base00"
 		"LocalPlayerColor"	"base00"
 
-		"BaseBackgroundColor"	"base03"
-		"LocalBackgroundColor"	"base3"
+		"BaseBackgroundColor"	"base3"
+		"LocalBackgroundColor"	"base03"
 	}
 
 	HudVehicle
