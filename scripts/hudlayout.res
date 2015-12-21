@@ -1390,9 +1390,9 @@
 	}
 
 
-	"CTFKillStreakNotice"
+	"CTFStreakNotice"
 	{
-		"fieldName"		"CTFKillStreakNotice"
+		"fieldName"		"CTFStreakNotice"
 		"xpos"			"0"			
       "xpos_minmode" "99999"
 		"ypos"			"0"
