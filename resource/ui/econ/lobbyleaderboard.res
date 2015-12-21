@@ -20,11 +20,11 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PageTitle"
-		"font"			"HudFontSmallBold"
-		"labelText"		"FRIENDS RATINGS"
+		"font"			"incon20"
+		"labelText"		"#TF_Competitive_Friends"
 		"textAlignment"	"center"
 		"xpos"			"5"
-		"ypos"			"5"
+		"ypos"			"0"
 		"zpos"			"10"
 		"wide"			"f0"
 		"tall"			"20"
@@ -32,7 +32,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override"	"89 81 71 255"
+		"fgcolor_override"	"yellow"
 		"proportionaltoparent" "1"
 	}
 
@@ -41,13 +41,13 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"			"Line"
 		"xpos"				"p0.05"
-		"ypos"				"22"
+		"ypos"				"18"
 		"wide"				"p0.9"
 		"tall"				"2"
 		"visible"			"1"
 		"proportionaltoparent" "1"
 
-		"bgcolor_override"	"89 81 71 255"
+		"bgcolor_override"	"base00"
 	}
 
 	"ScoresContainer"
@@ -55,9 +55,9 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ScoresContainer"
 		"xpos"				"p0.1"
-		"ypos"				"s0.1"
-		"wide"				"p0.8"
-		"tall"				"f0"
+		"ypos"				"p0.15"
+		"wide"				"p0.95"
+		"tall"				"p0.95"
 		"visible"			"1"
 		"proportionaltoparent" "1"
 		"asynchandling"		"hide"
