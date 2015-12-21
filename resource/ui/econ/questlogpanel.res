@@ -103,7 +103,8 @@
 		"proportionaltoparent"	"1"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"MainMenuBGBorder"
+      "bgcolor_override"   "base3"
+		"border"		"base00Border"
 
 		"UpperLine"
 		{
@@ -123,16 +124,15 @@
 			"proportionaltoparent"	"1"
 		}
 
-
 		"QuestLogTitle"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"QuestLogTitle"
-			"font"			"HudFontSmallBold"
+			"font"			"incon20"
 			"labelText"		"#QuestLog_Title"
 			"textAlignment"	"north-west"
 			"xpos"			"cs-0.5"
-			"ypos"			"p.02"
+			"ypos"			"p.01"
 			"zpos"			"2"
 			"wide"			"p.95"
 			"tall"			"30"
@@ -142,78 +142,67 @@
 			"enabled"		"1"
 			"wrap"			"0"
 			"proportionaltoparent"	"1"
-			"fgcolor"		"TanLight"
+			"fgcolor"		"cyan"
 		}
 
 		"CloseButton"
 		{
 			"ControlName"	"CExImageButton"
 			"fieldName"		"CloseButton"
-			"xpos"			"rs1.5"
-			"ypos"			"p.02"
+			"xpos"			"r16"
+			"ypos"			"0"
 			"zpos"			"1000"
-			"wide"			"14"
-			"tall"			"14"
+			"wide"			"16"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"labeltext"		"x"
+			"font"			"incon16"
 			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"default"		"0"
+         "textInsetx"   "20"
+         "textInsety"   "-4"
+
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
+
+			"border_default"	"base00border"
+			"border_armed"		"base01border"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base03"
+			"depressedBgColor_override"   "base2"
+
 			"Command"		"close"
 			"proportionaltoparent" "1"
 			"actionsignallevel" "2"
-			
-			"paintbackground"	"0"
-			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "200 80 60 255"
-			"depressedFgColor_override" "46 43 42 255"
-			
-			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"200 80 60 255"
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"0"
-				"ypos"			"0"
-				"zpos"			"1"
-				"wide"			"14"
-				"tall"			"14"
-				"visible"		"1"
-				"enabled"		"1"
-				"image"			"close_button"
-				"scaleImage"	"1"
-			}				
 		}
 
 		"QuestList"
 		{
-			"ControlName"	"CScrollableQuestList"
-			"fieldName"		"QuestList"
-			"xpos"			"cs-0.5"
-			"ypos"			"p0.075"
-			"zpos"			"10"
-			"wide"			"p.95"
-			"tall"			"o1"
-			"visible"		"1"
-			"enabled"		"1"
-			"proportionaltoparent" "1"
+         "ControlName"	"CScrollableQuestList"
+         "fieldName"		"QuestList"
+         "xpos"			"cs-0.5"
+         "ypos"			"p0.075"
+         "zpos"			"10"
+         "wide"			"p.95"
+         "tall"			"o1"
+         "visible"		"1"
+         "enabled"		"1"
+         "proportionaltoparent" "1"
 
-			"entry_step" "10"
-			"entry_y"	"10"
+         "entry_step" "10"
+         "entry_y"	"10"
 
-			"no_quests"		"#QuestLog_NoQuests"
-			"need_a_pass"	"#QuestLog_NeedPassForContracts"
-			"not_possible"	"#QuestLog_NoContractsPossible"
+         "no_quests"		"#QuestLog_NoQuests"
+         "need_a_pass"	"#QuestLog_NeedPassForContracts"
+         "not_possible"	"#QuestLog_NoContractsPossible"
 		}
 	}
 
@@ -231,7 +220,8 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"bgcolor_override"	"0 0 0 0"
+		"bgcolor_override"	"blank"
+      "border"       "base00Border"
 		"proportionaltoparent"	"1"
 
 		"CoinModelPanel"
@@ -271,9 +261,9 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"BadgeProgressLabel"
-			"font"			"AdFont_AdText"
+			"font"			"incon8"
 			"labelText"		"#QuestLog_BadgeProgress"
-			"textAlignment"	"west"
+			"textAlignment"	"center"
 			"xpos"			"p.15"
 			"ypos"			"0"
 			"zpos"			"2"
@@ -285,7 +275,7 @@
 			"enabled"		"1"
 			"wrap"			"0"
 			"proportionaltoparent"	"1"
-			"fgcolor"		"TanLight"
+			"fgcolor"		"base00"
 		}
 
 		"BadgeMeterContainer"
@@ -293,7 +283,7 @@
 			"ControlName"	"EditablePanel"
 			"fieldName"		"BadgeMeterContainer"
 			"xpos"			"p.15"
-			"ypos"			"p.5"
+			"ypos"			"p.4"
 			"zpos"			"2"
 			"wide"			"100"
 			"tall"			"15"
@@ -302,7 +292,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"		"0"
-			"bgcolor_override"	"235 226 202 255" // tanlight
+			"bgcolor_override"	"blank" 
 			"proportionaltoparent"	"1"
 
 			"BadgeProgressMeter"
@@ -321,15 +311,16 @@
 				"dulltext"		"0"
 				"brighttext"	"0"
 				"proportionaltoparent"	"1"
-				"fgcolor_override"		"132 76 0 255"
-				"bgcolor_override"		"0 0 0 255"
+				"fgcolor_override"		"base01"
+				"bgcolor_override"		"base2"
+            "border"       "base01Border"
 			}
 
 			"BadgeProgressMeterText"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"BadgeProgressMeterText"
-				"font"			"AdFont_AdText"
+				"font"			"incon12"
 				"labelText"		""
 				"textAlignment"	"center"
 				"xpos"			"0"
@@ -343,7 +334,7 @@
 				"enabled"		"1"
 				"wrap"			"0"
 				"proportionaltoparent"	"1"
-				"fgcolor"		"TanLight"
+				"fgcolor"		"yellow"
 			}
 		}
 
@@ -351,9 +342,9 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"ContractsCompletedLabel"
-			"font"			"AdFont_AdText"
+			"font"			"incon10"
 			"labelText"		"#QuestLog_ContractsCompleted"
-			"textAlignment"	"west"
+			"textAlignment"	"center"
 			"xpos"			"p.57"
 			"ypos"			"0"
 			"zpos"			"2"
@@ -365,7 +356,7 @@
 			"enabled"		"1"
 			"wrap"			"0"
 			"proportionaltoparent"	"1"
-			"fgcolor"		"TanLight"
+			"fgcolor"		"base00"
 		}
 
 		"ContractMeterContainer"
@@ -373,7 +364,7 @@
 			"ControlName"	"EditablePanel"
 			"fieldName"		"ContractMeterContainer"
 			"xpos"			"p.57"
-			"ypos"			"p.5"
+			"ypos"			"p.4"
 			"zpos"			"2"
 			"wide"			"100"
 			"tall"			"15"
@@ -382,7 +373,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"		"0"
-			"bgcolor_override"	"235 226 202 255" // tanlight
+			"bgcolor_override"	"blank"
 			"proportionaltoparent"	"1"
 
 			"ContractsCompletedProgressMeter"
@@ -401,15 +392,16 @@
 				"dulltext"		"0"
 				"brighttext"	"0"
 				"proportionaltoparent"	"1"
-				"fgcolor_override"		"132 76 0 255"
-				"bgcolor_override"		"0 0 0 255"
+				"fgcolor_override"		"base01"
+				"bgcolor_override"		"base2"
+            "border"       "base01Border"
 			}
 
 			"ContractsCompletedProgressMeterText"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"ContractsCompletedProgressMeterText"
-				"font"			"AdFont_AdText"
+				"font"			"incon12"
 				"labelText"		""
 				"textAlignment"	"center"
 				"xpos"			"0"
@@ -423,7 +415,7 @@
 				"enabled"		"1"
 				"wrap"			"0"
 				"proportionaltoparent"	"1"
-				"fgcolor"		"TanLight"
+				"fgcolor"		"yellow"
 			}
 		}
 	}
