@@ -332,12 +332,13 @@ Scheme
 		Label.DisabledFgColor1			"Blank"
 		Label.DisabledFgColor2			"base1"   //craft button 
 
-		ListPanel.TextColor					"Orange"
-		ListPanel.BgColor					"TransparentBlack"
-		ListPanel.SelectedTextColor			"Black"
-		ListPanel.SelectedBgColor			"Red"
-		ListPanel.SelectedOutOfFocusBgColor	"Red"
-		ListPanel.EmptyListInfoTextColor	"Orange"
+      //unsure what this controls
+		ListPanel.TextColor					"base00"
+		ListPanel.BgColor					"base3"
+		ListPanel.SelectedTextColor			"base0"
+		ListPanel.SelectedBgColor			"base03"
+		ListPanel.SelectedOutOfFocusBgColor	"base02"
+		ListPanel.EmptyListInfoTextColor	"magenta"
 
       //combo box options colors
 		Menu.TextColor					"base00"
@@ -371,10 +372,11 @@ Scheme
 		RadioButton.TextColor			"green"
 		RadioButton.SelectedTextColor	"green"
 
-		RichText.TextColor				"Gray"
-		RichText.BgColor				"Blank"
-		RichText.SelectedTextColor		"Gray"
-		RichText.SelectedBgColor		"Red"
+      //unsure
+		RichText.TextColor				"base00"
+		RichText.BgColor				"base3"
+		RichText.SelectedTextColor		"base0"
+		RichText.SelectedBgColor		"base03"
 
 		ScrollBarButton.FgColor				"base00"
 		ScrollBarButton.BgColor				"base2"
@@ -386,16 +388,18 @@ Scheme
 		ScrollBarSlider.FgColor				"base00"		// nob color
 		ScrollBarSlider.BgColor				"base2"		// slider background color
 
-		SectionedListPanel.HeaderTextColor	"magenta"
-		SectionedListPanel.HeaderBgColor	"Blank"
-		SectionedListPanel.DividerColor		"Black"
-		SectionedListPanel.TextColor		"magenta"
-		SectionedListPanel.BrightTextColor	"magenta"
-		SectionedListPanel.BgColor			"TransparentLightBlack"
-		SectionedListPanel.SelectedTextColor			"Black"
-		SectionedListPanel.SelectedBgColor				"Red"
-		SectionedListPanel.OutOfFocusSelectedTextColor	"Black"
-		SectionedListPanel.OutOfFocusSelectedBgColor	"255 255 255 32"
+      //SHOULD BE MULTIPLE THINGS
+      //    vote hud issue selectedcolor
+		SectionedListPanel.HeaderTextColor	"yellow"
+		SectionedListPanel.HeaderBgColor	"base2"
+		SectionedListPanel.DividerColor		"cyan"
+		SectionedListPanel.TextColor		"base00"
+		SectionedListPanel.BrightTextColor	"base01"
+		SectionedListPanel.BgColor			"base3"
+		SectionedListPanel.SelectedTextColor			"base0"
+		SectionedListPanel.SelectedBgColor				"base03"
+		SectionedListPanel.OutOfFocusSelectedTextColor	"base01"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"base02"
 
 		Slider.NobColor				"base01"
 		Slider.TextColor			"base00"
