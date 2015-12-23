@@ -1,4 +1,4 @@
-"Resource/UI/StampDonationAdd.res"
+"Resource/UI/StampDonationAdd.res"  //popup when checking out
 {
 	"ConfirmDialog"
 	{
@@ -15,17 +15,20 @@
 		"tabPosition"		"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
+      "bgcolor_override"   "base3"
+      "border"       "base00border"
 	}
 	
-	"TitleLabel"
+	"TitleLabel"      
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"TitleLabel"
-		"font"			"HudFontMediumBold"
+		"font"			"incon24"
+      "fgcolor_override"   "yellow"
 		"labelText"		"#ConfirmTitle"
-		"textAlignment"	"north"
+		"textAlignment"	"center"
 		"xpos"			"0"
-		"ypos"			"15"
+		"ypos"			"0"
 		"zpos"			"1"
 		"wide"			"450"
 		"tall"			"30"
@@ -35,44 +38,44 @@
 		"enabled"		"1"
 	}
 	
-	"ExplanationLabel"
+	"ExplanationLabel"      //can't change color
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ExplanationLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"incon12"
 		"labelText"		"%text%"
 		"textAlignment"	"north-west"
-		"xpos"			"35"
-		"ypos"			"50"
+		"xpos"			"15"
+		"ypos"			"40"
 		"zpos"			"1"
-		"wide"			"340"
+		"wide"			"267"
 		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "base00"   //doesn't do anything
 	}
 
-	"ExplanationLabel2"
+	"ExplanationLabel2"     //can only partially change color
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ExplanationLabel2"
-		"font"			"HudFontSmallest"
+		"font"			"incon12"
 		"labelText"		"#Store_ConfirmStampDonationAddText2"
 		"textAlignment"	"north-west"
-		"xpos"			"45"
+		"xpos"			"25"
 		"ypos"			"102"
 		"zpos"			"1"
-		"wide"			"330"
+		"wide"			"257"
 		"tall"			"170"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "base00"
 	}
 
 	"ItemImagePanel"
@@ -121,7 +124,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#Store_Nope"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"textinsetx"	"50"
 		"dulltext"		"0"
@@ -129,6 +132,13 @@
 		"Command"		"nope"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"border_default"			"Econ.Button.Border.Default"
+		"border_armed"				"Econ.Button.Border.Armed"
+		"armedBgColor_override"		"Econ.Button.ArmedBgColor"
+		"armedFgColor_override"		"Econ.Button.ArmedFgColor"
+		"depressedBgColor_override"	"Econ.Button.DepressedBgColor"
+		"depressedFgColor_override"	"Econ.Button.DepressedFgColor"
+
 	}			
 
 	"ConfirmButton"
@@ -146,7 +156,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#Store_AddToCart"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"textinsetx"	"50"
 		"dulltext"		"0"
@@ -154,13 +164,19 @@
 		"Command"		"add_stamp_to_cart"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/vote_success.wav"
+		"border_default"			"Econ.Button.Border.Default"
+		"border_armed"				"Econ.Button.Border.Armed"
+		"armedBgColor_override"		"Econ.Button.ArmedBgColor"
+		"armedFgColor_override"		"Econ.Button.ArmedFgColor"
+		"depressedBgColor_override"	"Econ.Button.DepressedBgColor"
+		"depressedFgColor_override"	"Econ.Button.DepressedFgColor"
 	}
 
 	"PriceLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PriceLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"labelText"		"%price%"
 		"textAlignment"	"north-east"
 		"xpos"			"345"
@@ -173,6 +189,6 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"centerwrap"	"1"
-		"fgcolor_override" "121 195 58 255"
+		"fgcolor_override" "green"
 	}
 }
