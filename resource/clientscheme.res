@@ -250,7 +250,7 @@ Scheme
 		
 		Replay.RenderDialog.BgColor							"LighterDarkBrown"
 		
-      //popup panels
+      //popup panels, border definitions in Borders section
 		Econ.Dialog.BgColor									"base3"
 		Econ.Button.BgColor									"base3"
 		Econ.Button.FgColor									"base00"
@@ -4480,15 +4480,125 @@ Scheme
 			}
 		}
 
-		Econ.Button.Border.Default
+		Econ.Button.Border.Default    //base00 border, used in messagebox popups
 		{
-			"inset" "0 0 0 0"
-			"backgroundtype" "2"
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base00"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base00"
+					"offset" "1 1"
+				}
+			}
 		}
-		Econ.Button.Border.Armed
+		Econ.Button.Border.Armed      //base01 border, used in messagebox popups
 		{
-			"inset" "0 0 0 0"
-			"backgroundtype" "2"
+			"inset" "0 0 1 1"
+         "backgroundtype"  "2"
+			Left
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 1"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "1 2"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "1 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "2 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "base01"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "base01"
+					"offset" "1 1"
+				}
+			}
 		}
 
 		LoadoutItemMouseOverBorder    //class loadout slot item mouseover
