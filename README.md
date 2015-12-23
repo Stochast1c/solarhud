@@ -34,8 +34,3 @@ If there is an unmodified element or an element that you want modified different
 If an element isn't displaying properly, submit an issue, preferably with a screenshot, with your resolution and a description of the problem.
 
 If you see a color that is not in the solarized colorscheme or an element that is oddly colored magenta raise an issue (preferably with a screenshot) as these are elements that I thought were not able to be modified.
-
-#Major things left to do:
-
-- store menu 
-
