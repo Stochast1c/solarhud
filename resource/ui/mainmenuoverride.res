@@ -212,7 +212,7 @@
       "visible"      "1"
       "enabled"      "1"
       
-      "SLabel"
+      "SLabel"    //handled by GeneralStoreButton (in gamemenu.res)
       {
          "ControlName"     "CExLabel"
          "fieldName"       "SLabel"
@@ -224,8 +224,8 @@
          "ypos"            "0"
          "wide"            "32"
          "tall"            "64"
-         "visible"         "1"
-         "enabled"         "1"
+         "visible"         "0"
+         "enabled"         "0"
       }
       "oLabel"
       {
@@ -346,6 +346,46 @@
       }
    }
 
+	"GeneralStoreButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"GeneralStoreButton"
+		"xpos"			"55"
+		"ypos"			"3"
+		"zpos"			"3"
+		"wide"			"32"
+		"tall"			"64"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"32"
+			"tall"			"64"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon64"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"noborder"
+			"border_armed"		"noborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "yellow"
+         "defaultBgColor_override"     "blank"
+         "armedFgColor_override"       "yellow"
+         "armedBgColor_override"       "blank"
+			"depressedFgColor_override"   "yellow"
+			"depressedBgColor_override"   "blank"
+		}
+	}
+
 	"AchievementsButton"
 	{
 		"ControlName"	"CExImageButton"
@@ -415,15 +455,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -459,15 +499,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -503,15 +543,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 	
@@ -547,15 +587,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -593,15 +633,15 @@
          "sound_released"	"UI/buttonclickrelease.wav"
          
          "border_default"	"base00border"
-         "border_armed"		"orangeborder"
+         "border_armed"		"base01border"
 
          "paintbackground"	"1"      //let's you change button bg
          "defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-         "depressedFgColor_override"   "base0"
-         "depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
 		}
 	}
 	"MutePlayersButton"
@@ -636,15 +676,15 @@
          "sound_released"	"UI/buttonclickrelease.wav"
          
          "border_default"	"base00border"
-         "border_armed"		"orangeborder"
+         "border_armed"		"base01border"
 
          "paintbackground"	"1"      //let's you change button bg
          "defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-         "depressedFgColor_override"   "base0"
-         "depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -723,15 +763,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
 
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 	"customserver2"
@@ -767,15 +807,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 	"customserver3"
@@ -811,15 +851,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 	"customserver4"
@@ -855,15 +895,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -899,15 +939,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
 
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 	"customserver6"
@@ -943,15 +983,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 	"customserver7"
@@ -987,15 +1027,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 	"customserver8"
@@ -1031,15 +1071,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -1076,15 +1116,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -1114,15 +1154,15 @@
       "sound_released"	"UI/buttonclickrelease.wav"
       
       "border_default"	"base00border"
-      "border_armed"		"orangeborder"
+      "border_armed"		"base01border"
 
       "paintbackground"	"1"      //let's you change button bg
       "defaultFgColor_override"     "base00"
       "defaultBgColor_override"     "base3"
-      "armedFgColor_override"       "base0"
-      "armedBgColor_override"       "base03"
-      "depressedFgColor_override"   "base0"
-      "depressedBgColor_override"   "base03"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
 	}
 	
 	"TF2SettingsButton"     //adv options
@@ -1151,15 +1191,15 @@
       "sound_released"	"UI/buttonclickrelease.wav"
       
       "border_default"	"base00border"
-      "border_armed"		"orangeborder"
+      "border_armed"		"base01border"
 
       "paintbackground"	"1"      //let's you change button bg
       "defaultFgColor_override"     "base00"
       "defaultBgColor_override"     "base3"
-      "armedFgColor_override"       "base0"
-      "armedBgColor_override"       "base03"
-      "depressedFgColor_override"   "base0"
-      "depressedBgColor_override"   "base03"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
 	}
 
    "CharacterSetupButton"     //Items
@@ -1194,15 +1234,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -1268,7 +1308,7 @@
 			"navActivate"	"<QuickplayButton"
 
          "border_default"       "base00Border"
-         "border_armed"         "orangeBorder"
+         "border_armed"         "base01Border"
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
@@ -1276,9 +1316,9 @@
          "defaultFgColor_override"     "yellow"
          "defaultBgColor_override"     "base2"
          "armedFgColor_override"       "yellow"
-         "armedBgColor_override"       "base03"
+         "armedBgColor_override"       "base2"
          "depressedFgColor_override"   "yellow"
-         "depressedBgColor_override"   "base03"
+         "depressedBgColor_override"   "base2"
          
 		}
 	}
@@ -1559,15 +1599,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -1606,15 +1646,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 
@@ -1638,12 +1678,6 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"SteamWorkshopButton"
-		"xpos"			"99999"
-   }
-	"GeneralStoreButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"GeneralStoreButton"
 		"xpos"			"99999"
    }
 	"CreateServerButton"
@@ -2263,15 +2297,15 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
 			"border_default"	"base00border"
-			"border_armed"		"orangeborder"
+			"border_armed"		"base01border"
    
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base0"
-         "armedBgColor_override"       "base03"
-			"depressedFgColor_override"   "base0"
-			"depressedBgColor_override"   "base03"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+			"depressedFgColor_override"   "base01"
+			"depressedBgColor_override"   "base2"
 		}
 	}
 	

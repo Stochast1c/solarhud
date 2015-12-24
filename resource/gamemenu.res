@@ -95,9 +95,9 @@
 	}
 	"GeneralStoreButton"
 	{
-		"label" "#MMenu_Shop"
+		"label" "S"
 		"command" "engine open_store"
-		"subimage" "glyph_store"
+      "tooltip"   "#MMenu_Shop"
 	}	
 	"CharacterSetupButton"
 	{
