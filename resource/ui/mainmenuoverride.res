@@ -212,7 +212,7 @@
       "visible"      "1"
       "enabled"      "1"
       
-      "SLabel"
+      "SLabel"    //handled by GeneralStoreButton (in gamemenu.res)
       {
          "ControlName"     "CExLabel"
          "fieldName"       "SLabel"
@@ -224,8 +224,8 @@
          "ypos"            "0"
          "wide"            "32"
          "tall"            "64"
-         "visible"         "1"
-         "enabled"         "1"
+         "visible"         "0"
+         "enabled"         "0"
       }
       "oLabel"
       {
@@ -345,6 +345,46 @@
          "enabled"         "1"
       }
    }
+
+	"GeneralStoreButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"GeneralStoreButton"
+		"xpos"			"55"
+		"ypos"			"3"
+		"zpos"			"3"
+		"wide"			"32"
+		"tall"			"64"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"     //needs to be image, even if not using one
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"32"
+			"tall"			"64"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon64"
+			"textAlignment"	"center"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"noborder"
+			"border_armed"		"noborder"
+   
+			"paintbackground"	"1"      //let's you change button bg
+			"defaultFgColor_override"     "yellow"
+         "defaultBgColor_override"     "blank"
+         "armedFgColor_override"       "yellow"
+         "armedBgColor_override"       "blank"
+			"depressedFgColor_override"   "yellow"
+			"depressedBgColor_override"   "blank"
+		}
+	}
 
 	"AchievementsButton"
 	{
@@ -1638,12 +1678,6 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"SteamWorkshopButton"
-		"xpos"			"99999"
-   }
-	"GeneralStoreButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"GeneralStoreButton"
 		"xpos"			"99999"
    }
 	"CreateServerButton"
