@@ -1,26 +1,28 @@
 "Resource/UI/destroy_menu/base_active.res"
 {
-	"ItemNameLabel"
+	"ItemNameLabel"   //building name
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"ItemNameLabel"
-		"font"			"Default"
-		"xpos"			"6"
+		"font"			"incon20"
+      "fgcolor_override"   "red"
+		"xpos"			"1"
 		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"84"
-		"tall"			"15"
+		"wide"			"98"
+		"tall"			"36"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"#TF_Object_Dispenser"
-		"textAlignment"	"Left"
+		"labelText"		"#TF_Object_Sentry"
+		"labelText_lodef"		"#TF_Object_Sentry_360"
+		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 	}
 	
-	"ItemBackground"	
+	"ItemBackground"  //disabled, background
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"ItemBackground"
@@ -29,14 +31,14 @@
 		"zpos"			"0"
 		"wide"			"98"
 		"tall"			"105"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
-		"icon"			"hud_menu_item_bg_outline"
-		"iconColor"		"ProgressOffWhite"
+		"icon"			"hud_menu_item_bg"
+		"iconColor"		"yellow"
 	}
 	
-	"DestroyIcon"	
+	"DestroyIcon"	//disabled
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"DestroyIcon"
@@ -45,14 +47,14 @@
 		"zpos"			"1"
 		"wide"			"70"
 		"tall"			"70"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"ico_demolish"
 		"iconColor"		"255 255 255 255"
 	}
 		
-	"BuildingIcon"	
+	"BuildingIcon"	   //disabled
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"BuildingIcon"
@@ -61,14 +63,14 @@
 		"zpos"			"2"
 		"wide"			"80"
 		"tall"			"80"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"01"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_dispenser"
 		"iconColor"		"255 255 255 128"
 	}
 		
-	"NumberBg"	
+	"NumberBg"	   //disabled
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"NumberBg"
@@ -77,14 +79,14 @@
 		"zpos"			"0"
 		"wide"			"18"
 		"tall"			"18"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"ico_key_blank"
 		"iconColor"		"255 255 255 255"
 	}
 	
-	"NumberLabel"
+	"NumberLabel"     //disabled
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
@@ -97,8 +99,8 @@
 		"tall"			"18"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"labelText"		"2"
 		"textAlignment"	"Center"
 		"dulltext"		"1"
