@@ -150,42 +150,42 @@
    }
    "customserver1"
    {
-      "label"     "EliteSurf"
+      "label"     "1"
       "command"      "engine customserver1"
    }
    "customserver2"
    {
-      "label"     "ReSurfed"
+      "label"     "2"
       "command"      "engine customserver2"
    }
    "customserver3"
    {
-      "label"     "ImSurfed"
+      "label"     "3"
       "command"      "engine customserver3"
    }
    "customserver4"
    {
-      "label"     "SuSurfed"
+      "label"     "4"
       "command"      "engine customserver4"
    }
    "customserver5"
    {
-      "label"     "EuSurfed"
+      "label"     "5"
       "command"      "engine customserver5"
    }
    "customserver6"
    {
-      "label"     "EuImSurfed"
+      "label"     "6"
       "command"      "engine customserver6"
    }
    "customserver7"
    {
-      "label"     "EuEuSurfed"
+      "label"     "7"
       "command"      "engine customserver7"
    }
    "customserver8"
    {
-      "label"     "AusSurfed"
+      "label"     "8"
       "command"      "engine customserver8"
    }
 }
