@@ -1,6 +1,9 @@
 solarhud
 ==========
 
+##STOHUD BRANCH
+This is my custom branch of the hud.  It has named the custom servers to surf servers and enabled my crosshairs that I use.  Currently, that is all the changes that have been done. but that does not mean more changes will not occur in the future.
+
 A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
 [Screenshots](http://imgur.com/a/DlrJb)
