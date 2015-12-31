@@ -60,13 +60,14 @@
 		"image"			"../hud/health_over_bg"
 		"scaleImage"	"1"	
 	}
+
 	"PlayerStatusHealthValue"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
 		"xpos"			"c-260"
 		"ypos"			"0"
-		"zpos"			"5"
+		"zpos"			"6"
 		"wide"			"200"
 		"tall"			"60"
 		"visible"		"1"
@@ -75,7 +76,24 @@
 		"textAlignment"	"east"	
 		"font"			"inconb52"
 		"fgcolor"		"base00"
-	}								
+	}	
+	"PlayerStatusHealthValueShadow"     //this doesn't disappear should above disappear, shouldn't be an issue though, health only disappears when the entire panel is hidden
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueShadow"
+		"xpos"			"c-259"
+		"ypos"			"1"
+		"zpos"			"5"
+		"wide"			"200"
+		"tall"			"60"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%Health%"
+		"textAlignment"	"east"	
+		"font"			"inconb52"
+		"fgcolor"		"base03"
+	}	
+							
 	"PlayerStatusBleedImage"
 	{
 		"ControlName"	"ImagePanel"

@@ -15,8 +15,23 @@
 		"enabled"		"1"
 		"textAlignment"	"east"	
 		"labelText"		"%Ammo%"
-		
 	}		
+	"AmmoInClipShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoInClipShadow"
+		"font"			"inconb52"
+		"fgcolor"		"base03"
+		"xpos"			"1"
+		"ypos"			"1"
+		"zpos"			"4"
+		"wide"			"96"
+		"tall"			"60"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"east"	
+		"labelText"		"%Ammo%"
+	}						
 	"AmmoInReserve"
 	{
 		"ControlName"	"CExLabel"
@@ -25,7 +40,7 @@
 		"fgcolor"		"base1"
       "xpos"          "96"
       "ypos"          "0" 
-      "zpos"          "1"
+      "zpos"          "2"
       "wide"          "96"
       "tall"          "60" 
 		"visible"		 "1"
@@ -33,6 +48,22 @@
 		"textAlignment"	"west"		
 		"labelText"		"%AmmoInReserve%"
 	}		
+	"AmmoInReserveShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoInReserveShadow"
+		"font"			"inconb24"
+		"fgcolor"		"base03"
+      "xpos"          "97"
+      "ypos"          "1" 
+      "zpos"          "1"
+      "wide"          "96"
+      "tall"          "60" 
+		"visible"		 "1"
+		"enabled"		 "1"
+		"textAlignment"	"west"		
+		"labelText"		"%AmmoInReserve%"
+	}									
 	"AmmoNoClip"
 	{
 		"ControlName"	"CExLabel"
@@ -41,7 +72,7 @@
 		"fgcolor"		"base00"
       "xpos"          "71"    //since using an odd number for clip weapons
       "ypos"          "0" 
-      "zpos"          "1"
+      "zpos"          "2"
       "wide"          "192"
       "tall"          "60" 
 		"visible"		"1"
@@ -49,6 +80,22 @@
 		"textAlignment"	"west"		
 		"labelText"		"%Ammo%"
 	}	
+	"AmmoNoClipShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoNoClipShadow"
+		"font"			"inconb52"
+		"fgcolor"		"base03"
+      "xpos"          "72"    //since using an odd number for clip weapons
+      "ypos"          "1" 
+      "zpos"          "1"
+      "wide"          "192"
+      "tall"          "60" 
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"west"		
+		"labelText"		"%Ammo%"
+	}									
 
    //removed stuff
 	"HudWeaponAmmoBG"
@@ -87,56 +134,4 @@
 		"teambg_3"		"../hud/ammo_blue_bg"
 		"teambg_3_lodef"	"../hud/ammo_blue_bg_lodef"			
 	}
-	"AmmoInClipShadow"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"AmmoInClipShadow"
-		"font"			"HudFontGiantBold"
-		"fgcolor"		"Black"
-		"xpos"			"99999"
-		"ypos"			"99999"
-		"zpos"			"-1"
-		"wide"			"55"
-		"tall"			"40"
-		"visible"		"0"
-		"enabled"		"0"
-		"textAlignment"	"south-east"	
-		"labelText"		"%Ammo%"
-		
-	}						
-	"AmmoInReserveShadow"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"AmmoInReserveShadow"
-		"font"			"HudFontMediumSmall"
-		"font_lodef"	"HudFontMedium"
-		"font_minmode"	"HudFontSmall"
-		"fgcolor"		"TransparentBlack"
-		"xpos"			"99999"
-		"ypos"			"99999"
-		"zpos"			"-1"
-		"wide"			"40"
-		"tall"			"27"
-		"visible"		"0"
-		"enabled"		"0"
-		"textAlignment"	"south-west"		
-		"labelText"		"%AmmoInReserve%"
-	}									
-	"AmmoNoClipShadow"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"AmmoNoClipShadow"
-		"font"			"HudFontGiantBold"
-		"fgcolor"		"Black"
-		"xpos"			"99999"
-		"ypos"			"99999"
-		"zpos"			"-1"
-		"wide"			"84"
-		"tall"			"40"
-		"visible"		"0"
-		"enabled"		"0"
-		"textAlignment"	"south-east"		
-		"labelText"		"%Ammo%"
-		
-	}									
 }
