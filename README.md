@@ -1,7 +1,7 @@
 solarhud
 ==========
 
-A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
+A DARK [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
 [Screenshots](http://imgur.com/a/DlrJb)
 
@@ -21,11 +21,7 @@ The server buttons use a custom alias to store the server ip's that you want the
 
 ##How to Switch Themes
 
-Currently the color theme must be switched manually by editting the \*scheme files and changing the map in chapterbackgrounds.txt.  There is a planned update to branch the hud so that theme switching is as simple as downloading the other verison.
-
-To switch between light and dark colorschemes (the default is light), swap the base colors in resource/\*scheme.res: base0↔base00, base3↔base03, etc.
-
-Then change the map in scripts/chapterbackgrounds.txt: upward↔2fort.
+This is the dark theme branch of the hud.  To use the light theme change the branch to Light.  If you have changed a branch on github before, in the top left there is a dropdown box to change the branch.
 
 ##Requests, Bugs, Errors, etc.
 
