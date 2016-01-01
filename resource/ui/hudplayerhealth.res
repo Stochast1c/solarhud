@@ -91,7 +91,7 @@
 		"labelText"		"%Health%"
 		"textAlignment"	"east"	
 		"font"			"inconb52"
-		"fgcolor"		"base03"
+		"fgcolor"		"base03forced"
 	}	
 							
 	"PlayerStatusBleedImage"
