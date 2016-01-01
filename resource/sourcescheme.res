@@ -208,7 +208,7 @@ Scheme
       RichText.TextColor      "magenta"    //doesn't do anything???
       RichText.BgColor        "base03forced"   //bg color of console, overrides alpha'd panel as bg
       RichText.SelectedTextColor    "base1forced"
-      RichText.SelectedBgColor      "base03forced"	
+      RichText.SelectedBgColor      "base02forced"	
    }
 	
    //these fonts work to change console and server browser text
