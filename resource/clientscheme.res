@@ -21,14 +21,14 @@ Scheme
    
       //custom colors
       //solarized
-      "base03"       "0    43  54 255"
-      "base02"       "7    54  66 255"
-      "base01"       "88  110 117 255"
-      "base00"       "101 123 131 255"
-      "base0"        "131 148 150 255"
-      "base1"        "147 161 161 255"
-      "base2"        "238 232 213 255"
-      "base3"        "253 246 227 255"
+      "base3"       "0    43  54 255"
+      "base2"       "7    54  66 255"
+      "base1"       "88  110 117 255"
+      "base0"       "101 123 131 255"
+      "base00"        "131 148 150 255"
+      "base01"        "147 161 161 255"
+      "base02"        "238 232 213 255"
+      "base03"        "253 246 227 255"
       "yellow"       "181 137   0 255" 
       "orange"       "203  75  22 255" 
       "red"          "220  50  47 255"   
@@ -38,16 +38,17 @@ Scheme
       "cyan"         "42  161 152 255" 
       "green"        "133 153   0 255"  
 
-      "base03trans"       "0    43  54 150"
-      "base02trans"       "7    54  66 150"
-      "base01trans"       "88  110 117 150"
-      "base00trans"       "101 123 131 150"
-      "base0trans"        "131 148 150 150"
-      "base1trans"        "147 161 161 150"
-      "base2trans"        "238 232 213 150"
-      "base3trans"        "253 246 227 150"
+      "base3trans"       "0    43  54 150"
+      "base2trans"       "7    54  66 150"
+      "base1trans"       "88  110 117 150"
+      "base0trans"       "101 123 131 150"
+      "base00trans"        "131 148 150 150"
+      "base01trans"        "147 161 161 150"
+      "base02trans"        "238 232 213 150"
+      "base03trans"        "253 246 227 150"
 		
-      "base3trans50"        "253 246 227 50"
+      "base03trans50"        "253 246 227 50"
+      "base3trans50"         "  0  43  54 150"
 
       // base colors, cannot use references to above color names must use rgba
 		//"Orange"			"178 82 22 255"
@@ -471,7 +472,7 @@ Scheme
 
 		// Hint message colors
 		"HintMessageFg"			"blue"
-		"HintMessageBg" 		"253 246 227 100"  //base3 transparent, background box of surf timer timepanel
+		"HintMessageBg" 		"base3trans50"  //base3 transparent, background box of surf timer timepanel
 
 		"ProgressBarFg"			"magenta"      //no idea what for
 

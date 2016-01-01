@@ -9,14 +9,14 @@ Scheme
 	{
       //custom colors
       //solarized
-      "base03"       "0    43  54 255"
-      "base02"       "7    54  66 255"
-      "base01"       "88  110 117 255"
-      "base00"       "101 123 131 255"
-      "base0"        "131 148 150 255"
-      "base1"        "147 161 161 255"
-      "base2"        "238 232 213 255"
-      "base3"        "253 246 227 255"
+      "base3"       "0    43  54 255"
+      "base2"       "7    54  66 255"
+      "base1"       "88  110 117 255"
+      "base0"       "101 123 131 255"
+      "base00"        "131 148 150 255"
+      "base01"        "147 161 161 255"
+      "base02"        "238 232 213 255"
+      "base03"        "253 246 227 255"
       "yellow"       "181 137   0 255" 
       "orange"       "203  75  22 255"    //also controls the highlight on options, may consider changing this color
       "red"          "220  50  47 255"   
@@ -48,8 +48,8 @@ Scheme
       "TFMediumBrown"		        "0 0 255 255"
 
       //server browser quick play show servers
-      "QuickListBGDeselected"		         "253 246 227 255"    //base3
-      "QuickListBGSelected"               "  0  43  54 255"    //base03
+      "QuickListBGSelected"		           "  7  54  66 255"    //base2
+      "QuickListBGDeselected"               "  0  43  54 255"    //base3
                                                                //making this not deselected causes the control to look terrible
                                                                //font on control have their own bg that doesn't get overridden
                                                                //by setting label.bgcolor to blank this no longer looks terrible
@@ -195,11 +195,11 @@ Scheme
 
       //console colors except generated text history
       Console.DevTextColor    "magenta"  //console on hud text
-      Console.TextColor       "base0"    //text typed in history
+      Console.TextColor       "base00"    //text typed in history
       RichText.TextColor      "magenta"    //doesn't do anything???
-      RichText.BgColor        "base03"   //bg color of console, overrides alpha'd panel as bg
-      RichText.SelectedTextColor    "base00"
-      RichText.SelectedBgColor      "base3"	
+      RichText.BgColor        "base3"   //bg color of console, overrides alpha'd panel as bg
+      RichText.SelectedTextColor    "base01"
+      RichText.SelectedBgColor      "base2"	
    }
 	
    //these fonts work to change console and server browser text
