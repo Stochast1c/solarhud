@@ -204,11 +204,11 @@ Scheme
 
       //console colors except generated text history
       Console.DevTextColor    "magenta"  //console on hud text
-      Console.TextColor       "base0"    //text typed in history
+      Console.TextColor       "base0forced"    //text typed in history
       RichText.TextColor      "magenta"    //doesn't do anything???
-      RichText.BgColor        "base03"   //bg color of console, overrides alpha'd panel as bg
-      RichText.SelectedTextColor    "base00"
-      RichText.SelectedBgColor      "base3"	
+      RichText.BgColor        "base03forced"   //bg color of console, overrides alpha'd panel as bg
+      RichText.SelectedTextColor    "base1forced"
+      RichText.SelectedBgColor      "base03forced"	
    }
 	
    //these fonts work to change console and server browser text
