@@ -25,6 +25,15 @@ Scheme
       "blue"         "38  139 210 255" 
       "cyan"         "42  161 152 255" 
       "green"        "133 153   0 255"  
+     
+      "base03forced"       "0    43  54 255"
+      "base02forced"       "7    54  66 255"
+      "base01forced"       "88  110 117 255"
+      "base00forced"       "101 123 131 255"
+      "base0forced"        "131 148 150 255"
+      "base1forced"        "147 161 161 255"
+      "base2forced"        "238 232 213 255"
+      "base3forced"        "253 246 227 255"
 
       "blank"				"0 0 0 0"
 
@@ -195,11 +204,11 @@ Scheme
 
       //console colors except generated text history
       Console.DevTextColor    "magenta"  //console on hud text
-      Console.TextColor       "base00"    //text typed in history
+      Console.TextColor       "base0forced"    //text typed in history
       RichText.TextColor      "magenta"    //doesn't do anything???
-      RichText.BgColor        "base3"   //bg color of console, overrides alpha'd panel as bg
-      RichText.SelectedTextColor    "base01"
-      RichText.SelectedBgColor      "base2"	
+      RichText.BgColor        "base03forced"   //bg color of console, overrides alpha'd panel as bg
+      RichText.SelectedTextColor    "base1forced"
+      RichText.SelectedBgColor      "base02forced"	
    }
 	
    //these fonts work to change console and server browser text
