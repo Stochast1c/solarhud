@@ -18,7 +18,6 @@ Scheme
 	//////////////////////// COLORS ///////////////////////////
 	Colors
 	{
-   
       //custom colors
       //solarized
       "base03"       "0    43  54 255"
@@ -47,7 +46,17 @@ Scheme
       "base2trans"        "238 232 213 150"
       "base3trans"        "253 246 227 150"
 		
-      "base3trans50"        "253 246 227 50"
+      "base3trans50"        "253 246 227  50"
+      "base03trans50"       "  0  43  54 150"   //150 looks far better than 50
+
+      "base03forced"       "0    43  54 255"
+      "base02forced"       "7    54  66 255"
+      "base01forced"       "88  110 117 255"
+      "base00forced"       "101 123 131 255"
+      "base0forced"        "131 148 150 255"
+      "base1forced"        "147 161 161 255"
+      "base2forced"        "238 232 213 255"
+      "base3forced"        "253 246 227 255"
 
       // base colors, cannot use references to above color names must use rgba
 		//"Orange"			"178 82 22 255"
