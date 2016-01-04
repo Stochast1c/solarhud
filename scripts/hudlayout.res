@@ -528,7 +528,7 @@
 		"LocalPlayerColor"	"base00"
 
 		"BaseBackgroundColor"	"base3"
-		"LocalBackgroundColor"	"base03"
+		"LocalBackgroundColor"	"base2"
 	}
 
 	HudVehicle
