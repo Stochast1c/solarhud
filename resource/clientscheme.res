@@ -269,12 +269,12 @@ Scheme
 		Econ.Button.DepressedFgColor						"base03"
 	
       //loadout preset buttons, the one that is selected	
-		Econ.Button.PresetDefaultColorFg					"base0"
-		Econ.Button.PresetArmedColorFg						"base0"
-		Econ.Button.PresetDepressedColorFg					"base00"
-		Econ.Button.PresetDefaultColorBg					"base03"
-		Econ.Button.PresetArmedColorBg						"base02"
-		Econ.Button.PresetDepressedColorBg					"base3"
+		Econ.Button.PresetDefaultColorFg					"base00"
+		Econ.Button.PresetArmedColorFg						"base01"
+		Econ.Button.PresetDepressedColorFg					"base01"
+		Econ.Button.PresetDefaultColorBg					"base3"
+		Econ.Button.PresetArmedColorBg						"base2"
+		Econ.Button.PresetDepressedColorBg					"base2"
 		
 		Border.Bright					"Blank"		// the lit side of a control
 		Border.Dark						"Black"		// the dark/unlit side of a control
@@ -344,9 +344,9 @@ Scheme
       //unsure what this controls
 		ListPanel.TextColor					"base00"
 		ListPanel.BgColor					"base3"
-		ListPanel.SelectedTextColor			"base0"
-		ListPanel.SelectedBgColor			"base03"
-		ListPanel.SelectedOutOfFocusBgColor	"base02"
+		ListPanel.SelectedTextColor			"base01"
+		ListPanel.SelectedBgColor			"base2"
+		ListPanel.SelectedOutOfFocusBgColor	"base1"
 		ListPanel.EmptyListInfoTextColor	"magenta"
 
       //combo box options colors
@@ -384,8 +384,8 @@ Scheme
       //unsure
 		RichText.TextColor				"base00"
 		RichText.BgColor				"base3"
-		RichText.SelectedTextColor		"base0"
-		RichText.SelectedBgColor		"base03"
+		RichText.SelectedTextColor		"base01"
+		RichText.SelectedBgColor		"base2"
 
 		ScrollBarButton.FgColor				"base00"
 		ScrollBarButton.BgColor				"base2"
@@ -405,10 +405,10 @@ Scheme
 		SectionedListPanel.TextColor		"base00"
 		SectionedListPanel.BrightTextColor	"base01"
 		SectionedListPanel.BgColor			"base3"
-		SectionedListPanel.SelectedTextColor			"base0"
-		SectionedListPanel.SelectedBgColor				"base03"
+		SectionedListPanel.SelectedTextColor			"base01"
+		SectionedListPanel.SelectedBgColor				"base2"
 		SectionedListPanel.OutOfFocusSelectedTextColor	"base01"
-		SectionedListPanel.OutOfFocusSelectedBgColor	"base02"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"base1"
 
 		Slider.NobColor				"base01"
 		Slider.TextColor			"base00"
@@ -421,9 +421,9 @@ Scheme
 		TextEntry.CursorColor		"base00"
 		TextEntry.DisabledTextColor	"base1"
 		TextEntry.DisabledBgColor	"Blank"
-		TextEntry.SelectedTextColor	"base0"
-		TextEntry.SelectedBgColor	"base03"
-		TextEntry.OutOfFocusSelectedBgColor	"base02"
+		TextEntry.SelectedTextColor	"base01"
+		TextEntry.SelectedBgColor	"base2"
+		TextEntry.OutOfFocusSelectedBgColor	"base1"
 		TextEntry.FocusEdgeColor	"base00"
 
 		ToggleButton.SelectedTextColor	"red"
