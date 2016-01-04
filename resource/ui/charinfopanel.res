@@ -136,15 +136,15 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 
       "border_default"	"base00border"
-      "border_armed"		"orangeborder"
+      "border_armed"		"base01border"
 
       "paintbackground"	"1"      //let's you change button bg
       "defaultFgColor_override"     "base00"
       "defaultBgColor_override"     "base3"
-      "armedFgColor_override"       "base0"
-      "armedBgColor_override"       "base03"
-      "depressedFgColor_override"   "base0"
-      "depressedBgColor_override"   "base03"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base03"
+      "depressedBgColor_override"   "base2"
 	}		
 	
 	"NotificationsPresentPanel"
