@@ -408,7 +408,7 @@ Scheme
 		SectionedListPanel.SelectedTextColor			"base01"
 		SectionedListPanel.SelectedBgColor				"base2"
 		SectionedListPanel.OutOfFocusSelectedTextColor	"base01"
-		SectionedListPanel.OutOfFocusSelectedBgColor	"base1"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"base2"  //scoreboard, your highlight color
 
 		Slider.NobColor				"base01"
 		Slider.TextColor			"base00"
