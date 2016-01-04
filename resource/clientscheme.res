@@ -269,10 +269,10 @@ Scheme
 		Econ.Button.DepressedFgColor						"base03"
 	
       //loadout preset buttons, the one that is selected	
-		Econ.Button.PresetDefaultColorFg					"base00"
+		Econ.Button.PresetDefaultColorFg					"base01"
 		Econ.Button.PresetArmedColorFg						"base01"
 		Econ.Button.PresetDepressedColorFg					"base01"
-		Econ.Button.PresetDefaultColorBg					"base3"
+		Econ.Button.PresetDefaultColorBg					"base2"
 		Econ.Button.PresetArmedColorBg						"base2"
 		Econ.Button.PresetDepressedColorBg					"base2"
 		
