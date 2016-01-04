@@ -82,17 +82,17 @@ Scheme
       
       //button borders
       //dark makes the button pop or sink in, selection is bolder than dark
-		Border.Bright					"base1"	// the lit side of a control
-		Border.Dark						"base1"		// the dark/unlit side of a control
-		Border.Selection				"base03"			// the additional border color for displaying the default/selected button
+		Border.Bright					"base01"	// the lit side of a control
+		Border.Dark						"base00"		// the dark/unlit side of a control
+		Border.Selection				"base2"			// the additional border color for displaying the default/selected button
 
       //any and all buttons that aren't off the following types
 		Button.TextColor				"base00"
-		Button.BgColor					"base2"
-		Button.ArmedTextColor			"base0"
-		Button.ArmedBgColor				"base02"
-		Button.DepressedTextColor		"base0"
-		Button.DepressedBgColor			"base03"	
+		Button.BgColor					"base3"
+		Button.ArmedTextColor			"base01"
+		Button.ArmedBgColor				"base2"
+		Button.DepressedTextColor		"base03"
+		Button.DepressedBgColor			"base2"	
 		Button.FocusBorderColor			"magenta"    //doesn't do anything
 
       //checkbox buttons	
@@ -143,10 +143,10 @@ Scheme
 		//server browser
 		ListPanel.TextColor					"base00" 
 		ListPanel.BgColor					"base3"     
-		ListPanel.SelectedBgColor			"base03"
-      ListPanel.SelectedTextColor        "base0"
-		ListPanel.SelectedOutOfFocusBgColor	"base02"
-		ListPanel.SelectedOutOfFocusTextColor	"base00"    //now that is a mouthful of a command
+		ListPanel.SelectedBgColor			"base2"
+      ListPanel.SelectedTextColor        "base01"
+		ListPanel.SelectedOutOfFocusBgColor	"base1"
+		ListPanel.SelectedOutOfFocusTextColor	"base01"    //now that is a mouthful of a command
 		
 		MainMenu.TextColor			"magenta"			    //doesn't do anything
 		MainMenu.ArmedTextColor		"magenta"	          //doesn't do anything
@@ -158,8 +158,8 @@ Scheme
 		Menu.BgColor			"base3"
       Menu.TextColor       "base00"
 		Menu.ArmedFgColor		"magenta"  //doesn't do anything
-      Menu.ArmedTextColor  "base0"  //armed = selected, seriously use a standard format
-		Menu.ArmedBgColor		"base03"
+      Menu.ArmedTextColor  "base01"  //armed = selected, seriously use a standard format
+		Menu.ArmedBgColor		"base2"
 		Menu.DividerColor		"magenta"    //doesn't do anything
 		
       //options key bindings, may exist as stand-alone hud file OptionsSubKeyboard.res, this also probably controls other things, but can't think of any	
@@ -169,10 +169,10 @@ Scheme
 		SectionedListPanel.TextColor		               "base00"    //does not appear in options key bindings, uses bright
 		SectionedListPanel.BrightTextColor	            "base00"    //default text color in options key bindings
 		SectionedListPanel.BgColor			               "base3"
-		SectionedListPanel.SelectedTextColor			   "base0"
-		SectionedListPanel.SelectedBgColor				   "base03"
-		SectionedListPanel.OutOfFocusSelectedTextColor	"base00"
-		SectionedListPanel.OutOfFocusSelectedBgColor	   "base03"	
+		SectionedListPanel.SelectedTextColor			   "base01"
+		SectionedListPanel.SelectedBgColor				   "base2"
+		SectionedListPanel.OutOfFocusSelectedTextColor	"base1"
+		SectionedListPanel.OutOfFocusSelectedBgColor	   "base01"	
 		
       //scrollbar buttons, Hey they named something decently well
       ScrollBarButton.FgColor				"base00"
@@ -198,8 +198,8 @@ Scheme
 		//pop-up menu color on input line
       TextEntry.TextColor			        "base00"     //console input, server browser filter text input, 
 		TextEntry.DisabledTextColor	        "base1"   //server browser game input text
-		TextEntry.SelectedBgColor	        "base03"
-      TextEntry.SelectedTextColor          "base0"
+		TextEntry.SelectedBgColor	        "base2"
+      TextEntry.SelectedTextColor          "base01"
       TextEntry.BgColor                  "base3"       //console input line bg, server browser filter text input bg
 
       //console colors except generated text history
