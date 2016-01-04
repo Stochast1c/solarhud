@@ -536,7 +536,7 @@
 				"wide"			"400"
 				"tall"			"197"
 				"linespacing"	"12"
-            "bgcolor_override"   "base03"    //can't change font color      
+            "bgcolor_override"   "base03forced"    //can't change font color      
 			}
 		}
 
@@ -1067,7 +1067,7 @@
 			"tall"			"197"
 			"PaintBackgroundType"	"2"
 			"paintbackground"		"1"
-			"bgcolor_override"	"base03"    //can't modify challenge list, text color is default white
+			"bgcolor_override"	"base03forced"    //can't modify challenge list, text color is default white
 			"border"		"base00border"
 
 			"NavToRelay"	"ChallengeList"
