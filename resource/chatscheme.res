@@ -293,18 +293,49 @@ Scheme
 			}
 		}
 
-		"ChatFont"
+		"ChatFont"     //resolution causes different apparent font sizes
 		{
 			"1"
 			{
 				"name"		"Inconsolata"
-				"tall"		"24"	
-				"weight"	"500"
-				"antialias"    "1"
+				"tall"		"14"
+				"weight"	   "500"
+				"yres"		"480 599"
+            "antialias"    "1"
 			}
-		}
-
-
+			"2"
+			{
+				"name"		"Inconsolata"
+				"tall"		"16"
+				"weight"	   "500"
+				"yres"		"600 767"
+            "antialias"    "1"
+			}
+			"3"
+			{
+				"name"		"Inconsolata"
+				"tall"		"18"
+				"weight"	   "500"
+				"yres"		"768 1023"
+            "antialias"    "1"
+			}
+			"4"
+			{
+				"name"		"Inconsolata"
+				"tall"		"24"
+				"weight"	   "500"
+				"yres"		"1024 1199"
+            "antialias"    "1"
+			}
+			"5"
+			{
+				"name"		"Inconsolata"
+				"tall"		"24"
+				"weight"	   "500"
+				"yres"		"1200 10000"
+            "antialias"    "1"
+			}		
+      }
 	}
 
 	//
