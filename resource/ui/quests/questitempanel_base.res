@@ -189,6 +189,8 @@
 					"command"	"select"
 					"actionsignallevel" "3"
 
+               "border_default"    "NoBorder"
+               "border_armed"      "NoBorder"
 
 					"defaultFgColor_override"	"0 0 0 255"
 					"armedFgColor_override"		"Orange"
