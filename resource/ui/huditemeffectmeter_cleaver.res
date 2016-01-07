@@ -51,7 +51,7 @@
 		"MeterFG"		"base00"
 		"MeterBG"		"base3"
       "fgcolor_override"    "base00"
-      "bgcolor_override"     "base03"
+      "bgcolor_override"     "base03forced"
 		"textAlignment"			"Left"
 	}		
 				
