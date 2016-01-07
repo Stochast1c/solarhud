@@ -51,10 +51,10 @@
 		"tall"					"6"			
 		"visible"				"1"
 		"enabled"				"1"
-		"MeterFG"		"base00"
-		"MeterBG"		"base3"
-      "fgcolor_override"    "base00"
-      "bgcolor_override"     "base03"
+		"MeterFG"		"base00"    //does nothing
+		"MeterBG"		"base3"     //does nothing
+      "fgcolor_override"    "base00"   //does nothing
+      "bgcolor_override"     "base03forced"  //controls the bg of meter, forcing base03 since charge meter fg is white
 		"textAlignment"			"Left"
 	}					
 	
