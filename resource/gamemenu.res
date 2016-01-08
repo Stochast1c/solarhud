@@ -131,14 +131,14 @@
 	}
    "QuitButton"
    {
-      "label"        "x"
+      "label"        "×"
       "tooltip"        "#TF_Quit_Title"
       "command"      "engine replay_confirmquit"
       "OnlyAtMenu"   "1"
    }
    "DisconnectButton"
    {
-      "label"        "x"
+      "label"        "×"
       "tooltip"        "#GameUI_GameMenu_Disconnect"
       "command"      "engine disconnect"
       "OnlyInGame"   "1"

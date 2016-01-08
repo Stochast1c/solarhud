@@ -1591,10 +1591,8 @@
 			"tall"			"16"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"incon16"
+			"font"			"incon20"
 			"textAlignment"	"center"
-         "textInsetx"      "20"
-         "textInsety"      "-4"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
@@ -1604,9 +1602,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "red"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "red"
 			"depressedBgColor_override"   "base2"
 		}
 	}
@@ -1638,10 +1636,8 @@
 			"tall"			"16"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"incon16"
+			"font"			"incon20"
 			"textAlignment"	"center"
-         "textInsetx"      "20"
-         "textInsety"      "-4"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
@@ -1651,9 +1647,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "red"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "red"
 			"depressedBgColor_override"   "base2"
 		}
 	}
