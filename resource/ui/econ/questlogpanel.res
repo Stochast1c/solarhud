@@ -4,8 +4,8 @@
 	{
 		"ControlName"	"CQuestLogPanel"
 		"fieldName"		"QuestLog"
-		"xpos"			"c5"
-		"ypos"			"65"
+		"xpos"			"312"    //positioned next to Show Contract Button
+		"ypos"			"95"
 		"zpos"			"1"
 		"wide"			"300"
 		"tall"			"350"
