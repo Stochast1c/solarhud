@@ -106,10 +106,10 @@
 		"fieldName"		"HudMedicCharge"
 		"visible"		"1"
 		"enabled"		"1"
-      "xpos"         "c48" 
-      "ypos"         "330"
-      "wide"         "100"
-      "tall"         "60"
+      "xpos"         "0" 
+      "ypos"         "0"
+      "wide"         "f0"
+      "tall"         "f0"
 	}
 	
    // stickybomb launcher, scottish resistance, sticky jumper, chargin' targe, splendid screen, tide turner
