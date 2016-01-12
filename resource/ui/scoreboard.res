@@ -19,19 +19,19 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-      "medal_width"     "15"
-		"avatar_width"		"57"
-      //"spacer"          "5"    //added in tough break
-		"name_width"		"114"
-      "name_width_short"   "81"  //added in tough break, unsure what does
-		//"status_width"		"15"	 //disabled in tough break
-		"nemesis_width"		"15"
-		"class_width"		"15"
-		"score_width"		"25"
-		"ping_width"		"23"
-      "stats_width"     "30"
-      "killstreak_width"   "15"	
-      "killstreak_image_width"   "15"	
+		"tabPosition"		"0"
+		"medal_width"		"20"
+		"avatar_width"		"65"
+		"spacer"			"5"
+		"name_width"		"118"
+		"name_width_short"	"85"
+		"nemesis_width"		"25"
+		"class_width"		"25"
+		"score_width"		"30"
+		"ping_width"		"25"
+		"stats_width"		"30"
+		"killstreak_width"	"15"
+		"killstreak_image_width" "15"
 	}
 	"BlueScoreBG"
 	{
