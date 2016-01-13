@@ -1,4 +1,4 @@
-//sticky launchers
+//sticky launchers, and bow
 
 "Resource/UI/HudDemomanCharge.res"
 {	
@@ -33,8 +33,8 @@
 		"enabled"				"1"
 		"MeterFG"		"base00"
 		"MeterBG"		"base3"
-      "fgcolor_override"    "base00"
-      "bgcolor_override"     "base3"
+      "fgcolor_override"    "base0forced"    //this is the only fgcolor meter you can change
+      "bgcolor_override"     "base03forced"
 		"textAlignment"			"Left"
    }			
 }
