@@ -112,7 +112,7 @@
       "tall"         "f0"
 	}
 	
-   // stickybomb launcher, scottish resistance, sticky jumper, chargin' targe, splendid screen, tide turner
+   // stickybomb launcher, scottish resistance, sticky jumper, chargin' targe, splendid screen, tide turner, AND Bow
 
 	HudDemomanCharge
 	{
@@ -120,8 +120,8 @@
       "visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-60"
-		"ypos"			"346"	   
-      "zpos"         "1"
+		"ypos"			"370"	   
+      "zpos"         "2"
 		"wide"			"120"
 		"tall"			"50"
 		"MeterFG"		"base00"
@@ -129,28 +129,22 @@
       "xpos_minmode" "99999"
       "visible_minmode"    "0"
       "enabled_minmode"    "0"
-
 	}	
 
-   // huntsman
+   // huntsman, disabled since demo charge covers it
 
 	HudBowCharge
 	{
 		"fieldName"		"HudBowCharge"
-		"visible"		"1"
-		"enabled"		"1"
-		"xpos"			"r80"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
-		"ypos"			"r21"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
-		"xpos"			"r112"	[$X360]
-		"ypos"			"r45"	[$X360]
+		"visible"		"0"
+		"enabled"		"0"
+		"xpos"			"c-9999960"
+		"ypos"			"371"
 		"zpos"			"1"			// draw in front of ammo
-		"wide"			"60"
-		"wide_minmode"	"50"
-		"tall"			"8"
-		"MeterFG"		"White"
-		"MeterBG"		"Gray"
+		"wide"			"120"
+		"tall"			"6"
+		"MeterFG"		"base0forced"
+		"MeterBG"		"base03forced"
 	}
 
 	HudFlameRocketCharge
