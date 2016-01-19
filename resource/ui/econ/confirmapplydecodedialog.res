@@ -9,10 +9,10 @@
 		"ypos"					"c-200"
 		"wide"					"400"
 		"tall"					"240"
-		"bgcolor_override"		"46 43 42 0"
-		"paintbackgroundtype"	"0"
+		"bgcolor_override"		"base3"
+		"paintbackgroundtype"	"2"
 		"settitlebarvisible"	"0"
-		"border"				"GrayDialogBorder"
+		"border"				"base00border"
 	}
 
 	"mouseoveritempanel"
@@ -59,7 +59,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TitleLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"labelText"		"dynamic"
 		"textAlignment"	"center"
 		"xpos"			"95"
@@ -113,11 +113,11 @@
 	{		
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"tool_modelpanel"
-		"xpos"			"10"
-		"ypos"			"10"
+		"xpos"			"11"     //must be -1 from bg so border will display
+		"ypos"			"11"
 		"zpos"			"1"
-		"wide"			"84"
-		"tall"			"64"
+		"wide"			"82"     
+		"tall"			"62"
 		"visible"		"1"
 		"bgcolor_override"		"0 0 0 0"
 		"noitem_textcolor"		"117 107 94 255"
@@ -135,6 +135,7 @@
 		{
 			"use_item_rendertarget" "0"
 			"allow_rot"				"0"
+         "inventory_image_type" "1"
 		}
 	}	
 	"SubjectBG"
@@ -176,11 +177,11 @@
 	{		
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"subject_modelpanel"
-		"xpos"			"300"
-		"ypos"			"10"
+		"xpos"			"301"
+		"ypos"			"11"
 		"zpos"			"1"
-		"wide"			"84"
-		"tall"			"64"
+		"wide"			"82"
+		"tall"			"62"
 		"visible"		"1"
 		"bgcolor_override"		"0 0 0 0"
 		"noitem_textcolor"		"117 107 94 255"
@@ -197,6 +198,7 @@
 		{
 			"use_item_rendertarget" "0"
 			"allow_rot"				"0"
+         "inventory_image_type" "1"
 		}
 	}	
 	
@@ -204,7 +206,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ConfirmLabel"
-		"font"			"HudFontSmall"
+		"font"			"incon16"
 		"labelText"		"%confirm_text%"
 		"textAlignment"	"center"
 		"xpos"			"20"
@@ -216,7 +218,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "magenta"
 	}
 
 	"OptionalAppendLabel"
@@ -253,7 +255,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#Cancel"
-		"font"			"HudFontSmallBold"
+		"font"			"incon20"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -261,6 +263,12 @@
 		"Command"		"cancel"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"border_default"			"Econ.Button.Border.Default"
+		"border_armed"				"Econ.Button.Border.Armed"
+		"armedBgColor_override"		"Econ.Button.ArmedBgColor"
+		"armedFgColor_override"		"Econ.Button.ArmedFgColor"
+		"depressedBgColor_override"	"Econ.Button.DepressedBgColor"
+		"depressedFgColor_override"	"Econ.Button.DepressedFgColor"
 	}
 	
 	"OkButton"
@@ -278,7 +286,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#CraftNameConfirm"
-		"font"			"HudFontSmallBold"
+		"font"			"incon16"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -286,5 +294,11 @@
 		"Command"		"apply"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"border_default"			"Econ.Button.Border.Default"
+		"border_armed"				"Econ.Button.Border.Armed"
+		"armedBgColor_override"		"Econ.Button.ArmedBgColor"
+		"armedFgColor_override"		"Econ.Button.ArmedFgColor"
+		"depressedBgColor_override"	"Econ.Button.DepressedBgColor"
+		"depressedFgColor_override"	"Econ.Button.DepressedFgColor"
 	}
 }
