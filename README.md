@@ -1,9 +1,9 @@
 solarhud
 ==========
 
-A DARK [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
+A **DARK** [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
-[Screenshots](http://imgur.com/a/DlrJb)
+[Screenshots](http://imgur.com/a/iSr9u)
 
 The main goal of this mod is to completely overwrite all colors and fonts while keeping the minimal but very legible style of ell's hud.
 
@@ -21,7 +21,9 @@ The server buttons use a custom alias to store the server ip's that you want the
 
 ##How to Switch Themes
 
-This is the dark theme branch of the hud.  To use the light theme change the branch to Light.  If you have changed a branch on github before, in the top left there is a dropdown box to change the branch.
+This is the dark theme branch of the hud.  To use the light theme change the branch to Light.  If you have not changed a branch on github before, in the top left there is a dropdown box to change the branch.
+
+See the master branch Theme Switch Section if you wish to change your theme without completely replacing the hud.
 
 ##Requests, Bugs, Errors, etc.
 
