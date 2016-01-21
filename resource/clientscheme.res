@@ -10533,5 +10533,6 @@ Scheme
          "font" "resource/fonts/KnucklesCrosses.ttf"
          "name" "KnucklesCrosses"     
       }
+		"12" "resource/ocra.ttf"
 	}
 }
