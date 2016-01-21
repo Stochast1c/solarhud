@@ -768,9 +768,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "yellow"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "yellow"
 			"depressedBgColor_override"   "base2"
 		}
 	}
@@ -812,9 +812,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "orange"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "orange"
 			"depressedBgColor_override"   "base2"
 		}
 	}
@@ -856,9 +856,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "red"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "red"
 			"depressedBgColor_override"   "base2"
 		}
 	}
@@ -900,9 +900,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "magenta"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "magenta"
 			"depressedBgColor_override"   "base2"
 		}
 	}
@@ -944,9 +944,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "violet"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "violet"
 			"depressedBgColor_override"   "base2"
 		}
 	}
@@ -988,9 +988,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "blue"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "blue"
 			"depressedBgColor_override"   "base2"
 		}
 	}
@@ -1032,9 +1032,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "cyan"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "cyan"
 			"depressedBgColor_override"   "base2"
 		}
 	}
@@ -1076,9 +1076,9 @@
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
+         "armedFgColor_override"       "green"
          "armedBgColor_override"       "base2"
-			"depressedFgColor_override"   "base01"
+			"depressedFgColor_override"   "green"
 			"depressedBgColor_override"   "base2"
 		}
 	}
