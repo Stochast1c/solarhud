@@ -69,11 +69,12 @@
 
 				if_readymode
 				{
-					"xpos"				"20"
-					"ypos"				"0"
-					"wide"				"93"
-					"textAlignment"		"west"
-					"font"				"incon12"
+					"xpos"				"0"
+					"ypos"				"25"
+					"wide"				"55"
+               "tall"            "10"
+					"textAlignment"		"center"
+					"font"				"incon8"
 				}
 			}
 			
@@ -111,10 +112,10 @@
 
 				if_readymode
 				{
-               "xpos"			"2"
-               "ypos"			"2"
-               "wide"			"16"
-               "tall"			"16"
+					"xpos"			"5"
+					"ypos"			"4"
+					"wide"			"20"
+					"tall"			"20"
 					"image"			"../vgui/hud_connecting"
 				}
 			}
@@ -227,6 +228,8 @@
 				
 				if_readymode
 				{
+               "xpos"         "30"
+               "ypos"         "6"
 					"visible"		"1"
 				}		
 			}
@@ -259,6 +262,8 @@
 
 				if_readymode
 				{
+               "xpos"         "32"
+               "ypos"         "8"
 					"visible"		"1"
 				}
 			}
@@ -336,8 +341,8 @@
 
 			if_readymode
 			{
-				"wide"		"164"
-				"tall"		"20"
+				"wide"		"55"     //using default settings since offsets don't work with readymode panels, thanks valve
+				"tall"		"35"
 			}
 		}
 		
@@ -376,19 +381,18 @@
 		{
 			"xpos"							"0"
 			"ypos"							"0"
-			"wide"							"f0"
+			"wide"							"f0"     //fills the entire screen, not=640
 			"tall"							"480"
 
-         //the only things that do stuff right now are the ones in the above section 
-         "team1_player_base_offset_x"		"0"
-         "team1_player_base_y"				"201"    //2px above medigun info from statusspec 
-         "team1_player_delta_x"				"0"
-         "team1_player_delta_y"				"-20"    //team1 counts backwards
-         "team2_player_base_offset_x"		"0"
-         "team2_player_base_y"				"259"    //2px below medigun info from statusspec
-         "team2_player_delta_x"				"20"
-         "team2_player_delta_y"				"20"     //team2 counts forwards		
-      }	
+         "team1_player_base_offset_x"		"-75"
+			"team1_player_base_y"			"66"
+         "team1_player_delta_x"				"-47"
+         "team1_player_delta_y"				"0"
+			"team2_player_base_offset_x"	"5"
+			"team2_player_base_y"			"66"
+			"team2_player_delta_x"			"52"
+         "team2_player_delta_y"				"0"
+		}	
 	}
 
 	"HudTournamentBG"
