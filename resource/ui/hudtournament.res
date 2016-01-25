@@ -385,7 +385,7 @@
 			"tall"							"480"
 
          "team1_player_base_offset_x"		"-75"
-			"team1_player_base_y"			"66"
+			"team1_player_base_y"			"30"
          "team1_player_delta_x"				"-47"
          "team1_player_delta_y"				"0"
 			"team2_player_base_offset_x"	"5"
@@ -579,19 +579,19 @@
 		}
 	}
 	
-	"CountdownBG"
+	"CountdownBG"  //disabled
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"CountdownBG"
-		"xpos"			"230"
-		"ypos"			"r55"
+		"xpos"			"2309999"
+		"ypos"			"r559999"
 		"zpos"			"-1"
 		"wide"			"40"
 		"tall"			"40"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			"../HUD/color_panel_red"
 
 		"src_corner_height"	"23"				// pixels inside the image
@@ -605,11 +605,12 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"CountdownLabel"
-		"font"			"HudFontGiant"
-		"xpos"			"230"
-		"ypos"			"r55"
-		"wide"			"40"
-		"tall"			"40"
+		"font"			"incon64"
+      "fgcolor"      "cyan"
+		"xpos"			"c-50"
+		"ypos"			"c-120"  //slightly raised above crosshair
+		"wide"			"100"
+		"tall"			"100"
 		"zpos"			"1"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -620,20 +621,20 @@
 		"textAlignment"		"center"
 	}
 	
-	"CountdownLabelShadow"
+	"CountdownLabelShadow"  //disabled
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"CountdownLabelShadow"
 		"font"			"HudFontGiant"
-		"xpos"			"231"
-		"ypos"			"r54"
+		"xpos"			"2319999"
+		"ypos"			"r549999"
 		"wide"			"40"
 		"tall"			"40"
 		"zpos"			"1"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"wrap"			"0"
 		"labelText"		"%tournamentstatelabel%"
 		"textAlignment"		"center"
