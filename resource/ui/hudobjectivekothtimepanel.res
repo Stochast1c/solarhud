@@ -1,13 +1,14 @@
 "Resource/UI/HudObjectiveKothTimePanel.res"
-{	
+{
+   //timer is positioned at c-160, r24 since active timer bg can't use c values	
 	"BlueTimer"
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"BlueTimer"
-		"xpos"				"c-83"
-		"ypos"				"r24"
+		"xpos"				"0"
+		"ypos"				"0"
 		"zpos"				"2"
-		"wide"				"60"
+		"wide"				"80"
 		"tall"				"24"
 		"visible"			"1"
 		"enabled"			"1"
@@ -29,7 +30,7 @@
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"3"
-			"wide"			"60"
+			"wide"			"60"  //moving off center by 20units
 			"tall"			"24"
 			"visible"		"1"
 			"enabled"		"1"
@@ -42,10 +43,10 @@
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"RedTimer"
-		"xpos"				"c"
-		"ypos"				"r24"
+		"xpos"				"80"  
+		"ypos"				"0"
 		"zpos"				"2"
-		"wide"				"60"
+		"wide"				"80"
 		"tall"				"24"
 		"visible"			"1"
 		"enabled"			"1"
@@ -63,14 +64,14 @@
 			"fieldName"		"TimePanelValue"
 			"font"			"incon20"
 			"fgcolor"		"red"
-			"xpos"			"0"
+			"xpos"			"20"     //moving off center by 20units
 			"ypos"			"0"
 			"zpos"			"3"
 			"wide"			"60"
 			"tall"			"24"
 			"visible"		"1"
 			"enabled"		"1"
-			"textAlignment"		"east"
+			"textAlignment"		"west"
 			"labelText"		"0:00"
 		}	
 	}
@@ -79,10 +80,10 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ActiveTimerBG"
-		"xpos"				"0"
-		"ypos"				"r24"
+		"xpos"				"0"      //see hudlayout for active pos, currently 16,96
+		"ypos"				"0"
 		"zpos"				"1"
-		"wide"				"49"
+		"wide"				"48"
 		"tall"				"24"
 		"visible"			"0"
 		"enabled"			"1"
