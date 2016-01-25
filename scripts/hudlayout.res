@@ -73,14 +73,15 @@
 		"fieldName" "HudKothTimeStatus"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"f0"
-		"tall"	"480"
+		"xpos"	"c-80"
+		"ypos"	"r24"
+		"wide"	"160"
+		"tall"	"24"
 		
 		//can't use c position
-      "blue_active_xpos"			"360"
-		"red_active_xpos"			"443"
+      //4unit border
+      "blue_active_xpos"			"17"  //not sure why but this is +1
+		"red_active_xpos"			"96"
 	}	
 
 

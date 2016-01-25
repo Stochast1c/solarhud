@@ -307,6 +307,10 @@
 				{	
 					"visible"		"0"
 				}
+				if_readymode
+				{	
+					"visible"		"0"
+				}
 			}
 			
 			"specindex"    //disabled
@@ -463,10 +467,10 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"TournamentREDLabel"
 		"font"			"incon16"
-		"xpos"			"c83"
+		"xpos"			"r320"   //This is NOT half the screen width
 		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"344"    //half the screen-xpos  thought screen was 640????
+		"wide"			"320"    //This is NOT half the screen width
 		"tall"			"16"
 		"visible"		"1"
 		"enabled"		"1"
