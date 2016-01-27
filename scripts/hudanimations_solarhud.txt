@@ -1,0 +1,120 @@
+//===========================================
+//Health Bonus Pulse
+
+event hudHealthBonusPulse
+{
+  animate PlayerStatusHealthValue fgColor blue linear 0.0 0.0
+  runEvent hudHealthBonusPulseLoop 0.1
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop
+{
+	RunEvent HudHealthBonusPulse 0.0
+}
+
+event hudHealthBonusPulseStop
+{
+  stopEvent HudHealthBonusPulse 0.0
+  stopEvent HudHealthBonusPulseLoop 0.0
+  animate PlayerStatusHealthValue fGColor base00 linear 0.0 0.0
+}
+
+//===========================================
+
+//Health Dying Pulse
+event hudHealthDyingPulse
+{
+  animate PlayerStatusHealthValue fGColor red linear 0.0 0.0
+  runEvent hudHealthDyingPulseLoop 0.1
+}
+
+event hudHealthDyingPulseLoop
+{
+  runEvent hudHealthDyingPulse 0.0
+}
+
+event hudHealthDyingPulseStop
+{
+  stopEvent hudHealthDyingPulse 0.0
+  stopEvent hudHealthDyingPulseLoop 0.0
+  animate PlayerStatusHealthValue fGColor base00 linear 0.0 0.0
+}
+
+//===========================================
+
+event hudLowAmmoPulse
+{
+   animate AmmoInReserve fGColor red linear 0.0 0.0
+   animate AmmoNoClip fGColor red linear 0.0 0.0
+   
+   runEvent hudLowAmmoPulseLoop  0.1
+}
+
+event hudLowAmmoPulseLoop
+{
+  runEvent hudLowAmmoPulse 0.0
+}
+
+event hudLowAmmoPulseStop
+{
+  stopEvent hudLowAmmoPulse 0.0
+  stopEvent hudLowAmmoPulseLoop 0.0
+  animate AmmoInReserve fGColor base1 linear 0.0 0.0
+  animate AmmoNoClip fGColor base00 linear 0.0 0.0
+}
+
+//====================================
+// Flash the medic charge hud when we have full charge
+
+event HudMedicCharged
+{
+	Animate	ChargeLabel 	FgColor		"base00"		Linear 0.0 0.1
+	Animate	ChargeLabel 	FgColor		"base03forced"		Linear 0.3 0.4
+	
+	Animate	ChargeMeter 	FgColor		"base00"		Linear 0.0 0.1
+	Animate	ChargeMeter 	FgColor		"base03forced"		Linear 0.3 0.4
+
+	RunEvent HudMedicChargedLoop	0.6
+}
+
+// call to loop HudHealthBonusPulse
+event HudMedicChargedLoop
+{
+	RunEvent HudMedicCharged 0.0
+}
+
+event HudMedicChargedStop
+{
+	StopEvent HudMedicCharged 0.0
+	StopEvent HudMedicChargedLoop 0.0
+	
+	Animate	ChargeLabel 	FgColor		"base00"		Linear 0.0 0.0001
+	Animate	ChargeMeter 	FgColor		"base00"		Linear 0.0 0.0001
+}
+
+//====================================
+
+event RDPositiveScorePulse
+{
+	Animate Score FgColor	"green"		Linear 0.0 0.0
+	Animate Score FgColor	"yellow"			Linear 0.1 0.2
+
+	Animate Score Position	"3 5"		Deaccel 0.0 0.05
+	Animate Score Position	"3 10"		Accel 0.05 0.2
+
+	Animate ScoreShadow FgColor	"0 0 0 200"		Deaccel 0.0 0.05
+	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
+}
+
+event RDNegativeScorePulse    //score a point in pd
+{
+	Animate Score FgColor	"magenta"		Linear 0.0 0.0
+	Animate Score FgColor	"yellow"			Linear 0.1 0.2
+
+	Animate Score Position	"3 5"		Deaccel 0.0 0.05
+	Animate Score Position	"3 10"		Accel 0.05 0.2
+
+	Animate ScoreShadow FgColor	"0 0 0 200"		Deaccel 0.0 0.05
+	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
+}
