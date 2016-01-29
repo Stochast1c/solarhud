@@ -10,12 +10,12 @@
 		"zpos"			"0"
 		"wide"			"f0"
 		"tall"			"480"
-		
+
 		"bgcolor_override"	"blank" //base3"   //once picture background is gone this loads before background panel can load and overrides all other definitions for background color
-		
+
 		"update_url"	"http://store.steampowered.com/news/?filter=updates&appids=440"
 		"blog_url"		"http://www.teamfortress.com/"
-		
+
 		"button_x_offset"	"-285"
 		"button_y"			"120"
 		"button_y_delta"	"5"
@@ -49,15 +49,15 @@
 				"default"		"1"
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
-				
+
 				"border_default"	"MainMenuButtonDefault"
 				"border_armed"		"MainMenuButtonArmed"
 				"paintbackground"	"0"
-				
+
 				"defaultFgColor_override" "46 43 42 255"
 				"armedFgColor_override" "235 226 202 255"
 				"depressedFgColor_override" "46 43 42 255"
-				
+
 				"image_drawcolor"	"117 107 94 255"
 				"image_armedcolor"	"235 226 202 255"
 				"SubImage"
@@ -72,43 +72,43 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"scaleImage"	"1"
-				}				
-			}		
+				}
+			}
 		}
-		
+
 		"SaxxySettings"
 		{
 			"xpos"			"0"
 			"ypos"			"0"
-			"zpos"			"-101"		
+			"zpos"			"-101"
 			"wide"			"f0"
 			"tall"			"480"
-			
+
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			
+
 			"flashbounds_x"	"50"
 			"flashbounds_y"	"65"
 			"flashbounds_w"	"250"
 			"flashbounds_h"	"120"
-			
+
 			"flashstartsize_min"	"8"
 			"flashstartsize_max"	"12"
-			
+
 			"flash_maxscale"		"4"
-			
+
 			"flash_lifelength_min"	".1"
 			"flash_lifelength_max"	".2"
-			
+
 			"curtain_anim_duration"		"4.0"
 			"curtain_open_time"		"2.8"
 			"flash_start_time"		"4.0"
-			
+
 			"initial_freakout_duration"		"15.0"
 			"clap_sound_duration"	"10.0"
-			
+
 			"CameraFlashSettings"
 			{
 				"visible"		"1"
@@ -118,7 +118,7 @@
 				"zpos"			"9"
 			}
 		}
-	}	
+	}
 
    "BackgroundAtMenu"
 	{
@@ -143,7 +143,7 @@
 			"enabled"		"1"
 			"font"			"incon24"
 			"textAlignment"	"center"
-			
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base3"
          "defaultBgColor_override"     "base3"
@@ -176,7 +176,7 @@
 			"enabled"		"1"
 			"font"			"incon24"
 			"textAlignment"	"center"
-			
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base3trans50"
          "defaultBgColor_override"     "base3trans50"
@@ -186,7 +186,7 @@
 			"depressedBgColor_override"   "base3trans50"
 		}
 	}
-	
+
    //"BackgroundOverride"    //disabled because using a separate background for in game and at menu
 	//{
 	//	"ControlName"	"EditablePanel"
@@ -198,20 +198,20 @@
 	//	"tall"			"480"
 	//	"visible"		"1"
 	//	"enabled"		"1"
-	// "bgcolor_override"      "base3"	
+	// "bgcolor_override"      "base3"
 	//}
-					
+
    "LogoLabel"
    {
       "ControlName"  "EditablePanel"
       "fieldName"    "LogoLabel"
-      "xpos"         "55"  
-      "ypos"         "3"      //away from the very top 
+      "xpos"         "55"
+      "ypos"         "3"      //away from the very top
       "wide"         "256"
       "tall"         "66"
       "visible"      "1"
       "enabled"      "1"
-      
+
       "SLabel"    //handled by GeneralStoreButton (in gamemenu.res)
       {
          "ControlName"     "CExLabel"
@@ -372,10 +372,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"noborder"
 			"border_armed"		"noborder"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "yellow"
          "defaultBgColor_override"     "blank"
@@ -453,10 +453,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -497,10 +497,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -511,14 +511,54 @@
 		}
 	}
 
+
+   "QuickPlayButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"QuickPlayButton"
+      "xpos"			"55"
+		"ypos"			"84"
+		"zpos"			"11"
+		"wide"			"56"
+		"tall"			"26"
+		"visible"		"1"
+
+      "SubButton"
+      {
+         "ControlName"	"CExImageButton"     //needs to be image, even if not using one
+         "fieldName"		"SubButton"
+         "xpos"			"0"
+         "ypos"			"0"
+         "wide"			"56"
+         "tall"			"26"
+         "visible"		"1"
+         "enabled"		"1"
+         "font"			"incon24"
+         "textAlignment"	"center"
+         "sound_depressed"	"UI/buttonclick.wav"
+         "sound_released"	"UI/buttonclickrelease.wav"
+
+         "border_default"	"base00border"
+         "border_armed"		"base01border"
+
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
+      }
+   }
+
 	"ServerBrowserButton"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"ServerBrowserButton"
-		"xpos"			"55"
+		"xpos"			"111"
 		"ypos"			"84"
 		"zpos"			"11"
-		"wide"			"256"
+		"wide"			"200"
 		"tall"			"26"
 		"visible"		"1"
 
@@ -533,7 +573,7 @@
 			"fieldName"		"SubButton"
 			"xpos"			"0"
 			"ypos"			"0"
-			"wide"			"256"
+			"wide"			"200"
 			"tall"			"26"
 			"visible"		"1"
 			"enabled"		"1"
@@ -541,10 +581,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -554,15 +594,54 @@
 			"depressedBgColor_override"   "base2"
 		}
 	}
-	
+
+   "QuickplayChangeButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"QuickplayChangeButton"
+      "xpos"			"55"
+		"ypos"			"84"
+		"zpos"			"11"
+		"wide"			"36"
+		"tall"			"26"
+		"visible"		"1"
+
+      "SubButton"
+      {
+         "ControlName"	"CExImageButton"     //needs to be image, even if not using one
+         "fieldName"		"SubButton"
+         "xpos"			"0"
+         "ypos"			"0"
+         "wide"			"36"
+         "tall"			"26"
+         "visible"		"1"
+         "enabled"		"1"
+         "font"			"incon24"
+         "textAlignment"	"center"
+         "sound_depressed"	"UI/buttonclick.wav"
+         "sound_released"	"UI/buttonclickrelease.wav"
+
+         "border_default"	"base00border"
+         "border_armed"		"base01border"
+
+         "paintbackground"	"1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
+      }
+   }
+
 	"ChangeServerButton"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"ChangeServerButton"
-		"xpos"			"55"
+		"xpos"			"91"
 		"ypos"			"84"
 		"zpos"			"11"
-		"wide"			"256"
+		"wide"			"220"
 		"tall"			"26"
 		"visible"		"1"
 
@@ -577,7 +656,7 @@
 			"fieldName"		"SubButton"
 			"xpos"			"0"
 			"ypos"			"0"
-			"wide"			"256"
+			"wide"			"220"
 			"tall"			"26"
 			"visible"		"1"
 			"enabled"		"1"
@@ -585,10 +664,10 @@
 			"textAlignment"	"west"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -631,7 +710,7 @@
          "textAlignment"	"center"
          "sound_depressed"	"UI/buttonclick.wav"
          "sound_released"	"UI/buttonclickrelease.wav"
-         
+
          "border_default"	"base00border"
          "border_armed"		"base01border"
 
@@ -674,7 +753,7 @@
          "textAlignment"	"center"
          "sound_depressed"	"UI/buttonclick.wav"
          "sound_released"	"UI/buttonclickrelease.wav"
-         
+
          "border_default"	"base00border"
          "border_armed"		"base01border"
 
@@ -761,7 +840,7 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
 
@@ -805,10 +884,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -849,10 +928,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -893,10 +972,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -937,7 +1016,7 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
 
@@ -981,10 +1060,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -1025,10 +1104,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -1069,10 +1148,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -1114,10 +1193,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -1152,7 +1231,7 @@
       "textAlignment"	"center"
       "sound_depressed"	"UI/buttonclick.wav"
       "sound_released"	"UI/buttonclickrelease.wav"
-      
+
       "border_default"	"base00border"
       "border_armed"		"base01border"
 
@@ -1164,7 +1243,7 @@
       "depressedFgColor_override"   "base01"
       "depressedBgColor_override"   "base2"
 	}
-	
+
 	"TF2SettingsButton"     //adv options
 	{
 		"ControlName"	"CExImageButton"
@@ -1189,7 +1268,7 @@
       "textAlignment"	"center"
       "sound_depressed"	"UI/buttonclick.wav"
       "sound_released"	"UI/buttonclickrelease.wav"
-      
+
       "border_default"	"base00border"
       "border_armed"		"base01border"
 
@@ -1232,10 +1311,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -1266,7 +1345,7 @@
 		"navLeft"		"QuickplayButton"
 		"navRight"		"Notifications_Panel"
 		"navToRelay"	"Notifications_ShowButtonPanel_SB"
-		
+
 		"Notifications_CountLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -1285,7 +1364,7 @@
 			"enabled"		"1"
 			"fgcolor_override"	"magenta"
 		}
-	
+
 		"Notifications_ShowButtonPanel_SB"  //this is the actual button
 		{
 			"ControlName"	"CExButton"
@@ -1319,10 +1398,10 @@
          "armedBgColor_override"       "base2"
          "depressedFgColor_override"   "yellow"
          "depressedBgColor_override"   "base2"
-         
+
 		}
 	}
-	
+
 	"Notifications_Panel"
 	{
 		"ControlName"	"EditablePanel"
@@ -1343,7 +1422,7 @@
 		"navLeft"		"Notifications_ShowButtonPanel"
 		"navRight"		"MOTD_ShowButtonPanel"
 		"navToRelay"	"Notifications_CloseButton"
-		
+
 		"Notifications_CloseButton"
 		{
 			"ControlName"	"CExImageButton"
@@ -1373,16 +1452,16 @@
 
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
          "armedFgColor_override"       "red"
          "armedBgColor_override"       "base2"
 			"depressedFgColor_override"   "red"
-			"depressedBgColor_override"   "base2"		
-		}		
-	
+			"depressedBgColor_override"   "base2"
+		}
+
 		"Notifications_TitleLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -1401,7 +1480,7 @@
 			"fgcolor_override"	"base00"
 			"wrap"			"1"
 		}
-		
+
 		"Notifications_Scroller"
 		{
 			"ControlName"	"ScrollableEditablePanel"
@@ -1412,7 +1491,7 @@
 			"tall"			"135"
 			"PaintBackgroundType"	"2"
 			"fgcolor_override"	"cyan"
-			
+
 			"Notifications_Control"
 			{
 				"ControlName"	"CMainMenuNotificationsControl"
@@ -1424,7 +1503,7 @@
 				"visible"		"1"
 			}
 		}
-	}	
+	}
 
 
    "QuestLogButton"
@@ -1441,7 +1520,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		
+
 		//"navUp"			"Notifications_Panel"
 		//"navLeft"		"SettingsButton"
 
@@ -1462,13 +1541,13 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"actionsignallevel" "2"
-				
+
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 
          "border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -1477,7 +1556,7 @@
 			"depressedFgColor_override"   "base01"
 			"depressedBgColor_override"   "base2"
 		}
-		
+
 		"NotificationsContainer"
 		{
 			"ControlName"	"EditablePanel"
@@ -1507,8 +1586,8 @@
 				"scaleImage"	"1"
 				"drawcolor" "210 125 33 255"
 				"proportionaltoparent"	"1"
-			}				
-		
+			}
+
 			"Notifications_CountLabel"
 			{
 				"ControlName"	"CExLabel"
@@ -1562,10 +1641,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -1607,10 +1686,10 @@
 			"textAlignment"	"center"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -1622,15 +1701,8 @@
 	}
 
 
-	
 
    //removed buttons or unused buttons
-	"QuickplayChangeButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"QuickplayChangeButton"
-		"xpos"			"99999"
-   }
 	"RequestCoachButton"
 	{
 		"ControlName"	"EditablePanel"
@@ -1649,7 +1721,7 @@
 		"fieldname"		"CreateServerButton"
 		"xpos"			"99999"
    }
-		
+
 	"TrainingButton"
 	{
 		"ControlName"	"EditablePanel"
@@ -1657,12 +1729,7 @@
 		"xpos"			"99999"
    }
 
-	"QuickPlayButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"QuickPlayButton"
-		"xpos"			"99999"
-   }
+
 
 	"ReplayBrowserButton"
 	{
@@ -1670,7 +1737,7 @@
 		"fieldname"		"ReplayBrowserButton"
 		"xpos"			"99999"
    }
-	
+
    "TFCharacterImage"   //disabled
 	{
 		"ControlName"	"ImagePanel"
@@ -1684,8 +1751,8 @@
 		"enabled"		"0"
 		"scaleImage"	"1"
 	}
-	
-	"TooltipPanel"  
+
+	"TooltipPanel"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"TooltipPanel"
@@ -1698,7 +1765,7 @@
 		"PaintBackgroundType"	"2"
 		"border"		"base00Border"
       "bgcolor_override"      "base2"
-		
+
 		"TipSubLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -1717,7 +1784,7 @@
 			"fgcolor_override"	"base00"
 			"wrap"			"1"
 		}
-		
+
 		"TipLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -1736,8 +1803,8 @@
 			"fgcolor_override"	"yellow"
 			"auto_wide_tocontents" "1"
 		}
-	}	
-	
+	}
+
 	"MOTD_ShowButtonPanel"     //disabled
 	{
 		"ControlName"	"EditablePanel"
@@ -1757,7 +1824,7 @@
 		"navLeft"		"Notifications_Panel"		// when a sub element can't nav left it will pass through this
 		"navRight"		"MOTD_Panel"				// pass through when naving right to this or the fully displayed MOTD
 		"navToRelay"	"MOTD_ShowButtonPanel_SB"	// when naving to this it auto navs to this child instead
-		
+
 		"MOTD_ShowButtonPanel_SB"
 		{
 			"ControlName"	"CExImageButton"
@@ -1804,7 +1871,7 @@
 			}
 		}
 	}
-	
+
 	"MOTD_Panel"               //disabled
 	{
 		"ControlName"	"EditablePanel"
@@ -1823,7 +1890,7 @@
 		"navDown"		"SettingsButton"		// when a sub element can't nav down it will pass through this
 		"navLeft"		"MOTD_ShowButtonPanel"	// when a sub element can't nav left it will pass through this
 		"navToRelay"	"MOTD_URLButton"		// when naving to this it auto navs to this child instead
-		
+
 		"MOTD_HeaderContainer"
 		{
 			"ControlName"	"EditablePanel"
@@ -1833,7 +1900,7 @@
 			"wide"			"300"
 			"tall"			"22"
 			"visible"		"1"
-			
+
 			"MOTD_HeaderLabel"
 			{
 				"ControlName"	"CExLabel"
@@ -1854,7 +1921,7 @@
 				"bgcolor_override"	"141 178 61 255"
 			}
 		}
-		
+
 		"MOTD_CloseButton"
 		{
 			"ControlName"	"CExImageButton"
@@ -1882,15 +1949,15 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"Command"		"motd_hide"
-			
+
 			"paintbackground"	"0"
-			
+
 			//"defaultFgColor_override" "235 226 202 255"
 			//"armedFgColor_override" "46 43 42 255"
 			"defaultFgColor_override" "46 43 42 255"
 			"armedFgColor_override" "235 226 202 255"
 			"depressedFgColor_override" "46 43 42 255"
-			
+
 			"image_drawcolor"	"235 226 202 255"
 			"image_armedcolor"	"200 80 60 255"
 			"SubImage"
@@ -1906,8 +1973,8 @@
 				"enabled"		"1"
 				"image"			"close_button"
 				"scaleImage"	"1"
-			}				
-		}	
+			}
+		}
 
 		"MOTD_HeaderIcon"
 		{
@@ -1923,7 +1990,7 @@
 			"image"			"class_icons/filter_all_motd"
 			"scaleImage"	"1"
 		}
-			
+
 		"MOTD_TitleLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -1942,7 +2009,7 @@
 			"fgcolor_override"	"46 43 42 255"
 			"wrap"			"1"
 		}
-		
+
 		"MOTD_Label"
 		{
 			"ControlName"	"CExLabel"
@@ -1960,7 +2027,7 @@
 			"enabled"		"1"
 			"fgcolor_override"	"46 43 42 255"
 		}
-		
+
 		"MOTD_TitleImageBg"
 		{
 			"ControlName"	"ImagePanel"
@@ -1975,7 +2042,7 @@
 			"image"			"item_bg"
 			"scaleImage"	"1"
 		}
-		
+
 		"MOTD_TitleImageContainer"
 		{
 			"ControlName"	"EditablePanel"
@@ -1986,7 +2053,7 @@
 			"wide"			"280"
 			"tall"			"180"
 			"visible"		"1"
-			
+
 			"MOTD_TitleImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -2002,7 +2069,7 @@
 				"scaleImage"	"0"
 			}
 		}
-			
+
 		"MOTD_TextScroller"
 		{
 			"ControlName"	"ScrollableEditablePanel"
@@ -2013,7 +2080,7 @@
 			"tall"			"95"
 			"PaintBackgroundType"	"2"
 			"fgcolor_override"	"117 107 94 255"
-			
+
 			"MOTD_TextPanel"
 			{
 				"ControlName"	"EditablePanel"
@@ -2024,7 +2091,7 @@
 				"tall"			"300"
 				"visible"		"1"
 				"PaintBackgroundType"	"2"
-			
+
 				"MOTD_TextLabel"
 				{
 					"ControlName"	"CExLabel"
@@ -2045,7 +2112,7 @@
 				}
 			}
 		}
-		
+
 		"MOTD_URLButton"
 		{
 			"ControlName"	"CExButton"
@@ -2075,13 +2142,13 @@
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"defaultFgColor_override" "235 226 202 255"
 			"defaultBgColor_override" "46 43 42 255"
 			"armedFgColor_override" "235 226 202 255"
 			"depressedFgColor_override" "235 226 202 255"
-		}	
-		
+		}
+
 		"MOTD_PrevButton"
 		{
 			"ControlName"	"CExImageButton"
@@ -2110,7 +2177,7 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"paintbackground" "0"
-			
+
 			"image_drawcolor"	"235 226 202 255"
 			"image_armedcolor"	"255 255 255 255"
 			"SubImage"
@@ -2127,8 +2194,8 @@
 				"image"			"blog_back"
 				"scaleImage"	"1"
 			}
-		}		
-		
+		}
+
 		"MOTD_NextButton"
 		{
 			"ControlName"	"CExImageButton"
@@ -2157,7 +2224,7 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"paintbackground" "0"
-			
+
 			"image_drawcolor"	"235 226 202 255"
 			"image_armedcolor"	"255 255 255 255"
 			"SubImage"
@@ -2175,8 +2242,8 @@
 				"scaleImage"	"1"
 			}
 		}
-	}	
-	
+	}
+
 	"HTMLContainer"      //not sure what this is for
 	{
 		"ControlName"	"EditablePanel"
@@ -2193,7 +2260,7 @@
 		"tabPosition"	"0"
 		"border"		"MainMenuBGBorder"
 		"PaintBackgroundType"	"2"
-		
+
 		"HTMLLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -2227,7 +2294,7 @@
 			"tabPosition"	"0"
 		}
 	}
-	
+
 	"ResumeGameButton"      //disabled, just press esc
 	{
 		"ControlName"	"EditablePanel"
@@ -2258,10 +2325,10 @@
 			"textAlignment"	"west"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			
+
 			"border_default"	"base00border"
 			"border_armed"		"base01border"
-   
+
 			"paintbackground"	"1"      //let's you change button bg
 			"defaultFgColor_override"     "base00"
          "defaultBgColor_override"     "base3"
@@ -2271,7 +2338,7 @@
 			"depressedBgColor_override"   "base2"
 		}
 	}
-	
+
 	"TFLogoImage"     //disabled, try removing to see if it is removed
 	{
 		"ControlName"	"ImagePanel"
@@ -2302,13 +2369,13 @@
 		"PaintBackgroundType"	"2"
 		"paintborder"	"1"
 		"border"		"MainMenuBGBorder"
-		
+
 		"text_ypos"			"20"
 		"text_center"		"1"
 		"model_hide"		"1"
 		"resize_to_text"	"1"
 		"padding_height"	"15"
-		
+
 		"attriblabel"
 		{
 			"font"			"ItemFontAttribLarge"
@@ -2340,7 +2407,7 @@
 		"visible"		"0"
 		"PaintBackgroundType"	"0"
 
-			
+
 		"EventImage"
 		{
 			"ControlName"			"ImagePanel"
@@ -2355,7 +2422,7 @@
 			"image"					"menu_background_eotl_duck"
 			"scaleImage"			"1"
 			"proportionaltoparent"	"1"
-		}	
+		}
 
 
 		"Background"
@@ -2431,20 +2498,20 @@
 					"proportionaltoparent"	"1"
 					"command"		"view_update_page"
 					"actionsignallevel"	"4"
-			
+
 					"border_default"	"MainMenuButtonDefault"
 					"border_armed"		"MainMenuButtonArmed"
 					"paintbackground"	"0"
-			
+
 					"defaultFgColor_override" "46 43 42 255"
 					"armedFgColor_override" "235 226 202 255"
 					"depressedFgColor_override" "46 43 42 255"
-			
+
 					"image_drawcolor"	"117 107 94 255"
 					"image_armedcolor"	"235 226 202 255"
 				}
 			}
-			
+
 			"ViewComicButton"
 			{
 				"ControlName"	"EditablePanel"
@@ -2483,15 +2550,15 @@
 					"proportionaltoparent"	"1"
 					"command"		"view_update_comic"
 					"actionsignallevel"	"4"
-			
+
 					"border_default"	"MainMenuButtonDefault"
 					"border_armed"		"MainMenuButtonArmed"
 					"paintbackground"	"0"
-			
+
 					"defaultFgColor_override" "46 43 42 255"
 					"armedFgColor_override" "235 226 202 255"
 					"depressedFgColor_override" "46 43 42 255"
-			
+
 					"image_drawcolor"	"117 107 94 255"
 					"image_armedcolor"	"235 226 202 255"
 				}
@@ -2518,7 +2585,7 @@
 					"0"
 					{
 						"item"		"Unused Summer 2015 Operation Pass"
-						
+
 						"wide"		"f0"
 						"tall"		"f0"
 						"proportionaltoparent"	"1"
@@ -2527,7 +2594,7 @@
 					"1"
 					{
 						"item"		"Operation Summer 2015 Concealed Killer Case"
-						
+
 						"wide"		"f0"
 						"tall"		"f0"
 						"proportionaltoparent"	"1"
@@ -2543,7 +2610,7 @@
 					"3"
 					{
 						"item"		"Summer 2015 Operation Key"
-						
+
 						"wide"		"f0"
 						"tall"		"f0"
 						"proportionaltoparent"	"1"
@@ -2552,7 +2619,7 @@
 					"4"
 					{
 						"item"		"Taunt: The Boxtrot"
-						
+
 						"wide"		"f0"
 						"tall"		"f0"
 						"proportionaltoparent"	"1"
@@ -2561,7 +2628,7 @@
 					"5"
 					{
 						"item"		"Taunt: The Proletariat Showoff"
-						
+
 						"wide"		"f0"
 						"tall"		"f0"
 						"proportionaltoparent"	"1"
@@ -2570,7 +2637,7 @@
 					"6"
 					{
 						"item"		"Taunt: Kazotsky Kick"
-						
+
 						"wide"		"f0"
 						"tall"		"f0"
 						"proportionaltoparent"	"1"
@@ -2578,9 +2645,9 @@
 					}
 				}
 			}
-		} 
+		}
    }
-	
+
   	"icon_generator"
 	{
 		"ControlName"		"CEmbeddedItemModelPanel"
@@ -2588,7 +2655,7 @@
 
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"1"		
+		"zpos"			"1"
 		"wide"			"300"
 		"tall"			"300"
 		"autoResize"		"0"
@@ -2596,7 +2663,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"useparentbg"		"1"
-	
+
 		"inset_eq_x"	"2"
 		"inset_eq_y"	"2"
 

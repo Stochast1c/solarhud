@@ -22,39 +22,37 @@
 	}
 	"QuickplayButton"
 	{
-		"label" "#MMenu_PlayMultiplayer" 
+		"label" "QP"
 		"command" "quickplay"
-		"subimage" "glyph_multiplayer"
 		"OnlyAtMenu" "1"
 	}
 	"QuickplayChangeButton"
 	{
-		"label" "#MMenu_NewGame" 
+		"label" "QP" 
 		"command" "quickplay"
-		"subimage" "glyph_server"
 		"OnlyInGame" "1"
 	}
 	"PlayCompButton"
 	{
-		"label" "MatchMaking" 
+		"label" "MatchMaking"
 		"command" "ladder_ui_show"
 		"OnlyAtMenu" "1"
 	}
 	"PlayPVEButton"
 	{
-		"label" "MvM" 
+		"label" "MvM"
 		"command" "playpve"
 		"OnlyAtMenu" "1"
 	}
 	"ServerBrowserButton"
 	{
-		"label" "#MMenu_Servers" 
+		"label" "#MMenu_Servers"
 		"command" "OpenServerBrowser"
 		"OnlyAtMenu" "1"
-	} 
+	}
 	"ChangeServerButton"
 	{
-		"label" "#MMenu_ChangeServer" 
+		"label" "#MMenu_ChangeServer"
 		"command" "OpenServerBrowser"
 		"OnlyInGame" "1"
 	}
@@ -84,8 +82,8 @@
 		"subimage" "glyph_practice"
 		"OnlyAtMenu" "1"
 	}
-	
-	// These buttons get positioned by the MainMenuOverride.res	
+
+	// These buttons get positioned by the MainMenuOverride.res
 	"CreateServerButton"
 	{
 		"label" "#GameUI_GameMenu_CreateServer"
@@ -98,7 +96,7 @@
 		"label" "S"
 		"command" "engine open_store"
       "tooltip"   "#MMenu_Shop"
-	}	
+	}
 	"CharacterSetupButton"
 	{
 		"label" "#MMenu_CharacterSetup"
@@ -146,7 +144,7 @@
    "MinmodeButton"
    {
       "label"     "Toggle Minmode"
-      "command"      "engine toggle cl_hud_minmode" 
+      "command"      "engine toggle cl_hud_minmode"
    }
    "customserver1"
    {
