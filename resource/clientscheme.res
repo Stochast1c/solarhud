@@ -28,14 +28,14 @@ Scheme
       "base01"        "147 161 161 255"
       "base02"        "238 232 213 255"
       "base03"        "253 246 227 255"
-      "yellow"       "181 137   0 255" 
-      "orange"       "203  75  22 255" 
-      "red"          "220  50  47 255"   
+      "yellow"       "181 137   0 255"
+      "orange"       "203  75  22 255"
+      "red"          "220  50  47 255"
       "magenta"      "211  54 130 255"
-      "violet"       "108 113 196 255" 
-      "blue"         "38  139 210 255" 
-      "cyan"         "42  161 152 255" 
-      "green"        "133 153   0 255"  
+      "violet"       "108 113 196 255"
+      "blue"         "38  139 210 255"
+      "cyan"         "42  161 152 255"
+      "green"        "133 153   0 255"
 
       "base3trans"       "0    43  54 150"
       "base2trans"       "7    54  66 150"
@@ -45,7 +45,7 @@ Scheme
       "base01trans"        "147 161 161 150"
       "base02trans"        "238 232 213 150"
       "base03trans"        "253 246 227 150"
-		
+
       "base03trans50"        "253 246 227  50"
       "base3trans50"       "  0  43  54 150"   //150 looks far better than 50
 
@@ -63,11 +63,11 @@ Scheme
 		"OrangeDim"			"203 75 22 120"   //orange, trans
 		"LightOrange"		"188 112 0 128"
 		"GoalOrange"		"255 133 0"
-      
+
       //this value appears to be hardcoded to various items
       //selected page color on backpack
-		"TFOrange"			"0    43  54 255"  //base03   
-		
+		"TFOrange"			"0    43  54 255"  //base03
+
 		"White"				"235 235 235 255"
 		//"Red"				"192 28 0 140"
 		"RedSolid"			"220 50 47 255"  //red
@@ -77,27 +77,27 @@ Scheme
 		//"Black"				"0 0 0 255"    //commented out by valve
 		//Changed black to a NTSC safe color
 		"GreenSolid"		 "133 153 0 255"  //green
-		
+
 		"Black"				"46 43 42 255"
 		"TransparentBlack"	"0 0 0 196"  //controls a bunch of stuff, biggest mystery is background on team select menu
 		"TransparentLightBlack"	"0 0 0 90"
 		"FooterBGBlack"		"52 48 55 255"
-	
-      //modified: blue,red,base1	
+
+      //modified: blue,red,base1
 		"HUDBlueTeam"		"38 139 210 255"
 		"HUDRedTeam"		"220 50 47 255"
 		"HUDSpectator"		"147 161 161 255"
 		"HUDBlueTeamSolid"	"38 139 210 255"
 		"HUDRedTeamSolid"	"220 50 47 255"
-		
+
       "HUDDeathWarning"	"220 50 47 255"  //red
 		"HudWhite"			"255 255 255 255"
 		"HudOffWhite"		"200 187 161 255"
 		"HudBlack"			"65 65 65 255"
 		"ProgressBarBlue"	"38 138 210 255"  //blue
-		
+
 		"CreditsGreen"		"133 153 0 255"   //green
-		
+
 		"Gray"				" 0 0 255 255"    //testing
 
 		"Blank"				"0 0 0 0"
@@ -113,7 +113,7 @@ Scheme
 		"HudProgressBarActive"		"240 207 78 255"
 		"HudProgressBarInActive"	"140 120 73 255"
 		"HudProgressBarActiveLow"	"240 30 30 255"
-		"HudProgressBarInActiveLow"	"240 30 30 99"	
+		"HudProgressBarInActiveLow"	"240 30 30 99"
 
 		"HudTimerProgressActive"	"251 235 202 255"
 		"HudTimerProgressInActive"	"52 48 45 255"
@@ -121,38 +121,38 @@ Scheme
 
 		// training
 		"HudTrainingHint"			"212 160 23 255"
-		
+
       "TanDark"				"101 123 131 255"     //base00 - advanced options text color (and checkbox outline and check)
 		"TanLight"				"101 123 131 255"     //this is THE default color in the game - base00
 		"TanDarker"				"255 0 255 255"       //purple for debugging, not sure what this color controls
-		
+
 		"StoreDarkTan"			"131 121 104 255"
 		"StoreGreen"			"76 107 34 255"
-		
+
 		// Building HUD Specific
 		"LowHealthRed"		"220 50 47 255"   //red
 		"ProgressOffWhite"	"251 235 202 255"
 		"ProgressBackground"	"250 234 201 51"
 		"HealthBgGrey"		"72 71 69 255"
-		
+
 		"ProgressOffWhiteTransparent"	"251 235 202 128"
-		
+
 		"LabelDark"			"48 43 42 255"
 		"LabelTransparent"	"109 96 80 180"
-		
+
 		"BuildMenuActive"	"248 231 198 255"
-		
+
 		"DisguiseMenuIconRed"	"220 50 47 255"   //red
 		"DisguiseMenuIconBlue"	"38 138 210 255"  //blue
 
  		"MatchmakingDialogTitleColor"			"200 184 151 255"
  		"MatchmakingMenuItemBackground"			"46 43 42 255"
- 		"MatchmakingMenuItemBackgroundActive"	"150 71 0 255"	
+ 		"MatchmakingMenuItemBackgroundActive"	"150 71 0 255"
 		"MatchmakingMenuItemTitleColor"			"200 184 151 255"
 		"MatchmakingMenuItemDescriptionColor"	"200 184 151 255"
-		
+
 		"HTMLBackground"						"95 92 101 255"
-	
+
       // ************ item attribute colors	********
 		"ItemAttribLevel"						   "101 123 131 255"       //base00 - level color and strange counters
 		"ItemAttribNeutral"						"101 123 131 255"       //magenta - extra description / lore text
@@ -160,16 +160,16 @@ Scheme
 		"ItemAttribNegative"					   "220  50  47 255"       //red - negative attributes
 
 		"ItemSetName"							   "181 137   0 255"       //yellow - item set name
-		"ItemSetItemEquipped"					" 88 110 117 255"       //base01 
+		"ItemSetItemEquipped"					" 88 110 117 255"       //base01
 		"ItemSetItemMissing"					   "147 161 161 255"       //base1
 		"ItemIsotope"							   "211  54 130 255"       //magenta - ???
 		"ItemBundleItem"						   "211  54 130 255"       //magenta - ???
-		"ItemLimitedUse"						   "133 153   0 255"       //green 
+		"ItemLimitedUse"						   "133 153   0 255"       //green
 		"ItemFlags"								   "211  54 130 255"       //magenta - ???
 		"ItemLimitedQuantity"					"181 137   0 255"       //yellow - limited level
-      // *********************************************	
+      // *********************************************
 
-	
+
 		"QualityColorNormal"					   "101 123 131 255"    //base00
 		"QualityColorUnique"					   "181 137   0 255"    //yellow
 		"QualityColorVintage"					"38  139 210 255"    //blue
@@ -182,11 +182,11 @@ Scheme
 		"QualityColorCommunity"					"112 176 74 255"
 		"QualityColorSelfMade"					"112 176 74 255"
 		"QualityColorDeveloper"					"165 15 121 255"
-		"QualityColorCustomized"				"71 98 145 255"      //custom game mode modified stat weapons   
+		"QualityColorCustomized"				"71 98 145 255"      //custom game mode modified stat weapons
 		"QualityColorrarity2"					"141 131 75 255"     //not associated with anything
 		"QualityColorrarity3"					"204 204 250 255"    //not associated with anything
 		"QualityColorCompleted"					"134 80 172 255"     //not associated with anything
-      
+
 		"ItemRarityDefault"						"211  54 130 255"    //for items without qualities - magenta
 		"ItemRarityCommon"						"108 113 196 255"    //civilian - violet
 		"ItemRarityUncommon"					   " 38 139 210 255"        //freelance - blue
@@ -194,7 +194,7 @@ Scheme
 		"ItemRarityMythical"					   "181 137   0 255"        //commando - yellow
 		"ItemRarityLegendary"					"203  75  22 255"     //assassin - orange
 		"ItemRarityAncient"						"220  50  47 255"      //elite - red
-		
+
       //Have no idea what these greyed out colors are for---
       "ItemRarityDefault_GreyedOut"			"44 42 40 255"
 		"ItemRarityCommon_GreyedOut"			"59 65 72 255"
@@ -220,14 +220,14 @@ Scheme
 		"QualityColorHaunted_GreyedOut"			"14 61 43 255"
 		"QualityColorCollectors_GreyedOut"		"60 0 0 255"
       //-----------------------------------------------------
-		
+
 		"SaleGreen"								"133 153 0 255"   //green
-		
+
 		"LightRed"								"220 50 47 255"   //red
 		"LighterRed"							"220 50 47 255"   //red
 		"LighterDarkBrown"						"59 54 48 255"
 		"DarkBrown"								"41 37 38 255"
-		
+
 		"UpgradeDefaultFg"		"87 82 74 255"
 		"UpgradeDefaultBg"		"111 104 94 255"
 		"UpgradeArmedFg"		"194 96 47 255"
@@ -256,9 +256,9 @@ Scheme
 		ReplayBrowser.ScrollBar.SliderButton.FgColor		"TransparentYellow"
 		ReplayBrowser.Search.BgColor						"TanDark"
 		ReplayBrowser.Search.FgColor						"White"
-		
+
 		Replay.RenderDialog.BgColor							"LighterDarkBrown"
-		
+
       //popup panels, border definitions in Borders section
 		Econ.Dialog.BgColor									"base3"
 		Econ.Button.BgColor									"base3"
@@ -267,15 +267,15 @@ Scheme
 		Econ.Button.ArmedFgColor							"base01"
 		Econ.Button.DepressedBgColor						"base2"
 		Econ.Button.DepressedFgColor						"base03"
-	
-      //loadout preset buttons, the one that is selected	
+
+      //loadout preset buttons, the one that is selected
 		Econ.Button.PresetDefaultColorFg					"base01"
 		Econ.Button.PresetArmedColorFg						"base01"
 		Econ.Button.PresetDepressedColorFg					"base01"
 		Econ.Button.PresetDefaultColorBg					"base2"
 		Econ.Button.PresetArmedColorBg						"base2"
 		Econ.Button.PresetDepressedColorBg					"base2"
-		
+
 		Border.Bright					"Blank"		// the lit side of a control
 		Border.Dark						"Black"		// the dark/unlit side of a control
 		Border.Selection				"Gray"			// the additional border color for displaying the default/selected button
@@ -288,7 +288,7 @@ Scheme
 		Button.SelectedTextColor		"base01"
 		Button.SelectedBgColor			"yellow"    //nothing?
 		Button.DepressedTextColor		"base03"
-		Button.DepressedBgColor			"magenta"   //nothing   
+		Button.DepressedBgColor			"magenta"   //nothing
 
 
       //unsure what checkbuttons this controls, does not control adv options (actually...)
@@ -296,13 +296,13 @@ Scheme
 		CheckButton.TextColor			"base00"
 		CheckButton.SelectedTextColor	"base00"
 		CheckButton.BgColor				"base3"  //does affect adv options check boxes
-                                              //adv options check and text color are hardcoded to tandark 
+                                              //adv options check and text color are hardcoded to tandark
 		CheckButton.Border1  			"base00" 		// the left checkbutton border
 		CheckButton.Border2  			"base00"		// the right checkbutton border
 		CheckButton.Check				   "base00"		// color of the check itself
 		CheckButton.HighlightFgColor	"base00"
-	
-      //controls only the arrow square	
+
+      //controls only the arrow square
 		ComboBoxButton.ArrowColor		"base00"
 		ComboBoxButton.ArmedArrowColor	"base01"
 		ComboBoxButton.BgColor			"base3"
@@ -339,7 +339,7 @@ Scheme
 		Label.SelectedTextColor			"White"
 		Label.BgColor					"Blank"
 		Label.DisabledFgColor1			"Blank"
-		Label.DisabledFgColor2			"base1"   //craft button 
+		Label.DisabledFgColor2			"base1"   //craft button
 
       //unsure what this controls
 		ListPanel.TextColor					"base00"
@@ -369,17 +369,20 @@ Scheme
 
 		CircularProgressBar.FgColor		"White"
 		CircularProgressBar.BgColor		"White"
-		
+
 		"BuildingHealthBar.BgColor"		"cyan"   //overridden in panel file
-		"BuildingHealthBar.Health"		"base3"     //using a base03 background, with a base3 outline for the health bar, looks weird with base0   
+		"BuildingHealthBar.Health"		"base3"     //using a base03 background, with a base3 outline for the health bar, looks weird with base0
 		"BuildingHealthBar.LowHealth"	"red"
 
 		PropertySheet.TextColor			"cyan"
 		PropertySheet.SelectedTextColor	"cyan"
 		PropertySheet.TransitionEffectTime	"0.25"	// time to change from one tab to another
 
-		RadioButton.TextColor			"green"
-		RadioButton.SelectedTextColor	"green"
+      //adv options in quickplay
+      RadioButton.TextColor            "base00"       //unselected qp adv opt
+      RadioButton.SelectedTextColor	   "base00"       //unselected qp adv opt
+      RadioButton.ArmedTextColor	      "yellow"          //mouse-over qp adv opt
+      ToggleButton.SelectedTextColor	"green"        //currently selected quickplay adv opt
 
       //unsure
 		RichText.TextColor				"base00"
@@ -426,7 +429,7 @@ Scheme
 		TextEntry.OutOfFocusSelectedBgColor	"base1"
 		TextEntry.FocusEdgeColor	"base00"
 
-		ToggleButton.SelectedTextColor	"red"
+
 
 		Tooltip.TextColor			"TransparentBlack"
 		Tooltip.BgColor				"Red"
@@ -434,7 +437,7 @@ Scheme
 		TreeView.BgColor			"TransparentBlack"
 
 		WizardSubPanel.BgColor		"Blank"
-		
+
 		TimerProgress.Active		"HudTimerProgressActive"
 		TimerProgress.InActive		"HudTimerProgressInActive"
 		TimerProgress.Warning		"HudTimerProgressWarning"
@@ -442,17 +445,17 @@ Scheme
 		HudObjectives.FgColor		"HudPanelForeground"
 		HudObjectives.BgColor		"HudPanelBackground"
 		HudObjectives.BorderColor	"HudPanelBorder"
-				
+
 		HudProgressBar.Active		"HudProgressBarActive"
 		HudProgressBar.InActive		"HudProgressBarInActive"
-		
+
 		HudCaptureIcon.Active		"HudProgressBarActive"
 		HudCaptureIcon.InActive		"HudProgressBarInActive"
 		HudCaptureProgressBar.Active	"HudProgressBarActive"
 		HudCaptureProgressBar.InActive	"HudProgressBarInActive"
 
 		// scheme-specific colors
-      "FgColor"		"base00"    //sm on screen text color	
+      "FgColor"		"base00"    //sm on screen text color
 		"BgColor"		"magenta"
 
       //unsure what these colors control
@@ -465,7 +468,7 @@ Scheme
 		"HudIcon_Green"		"0 160 0 255"
 		"HudIcon_Red"		"160 0 0 255"
 
-		// CHudMenu  
+		// CHudMenu
       //sourcemod menu panels: e.g. sm_admin, sm_pr, sm_add
 		"ItemColor"		"yellow"	// options you can select
 		"MenuColor"		"base00"  // text
@@ -490,7 +493,7 @@ Scheme
 
 		// Blank space to leave beneath the menu on the main screen
 		"Main.BottomBorder"	"32"
-		
+
 		"VguiScreenCursor"			"255 208 64 255"
 	}
 
@@ -867,7 +870,7 @@ Scheme
 				"additive"	"0"
 				"antialias" "1"
 			}
-		}	
+		}
 		"HudFontMediumBigBold"
 		{
 			"1"
@@ -878,7 +881,7 @@ Scheme
 				"additive"	"0"
 				"antialias" "1"
 			}
-		}		
+		}
 		"HudFontMedium"
 		{
 			"1"
@@ -961,7 +964,7 @@ Scheme
 				"additive"	"0"
 				"antialias" 	"1"
 			}
-		}	
+		}
 		"HudFontSmallishBold"
 		{
 			"1"
@@ -1291,7 +1294,7 @@ Scheme
 				"weight"	"200"
 				"outline"	"1"
 			}
-		}		
+		}
 		TFTypeDeath
 		{
 			"1"
@@ -1303,7 +1306,7 @@ Scheme
 				"antialias" 	"1"
 			}
 		}
-		
+
 		Icons
 		{
 			"1"
@@ -1458,7 +1461,7 @@ Scheme
 				"weight"	"500"
 			}
 		}
-		
+
 		"GoalText"
 		{
 			"1"
@@ -1471,8 +1474,8 @@ Scheme
 				"additive"	"0"
 				"antialias" 	"1"
 			}
-		}		
-		
+		}
+
 		"ChalkboardTitle"
 		{
 			"1"
@@ -1481,7 +1484,7 @@ Scheme
 				"tall"			"28"
 				"tall_lodef"	"48"
 				"tall_hidef"	"48"
-				"antialias"		"1" 
+				"antialias"		"1"
 				"custom"		"1" [$OSX]
 				"weight"		"500"
 				"weight_lodef"	"800"
@@ -1659,7 +1662,7 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		
+
 		"ControlPointTimer"
 		{
 			"1"
@@ -1696,7 +1699,7 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		
+
 		"TargetID"
 		{
 			"1"
@@ -1838,8 +1841,8 @@ Scheme
 				"weight"		"300"
 				"antialias"		"1"
 			}
-		}	
-		
+		}
+
 		MenuSmallFont
 		{
 			"1"
@@ -1852,7 +1855,7 @@ Scheme
 				"weight_lodef"	"600"
 				"antialias"		"1"
 			}
-		}			
+		}
 		CapPlayerFont
 		{
 			"1"
@@ -1890,7 +1893,7 @@ Scheme
 				"additive"	"1"
 				"antialias" 	"1"
 			}
-		}		
+		}
 		TFFontMedium
 		{
 			"1"
@@ -1903,8 +1906,8 @@ Scheme
 				"additive"	"0"
 				"antialias" 	"1"
 			}
-		}		
-		
+		}
+
 		InstructionalText
 		{
 			"1"
@@ -1916,8 +1919,8 @@ Scheme
 				"additive"	"0"
 				"antialias" 	"1"
 			}
-		}		
-		
+		}
+
 		MatchmakingDialogTitle
 		{
 			"1"
@@ -1965,7 +1968,7 @@ Scheme
 				"tall"		"18"
 				"weight"	"900"
 			}
-		}		
+		}
 		MatchmakingDialogMenuMedium
 		{
 			"1"
@@ -2013,7 +2016,7 @@ Scheme
 				"weight"	"900"
 			}
 		}
-		
+
 		"TeamMenuBold"
 		{
 			"1"
@@ -2035,7 +2038,7 @@ Scheme
 				"additive"	"0"
 				"antialias" 	"1"
 			}
-		}		
+		}
 		"IntroMenuCaption"
 		{
 			"1"
@@ -2046,7 +2049,7 @@ Scheme
 				"additive"	"0"
 				"antialias" 	"1"
 			}
-		}			
+		}
 		"AchievementNotification"
 		{
 			"1"
@@ -2121,7 +2124,7 @@ Scheme
 				"antialias"	"1"
 			}
 		}
-		
+
 		"ItemFontNameSmallest"     //really long names
 		{
 			"1"
@@ -2198,7 +2201,7 @@ Scheme
 				"tall"		"12"
 				"antialias" "1"
 			}
-		}	
+		}
 		"ItemFontAttribLarger"     //item inspection panel
 		{
 			"1"
@@ -2207,8 +2210,8 @@ Scheme
 				"tall"		"14"
 				"antialias" 	"1"
 			}
-		}	
-	
+		}
+
 		"AchievementTracker_Name"
 		{
 			"1"
@@ -2349,7 +2352,7 @@ Scheme
 				"antialias"	"1"
 			}
 		}
-		
+
 		"QuestLargeText"
 		{
 			"1"
@@ -2385,7 +2388,7 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		
+
 		"AdFont_AdText"
 		{
 			"1"
@@ -2430,7 +2433,7 @@ Scheme
 				"italic"	"1"
 			}
 		}
-		
+
 		//
 		//////////////////// REPLAY FONTS //////////////////////////////
 		//
@@ -2603,7 +2606,7 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		
+
 		//
 		//////////////////// ECON FONTS //////////////////////////////
 		//
@@ -2642,7 +2645,7 @@ Scheme
 				"additive"	"0"
 			}
 		}
-      
+
       //
       //////////////// CUSTOM FONTS ////////////////////////////////
       //
@@ -2674,7 +2677,7 @@ Scheme
             "tall"      "10"
             "antialias" "1"
          }
-      }      
+      }
       "incon12"
       {
          "1"
@@ -2836,7 +2839,7 @@ Scheme
             "tall"      "10"
             "antialias" "1"
          }
-      }      
+      }
       "inconb12"
       {
          "1"
@@ -2963,8 +2966,8 @@ Scheme
             "antialias" "1"
          }
       }
-   
-   
+
+
       "incon10num"
       {
          "1"
@@ -3066,7 +3069,7 @@ Scheme
             "tall"      "10"
             "antialias" "1"
          }
-      }      
+      }
       "kcross11"
       {
          "1"
@@ -3170,7 +3173,7 @@ Scheme
             "antialias" "1"
             "outline"   "1"
          }
-      }      
+      }
       "kcross20"
       {
          "1"
@@ -3281,8 +3284,8 @@ Scheme
       }
       // // // // // // // // // // // // // // // // // // // // // //
    }
-   
-   
+
+
 
 	//
 	//////////////////// BORDERS //////////////////////////////
@@ -3691,7 +3694,7 @@ Scheme
 				}
 			}
 		}
-		
+
 		TeamMenuBorder
 		{
 			"inset" "0 0 0 0"
@@ -3751,7 +3754,7 @@ Scheme
 				}
 			}
 		}
-		
+
 		ScrollBarButtonBorder
 		{
 			"inset" "0 0 0 0"
@@ -3873,7 +3876,7 @@ Scheme
 		}
 
       //this might actually control all buttons, but what I know it doesn't control are as follows
-      // ok button in adv options, steam profile and cancel in trading 
+      // ok button in adv options, steam profile and cancel in trading
       //the border for mouseover and clicked aren't here, might never exist
 
       // valve comment v
@@ -4069,7 +4072,7 @@ Scheme
 				}
 			}
 		}
-				
+
 		MainMenuSubButtonBorder
 		{
 			"inset" "0 0 1 1"
@@ -4091,7 +4094,7 @@ Scheme
 				}
 			}
 		}
-		
+
 		CrosshatchedBackground
 		{
 			"bordertype"			"image"
@@ -4099,52 +4102,52 @@ Scheme
 			"image"					"loadout_header"
 			"tiled"					"1"
 		}
-		
+
 		OutlinedGreyBox
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"loadout_round_rect_selected"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
 		OutlinedDullGreyBox
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"loadout_round_rect"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
-		
+
 		TFThinLineBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"../hud/tournament_panel_brown"
 			//"image"					"../hud/color_panel_browner"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
 		TFFatLineBorderOpaque
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"../hud/color_panel_brown_opaque"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_height" 	"5"
 		}
 		TFFatLineBorder      //dead spectator hud outline
 		{
@@ -4210,23 +4213,23 @@ Scheme
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"../hud/color_panel_red_opaque"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_height" 	"5"
 		}
 		TFFatLineBorderRedBGOpaque_Store
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"../hud/color_panel_red_opaque"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
 		TFFatLineBorderRedBG    //red spectator hud outline
 		{
@@ -4391,9 +4394,9 @@ Scheme
 		OptionsCategoryBorder
 		{
 			"inset" "0 0 1 1"
-			
+
 			// This border is used just to create a horizontal line, so it only has a bottom border
-			
+
 			Bottom
 			{
 				"1"
@@ -4403,32 +4406,32 @@ Scheme
 				}
 			}
 		}
-		
+
 		GrayDialogBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"loadout_rect"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
-		
+
 		StoreFreeTrialBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"loadout_rect_red"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
-		
-		EconItemBorder    //class loadout slot - why is this not using quality color normal like the others 
+
+		EconItemBorder    //class loadout slot - why is this not using quality color normal like the others
       {
 			"inset" "0 0 1 1"
          "backgroundtype"  "2"
@@ -4732,7 +4735,7 @@ Scheme
 			}
 		}
 
-		
+
 		BackpackItemGrayedOut      //items that can't be clicked on (crafting, equip, etc.)
 		{
 			"inset" "0 0 1 1"
@@ -4794,20 +4797,20 @@ Scheme
 			}
 		}
 
-		
+
 		BackpackItemGrayedOut_Selected      //not sure if this is even possible
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			"color"					"Black"
-			
+
 			"image"					"backpack_rect_selected"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
-		
+
 		// Standard ------------------------------------------------------------------------------------------------
 		BackpackItemBorder      //default selectable item
       {
@@ -4870,7 +4873,7 @@ Scheme
 			}
 		}
 
-		BackpackItemMouseOverBorder   //moused over 
+		BackpackItemMouseOverBorder   //moused over
       {
 			"inset" "0 0 1 1"
          "backgroundtype"  "2"
@@ -4995,26 +4998,26 @@ Scheme
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			"color"					"Black"
-			
+
 			"image"					"backpack_rect_color"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
 		BackpackItemGreyedOutSelectedBorder    //this goes with above
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			"color"					"Black"
-			
+
 			"image"					"backpack_rect_selected"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
-		
+
 		// Unique ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_Unique
 	   {
@@ -5195,7 +5198,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Unique
 		{
 			"inset" "0 0 1 1"
@@ -5255,7 +5258,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Rarity1 ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_1
@@ -5437,7 +5440,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_1
 		{
 			"inset" "0 0 1 1"
@@ -5497,7 +5500,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Rarity2 ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_2
@@ -5679,7 +5682,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_2
 		{
 			"inset" "0 0 1 1"
@@ -5739,7 +5742,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Rarity3 ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_3
@@ -5921,7 +5924,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_3
 		{
 			"inset" "0 0 1 1"
@@ -5981,7 +5984,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Rarity4 ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_4
@@ -6163,7 +6166,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_4
 		{
 			"inset" "0 0 1 1"
@@ -6223,7 +6226,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 
 		// Haunted ------------------------------------------------------------------------------------------------
@@ -6406,7 +6409,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Haunted
 		{
 			"inset" "0 0 1 1"
@@ -6466,7 +6469,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Collector's ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_Collectors
@@ -6648,7 +6651,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Collectors
 		{
 			"inset" "0 0 1 1"
@@ -6708,7 +6711,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 
 		// Vintage ------------------------------------------------------------------------------------------------
@@ -6891,7 +6894,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Vintage
 		{
 			"inset" "0 0 1 1"
@@ -6951,7 +6954,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Community ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_Community
@@ -7133,7 +7136,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Community
 		{
 			"inset" "0 0 1 1"
@@ -7193,7 +7196,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Developer ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_Developer
@@ -7375,7 +7378,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Developer
 		{
 			"inset" "0 0 1 1"
@@ -7435,7 +7438,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// SelfMade ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_SelfMade
@@ -7617,7 +7620,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_SelfMade
 		{
 			"inset" "0 0 1 1"
@@ -7677,7 +7680,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Customized ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_Customized
@@ -7859,7 +7862,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Customized
 		{
 			"inset" "0 0 1 1"
@@ -7919,7 +7922,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Strange ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_Strange
@@ -8101,7 +8104,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Strange
 		{
 			"inset" "0 0 1 1"
@@ -8161,7 +8164,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
 
 		// Completed ------------------------------------------------------------------------------------------------
 		BackpackItemBorder_Completed
@@ -8343,7 +8346,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_Completed
 		{
 			"inset" "0 0 1 1"
@@ -8403,7 +8406,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}	
+		}
 
       //*****************Gun Mettle Update Colors ***********************
 		BackpackItemBorder_RarityCommon
@@ -8585,7 +8588,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_RarityCommon
 		{
 			"inset" "0 0 1 1"
@@ -8645,7 +8648,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}	
+		}
 		BackpackItemBorder_RarityUncommon
 	   {
 			"inset" "0 0 1 1"
@@ -8825,7 +8828,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_RarityUncommon
 		{
 			"inset" "0 0 1 1"
@@ -8885,7 +8888,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}	
+		}
 		//**************
 		BackpackItemBorder_RarityRare
 	   {
@@ -9066,7 +9069,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_RarityRare
 		{
 			"inset" "0 0 1 1"
@@ -9126,7 +9129,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}	
+		}
 		//******************
 		BackpackItemBorder_RarityMythical
 	   {
@@ -9307,7 +9310,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_RarityMythical
 		{
 			"inset" "0 0 1 1"
@@ -9367,7 +9370,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}	
+		}
 		// ***************************************************
 		BackpackItemBorder_RarityLegendary
 	   {
@@ -9548,7 +9551,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_RarityLegendary
 		{
 			"inset" "0 0 1 1"
@@ -9608,7 +9611,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}	
+		}
 		//*********************************************
 		BackpackItemBorder_RarityAncient
 	   {
@@ -9789,7 +9792,7 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}		
+		}
       BackpackItemGreyedOutSelectedBorder_RarityAncient
 		{
 			"inset" "0 0 1 1"
@@ -9849,8 +9852,8 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}	
- 
+		}
+
 
 
 		StoreItemBorder
@@ -9973,7 +9976,7 @@ Scheme
 				}
 			}
 		}
-		
+
 		NotificationDefault
 		{
 			"inset" "0 0 1 1"
@@ -10033,232 +10036,232 @@ Scheme
 					"offset" "1 1"
 				}
 			}
-		}	
+		}
 		MainMenuButtonDefault
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"button_central"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"draw_corner_height" 	"4"
 		}
 		MainMenuButtonArmed
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"button_central_hover"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"draw_corner_height" 	"4"
 		}
 		MainMenuButtonDisabled
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"button_central_disabled"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"draw_corner_height" 	"4"
 		}
 		MainMenuMiniButtonDefault
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"button_central_adv"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"1"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"1"	
+			"draw_corner_height" 	"1"
 		}
 		MainMenuMiniButtonArmed
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"button_central_adv_hover"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"1"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"1"	
+			"draw_corner_height" 	"1"
 		}
 		MainMenuBGBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"button_holder_central"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"draw_corner_height" 	"4"
 		}
 		MainMenuBGBorderAlpha
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"button_holder_central_alpha"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"draw_corner_height" 	"4"
 		}
 		MainMenuBlogTabBG
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"blog_tabby"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
 		MainMenuHighlightBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"callout_bubble"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
 
 		TrainingResultsBG
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"button_holder_central"
 			"src_corner_height"		"32"			// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"draw_corner_height" 	"4"
 		}
-		
+
 		StoreInnerShadowBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"store/innershadow_border"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
-		
+
 		StoreNewBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"new_corner"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"draw_corner_height" 	"4"
 		}
-		
+
 		StoreDiscountBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"sale_corner"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"draw_corner_height" 	"4"
 		}
 
 		StorePreviewBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"store/store_inspector_bg_small"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
 		StoreAddToCart
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"store/store_add_to_cart"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
 		StorePreviewTabSelected
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"store/store_tab_selected"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"12"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"12"	
+			"draw_corner_height" 	"12"
 		}
 		StorePreviewTabUnselected
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"store/store_tab_unselected"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"16"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"12"	
+			"draw_corner_height" 	"12"
 		}
 		StorePromotion
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"store/store_coupon_border"
 			"src_corner_height"		"16"				// pixels inside the image
 			"src_corner_width"		"16"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
-		
+
 		ArmoryScrollbarBox
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"scroll_button_off"
 			"src_corner_height"		"16"				// pixels inside the image
 			"src_corner_width"		"16"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
 		ArmoryScrollbarWell
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"scroll_well"
 			"src_corner_height"		"16"				// pixels inside the image
 			"src_corner_width"		"16"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
 		QuickplayBorder
 		{
@@ -10344,101 +10347,101 @@ Scheme
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"replay/fatlineborder_red"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_height" 	"5"
 		}
 		ReplayFatLineBorderOpaque
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"replay/fatlineborder"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_height" 	"5"
 		}
 		ReplayGrayDialogBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"replay/graydialogborder"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
 		ReplayOutlinedGreyBox
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"replay/outlinedgreybox"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
 		ReplayOutlinedDullGreyBox
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"replay/dullgreybox"
 			"src_corner_height"		"24"				// pixels inside the image
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"11"	
+			"draw_corner_height" 	"11"
 		}
 		ReplayThinLineBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"../hud/tournament_panel_brown"
 			//"image"					"../hud/color_panel_browner"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"8"	
+			"draw_corner_height" 	"8"
 		}
 		ReplayDefaultBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"replay/panel_scalable_default"
 			"src_corner_height"		"23"			// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"7"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"7"	
+			"draw_corner_height" 	"7"
 		}
 		ReplayHighlightBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"replay/panel_scalable_highlight"
 			"src_corner_height"		"23"			// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"7"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"7"	
+			"draw_corner_height" 	"7"
 		}
 		ReplayBalloonBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			
+
 			"image"					"replay/panel_scalable_balloon"
 			"src_corner_height"		"23"			// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"7"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"7"	
+			"draw_corner_height" 	"7"
 		}
 		ReplayBrowser.ScrollBar.SliderButton.Border
 		{
@@ -10465,7 +10468,7 @@ Scheme
 				"range" "0x0000 0xFFFF"
 			}
 		}
-		"4" 
+		"4"
 		{
 			"font" "resource/TF2Secondary.ttf"
 			"name" "TF2 Secondary"
@@ -10478,7 +10481,7 @@ Scheme
 				"range" "0x0000 0xFFFF"
 			}
 		}
-		"5" 
+		"5"
 		{
 			"font" "resource/TF2Professor.ttf"
 			"name" "TF2 Professor"
@@ -10490,8 +10493,8 @@ Scheme
 			{
 				"range" "0x0000 0x00FF"
 			}
-		}	
-		"6" 
+		}
+		"6"
 		{
 			"font" "resource/TF2Build.ttf"
 			"name" "TF2 Build"
@@ -10516,22 +10519,22 @@ Scheme
       "8"
       {
          "font" "resource/fonts/Inconsolata-Bold.ttf"
-         "name" "Inconsolata Bold"      
+         "name" "Inconsolata Bold"
       }
       "9"
       {
          "font" "resource/fonts/Numbers.ttf"
-         "name" "Numbers"      
+         "name" "Numbers"
       }
       "10"
       {
          "font" "resource/fonts/ClassLimits.ttf"
-         "name" "Class Limits"      
+         "name" "Class Limits"
       }
       "11"
       {
          "font" "resource/fonts/KnucklesCrosses.ttf"
-         "name" "KnucklesCrosses"     
+         "name" "KnucklesCrosses"
       }
 		"12" "resource/ocra.ttf"
 	}
