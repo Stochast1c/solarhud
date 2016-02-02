@@ -20,14 +20,14 @@ Scheme
 	{
       //custom colors
       //solarized
-      "base03"       "0    43  54 255"
-      "base02"       "7    54  66 255"
-      "base01"       "88  110 117 255"
-      "base00"       "101 123 131 255"
-      "base0"        "131 148 150 255"
-      "base1"        "147 161 161 255"
-      "base2"        "238 232 213 255"
-      "base3"        "253 246 227 255"
+      "base3"       "0    43  54 255"
+      "base2"       "7    54  66 255"
+      "base1"       "88  110 117 255"
+      "base0"       "101 123 131 255"
+      "base00"        "131 148 150 255"
+      "base01"        "147 161 161 255"
+      "base02"        "238 232 213 255"
+      "base03"        "253 246 227 255"
       "yellow"       "181 137   0 255"
       "orange"       "203  75  22 255"
       "red"          "220  50  47 255"
@@ -37,17 +37,17 @@ Scheme
       "cyan"         "42  161 152 255"
       "green"        "133 153   0 255"
 
-      "base03trans"       "0    43  54 150"
-      "base02trans"       "7    54  66 150"
-      "base01trans"       "88  110 117 150"
-      "base00trans"       "101 123 131 150"
-      "base0trans"        "131 148 150 150"
-      "base1trans"        "147 161 161 150"
-      "base2trans"        "238 232 213 150"
-      "base3trans"        "253 246 227 150"
+      "base3trans"       "0    43  54 150"
+      "base2trans"       "7    54  66 150"
+      "base1trans"       "88  110 117 150"
+      "base0trans"       "101 123 131 150"
+      "base00trans"        "131 148 150 150"
+      "base01trans"        "147 161 161 150"
+      "base02trans"        "238 232 213 150"
+      "base03trans"        "253 246 227 150"
 
-      "base3trans50"        "253 246 227  50"
-      "base03trans50"       "  0  43  54 150"   //150 looks far better than 50
+      "base03trans50"        "253 246 227  50"
+      "base3trans50"       "  0  43  54 150"   //150 looks far better than 50
 
       "base03forced"       "0    43  54 255"
       "base02forced"       "7    54  66 255"
@@ -122,8 +122,9 @@ Scheme
 		// training
 		"HudTrainingHint"			"212 160 23 255"
 
-      "TanDark"				"101 123 131 255"     //base00 - advanced options text color (and checkbox outline and check)
-		"TanLight"				"101 123 131 255"     //this is THE default color in the game - base00
+      "TanDark"				"131 148 150 255"     //base00 - advanced options text color (and checkbox outline and check)
+		"TanLight"				"131 148 150 255"     //this is THE default color in the game - base00
+
 		"TanDarker"				"255 0 255 255"       //purple for debugging, not sure what this color controls
 
 		"StoreDarkTan"			"131 121 104 255"
@@ -154,8 +155,8 @@ Scheme
 		"HTMLBackground"						"95 92 101 255"
 
       // ************ item attribute colors	********
-		"ItemAttribLevel"						   "101 123 131 255"       //base00 - level color and strange counters
-		"ItemAttribNeutral"						"101 123 131 255"       //magenta - extra description / lore text
+		"ItemAttribLevel"						   "131 148 150 255"       //base00 - level color and strange counters
+		"ItemAttribNeutral"						"131 148 150 255"       //base00 - extra description / lore text
 		"ItemAttribPositive"					   "38  139 210 255"       //blue - plus attributes
 		"ItemAttribNegative"					   "220  50  47 255"       //red - negative attributes
 
@@ -169,8 +170,7 @@ Scheme
 		"ItemLimitedQuantity"					"181 137   0 255"       //yellow - limited level
       // *********************************************
 
-
-		"QualityColorNormal"					   "101 123 131 255"    //base00
+		"QualityColorNormal"					   "131 148 150 255"    //base00
 		"QualityColorUnique"					   "181 137   0 255"    //yellow
 		"QualityColorVintage"					"38  139 210 255"    //blue
       "QualityColorrarity1"					"133 153   0 255"    //genuine - green
@@ -483,7 +483,7 @@ Scheme
 
 		// Hint message colors
 		"HintMessageFg"			"blue"
-		"HintMessageBg" 		"253 246 227 100"  //base3 transparent, background box of surf timer timepanel
+		"HintMessageBg" 		"base3trans50"  //base3 transparent, background box of surf timer timepanel
 
 		"ProgressBarFg"			"magenta"      //no idea what for
 
