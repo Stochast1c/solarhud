@@ -1,26 +1,21 @@
-solarhud
+solarhud - Pub Branch
 ==========
 
 A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
+This branch removes the surf-mode of the other branches and instead uses minmode as a scoreboard switcher between 12v12 and 16v16.  In addition, player stats are now shown on the scoreboard.
 
-## This is the master branch, if you wish to use this hud, please navigate to your preferred colorscheme branch using the upper left dropdown box.
+This ships as a dark theme hud since most prefer the dark theme.  If you wish to change the theme to light, then see How to Switch Themes below
 
 [Teamfortress.tv Thread](http://www.teamfortress.tv/30843/solarhud)
 
-[Light Theme Screenshots](http://imgur.com/a/DlrJb)
-
-[Dark Theme Screenshots](http://imgur.com/a/iSr9u)
-
 The main goal of this mod is to completely overwrite all colors and fonts while keeping the minimal but very legible style of ell's hud.
 
-This HUD is tailored for 6s players and surfers, though a few easy tweaks will make it work for pub and HL players.  Minmode 0 is for the 6s hud and Minmode 1 is for the surfing HUD.  
-
-It is highly recommended that you clone the hud rather than download and extract the zip.  This hud recieves many small updates, often times in short bursts, that major update notifications generally won't happen unless a core element is changed. 
+It is highly recommended that you clone the hud rather than download and extract the zip.  This hud recieves many small updates, often times in short bursts, that major update notifications generally won't happen unless a core element is changed.
 
 ##HUD Crosshairs
 
-This hud supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-knucklescrosses-release) which can be set in scripts/hudlayout.res.  Two crosshair controls are added for your convenience and can be found as the very first entries in scripts/hudlayout.res to be enabled/modified. As far as I know, subpixel alignment is not required on a 1920x1080 display, although your mileage may vary.  If you have no experience with hud crosshairs, see the above link and reference Step 3 in post #2.     
+This hud supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-knucklescrosses-release) which can be set in scripts/hudlayout.res.  Two crosshair controls are added for your convenience and can be found as the very first entries in scripts/hudlayout.res to be enabled/modified. As far as I know, pixel alignment is not required on a 1920x1080 display, although your mileage may vary.  If you have no experience with hud crosshairs, see the above link and reference Step 3 in post #2.     
 
 ##How to Change Main Menu Server Buttons
 
@@ -28,11 +23,7 @@ The server buttons use a custom alias to store the server ip's that you want the
 
 ##How to Switch Themes
 
-You can easily switch your theme by changing the branch that you are using.  
-
-If you have made changes to the hud that aren't simply replicated then you can just grab the dark theme's \*scheme.res files from resource/ and change the map in scripts/chapterbackgrounds.txt: upward↔2fort and that **should** convert everything to your perferred scheme.
-
-
+Grab the theme's \*scheme.res files from resource/ (from your preferred theme branch) and change the map in scripts/chapterbackgrounds.txt: 2fort↔upward and that **should** convert everything to your perferred scheme.
 
 ##Requests, Bugs, Errors, etc.
 
