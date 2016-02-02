@@ -8,16 +8,13 @@
 		"enabled"		"1"
 		"xpos"			"c-60"
 		"ypos"			"358"
-      "zpos"         "2"	
+      "zpos"         "2"
 		"wide"			"120"
 		"tall"			"50"
 		"MeterFG"		"base00"
 		"MeterBG"		"base3"
-      "xpos_minmode" "99999"
-      "visible_minmode"    "0"
-      "enabled_minmode"    "0"
 	}
-	
+
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
@@ -36,7 +33,7 @@
 	}
 
 	"ItemEffectMeter"
-	{	
+	{
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ItemEffectMeter"
 		"font"					"Default"
@@ -44,7 +41,7 @@
 		"ypos"					"0"
 		"zpos"					"2"
 		"wide"					"120"
-		"tall"					"6"			
+		"tall"					"6"
 		"visible"				"1"
 		"enabled"				"1"
 		"MeterFG"		"base00"
@@ -52,8 +49,8 @@
       "fgcolor_override"    "base00"
       "bgcolor_override"     "base03forced"
 		"textAlignment"			"Left"
-	}					
-	
+	}
+
    //disabled
    "ItemEffectMeterBG"
 	{
@@ -62,5 +59,5 @@
 		"xpos"			"99999"
 		"visible"		"0"
 		"enabled"		"0"
-	}	
+	}
 }

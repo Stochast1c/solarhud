@@ -5,18 +5,15 @@
 	{
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
-      "visible_minmode" "0"
 		"enabled"		"1"
-      "enabled_minmode" "0"
 		"xpos"			"c-132"
-      "xpos_minmode"    "99999"	
-		"ypos"			"377"	
+		"ypos"			"377"
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
-	
+
 	"ItemEffectMeterBG"  //disabled
 	{
 		"ControlName"	"CTFImagePanel"
@@ -29,13 +26,13 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/misc_ammo_area_blue"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"teambg_2"		"../hud/misc_ammo_area_red"
 		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
 		"teambg_3"		"../hud/misc_ammo_area_blue"
-		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
+		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"
 	}
-	
+
 	"ItemEffectMeterLabel"  //The word Streak, currently disabled, but positioned if you want it on
 	{
 		"ControlName"			"CExLabel"
@@ -55,25 +52,22 @@
 	}
 
 	"ItemEffectMeter"    //Nothing???
-	{	
+	{
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ItemEffectMeter"
 		"font"					"Default"
 		"xpos"					"25"
 		"ypos"					"23"
-		"ypos_minmode"			"0"
-		"xpos_minmode"			"0"
 		"zpos"					"2"
 		"wide"					"40"
-		"wide_minmode"			"50"
 		"tall"					"6"				
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"0"
 		"enabled"				"0"
 		"textAlignment"			"Left"
-	}					
-	
+	}
+
 	"ItemEffectMeterCount"     //number of kills
 	{
 		"ControlName"			"CExLabel"
@@ -82,7 +76,7 @@
 		"ypos"					"0"
 		"zpos"					"2"
 		"wide"					"24"
-		"tall"					"16"	
+		"tall"					"16"
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"

@@ -20,12 +20,12 @@
 		"teambg_2_lodef"	"../hud/color_panel_red"
 		"teambg_3"		"../hud/color_panel_blu"
 		"teambg_3_lodef"	"../hud/color_panel_blu"
-		
+
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
-			
+
 		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"	
+		"draw_corner_height" 	"5"
 	}
 	"TargetIDBG_Spec_Blue"
 	{
@@ -42,10 +42,10 @@
 		"enabled"		"0"
 		"image"			"../hud/color_panel_blu"
 		"image_lodef"	"../hud/color_panel_blu"
-		
+
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
-			
+
 		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"5"
 	}
@@ -64,16 +64,16 @@
 		"enabled"		"0"
 		"image"			"../hud/color_panel_red"
 		"image_lodef"	"../hud/color_panel_red"
-		
+
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
-			
+
 		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"5"
 	}
-	
+
 	"TargetNameLabel"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"TargetNameLabel"
 		"font"			"incon12"
@@ -90,13 +90,12 @@
       "fgcolor"      "yellow"
    }
 	"TargetDataLabel"    //ubercharge%
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"TargetDataLabel"
 		"font"			"incon8"
 		"xpos"	"0"   //doesn't change anything
 		"ypos"	"24"
-      "ypos_minmode"    "99999"
 		"zpos"			"1"
 		"wide"			"280"
 		"tall"			"8"
@@ -113,24 +112,22 @@
 		"xpos"      	"0"
 		"ypos"			"5"
 		"wide"			"48"
-      "wide_minmode"    "0"
 		"tall"			"24"
 		"visible"		"0"
-		"enabled"		"0"	
+		"enabled"		"0"
 		"HealthBonusPosAdj"	"10"
 		"HealthDeathWarning"	"0.49"
 		//"TFFont"		"incon20"      //not sure if this is needed
 		"HealthDeathWarningColor"	"red"
 		//"TextColor"		"base0"     //same
-	}	
-	
+	}
+
 	"AmmoIcon"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"AmmoIcon"
 		"xpos"			"64"
 		"ypos"			"25"
-      "ypos_minmode"    "99999"
 		"zpos"			"12"
 		"wide"			"8"
 		"tall"			"8"
@@ -139,15 +136,13 @@
 		"image"			"../hud/leaderboard_class_heavy"
 		"scaleImage"	"1"
 	}
-	
+
 	"KillStreakIcon"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"KillStreakIcon"
 		"xpos"			"10"
-		"xpos_minmode"	"30"
 		"ypos"			"20"
-		"ypos_minmode"	"19"
 		"zpos"			"12"
 		"wide"			"8"
 		"tall"			"8"
@@ -156,7 +151,7 @@
 		"image"			"../hud/leaderboard_streak"
 		"scaleImage"	"1"
 	}
-	
+
 	"MoveableSubPanel"
 	{
 		"ControlName"		"EditablePanel"
@@ -167,8 +162,8 @@
 		"wide"			"32"
 		"tall"			"36"
 		"visible"		"1"
-		"enabled"		"1"	
-		
+		"enabled"		"1"
+
 		"MoveableIconBG"
 		{
 			"ControlName"	"CIconPanel"
@@ -184,7 +179,7 @@
 			"iconColor"		"HudBlack"
 			"scaleImage"	"1"
 		}
-		
+
 		"MoveableIcon"
 		{
 			"ControlName"	"CIconPanel"
@@ -217,11 +212,10 @@
 		}
 
 		"MoveableKeyLabel"
-		{	
+		{
 			"ControlName"		"Label"
 			"fieldName"		"MoveableKeyLabel"
 			"font"			"TFFontMedium"
-			"font_minmode"	"DefaultVerySmall"
 			"xpos"			"0"
 			"ypos"			"22"
 			"zpos"			"1"
@@ -235,6 +229,6 @@
 			"textAlignment"		"North"
 			"dulltext"		"0"
 			"brighttext"		"0"
-		}	
+		}
 	}
 }

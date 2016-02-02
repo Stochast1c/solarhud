@@ -11,8 +11,8 @@
 		"tall"			"18"
 		"visible"		"0"
 		"enabled"		"0"
-		"scaleImage"	"1"	
-	}		
+		"scaleImage"	"1"
+	}
 	"PlayerStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -25,8 +25,8 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/health_bg"
-		"scaleImage"	"1"	
-	}	
+		"scaleImage"	"1"
+	}
 	"BuildingStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -39,8 +39,8 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/health_equip_bg"
-		"scaleImage"	"1"	
-	}	
+		"scaleImage"	"1"
+	}
 	"PlayerStatusHealthBonusImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -53,7 +53,7 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/health_over_bg"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 	}
 	"PlayerStatusHealthValue"
 	{
@@ -65,7 +65,6 @@
 		"wide"			"48"
 		"tall"			"24"
 		"visible"		"1"
-      "visible_minmode" "0"
 		"enabled"		"1"
       "labelText"    "%Health%"
       "font"         "incon20"
@@ -77,7 +76,6 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusPlayerLevel"
 		"xpos"			"8"
-		"xpos_minmode"	"0"
 		"ypos"			"9"	[$WIN32]
 		"ypos"			"0"	[$X360]
 		"zpos"			"5"
@@ -85,8 +83,8 @@
 		"tall"			"12"
 		"visible"		"0"
 		"enabled"		"1"
-		"textAlignment"	"center"	
+		"textAlignment"	"center"
 		"font"			"ScoreboardVerySmall"
 		"fgcolor"		"TFOrange"
-	}							
+	}
 }

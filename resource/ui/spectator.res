@@ -34,7 +34,7 @@
 		"fieldName"		"BottomBar"
 		"xpos"			"99999"
 		"ypos"			"99999"
-		"tall"	      "0"		
+		"tall"	      "0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -47,7 +47,7 @@
 		"fieldName"		"bottombarblank"
 		"xpos"			"99999"
 		"ypos"			"99999"
-		"tall"	      "0"		
+		"tall"	      "0"
 		"wide"			"0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -97,12 +97,11 @@
 		"font"			"incon16"
 		"xpos"			"r260"
 		"ypos"			"16"
-		"wide"			"240"	
+		"wide"			"240"
 		"tall"			"16"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"visible_minmode"		"0"
 		"enabled"		"0"
 		"labelText"		"cp_bridge"
 		"textAlignment"		"east"
@@ -119,9 +118,8 @@
 		"zpos"			"2"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	
-		"visible_minmode"		"0"
-		"visible"		"0"	
+		"visible"		"0"
+		"visible"		"0"
 		"enabled"		"0"
 		"labelText"		"#TF_Spectator_ChangeTeam"
 		"textAlignment"		"center"
@@ -131,39 +129,37 @@
 	}
 
    //camera controls
-   //apparently these have a shadow 
+   //apparently these have a shadow
 	"SwitchCamModeKeyLabel"
  	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeKeyLabel"
-		"xpos"			"999995"		
-		"ypos"			"10"	
+		"xpos"			"999995"
+		"ypos"			"10"
 		"wide"			"60"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	
-		"visible_minmode"		"0"
+		"visible"		"0"
 		"enabled"		"0"
 		"labelText"		"#TF_Spectator_ChangeTeam"
 		"textAlignment"		"east"
 		"font"			"incon12"
       "fgcolor_override"      "base00"
-		
+
 	}
 	"SwitchCamModeLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeLabel"
-		"xpos"			"9999980"	
+		"xpos"			"9999980"
 		"ypos"			"10"
-		"wide"			"125"	
+		"wide"			"125"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"visible_minmode"		"0"
-		"visible"		"0"	
+		"visible"		"0"
 		"enabled"		"0"
 		"labelText"		"#TF_Spectator_SwitchCamMode"
 		"textAlignment"		"west"
@@ -176,12 +172,11 @@
 		"fieldName"		"CycleTargetFwdKeyLabel"
 		"xpos"			"999995"
 		"ypos"			"20"
-		"wide"			"60"	
+		"wide"			"60"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	
-		"visible_minmode"		"0"
+		"visible"		"0"
 		"enabled"		"0"
 		"labelText"		"#TF_Spectator_ClassOrTeamKey"
 		"textAlignment"		"east"
@@ -192,14 +187,13 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdLabel"
-		"xpos"			"9999980"	
+		"xpos"			"9999980"
 		"ypos"			"20"
 		"wide"			"125"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"visible_minmode"		"0"
 		"enabled"		"0"
 		"labelText"		"#TF_Spectator_CycleTargetFwd"
 		"textAlignment"		"west"
@@ -217,7 +211,6 @@
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"visible_minmode"		"0"
 		"enabled"		"0"
 		"labelText"		"#TF_Spectator_ClassOrTeamKey"
 		"textAlignment"		"east"
@@ -235,7 +228,6 @@
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"visible_minmode"		"0"
 		"enabled"		"0"
 		"labelText"		"#TF_Spectator_CycleTargetRev"
 		"textAlignment"		"west"
@@ -253,10 +245,9 @@
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"visible_minmode"		"0"
 		"enabled"		"0"
 		"labelText"		"%tip%"
-		"textAlignment"		"center"	
+		"textAlignment"		"center"
 		"font"			"incon12"
       "fgcolor_override"      "base00"
 		"wrap"			"1"
@@ -273,22 +264,22 @@
 		"visible"		"0"
 		"bgcolor_override"		"255 255 255 0"
 		"PaintBackgroundType"	"0"
-		
+
 		"model_ypos"		"10"
 		"model_center_x"	"1"
 		"model_wide"		"90"
 		"model_tall"		"60"
-		
+
 		"text_xpos"		"10"
 		"text_ypos"		"10"
 		"text_wide"		"170"
 		"text_center"	"1"
-		
+
 		"max_text_height"	"100"
 		"padding_height"	"10"
 		"resize_to_text"	"1"
 		"text_forcesize"	"2"
-		
+
 		"itemmodelpanel"
 		{
 			"fieldName"		"itemmodelpanel"
@@ -296,9 +287,9 @@
 			"useparentbg"		"1"
          "inventory_image_type"  "1"   //high-quality
 		}
-		
+
 		"ItemLabel"
-		{	
+		{
 			"ControlName"	"Label"
 			"fieldName"		"ItemLabel"
 			"font"			"DefaultSmall"
@@ -316,7 +307,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 		}
-	}	
+	}
 	"spectator_extras"
 	{
 		"ControlName"	"EditablePanel"
@@ -329,5 +320,5 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-	}		
+	}
 }
