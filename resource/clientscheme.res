@@ -68,6 +68,14 @@ Scheme
       //selected page color on backpack
 		"TFOrange"			"0    43  54 255"  //base03
 
+      //Contract Colors - hardcoded, not in hudfiles, added during halloween 2015 contracts
+      "QuestGold"			"208 147 75 255"
+      "HalloweenThemeColor2015_Light"	"238 126 17 255"
+      "HalloweenThemeColor2015"		"135 54 16 255"
+      "HalloweenThemeColor2015_Dark"	"108 49 21 255"
+      "QuestStandardHighlight"	"181 137   0 255"    //yellow - score a point for contract
+      "QuestBonusHighlight"		"108 113 196 255"     //violet - score a bonus point for contract after reaching 100pts
+
 		"White"				"235 235 235 255"
 		//"Red"				"192 28 0 140"
 		"RedSolid"			"220 50 47 255"  //red
@@ -124,7 +132,6 @@ Scheme
 
       "TanDark"				"131 148 150 255"     //base00 - advanced options text color (and checkbox outline and check)
 		"TanLight"				"131 148 150 255"     //this is THE default color in the game - base00
-
 		"TanDarker"				"255 0 255 255"       //purple for debugging, not sure what this color controls
 
 		"StoreDarkTan"			"131 121 104 255"
