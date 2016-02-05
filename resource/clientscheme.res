@@ -63,10 +63,7 @@ Scheme
 		"OrangeDim"			"203 75 22 120"   //orange, trans
 		"LightOrange"		"188 112 0 128"
 		"GoalOrange"		"255 133 0"
-
-      //this value appears to be hardcoded to various items
-      //selected page color on backpack
-		"TFOrange"			"0    43  54 255"  //base03
+		"TFOrange"			"  7  54  66 255"  //base02 - at least: selected page bg color on backpack
 
       //Contract Colors - hardcoded, not in hudfiles, added during halloween 2015 contracts
       "QuestGold"			"208 147 75 255"
@@ -130,9 +127,10 @@ Scheme
 		// training
 		"HudTrainingHint"			"212 160 23 255"
 
-      "TanDark"				"131 148 150 255"     //base00 - advanced options text color (and checkbox outline and check)
-		"TanLight"				"131 148 150 255"     //this is THE default color in the game - base00
-		"TanDarker"				"255 0 255 255"       //purple for debugging, not sure what this color controls
+
+      "TanDark"				"131 148 150 255"     //base0 - advanced options text color (and checkbox outline and check)
+		"TanLight"				"131 148 150 255"     //base0 - this is THE default color in the game
+		"TanDarker"				"88  110 117 255"     //base1  - at the very least this controls: backpack page with no items font
 
 		"StoreDarkTan"			"131 121 104 255"
 		"StoreGreen"			"76 107 34 255"
