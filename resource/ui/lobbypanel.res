@@ -90,7 +90,7 @@
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
 			}
-	
+
 			"ModeInfoContainer"
 			{
 				"ControlName"	"EditablePanel"
@@ -118,7 +118,7 @@
 					"image"			"maps/menu_screen_ctf_2fort"
 					"scaleImage"	"1"
 				}
-	
+
 				"Label_GameType"
 				{
 					"ControlName"	"CExLabel"
@@ -200,7 +200,7 @@
 					"PaintBackgroundType"	"0"
 					"paintbackground"		"1"
 					"border"				"BackpackItemBorder"
-		
+
 					"Background"
 					{
 						"ControlName"	"EditablePanel"
@@ -216,7 +216,7 @@
 						"tabPosition"		"0"
 						"bgcolor_override"	"40 37 37 255"
 					}
-		
+
 					"MoreInfoLabel"
 					{
 						"ControlName"		"CExLabel"
@@ -236,8 +236,8 @@
 						"wrap"			"1"
 						"centerwrap"	"1"
 					}
-				}	
-			}	
+				}
+			}
 
 			"PrevPageButton"
 			{
@@ -266,8 +266,8 @@
 
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
-			}		
-				
+			}
+
 			"NextPageButton"
 			{
 				"ControlName"	"CExButton"
@@ -295,7 +295,7 @@
 
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
-			}	
+			}
 		}
 	}
 
@@ -311,7 +311,7 @@
 		"visible"	"1"
 		"enabled"	"1"
 		"border"	"base00border"
-		
+
 		"MannVsMachineLabel"
 		{
 			"ControlName"	"Label"
@@ -328,7 +328,7 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 		}
-		
+
 		"MannVsMachineExplanation"
 		{
 			"ControlName"	"CExLabel"
@@ -470,7 +470,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CompleteLabel"
-			"font"		   "incon16"	
+			"font"		   "incon16"
 			"labelText"		"#TF_MvM_TourOfDutyProgress"
 			"textAlignment"	"center"
 			"xpos"			"260"
@@ -536,7 +536,7 @@
 				"wide"			"400"
 				"tall"			"197"
 				"linespacing"	"12"
-            "bgcolor_override"   "base03forced"    //can't change font color      
+            "bgcolor_override"   "base03forced"    //can't change font color
 			}
 		}
 
@@ -1178,7 +1178,7 @@
 			"enabled"	"1"
 		}
 
-		"NearbyColumnHead"   
+		"NearbyColumnHead"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"NearbyColumnHead"
@@ -1787,7 +1787,7 @@
 			"NumericInputOnly"	"0"
 			"unicode"			"0"
 			"default"			"0"
-		
+
 			"fgcolor_override"	"base00"
 			"bgcolor_override"	"base3"
 			"disabledFgColor_override" "base1"
@@ -1818,8 +1818,8 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"RankIcon"
-			"xpos"			"130"
-			"ypos"			"73"
+			"xpos"			"106"
+			"ypos"			"80"
 			"zpos"			"0"
 			"wide"			"100"
 			"tall"			"100"
@@ -1845,6 +1845,61 @@
 			"fgcolor_override"	"yellow"
 			"textAlignment"	"west"
 			"labelText"		"%ranktitle%"
+		}
+
+      "LevelLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"RankLabel"
+			"xpos"			"60"
+			"ypos"			"68"
+			"zpos"			"0"
+			"wide"			"100"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"fgcolor_override"	"base00"
+			"textAlignment"	"west"
+			"labelText"		"LEVEL:"
+		}
+
+		"LevelProgress"    //text of what level you are
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"LevelLabel"
+			"xpos"			"130"
+			"ypos"			"68"
+			"zpos"			"0"
+			"wide"			"20"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"incon16"
+			"fgcolor_override"	"yellow"
+			"textAlignment"	"west"
+			"labelText"		"%level%"
+		}
+
+		"LevelProgressMeter"
+		{
+			"ControlName"	"ContinuousProgressBar"
+			"fieldName"		"LevelProgressMeter"
+			"font"			"HudFontSmallestBold"
+			"xpos"			"152"
+			"ypos"			"74"
+			"zpos"			"2"
+			"wide"			"100"
+			"tall"			"9"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+         "fgcolor_override"   "base01"
+         "bgcolor_override"   "base2"
 		}
 
 		// Default image
@@ -1878,6 +1933,7 @@
 			"mouseinputenabled" "0"
 			"scaleImage"	"1"
 			"entry_step"	"25"
+         "bgcolor_override"   "base03forced"    //since playernames are hardcoded white
 		}
 
 		"Leaderboard9v9"
@@ -1927,7 +1983,7 @@
 			"bgcolor_override"	"base00"
 		}
 
-		"StatList"
+		"StatList"      //can't change font color
 		{
 			"ControlName"	"SectionedListPanel"
 			"fieldName"		"StatList"
@@ -1940,5 +1996,19 @@
 			"linespacing"	"16"
 			"bgcolor_override"	"blank"
 		}
+
+      "LightThemeTempStatBG"     //creating a bg for the statlist since can't change font color
+      {
+         "ControlName"  "EditablePanel"
+         "fieldName"    "LightThemeTempStatBG"
+         "xpos"         "55"
+         "ypos"         "230"
+         "zpos"         "-1"
+         "wide"         "215"
+         "tall"         "107"
+         "bgcolor_override"   "base03forced"
+         "visible"      "1"
+         "enabled"      "1"
+      }
 	}
 }
