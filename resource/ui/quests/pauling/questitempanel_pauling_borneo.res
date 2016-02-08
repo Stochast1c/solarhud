@@ -2,17 +2,17 @@
 
 "Resource/UI/econ/QuestItemPanel_Pauling_Borneo.res"
 {
-	"QuestItemPanel"
-	{
-		"MainContainer"
-		{
-			"QuestPaperContainer"
-			{
-				"CharacterBackdropImage"
-				{
-					"image"			"contracts/photo_pl_borneo"
-				}
-			}
-		}
-	}	
+   "QuestItemPanel"
+   {
+      "MainContainer"
+      {
+         "QuestPaperContainer"
+         {
+            "CharacterBackdropImage"
+            {
+               "image"        "contracts/photo_pl_borneo"
+            }
+         }
+      }
+   }  
 }
