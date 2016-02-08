@@ -5,64 +5,64 @@
 
 "Resource/UI/HudItemEffectMeter.res"
 {
-	HudItemEffectMeter
-	{
-		"fieldName"		"HudItemEffectMeter"
-		"visible"		"1"
-		"enabled"		"1"
-		"xpos"			"c-60"
-		"ypos"			"346"
-		"wide"			"120"
-		"tall"			"50"
-		"MeterFG"		"base00"
-		"MeterBG"		"base3"
+   HudItemEffectMeter
+   {
+      "fieldName"    "HudItemEffectMeter"
+      "visible"      "1"
+      "enabled"      "1"
+      "xpos"         "c-60"
+      "ypos"         "346"
+      "wide"         "120"
+      "tall"         "50"
+      "MeterFG"      "base00"
+      "MeterBG"      "base3"
 
-	}
+   }
 
-	"ItemEffectMeterLabel"
-	{
-		"ControlName"			"CExLabel"
-		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"0"
-		"ypos"					"0"
-		"zpos"					"2"
-		"wide"					"120"
-		"tall"					"6"
-		"visible"				"1"
-		"enabled"				"1"
-		"labelText"				"#TF_Ball"
-		"textAlignment"			"center"
-		"font"					"incon8"
+   "ItemEffectMeterLabel"
+   {
+      "ControlName"        "CExLabel"
+      "fieldName"          "ItemEffectMeterLabel"
+      "xpos"               "0"
+      "ypos"               "0"
+      "zpos"               "2"
+      "wide"               "120"
+      "tall"               "6"
+      "visible"            "1"
+      "enabled"            "1"
+      "labelText"          "#TF_Ball"
+      "textAlignment"         "center"
+      "font"               "incon8"
       "fgcolor_override"            "yellow"
-	}
+   }
 
-	"ItemEffectMeter"
-	{
-		"ControlName"			"ContinuousProgressBar"
-		"fieldName"				"ItemEffectMeter"
-		"font"					"Default"
-		"xpos"					"0"
-		"ypos"					"0"
-		"zpos"					"2"
-		"wide"					"120"
-		"tall"					"6"
-		"visible"				"1"
-		"enabled"				"1"
-		"MeterFG"		"base00"    //does nothing
-		"MeterBG"		"base3"     //does nothing
+   "ItemEffectMeter"
+   {
+      "ControlName"        "ContinuousProgressBar"
+      "fieldName"          "ItemEffectMeter"
+      "font"               "Default"
+      "xpos"               "0"
+      "ypos"               "0"
+      "zpos"               "2"
+      "wide"               "120"
+      "tall"               "6"
+      "visible"            "1"
+      "enabled"            "1"
+      "MeterFG"      "base00"    //does nothing
+      "MeterBG"      "base3"     //does nothing
       "fgcolor_override"    "base00"   //does nothing
       "bgcolor_override"     "base03forced"  //controls the bg of meter, forcing base03 since charge meter fg is white
-		"textAlignment"			"Left"
-	}
+      "textAlignment"         "Left"
+   }
 
    //disabled
    "ItemEffectMeterBG"
-	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"99999"
-		"visible"		"0"
-		"enabled"		"0"
-	}
+   {
+      "ControlName"  "CTFImagePanel"
+      "fieldName"    "ItemEffectMeterBG"
+      "xpos"         "99999"
+      "visible"      "0"
+      "enabled"      "0"
+   }
 
 }

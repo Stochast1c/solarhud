@@ -2,22 +2,22 @@
 
 "Resource/UI/econ/QuestItemPanel_Pauling_Borneo.res"
 {
-	"QuestItemPanel"
-	{
-		"MainContainer"
-		{
-			"QuestPaperContainer"
-			{
-				"CharacterBackdropImage"
-				{
-					"visible"		"0"
-				}
+   "QuestItemPanel"
+   {
+      "MainContainer"
+      {
+         "QuestPaperContainer"
+         {
+            "CharacterBackdropImage"
+            {
+               "visible"      "0"
+            }
 
-				"PaperImage"
-				{
-					"image"			"contracts\halloween\contracts_papers2"
-				}
-			}
-		}
-	}	
+            "PaperImage"
+            {
+               "image"        "contracts\halloween\contracts_papers2"
+            }
+         }
+      }
+   }  
 }

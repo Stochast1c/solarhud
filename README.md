@@ -1,13 +1,14 @@
 solarhud - Pub Branch
 ==========
 
-A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
+A **DARK** [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
 This branch removes the surf-mode of the other branches and instead uses minmode as a scoreboard switcher between 12v12 and 16v16.  In addition, player stats are now shown on the scoreboard.
 
 This ships as a dark theme hud since most prefer the dark theme.  If you wish to change the theme to light, then see How to Switch Themes below
 
 [Teamfortress.tv Thread](http://www.teamfortress.tv/30843/solarhud)
+[Screenshots, from the default dark branch](http://imgur.com/a/iSr9u)
 
 The main goal of this mod is to completely overwrite all colors and fonts while keeping the minimal but very legible style of ell's hud.
 
