@@ -24,9 +24,7 @@ The server buttons use a custom alias to store the server ip's that you want the
 
 ##How to Switch Themes
 
-Currently the color theme must be switched manually by editting the \*scheme files and changing the map in chapterbackgrounds.txt.  There is a planned update to branch the hud so that theme switching is as simple as downloading the other verison.
-
-To switch between light and dark colorschemes (the default is light), swap the base colors in source and client scheme: base0↔base00, base3↔base03, etc.
+To switch between light and dark colorschemes (the default is dark), swap the \*scheme.res files with the opposite color theme's branch.   
 
 Then change the map in scripts/chapterbackgrounds.txt: upward↔2fort.
 

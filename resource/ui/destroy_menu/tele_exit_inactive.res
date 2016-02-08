@@ -2,13 +2,13 @@
 
 "Resource/UI/destroy_menu/tele_exit_inactive.res"
 {
-	"ItemNameLabel"
-	{	
-		"labelText"		"#TF_Object_Tele_Exit_360"
-	}
-	
-	"NumberLabel"
-	{	
-		"labelText"		"4"
-	}
+   "ItemNameLabel"
+   {  
+      "labelText"    "#TF_Object_Tele_Exit_360"
+   }
+   
+   "NumberLabel"
+   {  
+      "labelText"    "4"
+   }
 }
