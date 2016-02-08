@@ -10,7 +10,7 @@ event hudHealthBonusPulse
 // call to loop HudHealthBonusPulse
 event HudHealthBonusPulseLoop
 {
-	RunEvent HudHealthBonusPulse 0.0
+   RunEvent HudHealthBonusPulse 0.0
 }
 
 event hudHealthBonusPulseStop
@@ -69,52 +69,52 @@ event hudLowAmmoPulseStop
 
 event HudMedicCharged
 {
-	Animate	ChargeLabel 	FgColor		"base00"		Linear 0.0 0.1
-	Animate	ChargeLabel 	FgColor		"base03forced"		Linear 0.3 0.4
-	
-	Animate	ChargeMeter 	FgColor		"base00"		Linear 0.0 0.1
-	Animate	ChargeMeter 	FgColor		"base03forced"		Linear 0.3 0.4
+   Animate  ChargeLabel    FgColor     "base00"    Linear 0.0 0.1
+   Animate  ChargeLabel    FgColor     "base03forced"    Linear 0.3 0.4
+   
+   Animate  ChargeMeter    FgColor     "base00"    Linear 0.0 0.1
+   Animate  ChargeMeter    FgColor     "base03forced"    Linear 0.3 0.4
 
-	RunEvent HudMedicChargedLoop	0.6
+   RunEvent HudMedicChargedLoop  0.6
 }
 
 // call to loop HudHealthBonusPulse
 event HudMedicChargedLoop
 {
-	RunEvent HudMedicCharged 0.0
+   RunEvent HudMedicCharged 0.0
 }
 
 event HudMedicChargedStop
 {
-	StopEvent HudMedicCharged 0.0
-	StopEvent HudMedicChargedLoop 0.0
-	
-	Animate	ChargeLabel 	FgColor		"base00"		Linear 0.0 0.0001
-	Animate	ChargeMeter 	FgColor		"base00"		Linear 0.0 0.0001
+   StopEvent HudMedicCharged 0.0
+   StopEvent HudMedicChargedLoop 0.0
+   
+   Animate  ChargeLabel    FgColor     "base00"    Linear 0.0 0.0001
+   Animate  ChargeMeter    FgColor     "base00"    Linear 0.0 0.0001
 }
 
 //====================================
 
 event RDPositiveScorePulse
 {
-	Animate Score FgColor	"green"		Linear 0.0 0.0
-	Animate Score FgColor	"yellow"			Linear 0.1 0.2
+   Animate Score FgColor   "green"     Linear 0.0 0.0
+   Animate Score FgColor   "yellow"       Linear 0.1 0.2
 
-	Animate Score Position	"3 5"		Deaccel 0.0 0.05
-	Animate Score Position	"3 10"		Accel 0.05 0.2
+   Animate Score Position  "3 5"    Deaccel 0.0 0.05
+   Animate Score Position  "3 10"      Accel 0.05 0.2
 
-	Animate ScoreShadow FgColor	"0 0 0 200"		Deaccel 0.0 0.05
-	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
+   Animate ScoreShadow FgColor   "0 0 0 200"    Deaccel 0.0 0.05
+   Animate ScoreShadow FgColor   "0 0 0 255"    Accel 0.1 0.2
 }
 
 event RDNegativeScorePulse    //score a point in pd
 {
-	Animate Score FgColor	"magenta"		Linear 0.0 0.0
-	Animate Score FgColor	"yellow"			Linear 0.1 0.2
+   Animate Score FgColor   "magenta"      Linear 0.0 0.0
+   Animate Score FgColor   "yellow"       Linear 0.1 0.2
 
-	Animate Score Position	"3 5"		Deaccel 0.0 0.05
-	Animate Score Position	"3 10"		Accel 0.05 0.2
+   Animate Score Position  "3 5"    Deaccel 0.0 0.05
+   Animate Score Position  "3 10"      Accel 0.05 0.2
 
-	Animate ScoreShadow FgColor	"0 0 0 200"		Deaccel 0.0 0.05
-	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
+   Animate ScoreShadow FgColor   "0 0 0 200"    Deaccel 0.0 0.05
+   Animate ScoreShadow FgColor   "0 0 0 255"    Accel 0.1 0.2
 }

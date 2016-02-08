@@ -2,11 +2,11 @@
 
 "Resource/UI/QuestNotificationPanel_Pauling_standard.res"
 {
-	"QuestNotificationPanel"
-	{
-		"MainContainer"
-		{
+   "QuestNotificationPanel"
+   {
+      "MainContainer"
+      {
 
-		}	
-	}	
+      }  
+   }  
 }
