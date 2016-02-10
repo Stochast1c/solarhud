@@ -179,7 +179,7 @@
                "labelText"       "%title%"
                "bgcolor_override"   "0 0 0 220"
                "fgcolor"      "Black"
-               "font"         "QuestLargeText"
+               "font"         "incon24"
                "allcaps"   "1"
                "textinsetx"      "50"
                "textAlignment"   "east"
@@ -192,8 +192,8 @@
                "border_default"    "NoBorder"
                "border_armed"      "NoBorder"
 
-               "defaultFgColor_override"  "0 0 0 255"
-               "armedFgColor_override"    "Orange"
+               "defaultFgColor_override"  "orange"
+               "armedFgColor_override"    "orange"
             }
 
             "PaperClips"
@@ -239,7 +239,7 @@
                   "visible"      "1"
                   "enabled"      "1"
                   "proportionaltoparent" "1"
-                  "bgcolor_override"   "0 0 0 247"
+                  "bgcolor_override"   "base3trans"
                   "mouseinputenabled"  "0"
                }
 
@@ -260,7 +260,7 @@
                   "labelText"    "#QuestLog_Identify"
                   "actionsignallevel" "4"
                   "use_proportional_insets" "1"
-                  "font"         "QuestLargeText"
+                  "font"         "incon24"
                   "allcaps"   "1"
                   "textAlignment"   "center"
                   "dulltext"     "0"
@@ -270,11 +270,14 @@
                   "sound_depressed" "UI/buttonclick.wav"
                   "sound_released"  "UI/buttonclickrelease.wav"
 
-                  "paintbackground" "0"
+                  "paintbackground" "1"
 
-                  "defaultFgColor_override" "White"
-                  "armedFgColor_override" "Orange"
-                  "depressedFgColor_override" "Orange"
+                  "defaultFgColor_override" "base00"
+                  "defaultBgColor_override" "base3trans"
+                  "armedFgColor_override" "orange"
+                  "armedBgColor_override" "base2trans"
+                  "depressedFgColor_override" "orange"
+                  "depressedBgColor_override" "base2trans"
 
                   "command"   "identify"
                }
@@ -285,7 +288,7 @@
                "ControlName"        "EditablePanel"
                "fieldName"          "TurnInContainer"
                "xpos"               "0"
-               "ypos"               "130"
+               "ypos"               "100"    //ypos so that completetion bar is visible
                "zpos"               "200"
                "wide"               "f0"
                "tall"               "30"
@@ -304,11 +307,11 @@
                   "visible"      "1"
                   "enabled"      "1"
                   "proportionaltoparent" "1"
-                  "bgcolor_override"   "150 255 0 100"
+                  "bgcolor_override"   "base3trans"
                   "mouseinputenabled"  "0"
                }
 
-               "GreyDimmer"
+               "GreyDimmer"      //disabled
                {
                   "ControlName"  "EditablePanel"
                   "fieldName"    "GreyDimmer"
@@ -317,8 +320,8 @@
                   "zpos"         "0"
                   "wide"         "f0"
                   "tall"         "f0"
-                  "visible"      "1"
-                  "enabled"      "1"
+                  "visible"      "0"
+                  "enabled"      "0"
                   "proportionaltoparent" "1"
                   "bgcolor_override"   "0 0 0 230"
                   "mouseinputenabled"  "0"
@@ -341,7 +344,7 @@
                   "labelText"    "#QuestLog_TurnIn"
                   "actionsignallevel" "4"
                   "use_proportional_insets" "1"
-                  "font"         "QuestLargeText"
+                  "font"         "incon24"
                   "allcaps"   "1"
                   "textAlignment"   "center"
                   "dulltext"     "0"
@@ -351,11 +354,14 @@
                   "sound_depressed" "UI/buttonclick.wav"
                   "sound_released"  "UI/buttonclickrelease.wav"
 
-                  "paintbackground" "0"
+                  "paintbackground" "1"
 
-                  "defaultFgColor_override" "White"
-                  "armedFgColor_override" "Orange"
-                  "depressedFgColor_override" "Orange"
+                  "defaultFgColor_override" "base00"
+                  "defaultBgColor_override" "base3trans"
+                  "armedFgColor_override" "green"
+                  "armedBgColor_override" "base2trans"
+                  "depressedFgColor_override" "green"
+                  "depressedBgColor_override" "base2trans"
 
                   "command"   "turnin"
                }
@@ -561,7 +567,7 @@
                "proportionaltoparent"  "1"
                "labelText"    "#TF_Quest_FindServer"
                "use_proportional_insets" "0"
-               "font"         "QuestFlavorText"
+               "font"         "incon12"
                "allcaps"   "1"
                "textAlignment"   "center"
                "dulltext"     "0"
@@ -573,12 +579,19 @@
                "sound_released"  "UI/buttonclickrelease.wav"
 
                "auto_wide_tocontents"  "0"
-               "paintbackground" "0"
+               "paintbackground" "1"
                "paintborder"     "1"
                "RoundedCorners"  "0"
-               "border_default"        "ReplayDefaultBorder"
-               "defaultFgColor_override"  "TanLight"
-               "armedFgColor_override"    "Orange"
+
+               "border_default"        "base00border"
+               "border_armed"          "base01border"
+
+               "defaultFgColor_override"     "base00"
+               "defaultBgColor_override"     "base3"
+               "armedFgColor_override"       "base01"
+               "armedBgColor_override"       "base2"
+               "depressedFgColor_override"   "base01" 
+               "depressedBgColor_override"   "base2"
 
                "command"   "quickplay"
             }
@@ -600,12 +613,12 @@
                {
                   "ControlName"        "Label"
                   "fieldName"          "RequiredContractItemsLabel"
-                  "font"               "QuestFlavorText"
+                  "font"               "inconb10"
                   "labelText"          "#TF_Quest_RequiredItems"
                   "textAlignment"         "north-west"
                   "xpos"               "p.1"
                   "ypos"               "p.19"
-                  "zpos"               "1"
+                  "zpos"               "5"
                   "wide"               "f0"
                   "tall"               "15"
                   "autoResize"         "0"
@@ -615,8 +628,8 @@
                   "wrap"               "1"
                   "proportionaltoparent"  "1"
 
-                  "fgcolor"            "170 25 25 255"
-                  "fgcolor_override"      "170 25 25 255"
+                  "fgcolor"            "red"
+                  "fgcolor_override"      "red"
                }
 
                "LoanersBGImage"
@@ -653,7 +666,7 @@
                   "proportionaltoparent"  "1"
                   "labelText"    "#TF_Quest_RequestLoanerItems"
                   "use_proportional_insets" "0"
-                  "font"         "QuestFlavorText"
+                  "font"         "inconb10"
                   "allcaps"   "1"
                   "textAlignment"   "center"
                   "dulltext"     "0"
@@ -665,12 +678,19 @@
                   "sound_released"  "UI/buttonclickrelease.wav"
 
                   "auto_wide_tocontents"  "0"
-                  "paintbackground" "0"
+                  "paintbackground" "1"
                   "paintborder"     "1"
                   "RoundedCorners"  "0"
-                  "border_default"        "ReplayDefaultBorder"
-                  "defaultFgColor_override"  "TanLight"
-                  "armedFgColor_override"    "Orange"
+
+                  "border_default"        "base00border"
+                  "border_armed"          "base01border"
+
+                  "defaultFgColor_override"     "base00"
+                  "defaultBgColor_override"     "base3"
+                  "armedFgColor_override"       "base01"
+                  "armedBgColor_override"       "base2"
+                  "depressedFgColor_override"   "base01" 
+                  "depressedBgColor_override"   "base2"
 
                   "command"   "request_loaner_items"
                }
@@ -693,7 +713,7 @@
                   "proportionaltoparent"  "1"
                   "labelText"    "#TF_Quest_EquipLoanerItems"
                   "use_proportional_insets" "0"
-                  "font"         "QuestFlavorText"
+                  "font"         "incon12"
                   "allcaps"   "1"
                   "textAlignment"   "center"
                   "dulltext"     "0"
@@ -705,12 +725,19 @@
                   "sound_released"  "UI/buttonclickrelease.wav"
 
                   "auto_wide_tocontents"  "0"
-                  "paintbackground" "0"
+                  "paintbackground" "1"
                   "paintborder"     "1"
                   "RoundedCorners"  "0"
-                  "border_default"        "ReplayDefaultBorder"
-                  "defaultFgColor_override"  "TanLight"
-                  "armedFgColor_override"    "Orange"
+
+                  "border_default"        "base00border"
+                  "border_armed"          "base01border"
+
+                  "defaultFgColor_override"     "base00"
+                  "defaultBgColor_override"     "base3"
+                  "armedFgColor_override"       "base01"
+                  "armedBgColor_override"       "base2"
+                  "depressedFgColor_override"   "base01" 
+                  "depressedBgColor_override"   "base2"
 
                   "command"   "equip_loaner_items"
                }
@@ -859,7 +886,7 @@
                {
                   "ControlName"        "Label"
                   "fieldName"          "QuestObjectiveExplanation"
-                  "font"               "QuestFlavorText"
+                  "font"               "incon12"
                   "labelText"          "#TF_QuestObjective_Explanation"
                   "textAlignment"         "north-west"
                   "xpos"               "0"
@@ -875,15 +902,14 @@
                   "proportionaltoparent"  "1"
                   "allcaps"            "1"
 
-                  "fgcolor"            "Black"
-                  "fgcolor_override"      "Black"
+                  "fgcolor_override"      "base03forced"
                }
 
                "QuestFlavorText"
                {
                   "ControlName"        "Label"
                   "fieldName"          "QuestFlavorText"
-                  "font"               "QuestFlavorText"
+                  "font"               "incon12"
                   "labelText"          "%flavor_text%"
                   "textAlignment"         "north-west"
                   "xpos"               "0"
@@ -898,8 +924,7 @@
                   "wrap"               "1"
                   "proportionaltoparent"  "1"
 
-                  "fgcolor"            "Black"
-                  "fgcolor_override"      "Black"
+                  "fgcolor_override"      "base03forced"    //extra text, does not exist in Tough Break contracts
                }
             }
          }
@@ -1034,7 +1059,7 @@
                   {
                      "ControlName"        "Label"
                      "fieldName"          "Label"
-                     "font"               "QuestStickyText"
+                     "font"               "incon20"
                      "labelText"          "#TF_Quest_Status_Encoded"
                      "textAlignment"         "center"
                      "xpos"               "0"
@@ -1048,8 +1073,7 @@
                      "enabled"            "1"
                      "proportionaltoparent"  "1"
 
-                     "fgcolor"            "Black"
-                     "fgcolor_override"      "Black"
+                     "fgcolor_override"      "violet"
                   }
                }
             }
@@ -1096,7 +1120,7 @@
                   {
                      "ControlName"        "Label"
                      "fieldName"          "Label"
-                     "font"               "QuestStickyText"
+                     "font"               "incon20"
                      "labelText"          "#TF_Quest_Status_ReadyToTurnIn"
                      "textAlignment"         "center"
                      "xpos"               "0"
@@ -1110,8 +1134,7 @@
                      "enabled"            "1"
                      "proportionaltoparent"  "1"
 
-                     "fgcolor"            "Black"
-                     "fgcolor_override"      "Black"
+                     "fgcolor_override"      "blue"
                   }
                }
             }
@@ -1162,7 +1185,7 @@
                   {
                      "ControlName"        "Label"
                      "fieldName"          "Label"
-                     "font"               "QuestStickyText"
+                     "font"               "incon20"
                      "labelText"          "#TF_Quest_Status_Inactive"
                      "textAlignment"         "center"
                      "xpos"               "0"
@@ -1179,8 +1202,7 @@
                      "mouseinputenabled"  "0"
                      "keyboardinputenabled" "0"
 
-                     "fgcolor"            "Black"
-                     "fgcolor_override"      "Black"
+                     "fgcolor_override"      "magenta"
                   }
                }
             }
