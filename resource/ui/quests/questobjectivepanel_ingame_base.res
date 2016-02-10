@@ -14,8 +14,8 @@
       
       "PaintBackgroundType"   "2"
 
-      "enabled_text_color_override"    "235 226 202 255"
-      "disabled_text_color_override"      "135 126 102 255"
+      "enabled_text_color_override"    "base00"    //task color, fgcolor_override does nothing
+      "disabled_text_color_override"      "red"    //not sure
 
       "normal_token"    "#QuestObjective_Required"
       "advanced_token"  "#QuestObjective_Optional"
@@ -32,7 +32,7 @@
       "tall"         "18"
       "zpos"         "5"
       "textinsetx"   "5"
-      "font"         "QuestObjectiveTracker_DescGlow"
+      "font"         "inconb10"
       "alpha"        "0"
 
       "TextAlignment"      "north-east"
@@ -50,7 +50,7 @@
       "tall"         "18"
       "zpos"         "4"
       "textinsetx"   "5"
-      "font"         "QuestObjectiveTracker_Desc"
+      "font"         "inconb10"
 
       "TextAlignment"      "north-east"
       "proportionaltoparent" "1"
@@ -67,7 +67,7 @@
       "tall"         "10"
       "zpos"         "3"
       "visible"      "1"
-      "font"         "QuestObjectiveTracker_DescBlur"
+      "font"         "inconb10"
       "textinsetx"   "5"
       "textAlignment"      "north-east"
       "proportionaltoparent" "1"

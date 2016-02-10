@@ -16,8 +16,8 @@
       
       "PaintBackgroundType"   "2"
 
-      "enabled_text_color_override"    "Black"
-      "disabled_text_color_override"      "Black"
+      "enabled_text_color_override"    "base03forced"    //no normal color that fits, must use blackish color
+      "disabled_text_color_override"      "base1"
       "normal_token"    "#QuestObjective_Required"
       "advanced_token"  "#QuestObjective_Optional"
    }
@@ -33,7 +33,7 @@
       "tall"         "f0"
       "zpos"         "4"
       //"textinsetx" "400"
-      "font"         "QuestObjectiveText"
+      "font"         "incon12"
 
       "wrap"            "1"
       "TextAlignment"      "north-west"
@@ -52,7 +52,7 @@
       "tall"         "f0"
       "zpos"         "4"
       "visible"      "0"
-      "font"         "QuestObjectiveTracker_DescBlur"
+      "font"         "incon12"
       "textinsetx"   "5"
       "textAlignment"      "north-west"
       "wrap"         "1"
