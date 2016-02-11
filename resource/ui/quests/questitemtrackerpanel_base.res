@@ -7,7 +7,7 @@
       "xpos"         "rs1"    
       "ypos"         "0"      
       "zpos"         "3"
-      "wide"         "200"
+      "wide"         "300"
       "tall"         "500"
       "visible"      "1"
       "enabled"      "1"   
