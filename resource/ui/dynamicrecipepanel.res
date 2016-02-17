@@ -16,7 +16,7 @@
       "tabPosition"  "0"
       "settitlebarvisible" "0"
       "PaintBackgroundType"   "0"
-      "bgcolor_override"   "46 43 42 255"
+      "bgcolor_override"   "base3"
       "infocus_bgcolor_override" "46 43 42 255"
       "outoffocus_bgcolor_override" "46 43 42 255"
 
@@ -108,19 +108,19 @@
       {
          "ControlName"  "CExLabel"
          "fieldName"    "RecipeTitle"
-         "font"         "ItemFontNameLarge"
+         "font"         "incon20"
          "labelText"    "%recipetitle%"
          "textAlignment"   "west"
          "xpos"         "0"
          "ypos"         "2"
          "zpos"         "1"
-         "wide"         "280"
-         "tall"         "30"
+         "wide"         "300"
+         "tall"         "35"
          "autoResize"   "0"
          "pinCorner"    "0"
          "visible"      "1"
          "enabled"      "1"
-         "fgcolor"      "200 187 161 255"
+         "fgcolor"      "yellow"
          "wrap"         "1"
       }
    
@@ -128,7 +128,7 @@
       {
          "ControlName"  "CExLabel"
          "fieldName"    "InputLabel"
-         "font"         "HudFontSmallBold"
+         "font"         "incon16"
          "labelText"    "#Craft_Recipe_Inputs"
          "textAlignment"   "north-west"
          "xpos"         "0"
@@ -140,13 +140,13 @@
          "pinCorner"    "0"
          "visible"      "1"
          "enabled"      "1"
-         "fgcolor"      "117 107 94 255"
+         "fgcolor"      "magenta"
       }
       "OutputLabel"
       {
          "ControlName"  "CExLabel"
          "fieldName"    "OutputLabel"
-         "font"         "HudFontSmallBold"
+         "font"         "incon16"
          "labelText"    "#Dynamic_Recipe_Outputs_Not_Complete"
          "textAlignment"   "north-west"
          "xpos"         "0"
@@ -158,13 +158,13 @@
          "pinCorner"    "0"
          "visible"      "1"
          "enabled"      "1"
-         "fgcolor"      "117 107 94 255"
+         "fgcolor"      "green"     //can't change
       }
       "UntradableLabel"
       {
          "ControlName"  "CExLabel"
          "fieldName"    "UntradableLabel"
-         "font"         "HudFontSmallBold"
+         "font"         "incon16"
          "labelText"    "#Dynamic_Recipe_Outputs_Not_Tradable"
          "textAlignment"   "west"
          "xpos"         "0"
@@ -176,7 +176,7 @@
          "pinCorner"    "0"
          "visible"      "0"
          "enabled"      "1"
-         "fgcolor"      "117 107 94 255"
+         "fgcolor"      "red"
       }
       
       "CraftButton"
@@ -194,7 +194,7 @@
          "enabled"      "0"
          "tabPosition"  "0"
          "labelText"    "#CraftConfirm"
-         "font"         "HudFontMediumBold"
+         "font"         "incon28"
          "textAlignment"   "center"
          "textinsetx"   "50"
          "dulltext"     "0"
@@ -219,7 +219,7 @@
          "enabled"      "1"
          "tabPosition"  "0"
          "labelText"    "<"
-         "font"         "HudFontSmallBold"
+         "font"         "incon20"
          "textAlignment"   "center"
          "dulltext"     "0"
          "brighttext"   "0"
@@ -231,7 +231,7 @@
       {
          "ControlName"  "CExLabel"
          "fieldName"    "CurInputPageLabel"
-         "font"         "HudFontSmallBold"
+         "font"         "incon20"
          "labelText"    "%inputpage%"
          "textAlignment"   "center"
          "xpos"         "210"
@@ -243,7 +243,7 @@
          "pinCorner"    "0"
          "visible"      "1"
          "enabled"      "1"
-         "fgcolor_override" "200 80 60 255"
+         "fgcolor_override" "base00"
       }
       "NextInputPageButton"
       {
@@ -260,7 +260,7 @@
          "enabled"      "1"
          "tabPosition"  "0"
          "labelText"    ">"
-         "font"         "HudFontSmallBold"
+         "font"         "incon20"
          "textAlignment"   "center"
          "dulltext"     "0"
          "brighttext"   "0"
@@ -286,7 +286,7 @@
       {
          "ControlName"  "CExLabel"
          "fieldName"    "NoMatches"
-         "font"         "HudFontSmallBold"
+         "font"         "incon16"
          "labelText"    "#Dynamic_Recipe_No_Matching_Items"
          "textAlignment"   "west"
          "xpos"         "0"
@@ -298,7 +298,7 @@
          "pinCorner"    "0"
          "visible"      "0"
          "enabled"      "1"
-         "fgcolor"      "200 187 161 255"
+         "fgcolor"      "magenta"
          "wrap"         "1"
       }
 
@@ -307,7 +307,7 @@
          "ControlName"  "CheckButton"
          "fieldName"    "UntradableCheckBox"
          "labelText"    "#Dynamic_Recipe_Untradable_Checkbox"
-         "Font"         "HudFontSmallestBold"
+         "Font"         "incon12"
          "textAlignment"   "west"
          "xpos"         "-4"
          "ypos"         "2"
@@ -327,7 +327,7 @@
       {
          "ControlName"  "CExLabel"
          "fieldName"    "BackpackItems"
-         "font"         "HudFontSmallBold"
+         "font"         "incon16"
          "labelText"    "#Dynamic_Recipe_Matching_Items"
          "textAlignment"   "west"
          "xpos"         "0"
@@ -339,7 +339,7 @@
          "pinCorner"    "0"
          "visible"      "1"
          "enabled"      "1"
-         "fgcolor"      "200 187 161 255"
+         "fgcolor"      "cyan"
          "wrap"         "1"
       }
          
@@ -358,7 +358,7 @@
          "enabled"      "1"
          "tabPosition"  "0"
          "labelText"    "#Cancel"
-         "font"         "HudFontMediumBold"
+         "font"         "incon28"
          "textAlignment"   "center"
          "textinsetx"   "50"
          "dulltext"     "0"
@@ -383,7 +383,7 @@
          "enabled"      "1"
          "tabPosition"  "0"
          "labelText"    "<"
-         "font"         "HudFontSmallBold"
+         "font"         "incon20"
          "textAlignment"   "center"
          "dulltext"     "0"
          "brighttext"   "0"
@@ -395,7 +395,7 @@
       {
          "ControlName"  "CExLabel"
          "fieldName"    "CurPageLabel"
-         "font"         "HudFontSmallBold"
+         "font"         "incon20"
          "labelText"    "%backpackpage%"
          "textAlignment"   "center"
          "xpos"         "26"
@@ -407,7 +407,7 @@
          "pinCorner"    "0"
          "visible"      "1"
          "enabled"      "1"
-         "fgcolor_override" "200 80 60 255"
+         "fgcolor_override" "base00"
       }
       "NextPageButton"
       {
@@ -424,7 +424,7 @@
          "enabled"      "1"
          "tabPosition"  "0"
          "labelText"    ">"
-         "font"         "HudFontSmallBold"
+         "font"         "incon20"
          "textAlignment"   "center"
          "dulltext"     "0"
          "brighttext"   "0"
