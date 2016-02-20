@@ -7,26 +7,26 @@
       "visible"            "1"
       "enabled"            "1"
       "xpos"               "c-200"
-      "ypos"               "105"
+      "ypos"               "c-200"
       "wide"               "400"
       "tall"               "240"
-      "bgcolor_override"      "46 43 42 0"
-      "paintbackgroundtype"   "0"
+      "bgcolor_override"      "base3"
+      "paintbackgroundtype"   "2"
       "settitlebarvisible" "0"
-      "border"          "GrayDialogBorder"
+      "border"          "base00border"
    }
 
    "TitleLabel"
    {
       "ControlName"  "CExLabel"
       "fieldName"    "TitleLabel"
-      "font"         "HudFontSmallBold"
+      "font"         "incon20"
       "labelText"    "dynamic"
       "textAlignment"   "center"
-      "xpos"         "100"
+      "xpos"         "95"
       "ypos"         "10"
       "zpos"         "0"
-      "wide"         "200"
+      "wide"         "205"
       "tall"         "60"
       "autoResize"   "1"
       "pinCorner"    "0"
@@ -74,11 +74,11 @@
    {     
       "ControlName"  "CItemModelPanel"
       "fieldName"    "tool_modelpanel"
-      "xpos"         "10"
-      "ypos"         "10"
+      "xpos"         "11"     //must be -1 from bg so border will display
+      "ypos"         "11"
       "zpos"         "1"
-      "wide"         "200"
-      "tall"         "70"
+      "wide"         "82"     
+      "tall"         "62"
       "visible"      "1"
       "bgcolor_override"      "0 0 0 0"
       "noitem_textcolor"      "117 107 94 255"
@@ -95,8 +95,9 @@
       {
          "use_item_rendertarget" "0"
          "allow_rot"          "0"
+         "inventory_image_type" "1"
       }
-   }  
+   }   
    "SubjectBG"
    {
       "ControlName"  "CExLabel"
@@ -136,11 +137,11 @@
    {     
       "ControlName"  "CItemModelPanel"
       "fieldName"    "subject_modelpanel"
-      "xpos"         "300"
-      "ypos"         "10"
+      "xpos"         "301"
+      "ypos"         "11"
       "zpos"         "1"
-      "wide"         "90"
-      "tall"         "70"
+      "wide"         "82"
+      "tall"         "62"
       "visible"      "1"
       "bgcolor_override"      "0 0 0 0"
       "noitem_textcolor"      "117 107 94 255"
@@ -157,6 +158,7 @@
       {
          "use_item_rendertarget" "0"
          "allow_rot"          "0"
+         "inventory_image_type" "1"
       }
    }  
    
@@ -164,30 +166,11 @@
    {
       "ControlName"  "CExLabel"
       "fieldName"    "ConfirmLabel"
-      "font"         "HudFontSmall"
+      "font"         "incon32"
       "labelText"    "#CraftInvalidName"
       "textAlignment"   "center"
       "xpos"         "20"
       "ypos"         "80"
-      "zpos"         "0"
-      "wide"         "360"
-      "tall"         "20"
-      "autoResize"   "1"
-      "pinCorner"    "0"
-      "visible"      "1"
-      "enabled"      "1"
-      "fgcolor_override" "200 80 60 255"
-   }
-   
-   "GivenName"
-   {
-      "ControlName"  "CExLabel"
-      "fieldName"    "GivenName"
-      "font"         "HudFontMediumSecondary"
-      "labelText"    "%name%"
-      "textAlignment"   "center"
-      "xpos"         "20"
-      "ypos"         "100"
       "zpos"         "0"
       "wide"         "360"
       "tall"         "32"
@@ -195,14 +178,33 @@
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
-      "fgcolor_override"   "235 226 202 255"
+      "fgcolor_override" "magenta"
+   }
+   
+   "GivenName"
+   {
+      "ControlName"  "CExLabel"
+      "fieldName"    "GivenName"
+      "font"         "incon28"
+      "labelText"    "%name%"
+      "textAlignment"   "center"
+      "xpos"         "20"
+      "ypos"         "120"
+      "zpos"         "0"
+      "wide"         "360"
+      "tall"         "32"
+      "autoResize"   "1"
+      "pinCorner"    "0"
+      "visible"      "1"
+      "enabled"      "1"
+      "fgcolor_override"   "base00"
    }
 
    "WarningLabel"
    {
       "ControlName"  "CExLabel"
       "fieldName"    "WarningLabel"
-      "font"         "HudFontSmall"
+      "font"         "incon16"
       "labelText"    "#CraftInvalidNameDetail"
       "textAlignment"   "center"
       "xpos"         "0"
@@ -214,7 +216,7 @@
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
-      "fgcolor_override" "200 80 60 255"
+      "fgcolor_override" "magenta"
    }
 
    "BackFromInvalidButton"
@@ -232,7 +234,7 @@
       "enabled"      "1"
       "tabPosition"  "0"
       "labelText"    "#TF_OK"
-      "font"         "HudFontSmallBold"
+      "font"         "incon20"
       "textAlignment"   "center"
       "dulltext"     "0"
       "brighttext"   "0"
@@ -240,5 +242,11 @@
       "Command"      "backfrominvalid"
       "sound_depressed" "UI/buttonclick.wav"
       "sound_released"  "UI/buttonclickrelease.wav"
+      "border_default"        "Econ.Button.Border.Default"
+      "border_armed"          "Econ.Button.Border.Armed"
+      "armedBgColor_override"    "Econ.Button.ArmedBgColor"
+      "armedFgColor_override"    "Econ.Button.ArmedFgColor"
+      "depressedBgColor_override"   "Econ.Button.DepressedBgColor"
+      "depressedFgColor_override"   "Econ.Button.DepressedFgColor"
    }
 }
