@@ -6,13 +6,13 @@
       "visible"            "1"
       "enabled"            "1"
       "xpos"               "c-200"
-      "ypos"               "105"
+      "ypos"               "c-200"
       "wide"               "400"
       "tall"               "240"
-      "bgcolor_override"      "46 43 42 0"
-      "paintbackgroundtype"   "0"
+      "bgcolor_override"      "base3"
+      "paintbackgroundtype"   "2"
       "settitlebarvisible" "0"
-      "border"          "GrayDialogBorder"
+      "border"          "base00border"
    }
 
    "mouseoveritempanel"
@@ -59,13 +59,13 @@
    {
       "ControlName"  "CExLabel"
       "fieldName"    "TitleLabel"
-      "font"         "HudFontSmallBold"
+      "font"         "incon20"
       "labelText"    "dynamic"
       "textAlignment"   "center"
-      "xpos"         "100"
+      "xpos"         "95"
       "ypos"         "10"
       "zpos"         "0"
-      "wide"         "200"
+      "wide"         "205"
       "tall"         "60"
       "autoResize"   "1"
       "pinCorner"    "0"
@@ -113,17 +113,16 @@
    {     
       "ControlName"  "CItemModelPanel"
       "fieldName"    "tool_modelpanel"
-      "xpos"         "10"
-      "ypos"         "10"
+      "xpos"         "11"     //must be -1 from bg so border will display
+      "ypos"         "11"
       "zpos"         "1"
-      "wide"         "84"
-      "tall"         "64"
+      "wide"         "82"     
+      "tall"         "62"
       "visible"      "1"
       "bgcolor_override"      "0 0 0 0"
       "noitem_textcolor"      "117 107 94 255"
       "PaintBackgroundType"   "2"
       "paintborder"  "0"
-      
       "model_xpos"   "2"
       "model_ypos"   "5"
       "model_wide"   "80"
@@ -131,13 +130,14 @@
       "text_ypos"    "100"    // Hide it off the bottom
       "text_center"  "1"
       "name_only"    "1"
-      
       "itemmodelpanel"
       {
          "use_item_rendertarget" "0"
          "allow_rot"          "0"
+         "inventory_image_type" "1"
       }
    }  
+
    
    "SubjectBG"
    {
@@ -178,17 +178,16 @@
    {     
       "ControlName"  "CItemModelPanel"
       "fieldName"    "subject_modelpanel"
-      "xpos"         "300"
-      "ypos"         "10"
+      "xpos"         "301"
+      "ypos"         "11"
       "zpos"         "1"
-      "wide"         "84"
-      "tall"         "64"
+      "wide"         "82"
+      "tall"         "62"
       "visible"      "1"
       "bgcolor_override"      "0 0 0 0"
       "noitem_textcolor"      "117 107 94 255"
       "PaintBackgroundType"   "2"
       "paintborder"  "0"
-      
       "model_xpos"   "2"
       "model_ypos"   "5"
       "model_wide"   "80"
@@ -196,13 +195,13 @@
       "text_ypos"    "100"    // Hide it off the bottom
       "text_center"  "1"
       "name_only"    "1"
-      
       "itemmodelpanel"
       {
          "use_item_rendertarget" "0"
          "allow_rot"          "0"
+         "inventory_image_type" "1"
       }
-   }  
+   }   
    
    "OldItemNameBG"
    {
@@ -220,14 +219,15 @@
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
-      "bgcolor_override" "0 0 0 255"
+      "bgcolor_override" "base2"
       "paintbackgroundtype" "2"
+      "border"       "base01border"
    }
    "OldItemNameDescLabel"
    {
       "ControlName"  "CExLabel"
       "fieldName"    "OldItemNameDescLabel"
-      "font"         "HudFontSmallBold"
+      "font"         "incon20"
       "labelText"    "#ToolItemRenameOldItemName"
       "textAlignment"   "east"
       "xpos"         "10"
@@ -239,25 +239,25 @@
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
-      "fgcolor_override" "117 107 94 255"
+      "fgcolor_override" "base01"
       "paintbackground" "0"
    }
    "OldItemNameLabel"
    {
       "ControlName"  "CExLabel"
       "fieldName"    "OldItemNameLabel"
-      "font"         "HudFontSmallBold"
+      "font"         "incon20"
       "labelText"    "%oldname%"
       "textAlignment"   "west"
       "xpos"         "200"
-      "ypos"         "94"
+      "ypos"         "90"
       "wide"         "180"
-      "tall"         "24"
+      "tall"         "32"
       "autoResize"   "1"
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
-      "fgcolor_override" "117 107 94 255"
+      "fgcolor_override" "base01"
       "paintbackground" "0"
    }
 
@@ -277,14 +277,15 @@
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
-      "bgcolor_override" "0 0 0 255"
+      "bgcolor_override" "base2"
       "paintbackgroundtype" "2"
+      "border"       "base01border"
    }
    "NewItemNameDescLabel"
    {
       "ControlName"  "CExLabel"
       "fieldName"    "NewItemNameDescLabel"
-      "font"         "HudFontSmallBold"
+      "font"         "incon20"
       "labelText"    "#ToolItemRenameNewItemName"
       "textAlignment"   "east"
       "xpos"         "10"
@@ -296,7 +297,7 @@
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
-      "fgcolor_override" "117 107 94 255"
+      "fgcolor_override" "base01"
       "paintbackground" "0"
    }
    "CustomNameEntry"
@@ -318,19 +319,20 @@
       "NumericInputOnly"   "0"
       "unicode"         "0"
       "wrap"            "0"
-      "fgcolor_override"   "235 226 202 255"
-      "bgcolor_override"   "46 43 42 255"
+      "fgcolor_override"   "base01"
+      "bgcolor_override"   "base2"
       "paintbackgroundtype" "2"
       "labelText"       ""
-      "font"            "HudFontSmall"
+      "font"            "incon20"
       "textAlignment"      "west"
+      "border"          "base01border"
    }
    
    "WarningLabel"
    {
       "ControlName"  "CExLabel"
       "fieldName"    "WarningLabel"
-      "font"         "HudFontSmall"
+      "font"         "incon16"
       "labelText"    "#ToolConfirmWarning"
       "textAlignment"   "center"
       "xpos"         "0"
@@ -342,7 +344,7 @@
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
-      "fgcolor_override" "200 80 60 255"
+      "fgcolor_override" "magenta"
    }
 
    "CancelButton"
@@ -360,7 +362,7 @@
       "enabled"      "1"
       "tabPosition"  "0"
       "labelText"    "#Cancel"
-      "font"         "HudFontSmallBold"
+      "font"         "incon20"
       "textAlignment"   "center"
       "dulltext"     "0"
       "brighttext"   "0"
@@ -368,6 +370,12 @@
       "Command"      "cancel"
       "sound_depressed" "UI/buttonclick.wav"
       "sound_released"  "UI/buttonclickrelease.wav"
+      "border_default"        "Econ.Button.Border.Default"
+      "border_armed"          "Econ.Button.Border.Armed"
+      "armedBgColor_override"    "Econ.Button.ArmedBgColor"
+      "armedFgColor_override"    "Econ.Button.ArmedFgColor"
+      "depressedBgColor_override"   "Econ.Button.DepressedBgColor"
+      "depressedFgColor_override"   "Econ.Button.DepressedFgColor"
    }
    
    "OkButton"
@@ -385,7 +393,7 @@
       "enabled"      "1"
       "tabPosition"  "0"
       "labelText"    "#CraftNameOk"
-      "font"         "HudFontSmallBold"
+      "font"         "incon20"
       "textAlignment"   "center"
       "dulltext"     "0"
       "brighttext"   "0"
@@ -393,5 +401,11 @@
       "Command"      "apply"
       "sound_depressed" "UI/buttonclick.wav"
       "sound_released"  "UI/buttonclickrelease.wav"
+      "border_default"        "Econ.Button.Border.Default"
+      "border_armed"          "Econ.Button.Border.Armed"
+      "armedBgColor_override"    "Econ.Button.ArmedBgColor"
+      "armedFgColor_override"    "Econ.Button.ArmedFgColor"
+      "depressedBgColor_override"   "Econ.Button.DepressedBgColor"
+      "depressedFgColor_override"   "Econ.Button.DepressedFgColor"
    }
 }
