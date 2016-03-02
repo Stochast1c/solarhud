@@ -422,22 +422,22 @@
       "depressedBgColor_override"   "blank"
    }
 
-   "PlayCompButton"
+   "PlayCompetitiveButton"
    {
       "ControlName"  "EditablePanel"
-      "fieldname"    "PlayCompButton"
+      "fieldname"    "PlayCompetitiveButton"
       "xpos"         "55"
       "ypos"         "58"
-      "zpos"         "21"
+      "zpos"         "11"
       "wide"         "200"
       "tall"         "26"
       "visible"      "1"
       "enabled"      "1"
 
-      //"navUp"         "PlayPVEButton"
-      // "navDown"      "ServerBrowserButton"
-      // "navRight"     "Notifications_ShowButtonPanel"
-      // "navToRelay"   "SubButton"
+      "navUp"        "PlayPVEButton"
+      "navDown"      "ServerBrowserButton"
+      "navRight"     "Notifications_ShowButtonPanel"
+      "navToRelay"   "SubButton"
 
       "SubButton"
       {
@@ -464,6 +464,36 @@
          "armedBgColor_override"       "base2"
          "depressedFgColor_override"   "base01"
          "depressedBgColor_override"   "base2"
+      }
+   }
+
+   "CompetitiveBetaImage"     //disabled
+   {
+      "ControlName"  "ImagePanel"
+      "fieldname"    "CompetitiveBetaImage"
+      // Competitive button, plus offset.
+      "xpos"         "c-285+218"
+      "ypos"         "178"
+      "zpos"         "12"
+      "wide"         "30"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+      "image"        "beta"
+      "scaleImage"   "1"
+      if_competitive
+      {
+            "visible"      "1"
+            "enabled"      "1"
+      }
+      if_competitive_stress_event
+      {
+         // Move up/left 10px, bump up to 20x20
+         "ypos"   "165"
+         "xpos"   "c-285+205"
+         "wide"   "56"
+         "tall"   "56"
+         "image"  "beta_stress"
       }
    }
 

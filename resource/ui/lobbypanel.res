@@ -20,6 +20,22 @@
       "NavToRelay"   "MvMTourOfDutyGroupBox"
       "NavDown"      "MvMEconItemsGroupBox"
    }
+   
+   "ModeBackgroundImage"
+   {
+      "ControlName"  "ImagePanel"
+      "fieldName"    "ModeBackgroundImage"
+      "xpos"         "0"
+      "ypos"         "0"
+      "zpos"         "-1"
+      "wide"         "f0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+      "mouseinputenabled" "0"
+      "image"        "competitive/comp_background_tier001a"
+      "scaleImage"   "1"
+   }
 
    "QuickplaySearchCriteriaGroupBox"
    {
@@ -1740,12 +1756,12 @@
    {
       "ControlName"  "EditablePanel"
       "fieldName"    "CompetitiveModeGroupBox"
-      "xpos"      "c-350"
+      "xpos"      "0"
       "ypos"      "10"
       "zpos"      "-1"
       "wide"      "f0"
       "tall"      "470"
-      "visible"   "1"
+      "visible"   "0"
       "enabled"   "1"
       //"border"  "MainMenuHighlightBorder"
 
@@ -1753,17 +1769,17 @@
       {
          "ControlName"  "CExLabel"
          "fieldName"    "LadderLabel"
-         "xpos"         "60"
-         "ypos"         "20"
+         "xpos"         "95"
+         "ypos"         "0"
          "zpos"         "0"
-         "wide"         "60"
-         "tall"         "20"
+         "wide"         "70"
+         "tall"         "16"
          "visible"      "1"
          "enabled"      "1"
          "font"         "incon16"
-         "fgcolor_override"   "base00"
+         "fgcolor_override" "base00"
          "textAlignment"   "west"
-         "labelText"    "LADDER:"
+         "labelText"    "#TF_Competitive_Ladder"
       }
 
       // Dropdown
@@ -1771,9 +1787,9 @@
       {
          "ControlName"     "ComboBox"
          "fieldName"       "CompetitiveModeComboBox"
-         "Font"            "HudFontSmallestBold"
-         "xpos"            "130"
-         "ypos"            "21"
+         "Font"            "incon12"
+         "xpos"            "155"
+         "ypos"            "1"
          "zpos"            "0"
          "wide"            "85"
          "tall"            "15"
@@ -1787,228 +1803,439 @@
          "NumericInputOnly"   "0"
          "unicode"         "0"
          "default"         "0"
-
+      
          "fgcolor_override"   "base00"
          "bgcolor_override"   "base3"
          "disabledFgColor_override" "base1"
          "disabledBgColor_override" "base3"
-         "selectionColor_override" "base3"   //selection as it appears after selection, mouseover in the dropdown controlled in clientscheme
+         "selectionColor_override" "base3"
          "selectionTextColor_override" "base00"
          "defaultSelectionBG2Color_override" "0 0 0 0"
       }
-
-      "RankLabel"
-      {
-         "ControlName"  "CExLabel"
-         "fieldName"    "RankLabel"
-         "xpos"         "60"
-         "ypos"         "44"
-         "zpos"         "0"
-         "wide"         "100"
-         "tall"         "20"
-         "visible"      "1"
-         "enabled"      "1"
-         "font"         "incon16"
-         "fgcolor_override"   "base00"
-         "textAlignment"   "west"
-         "labelText"    "RANK:"
-      }
-
-      "RankIcon"
-      {
-         "ControlName"  "ImagePanel"
-         "fieldName"    "RankIcon"
-         "xpos"         "106"
-         "ypos"         "80"
-         "zpos"         "0"
-         "wide"         "100"
-         "tall"         "100"
-         "visible"      "1"
-         "enabled"      "1"
-         "mouseinputenabled" "0"
-         "image"        "pve/mvm_loot_image"
-         "scaleImage"   "1"
-      }
-
-      "RankTitle"
-      {
-         "ControlName"  "CExLabel"
-         "fieldName"    "RankTitle"
-         "xpos"         "130"
-         "ypos"         "44"
-         "zpos"         "0"
-         "wide"         "150"
-         "tall"         "20"
-         "visible"      "1"
-         "enabled"      "1"
-         "font"         "incon16"
-         "fgcolor_override"   "yellow"
-         "textAlignment"   "west"
-         "labelText"    "%ranktitle%"
-      }
-
-      "LevelLabel"
-      {
-         "ControlName"  "CExLabel"
-         "fieldName"    "RankLabel"
-         "xpos"         "60"
-         "ypos"         "68"
-         "zpos"         "0"
-         "wide"         "100"
-         "tall"         "20"
-         "visible"      "1"
-         "enabled"      "1"
-         "font"         "incon16"
-         "fgcolor_override"   "base00"
-         "textAlignment"   "west"
-         "labelText"    "LEVEL:"
-      }
-
-      "LevelProgress"    //text of what level you are
-      {
-         "ControlName"  "CExLabel"
-         "fieldName"    "LevelLabel"
-         "xpos"         "130"
-         "ypos"         "68"
-         "zpos"         "0"
-         "wide"         "20"
-         "tall"         "20"
-         "visible"      "1"
-         "enabled"      "1"
-         "font"         "incon16"
-         "fgcolor_override"   "yellow"
-         "textAlignment"   "west"
-         "labelText"    "%level%"
-      }
-
-      "LevelProgressMeter"
-      {
-         "ControlName"  "ContinuousProgressBar"
-         "fieldName"    "LevelProgressMeter"
-         "font"         "HudFontSmallestBold"
-         "xpos"         "152"
-         "ypos"         "74"
-         "zpos"         "2"
-         "wide"         "100"
-         "tall"         "9"
-         "autoResize"   "0"
-         "pinCorner"    "0"
-         "visible"      "1"
-         "enabled"      "1"
-         "textAlignment"   "center"
-         "dulltext"     "0"
-         "brighttext"   "0"
-         "fgcolor_override"   "base01"
-         "bgcolor_override"   "base2"
-      }
-
-      // Default image
-      "ModeImage"
-      {
-         "ControlName"  "ImagePanel"
-         "fieldName"    "ModeImage"
-         "xpos"         "85"
-         "ypos"         "75"
-         "zpos"         "0"
-         "wide"         "130"
-         "tall"         "130"
-         "visible"      "0"
-         "enabled"      "1"
-         "mouseinputenabled" "0"
-         "image"        "main_menu/meta_cityonfire512"
-         "scaleImage"   "1"
-      }
-
-      "Leaderboard6v6"
-      {
-         "ControlName"  "CLadderLobbyLeaderboard"
-         "fieldName"    "Leaderboard6v6"
-         "xpos"         "c+20"
-         "ypos"         "20"
-         "zpos"         "0"
-         "wide"         "300"
-         "tall"         "300"
-         "visible"      "1"
-         "enabled"      "1"
-         "mouseinputenabled" "0"
-         "scaleImage"   "1"
-         "entry_step"   "25"
-         "bgcolor_override"   "base03forced"    //since playernames are hardcoded white
-      }
-
-      "Leaderboard9v9"
-      {
-         "ControlName"  "CLadderLobbyLeaderboard"
-         "fieldName"    "Leaderboard9v9"
-         "xpos"         "c+20"
-         "ypos"         "20"
-         "zpos"         "0"
-         "wide"         "300"
-         "tall"         "300"
-         "visible"      "1"
-         "enabled"      "1"
-         "mouseinputenabled" "0"
-         "scaleImage"   "1"
-         "entry_step"   "25"
-      }
-
-      "StatsLabel"
-      {
-         "ControlName"  "CExLabel"
-         "fieldName"    "StatsLabel"
-         "xpos"         "120"
-         "ypos"         "195"
-         "zpos"         "0"
-         "wide"         "150"
-         "tall"         "20"
-         "visible"      "1"
-         "enabled"      "1"
-         "font"         "incon16"
-         "fgcolor_override"   "base00"
-         "textAlignment"   "west"
-         "labelText"    "Stats"
-      }
-
-      "StatLine"
-      {
-         "ControlName"     "EditablePanel"
-         "fieldName"       "StatLine"
-         "xpos"            "p0.05"
-         "ypos"            "215"
-         "zpos"            "1"
-         "wide"            "240"
-         "tall"            "2"
-         "visible"         "1"
-         "proportionaltoparent" "1"
-         "bgcolor_override"   "base00"
-      }
-
-      "StatList"      //can't change font color
-      {
-         "ControlName"  "SectionedListPanel"
-         "fieldName"    "StatList"
-         "xpos"         "55"
-         "ypos"         "210"
-         "zpos"         "0"
-         "wide"         "245"
-         "tall"         "150"
-         "autoresize"   "3"
-         "linespacing"  "16"
-         "bgcolor_override"   "blank"
-      }
-
-      "LightThemeTempStatBG"     //creating a bg for the statlist since can't change font color
+      
+      "LadderInfoPanel"
       {
          "ControlName"  "EditablePanel"
-         "fieldName"    "LightThemeTempStatBG"
-         "xpos"         "55"
-         "ypos"         "230"
+         "fieldName"    "LadderInfoPanel"
+         "xpos"         "c-318"
+         "ypos"         "30"
          "zpos"         "-1"
-         "wide"         "215"
-         "tall"         "107"
+         "wide"         "313"
+         "tall"         "285"
+         "PaintBackgroundType"   "0"
+         "paintbackground"    "1"
          "bgcolor_override"   "base03forced"
-         "visible"      "1"
-         "enabled"      "1"
+         "border"       "base00border"
+
+         "StatsLabel"
+         {
+            "ControlName"  "CExLabel"
+            "fieldName"    "StatsLabel"
+            "xpos"         "135"
+            "ypos"         "10"
+            "zpos"         "-1"
+            "wide"         "150"
+            "tall"         "20"
+            "visible"      "0"
+            "enabled"      "0"
+            "font"         "HudFontSmallBold"
+            "fgcolor_override"   "89 81 71 255"
+            "textAlignment"   "west"
+            "labelText"    "#TF_Competitive_Stats"
+         }
+         
+         // Rank title and icon
+         "RankBG"
+         {
+            "ControlName"  "ImagePanel"
+            "fieldName"    "RankBG"
+            "xpos"         "0"
+            "ypos"         "0"
+            "zpos"         "-1"
+            "wide"         "200"
+            "tall"         "200"
+            "visible"      "1"
+            "enabled"      "1"
+            "mouseinputenabled" "0"
+            "image"        "competitive/comp_badge_ui_spotlight"
+            "scaleImage"   "1"
+         }
+
+         "RankLabel"
+         {
+            "ControlName"  "CExLabel"
+            "fieldName"    "RankLabel"
+            "xpos"         "107"
+            "ypos"         "35"
+            "zpos"         "0"
+            "wide"         "100"
+            "tall"         "20"
+            "visible"      "0"
+            "enabled"      "1"
+            "font"         "HudFontSmallBold"
+            //"fgcolor_override" "89 81 71 255"
+            "textAlignment"   "west"
+            "labelText"    "#TF_Competitive_RankUpper"
+         }
+
+         "RankIcon"
+         {
+            "ControlName"  "ImagePanel"
+            "fieldName"    "RankIcon"
+            "xpos"         "20"
+            "ypos"         "12"
+            "zpos"         "0"
+            "wide"         "75"
+            "tall"         "75"
+            "visible"      "1"
+            "enabled"      "1"
+            "mouseinputenabled" "0"
+            "image"        "pve/mvm_loot_image"
+            "scaleImage"   "1"
+         }
+
+         "RankNumber"
+         {
+            "ControlName"  "CExLabel"
+            "fieldName"    "RankNumber"
+            "xpos"         "100"
+            "ypos"         "30"
+            "zpos"         "0"
+            "wide"         "30"
+            "tall"         "24"
+            "visible"      "1"
+            "enabled"      "1"
+            "font"         "incon24"
+            "fgcolor_override" "yellow"
+            "textAlignment"   "west"
+            "labelText"    "%ranknumber%"
+         }
+
+         "RankTitle"
+         {
+            "ControlName"  "CExLabel"
+            "fieldName"    "RankTitle"
+            "xpos"         "130"
+            "ypos"         "30"
+            "zpos"         "0"
+            "wide"         "150"
+            "tall"         "24"
+            "visible"      "1"
+            "enabled"      "1"
+            "font"         "incon24"
+            "fgcolor_override" "cyan"
+            "textAlignment"   "west"
+            "labelText"    "%ranktitle%"
+         }
+
+         // Progress meter
+         "RankLevelLabel"
+         {
+            "ControlName"  "CExLabel"
+            "fieldName"    "RankLevelLabel"
+            "xpos"         "20"
+            "ypos"         "75"
+            "zpos"         "0"
+            "wide"         "100"
+            "tall"         "20"
+            "visible"      "0"
+            "enabled"      "1"
+            "font"         "HudFontSmallestBold"
+            //"fgcolor_override" "89 81 71 255"
+            "textAlignment"   "west"
+            "labelText"    "#TF_Competitive_Next"
+         }
+
+         "RankLevel"
+         {
+            "ControlName"  "CExLabel"
+            "fieldName"    "RankLevel"
+            "xpos"         "55"
+            "ypos"         "75"
+            "zpos"         "0"
+            "wide"         "20"
+            "tall"         "20"
+            "visible"      "0"
+            "enabled"      "1"
+            "font"         "incon24"
+            "fgcolor_override"   "250 114 45 255"
+            "textAlignment"   "west"
+            "labelText"    "%ranklevel%"
+         }
+
+         "NextRankLevel"
+         {
+            "ControlName"  "CExLabel"
+            "fieldName"    "NextRankLevel"
+            "xpos"         "285"
+            "ypos"         "75"
+            "zpos"         "0"
+            "wide"         "100"
+            "tall"         "20"
+            "visible"      "0"
+            "enabled"      "1"
+            "font"         "HudFontSmallBold"
+            "fgcolor_override"   "250 114 45 255"
+            "textAlignment"   "west"
+            "labelText"    "%nextranklevel%"
+         }
+
+         "RankProgressMeter"
+         {  
+            "ControlName"  "ContinuousProgressBar"
+            "fieldName"    "RankProgressMeter"
+            "font"         "HudFontSmallestBold"
+            "xpos"         "100"
+            "ypos"         "55"
+            "zpos"         "2"
+            "wide"         "185"
+            "tall"         "10"           
+            "autoResize"   "0"
+            "pinCorner"    "0"
+            "visible"      "1"
+            "enabled"      "1"
+            "textAlignment"   "center"
+            "dulltext"     "0"
+            "brighttext"   "0"
+            "fgcolor_override"   "yellow"
+            "bgcolor_override"   "base2"
+         }
+
+         "RankProgressMeterBG"
+         {
+            "ControlName"  "EditablePanel"
+            "fieldName"    "RankProgressMeterBG"
+            "xpos"         "99"
+            "ypos"         "54"
+            "zpos"         "-1"
+            "wide"         "187"
+            "tall"         "12"
+            "PaintBackgroundType"   "0"
+            "paintbackground"    "1"
+            "bgcolor_override"   "base01"
+            //"border"        "QuickplayBorder"
+         }
+
+         "StatsButton"
+         {
+            "ControlName"  "CExButton"
+            "fieldName"    "StatsButton"
+            "xpos"         "50"
+            "ypos"         "110"
+            "zpos"         "1"
+            "wide"         "105"
+            "tall"         "16"
+            "autoResize"   "0"
+            "pinCorner"    "0"
+            "visible"      "1"
+            "enabled"      "1"
+            "tabPosition"  "0"
+            "labelText"    "#TF_Competitive_Stats_Season"
+            "font"         "incon16"
+            "textAlignment"   "center"
+            "dulltext"     "0"
+            "brighttext"   "0"
+            "Command"      "stats_season"
+            "button_activation_type"   "1"   // only on press
+            "sound_depressed" "UI/buttonclick.wav"
+            "sound_released"  "UI/buttonclickrelease.wav"
+
+            "border_default"  "base00border"
+            "border_armed"    "base01border"
+
+            "paintbackground" "1"      //let's you change button bg
+            "defaultFgColor_override"     "base00"
+            "defaultBgColor_override"     "base3"
+            "armedFgColor_override"       "base01"
+            "armedBgColor_override"       "base2"
+            "depressedFgColor_override"   "base01"
+            "depressedBgColor_override"   "base2"
+         }
+
+         "MatchStatsButton"
+         {
+            "ControlName"  "CExButton"
+            "fieldName"    "MatchStatsButton"
+            "xpos"         "160"
+            "ypos"         "110"
+            "zpos"         "1"
+            "wide"         "105"
+            "tall"         "16"
+            "autoResize"   "0"
+            "pinCorner"    "0"
+            "visible"      "1"
+            "enabled"      "1"
+            "tabPosition"  "0"
+            "labelText"    "#TF_Competitive_Stats_Match"
+            "font"         "incon16"
+            "textAlignment"   "center"
+            "dulltext"     "0"
+            "brighttext"   "0"
+            "Command"      "stats_match"
+            "button_activation_type"   "1"   // only on press
+            "sound_depressed" "UI/buttonclick.wav"
+            "sound_released"  "UI/buttonclickrelease.wav"
+
+            "border_default"  "base00border"
+            "border_armed"    "base01border"
+
+            "paintbackground" "1"      //let's you change button bg
+            "defaultFgColor_override"     "base00"
+            "defaultBgColor_override"     "base3"
+            "armedFgColor_override"       "base01"
+            "armedBgColor_override"       "base2"
+            "depressedFgColor_override"   "base01"
+            "depressedBgColor_override"   "base2"
+         }
+
+         "StatLine"
+         {
+            "ControlName"     "EditablePanel"
+            "fieldName"       "StatLine"
+            "xpos"            "15"
+            "ypos"            "125"
+            "zpos"            "1"
+            "wide"            "p0.9"
+            "tall"            "2"
+            "visible"         "1"
+            "proportionaltoparent" "1"
+            "bgcolor_override"   "89 81 71 255"
+         }
+
+         "StatList"
+         {
+            "ControlName"  "SectionedListPanel"
+            "fieldName"    "StatList"
+            "xpos"         "10"
+            "ypos"         "125"
+            "zpos"         "2"
+            "wide"         "330"
+            "tall"         "150"
+            "visible"      "1"
+            "linespacing"  "16"
+            "linegap"      "2"
+            "bgcolor_override"   "0 0 0 0"
+         }
+
+         "GoldMedalIcon"
+         {
+            "ControlName"  "ImagePanel"
+            "fieldName"    "GoldMedalIcon"
+            "xpos"         "231"
+            "ypos"         "139"
+            "zpos"         "0"
+            "wide"         "18"
+            "tall"         "18"
+            "visible"      "1"
+            "enabled"      "1"
+            "mouseinputenabled" "0"
+            "image"        "competitive/competitive_coin_gold"
+            "scaleImage"   "1"
+         }
+
+         "SilverMedalIcon"
+         {
+            "ControlName"  "ImagePanel"
+            "fieldName"    "SilverMedalIcon"
+            "xpos"         "251"
+            "ypos"         "139"
+            "zpos"         "0"
+            "wide"         "18"
+            "tall"         "18"
+            "visible"      "1"
+            "enabled"      "1"
+            "mouseinputenabled" "0"
+            "image"        "competitive/competitive_coin_silver"
+            "scaleImage"   "1"
+         }
+
+         "BronzeMedalIcon"
+         {
+            "ControlName"  "ImagePanel"
+            "fieldName"    "BronzeMedalIcon"
+            "xpos"         "270"
+            "ypos"         "139"
+            "zpos"         "0"
+            "wide"         "18"
+            "tall"         "18"
+            "visible"      "1"
+            "enabled"      "1"
+            "mouseinputenabled" "0"
+            "image"        "competitive/competitive_coin_bronze"
+            "scaleImage"   "1"
+         }
+
+         "MedalsHelpButton"
+         {
+            "ControlName"  "CExButton"
+            "fieldName"    "MedalsHelpButton"
+            "xpos"         "292"
+            "ypos"         "144"
+            "zpos"         "3"
+            "wide"         "12"
+            "tall"         "12"
+            "autoResize"   "0"
+            "pinCorner"    "3"
+            "visible"      "0"
+            "enabled"      "0"
+            "tabPosition"  "0"
+            "labelText"    "?"
+            "font"         "HudFontSmallBold"
+            "textAlignment"   "center"
+            "dulltext"     "0"
+            "brighttext"   "0"
+            "command"      "medals_help"
+            "button_activation_type"   "1"   // only on press
+            "sound_depressed" "UI/buttonclick.wav"
+            "sound_released"  "UI/buttonclickrelease.wav"
+         }
+      }
+
+      "LeaderboardPanel"
+      {
+         "ControlName"  "EditablePanel"
+         "fieldName"    "LeaderboardPanel"
+         "xpos"         "c5"
+         "ypos"         "30"
+         "zpos"         "-1"
+         "wide"         "313"
+         "tall"         "285"
+         "PaintBackgroundType"   "0"
+         "paintbackground"    "1"
+         "bgcolor_override"   "base3"
+         "border"       "base00border"
+
+         "Leaderboard6v6"
+         {
+            "ControlName"  "CLadderLobbyLeaderboard"
+            "fieldName"    "Leaderboard6v6"
+            "xpos"         "-10"
+            "ypos"         "5"
+            "zpos"         "0"
+            "wide"         "320"
+            "tall"         "275"
+            "visible"      "1"
+            "enabled"      "1"
+            "mouseinputenabled" "0"
+            "scaleImage"   "1"
+            "entry_step"   "23"
+         }
+
+         "Leaderboard9v9"
+         {
+            "ControlName"  "CLadderLobbyLeaderboard"
+            "fieldName"    "Leaderboard9v9"
+            "xpos"         "-10"
+            "ypos"         "5"
+            "zpos"         "0"
+            "wide"         "320"
+            "tall"         "275"
+            "visible"      "1"
+            "enabled"      "1"
+            "mouseinputenabled" "0"
+            "scaleImage"   "1"
+            "entry_step"   "23"
+         }
       }
    }
 }

@@ -32,11 +32,12 @@
       "command" "quickplay"
       "OnlyInGame" "1"
    }
-   "PlayCompButton"
+   "PlayCompetitiveButton"
    {
       "label" "MatchMaking"
       "command" "ladder_ui_show"
       "OnlyAtMenu" "1"
+      "OnlyWhenCompetitiveEnabled"  "0" 
    }
    "PlayPVEButton"
    {
