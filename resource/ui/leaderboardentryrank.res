@@ -22,7 +22,7 @@
          "tall"         "20"
          "visible"      "1"
          "PaintBackgroundType"   "2"
-         "bgcolor_override"   "117 107 94 255"
+         "bgcolor_override"   "base2"
       }
       "AvatarImage"
       {
@@ -37,13 +37,14 @@
          "enabled"      "1"
          "image"        ""
          "scaleImage"   "1"   
-         "color_outline"   "52 48 45 255"
+         "color_outline"   "base2"
       }
       "UserName"
       {
          "ControlName"  "CExLabel"
          "fieldName"    "UserName"
-         "font"         "HudFontSmallestBold"
+         "font"         "incon12"
+         "fgcolor_override"      "base00"
          "labelText"    "%username%"
          "textAlignment"   "west"
          "xpos"         "25"
@@ -61,7 +62,8 @@
       {
          "ControlName"  "CExLabel"
          "fieldName"    "Rank"
-         "font"         "HudFontSmallestBold"
+         "font"         "incon12"
+         "fgcolor_override"   "cyan"
          "labelText"    "%rank%"
          "textAlignment"   "west"
          "xpos"         "200"
