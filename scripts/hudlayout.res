@@ -12,8 +12,8 @@
       "ypos" "c-25"
       "wide" "50"
       "tall" "50"
-      "visible" "0"
-      "enabled" "0"
+      "visible" "1"
+      "enabled" "1"
       "textAlignment" "center"
    }
    "Crosshair2"
@@ -27,8 +27,8 @@
       "ypos" "c-25"
       "wide" "50"
       "tall" "50"
-      "visible" "0"
-      "enabled" "0"
+      "visible" "1"
+      "enabled" "1"
       "textAlignment" "center"
    }
    ////////////////////////////////////////////////////////////
@@ -1489,6 +1489,17 @@
    {
       "fieldName" "HudSpectatorExtras"
       "visible" "1"
+      "enabled" "1"
+      "xpos"   "0"
+      "ypos"   "0"
+      "wide"   "f0"
+      "tall"   "f0"
+   }
+
+   MatchSummary
+   {
+      "fieldName" "MatchSummary"
+      "visible" "0"
       "enabled" "1"
       "xpos"   "0"
       "ypos"   "0"
