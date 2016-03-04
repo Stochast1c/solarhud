@@ -10558,4 +10558,5 @@ Scheme
 		"font" "resource/Symbol.ttf"
 		"name" "Symbol"
 	  }
+	}
 }
