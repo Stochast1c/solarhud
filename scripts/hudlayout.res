@@ -1,6 +1,26 @@
 "Resource/HudLayout.res"
 {
    //////////////////// CROSSHAIRS ///////////////////////////
+	ThinCross
+	{
+		"controlName"	"CExLabel"
+		"fieldName"	 	"ThinCross"
+		"visible"		"1"
+		"enabled"		"1"
+		"zpos"			"2"
+
+		"xpos"			"c-100"
+		"ypos"			"c-102"
+		"wide"			"200"
+		"tall"			"200"
+
+		"font"		"SymbolOutline24"
+		//"font"			"Symbol24"
+		"labelText"		"+"
+		"textAlignment"	"center"	
+		
+		"fgcolor"		"0 255 0 255"
+	}
    "Crosshair1"
    {
       "controlName" "CExLabel"
