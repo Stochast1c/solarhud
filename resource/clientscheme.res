@@ -2615,6 +2615,17 @@ Scheme
       //
       //////////////////// ECON FONTS //////////////////////////////
       //
+	  "SymbolOutline24"
+		{
+			"1"
+		 {
+			"name"			"Symbol"
+			"tall"			"24"
+			"weight"		"0"
+			"antialias"		"1"
+			"outline"		"1"
+		 }
+		}
       "EconFontSmall"
       {
          "1"
@@ -10542,5 +10553,9 @@ Scheme
          "name" "KnucklesCrosses"
       }
       "12" "resource/ocra.ttf"
-   }
+	  "10" // Thin Cross
+	  {
+		"font" "resource/Symbol.ttf"
+		"name" "Symbol"
+	  }
 }
