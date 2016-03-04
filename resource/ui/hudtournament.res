@@ -18,7 +18,7 @@
       "team2_player_base_y"            "259"    //2px below medigun info from statusspec
       "team2_player_delta_x"           "0"
       "team2_player_delta_y"           "20"     //team2 counts forwards
-      "teams_player_delta_x_comp"         "42"
+      "teams_player_delta_x_comp"         "55"
 
       "ModeImage"
       {
@@ -414,7 +414,7 @@
          "team1_player_delta_y"           "0"
          "team2_player_base_offset_x"  "5"
          "team2_player_base_y"         "66"
-         "team2_player_delta_x"        "52"
+         "team2_player_delta_x"        "55"
          "team2_player_delta_y"           "0"
       }
       
@@ -431,15 +431,34 @@
          "team1_player_delta_y"           "0"
          "team2_player_base_offset_x"  "5"
          "team2_player_base_y"         "66"
-         "team2_player_delta_x"        "52"
+         "team2_player_delta_x"        "55"
          "team2_player_delta_y"           "0"
       }  
    }
 
-   "HudTournamentBG"
+   "HudTournamentBG"    //disabled, game makes this white for some reason
    {
       "ControlName"     "EditablePanel"
       "fieldName"    "HudTournamentBG"
+      "xpos"         "0"
+      "ypos"         "0"
+      "zpos"         "-1"
+      "wide"         "f0"
+      "tall"         "16"
+      "visible"      "0"
+      "enabled"      "0"
+      "bgcolor_override"      "base3"
+
+
+      if_mvm
+      {
+         "visible"      "0"
+      }  
+   }
+   "HudTournamentBGNew"
+   {
+      "ControlName"     "EditablePanel"
+      "fieldName"    "HudTournamentBGNew"
       "xpos"         "0"
       "ypos"         "0"
       "zpos"         "-1"
