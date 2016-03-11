@@ -788,6 +788,39 @@
       }
    }
 
+   "ReportPlayerButton"
+   {
+      "xpos"         "228"
+      "ypos"         "84"
+
+      "SubButton"
+      {
+         "wide"         "26"
+         "tall"         "26"
+         "textinsetx"   "0"
+         "font"         "incon20"
+         "textAlignment"   "center"
+         
+         "border_default"  "base00border"
+         "border_armed"    "base01border"
+
+         "paintbackground" "1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
+
+         "SubImage"
+         {
+            "tall"      "0"
+            "visible"   "0"
+            "enabled"   "0"
+         }
+      }
+   }
+
    "CallVoteButton"
    {
       "xpos"         "280"
