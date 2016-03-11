@@ -39,6 +39,11 @@
 
    // These buttons are only shown while in-game
    // and also are positioned by the .res file
+   "ReportPlayerButton"
+   {
+      "label"        "R"
+      "subimage"     ""
+   }
    "CallVoteButton"
    {
       "label"        "V"
