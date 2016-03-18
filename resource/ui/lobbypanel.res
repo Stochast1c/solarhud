@@ -1517,52 +1517,68 @@
          "labelText"    "?"
       }
 
-      "PartyHasLeaverGroupBox"      //unsure what this controls
-      {
-         "ControlName"  "EditablePanel"
-         "fieldName"    "PartyHasLeaverGroupBox"
-         "xpos"      "30"
-         "ypos"      "250"
-         "zpos"         "2"
-         "wide"      "340"
-         "tall"      "60"
-         "visible"   "0"
-         "enabled"   "1"
+		"PartyHasLowPriorityGroupBox"
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"PartyHasLowPriorityGroupBox"
+			"xpos"		"30"
+			"ypos"		"250"
+			"zpos"			"2"
+			"wide"		"340"
+			"tall"		"100"
+			"visible"	"0"
+			"enabled"	"1"
 
-         "PartyHasLeaverImage"
-         {
-            "ControlName"  "ImagePanel"
-            "fieldName"    "PartyHasLeaverImage"
-            "xpos"         "0"
-            "ypos"         "5"
-            "zpos"         "0"
-            "wide"         "50"
-            "tall"         "50"
-            "visible"      "1"
-            "enabled"      "1"
-            "mouseinputenabled" "0"
-            "image"        "pve/mvm_timeout_active_large"
-            "scaleImage"   "1"
-         }
+			"PartyLowPriorityImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"PartyLowPriorityImage"
+				"xpos"			"0"
+				"ypos"			"5"
+				"zpos"			"0"
+				"wide"			"50"
+				"tall"			"50"
+				"visible"		"1"
+				"enabled"		"1"
+				"mouseinputenabled" "0"
+				"image"			"pve/mvm_timeout_active_large"
+				"scaleImage"	"1"
+			}
+			"PartyHasLowPriorityLabel"
+			{
+				"ControlName"		"CExLabel"
+				"fieldName"		"PartyHasLowPriorityLabel"
+				"font"			"HudFontSmall"
+				"labelText"		"#TF_Matchmaking_PartyPenalty"
+				"xpos"		"60"
+				"ypos"		"0"
+				"zpos"			"2"
+				"wide"		"275"
+				"tall"		"60"
+				"textAlignment"	"west"
+				"visible"	"1"
+				"enabled"	"1"
+				"wrap"		"1"
+				"fgcolor_override"	"250 114 45 255"
+			}
+			"PartyLowPriorityPenaltyTimer"
+			{
+				"ControlName"		"CExLabel"
+				"fieldName"		"PartyLowPriorityPenaltyTimer"
+				"font"			"HudFontSmall"
+				"labelText"		"%penaltytimer%"
+				"xpos"		"60"
+				"ypos"		"50"
+				"zpos"			"3"
+				"wide"		"175"
+				"tall"		"30"
+				"textAlignment"	"west"
+				"visible"	"1"
+				"enabled"	"1"
+				"wrap"		"1"
+			}
+		}
 
-         "PartyHasLeaverLabel"
-         {
-            "ControlName"     "CExLabel"
-            "fieldName"    "PartyHasLeaverLabel"
-            "font"         "HudFontSmall"
-            "labelText"    "#TF_Matchmaking_PartyPenalty"
-            "xpos"      "60"
-            "ypos"      "0"
-            "zpos"         "2"
-            "wide"      "275"
-            "tall"      "60"
-            "textAlignment"   "west"
-            "visible"   "1"
-            "enabled"   "1"
-            "wrap"      "1"
-            "fgcolor_override"   "250 114 45 255"
-         }
-      }
    }
 
    "PartyActiveGroupBox"
