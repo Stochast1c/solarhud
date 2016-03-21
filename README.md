@@ -11,6 +11,16 @@ This HUD is tailored for 6s players and surfers, though a few easy tweaks will m
 
 It is highly recommended that you clone the hud rather than download and extract the zip.  This hud recieves many small updates, often times in short bursts, that major update notifications generally won't happen unless a core element is changed. 
 
+##Updating
+
+This hud is currently in a transistion period from a standard configuration to the #base configuration, and as a result you must perform both update methods to update your hud.  
+
+First, if a new commit has been pushed, pull the update files (or redownload the hud and copy/paste).
+
+Second, run `extract_base_hudfiles.bat` to update the default hud files.  [See WietHUD's readme for more information.](https://github.com/Wiethoofd/WietHUD/blob/master/readme.md)
+
+If you are a linux (or rather a non-Windows user), the included .bat file and HLExtract will not run, as they are windows files.  You must manually extract the default hud files from `tf_misc_dir.vpk` to the directory named `default_hudfiles/` (located at the top of the hud directory).
+
 ##HUD Crosshairs
 
 This hud supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-knucklescrosses-release) which can be set in scripts/hudlayout.res.  Two crosshair controls are added for your convenience and can be found as the very first entries in scripts/hudlayout.res to be enabled/modified. As far as I know, subpixel alignment is not required on a 1920x1080 display, although your mileage may vary.  If you have no experience with hud crosshairs, see the above link and reference Step 3 in post #2.     
