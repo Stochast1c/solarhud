@@ -710,10 +710,12 @@
       }
    }
 
-   "CompetitiveBetaImage"     //would disable, but not until sure that hud doesn't crash on launch, placing in center of screen
+   "CompetitiveBetaImage"
    {
-      "xpos"         "c"
-      "ypos"         "c"
+      "xpos"         "229"
+      "ypos"         "58"
+      "wide"         "26"
+      "tall"         "26"
    }
 
    "ServerBrowserButton"
