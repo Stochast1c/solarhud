@@ -118,3 +118,16 @@ event RDNegativeScorePulse    //score a point in pd
    Animate ScoreShadow FgColor   "0 0 0 200"    Deaccel 0.0 0.05
    Animate ScoreShadow FgColor   "0 0 0 255"    Accel 0.1 0.2
 }
+
+////////////////////////////////////////////////////
+//ActiveTimerBG can't be animated for some reason, this is a backup plan
+//Can't animate in a border
+event ActiveTimerHighlight
+{
+   Animate TimePanelValue bgcolor   base3   Linear 0.0 0.1
+}
+
+event ActiveTimerDim
+{
+   Animate TimePanelValue bgcolor   blank  Linear 0.0 0.1
+}

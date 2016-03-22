@@ -1,94 +1,96 @@
+#base "../../default_hudfiles/resource/ui/hudobjectivekothtimepanel.res"
+
 "Resource/UI/HudObjectiveKothTimePanel.res"
 {
+   "HudKothTimeStatus"
+   {
+      if_comp
+      {
+         "zpos"   "0"      //if higher it is placed on top of winpanel, could give the winpanel a zpos of 99999, but pretty sure that this having a low zpos isn't a big deal
+      }
+   }
+
    //timer is positioned at c-160, r24 since active timer bg can't use c values  
    "BlueTimer"
    {
-      "ControlName"     "CTFHudTimeStatus"
-      "fieldName"       "BlueTimer"
-      "xpos"            "0"
-      "ypos"            "0"
-      "zpos"            "2"
       "wide"            "80"
       "tall"            "24"
-      "visible"         "1"
-      "enabled"         "1"
-      // not sure what anything does below 
-      "delta_item_x"       "22"
-      "delta_item_start_y" "50"
-      "delta_item_end_y"      "70"
-      "PositiveColor"         "0 255 0 255"
-      "NegativeColor"         "255 0 0 255"
-      "delta_lifetime"     "1.5"
       "delta_item_font"    "incon20"
+
+      if_comp
+      {
+         "xpos"         "0"
+         "delta_item_font"    "incon20"
+      }
       
       "TimePanelValue"
       {
-         "ControlName"     "CExLabel"
-         "fieldName"    "TimePanelValue"
          "font"         "incon20"
          "fgcolor"      "blue"
          "xpos"         "0"
          "ypos"         "0"
-         "zpos"         "3"
          "wide"         "60"  //moving off center by 20units
          "tall"         "24"
-         "visible"      "1"
-         "enabled"      "1"
          "textAlignment"      "east"
-         "labelText"    "0:00"
+         
+         if_comp
+         {
+            "font"         "incon20"
+            "fgcolor"      "blue"
+            "xpos"         "20"  //+20 since new wide is 20less and east aligned
+            "ypos"         "0"
+            "wide"         "40"  //just large enough to fit 0:00, so hudanimations bgcolor animation doesn't look silly
+            "tall"         "24"
+         }
       }  
    }
 
    "RedTimer"
    {
-      "ControlName"     "CTFHudTimeStatus"
-      "fieldName"       "RedTimer"
       "xpos"            "80"  
       "ypos"            "0"
-      "zpos"            "2"
       "wide"            "80"
       "tall"            "24"
-      "visible"         "1"
-      "enabled"         "1"
-      "delta_item_x"       "22"
-      "delta_item_start_y" "50"
-      "delta_item_end_y"      "70"
-      "PositiveColor"         "0 255 0 255"
-      "NegativeColor"         "255 0 0 255"
-      "delta_lifetime"     "1.5"
       "delta_item_font"    "incon20"
       
+      if_comp
+      {
+         "xpos"         "80"
+         "delta_item_font"    "incon20"
+      }
+
       "TimePanelValue"
       {
-         "ControlName"     "CExLabel"
-         "fieldName"    "TimePanelValue"
          "font"         "incon20"
          "fgcolor"      "red"
          "xpos"         "20"     //moving off center by 20units
          "ypos"         "0"
-         "zpos"         "3"
          "wide"         "60"
          "tall"         "24"
-         "visible"      "1"
-         "enabled"      "1"
          "textAlignment"      "west"
-         "labelText"    "0:00"
+         
+         if_comp
+         {
+            "font"         "incon20"
+            "fgcolor"      "red"
+            "xpos"         "20"
+            "ypos"         "0"
+            "wide"         "40"  
+            "tall"         "24"
+         }
       }  
    }
    
    "ActiveTimerBG"
    {
       "ControlName"     "EditablePanel"
-      "fieldName"       "ActiveTimerBG"
       "xpos"            "0"      //see hudlayout for active pos, currently 16,96
       "ypos"            "0"
       "zpos"            "1"
       "wide"            "48"
       "tall"            "24"
-      "visible"         "0"
-      "enabled"         "1"
       "paintbackground" "1"
-      "fillcolor"       "base3"
+      "bgcolor_override"   "base3"
       "border"          "base00border" 
    }
 }
