@@ -1602,6 +1602,30 @@ Scheme
             "additive"  "0"
          }
       }
+      "ScoreboardTeamCountNew"
+      {
+         "1"
+         {
+            "name"      "TF2 Secondary"
+            "tall"      "14"
+            "weight" "500"
+            "range"     "0x0000 0x007F"   // Basic Latin
+            "antialias" "1"
+            "additive"  "0"
+         }
+      }
+      "ScoreboardTeamNameNew"
+      {
+         "1"
+         {
+            "name"      "TF2 Secondary"
+            "tall"      "20"
+            "weight" "500"
+            "range"     "0x0000 0x007F"   // Basic Latin
+            "antialias" "1"
+            "additive"  "0"
+         }
+      }
       "ScoreboardTeamNameLarge"
       {
          "1"
@@ -1615,8 +1639,20 @@ Scheme
             "antialias" "1"
             "additive"  "0"
          }
-      }
 
+      }
+      "ScoreboardTeamScoreNew"
+      {
+         "1"
+         {
+            "name"      "TF2"
+            "tall"      "36"
+            "tall_hidef"   "48"
+            "weight" "500"
+            "additive"  "0"
+            "antialias" "1"
+         }
+      }
       "ScoreboardTeamScore"
       {
          "1"
@@ -1664,6 +1700,41 @@ Scheme
             "range"  "0x0000 0x00FF"
             "weight" "400"
             "yres"      "1200 10000"
+            "antialias" "1"
+         }
+      }
+
+      "MatchSummaryTeamScores"
+      {
+         "1"
+         {
+            "name"      "TF2"
+            "tall"      "36"
+            "weight" "500"
+            "range"     "0x0000 0x007F"   // Basic Latin
+            "antialias" "1"
+            "additive"  "0"
+         }
+      }
+      "MatchSummaryStatsAndMedals"
+      {
+         "1"
+         {
+            "name"      "TF2 Secondary"
+            "tall"      "14"
+            "weight" "400"
+            "additive"  "0"
+            "antialias" "1"
+         }
+      }
+      "CompMatchStartTeamNames"
+      {
+         "1"
+         {
+            "name"      "TF2 Secondary"
+            "tall"      "14"
+            "weight" "400"
+            "additive"  "0"
             "antialias" "1"
          }
       }
@@ -4356,6 +4427,29 @@ Scheme
             }
          }
       }
+      TFFatLineBorderBlueBGOpaque
+      {
+         "bordertype"         "scalable_image"
+         "backgroundtype"     "2"
+         
+         "image"              "../hud/color_panel_blu_opaque"
+         "src_corner_height"     "23"           // pixels inside the image
+         "src_corner_width"      "23"
+         "draw_corner_width"     "5"            // screen size of the corners ( and sides ), proportional
+         "draw_corner_height"    "5"   
+      }
+      TFFatLineBorderClearBG
+      {
+         "bordertype"         "scalable_image"
+         "backgroundtype"     "2"
+         
+         "image"              "../hud/color_panel_clear"
+         "src_corner_height"     "23"           // pixels inside the image
+         "src_corner_width"      "23"
+         "draw_corner_width"     "5"            // screen size of the corners ( and sides ), proportional
+         "draw_corner_height"    "5"   
+      }
+
 
       ToolTipBorder
       {
@@ -10451,6 +10545,43 @@ Scheme
       ReplayBrowser.ScrollBar.SliderButton.Border
       {
       }
+
+      QuestStatusBorder
+      {
+         "bordertype"         "scalable_image"
+         "backgroundtype"     "2"
+         
+         "image"              "replay/panel_scalable_transparent"
+         "src_corner_height"     "23"        // pixels inside the image
+         "src_corner_width"      "23"
+         "draw_corner_width"     "7"            // screen size of the corners ( and sides ), proportional
+         "draw_corner_height"    "7"   
+      }
+
+      RedWithThinBorder
+      {
+         "bordertype"         "scalable_image"
+         "backgroundtype"     "2"
+         
+         "image"              "../hud/panel_scalable_red"
+         "src_corner_height"     "23"        // pixels inside the image
+         "src_corner_width"      "23"
+         "draw_corner_width"     "7"            // screen size of the corners ( and sides ), proportional
+         "draw_corner_height"    "7"   
+      }
+
+      BlueWithThinBorder
+      {
+         "bordertype"         "scalable_image"
+         "backgroundtype"     "2"
+         
+         "image"              "../hud/panel_scalable_blue"
+         "src_corner_height"     "23"        // pixels inside the image
+         "src_corner_width"      "23"
+         "draw_corner_width"     "7"            // screen size of the corners ( and sides ), proportional
+         "draw_corner_height"    "7"   
+      }
+
    }
 
    //////////////////////// CUSTOM FONT FILES /////////////////////////////
