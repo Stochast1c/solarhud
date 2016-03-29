@@ -1,3 +1,8 @@
+#base "../themes/solarized_dark/colors.res"
+#base "../themes/solarized_dark/clientscheme.res"
+#base "fonts/inconsolata.res"
+#base "borders.res"
+#base "../default_hudfiles/resource/clientscheme.res"
 //
 // TRACKER SCHEME RESOURCE FILE
 //
