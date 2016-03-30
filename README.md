@@ -3,9 +3,6 @@ solarhud
 
 A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
-
-## This is the master branch, if you wish to use this hud, please navigate to your preferred colorscheme branch using the upper left dropdown box.
-
 [Teamfortress.tv Thread](http://www.teamfortress.tv/30843/solarhud)
 
 [Light Theme Screenshots](http://imgur.com/a/DlrJb)
@@ -38,10 +35,7 @@ The server buttons use a custom alias to store the server ip's that you want the
 
 ##How to Switch Themes
 
-You can easily switch your theme by changing the branch that you are using.  
-
-If you have made changes to the hud that aren't simply replicated then you can just grab the dark theme's \*scheme.res files from resource/ and change the map in scripts/chapterbackgrounds.txt: upward↔2fort and that **should** convert everything to your perferred scheme.
-
+Navigate to resource/ and open all of the \*scheme.res files.  At the top of each file there will be a \#base definition for the theme.  Replace the directory with your perferred theme.  Available themes can be found in the themes/ directory, but it should be fairly simple to add your own in.
 
 
 ##Requests, Bugs, Errors, etc.
