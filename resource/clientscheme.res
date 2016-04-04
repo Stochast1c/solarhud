@@ -2768,6 +2768,16 @@ Scheme
             "antialias" "1"
          }
       }
+      "incon12o"
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "12"
+            "antialias" "1"
+            "outline"   "1"
+         }
+      }
       "incon14"
       {
          "1"
