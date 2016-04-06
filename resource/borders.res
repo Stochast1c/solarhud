@@ -1292,6 +1292,7 @@ Scheme
 
       TFFatLineBorder      //dead spectator hud outline
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1352,6 +1353,7 @@ Scheme
       }
       TFFatLineBorderRedBG    //red spectator hud outline
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1412,6 +1414,7 @@ Scheme
       }
       TFFatLineBorderBlueBG      //blue spectator hud outline
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1473,6 +1476,7 @@ Scheme
 
       EconItemBorder    //class loadout slot - why is this not using quality color normal like the others
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1654,6 +1658,7 @@ Scheme
 
       LoadoutItemMouseOverBorder    //class loadout slot item mouseover
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1714,6 +1719,7 @@ Scheme
       }
       LoadoutItemPopupBorder     //popup panel, cannot set background color???
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1775,6 +1781,7 @@ Scheme
 
       BackpackItemGrayedOut      //items that can't be clicked on (crafting, equip, etc.)
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1837,6 +1844,7 @@ Scheme
       // Standard ------------------------------------------------------------------------------------------------
       BackpackItemBorder      //default selectable item
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1897,6 +1905,7 @@ Scheme
       }
       BackpackItemMouseOverBorder   //moused over
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -1957,6 +1966,7 @@ Scheme
       }
       BackpackItemSelectedBorder    //selected item
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2019,6 +2029,7 @@ Scheme
       // Unique ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Unique
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2079,6 +2090,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Unique
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2139,6 +2151,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Unique
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2199,6 +2212,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Unique
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2261,6 +2275,7 @@ Scheme
       // Rarity1 ------------------------------------------------------------------------------------------------
       BackpackItemBorder_1
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2321,6 +2336,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_1
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2381,6 +2397,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_1
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2441,6 +2458,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_1
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2503,6 +2521,7 @@ Scheme
       // Rarity2 ------------------------------------------------------------------------------------------------
       BackpackItemBorder_2
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2563,6 +2582,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_2
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2623,6 +2643,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_2
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2683,6 +2704,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_2
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2745,6 +2767,7 @@ Scheme
       // Rarity3 ------------------------------------------------------------------------------------------------
       BackpackItemBorder_3
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2805,6 +2828,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_3
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2865,6 +2889,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_3
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2925,6 +2950,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_3
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -2987,6 +3013,7 @@ Scheme
       // Rarity4 ------------------------------------------------------------------------------------------------
       BackpackItemBorder_4
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3047,6 +3074,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_4
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3107,6 +3135,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_4
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3167,6 +3196,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_4
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3230,6 +3260,7 @@ Scheme
       // Haunted ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Haunted
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3290,6 +3321,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Haunted
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3350,6 +3382,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Haunted
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3410,6 +3443,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Haunted
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3472,6 +3506,7 @@ Scheme
       // Collector's ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Collectors
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3532,6 +3567,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Collectors
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3592,6 +3628,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Collectors
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3652,6 +3689,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Collectors
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3715,6 +3753,7 @@ Scheme
       // Vintage ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Vintage
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3775,6 +3814,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Vintage
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3835,6 +3875,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Vintage
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3895,6 +3936,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Vintage
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -3957,6 +3999,7 @@ Scheme
       // Community ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Community
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4017,6 +4060,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Community
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4077,6 +4121,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Community
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4137,6 +4182,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Community
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4199,6 +4245,7 @@ Scheme
       // Developer ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Developer
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4259,6 +4306,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Developer
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4319,6 +4367,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Developer
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4379,6 +4428,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Developer
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4441,6 +4491,7 @@ Scheme
       // SelfMade ------------------------------------------------------------------------------------------------
       BackpackItemBorder_SelfMade
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4501,6 +4552,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_SelfMade
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4561,6 +4613,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_SelfMade
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4621,6 +4674,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_SelfMade
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4683,6 +4737,7 @@ Scheme
       // Customized ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Customized
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4743,6 +4798,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Customized
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4803,6 +4859,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Customized
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4863,6 +4920,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Customized
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4925,6 +4983,7 @@ Scheme
       // Strange ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Strange
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -4985,6 +5044,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Strange
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5045,6 +5105,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Strange
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5105,6 +5166,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Strange
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5167,6 +5229,7 @@ Scheme
       // Completed ------------------------------------------------------------------------------------------------
       BackpackItemBorder_Completed
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5227,6 +5290,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_Completed
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5287,6 +5351,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_Completed
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5347,6 +5412,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_Completed
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5409,6 +5475,7 @@ Scheme
       //*****************Gun Mettle Update Colors ***********************
       BackpackItemBorder_RarityCommon
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5469,6 +5536,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_RarityCommon
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5529,6 +5597,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_RarityCommon
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5589,6 +5658,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_RarityCommon
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5649,6 +5719,7 @@ Scheme
       }
       BackpackItemBorder_RarityUncommon
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5709,6 +5780,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_RarityUncommon
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5769,6 +5841,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_RarityUncommon
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5829,6 +5902,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_RarityUncommon
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5890,6 +5964,7 @@ Scheme
       //**************
       BackpackItemBorder_RarityRare
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -5950,6 +6025,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_RarityRare
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6010,6 +6086,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_RarityRare
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6070,6 +6147,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_RarityRare
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6131,6 +6209,7 @@ Scheme
       //******************
       BackpackItemBorder_RarityMythical
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6191,6 +6270,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_RarityMythical
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6251,6 +6331,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_RarityMythical
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6311,6 +6392,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_RarityMythical
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6372,6 +6454,7 @@ Scheme
       // ***************************************************
       BackpackItemBorder_RarityLegendary
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6432,6 +6515,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_RarityLegendary
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6492,6 +6576,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_RarityLegendary
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6552,6 +6637,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_RarityLegendary
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6613,6 +6699,7 @@ Scheme
       //*********************************************
       BackpackItemBorder_RarityAncient
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6673,6 +6760,7 @@ Scheme
       }
       BackpackItemMouseOverBorder_RarityAncient
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6733,6 +6821,7 @@ Scheme
       }
       BackpackItemGreyedOutBorder_RarityAncient
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6793,6 +6882,7 @@ Scheme
       }
       BackpackItemGreyedOutSelectedBorder_RarityAncient
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
@@ -6854,6 +6944,7 @@ Scheme
 
       NotificationDefault
       {
+         "bordertype"   ""
          "inset" "0 0 1 1"
          "backgroundtype"  "2"
          Left
