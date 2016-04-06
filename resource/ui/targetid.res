@@ -76,7 +76,7 @@
    {  
       "ControlName"     "CExLabel"
       "fieldName"    "TargetNameLabel"
-      "font"         "incon12"
+      "font"         "incon16"
       "xpos"         "48"
       "ypos"         "5"
       "zpos"         "1"

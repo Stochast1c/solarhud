@@ -127,7 +127,12 @@
       "enabled_minmode"    "0"
       "tall_minmode"       "0"
    }
-   
+  
+   CSpectatorTargetID
+   {
+      "ypos"      "r100"
+   }
+ 
    CSecondaryTargetID
    {
       "ypos"      "305"
