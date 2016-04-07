@@ -1,3 +1,5 @@
+#base "../../default_hudfiles/resource/ui/targetid.res"
+
 "Resource/UI/TargetID.res"
 {
    "TargetIDBG"
@@ -29,54 +31,22 @@
    }
    "TargetIDBG_Spec_Blue"
    {
-      "ControlName"     "ScalableImagePanel"
-      "fieldName"    "TargetIDBG_Spec_Blue"
-      "xpos"         "99999"
-      "ypos"         "99999"
-      "zpos"         "-1"
-      "wide"         "252"
-      "tall"         "30"
-      "autoResize"      "0"
-      "pinCorner"    "0"
-      "visible"      "0"
-      "enabled"      "0"
-      "image"        "../hud/color_panel_blu"
-      "image_lodef"  "../hud/color_panel_blu"
-      
-      "src_corner_height"     "23"           // pixels inside the image
-      "src_corner_width"      "23"
-         
-      "draw_corner_width"     "5"            // screen size of the corners ( and sides ), proportional
-      "draw_corner_height"    "5"
+      "ControlName"     "EditablePanel"
+      "bgcolor_override"   "base3"
+      "border"    "TFFatLineBorderBlueBG"
    }
    "TargetIDBG_Spec_Red"
    {
-      "ControlName"     "ScalableImagePanel"
-      "fieldName"    "TargetIDBG_Spec_Red"
-      "xpos"         "99999"
-      "ypos"         "99999"
-      "zpos"         "-1"
-      "wide"         "252"
-      "tall"         "30"
-      "autoResize"      "0"
-      "pinCorner"    "0"
-      "visible"      "0"
-      "enabled"      "0"
-      "image"        "../hud/color_panel_red"
-      "image_lodef"  "../hud/color_panel_red"
-      
-      "src_corner_height"     "23"           // pixels inside the image
-      "src_corner_width"      "23"
-         
-      "draw_corner_width"     "5"            // screen size of the corners ( and sides ), proportional
-      "draw_corner_height"    "5"
+      "ControlName"     "EditablePanel"
+      "bgcolor_override"   "base3"
+      "border"    "TFFatLineBorderRedBG"
    }
    
    "TargetNameLabel"
    {  
       "ControlName"     "CExLabel"
       "fieldName"    "TargetNameLabel"
-      "font"         "incon12"
+      "font"         "incon16"
       "xpos"         "48"
       "ypos"         "5"
       "zpos"         "1"
