@@ -1,3 +1,6 @@
+//customization
+//#base "../custom/scripts/hudlayout_cast.res"
+
 #base "../default_hudfiles/hudlayout.res"
 
 "Resource/HudLayout.res"
@@ -130,7 +133,6 @@
   
    CSpectatorTargetID
    {
-      "ypos"      "r100"
    }
  
    CSecondaryTargetID
