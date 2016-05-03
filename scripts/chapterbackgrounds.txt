@@ -1,8 +1,2 @@
-"chapters"
-{
-   1  "background_upward"
-}
-"BackgroundMaps"
-{
-   1  "background_upward"
-}
+#base "../themes/solarized_dark/chapterbackgrounds.txt"
+//#base "../themes/solarized_light/chapterbackgrounds.txt"
