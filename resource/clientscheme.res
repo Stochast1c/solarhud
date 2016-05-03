@@ -1,5 +1,7 @@
-#base "../themes/solarized_light/colors.res"
-#base "../themes/solarized_light/basesettings.res"
+#base "../themes/solarized_dark.res"
+//#base "../themes/solarized_light.res"
+
+
 #base "fonts/inconsolata.res"
 #base "borders.res"
 #base "../default_hudfiles/resource/clientscheme.res"
