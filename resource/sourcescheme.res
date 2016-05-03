@@ -1,5 +1,10 @@
-#base "SourceSchemeBase.res"
+#base "SourceSchemeBase.res" //don't touch this
 
+#base "../themes/solarized_dark/sourcescheme.res"
+//#base "../themes/solarized_light/sourcescheme.res"
+
+
+#base "../default_hudfiles/resource/sourcescheme.res"
 Scheme
 {
     //////////////////////// COLORS ///////////////////////////
@@ -7,74 +12,8 @@ Scheme
    // this is a list of all the colors used by the scheme
    Colors
    {
-      //custom colors
-      //solarized
-      "base03"       "0    43  54 255"
-      "base02"       "7    54  66 255"
-      "base01"       "88  110 117 255"
-      "base00"       "101 123 131 255"
-      "base0"        "131 148 150 255"
-      "base1"        "147 161 161 255"
-      "base2"        "238 232 213 255"
-      "base3"        "253 246 227 255"
-      "yellow"       "181 137   0 255" 
-      "orange"       "203  75  22 255"    //also controls the highlight on options, may consider changing this color
-      "red"          "220  50  47 255"   
-      "magenta"      "211  54 130 255"
-      "violet"       "108 113 196 255" 
-      "blue"         "38  139 210 255" 
-      "cyan"         "42  161 152 255" 
-      "green"        "133 153   0 255"  
-     
-      "base03forced"       "0    43  54 255"
-      "base02forced"       "7    54  66 255"
-      "base01forced"       "88  110 117 255"
-      "base00forced"       "101 123 131 255"
-      "base0forced"        "131 148 150 255"
-      "base1forced"        "147 161 161 255"
-      "base2forced"        "238 232 213 255"
-      "base3forced"        "253 246 227 255"
-
-      "blank"           "0 0 0 0"
-
-      //base colors, these are all blue, any undefined text options should appear
-      //to be very obvious
-      "TFDarkBrown"               "0 0 255 255"
-      "TFDarkBrownTransparent"    "0 0 255 255"
-      "TFTanBright"               "0 0 255 255"
-      "TFTanLight"                "0 0 255 255"
-      "TFTanMedium"               "0 0 255 255"
-
-      "TFTanLightBright"          "0 0 255 255"
-      "TFTanLightDark"            "0 0 255 255"
-      "TFOrangeBright"            "0 0 255 255"
-      "TFTextBright"              "0 0 255 255" 
-      "TFTextLight"               "0 0 255 255"
-      "TFTextMedium"              "0 0 255 255"
-      "TFTextMediumDark"          "0 0 255 255"
-      "TFTextBlack"               "0 0 255 255"
-      "TFTextDull"                "0 0 255 255"
-      "TFMediumBrown"              "0 0 255 255"
-
-      //server browser quick play show servers
-      "QuickListBGDeselected"             "253 246 227 255"    //base3
-      "QuickListBGSelected"               "  0  43  54 255"    //base03
-                                                               //making this not deselected causes the control to look terrible
-                                                               //font on control have their own bg that doesn't get overridden
-                                                               //by setting label.bgcolor to blank this no longer looks terrible
-      
-      "White"     "101 123 131 255"    //tab title text, base00
-      "OffWhite"  "147 161 161 255"    //tab background title text, base1
-
-    
-       // background colors, comments by valve
-      "ControlBG"       "255 0 255 255"      // background color of controls
-      "ControlDarkBG"      "0 255 255 255"      // darker background color; used for background of scrollbars
-      "WindowBG"        "0 0 0 255"    // background color of text edit panes (chat, text entries, etc.)
-      "SelectionBG"     "0 0 0 255" // background color of any selected text or menu item
-      "SelectionBG2"    "0 0 0 255"    // selection background in window w/o focus
-      "ListBG"       "0 0 0 255" // background of server browser, buddy list, etc.
    }
+
    BaseSettings
    {
       //scheme-specific colors, any colors that appear to do nothing 
@@ -211,14 +150,6 @@ Scheme
       RichText.SelectedBgColor      "base02forced" 
    }
    
-   //these fonts work to change console and server browser text
-   //however unsure 
-      //which font controls server info window
-      //which font controls console input
-      //which font controls achievement group text
-      //which font controls server browser tabs
-      //which font controls server browser filter text
-  
    Borders
    {
       base00Border
@@ -496,6 +427,13 @@ Scheme
       }
    } 
 
+   //these fonts work to change console and server browser text
+   //however unsure 
+      //which font controls server info window
+      //which font controls console input
+      //which font controls achievement group text
+      //which font controls server browser tabs
+      //which font controls server browser filter text
    Fonts
    {
       "DebugFixed"
@@ -527,6 +465,7 @@ Scheme
             "tall"      "10"
             "weight" "0"
             "outline"   "1"
+            "antialias" "1"
          }
       }
       "Default"
@@ -536,6 +475,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "16"
             "weight" "500"
+            "antialias" "1"
          }
       }
       "DefaultBold"
@@ -545,6 +485,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "16"
             "weight" "1000"
+            "antialias" "1"
          }
       }
       "DefaultUnderline"
@@ -555,6 +496,7 @@ Scheme
             "tall"      "16"
             "weight" "500"
             "underline" "1"
+            "antialias" "1"
          }
       }
       "DefaultSmall"    //controls console tab completion text, server browser listings
@@ -564,6 +506,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "16"
             "weight" "0"
+            "antialias" "1"
          }
       }
       "DefaultSmallDropShadow"
@@ -574,6 +517,7 @@ Scheme
             "tall"      "13"
             "weight" "0"
             "dropshadow" "1"
+            "antialias" "1"
          }
       }
       "DefaultVerySmall"      //unsure what this does
@@ -583,6 +527,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "12"
             "weight" "0"
+            "antialias" "1"
          }
       }
 
@@ -593,6 +538,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "18"
             "weight" "0"
+            "antialias" "1"
          }
       }
       "UiBold"    //unsure what this does
@@ -602,6 +548,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "12"
             "weight" "1000"
+            "antialias" "1"
          }
       }
       "MenuLarge"
@@ -622,6 +569,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "16"
             "weight" "500"
+            "antialias" "1"
          }
       }
 
@@ -633,6 +581,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "10"
             "weight" "0"
+            "antialias" "1"
          }
       }
 
@@ -644,6 +593,7 @@ Scheme
             "tall"      "10"
             "weight" "0"
             "dropshadow" "1"
+            "antialias" "1"
          }
       }
 
@@ -654,6 +604,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "16"
             "weight" "500"
+            "antialias" "1"
          }
       }
       "CloseCaption_Italic"
@@ -664,6 +615,7 @@ Scheme
             "tall"      "16"
             "weight" "500"
             "italic" "1"
+            "antialias" "1"
          }
       }
       "CloseCaption_Bold"
@@ -673,6 +625,7 @@ Scheme
             "name"      "Inconsolata"
             "tall"      "16"
             "weight" "900"
+            "antialias" "1"
          }
       }
       "CloseCaption_BoldItalic"
@@ -683,6 +636,7 @@ Scheme
             "tall"      "16"
             "weight" "900"
             "italic" "1"
+            "antialias" "1"
          }
       }
 
@@ -1002,7 +956,6 @@ Scheme
             "antialias" "1"
          }
       }
-
    }
 
    CustomFontFiles
