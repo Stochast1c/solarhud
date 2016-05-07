@@ -11,6 +11,7 @@ IF EXIST "HLExtract\HLExtract.exe" (
 	REM Extracting resource\ui folder and clientscheme, mainmenu buttons
 	HLExtract\HLExtract.exe -p "../../tf2_misc_dir.vpk" -d "%default_hudfile_folder%/resource" -e "root\resource\ui" -m -v -s
 	HLExtract\HLExtract.exe -p "../../tf2_misc_dir.vpk" -d "%default_hudfile_folder%/resource" -e "root\resource\clientscheme.res" -m -v -s
+	HLExtract\HLExtract.exe -p "../../tf2_misc_dir.vpk" -d "%default_hudfile_folder%/resource" -e "root\resource\sourcescheme.res" -m -v -s
 	HLExtract\HLExtract.exe -p "../../tf2_misc_dir.vpk" -d "%default_hudfile_folder%/resource" -e "root\resource\gamemenu.res" -m -v -s
 	HLExtract\HLExtract.exe -p "../../tf2_misc_dir.vpk" -d "%default_hudfile_folder%" -e "root\scripts\HudLayout.res" -m -v -s
 	HLExtract\HLExtract.exe -p "../../tf2_misc_dir.vpk" -d "%default_hudfile_folder%" -e "root\scripts\HudAnimations_tf.txt" -m -v -s

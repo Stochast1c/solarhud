@@ -1,3 +1,6 @@
+//customization
+//#base "../custom/scripts/hudlayout_cast.res"
+
 #base "../default_hudfiles/hudlayout.res"
 
 "Resource/HudLayout.res"
@@ -127,7 +130,11 @@
       "enabled_minmode"    "0"
       "tall_minmode"       "0"
    }
-   
+  
+   CSpectatorTargetID
+   {
+   }
+ 
    CSecondaryTargetID
    {
       "ypos"      "305"

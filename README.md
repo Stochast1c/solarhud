@@ -1,8 +1,14 @@
 solarhud
 ==========
 
+<<<<<<< HEAD
 ##STOHUD BRANCH
 This is my custom branch of the hud.  It has named the custom servers to surf servers and enabled my crosshairs that I use.  Currently, that is all the changes that have been done. but that does not mean more changes will not occur in the future.
+=======
+A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
+
+[Teamfortress.tv Thread](http://www.teamfortress.tv/30843/solarhud)
+>>>>>>> master
 
 A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is heavily based on [Ell's Hud](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
@@ -34,7 +40,11 @@ The server buttons use a custom alias to store the server ip's that you want the
 
 ##How to Switch Themes
 
+<<<<<<< HEAD
 To switch between light and dark colorschemes (the default is dark), swap the \*scheme.res files with the opposite color theme's branch.   
+=======
+Navigate to resource/ and open all of the \*scheme.res files.  At the top of each file there will be a \#base definition for the theme.  Replace the directory with your perferred theme.  In addition, perform the same action to chapterbackgrounds.txt in scripts/.  Available themes can be found in the themes/ directory, but it should be fairly simple to add your own in.
+>>>>>>> master
 
 Then change the map in scripts/chapterbackgrounds.txt: upward↔2fort.
 

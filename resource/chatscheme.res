@@ -1,3 +1,11 @@
+#base "../themes/solarized_dark/chatscheme.res"
+//#base "../themes/solarized_light/chatscheme.res"
+
+
+
+
+
+
 ///////////////////////////////////////////////////////////
 // Tracker scheme resource file
 //
@@ -15,6 +23,7 @@ Scheme
    // this is a list of all the colors used by the scheme
    Colors
    {
+<<<<<<< HEAD
       //solarized
       "base3"       "0    43  54 255"
       "base2"       "7    54  66 255"
@@ -42,6 +51,8 @@ Scheme
       "Black"           "0 0 0 255"
 
       "Blank"           "0 0 0 0"
+=======
+>>>>>>> master
    }
 
    ///////////////////// BASE SETTINGS ////////////////////////
