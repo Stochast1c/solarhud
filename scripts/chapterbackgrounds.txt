@@ -1,13 +1,2 @@
-<<<<<<< HEAD
-"chapters"
-{
-   1  "background_2fort"
-}
-"BackgroundMaps"
-{
-   1  "background_2fort"
-}
-=======
 #base "../themes/solarized_dark/chapterbackgrounds.txt"
 //#base "../themes/solarized_light/chapterbackgrounds.txt"
->>>>>>> master
