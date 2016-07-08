@@ -6,25 +6,16 @@
    {
       "subimage"     ""
    }
-   "PlayPVEButton"
-   {
-      "label" "MvM" 
-      "subimage"  ""
-   }
-   "PlayCompetitiveButton"
-   {
-      "label" "MatchMaking" 
-      "subimage"     ""
-   }
-   "ServerBrowserButton"
-   {
-      "subimage"     ""
-   } 
-   "ChangeServerButton"
+
+   "FindAGameButton"
    {
       "subimage"     ""
    }
-   
+   "FindAGameButtonHalfWidth"
+   {
+      "subimage"     ""
+   }
+
    // These buttons get positioned by the MainMenuOverride.res 
    "GeneralStoreButton"
    {

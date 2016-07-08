@@ -482,108 +482,122 @@
       "enabled"      "0"
    } 
 
-   "GeneralStoreButton"       //S in LogoLabel
+
+   "ItemsContainer"
    {
-      "xpos"         "55"
-      "ypos"         "3"
-      "zpos"         "3"
-      "wide"         "32"
-      "tall"         "64"
-
-      "SubButton"
-      {
-         "wide"         "32"
-         "tall"         "64"
-         "textinsetx"   "0"
-         "font"         "incon64"
-         "textAlignment"   "center"
-
-         "border_default"  "noborder"
-         "border_armed"    "noborder"
-
-         "paintbackground" "1"      //let's you change button bg
-         "defaultFgColor_override"     "yellow"
-         "defaultBgColor_override"     "blank"
-         "armedFgColor_override"       "yellow"
-         "armedBgColor_override"       "blank"
-         "depressedFgColor_override"   "yellow"
-         "depressedBgColor_override"   "blank"
-
-         "SubImage"
-         {
-            "tall"         "0"
-            "visible"      "0"
-            "enabled"      "0"
-         } 
-      }
-
-      if_competitive
-      {
-         "ypos"            "3"
-      }
-   }
-
-   "StoreHasNewItemsImage"    //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   }
-
-   "CharacterSetupButton"     //Items
-   {
-      "xpos"         "55"
-      "ypos"         "240"
-      "wide"         "256"
-      "tall"         "16"
+      "xpos"         "0"
+      "ypos"         "0"
+      "wide"         "f0"
+      "tall"         "f0"
       
-      if_competitive
+      "StoreBGPanel"
       {
-         "ypos"      "240"
+         "xpos"         "0"
+         "ypos"         "0"
+         "wide"         "0"
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
+         "border"    "noborder"
       }
 
-      "SubButton"
+      "CustomizeLabel"           //disabled
       {
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
+      }
+
+      "CharacterSetupButton"     //Items
+      {
+         "xpos"         "55"
+         "ypos"         "240"
          "wide"         "256"
          "tall"         "16"
-         "textinsetx"   "0"
-         "font"         "incon16"
-         "textAlignment"   "center"
          
-         "border_default"  "base00border"
-         "border_armed"    "base01border"
-   
-         "paintbackground" "1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
-         "armedBgColor_override"       "base2"
-         "depressedFgColor_override"   "base01"
-         "depressedBgColor_override"   "base2"
-   
-         "SubImage"
+         if_competitive
          {
-            "tall"         "0"
-            "visible"      "0"
-            "enabled"      "0"
-         } 
-         
+            "ypos"      "240"
+         }
+
+         "SubButton"
+         {
+            "wide"         "256"
+            "tall"         "16"
+            "textinsetx"   "0"
+            "font"         "incon16"
+            "textAlignment"   "center"
+            
+            "border_default"  "base00border"
+            "border_armed"    "base01border"
+      
+            "paintbackground" "1"      //let's you change button bg
+            "defaultFgColor_override"     "base00"
+            "defaultBgColor_override"     "base3"
+            "armedFgColor_override"       "base01"
+            "armedBgColor_override"       "base2"
+            "depressedFgColor_override"   "base01"
+            "depressedBgColor_override"   "base2"
+      
+            "SubImage"
+            {
+               "tall"         "0"
+               "visible"      "0"
+               "enabled"      "0"
+            } 
+            
+         }
       }
-   }
 
-   "StoreBGPanel"             //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   }
+      "StoreHasNewItemsImage"    //disabled
+      {
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
+      }
 
-   "CustomizeLabel"           //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   }
+      "GeneralStoreButton"       //S in LogoLabel
+      {
+         "xpos"         "55"
+         "ypos"         "3"
+         "zpos"         "100"
+         "wide"         "32"
+         "tall"         "64"
+
+         "SubButton"
+         {
+            "wide"         "32"
+            "tall"         "64"
+            "textinsetx"   "0"
+            "font"         "incon64"
+            "textAlignment"   "center"
+
+            "border_default"  "noborder"
+            "border_armed"    "noborder"
+
+            "paintbackground" "1"      //let's you change button bg
+            "defaultFgColor_override"     "yellow"
+            "defaultBgColor_override"     "blank"
+            "armedFgColor_override"       "yellow"
+            "armedBgColor_override"       "blank"
+            "depressedFgColor_override"   "yellow"
+            "depressedBgColor_override"   "blank"
+
+            "SubImage"
+            {
+               "tall"         "0"
+               "visible"      "0"
+               "enabled"      "0"
+            } 
+         }
+
+         if_competitive
+         {
+            "ypos"            "3"
+         }
+      }
+   }     
+
 
    "CreateBGPanel"            //disabled
    {
@@ -627,6 +641,86 @@
       "enabled"      "0"
    }
 
+   "FindAGameButton"
+   {
+      "xpos"         "55"
+      "ypos"         "84"
+      "wide"         "256"
+      "tall"         "26"
+
+      "SubButton"
+      {
+         "wide"         "256"
+         "textinsetx"   "0"
+         "font"         "incon24"
+         "textAlignment"   "center"
+         
+         "border_default"  "base00border"
+         "border_armed"    "base01border"
+   
+         "paintbackground" "1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
+         
+         "SubImage"
+         {
+            "tall"      "0"
+            "enabled"   "0"
+            "visible"   "0"
+         }
+      }
+   }
+
+   "FindAGameButtonHalfWidth"
+   {
+      "xpos"         "55"
+      "ypos"         "84"
+      "wide"         "128"
+      "tall"         "26"
+
+      "SubButton"
+      {
+         "wide"         "128"
+         "textinsetx"   "0"
+         "font"         "incon12"
+         "textAlignment"   "center"
+         
+         "border_default"  "base00border"
+         "border_armed"    "base01border"
+   
+         "paintbackground" "1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
+         
+         "SubImage"
+         {
+            "tall"      "0"
+            "enabled"   "0"
+            "visible"   "0"
+         }
+      }
+   }
+
+   "PlayListContainer"
+   {
+      "xpos"         "312"
+      "ypos"         "95"
+
+      "PlaylistBGPanel"
+      {
+         "tall"         "260"
+         "border"    "base00Border"
+      }
+   }
+   
    "ResumeGameButton"      //disabled, just press esc
    {
       "tall"         "0"
