@@ -78,6 +78,20 @@
       "label"     "Toggle Minmode"
       "command"      "engine toggle cl_hud_minmode" 
    }
+
+   "ServerBrowserButton"
+   {
+      "label"        "#MMenu_Servers"
+      "command"      "OpenServerBrowser"
+      "OnlyAtMenu"   "1"
+   }
+   "ChangeServerButton"
+   {
+      "label"        "#MMenu_ChangeServer"
+      "command"      "OpenServerBrowser"
+      "OnlyInGame"   "1"
+   }
+
    "customserver1"
    {
       "label"     "EliteSurf"
