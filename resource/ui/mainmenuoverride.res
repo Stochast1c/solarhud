@@ -47,6 +47,7 @@
          "depressedBgColor_override"   "base3"
       }
    }
+
    "BackgroundInGame"
    {
       "ControlName"  "EditablePanel"
@@ -245,11 +246,6 @@
       "tall"         "0"
       "visible"      "0"
       "enabled"      "0"
-
-      if_competitive
-      {
-         "tall"      "0"
-      }
    }  
 
    "PlayLabel"          //disabled
@@ -287,18 +283,6 @@
          "fgcolor_override"   "yellow"
       }
    }  
-
-   "CreateServerButton" //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-      
-      if_competitive
-      {
-         "tall"      "0"
-      }
-   }
 
    "Notifications_ShowButtonPanel"
    {
@@ -352,6 +336,50 @@
       }
    }
 
+   "WatchStreamButton"
+   {
+      "xpos"         "333"    
+      "ypos"         "74"     //centered between server and mm button
+      "wide"         "20"
+      "tall"         "20"
+      
+      "SubButton"
+      {
+         "textinsetx"   "0"
+         "labelText"    "T"
+         "font"         "incon20"
+         "textAlignment"   "center"
+            
+         "paintborder"     "1"
+         "border_default"  "base00border"
+         "border_armed"    "base01border"
+
+         "paintbackground" "1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "violet"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "violet"
+         "depressedBgColor_override"   "base2"
+
+         "SubImage"
+         {
+            "wide"         "0"
+            "tall"         "0"
+            "visible"      "0"
+            "enabled"      "0"
+            "image"        ""
+         }     
+      }
+   }
+
+   "StreamListPanel"
+   {
+      "xpos"         "333"
+      "ypos"         "95"
+      "zpos"         "10"
+   }
+
    "QuestLogButton"
    {
       "xpos"         "312"    //Next (+1px) to Menu Buttons
@@ -403,13 +431,6 @@
       "enabled"      "0"
    } 
 
-   "ShowWarButton"            //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   } 
-
    "Notifications_Panel"
    {
       "xpos"         "55"
@@ -453,21 +474,14 @@
          "fgcolor_override"   "cyan"
       }
    } 
+
+   "VRBGPanel"                //disabled
+   {
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+   }
  
-   "TrainingButton"           //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   } 
-
-   "SteamWorkshopButton"      //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   } 
-
    "VRModeButton"             //disabled
    {
       "tall"         "0"
@@ -475,13 +489,34 @@
       "enabled"      "0"
    } 
 
-   "ReplayBrowserButton"      //disabled
+   "PlayListContainer"
    {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   } 
+      "xpos"         "312"
+      "ypos"         "95"
+      "zpos"         "100"
 
+      "PlaylistBGPanel"
+      {
+         "tall"         "260"
+         "border"    "base00Border"
+
+         "PlayListContainer"
+         {
+            "ServerBrowserEntry"    //hide, exists as a standalone button
+            {
+               "tall"         "0"
+               "visible"      "0"
+               "enabled"      "0"
+            }
+            "TrainingEntry"         //hide, if you are using this hud you don't need training
+            {
+               "tall"         "0"
+               "visible"      "0"
+               "enabled"      "0"
+            }
+         }
+      }
+   }
 
    "ItemsContainer"
    {
@@ -489,6 +524,7 @@
       "ypos"         "0"
       "wide"         "f0"
       "tall"         "f0"
+      "zpos"         "0"      //Required to have Store Button ontop of logolabel
       
       "StoreBGPanel"
       {
@@ -514,11 +550,6 @@
          "ypos"         "240"
          "wide"         "256"
          "tall"         "16"
-         
-         if_competitive
-         {
-            "ypos"      "240"
-         }
 
          "SubButton"
          {
@@ -545,7 +576,6 @@
                "visible"      "0"
                "enabled"      "0"
             } 
-            
          }
       }
 
@@ -590,30 +620,10 @@
                "enabled"      "0"
             } 
          }
-
-         if_competitive
-         {
-            "ypos"            "3"
-         }
       }
    }     
 
-
-   "CreateBGPanel"            //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   }
-
-   "CreateLabel"              //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   }
-   
-   "VRBGPanel"                //disabled
+   "EventPromo"   //In Game ads, disabled because annoying
    {
       "tall"         "0"
       "visible"      "0"
@@ -627,26 +637,18 @@
       "enabled"      "0"
    }
 
-   "FreeTrialPanel"           //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   }
-
-   "QuickPlayButton"          //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   }
-
    "FindAGameButton"
    {
       "xpos"         "55"
-      "ypos"         "84"
+      "ypos"         "58"
       "wide"         "256"
       "tall"         "26"
+
+      //remove highlight on initial startup of game
+      "navUp"        ""
+      "navDown"      ""
+      "navRight"     ""
+      "navToRelay"   ""
 
       "SubButton"
       {
@@ -677,211 +679,46 @@
 
    "FindAGameButtonHalfWidth"
    {
-      "xpos"         "55"
-      "ypos"         "84"
-      "wide"         "128"
-      "tall"         "26"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+      //"xpos"         "55"
+      //"ypos"         "58"
+      //"wide"         "256"
+      //"tall"         "26"
 
-      "SubButton"
-      {
-         "wide"         "128"
-         "textinsetx"   "0"
-         "font"         "incon12"
-         "textAlignment"   "center"
-         
-         "border_default"  "base00border"
-         "border_armed"    "base01border"
+      //"SubButton"
+      //{
+      //   "wide"         "256"
+      //   "textinsetx"   "0"
+      //   "font"         "incon24"
+      //   "textAlignment"   "west"
+      //   
+      //   "border_default"  "base00border"
+      //   "border_armed"    "base01border"
    
-         "paintbackground" "1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
-         "armedBgColor_override"       "base2"
-         "depressedFgColor_override"   "base01"
-         "depressedBgColor_override"   "base2"
-         
-         "SubImage"
-         {
-            "tall"      "0"
-            "enabled"   "0"
-            "visible"   "0"
-         }
-      }
+      //   "paintbackground" "1"      //let's you change button bg
+      //   "defaultFgColor_override"     "base00"
+      //   "defaultBgColor_override"     "base3"
+      //   "armedFgColor_override"       "base01"
+      //   "armedBgColor_override"       "base2"
+      //   "depressedFgColor_override"   "base01"
+      //   "depressedBgColor_override"   "base2"
+      //   
+      //   "SubImage"
+      //   {
+      //      "tall"      "0"
+      //      "enabled"   "0"
+      //      "visible"   "0"
+      //   }
+      //}
    }
 
-   "PlayListContainer"
-   {
-      "xpos"         "312"
-      "ypos"         "95"
-
-      "PlaylistBGPanel"
-      {
-         "tall"         "260"
-         "border"    "base00Border"
-      }
-   }
-   
    "ResumeGameButton"      //disabled, just press esc
    {
       "tall"         "0"
       "visible"      "0"
       "enabled"      "0"
-   }
-
-   "QuickplayChangeButton"    //disabled
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
-   }
-
-   "PlayPVEButton"      //MvM
-   {
-      "xpos"         "255"
-      "ypos"         "58"
-      "wide"         "56"
-      "tall"         "26"
-
-      "SubButton"
-      {
-         "wide"         "56"
-         "textinsetx"   "0"
-         "font"         "incon24"
-         "textAlignment"   "center"
-         
-         "border_default"  "base00border"
-         "border_armed"    "base01border"
-   
-         "paintbackground" "1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
-         "armedBgColor_override"       "base2"
-         "depressedFgColor_override"   "base01"
-         "depressedBgColor_override"   "base2"
-         
-         "SubImage"
-         {
-            "tall"      "0"
-            "visible"   "0"
-            "enabled"   "0"
-         }
-      }
-   }
-
-   "PlayCompetitiveButton"
-   {
-      "xpos"         "55"
-      "ypos"         "58"
-      "wide"         "200"
-      "tall"         "26"
-
-      "SubButton"
-      {
-         "wide"         "200"
-         "tall"         "26"
-         "textinsetx"   "0"
-         "font"         "incon24"
-         "textAlignment"   "center"
-      
-         "border_default"  "base00border"
-         "border_armed"    "base01border"
-   
-         "paintbackground" "1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
-         "armedBgColor_override"       "base2"
-         "depressedFgColor_override"   "base01"
-         "depressedBgColor_override"   "base2"  
-
-         "SubImage"
-         {
-            "tall"         "0"
-            "visible"      "0"
-            "enabled"      "0"
-         }
-      }
-   }
-
-   "CompetitiveBetaImage"
-   {
-      "xpos"         "229"
-      "ypos"         "58"
-      "wide"         "26"
-      "tall"         "26"
-   }
-
-   "ServerBrowserButton"
-   {
-      "xpos"         "55"
-      "ypos"         "84"
-      "wide"         "256"
-      "tall"         "26"
-
-      "SubButton"
-      {
-         "wide"         "256"
-         "textinsetx"   "0"
-         "font"         "incon24"
-         "textAlignment"   "center"
-         
-         "border_default"  "base00border"
-         "border_armed"    "base01border"
-   
-         "paintbackground" "1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
-         "armedBgColor_override"       "base2"
-         "depressedFgColor_override"   "base01"
-         "depressedBgColor_override"   "base2"
-         
-         "SubImage"
-         {
-            "tall"      "0"
-            "enabled"   "0"
-            "visible"   "0"
-         }
-      }
-  
-      if_competitive
-      {
-         "ypos"      "84"
-      } 
-   }
-
-   "ChangeServerButton"
-   {
-      "xpos"         "55"
-      "ypos"         "84"
-      "wide"         "256"
-      "tall"         "26"
-
-      "SubButton"
-      {
-         "wide"         "256"
-         "textinsetx"   "0"
-         "font"         "incon24"
-         
-         "border_default"  "base00border"
-         "border_armed"    "base01border"
-   
-         "paintbackground" "1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
-         "armedBgColor_override"       "base2"
-         "depressedFgColor_override"   "base01"
-         "depressedBgColor_override"   "base2"
-         
-         "SubImage"
-         {
-            "tall"      "0"
-            "enabled"   "0"
-            "visible"   "0"
-         }
-      }
    }
 
    "ReportPlayerButton"
@@ -1046,14 +883,28 @@
       "visible"      "0"
       "enabled"      "0"
    }
-   
+
    "CoachPlayersButton"       //disabled
    {
       "tall"         "0"
       "visible"      "0"
       "enabled"      "0"
    }
-   
+
+   "WorkshopButton"          //disabled
+   {
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+   }  
+
+   "ReplayButton"           //disabled
+   {
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+   }
+
    "ReportBugButton"          //disabled
    {
       "tall"         "0"
@@ -1061,18 +912,18 @@
       "enabled"      "0"
    }
 
-   "TF2SettingsButton"     //adv options
+   "SettingsButton"        //normal options
    {
-      "xpos"         "183"
+      "xpos"         "55"
       "ypos"         "220"
       "wide"         "128"
       "tall"         "20"
 
-      "labelText"    "#MMenu_AdvOptions"
+      "labelText"    "#GameUI_GameMenu_Options"
       "font"         "incon20"
       "textAlignment"   "center"
       "textinsetx"   "0"
-
+      
       "border_default"  "base00border"
       "border_armed"    "base01border"
 
@@ -1092,18 +943,18 @@
       }
    }
 
-   "SettingsButton"        //normal options
+   "TF2SettingsButton"     //adv options
    {
-      "xpos"         "55"
+      "xpos"         "183"
       "ypos"         "220"
       "wide"         "128"
       "tall"         "20"
 
-      "labelText"    "#GameUI_GameMenu_Options"
+      "labelText"    "#MMenu_AdvOptions"
       "font"         "incon20"
       "textAlignment"   "center"
       "textinsetx"   "0"
-      
+
       "border_default"  "base00border"
       "border_armed"    "base01border"
 
@@ -1166,6 +1017,13 @@
          "depressedFgColor_override"   "red"
          "depressedBgColor_override"   "base2"
       }
+
+      "SubImage"  //Required - mym update changes this button structure (old format works just need to have this subsection) 
+      {
+         "tall"      "0"
+         "visible"   "0"
+         "enabled"   "0"
+      }
    }
 
    "DisconnectButton"      //buttons defined in gamemenu.res need to have this format to keep text
@@ -1211,16 +1069,96 @@
          "depressedFgColor_override"   "red"
          "depressedBgColor_override"   "base2"
       }
-   }
 
-   "EventPromo"   //In Game ads, disabled because annoying
-   {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
+      "SubImage"     //Required - mym update changes this button structure (old format works just need to have this subsection) 
+      {
+         "tall"      "0"
+         "visible"   "0"
+         "enabled"   "0"
+      }
    }
 
    //----------------------Custom Buttons-------------------------------
+   "ServerBrowserButton"   //not a default button since mym
+   {
+      "ControlName"  "EditablePanel"
+      "fieldName"    "ServerBrowserButton"
+      "xpos"         "55"
+      "ypos"         "84"
+      "zpos"         "1"
+      "wide"         "256"
+      "tall"         "26"
+      "visible"      "1"
+      "enabled"      "1"
+
+      "SubButton"
+      {
+         "ControlName"  "CExImageButton"     //needs to be image, even if not using one
+         "fieldName"    "SubButton"
+         "xpos"         "0"
+         "ypos"         "0"
+         "wide"         "256"
+         "tall"         "26"
+         "visible"      "1"
+         "enabled"      "1"
+         "font"         "incon24"
+         "textAlignment"   "center"
+         "sound_depressed" "UI/buttonclick.wav"
+         "sound_released"  "UI/buttonclickrelease.wav"
+
+         "border_default"  "base00border"
+         "border_armed"    "base01border"
+
+         "paintbackground" "1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
+      }
+   }        
+
+   "ChangeServerButton"
+   {
+      "ControlName"  "EditablePanel"
+      "fieldName"    "ChangeServerButton"
+      "xpos"         "55"
+      "ypos"         "84"
+      "zpos"         "1"
+      "wide"         "256"
+      "tall"         "26"
+      "visible"      "1"
+      "enabled"      "1"
+
+      "SubButton"
+      {
+         "ControlName"  "CExImageButton"     //needs to be image, even if not using one
+         "fieldName"    "SubButton"
+         "xpos"         "0"
+         "ypos"         "0"
+         "wide"         "173"
+         "tall"         "26"
+         "visible"      "1"
+         "enabled"      "1"
+         "font"         "incon24"
+         "textAlignment"   "center"
+         "sound_depressed" "UI/buttonclick.wav"
+         "sound_released"  "UI/buttonclickrelease.wav"
+
+         "border_default"  "base00border"
+         "border_armed"    "base01border"
+
+         "paintbackground" "1"      //let's you change button bg
+         "defaultFgColor_override"     "base00"
+         "defaultBgColor_override"     "base3"
+         "armedFgColor_override"       "base01"
+         "armedBgColor_override"       "base2"
+         "depressedFgColor_override"   "base01"
+         "depressedBgColor_override"   "base2"
+      }
+   }
+
    "ServerHLine"
    {
       "ControlName"  "EditablePanel"
@@ -1275,11 +1213,6 @@
       "tall"         "20"
       "visible"      "1"
 
-      //"navLeft"    "MutePlayersButton"
-      //"navRight"      "Notifications_ShowButtonPanel"
-      //"navDown"    "QuickplayChangeButton"
-      //"navToRelay" "SubButton"
-
       "SubButton"
       {
          "ControlName"  "CExImageButton"     //needs to be image, even if not using one
@@ -1318,11 +1251,6 @@
       "tall"         "20"
       "visible"      "1"
       "enabled"      "1"
-
-      //"navLeft"    "MutePlayersButton"
-      //"navRight"      "Notifications_ShowButtonPanel"
-      //"navDown"    "QuickplayChangeButton"
-      //"navToRelay" "SubButton"
 
       "SubButton"
       {
@@ -1450,11 +1378,6 @@
       "tall"         "20"
       "visible"      "1"
 
-      //"navLeft"    "MutePlayersButton"
-      //"navRight"      "Notifications_ShowButtonPanel"
-      //"navDown"    "QuickplayChangeButton"
-      //"navToRelay" "SubButton"
-
       "SubButton"
       {
          "ControlName"  "CExImageButton"     //needs to be image, even if not using one
@@ -1493,11 +1416,6 @@
       "tall"         "20"
       "visible"      "1"
       "enabled"      "1"
-
-      //"navLeft"    "MutePlayersButton"
-      //"navRight"      "Notifications_ShowButtonPanel"
-      //"navDown"    "QuickplayChangeButton"
-      //"navToRelay" "SubButton"
 
       "SubButton"
       {
@@ -1538,11 +1456,6 @@
       "visible"      "1"
       "enabled"      "1"
 
-      //"navLeft"    "MutePlayersButton"
-      //"navRight"      "Notifications_ShowButtonPanel"
-      //"navDown"    "QuickplayChangeButton"
-      //"navToRelay" "SubButton"
-
       "SubButton"
       {
          "ControlName"  "CExImageButton"     //needs to be image, even if not using one
@@ -1581,11 +1494,6 @@
       "tall"         "20"
       "visible"      "1"
       "enabled"      "1"
-
-      //"navLeft"    "MutePlayersButton"
-      //"navRight"      "Notifications_ShowButtonPanel"
-      //"navDown"    "QuickplayChangeButton"
-      //"navToRelay" "SubButton"
 
       "SubButton"
       {
@@ -1626,11 +1534,6 @@
       "tall"         "20"
       "visible"      "1"
       "enabled"      "1"
-
-      //"navLeft"    "MutePlayersButton"
-      //"navRight"      "Notifications_ShowButtonPanel"
-      //"navDown"    "QuickplayChangeButton"
-      //"navToRelay" "SubButton"
 
       "SubButton"
       {
