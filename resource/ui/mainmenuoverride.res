@@ -1166,6 +1166,13 @@
          "depressedFgColor_override"   "red"
          "depressedBgColor_override"   "base2"
       }
+
+      "SubImage"  //Required - mym update changes this button structure (old format works just need to have this subsection) 
+      {
+         "tall"      "0"
+         "visible"   "0"
+         "enabled"   "0"
+      }
    }
 
    "DisconnectButton"      //buttons defined in gamemenu.res need to have this format to keep text
@@ -1210,6 +1217,13 @@
          "armedBgColor_override"       "base2"
          "depressedFgColor_override"   "red"
          "depressedBgColor_override"   "base2"
+      }
+
+      "SubImage"     //Required - mym update changes this button structure (old format works just need to have this subsection) 
+      {
+         "tall"      "0"
+         "visible"   "0"
+         "enabled"   "0"
       }
    }
 
