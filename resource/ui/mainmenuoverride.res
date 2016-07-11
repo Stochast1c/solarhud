@@ -472,7 +472,6 @@
       "enabled"      "0"
    } 
 
-
    "ItemsContainer"
    {
       "xpos"         "0"
@@ -577,7 +576,6 @@
          }
       }
    }     
-
 
    "CreateBGPanel"            //disabled
    {
@@ -747,49 +745,6 @@
             "enabled"   "0"
          }
       }
-   }
-
-   "PlayCompetitiveButton"
-   {
-      "xpos"         "55"
-      "ypos"         "58"
-      "wide"         "200"
-      "tall"         "26"
-
-      "SubButton"
-      {
-         "wide"         "200"
-         "tall"         "26"
-         "textinsetx"   "0"
-         "font"         "incon24"
-         "textAlignment"   "center"
-      
-         "border_default"  "base00border"
-         "border_armed"    "base01border"
-   
-         "paintbackground" "1"      //let's you change button bg
-         "defaultFgColor_override"     "base00"
-         "defaultBgColor_override"     "base3"
-         "armedFgColor_override"       "base01"
-         "armedBgColor_override"       "base2"
-         "depressedFgColor_override"   "base01"
-         "depressedBgColor_override"   "base2"  
-
-         "SubImage"
-         {
-            "tall"         "0"
-            "visible"      "0"
-            "enabled"      "0"
-         }
-      }
-   }
-
-   "CompetitiveBetaImage"
-   {
-      "xpos"         "229"
-      "ypos"         "58"
-      "wide"         "26"
-      "tall"         "26"
    }
 
    "ServerBrowserButton"
