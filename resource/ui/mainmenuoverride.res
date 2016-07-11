@@ -245,11 +245,6 @@
       "tall"         "0"
       "visible"      "0"
       "enabled"      "0"
-
-      if_competitive
-      {
-         "tall"      "0"
-      }
    }  
 
    "PlayLabel"          //disabled
@@ -293,11 +288,6 @@
       "tall"         "0"
       "visible"      "0"
       "enabled"      "0"
-      
-      if_competitive
-      {
-         "tall"      "0"
-      }
    }
 
    "Notifications_ShowButtonPanel"
@@ -514,11 +504,6 @@
          "ypos"         "240"
          "wide"         "256"
          "tall"         "16"
-         
-         if_competitive
-         {
-            "ypos"      "240"
-         }
 
          "SubButton"
          {
@@ -545,7 +530,6 @@
                "visible"      "0"
                "enabled"      "0"
             } 
-            
          }
       }
 
@@ -589,11 +573,6 @@
                "visible"      "0"
                "enabled"      "0"
             } 
-         }
-
-         if_competitive
-         {
-            "ypos"            "3"
          }
       }
    }     
@@ -844,11 +823,6 @@
             "visible"   "0"
          }
       }
-  
-      if_competitive
-      {
-         "ypos"      "84"
-      } 
    }
 
    "ChangeServerButton"
