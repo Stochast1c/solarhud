@@ -691,6 +691,7 @@
    {
       "xpos"         "312"
       "ypos"         "95"
+      "zpos"         "0"
 
       "PlaylistBGPanel"
       {
