@@ -479,6 +479,7 @@
       "ypos"         "0"
       "wide"         "f0"
       "tall"         "f0"
+      "zpos"         "0"      //Required to have Store Button ontop of logolabel
       
       "StoreBGPanel"
       {
