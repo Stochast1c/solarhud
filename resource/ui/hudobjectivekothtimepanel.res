@@ -4,7 +4,7 @@
 {
    "HudKothTimeStatus"
    {
-      if_comp
+      if_match
       {
          "zpos"   "0"      //if higher it is placed on top of winpanel, could give the winpanel a zpos of 99999, but pretty sure that this having a low zpos isn't a big deal
       }
@@ -17,7 +17,7 @@
       "tall"            "24"
       "delta_item_font"    "incon20"
 
-      if_comp
+      if_match
       {
          "xpos"         "0"
          "delta_item_font"    "incon20"
@@ -33,7 +33,7 @@
          "tall"         "24"
          "textAlignment"      "east"
          
-         if_comp
+         if_match
          {
             "font"         "incon20"
             "fgcolor"      "blue"
@@ -53,7 +53,7 @@
       "tall"            "24"
       "delta_item_font"    "incon20"
       
-      if_comp
+      if_match
       {
          "xpos"         "80"
          "delta_item_font"    "incon20"
@@ -69,7 +69,7 @@
          "tall"         "24"
          "textAlignment"      "west"
          
-         if_comp
+         if_match
          {
             "font"         "incon20"
             "fgcolor"      "red"
