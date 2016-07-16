@@ -1,6 +1,6 @@
 #base "../../default_hudfiles/resource/ui/hudmatchstatus.res"
 
-"Resource/UI/Competitive.res"
+"Resource/UI/HudMatchStatus.res"
 {
    "RoundCounter"
    {
@@ -15,7 +15,7 @@
       "delta_lifetime"     "0"
       "delta_item_font"    "incon12"
       
-      if_comp
+      if_match
       {
          "ypos_minmode"            "-14" 
          "PositiveColor"         "green"
@@ -41,11 +41,11 @@
          "tall_minmode" "19"
          "textAlignment_minmode"    "east"
          
-         if_comp     //changed from standard, since bo3 format rather than timelimit, to fit the roundcounter panel
+         if_match    //changed from standard, since bo3 format rather than timelimit, to fit the roundcounter panel
          {
-            "xpos"         "38"
+            "xpos"         "48"
             "xpos_minmode" "2"
-            "ypos"         "12"
+            "ypos"         "15"
             "ypos_minmode" "12"
             "zpos"         "3"
             "wide"         "44"
@@ -56,5 +56,10 @@
             "font_minmode" "incon20"
          }
       }  
+   }
+
+   "BGFrame"
+   {
+      "border" "noborder"
    }
 }

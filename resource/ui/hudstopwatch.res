@@ -52,6 +52,13 @@
       "visible"         "0"
       "enabled"         "1"
 
+
+      if_comp
+      {
+         "xpos"      "21"
+         "ypos"      "24"
+      }
+
       "TimePanelValue"
       {
          "ControlName"     "CExLabel"
@@ -86,6 +93,12 @@
       "pinCorner"    "0"
       "visible"      "0"
       "enabled"      "1"
+
+      if_comp
+      {
+         "ypos"   "24"
+         "xpos"   "121"
+      }
    }
    "StopWatchPointsLabel"  //the word points, can't change the label text
    {
@@ -124,6 +137,12 @@
       "visible"      "0"
       "enabled"      "1"
       "wrap"         "0"      //forces left alignment if enabled
+
+
+      if_comp
+      {
+         "ypos"      "24"
+      }
    }
 
    "HudStopWatchDescriptionBG"

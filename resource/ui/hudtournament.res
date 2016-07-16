@@ -473,6 +473,11 @@
       {
          "visible"      "0"
       }  
+
+      if_competitive
+      {
+         "visible"   "0"
+      }
    }
    
    "TournamentBLUELabel"   //team name
@@ -490,10 +495,17 @@
       "labelText"    "%bluenamelabel%"
       "textAlignment"      "west"
       "fgcolor"      "blue"
-      
+
       if_mvm
       {
          "visible"      "0"
+      }
+
+      if_competitive
+      {
+         "xpos"         "c-368"
+         "ypos"         "65"
+         "wide"         "328"
       }
    }
    "TournamentBLUEStateLabel"
@@ -515,6 +527,32 @@
       if_mvm
       {
          "visible"      "0"
+      }
+
+      if_competitive
+      {
+         "xpos"         "c-368"
+         "ypos"         "65"
+         "wide"         "328"
+      }
+   }
+   "HudTournamentBLUEBGNew"
+   {
+      "ControlName"  "EditablePanel"
+      "fieldName"    "HudTournamentBLUEBGNew"
+      "xpos"         "c-368"
+      "ypos"         "65"
+      "zpos"         "-1"
+      "wide"         "328"
+      "tall"         "16"
+      "visible"      "0"
+      "enabled"      "0"
+      "bgcolor_override"   "base3"
+
+      if_competitive
+      {
+         "visible"      "1"
+         "enabled"      "1"
       }
    }
 
@@ -538,6 +576,13 @@
       {
          "visible"      "0"
       }
+
+      if_competitive
+      {
+         "xpos"         "c40"
+         "ypos"         "65"
+         "wide"         "328"
+      }
    }
    "TournamentREDStateLabel"
    {  
@@ -559,6 +604,32 @@
       {
          "visible"      "0"
       }
+
+      if_competitive
+      {
+         "xpos"         "c40"
+         "ypos"         "65"
+         "wide"         "328"
+      }
+   }
+   "HudTournamentREDBGNew"
+   {
+      "ControlName"  "EditablePanel"
+      "fieldName"    "HudTournamentREDBGNew"
+      "xpos"         "c40"
+      "ypos"         "65"
+      "zpos"         "-1"
+      "wide"         "328"
+      "tall"         "16"
+      "visible"      "0"
+      "enabled"      "0"
+      "bgcolor_override"   "base3"
+
+      if_competitive
+      {
+         "visible"      "1"
+         "enabled"      "1"
+      }
    }
 
    "SepBarBlue"
@@ -572,8 +643,13 @@
       "visible"         "1"
       "enabled"         "1"
       "bgcolor_override"         "blue"
-      
+
       if_mvm
+      {
+         "visible"      "0"
+      }
+
+      if_competitive
       {
          "visible"      "0"
       }
@@ -595,6 +671,11 @@
       {
          "visible"      "0"
       }
+
+      if_competitive
+      {
+         "visible"      "0"
+      }
    }
 
    "CondLabelBG"
@@ -609,8 +690,13 @@
       "visible"      "1"
       "enabled"      "1"
       "bgcolor_override"      "base3"
-      
+
       if_mvm
+      {
+         "visible"      "0"
+      }
+
+      if_competitive
       {
          "visible"      "0"
       }
