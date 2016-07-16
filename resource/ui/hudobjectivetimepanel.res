@@ -144,6 +144,12 @@
       "wrap"         "0"
       "font"         "incon10"
       "fgcolor"      "orange"
+
+      if_match
+      {
+         "xpos"      "43"
+         "ypos"      "50"
+      }
    }  
    "SetupBG"
    {
