@@ -514,6 +514,10 @@
                "visible"      "0"
                "enabled"      "0"
             }
+            "CreateServerEntry"
+            {
+               "ypos"            "153"    //Moving to Fourth Position on panel since above two elements are removed
+            }
          }
       }
    }

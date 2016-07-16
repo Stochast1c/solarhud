@@ -243,7 +243,7 @@
       "xpos"               "c-100"
       "ypos"               "0"
       "wide"               "200"
-      "tall"               "20"
+      "tall"               "100"
    }
    
    "HudAchievementTracker"
