@@ -29,6 +29,27 @@ Scheme
          }
       }
 
+      "ScoreboardVerySmall"      //TimeLeft Text Displays (no timelimit, map change, etc.)
+      {
+         "1"
+         {
+            "name"      "Numbers"
+            "tall"      "20"
+            "tall_hidef"   "20"
+            "tall_lodef"   "20"
+            "weight"       "500"
+            "antialias" "1"
+         }
+      }
+      "ScoreboardMediumSmall"    //TimeLeft Value Display
+      {
+         "1"
+         {
+            "name"      "Inconsolata"
+            "tall"      "20"
+         }
+      }
+
       "ItemFontNameSmallest"     //really long names
       {
          "1"

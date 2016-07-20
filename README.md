@@ -27,7 +27,18 @@ If you are a linux (or rather a non-Windows user), the included .bat file and HL
 
 ##HUD Crosshairs
 
-This hud supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-knucklescrosses-release) which can be set in scripts/hudlayout.res.  Two crosshair controls are added for your convenience and can be found as the very first entries in scripts/hudlayout.res to be enabled/modified. As far as I know, subpixel alignment is not required on a 1920x1080 display, although your mileage may vary.  If you have no experience with hud crosshairs, see the above link and reference Step 3 in post #2.     
+This hud supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-knucklescrosses-release) which can be set in scripts/hudlayout.res.  Two crosshair controls are added for your convenience and can be found as the very first entries in scripts/hudlayout.res to be enabled/modified. Crosshairs are 1px or less off from true center on a 1920x1080 resolution, and may or may not be more misaligned on different resolutions. If you have no experience with hud crosshairs, see the above link and reference Step 3 in post #2.     
+
+##Currently Supported Customizations
+
+*  Scoreboard Stats - changed in resource/ui/scoreboard.res
+
+*  TargetID - changed in resource/ui/targetid.res
+   *  Background
+   *  Larger Font Size for Casting
+   *  Lower Positioning for Casting - Changed in scripts/hudlayout.res
+
+To enable, uncomment (delete the // of) the relevant #base line at the very top of the file mentioned above.   
 
 ##How to Change Main Menu Server Buttons
 

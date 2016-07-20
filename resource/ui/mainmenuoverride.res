@@ -338,7 +338,7 @@
 
    "WatchStreamButton"
    {
-      "xpos"         "333"    
+      "xpos"         "312"    //normally 333, moved over since no contracts   
       "ypos"         "74"     //centered between server and mm button
       "wide"         "20"
       "tall"         "20"
@@ -380,12 +380,16 @@
       "zpos"         "10"
    }
 
-   "QuestLogButton"
+   "QuestLogButton"  //Disabled until more contracts are released
    {
       "xpos"         "312"    //Next (+1px) to Menu Buttons
       "ypos"         "74"     //centered between server and mm button
       "wide"         "20"
       "tall"         "20"
+      
+      //DISABLED
+      "visible"      "0"
+      "enabled"      "0"
       
       "SubButton"
       {
@@ -629,9 +633,92 @@
 
    "EventPromo"   //In Game ads, disabled because annoying
    {
-      "tall"         "0"
-      "visible"      "0"
-      "enabled"      "0"
+      "xpos"            "34"
+      "ypos"            "74"
+      "wide"            "20"
+      "tall"            "20"
+      "zpos"            "100"
+
+      "Background"
+      {
+         "xpos"         "0"
+         "ypos"         "0"
+         "wide"         "20"
+         "tall"         "20"
+
+         "TitleLabel"
+         {
+            "wide"         "0"
+            "tall"         "0"
+            "visible"      "0"
+            "enabled"      "0"
+         }
+
+         "ViewDetailsGlow"
+         {
+            "wide"         "0"
+            "tall"         "0"
+            "visible"      "0"
+            "enabled"      "0"
+         }
+
+         "ViewDetailsButton"
+         {
+            "wide"         "0"
+            "tall"         "0"
+            "visible"      "0"
+            "enabled"      "0"
+         }
+
+         "ViewWarButtonGlow"
+         {
+            "wide"         "0"
+            "tall"         "0"
+            "visible"      "0"
+            "enabled"      "0"
+         }
+
+         "ViewWarButton"
+         {
+            "ControlName"  "EditablePanel"
+            "fieldname"    "ViewWarButton"
+            "xpos"         "0"
+            "ypos"         "0"
+            "wide"         "20"
+            "tall"         "20"
+            "visible"      "1"
+
+            "SubButton"
+            {
+               "wide"         "20"
+               "tall"         "20"
+               "textinsetx"   "0"
+               "labelText"    "W"
+               "font"         "incon20"
+               "textAlignment"   "center"
+
+               "paintborder"     "1"
+               "border_default"  "base00border"
+               "border_armed"    "base01border"
+
+               "paintbackground" "1"      //let's you change button bg
+               "defaultFgColor_override"     "base00"
+               "defaultBgColor_override"     "base3"
+               "armedFgColor_override"       "base01"
+               "armedBgColor_override"       "base2"
+               "depressedFgColor_override"   "base01"
+               "depressedBgColor_override"   "base2"
+            }
+         }
+         
+         "CyclingAd"
+         {
+            "wide"         "0"
+            "tall"         "0"
+            "visible"      "0"
+            "enabled"      "0"
+         }
+      }
    }
 
    "ShowPromoCodesButton"     //disabled
@@ -1081,6 +1168,26 @@
          "enabled"   "0"
       }
    }
+
+   "WarHighlightPanel"     //Disabled - Requires all lines below to actually disable
+   {
+      "xpos"         "99999"
+      "ypos"         "99999"
+      "start_x"      "99999"
+      "end_x"        "99999"
+      "start_y"      "99999"
+      "end_y"        "99999"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+      "start_wide"            "0"
+      "start_tall"            "0"
+      "end_wide"              "0"
+      "end_tall"              "0"
+      "callout_inparents_x"   "99999"
+      "callout_inparents_y"   "99999"
+   }
+
 
    //----------------------Custom Buttons-------------------------------
    "ServerBrowserButton"   //not a default button since mym
