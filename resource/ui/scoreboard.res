@@ -201,7 +201,10 @@
 
    "ServerTimeLeftValue"
    {
-      "font"         "incon20num"
+      "font"         "incon20num"      //Does not use this font
+      //instead uses ScoreboardMediumSmall only for timelimit 
+      //when time is 0 or no timelimit, display ScoreboardVerySmall 
+      //uses the definitions in tf_language -> Scoreboard_*New
       "xpos"         "c-50"  //center-wide/2
       "ypos"         "-2"     //move to very top of screen
       "wide"         "100"
