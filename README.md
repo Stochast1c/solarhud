@@ -45,11 +45,7 @@ The server buttons use a custom alias to store the server ip's that you want the
 
 ##How to Switch Themes
 
-<<<<<<< HEAD
-To switch between light and dark colorschemes (the default is dark), swap the \*scheme.res files with the opposite color theme's branch.   
-=======
 Navigate to resource/ and open all of the \*scheme.res files.  At the top of each file there will be a \#base definition for the theme.  Replace the directory with your perferred theme.  In addition, perform the same action to chapterbackgrounds.txt in scripts/.  Available themes can be found in the themes/ directory, but it should be fairly simple to add your own in.
->>>>>>> master
 
 Then change the map in scripts/chapterbackgrounds.txt: upward↔2fort.
 
