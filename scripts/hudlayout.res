@@ -10,8 +10,8 @@
    {
       "controlName" "CExLabel"
       "fieldName" "Crosshair1"
-      "font" "kcross20"
-      "fgcolor" "yellow"
+      "font" "kcross20outline"
+      "fgcolor" "magenta"
       "labelText" "l"
       "xpos" "c-25"
       "ypos" "c-25"
@@ -25,7 +25,7 @@
    {
       "controlName" "CExLabel"
       "fieldName" "Crosshair2"
-      "font" "kcross20"
+      "font" "kcross20outline"
       "fgcolor" "yellow"
       "labelText" "d"
       "xpos" "c-25"

@@ -825,6 +825,16 @@ Scheme
             "outline"   "1"
          }
       }
+      "kcross20outline"
+      {
+         "1"
+         {
+            "name"      "KnucklesCrosses"
+            "tall"      "20"
+            "antialias" "1"
+            "outline"   "1"
+         }
+      }
       "kcross20"
       {
          "1"
