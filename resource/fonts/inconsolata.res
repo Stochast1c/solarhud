@@ -30,13 +30,15 @@ Scheme
       }
 
       "ScoreboardVerySmall"      //TimeLeft Text Displays (no timelimit, map change, etc.)
+                                 //Text In Match Summary Display at end of MM/Casual (player name, score, damage, etc.)
+                                 //Match Summary Display is more important, (can change timeleft display in tf_language)
       {
          "1"
          {
-            "name"      "Numbers"
-            "tall"      "20"
-            "tall_hidef"   "20"
-            "tall_lodef"   "20"
+            "name"      "Inconsolata"
+            "tall"      "12"
+            "tall_hidef"   "12"
+            "tall_lodef"   "12"
             "weight"       "500"
             "antialias" "1"
          }
