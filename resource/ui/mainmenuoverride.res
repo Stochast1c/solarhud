@@ -382,14 +382,10 @@
 
    "QuestLogButton"  //Disabled until more contracts are released
    {
-      "xpos"         "312"    //Next (+1px) to Menu Buttons
+      "xpos"         "34"    //Next (+1px) to Menu Buttons
       "ypos"         "74"     //centered between server and mm button
       "wide"         "20"
       "tall"         "20"
-      
-      //DISABLED
-      "visible"      "0"
-      "enabled"      "0"
       
       "SubButton"
       {
@@ -635,8 +631,8 @@
    {
       "xpos"            "34"
       "ypos"            "74"
-      "wide"            "20"
-      "tall"            "20"
+      "wide"            "0"
+      "tall"            "0"
       "zpos"            "100"
 
       "Background"
