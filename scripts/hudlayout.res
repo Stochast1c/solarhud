@@ -1,6 +1,9 @@
 //customization
 //#base "../custom/scripts/hudlayout_cast.res"
+//#base "../custom/scripts/hudlayout_minmode_ammo.res"
 
+//Do not touch below
+#base "../custom/scripts/hudlayout_minmode_noammo.res"
 #base "../default_hudfiles/hudlayout.res"
 
 "Resource/HudLayout.res"
@@ -49,9 +52,10 @@
    {
       "xpos"      "c-11" //to align clips 
       "ypos"      "330" 
+      "xpos_minmode"      "c-96" //to align clips 
+      "ypos_minmode"      "r80" 
       "wide"      "192"
       "tall"      "60"
-      "tall_minmode"    "0"
    }
    
    HudKothTimeStatus
