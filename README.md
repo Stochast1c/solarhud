@@ -10,13 +10,13 @@ A [solarized themed](http://ethanschoonover.com/solarized) hud for TF2 that is h
 
 The main goal of this mod is to completely overwrite all colors and fonts while keeping the minimal but very legible style of ell's hud.
 
-This HUD is tailored for 6s players and surfers, though a few easy tweaks will make it work for pub and HL players.  Minmode 0 is for the 6s hud and Minmode 1 is for the surfing HUD.  
+This HUD is tailored for 6s players and surfers, though a few easy tweaks will make it work for pub and HL players.  Minmode 0 is for the 6s hud and Minmode 1 is for the skilled gamemodes HUD.  
 
 It is highly recommended that you clone the hud rather than download and extract the zip.  This hud recieves many small updates, often times in short bursts, that major update notifications generally won't happen unless a core element is changed. 
 
 ##Updating
 
-This hud is currently in a transistion period from a standard configuration to the #base configuration, and as a result you must perform both update methods to update your hud.  
+This hud is currently in a transistion period from a standard configuration to the #base configuration, and as a result you must perform both update methods to update your hud when a new TF2 update comes out.  
 
 First, if a new commit has been pushed, pull the update files (or redownload the hud and copy/paste).
 
@@ -36,6 +36,8 @@ This hud supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-kn
    *  Background
    *  Larger Font Size for Casting
    *  Lower Positioning for Casting - Changed in scripts/hudlayout.res
+
+*  Ammo and Stickycharge meter when in minmode - changed in scripts/hudlayout.res
 
 To enable, uncomment (delete the // of) the relevant #base line at the very top of the file mentioned above.   
 

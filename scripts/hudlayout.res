@@ -1,6 +1,11 @@
 //customization
 //#base "../custom/scripts/hudlayout_cast.res"
+//#base "../custom/scripts/hudlayout_minmode_ammo.res"
+//#base "../custom/scripts/hudlayout_minmode_stickycharge.res"
 
+//Do not touch below
+#base "../custom/scripts/hudlayout_minmode_noammo.res"
+#base "../custom/scripts/hudlayout_minmode_nostickycharge.res"
 #base "../default_hudfiles/hudlayout.res"
 
 "Resource/HudLayout.res"
@@ -49,11 +54,18 @@
    {
       "xpos"      "c-11" //to align clips 
       "ypos"      "330" 
+      "xpos_minmode"      "c-96" //to align clips 
+      "ypos_minmode"      "r80" 
       "wide"      "192"
       "tall"      "60"
-      "tall_minmode"    "0"
    }
    
+   "HudObjectiveStatus"
+   {
+      "tall_minmode"    "0"
+      "visible_minmode" "0"
+      "enabled_minmode" "0"
+   }
    HudKothTimeStatus
    {
       "xpos"   "c-80"
@@ -65,6 +77,10 @@
       //4unit border
       "blue_active_xpos"         "17"  //not sure why but this is +1
       "red_active_xpos"       "96"
+
+      "visible_minmode" "0"
+      "enabled_minmode" "0"
+      "tall_minmode"    "0"
    }  
 
    // all mediguns
@@ -80,16 +96,15 @@
    HudDemomanCharge
    {
       "xpos"         "c-60"
+      "xpos_minmode" "c-60"
       "ypos"         "370"    
+      "ypos_minmode" "r20"    
       "zpos"         "2"
       "wide"         "120"
+      "wide_minmode" "120"
       "tall"         "50"
       "MeterFG"      "base00"
       "MeterBG"      "base3"
-
-      "tall_minmode"       "0"
-      "visible_minmode"    "0"
-      "enabled_minmode"    "0"
    }  
 
    // huntsman, disabled since demo charge covers it
