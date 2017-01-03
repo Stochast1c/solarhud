@@ -60,6 +60,12 @@
       "tall"      "60"
    }
    
+   "HudObjectiveStatus"
+   {
+      "tall_minmode"    "0"
+      "visible_minmode" "0"
+      "enabled_minmode" "0"
+   }
    HudKothTimeStatus
    {
       "xpos"   "c-80"
@@ -71,6 +77,10 @@
       //4unit border
       "blue_active_xpos"         "17"  //not sure why but this is +1
       "red_active_xpos"       "96"
+
+      "visible_minmode" "0"
+      "enabled_minmode" "0"
+      "tall_minmode"    "0"
    }  
 
    // all mediguns
