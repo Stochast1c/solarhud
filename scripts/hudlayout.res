@@ -1,9 +1,11 @@
 //customization
 //#base "../custom/scripts/hudlayout_cast.res"
 //#base "../custom/scripts/hudlayout_minmode_ammo.res"
+//#base "../custom/scripts/hudlayout_minmode_stickycharge.res"
 
 //Do not touch below
 #base "../custom/scripts/hudlayout_minmode_noammo.res"
+#base "../custom/scripts/hudlayout_minmode_nostickycharge.res"
 #base "../default_hudfiles/hudlayout.res"
 
 "Resource/HudLayout.res"
@@ -84,16 +86,15 @@
    HudDemomanCharge
    {
       "xpos"         "c-60"
+      "xpos_minmode" "c-60"
       "ypos"         "370"    
+      "ypos_minmode" "r20"    
       "zpos"         "2"
       "wide"         "120"
+      "wide_minmode" "120"
       "tall"         "50"
       "MeterFG"      "base00"
       "MeterBG"      "base3"
-
-      "tall_minmode"       "0"
-      "visible_minmode"    "0"
-      "enabled_minmode"    "0"
    }  
 
    // huntsman, disabled since demo charge covers it
