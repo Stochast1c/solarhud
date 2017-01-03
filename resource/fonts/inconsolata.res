@@ -11,7 +11,7 @@ Scheme
       {
          "6"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "12"
             "range"     "0x0000 0x00FF"
             "weight"    "500"
@@ -23,7 +23,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "12"
             "antialias" "1"
          }
@@ -35,7 +35,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "12"
             "tall_hidef"   "12"
             "tall_lodef"   "12"
@@ -47,7 +47,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "20"
          }
       }
@@ -56,7 +56,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "8"
             "antialias" "1"
          }
@@ -65,7 +65,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "10"
             "antialias" "1"
          }
@@ -74,7 +74,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "12"
             "antialias" "1"
          }
@@ -83,7 +83,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "18"
             "antialias" "1"
          }
@@ -93,7 +93,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "9"   //8 has a funny display bug with the ) symbol
             "antialias" "1"
             "weight" "500"
@@ -103,7 +103,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "12"
             "antialias" "1"
          }
@@ -112,7 +112,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "14"
             "antialias"    "1"
          }
@@ -127,7 +127,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "4"
             "antialias" "1"
          }
@@ -136,7 +136,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "8"
             "antialias" "1"
          }
@@ -145,7 +145,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "10"
             "antialias" "1"
          }
@@ -154,7 +154,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "12"
             "antialias" "1"
          }
@@ -163,7 +163,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "14"
             "antialias" "1"
          }
@@ -172,7 +172,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "16"
             "antialias" "1"
          }
@@ -181,7 +181,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "20"
             "antialias" "1"
          }
@@ -190,7 +190,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "24"
             "antialias" "1"
          }
@@ -199,7 +199,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "28"
             "antialias" "1"
          }
@@ -208,7 +208,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "32"
             "antialias" "1"
          }
@@ -217,7 +217,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "36"
             "antialias" "1"
          }
@@ -226,7 +226,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "40"
             "antialias" "1"
          }
@@ -235,7 +235,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "44"
             "antialias" "1"
          }
@@ -244,7 +244,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "48"
             "antialias" "1"
          }
@@ -253,7 +253,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "52"
             "antialias" "1"
          }
@@ -262,7 +262,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "56"
             "antialias" "1"
          }
@@ -271,7 +271,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "60"
             "antialias" "1"
          }
@@ -280,7 +280,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "64"
             "antialias" "1"
          }
@@ -289,7 +289,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "4"
             "antialias" "1"
          }
@@ -298,7 +298,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "8"
             "antialias" "1"
          }
@@ -307,7 +307,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "10"
             "antialias" "1"
          }
@@ -316,7 +316,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "12"
             "antialias" "1"
          }
@@ -325,7 +325,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "16"
             "antialias" "1"
          }
@@ -334,7 +334,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "20"
             "antialias" "1"
          }
@@ -343,7 +343,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "24"
             "antialias" "1"
          }
@@ -352,7 +352,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "28"
             "antialias" "1"
          }
@@ -361,7 +361,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "32"
             "antialias" "1"
          }
@@ -370,7 +370,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "36"
             "antialias" "1"
          }
@@ -379,7 +379,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "40"
             "antialias" "1"
          }
@@ -388,7 +388,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "44"
             "antialias" "1"
          }
@@ -397,7 +397,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "48"
             "antialias" "1"
          }
@@ -406,7 +406,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "52"
             "antialias" "1"
          }
@@ -415,7 +415,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "56"
             "antialias" "1"
          }
@@ -424,7 +424,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "60"
             "antialias" "1"
          }
@@ -433,7 +433,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata Bold"
+            "name"      "TF2 Inconsolata Bold"
             "tall"      "64"
             "antialias" "1"
          }
@@ -443,7 +443,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "4"
             "antialias" "1"
             "outline"   "1"
@@ -453,7 +453,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "8"
             "antialias" "1"
             "outline"   "1"
@@ -463,7 +463,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "10"
             "antialias" "1"
             "outline"   "1"
@@ -473,7 +473,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "12"
             "antialias" "1"
             "outline"   "1"
@@ -483,7 +483,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "14"
             "antialias" "1"
             "outline"   "1"
@@ -493,7 +493,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "16"
             "antialias" "1"
             "outline"   "1"
@@ -503,7 +503,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "20"
             "antialias" "1"
             "outline"   "1"
@@ -513,7 +513,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "24"
             "antialias" "1"
             "outline"   "1"
@@ -523,7 +523,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "28"
             "antialias" "1"
             "outline"   "1"
@@ -533,7 +533,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "32"
             "antialias" "1"
             "outline"   "1"
@@ -543,7 +543,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "36"
             "antialias" "1"
             "outline"   "1"
@@ -553,7 +553,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "40"
             "antialias" "1"
             "outline"   "1"
@@ -563,7 +563,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "44"
             "antialias" "1"
             "outline"   "1"
@@ -573,7 +573,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "48"
             "antialias" "1"
             "outline"   "1"
@@ -583,7 +583,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "52"
             "antialias" "1"
             "outline"   "1"
@@ -593,7 +593,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "56"
             "antialias" "1"
             "outline"   "1"
@@ -603,7 +603,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "60"
             "antialias" "1"
             "outline"   "1"
@@ -613,7 +613,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "64"
             "antialias" "1"
             "outline"   "1"
@@ -942,13 +942,13 @@ Scheme
    {
       "8"
       {
-         "font" "resource/fonts/Inconsolata-Regular.ttf"
-         "name" "Inconsolata"
+         "font" "resource/fonts/TF2-Inconsolata-Regular.ttf"
+         "name" "TF2 Inconsolata"
       }
       "9"
       {
-         "font" "resource/fonts/Inconsolata-Bold.ttf"
-         "name" "Inconsolata Bold"
+         "font" "resource/fonts/TF2-Inconsolata-Bold.ttf"
+         "name" "TF2 Inconsolata Bold"
       }
       "10"
       {
