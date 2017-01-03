@@ -1,2 +1,4 @@
-default_hudfiles/
+default_hudfiles/*
+!default_hudfiles/.gitkeep
 sound/
+*.swp

@@ -220,7 +220,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "24"
             "weight" "0"
             "range"     "0x0000 0x017F"
@@ -278,7 +278,7 @@ Scheme
       {
          "1"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "14"
             "weight"    "500"
             "yres"      "480 599"
@@ -286,7 +286,7 @@ Scheme
          }
          "2"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "16"
             "weight"    "500"
             "yres"      "600 767"
@@ -294,7 +294,7 @@ Scheme
          }
          "3"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "18"
             "weight"    "500"
             "yres"      "768 1023"
@@ -302,7 +302,7 @@ Scheme
          }
          "4"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "24"
             "weight"    "500"
             "yres"      "1024 1199"
@@ -310,7 +310,7 @@ Scheme
          }
          "5"
          {
-            "name"      "Inconsolata"
+            "name"      "TF2 Inconsolata"
             "tall"      "24"
             "weight"    "500"
             "yres"      "1200 10000"
@@ -725,8 +725,8 @@ Scheme
       "2"      "resource/HL2EP2.ttf"
       "3"
       {
-         "font" "resource/fonts/Inconsolata-Regular.ttf"
-         "name" "Inconsolata"
+         "font" "resource/fonts/TF2-Inconsolata-Regular.ttf"
+         "name" "TF2 Inconsolata"
       }      
    }
 }
