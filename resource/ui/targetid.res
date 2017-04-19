@@ -33,12 +33,13 @@
    }
    "TargetDataLabel"    //ubercharge% - can't change color
    {  
-      "font"         "incon8"
+      "font"         "incon12"
       "xpos"         "0"   //doesn't change anything
       "xpos_minmode" "0"
-      "ypos"         "24"
+      "ypos"         "22"
       "ypos_minmode" "99999"
-      "tall"         "8"
+      "tall"         "12"
+      "textAlignment"   "North-west"
    }
    "SpectatorGUIHealth"
    {
