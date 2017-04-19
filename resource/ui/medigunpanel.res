@@ -1,51 +1,50 @@
 "Resource/UI/MedigunPanel.res"
 {
-    "MedigunPanel"
+   "MedigunPanel"
+   {
+      "ControlName"  "Frame"
+      "fieldName"    "MedigunPanel"
+      "wide"         "164"
+      "tall"         "19"  //really should be 18, but border adds an extra px
+      "autoResize"   "0"
+      "pinCorner"    "0"
+      "visible"      "1"
+      "enabled"      "1"
+      "tabPosition"  "0"
+   }
+
+    "MedigunPanelBackground"
     {
-        "ControlName"   "Frame"
-        "fieldName"     "MedigunPanel"
-        "wide"          "164"
+        "ControlName"   "ScalableImagePanel"
+        "fieldName"  "MedigunPanelBackground"
+        "xpos"          "2"
+        "ypos"       "1"
+        "zpos"          "1"
+        "wide"          "160"
         "tall"          "18"
         "autoResize"    "0"
         "pinCorner"     "0"
         "visible"       "1"
         "enabled"       "1"
-        "tabPosition"   "0"
-    }
+         "drawcolor"    "base3"
+         "border"       "base00border"        
 
-    "MedigunPanelBackground"
-    {
-        "ControlName"   "ScalableImagePanel"
-        "fieldName"     "MedigunPanelBackground"
-        "xpos"          "2"
-        "ypos"          "1"
-        "zpos"          "1"
-        "wide"          "160"
-        "tall"          "16"
-        "autoResize"    "0"
-        "pinCorner"     "0"
-        "visible"       "1"
-        "enabled"       "1"
 
         "team-red"
         {
-            "drawcolor" "HUDRedTeam"
         }
 
         "team-blu"
         {
-            "drawcolor" "HUDBlueTeam"
         }
     }
-
-
 
     "MedigunPanelChargeTypeIcon"
     {
         "ControlName"       "ImagePanel"
         "fieldName"         "MedigunPanelChargeTypeIcon"
         "xpos"              "3"
-        "ypos"              "2"
+        "ypos"              "3"
         "zpos"              "2"
         "wide"              "14"
         "tall"              "14"
@@ -55,25 +54,17 @@
 
         "medigun-medigun"
         {
-            "image"         "replay/thumbnails/ubercharge"
+            "image"         "replay/thumbnails/uber"
         }
 
         "medigun-kritzkrieg"
         {
-            "image"         "replay/thumbnails/critboost"
+            "image"         "replay/thumbnails/kritz"
         }
 
         "medigun-quickfix"
         {
-            "team-red"
-            {
-                "image"     "replay/thumbnails/megaheal_red"
-            }
-
-            "team-blu"
-            {
-                "image"     "replay/thumbnails/megaheal_blue"
-            }
+            "image"     "replay/thumbnails/quickfix"
         }
 
         "medigun-vaccinator"
@@ -125,22 +116,31 @@
     {
         "ControlName"   "VariableLabel"
         "fieldName"     "MedigunPanelChargeLabel"
-        "xpos"          "147"
-        "ypos"          "2"
-        "zpos"          "2"
-        "wide"          "14"
-        "tall"          "14"
-        "autoResize"    "1"
-        "visible"       "1"
-        "enabled"       "1"
+        "xpos"       "136"
+        "ypos"       "3"
+        "zpos"       "2"
+        "wide"       "24"
+        "tall"       "14"
+        "autoResize" "1"
+        "visible"    "1"
+        "enabled"    "1"
         "labelText"     "%charge%%"
         "tabPosition"   "0"
         "textAlignment" "center"
         "dulltext"      "0"
-        "brighttext"    "0"
-        "font"          "DefaultVerySmall"
-        "fgcolor"       "HudWhite"
+        "brighttext" "0"
+        "font"       "incon12"
 
+         "team-red"
+         {
+            "fgcolor_override"    "red"
+         }
+         
+         "team-blu"
+         {
+            "fgcolor_override"    "blue"
+         }
+ 
         "medigun-vaccinator"
         {
             "labelText" "%charges%"
@@ -154,25 +154,33 @@
 
     "MedigunPanelChargeMeter"
     {
-        "ControlName"       "ImageProgressBar"
-        "fieldName"         "MedigunPanelChargeMeter"
-        "font"              "Default"
-        "xpos"              "19"
-        "ypos"              "2"
-        "zpos"              "2"
-        "wide"              "126"
-        "tall"              "14"
-        "autoResize"        "0"
-        "pinCorner"         "0"
-        "visible"           "1"
-        "enabled"           "1"
-        "textAlignment"     "Left"
-        "dulltext"          "0"
-        "brighttext"        "0"
-        "bgcolor_override"  "ProgressBackground"
-        "fgcolor_override"  "ProgressOffWhite"
-        "direction"         "east"
-        "variable"          "charge"
+        "ControlName"      "ImageProgressBar"
+        "fieldName"        "MedigunPanelChargeMeter"
+        "font"          "Default"
+        "xpos"          "19"
+        "ypos"          "3"
+        "zpos"          "2"
+        "wide"          "117"
+        "tall"          "14"
+        "autoResize"    "0"
+        "pinCorner"        "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "textAlignment"    "Left"
+        "dulltext"         "0"
+        "brighttext"    "0"
+        "bgcolor_override" "base1"
+        "direction"        "east"
+        "variable"         "charge"
+
+         "team-red"
+         {
+            "fgcolor_override"   "red"
+         }
+         "team-blu"
+         {
+            "fgcolor_override"   "blue"
+         }
 
         "medigun-vaccinator"
         {
@@ -187,25 +195,25 @@
 
     "MedigunPanelChargeMeter1"
     {
-        "ControlName"       "ImageProgressBar"
-        "fieldName"         "MedigunPanelChargeMeter1"
-        "font"              "Default"
-        "xpos"              "19"
-        "ypos"              "2"
-        "zpos"              "2"
-        "wide"              "30"
-        "tall"              "14"
-        "autoResize"        "0"
-        "pinCorner"         "0"
-        "visible"           "0"
-        "enabled"           "1"
-        "textAlignment"     "Left"
-        "dulltext"          "0"
-        "brighttext"        "0"
-        "bgcolor_override"  "ProgressBackground"
-        "fgcolor_override"  "ProgressOffWhite"
-        "direction"         "east"
-        "variable"          "charge1"
+        "ControlName"      "ImageProgressBar"
+        "fieldName"        "MedigunPanelChargeMeter1"
+        "font"          "Default"
+        "xpos"          "19"
+        "ypos"          "2"
+        "zpos"          "2"
+        "wide"          "30"
+        "tall"          "14"
+        "autoResize"    "0"
+        "pinCorner"        "0"
+        "visible"       "0"
+        "enabled"       "1"
+        "textAlignment"    "Left"
+        "dulltext"         "0"
+        "brighttext"    "0"
+        "bgcolor_override" "ProgressBackground"
+        "fgcolor_override"    "ProgressOffWhite"
+        "direction"        "east"
+        "variable"         "charge1"
 
         "player-alive"
         {
@@ -218,25 +226,25 @@
 
     "MedigunPanelChargeMeter2"
     {
-        "ControlName"       "ImageProgressBar"
-        "fieldName"         "MedigunPanelChargeMeter2"
-        "font"              "Default"
-        "xpos"              "51"
-        "ypos"              "2"
-        "zpos"              "2"
-        "wide"              "30"
-        "tall"              "14"
-        "autoResize"        "0"
-        "pinCorner"         "0"
-        "visible"           "0"
-        "enabled"           "1"
-        "textAlignment"     "Left"
-        "dulltext"          "0"
-        "brighttext"        "0"
-        "bgcolor_override"  "ProgressBackground"
-        "fgcolor_override"  "ProgressOffWhite"
-        "direction"         "east"
-        "variable"          "charge2"
+        "ControlName"      "ImageProgressBar"
+        "fieldName"        "MedigunPanelChargeMeter2"
+        "font"          "Default"
+        "xpos"          "51"
+        "ypos"          "2"
+        "zpos"          "2"
+        "wide"          "30"
+        "tall"          "14"
+        "autoResize"    "0"
+        "pinCorner"        "0"
+        "visible"       "0"
+        "enabled"       "1"
+        "textAlignment"    "Left"
+        "dulltext"         "0"
+        "brighttext"    "0"
+        "bgcolor_override" "ProgressBackground"
+        "fgcolor_override"    "ProgressOffWhite"
+        "direction"        "east"
+        "variable"         "charge2"
 
         "player-alive"
         {
@@ -249,25 +257,25 @@
 
     "MedigunPanelChargeMeter3"
     {
-        "ControlName"       "ImageProgressBar"
-        "fieldName"         "MedigunPanelChargeMeter3"
-        "font"              "Default"
-        "xpos"              "83"
-        "ypos"              "2"
-        "zpos"              "2"
-        "wide"              "30"
-        "tall"              "14"
-        "autoResize"        "0"
-        "pinCorner"         "0"
-        "visible"           "0"
-        "enabled"           "1"
-        "textAlignment"     "Left"
-        "dulltext"          "0"
-        "brighttext"        "0"
-        "bgcolor_override"  "ProgressBackground"
-        "fgcolor_override"  "ProgressOffWhite"
-        "direction"         "east"
-        "variable"          "charge3"
+        "ControlName"      "ImageProgressBar"
+        "fieldName"        "MedigunPanelChargeMeter3"
+        "font"          "Default"
+        "xpos"          "83"
+        "ypos"          "2"
+        "zpos"          "2"
+        "wide"          "30"
+        "tall"          "14"
+        "autoResize"    "0"
+        "pinCorner"        "0"
+        "visible"       "0"
+        "enabled"       "1"
+        "textAlignment"    "Left"
+        "dulltext"         "0"
+        "brighttext"    "0"
+        "bgcolor_override" "ProgressBackground"
+        "fgcolor_override"    "ProgressOffWhite"
+        "direction"        "east"
+        "variable"         "charge3"
 
         "player-alive"
         {
@@ -280,25 +288,25 @@
 
     "MedigunPanelChargeMeter4"
     {
-        "ControlName"       "ImageProgressBar"
-        "fieldName"         "MedigunPanelChargeMeter4"
-        "font"              "Default"
-        "xpos"              "115"
-        "ypos"              "2"
-        "zpos"              "2"
-        "wide"              "30"
-        "tall"              "14"
-        "autoResize"        "0"
-        "pinCorner"         "0"
-        "visible"           "0"
-        "enabled"           "1"
-        "textAlignment"     "Left"
-        "dulltext"          "0"
-        "brighttext"        "0"
-        "bgcolor_override"  "ProgressBackground"
-        "fgcolor_override"  "ProgressOffWhite"
-        "direction"         "east"
-        "variable"          "charge4"
+        "ControlName"      "ImageProgressBar"
+        "fieldName"        "MedigunPanelChargeMeter4"
+        "font"          "Default"
+        "xpos"          "115"
+        "ypos"          "2"
+        "zpos"          "2"
+        "wide"          "30"
+        "tall"          "14"
+        "autoResize"    "0"
+        "pinCorner"        "0"
+        "visible"       "0"
+        "enabled"       "1"
+        "textAlignment"    "Left"
+        "dulltext"         "0"
+        "brighttext"    "0"
+        "bgcolor_override" "ProgressBackground"
+        "fgcolor_override"    "ProgressOffWhite"
+        "direction"        "east"
+        "variable"         "charge4"
 
         "player-alive"
         {
