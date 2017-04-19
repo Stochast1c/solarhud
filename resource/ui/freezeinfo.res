@@ -4,9 +4,9 @@
     {
         "ControlName"   "Frame"
         "fieldName"     "FreezeInfo"
-        "xpos"          "c-80"
+        "xpos"          "c-140"
         "ypos"          "c-16"
-        "wide"          "160"
+        "wide"          "280"
         "tall"          "32"
         "autoResize"    "0"
         "pinCorner"     "0"
@@ -17,18 +17,19 @@
     
     "FreezeInfoBackground"
     {
-        "ControlName"   "ImagePanel"
+        "ControlName"   "ImagePanel"        //needs to be an imagepanel
         "fieldName"     "FreezeInfoBackground"
         "xpos"          "0"
         "ypos"          "0"
         "zpos"          "0"
-        "wide"          "160"
+        "wide"          "280"
         "tall"          "32"
         "autoResize"    "0"
         "pinCorner"     "0"
         "visible"       "1"
         "enabled"       "1"
-        "fillcolor"     "HudBlack"
+        "fillcolor"     "base3"
+        "border"        "base00border"
     }
     
     "FreezeInfoIcon"
@@ -39,8 +40,8 @@
         "ypos"          "0"
         "wide"          "32"
         "tall"          "32"
-        "visible"       "1"
-        "enabled"       "1"
+        "visible"       "0"
+        "enabled"       "0"
         "scaleImage"    "1"
         "image"         "animated/tf2_logo_hourglass"
     }
@@ -49,9 +50,9 @@
     {
         "ControlName"   "VariableLabel"
         "fieldName"     "FreezeInfoLabel"
-        "xpos"          "32"
+        "xpos"          "0"
         "ypos"          "0"
-        "wide"          "128"
+        "wide"          "280"
         "tall"          "32"
         "autoResize"    "1"
         "visible"       "1"
@@ -61,7 +62,7 @@
         "textAlignment" "center"
         "dulltext"      "0"
         "brighttext"    "0"
-        "font"          "HudFontMediumSmallSecondary"
-        "fgcolor"       "HudWhite"
+        "font"          "incon32"
+        "fgcolor_override"       "yellow"
     }
 }
