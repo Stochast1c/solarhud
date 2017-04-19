@@ -22,8 +22,8 @@
       "ypos" "c-25"
       "wide" "50"
       "tall" "50"
-      "visible" "1"
-      "enabled" "1"
+      "visible" "0"
+      "enabled" "0"
       "textAlignment" "center"
    }
    "Crosshair2"
@@ -37,8 +37,8 @@
       "ypos" "c-25"
       "wide" "50"
       "tall" "50"
-      "visible" "1"
-      "enabled" "1"
+      "visible" "0"
+      "enabled" "0"
       "textAlignment" "center"
    }
    ////////////////////////////////////////////////////////////
