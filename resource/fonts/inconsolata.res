@@ -945,6 +945,17 @@ Scheme
             "antialias" "1"
          }
       }
+
+      "SpectatorVerySmall"      //Player name above head when outlined
+      {
+         "1"
+         {
+            "name"      "TF2 Inconsolata Bold"
+            "tall"      "10"
+            "antialias" "1"
+         }
+      }
+    
       // // // // // // // // // // // // // // // // // // // // // //
    }
 

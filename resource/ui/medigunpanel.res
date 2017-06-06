@@ -54,25 +54,17 @@
 
         "medigun-medigun"
         {
-            "image"         "replay/thumbnails/ubercharge"
+            "image"         "replay/thumbnails/uber"
         }
 
         "medigun-kritzkrieg"
         {
-            "image"         "replay/thumbnails/critboost"
+            "image"         "replay/thumbnails/kritz"
         }
 
         "medigun-quickfix"
         {
-            "team-red"
-            {
-                "image"     "replay/thumbnails/megaheal_red"
-            }
-
-            "team-blu"
-            {
-                "image"     "replay/thumbnails/megaheal_blue"
-            }
+            "image"     "replay/thumbnails/quickfix"
         }
 
         "medigun-vaccinator"
