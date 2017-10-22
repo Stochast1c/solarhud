@@ -44,8 +44,21 @@ Scheme
       "TFOrange"        "7    54  66 255"  //base02 - at least: selected page bg color on backpack
 
       //Contract Colors - hardcoded, not in hudfiles, added during halloween 2015 contracts
-      "QuestStandardHighlight"   "181 137   0 255"    //yellow - score a point for contract
-      "QuestBonusHighlight"      "108 113 196 255"     //violet - score a bonus point for contract after reaching 100pts
+      
+       "Purple"      "137 69 99 255" 
+       "QuestUncommitted"  "183 147 100 255" 
+    
+       "QuestMap_Bonus"  "222 217 166 255" 
+       "QuestMap_ActiveOrange"  "212 127 25 255" 
+       "QuestMap_InactiveGrey"  "100 100 100 255" 
+       "QuestMap_BGImages"  "56 58 60 255" 
+    
+       "PartyMember1"  "124 173 255 255" 
+       "PartyMember2"  "99  232 167 255" 
+       "PartyMember3"  "229 255 121 255" 
+       "PartyMember4"  "232 184 99  255" 
+       "PartyMember5"  "255 118 108 255" 
+       "PartyMember6"  "255 133 255 255" 
 
       "RedSolid"        "220 50 47 255"  //red
       "TransparentYellow"  "181 137 0 140" //yellow trans
