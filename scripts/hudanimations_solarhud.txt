@@ -178,5 +178,12 @@ event MMenu_PlayList_Collapse_Immediate
 	Animate PlayListContainer Tall 0 Spline 0 0
 }
 
-
+//Fix for persistent animation changes on respawn
+event HudSnapShotReminderIn
+{
+    RunEvent hudHealthDyingPulseStop 0.0
+    RunEvent hudHealthBonusPulseStop 0.0
+    RunEvent hudLowAmmoPulseStop 0.0
+    RunEvent HudMedicChargedStop 0.0
+}
 
