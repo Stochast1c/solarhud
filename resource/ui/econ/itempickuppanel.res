@@ -6,7 +6,7 @@
       "fieldName"    "item_pickup"
       "xpos"         "0"
       "ypos"         "0"
-      "zpos"         "100000"
+      "zpos"         "10000"     //used to be 100,000, but that stopped working after 2017-10-24 update
       "wide"         "f0"
       "tall"         "480"
       "autoResize"      "0"
