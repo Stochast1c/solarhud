@@ -1669,4 +1669,46 @@
          "depressedBgColor_override"   "base2"
       }
    }
+
+   "RankModelPanel"
+   {
+      "visible"      "0"
+   }
+   
+   "RankPanel"
+   {
+      "visible"      "0"
+   }
+
+   "JungleInfernoImage"
+   {
+      "visible"      "0"
+      "enabled"      "0"
+
+      if_halloween_0
+      {
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_1
+      {
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_2
+      {
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_3
+      {
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_4
+      {  
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_5
+      {  
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+   }  
+
 }
