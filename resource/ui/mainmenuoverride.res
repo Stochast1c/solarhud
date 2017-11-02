@@ -94,7 +94,7 @@
       "ControlName"  "EditablePanel"
       "fieldName"    "LogoLabel"
       "xpos"         "55"  
-      "ypos"         "30"      //away from the very top 
+      "ypos"         "20"      //away from the very top 
       "wide"         "256"
       "tall"         "66"
       "visible"      "1"
@@ -555,7 +555,7 @@
    "GeneralStoreButton"       //S in LogoLabel
    {
       "xpos"         "55"
-      "ypos"         "30"
+      "ypos"         "20"
       "zpos"         "100"
       "wide"         "32"
       "tall"         "64"
@@ -895,7 +895,7 @@
    "AchievementsButton"
    {
       "xpos"         "151"
-      "ypos"         "30"
+      "ypos"         "20"
       "wide"         "32"
       "tall"         "64"
 
