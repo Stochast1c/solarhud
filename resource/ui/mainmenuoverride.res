@@ -94,7 +94,7 @@
       "ControlName"  "EditablePanel"
       "fieldName"    "LogoLabel"
       "xpos"         "55"  
-      "ypos"         "3"      //away from the very top 
+      "ypos"         "30"      //away from the very top 
       "wide"         "256"
       "tall"         "66"
       "visible"      "1"
@@ -522,110 +522,67 @@
       }
    }
 
-   "ItemsContainer"
+   "CharacterSetupButton"     //Items
    {
-      "xpos"         "0"
-      "ypos"         "0"
-      "wide"         "f0"
-      "tall"         "f0"
-      "zpos"         "0"      //Required to have Store Button ontop of logolabel
+      "xpos"         "55"
+      "ypos"         "240"
+      "wide"         "256"
+      "tall"         "16"
+
+      "textinsetx"   "0"
+      "font"         "incon16"
+      "textAlignment"   "center"
       
-      "StoreBGPanel"
-      {
-         "xpos"         "0"
-         "ypos"         "0"
-         "wide"         "0"
-         "tall"         "0"
-         "visible"      "0"
-         "enabled"      "0"
-         "border"    "noborder"
-      }
+      "border_default"  "base00border"
+      "border_armed"    "base01border"
 
-      "CustomizeLabel"           //disabled
-      {
-         "tall"         "0"
-         "visible"      "0"
-         "enabled"      "0"
-      }
-
-      "CharacterSetupButton"     //Items
-      {
-         "xpos"         "55"
-         "ypos"         "240"
-         "wide"         "256"
-         "tall"         "16"
-
-         "SubButton"
-         {
-            "wide"         "256"
-            "tall"         "16"
-            "textinsetx"   "0"
-            "font"         "incon16"
-            "textAlignment"   "center"
-            
-            "border_default"  "base00border"
-            "border_armed"    "base01border"
-      
-            "paintbackground" "1"      //let's you change button bg
-            "defaultFgColor_override"     "base00"
-            "defaultBgColor_override"     "base3"
-            "armedFgColor_override"       "base01"
-            "armedBgColor_override"       "base2"
-            "depressedFgColor_override"   "base01"
-            "depressedBgColor_override"   "base2"
-      
-            "SubImage"
-            {
-               "tall"         "0"
-               "visible"      "0"
-               "enabled"      "0"
-            } 
-         }
-      }
-
-      "StoreHasNewItemsImage"    //disabled
+      "paintbackground" "1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
+   
+      "SubImage"
       {
          "tall"         "0"
          "visible"      "0"
          "enabled"      "0"
-      }
+      } 
+   }
 
-      "GeneralStoreButton"       //S in LogoLabel
+   "GeneralStoreButton"       //S in LogoLabel
+   {
+      "xpos"         "55"
+      "ypos"         "30"
+      "zpos"         "100"
+      "wide"         "32"
+      "tall"         "64"
+      "pinCorner"    "0"
+
+      "textinsetx"   "0"
+      "font"         "incon64"
+      "textAlignment"   "center"
+
+      "border_default"  "noborder"
+      "border_armed"    "noborder"
+
+      "paintbackground" "1"      //let's you change button bg
+      "defaultFgColor_override"     "yellow"
+      "defaultBgColor_override"     "blank"
+      "armedFgColor_override"       "yellow"
+      "armedBgColor_override"       "blank"
+      "depressedFgColor_override"   "yellow"
+      "depressedBgColor_override"   "blank"
+
+      "SubImage"
       {
-         "xpos"         "55"
-         "ypos"         "3"
-         "zpos"         "100"
-         "wide"         "32"
-         "tall"         "64"
-
-         "SubButton"
-         {
-            "wide"         "32"
-            "tall"         "64"
-            "textinsetx"   "0"
-            "font"         "incon64"
-            "textAlignment"   "center"
-
-            "border_default"  "noborder"
-            "border_armed"    "noborder"
-
-            "paintbackground" "1"      //let's you change button bg
-            "defaultFgColor_override"     "yellow"
-            "defaultBgColor_override"     "blank"
-            "armedFgColor_override"       "yellow"
-            "armedBgColor_override"       "blank"
-            "depressedFgColor_override"   "yellow"
-            "depressedBgColor_override"   "blank"
-
-            "SubImage"
-            {
-               "tall"         "0"
-               "visible"      "0"
-               "enabled"      "0"
-            } 
-         }
-      }
-   }     
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
+      } 
+   }
 
    "EventPromo"   //In Game ads, disabled because annoying
    {
@@ -938,7 +895,7 @@
    "AchievementsButton"
    {
       "xpos"         "151"
-      "ypos"         "3"
+      "ypos"         "30"
       "wide"         "32"
       "tall"         "64"
 
@@ -1037,7 +994,8 @@
       "wide"         "128"
       "tall"         "20"
 
-      "labelText"    "#MMenu_AdvOptions"
+      //"labelText"    "#MMenu_AdvOptions"
+      "labelText"    "Adv. Options"    //as of 2017-10-20 this was changed the "Advanced Options" which doesn't fit the element nicely so forcing back to hold text
       "font"         "incon20"
       "textAlignment"   "center"
       "textinsetx"   "0"
