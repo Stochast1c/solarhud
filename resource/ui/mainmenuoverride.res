@@ -1669,4 +1669,77 @@
       }
    }  
 
+   "FriendsContainer"      //individual friend handled by steamfriendpanel.res
+   {
+      "xpos"         "55"
+      "ypos"         "260"
+      "zpos"         "5"
+      "wide"         "256"
+      "tall"         "150"
+
+      "border"    "base00border"
+      "bgcolor_override"   "base3"  //controls the background and the inside background color, can't set it normally
+
+      "TitleLabel"
+      {
+         "font"         "incon20"
+         "textAlignment"   "center"
+         "xpos"         "0"
+         "ypos"         "0"
+         "wide"         "256"    //must be manually set, can't use f0
+         "tall"         "30"
+         "textinsetx"   "0"
+         "fgcolor_override"   "cyan"
+      }
+
+      "InnerShadow"     //background for the friendlist
+      {
+         "zpos"         "499"    //behind SteamFriendsList
+         "paintborder"  "1"
+         "border"    "noborder"
+         "PaintBackgroundType"   "1"
+         "bgcolor_override"   "base2"
+      }
+
+      "SteamFriendsList"
+      {
+         "columns_count"   "2"
+         "inset_x"      "8"   //(f20 (wide-20) - columns_count*friendpanel_kv_wide (200) - (columns_count-1)*column_gap (20) - scrollbar_wide (4) ) / 2
+         "inset_y"      "2"
+         "row_gap"      "2"
+         "column_gap"   "4"
+         "restrict_width"  "0"
+
+         "friendpanel_kv"     //individual friend listing
+         {
+            "wide"      "108"
+            "tall"      "20"
+         }
+
+         "ScrollBar"
+         {
+            "wide"   "4"
+
+            "Slider"
+            {
+               "fgcolor_override"   "yellow"
+            }
+      
+            "UpButton"
+            {
+            }
+      
+            "DownButton"
+            {
+            }
+         }
+      }
+
+      "BelowDarken"  //no idea
+      {
+         "visible"      "0"   
+         "bgcolor_override"   "mageneta"
+      }
+   }
+
 }
