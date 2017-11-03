@@ -552,6 +552,14 @@
       } 
    }
 
+   "StoreHasNewItemsImage"
+   {
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+   }
+
    "GeneralStoreButton"       //S in LogoLabel
    {
       "xpos"         "55"
