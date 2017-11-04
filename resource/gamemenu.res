@@ -16,18 +16,6 @@
       "subimage"     ""
    }
 
-   // These buttons get positioned by the MainMenuOverride.res 
-   "GeneralStoreButton"
-   {
-      "label" "S"
-      "tooltip"   "#MMenu_Shop"
-      "subimage"  ""
-   }  
-   "CharacterSetupButton"
-   {
-      "subimage"  ""
-   }
-
    // These buttons are only shown while in-game
    // and also are positioned by the .res file
    "ReportPlayerButton"
