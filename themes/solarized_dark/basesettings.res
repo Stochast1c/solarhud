@@ -57,7 +57,7 @@ Scheme
       ListPanel.SelectedOutOfFocusBgColor "base1"
       ListPanel.EmptyListInfoTextColor "magenta"
 
-      //combo box options colors
+      //combo box options colors, mmdashboard tooltip
       Menu.TextColor             "base00"
       Menu.BgColor               "base3"
       Menu.ArmedTextColor           "base01"

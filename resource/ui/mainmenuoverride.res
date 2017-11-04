@@ -258,7 +258,7 @@
    "TooltipPanel"  
    {
       "tall"         "17"
-      "border"    "base00Border"
+      "border"    "base01Border"
       "bgcolor_override"      "base2"
       
       "TipSubLabel"
