@@ -102,22 +102,22 @@
    }
    "customserver5"
    {
-      "label"     "EuSurfed"
+      "label"     "ReBhop"
       "command"      "engine customserver5"
    }
    "customserver6"
    {
-      "label"     "EuImSurfed"
+      "label"     "ECJ"
       "command"      "engine customserver6"
    }
    "customserver7"
    {
-      "label"     "EuEuSurfed"
+      "label"     "ECJ++"
       "command"      "engine customserver7"
    }
    "customserver8"
    {
-      "label"     "AusSurfed"
+      "label"     "Team"
       "command"      "engine customserver8"
    }
 }
