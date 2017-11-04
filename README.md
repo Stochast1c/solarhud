@@ -2,11 +2,13 @@
 
 A [solarized themed](http://ethanschoonover.com/solarized) HUD for TF2 that is heavily based on [Ell's HUD](http://etf2l.org/forum/huds/topic-17955/) using the [Inconsolata Font.](http://www.levien.com/type/myfonts/inconsolata.html)
 
+# If you are downloading this HUD please read the [Updating and First Time Users Section](https://github.com/Stochast1c/solarhud#updating-and-first-time-users) first or the HUD will not work!
+
 [Teamfortress.tv Thread](http://www.teamfortress.tv/30843/solarhud)
 
-[Light Theme Screenshots](http://imgur.com/a/DlrJb)
+[Dark Theme Screenshots](http://imgur.com/a/iSr9u) (The Default Theme)
 
-[Dark Theme Screenshots](http://imgur.com/a/iSr9u)
+[Light Theme Screenshots](http://imgur.com/a/DlrJb)
 
 The main goal of this mod is to completely overwrite all colors and fonts while keeping the minimal but very legible style of ell's HUD.
 
@@ -14,9 +16,7 @@ This HUD is tailored for 6s and skill mode (surf/bhop/jump) players, though a fe
 
 It is highly recommended that you clone the HUD rather than download and extract the zip.  This HUD receives many small updates, often in short bursts, that major update notifications on the tf.tv thread generally won't happen unless there is a fix for the HUD either causing crashes or is entirely not working.  As long as I play the game, this HUD will be updated, usually by 22:00 ET on update days (since I refuse to play scrims with the default HUD).  There will be a major announcement if I stop working on the HUD. 
 
-## Updating
-
-This HUD is currently in a transition period from a standard configuration to the #base configuration, and as a result you must perform both update methods to update your HUD when a new TF2 update comes out.  
+## Updating and First Time Users
 
 First, if a new commit has been pushed, pull the update files (or re-download the HUD and copy/paste).
 
@@ -37,7 +37,7 @@ This HUD supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-kn
    *  Larger Font Size for Casting
    *  Lower Positioning for Casting - Changed in scripts/hudlayout.res
 
-*  Ammo and Stickycharge meter when in minmode - changed in scripts/hudlayout.res
+*  Ammo and Stickycharge meter when in minmode (for jumpers) - changed in scripts/hudlayout.res
 
 To enable, uncomment (delete the // of) the relevant #base line at the very top of the file mentioned above.   
 
