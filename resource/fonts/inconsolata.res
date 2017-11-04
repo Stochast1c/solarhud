@@ -19,6 +19,16 @@ Scheme
          }
       }
 
+      "HudFontMediumSecondary"      //tooltip on mainmenu not controlled by .res files (the tooltip for matchmaking settings) 
+      {
+         "1"
+         {
+            "name"      "TF2 Inconsolata"
+            "tall"      "28"
+            "antialias" "1"
+         }
+      }
+
       "HudFontSmallestBold"
       {
          "1"

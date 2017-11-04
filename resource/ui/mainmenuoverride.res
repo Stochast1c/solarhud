@@ -94,7 +94,7 @@
       "ControlName"  "EditablePanel"
       "fieldName"    "LogoLabel"
       "xpos"         "55"  
-      "ypos"         "3"      //away from the very top 
+      "ypos"         "20"      //away from the very top 
       "wide"         "256"
       "tall"         "66"
       "visible"      "1"
@@ -258,7 +258,7 @@
    "TooltipPanel"  
    {
       "tall"         "17"
-      "border"    "base00Border"
+      "border"    "base01Border"
       "bgcolor_override"      "base2"
       
       "TipSubLabel"
@@ -522,110 +522,75 @@
       }
    }
 
-   "ItemsContainer"
+   "CharacterSetupButton"     //Items
    {
-      "xpos"         "0"
-      "ypos"         "0"
-      "wide"         "f0"
-      "tall"         "f0"
-      "zpos"         "0"      //Required to have Store Button ontop of logolabel
+      "xpos"         "55"
+      "ypos"         "240"
+      "wide"         "256"
+      "tall"         "16"
+
+      "textinsetx"   "0"
+      "font"         "incon16"
+      "textAlignment"   "center"
       
-      "StoreBGPanel"
-      {
-         "xpos"         "0"
-         "ypos"         "0"
-         "wide"         "0"
-         "tall"         "0"
-         "visible"      "0"
-         "enabled"      "0"
-         "border"    "noborder"
-      }
+      "border_default"  "base00border"
+      "border_armed"    "base01border"
 
-      "CustomizeLabel"           //disabled
-      {
-         "tall"         "0"
-         "visible"      "0"
-         "enabled"      "0"
-      }
-
-      "CharacterSetupButton"     //Items
-      {
-         "xpos"         "55"
-         "ypos"         "240"
-         "wide"         "256"
-         "tall"         "16"
-
-         "SubButton"
-         {
-            "wide"         "256"
-            "tall"         "16"
-            "textinsetx"   "0"
-            "font"         "incon16"
-            "textAlignment"   "center"
-            
-            "border_default"  "base00border"
-            "border_armed"    "base01border"
-      
-            "paintbackground" "1"      //let's you change button bg
-            "defaultFgColor_override"     "base00"
-            "defaultBgColor_override"     "base3"
-            "armedFgColor_override"       "base01"
-            "armedBgColor_override"       "base2"
-            "depressedFgColor_override"   "base01"
-            "depressedBgColor_override"   "base2"
-      
-            "SubImage"
-            {
-               "tall"         "0"
-               "visible"      "0"
-               "enabled"      "0"
-            } 
-         }
-      }
-
-      "StoreHasNewItemsImage"    //disabled
+      "paintbackground" "1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "base01"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "base01"
+      "depressedBgColor_override"   "base2"
+   
+      "SubImage"
       {
          "tall"         "0"
          "visible"      "0"
          "enabled"      "0"
-      }
+      } 
+   }
 
-      "GeneralStoreButton"       //S in LogoLabel
+   "StoreHasNewItemsImage"
+   {
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+   }
+
+   "GeneralStoreButton"       //S in LogoLabel
+   {
+      "xpos"         "55"
+      "ypos"         "20"
+      "zpos"         "100"
+      "wide"         "32"
+      "tall"         "64"
+      "pinCorner"    "0"
+
+      "textinsetx"   "0"
+      "font"         "incon64"
+      "textAlignment"   "center"
+
+      "border_default"  "noborder"
+      "border_armed"    "noborder"
+
+      "paintbackground" "1"      //let's you change button bg
+      "defaultFgColor_override"     "yellow"
+      "defaultBgColor_override"     "blank"
+      "armedFgColor_override"       "yellow"
+      "armedBgColor_override"       "blank"
+      "depressedFgColor_override"   "yellow"
+      "depressedBgColor_override"   "blank"
+
+      "SubImage"
       {
-         "xpos"         "55"
-         "ypos"         "3"
-         "zpos"         "100"
-         "wide"         "32"
-         "tall"         "64"
-
-         "SubButton"
-         {
-            "wide"         "32"
-            "tall"         "64"
-            "textinsetx"   "0"
-            "font"         "incon64"
-            "textAlignment"   "center"
-
-            "border_default"  "noborder"
-            "border_armed"    "noborder"
-
-            "paintbackground" "1"      //let's you change button bg
-            "defaultFgColor_override"     "yellow"
-            "defaultBgColor_override"     "blank"
-            "armedFgColor_override"       "yellow"
-            "armedBgColor_override"       "blank"
-            "depressedFgColor_override"   "yellow"
-            "depressedBgColor_override"   "blank"
-
-            "SubImage"
-            {
-               "tall"         "0"
-               "visible"      "0"
-               "enabled"      "0"
-            } 
-         }
-      }
-   }     
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
+      } 
+   }
 
    "EventPromo"   //In Game ads, disabled because annoying
    {
@@ -938,7 +903,7 @@
    "AchievementsButton"
    {
       "xpos"         "151"
-      "ypos"         "3"
+      "ypos"         "20"
       "wide"         "32"
       "tall"         "64"
 
@@ -1037,7 +1002,8 @@
       "wide"         "128"
       "tall"         "20"
 
-      "labelText"    "#MMenu_AdvOptions"
+      //"labelText"    "#MMenu_AdvOptions"
+      "labelText"    "Adv. Options"    //as of 2017-10-20 this was changed the "Advanced Options" which doesn't fit the element nicely so forcing back to hold text
       "font"         "incon20"
       "textAlignment"   "center"
       "textinsetx"   "0"
@@ -1669,4 +1635,119 @@
          "depressedBgColor_override"   "base2"
       }
    }
+
+   "RankModelPanel"
+   {
+      "visible"      "0"
+   }
+   
+   "RankPanel"
+   {
+      "visible"      "0"
+   }
+
+   "JungleInfernoImage"
+   {
+      "visible"      "0"
+      "enabled"      "0"
+
+      if_halloween_0
+      {
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_1
+      {
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_2
+      {
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_3
+      {
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_4
+      {  
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+      if_halloween_5
+      {  
+         "image"     "../logo/inferno_logo_green_anim"
+      }
+   }  
+
+   "FriendsContainer"      //individual friend handled by steamfriendpanel.res
+   {
+      "xpos"         "55"
+      "ypos"         "260"
+      "zpos"         "5"
+      "wide"         "256"
+      "tall"         "150"
+
+      "border"    "base00border"
+      "bgcolor_override"   "base3"  //controls the background and the inside background color, can't set it normally
+
+      "TitleLabel"
+      {
+         "font"         "incon20"
+         "textAlignment"   "center"
+         "xpos"         "0"
+         "ypos"         "0"
+         "wide"         "256"    //must be manually set, can't use f0
+         "tall"         "30"
+         "textinsetx"   "0"
+         "fgcolor_override"   "cyan"
+      }
+
+      "InnerShadow"     //background for the friendlist
+      {
+         "zpos"         "499"    //behind SteamFriendsList
+         "paintborder"  "1"
+         "border"    "noborder"
+         "PaintBackgroundType"   "1"
+         "bgcolor_override"   "base2"
+      }
+
+      "SteamFriendsList"
+      {
+         "columns_count"   "2"
+         "inset_x"      "8"   //(f20 (wide-20) - columns_count*friendpanel_kv_wide (200) - (columns_count-1)*column_gap (20) - scrollbar_wide (4) ) / 2
+         "inset_y"      "2"
+         "row_gap"      "2"
+         "column_gap"   "4"
+         "restrict_width"  "0"
+
+         "friendpanel_kv"     //individual friend listing
+         {
+            "wide"      "108"
+            "tall"      "20"
+         }
+
+         "ScrollBar"
+         {
+            "wide"   "4"
+
+            "Slider"
+            {
+               "fgcolor_override"   "yellow"
+            }
+      
+            "UpButton"
+            {
+            }
+      
+            "DownButton"
+            {
+            }
+         }
+      }
+
+      "BelowDarken"  //no idea
+      {
+         "visible"      "0"   
+         "bgcolor_override"   "mageneta"
+      }
+   }
+
 }

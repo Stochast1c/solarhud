@@ -1,0 +1,11 @@
+modify the panels for
+   friends requesting to join party
+      invitenotification.res (but can't change the xpos/ypos?)
+   other server popups at mainmenu
+      matchmakingdashboardpopup.res ?   
+   the mode/map select right panels
+      matchmakingdashboardplaylist
+      matchmakingcasualcriteria
+      matchmakingcategorymappanel
+   group chat
+      think it works at least, but colors/font aren't modified
