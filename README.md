@@ -4,11 +4,13 @@ A [solarized themed](http://ethanschoonover.com/solarized) HUD for TF2 that is h
 
 # If you are downloading this HUD please read the [Updating and First Time Users Section](https://github.com/Stochast1c/solarhud#updating-and-first-time-users) first or the HUD will not work!
 
-[Teamfortress.tv Thread](http://www.teamfortress.tv/30843/solarhud)
+## Screenshots
 
-[Dark Theme Screenshots](http://imgur.com/a/iSr9u) (The Default Theme)
+[Dark Theme](http://imgur.com/a/iSr9u) - The Default Theme
 
-[Light Theme Screenshots](http://imgur.com/a/DlrJb)
+[Light Theme](http://imgur.com/a/DlrJb) - See [How to Switch Themes](https://github.com/Stochast1c/solarhud#how-to-switch-themes) to change to this theme.
+
+## Overview
 
 The main goal of this mod is to completely overwrite all colors and fonts while keeping the minimal but very legible style of ell's HUD.
 
@@ -20,13 +22,15 @@ It is highly recommended that you clone the HUD rather than download and extract
 
 First, if a new commit has been pushed, pull the update files (or re-download the HUD and copy/paste).
 
-Second, run `extract_base_hudfiles.bat` to update the default HUD files.  [See WietHUD's readme for more information.](https://github.com/Wiethoofd/WietHUD/blob/master/readme.md)
+Second, run `extract_base_hudfiles.bat` to update the default HUD files.  [See WietHUD's readme for more information.](https://github.com/Wiethoofd/WietHUD#updating-wiethud)
 
-If you are a Linux (or rather a non-Windows user), the included .bat file and HLExtract will not run, as they are windows files.  You must manually extract the default HUD files from `tf_misc_dir.vpk` to the directory named `default_hudfiles/` (located at the top of the HUD directory).
+If you are a Linux (or rather a non-Windows) user, the included .bat file and HLExtract will not run, as they are windows files.  You must manually extract the default HUD files from `tf_misc_dir.vpk` to the directory named `default_hudfiles/` (located at the top of the HUD directory).
 
 ## HUD Crosshairs
 
-This HUD supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-knucklescrosses-release) which can be set in scripts/hudlayout.res.  Two crosshair controls are added for your convenience and can be found as the very first entries in scripts/hudlayout.res to be enabled/modified. Crosshairs are 1px or less off from true center on a 1920x1080 resolution, and may or may not be more misaligned on different resolutions. If you have no experience with HUD crosshairs, see the above link and reference Step 3 in post #2.     
+This HUD supports [KnucklesCrosses](http://www.teamfortress.tv/26790/official-knucklescrosses-release) which can be set in scripts/hudlayout.res.  Two crosshair controls are added for your convenience and can be found as the very first entries in scripts/hudlayout.res to be enabled/modified. Crosshairs are 1px or less off from true center on a 1920x1080 resolution, and may or may not be more misaligned on different resolutions. If you have no experience with HUD crosshairs, see the above link and reference Step 3 in post #2.
+
+VTF Crosshairs might be coming at later date, see the [tf.tv thread](http://www.teamfortress.tv/37767/how-to-make-vtf-crosshairs) on how to add it to the HUD yourself.
 
 ## Currently Supported Customizations
 
@@ -47,7 +51,9 @@ The server buttons use a custom alias to store the server ip's that you want the
 
 ## How to Switch Themes
 
-Navigate to resource/ and open all of the \*scheme.res files.  At the top of each file there will be a \#base definition for the theme.  Replace the directory with your preferred theme.  In addition, perform the same action to chapterbackgrounds.txt in scripts/.  Available themes can be found in the themes/ directory, but it should be fairly simple to add your own in.
+Navigate to resource/ and open all of the \*scheme.res files.  At the top of each file there will be a \#base definition for the theme.  Replace the directory with your preferred theme.  In addition, perform the same action to chapterbackgrounds.txt in scripts/.  
+
+Available themes can be found in the themes/ directory, but it is fairly simple to add your own in.  If you do create your own theme, make a pull request and I will add it into the HUD for others to use.
 
 
 ## Requests, Bugs, Errors, etc.
