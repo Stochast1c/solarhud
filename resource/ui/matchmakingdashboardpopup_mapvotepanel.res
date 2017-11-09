@@ -1,98 +1,43 @@
+#base "../../default_hudfiles/resource/ui/matchmakingdashboardpopup_mapvotepanel.res"
+
+//there is a default border around the maps that I can't change
 "Resource/UI/MatchMakingDashboardPopup_MapVotePanel.res"
 {
    "MapImageClip"
    {
-      "ControlName"  "EditablePanel"
-      "fieldName"    "MapImageClip"
-      "xpos"         "cs-0.5"
-      "ypos"         "15"
-      "wide"         "40"
-      "tall"         "o0.75"
-      "zpos"         "1"
-      "proportionaltoparent"  "1"   
-      "mouseinputenabled"  "0"
 
       "MapImage"
       {
-         "ControlName"  "ScalableImagePanel"
-         "fieldName"    "MapImage"
-         "xpos"         "cs-0.5"
-         "ypos"         "0"
-         "wide"         "f0"
-         "tall"         "o1"
-         "zpos"         "0"
-         "image"        "..\vgui\maps\menu_thumb_pl_goldrush"
-         "proportionaltoparent"  "1"   
-         "mouseinputenabled"  "0"
       }
    }
 
    "SelectButton"
    {
-      "ControlName"  "CExButton"
-      "fieldName"    "SelectButton"
-      "xpos"         "cs-0.5"
-      "ypos"         "13"
-      "wide"         "44"
-      "tall"         "34"
-      "zpos"         "0"
-      "autoResize"   "0"
-      "pinCorner"    "3"
-      "visible"      "1"
-      "enabled"      "1"
-      "tabPosition"  "0"
-      "font"         "HudFontSmallestBold"
+      "font"         "incon20"
       "textAlignment"   "center"
-      "dulltext"     "0"
-      "brighttext"   "0"
-      "Command"      "select_map"
-      "proportionaltoparent"  "1"
-      "labeltext"    ""
-      "mouseinputenabled"  "1"
-      "keyboardinputenabled"  "0"
-      "actionsignallevel"  "3"
-      "paintbackground" "1"
-      "stay_armed_on_click"   "1"
 
-      "sound_depressed" "UI/buttonclick.wav"
-      "sound_released"  "UI/buttonclickrelease.wav"
+      "border_default"  "yellow" 
+      "border_armed"    "violet" 
+ 
+      "paintbackground" "1"      //let's you change button bg 
+      //bgcolor is the inner border, but cannot control the depressed color
+      "defaultBgColor_override"     "blank" 
+      "armedBgColor_override"       "blank"       
+      "depressedBgColor_override"   "magenta" 
    }
 
    "VotesLabel"
    {
-      "ControlName"  "Label"
-      "fieldName"    "VotesLabel"
-      "xpos"         "cs-0.5"
-      "ypos"         "rs1"
-      "zpos"         "10"
-      "wide"         "40"
-      "tall"         "20"
-      "visible"      "1"
-      "enabled"      "1"
-      "font"         "MapVotesPercentage"
-      "fgcolor_override"   "TanLight"
-      "textAlignment"   "south"
-      "labelText"    "%votes%"
-      "proportionaltoparent"  "1"
-      "mouseinputenabled"  "0"
+      "font"         "incon12"
+      "fgcolor_override"   "base01"
    }
 
    "NameLabel"
    {
-      "ControlName"  "Label"
-      "fieldName"    "NameLabel"
-      "xpos"         "0"
-      "ypos"         "5"
-      "wide"         "f0"
-      "zpos"         "10"
-      "tall"         "20"
-      "visible"      "1"
-      "enabled"      "1"
-      "font"         "ItemFontAttribSmall"
-      "fgcolor_override"   "TanLight"
-      "textAlignment"   "north"
-      "labelText"    "%mapname%"
-      "proportionaltoparent"  "1"
-      "mouseinputenabled"  "0"
+      "ypos"         "2"               
+      "tall"         "12"
+      "textAlignment"   "center"
+      "font"         "incon10"
+      "fgcolor_override"   "yellow"
    }
 }
