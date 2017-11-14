@@ -1,4 +1,9 @@
+!default_hudfiles/
 default_hudfiles/*
+!default_hudfiles/resource/*
+default_hudfiles/resource/*
+!default_hudfiles/resource/ui/*
+default_hudfiles/resource/ui/*
 !default_hudfiles/resource/ui/mainmenuoverride.res
 sound/
 *.swp
