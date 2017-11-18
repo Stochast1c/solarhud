@@ -93,7 +93,12 @@
             "border"    "base00Border"
          }
 
-         "CTFLogoPanel"    //the spinning logo, makes it look like you are searching
+         "QueueLogoButton"    //the spinning logo, when you click, can't set the radius of the spinner or the colors (looks like it uses a clientscheme defined team colors red/blue
+         {
+            "ypos"         "0"
+         }
+
+         "CTFLogoPanel"    //the spinning logo before you click
          {
             "ypos"         "0"
 
