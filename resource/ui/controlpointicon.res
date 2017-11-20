@@ -1,110 +1,60 @@
+#base "../../default_hudfiles/resource/ui/controlpointicon.res"
+
+//goal: show CapNumPlayers when only 1 on point
+//compromise goal: show CapPlayerImage when only 1 on point
+//current usage: show CapPlayerImage for all numbers on point, CapNumPlayers only when >1
 "Resource/UI/ControlPointIcon.res"
 {
    "ControlPointIcon"
    {
-      "ControlName"  "EditablePanel"
-      "fieldName" "ControlPointIcon"
-      "xpos"      "0"
-      "ypos"      "0"
-      "zpos"      "2"
       "wide"      "21"
       "tall"      "21"
-      "visible"   "1"
-      "enabled"   "1"
    }
    
    "Countdown"
    {
-      "ControlName"  "CControlPointCountdown"
-      "fieldName" "Countdown"
-      "xpos"      "0"
-      "ypos"      "0"
-      "zpos"      "4"
       "wide"      "21"
       "tall"      "21"
-      "visible"   "1"
-      "enabled"   "1"
    }  
 
+   "CapPlayerImage"     //can't disable when multiple players are capping
+   {                    //centered when 1, pushed to far left if >1
+                        //clips into double digit numbers (situation is rare enough, live with it)
+      "wide"      "7"
+      "tall"      "14"
+      "image"     "capture_icon"
+   }
 
-   "CapNumPlayers"
-   {  
-      "ControlName"     "CExLabel"
-      "fieldName"    "CapNumPlayers"
+   "CapNumPlayers"   //can't set color, it just flashes on first reloadscheme then defaults 
+   {                 //back to black
+                     //doesn't show when 1
       "font"         "incon16num"
-      "fgcolor_override"      "yellow"    //flashes yellow then stays black
       "xpos"         "0"
       "ypos"         "0"
-      "zpos"         "4"
       "wide"         "21"
       "tall"         "21"
-      "visible"      "1"
-      "enabled"      "1"
-      "labelText"    "#ControlPointIconCappers"
       "textAlignment"      "center"
    }
 
-   "OverlayImage"
+   "OverlayImage"    //no idea
    {
-      "ControlName"  "ImagePanel"      
-      "fieldName" "OverlayImage"
       "xpos"      "12"
       "ypos"      "0"
-      "zpos"      "4"
       "wide"      "9"
       "tall"      "9"
-      "visible"   "0"
-      "enabled"   "1"
-      "image"     "capture_icon"
-      "scaleImage"   "1"
    }
    
-   "CPTimerLabel"    //not sure what this is
+   "CPTimerLabel"    //not sure what CPTimer is
    {
-      "ControlName"  "CExLabel"
-      "fieldName"    "CPTimerLabel"
-      "xpos"         "0"
-      "ypos"         "0"
-      "zpos"         "0"
       "wide"         "7"
-      "tall"         "20"
-      "visible"      "0"
-      "enabled"      "1"
-      "labelText"    "60"
       "textAlignment"   "center"
-      "dulltext"     "0"
-      "brighttext"   "0"
-      "wrap"         "0"
       "font"         "incon16"
       "fgcolor"      "magenta"
    }
             
    "CPTimerBG"
    {
-      "ControlName"  "Panel"
-      "fieldName"    "CPTimerBG"
-      "xpos"         "0"
-      "ypos"         "0"
-      "zpos"         "-1"
       "wide"      "42"
       "tall"      "21"
-      "visible"      "0"
-      "enabled"      "1"
-      "image"        "../sprites/obj_icons/icon_obj_timer"  
-      "scaleImage"   "1"   
-   }
-   "CapPlayerImage"  //disabled, need to make wide/tall 0 to remove
-   {
-      "ControlName"  "ImagePanel"      
-      "fieldName" "CapPlayerImage"
-      "xpos"      "0"
-      "ypos"      "0"
-      "zpos"      "3"
-      "wide"      "0"
-      "tall"      "0"
-      "visible"   "0"
-      "enabled"   "0"
-      "image"     "capture_icon"
-      "scaleImage"   "1"
    }
 }
