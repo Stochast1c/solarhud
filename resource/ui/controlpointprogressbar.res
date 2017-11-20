@@ -1,126 +1,61 @@
+#base "../../default_hudfiles/resource/ui/controlpointprogressbar.res"
+
 //this is the popup that appears when
 //you are standing on a cp
+//the icon colors are forced transparent regardless of alpha
 
 "Resource/UI/ControlPointProgressBar.res"
 {
    "ControlPointProgressBar"
    {
-      "ControlName"  "EditablePanel"
-      "fieldName" "ControlPointProgressBar"
-      "xpos"      "0"
-      "ypos"      "0"
-      "zpos"      "20"
-      "wide"      "100"
-      "wide_minmode"    "65"
-      "tall"      "65"
-      "tall_minmode"    "42"
-      "visible"   "0"
-      "enabled"   "1"
+      "wide"    "65"
+      "tall"    "42"
    }
 
-   "ProgressBar"
+   "ProgressBar"     //the pop-up progress bar
    {
-      "ControlName"  "CircularProgressBar"
-      "fieldName" "ProgressBar"
-      "xpos"      "28"
-      "xpos_minmode"    "18"
-      "ypos"      "5"
-      "ypos_minmode"    "3"
-      "zpos"      "23"
-      "wide"      "45"
-      "wide_minmode"    "29"
-      "tall"      "45"
-      "tall_minmode"    "29"
-      "autoResize"   "0"
-      "pinCorner" "0"
-      "visible"   "1"
-      "enabled"   "1"
-      "fg_image"  "progress_bar_blu"
-      "bg_image"  "progress_bar_blu"
+      "xpos"    "18"
+      "ypos"    "10"    //just above points
+      "wide"    "29"
+      "tall"    "29"
    }
 
-   "Teardrop"
+   "Teardrop"  //disabled
    {
-      "ControlName"  "CIconPanel"
-      "fieldName" "Teardrop"
-      "xpos"      "24"
-      "xpos_minmode"    "16"
-      "ypos"      "0"
-      "ypos_minmode"    "0"
-      "zpos"      "21"
-      "wide"      "54"
-      "wide_minmode"    "35"
-      "tall"      "65"
-      "tall_minmode"    "42"
-      "visible"   "1"
-      "enabled"   "1"
-      "scaleImage"   "1"
-      "icon"      "cappoint_progressbar_teardrop"
-      "iconColor" "255 255 255 255"
+      "xpos"    "16"
+      "ypos"    "0"
+      "wide"    "35"
+      "tall"    "42"
+      "iconColor" "255 255 255 0"
    }
    
-   "TeardropSide"
+   "TeardropSide"    //no idea
    {
-      "ControlName"  "CIconPanel"
-      "fieldName" "TeardropSide"
-      "xpos"      "24"
-      "xpos_minmode"    "15"
-      "ypos"      "0"
-      "ypos_minmode"    "0"
-      "zpos"      "21"
-      "wide"      "54"
-      "wide_minmode"    "35"
-      "tall"      "54"
-      "tall_minmode"    "35"
-      "visible"   "1"
-      "enabled"   "1"
-      "scaleImage"   "1"
-      "icon"      "cappoint_progressbar_teardrop"
+      "xpos"    "15"
+      "ypos"    "0"
+      "wide"    "35"
+      "tall"    "35"
       "iconColor" "255 255 255 255"
    }
 
-   "ProgressText"
+   "ProgressText"    //tells you why you can't cap point
    {  
-      "ControlName"     "Label"
-      "fieldName"    "ProgressText"
-      "font"         "DefaultSmall"
-      "font_minmode"       "DefaultVerySmall"
-      "xpos"         "14"
-      "xpos_minmode"       "10"
-      "ypos"         "8"
-      "ypos_minmode"       "0"
-      "zpos"         "23"
-      "wide"         "75"
-      "wide_minmode"       "49"
-      "tall"         "40"
+      "font"       "incon8"
+      "fgcolor_override"    "red"
+      "xpos"       "10"
+      "ypos"       "0"
+      "wide"       "49"
       "tall_minmode"       "36"
-      "autoResize"      "0"
-      "pinCorner"    "0"
-      "visible"      "1"
-      "enabled"      "1"
-      "labelText"    "progress"
-      "dulltext"     "0"
-      "brighttext"      "0"
-      "centerwrap"   "1"
+      "centerwrap"         "1"      /can set alignment with this command!
+      "textAlignment"      "south"  //force to be just above icon
    }
 
-   "Blocked"
+   "Blocked"      //the no circle, disabled
    {
-      "ControlName"  "CIconPanel"
-      "fieldName" "Blocked"
-      "xpos"      "26"
-      "xpos_minmode"    "18"
-      "ypos"      "3"
-      "ypos_minmode"    "2"
-      "zpos"      "21"
-      "wide"      "50"
-      "wide_minmode"    "31"
-      "tall"      "50"
-      "tall_minmode"    "31"
-      "visible"   "1"
-      "enabled"   "1"
-      "scaleImage"   "1"
-      "icon"      "cappoint_progressbar_blocked"
-      "iconColor" "255 255 255 255"
+      "xpos"    "18"
+      "ypos"    "2"
+      "wide"    "31"
+      "tall"    "31"
+      "iconColor" "255 255 255 0"
    }
 }
