@@ -428,71 +428,94 @@
       }
    }
 
+   //buttons flank the backpack panel
+   //backpack panel doesn't have an explicit xpos/ypos afaik, found through trial and error
    "PrevPageButton"
    {
       "ControlName"  "CExButton"
       "fieldName"    "PrevPageButton"
-      "xpos"         "c195"
-      "ypos"         "290"
+      "xpos"         "118"
+      "ypos"         "60"
       "zpos"         "1"
       "wide"         "20"
-      "tall"         "20"
+      "tall"         "220"
       "autoResize"   "0"
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
       "tabPosition"  "0"
       "labelText"    "<"
-      "font"         "incon16"
+      "font"         "incon24"
       "textAlignment"   "center"
       "dulltext"     "0"
       "brighttext"   "0"
       "Command"      "prevpage"
       "sound_depressed" "UI/buttonclick.wav"
       "sound_released"  "UI/buttonclickrelease.wav"
+
+      "border_default"              "base00border"
+      "border_armed"                "violetborder"
+      "paintbackground" "1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "violet"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "violet"
+      "depressedBgColor_override"   "base2"
+
    }
 
-   "CurPageLabel"
+   "CurPageLabel"    //disabled, no good place for it to be now
    {
       "ControlName"  "CExLabel"
       "fieldName"    "CurPageLabel"
       "font"         "incon16"
       "labelText"    "%backpackpage%"
       "textAlignment"   "center"
-      "xpos"         "c220"
-      "ypos"         "290"
+      "xpos"         "c-20"
+      "ypos"         "r130"   //just above bottom
       "zpos"         "1"
-      "wide"         "40"
-      "tall"         "20"
+      "wide"         "0"  //40
+      "tall"         "0"  //20
       "autoResize"   "1"
       "pinCorner"    "0"
-      "visible"      "1"
-      "enabled"      "1"
-      "fgcolor_override" "base00"
+      "visible"      "0"
+      "enabled"      "0"
+      "fgcolor_override" "cyan"
    }
 
    "NextPageButton"
    {
       "ControlName"  "CExButton"
       "fieldName"    "NextPageButton"
-      "xpos"         "c265"
-      "ypos"         "290"
+      "xpos"         "r140"
+      "ypos"         "60"
       "zpos"         "1"
       "wide"         "20"
-      "tall"         "20"
+      "tall"         "220"
       "autoResize"   "0"
       "pinCorner"    "0"
       "visible"      "1"
       "enabled"      "1"
       "tabPosition"  "0"
       "labelText"    ">"
-      "font"         "incon16"
+      "font"         "incon24"
       "textAlignment"   "center"
       "dulltext"     "0"
       "brighttext"   "0"
       "Command"      "nextpage"
       "sound_depressed" "UI/buttonclick.wav"
       "sound_released"  "UI/buttonclickrelease.wav"
+
+      "border_default"              "base00border"
+      "border_armed"                "violetborder"
+      "paintbackground" "1"      //let's you change button bg
+      "defaultFgColor_override"     "base00"
+      "defaultBgColor_override"     "base3"
+      "armedFgColor_override"       "violet"
+      "armedBgColor_override"       "base2"
+      "depressedFgColor_override"   "violet"
+      "depressedBgColor_override"   "base2"
    }
 
    "DragToNextPageButton"
