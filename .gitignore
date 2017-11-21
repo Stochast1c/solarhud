@@ -9,6 +9,9 @@ default_hudfiles/resource/*
 !default_hudfiles/resource/ui/*
 default_hudfiles/resource/ui/*
 !default_hudfiles/resource/ui/mainmenuoverride.res
+#following files cause tf2 to crash if they aren't present
+!default_hudfiles/resource/ui/controlpointprogressbar.res
+!default_hudfiles/resource/ui/charinfoarmorysubpanel.res
 
 sound/
 *.swp
