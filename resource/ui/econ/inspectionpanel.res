@@ -1,222 +1,198 @@
+#base "../../../default_hudfiles/resource/ui/econ/inspectionpanel.res"
+
 "Resource/UI/econ/QuestEditorPanel.res"
 {
-   "BGImage"
-   {
-      "ControlName"  "ImagePanel"
-      "fieldName"    "BGImage"
-      "xpos"         "cs-0.5"
-      "ypos"         "0"
-      "zpos"         "1"
-      "wide"         "o1"
-      "tall"         "p0.75"
-      "visible"      "1"
-      "enabled"      "1"
-      "image"        "item_carousel_bg"
-      "scaleImage"   "1"
-      "proportionaltoparent" "1"
-   }
-
-   "ItemName"
+   //this controls just the item name, but acts like a background, making it f0
+   //works oddly because of the itempanel change making it a bgcolor rather than using blank
+   //blame tf2 and their background borders making things difficult to edit
+   "ItemName"     
    {     
-      "ControlName"  "CItemModelPanel"
-      "fieldName"    "ItemName"
-      "xpos"         "cs-0.5"
-      "ypos"         "0"
-      "zpos"         "5"
-      "wide"         "f0"
-      "tall"         "200"
-      "visible"      "1"
-      "bgcolor_override"      "0 0 0 0"
-      "noitem_textcolor"      "117 107 94 255"
-      "PaintBackgroundType"   "2"
-      "paintborder"  "0"
-      "mouseinputenabled"  "0"
-      "proportionaltoparent"  "1"
-
-      "text_ypos"    "15"
-      "text_center"  "0"
-      "paint_icon_hide" "1"
-      "model_hide"   "1"
-      "text_forcesize"  "4"
-      "name_only" "1"
+      "tall"         "f0"
+      "zpos"         "4"   //must be behind ModelInspectionPanel (5)
 
       "itemmodelpanel"
       {
-         "use_item_rendertarget" "0"
-         "allow_rot"          "0"
-         "inventory_image_type"  "1"
-         "continued_velocity" "1"
       }
    }
 
-   "ModelInspectionPanel"
+   "PaintkitPreviewContainer"
    {
-      "fieldName"    "ModelInspectionPanel"
-      "xpos"         "cs-0.5"
-      "ypos"         "0"
-      "zpos"         "5"
-      "wide"         "o1.5"
-      "tall"         "p0.8"
-      "visible"      "1"
+      "border"    "base00Border"
+      "bgcolor_override"   "base2"
 
-      "proportionaltoparent"  "1"
-
-      "force_use_model"    "1"
-      "use_item_rendertarget" "0"
-      "allow_rot"          "1"
-      "allow_pitch"        "1"
-      "max_pitch"          "30"
-      "use_pedestal"       "1"
-      "use_particle"       "1"
-      "fov"             "75"
-
-      "model"
+      "fixed_item"
       {
-         "force_pos" "1"
-
-         "angles_x" "7"
-         "angles_y" "130"
-         "angles_z" "0"
-         "origin_x" "175"
-         "origin_y" "0"
-         "origin_z" "0"
-         "frame_origin_x"  "0"
-         "frame_origin_y"  "0"
-         "frame_origin_z"  "0"
-         "spotlight" "1"
-      
-         "modelname"    ""
+      }
+      "fixed_paintkit"
+      {
+      }
+      "consume_mode"
+      {
+         "border"    "orangeBorder"
       }
 
-      "lights"
+      "ComboBoxValidPaintkits"   //what you selected, combo box controlled in clientscheme
       {
-         "default"
-         {
-            "name"         "directional"
-            "color"        "1 1 1"
-            "direction"    "0 0 -1"
-         }
-         "spot light"
-         {
-            "name"            "spot"
-            "color"           "1 .9 .9"
-            "attenuation"     "4.5 0 0"
-            "origin"       "0 0 100"
-            "direction"       "1 0 -0.5"
-            "inner_cone_angle"   "1"
-            "outer_cone_angle"   "90"
-            "maxDistance"     "1000"
-            "exponent"        "25"
-         }
-         "point light"
-         {
-            "name"            "point"
-            "color"           ".7 .8 1"
-            "attenuation"     "15 0 0"
-            "origin"       "15 -50 -200"
-            "maxDistance"     "1000"
-         }
-      }
-   }
+         "font"            "incon12"
 
-   "TeamNavPanel"
-   {
-      "ControlName"     "CNavigationPanel"
-      "fieldName"       "TeamNavPanel"
-      "xpos"            "cs-0.5"
-      "ypos"            "p.7-16"
-      "zpos"            "100"
-      "wide"            "60"
-      "tall"            "25"
-      "autoResize"      "0"
-      "pinCorner"       "0"
-      "visible"         "1"
-      "enabled"         "1"
-      "proportionaltoparent"  "1"
-      
-      "auto_scale"      "1"
-      "auto_layout"     "1"
-      "selected_button_default"  "0"
-      "auto_layout_vertical_buffer" "-4"
-      "display_vertically" "0"
-      "align"           "west"
-      
-      "ButtonSettings"
-      {
-         "wide"            "19"
-         "tall"            "19"
-         "autoResize"      "0"
-         "pinCorner"       "2"
-         "visible"         "1"
-         "enabled"         "1"
-         "tabPosition"     "0"
-         "labelText"       ""
-         "textAlignment"      "south-west"
-         "scaleImage"      "1"
-         
-         "fgcolor"         "TanDark"
-         "defaultFgColor_override" "TanDark"
-         "armedFgColor_override" "TanDark"
-         "depressedFgColor_override" "TanDark"
-         
-         "sound_depressed" "UI/buttonclick.wav"
-         "sound_released"  "UI/buttonclickrelease.wav"
-         "sound_armed"     "UI/buttonrollover.wav"
-         
-         "paintbackground" "0"
-         "paintbackgroundtype"   "0"
-         "defaultBgColor_Override"  "0 0 0 255"
-         
-         "paintborder"     "0"
-         
-         "image_drawcolor"    "255 255 255 77"
-         "image_armedcolor"      "255 255 255 128"
-         "image_selectedcolor"   "255 255 255 255"
-         
-         "stayselectedonclick"   "1"
-         "keyboardinputenabled"  "0"
-         
-         "SubImage"
+         "fixed_paintkit"
          {
-            "ControlName"  "ImagePanel"
-            "fieldName"    "SubImage"
-            "xpos"         "0"
-            "ypos"         "0"
-            "zpos"         "7"
-            "wide"         "19"
-            "tall"         "19"
-            "visible"      "1"
-            "enabled"      "1"
-            "scaleImage"   "1"
-         }           
+         }
+         
+         "fgcolor_override"   "base01"
+         "bgcolor_override"   "blank"
+         "disabledFgColor_override" "base00"
+         "disabledBgColor_override" "blank"
+         "selectionColor_override" "blank"
+         "selectionTextColor_override" "base01"
+         "defaultSelectionBG2Color_override" "blank"
       }
-      
-      "Buttons"
+
+      "PaintkitLabel"
       {
-         "all"
+         "font"         "incon12"
+         "fgcolor_override"   "base01"
+
+         "fixed_paintkit"
          {
-            "userdata"        "2"
-            "image_default"      "store/store_redteam"
-            "image_armed"     "store/store_redteam"
-            "image_selected"  "store/store_redteam"
-            
-            "SubImage"
-            {
-               "image"        "store/store_redteam"
-            }           
          }
-         "scout"
+      }
+
+      "ComboBoxValidItems"
+      {
+         "font"            "incon12"
+
+         "fixed_paintkit"
          {
-            "userdata"        "3"
-            "image_default"      "store/store_blueteam"
-            "image_armed"     "store/store_blueteam"
-            "image_selected"  "store/store_blueteam"
-            
-            "SubImage"
-            {
-               "image"        "store/store_blueteam"
-            }           
          }
+
+         "fixed_item"
+         {
+         }
+
+         "fgcolor_override"   "base01"
+         "bgcolor_override"   "blank"
+         "disabledFgColor_override" "base00"
+         "disabledBgColor_override" "blank"
+         "selectionColor_override" "blank"
+         "selectionTextColor_override" "base01"
+         "defaultSelectionBG2Color_override" "blank"
+      }
+
+      "ItemLabel"
+      {
+         "font"         "incon12"
+         "fgcolor_override"   "base01"
+
+         "fixed_paintkit"
+         {
+         }
+
+         "fixed_item"
+         {
+         }
+
+         "consume_mode"
+         {
+         }
+      }
+
+      "WearSlider"
+      {
+         "fixed_item"
+         {
+         }
+
+         "fixed_paintkit"
+         {
+         }
+
+         "consume_mode"
+         {
+         }
+      }
+
+      "WearLabel"
+      {
+         "font"         "incon12"
+         "fgcolor_override"   "base01"
+
+         "fixed_item"
+         {
+         }
+
+         "fixed_paintkit"
+         {
+         }
+
+         "consume_mode"
+         {
+         }
+      }
+
+      "NewSeedButton"
+      {
+         "fixed_item"
+         {
+         }
+         "fixed_paintkit"
+         {
+         }
+
+         "font"      "incon12"
+
+         "paintbackground" "1"      //let's you change button bg
+         "defaultFgColor_override"     "yellow"
+         "defaultBgColor_override"     "base2"
+         "armedFgColor_override"       "yellow"
+         "armedBgColor_override"       "base3"
+         "depressedFgColor_override"   "yellow"
+         "depressedBgColor_override"   "base3"
+
+         "consume_mode"
+         {
+            "visible"   "1"      //see when consuming?
+         }
+      }
+
+      "SeedTextEntry"
+      {
+         "fixed_item"
+         {
+         }
+         "fixed_paintkit"
+         {
+         }
+
+         "font"      "incon12"
+         "fgcolor_override"   "yellow"
+         "border"             "base01border"
+         "bgcolor_override"   "base3"
+         "maxchars"     "18"
+
+         "consume_mode"
+         {
+            "visible"   "1"      //see when consuming???
+         }
+      }
+
+      "MarketButton"
+      {
+         "fixed_item"
+         {
+         }
+         "fixed_paintkit"
+         {
+         }
+         "font"      "incon10"
+
+         "paintbackground" "1"      //let's you change button bg
+         "defaultFgColor_override"     "green"
+         "defaultBgColor_override"     "base2"
+         "armedFgColor_override"       "green"
+         "armedBgColor_override"       "base3"
+         "depressedFgColor_override"   "green"
+         "depressedBgColor_override"   "base3"
       }
    }
 
