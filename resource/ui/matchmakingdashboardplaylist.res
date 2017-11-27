@@ -7,10 +7,10 @@
    {
       "fieldName"    "ExpandableList"
       "xpos"         "r0"
-      "ypos"         "10"
+      "ypos"         "20"  //dashboard bar is 24 tall, not sure why this is 20
       "zpos"         "1001"
       "wide"         "280"
-      "tall"         "f70"
+      "tall"         "f80"
       "visible"      "1"
       "proportionaltoparent"  "1"
    }
@@ -19,16 +19,16 @@
    {
       "ControlName"     "Label"
       "fieldName"    "Title"
-      "xpos"      "8"
-      "ypos"      "20"
+      "xpos"      "0"
+      "ypos"      "0"
       "zpos"      "99"
       "wide"      "f0"
-      "tall"      "20"
+      "tall"      "32"
       "proportionaltoparent"  "1"
       "labeltext"    "#TF_Matchmaking_HeaderModeSelect"
-      "textAlignment"   "west"
-      "font"         "HudFontMediumBigBold"
-      "fgcolor_override"   "TanDark"
+      "textAlignment"   "center"
+      "font"         "incon32"
+      "fgcolor_override"   "yellow"
       
       "mouseinputenabled"  "0"
    }
@@ -38,7 +38,7 @@
    // "ControlName"  "CTFPlaylistPanel"
       "fieldName"    "playlist"
       "xpos"         "8"
-      "ypos"         "50"
+      "ypos"         "33"
       "zpos"         "100"
       "wide"         "255"
       "tall"         "305"
@@ -46,23 +46,24 @@
       "proportionaltoparent"  "1"
    }
 
-   "PlayListDropShadow"
+   "PlayListDropShadow"    //disabled
    {
       "ControlName"  "EditablePanel"
       "fieldName"    "PlayListDropShadow"
       "xpos"         "8"
       "ypos"         "50"
       "zpos"         "1000"
-      "wide"         "255"
-      "tall"         "298"
-      "visible"      "1"
+      "wide"         "0"//"255"
+      "tall"         "0"//"298"
+      "visible"      "0"
+      "enabled"      "0"
       "PaintBackgroundType"   "2"
       "border"    "InnerShadowBorder"
       "proportionaltoparent"  "1"
       "mouseinputenabled"  "0"
    }
 
-   "NonLeaderContainer"
+   "NonLeaderContainer"    //come back to this with a person to test with
    {
       "ControlName"  "EditablePanel"
       "fieldName"    "NonLeaderContainer"
