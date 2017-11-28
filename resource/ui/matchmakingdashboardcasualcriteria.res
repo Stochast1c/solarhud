@@ -8,10 +8,10 @@
    {
       "fieldName"    "CasualCriteria"
       "xpos"         "r0"
-      "ypos"         "10"
+      "ypos"         "20"
       "zpos"         "1002"
       "wide"         "270"
-      "tall"         "f70"
+      "tall"         "f80"
       "visible"      "1"
       "proportionaltoparent"  "1"
    }
@@ -20,16 +20,16 @@
    {
       "ControlName"     "Label"
       "fieldName"    "Title"
-      "xpos"      "8"
-      "ypos"      "20"
+      "xpos"      "1"      //0 gets eaten by backButton
+      "ypos"      "0"
       "zpos"      "99"
-      "wide"      "f0"
-      "tall"      "20"
+      "wide"      "f16"    //closeButton is 15wide
+      "tall"      "32"
       "proportionaltoparent"  "1"
       "labeltext"    "#TF_Matchmaking_HeaderCasual"
-      "textAlignment"   "west"
-      "font"         "HudFontMediumBigBold"
-      "fgcolor_override"   "TanDark"
+      "textAlignment"   "center"
+      "font"         "incon32"
+      "fgcolor_override"   "cyan"
       
       "mouseinputenabled"  "0"
    }
@@ -38,11 +38,11 @@
    {
       "ControlName"  "CCasualCriteriaPanel"
       "fieldName"    "criteria"
-      "xpos"         "-3"
-      "ypos"         "40"
+      "xpos"         "1"
+      "ypos"         "56"
       "zpos"         "100"
-      "wide"         "f0"
-      "tall"         "f85"
+      "wide"         "f16"
+      "tall"         "f56"
       "visible"      "1"
       "proportionaltoparent"  "1"
    }
@@ -51,17 +51,17 @@
    {
       "ControlName"  "CExButton"
       "fieldName"    "QueueButton"
-      "xpos"         "cs-0.5"
-      "ypos"         "rs1-8"
+      "xpos"         "1" 
+      "ypos"         "32"
       "zpos"         "100"
-      "wide"         "f20"
-      "tall"         "20"
+      "wide"         "f16"
+      "tall"         "24"
       "autoResize"   "0"
       "pinCorner"    "3"
       "visible"      "1"
       "enabled"      "1"
       "tabPosition"  "0"
-      "font"         "HudFontMediumSmallBold"
+      "font"         "incon24"
       "textAlignment"   "center"
       "dulltext"     "0"
       "brighttext"   "0"
@@ -75,7 +75,16 @@
       "sound_depressed" "UI/buttonclick.wav"
       "sound_released"  "UI/buttonclickrelease.wav"
 
-      "armedBgColor_override"    "CreditsGreen"
-      "defaultBgColor_override"  "GreenSolid"
+      "armedFgColor_override"    "green"
+      "defaultFgColor_override"  "green"
+      "armedBgColor_override"    "base3"
+      "defaultBgColor_override"  "base2"
+
+      "disabledFgColor2_override"   "red"
+      "disabledBgColor2_override"   "magenta"   //does nothing
+
+      "border_default"           "base01Border"
+      "border_armed"             "greenBorder"
+      "border_disabled"          "redBorder"
    }
 }
