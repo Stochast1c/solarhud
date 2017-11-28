@@ -2,214 +2,81 @@
 
 "Resource/UI/MainMenuPlayListEntry.res"
 {
-   "ModeImage"
+   "ModeImage"    //bgimage, disabled 
    {
-      "ControlName"  "ImagePanel"
-      "fieldName"    "ModeImage"
-      "xpos"         "0"
-      "ypos"         "0"
-      "zpos"         "0"
-      "wide"         "o4"
-      "tall"         "p1.17"
-      "visible"      "1"
-      "enabled"      "1"
-      "scaleImage"   "1"   
-      "proportionaltoparent"  "1"
-      "image"        ""
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
    }
 
-   "BGColor"
+   "BGColor"      //bgcolor
    {
-      "ControlName"  "EditablePanel"
-      "fieldName"    "BGColor"
-      "xpos"         "0"
-      "ypos"         "0"
-      "zpos"         "-1"
-      "wide"         "f0"
-      "tall"         "f0"
-      "visible"      "1"
-      "enabled"      "1"
-      
-      "proportionaltoparent"  "1"
-      "bgcolor_override"   "0 0 0 255"
+      "bgcolor_override"   "base2"
    }
 
    
-   "ToolTipHack"
+   "ToolTipHack"     //nice name
    {
-      "ControlName"  "EditablePanel"
-      "fieldName"    "ToolTipHack"
-      "xpos"         "0"
-      "ypos"         "0"
-      "zpos"         "490"
-      "wide"         "f0"
-      "tall"         "f0"
-      "visible"      "1"
-      "enabled"      "1"
-      "mouseinputenabled"  "1"
-      "eatmouseinput"   "0"   
    }
 
    "ModeButton"
    {
-      "ControlName"  "CExButton"
-      "fieldName"    "ModeButton"
-      "xpos"         "rs1-6"
-      "ypos"         "2"
-      "zpos"         "5"
-      "wide"         "122"
-      "tall"         "15"
-      "visible"      "1"
-      "enabled"      "1"
-      "labelText"    "%button_token%"
-      "textinsetx"   "4"
-      "use_proportional_insets" "1"
-      "font"         "HudFontSmallestBold"
-      "textAlignment"   "west"
-      "dulltext"     "0"
-      "brighttext"   "0"
-      "default"      "1"
-      "command"      "%button_command%"
-      "proportionaltoparent" "1"
-      "actionsignallevel"  "2"
-
-      //"border_default"   "MainMenuMiniButtonDefault"
-      //"border_armed"     "MainMenuMiniButtonArmed"
-      "paintbackground" "1"
-
-      "sound_depressed" "UI/buttonclick.wav"
-      "sound_released"  "UI/buttonclickrelease.wav"
-
-      "defaultFgColor_override"  "TanLight"
-      "armedFgColor_override"    "TanLight"
-      "depressedFgColor_override" "TanLight"
-   }  
-
-   "MatchmakingBanPanel"
-   {
-      "ControlName"  "EditablePanel"
-      "fieldName"    "MatchmakingBanPanel"
       "xpos"         "0"
       "ypos"         "0"
-      "zpos"         "3"
       "wide"         "f0"
-      "tall"         "f0"
-      "visible"      "0"
-      "enabled"      "1"
-      "mouseinputenabled"  "0"
-      "bgcolor_override"   "0 0 0 250"
-      "proportionaltoparent"  "1"
+      "tall"         "24"
 
+      "textinsetx"   "0"
+      "font"         "incon20"
+      "textAlignment"   "center"
+
+      "border_default"   "base01Border"
+      "border_armed"     "orangeBorder"
+      "border_disabled"    "redBorder"
+
+      "defaultFgColor_override"  "base01"
+      "armedFgColor_override"    "orange"
+      "depressedFgColor_override" "orange"
+      "defaultBgColor_override"  "base3"
+      "armedBgColor_override"   "base2" 
+      "depressedBgColor_override" "base2"
+
+      "disabledFgColor2_override"    "red"   //font of disabled entries
+      "disabledBgColor2_override"    "magenta"  //does nothing, setting anyway
+   }  
+
+   "MatchmakingBanPanel"   //no idea, not planning on getting banned to check
+   {
       "MatchmakingBanDurationLabel"
       {
-         "ControlName"  "CExLabel"
-         "fieldName"    "MatchmakingBanDurationLabel"
-         "font"         "MMenuPlayListDesc"
-         "fgcolor_override"   "RedSolid"
-         "labelText"    "#TF_Matchmaking_Ban_Duration_Remaining"
-         "textalignment"   "south-west"
-         "xpos"         "5"
-         "ypos"         "0"
-         "zpos"         "2"
-         "wide"         "f0"
-         "tall"         "f0"
-         "visible"      "1"
-         "enabled"      "1"
-         "autoResize"   "1"
-         "pinCorner"    "0"
-         "proportionaltoparent"  "1"
-
-         "paintbackground" "0"
       }
    }
 
    "DescLabel"
    {
-      "ControlName"  "CExLabel"
-      "fieldName"    "DescLabel"
-      "font"         "MMenuPlayListDesc"
-      "labelText"    "%desc_token%"
-      "textAlignment"   "north-west"
-      "xpos"         "rs1"
-      "ypos"         "18"
-      "zpos"         "2"
-      "wide"         "125"
-      "tall"         "40"
-      "autoResize"   "0"
-      "pinCorner"    "0"
-      "visible"      "1"
-      "enabled"      "1"
-      "wrap"         "1"
-      "fgcolor_override" "TanLight"
-      "proportionaltoparent" "1"
-      "mouseinputenabled"  "0"
+      "xpos"         "10"
+      "ypos"         "23"  //cutoff the top border
+      "wide"         "f20"
+      "tall"         "22"
+
+      "textinsetx"   "5"   //to move away from border
+      "textinsety"   "2"   //to position below the button due to cutting border
+
+      "font"         "incon8"
+      "fgcolor_override" "base01"
+      "border"       "base01Border"
    }
 
-   "DescLabelShadow"
+   "DescLabelShadow"    //disabled
    {
-      "ControlName"  "CExLabel"
-      "fieldName"    "DescLabelShadow"
-      "font"         "MMenuPlayListDesc"
-      "labelText"    "%desc_token%"
-      "textAlignment"   "north-west"
-      "xpos"         "rs1+1"
-      "ypos"         "19"
-      "zpos"         "1"
-      "wide"         "125"
-      "tall"         "40"
-      "autoResize"   "0"
-      "pinCorner"    "0"
-      "visible"      "1"
-      "enabled"      "1"
-      "wrap"         "1"
-      "fgcolor_override" "Black"
-      "proportionaltoparent" "1"
-      "mouseinputenabled"  "0"
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
    }
    
-   "DisabledIcon"
+   "DisabledIcon"  //no idea
    {
-      "ControlName"  "CExImageButton"
-      "fieldName"    "DisabledIcon"
-      "xpos"         "0"
-      "ypos"         "0"
-      "zpos"            "50"
-      "wide"            "f0"
-      "tall"            "f0"
-      "visible"         "1"
-      "enabled"         "1"
-      "actionsignallevel"  "1"
-      "command"         "comp_access_info"
-      "labeltext"       ""
-      "eatmouseinput"   "0"   
-      "button_activation_type"   "1"
-
-      "sound_depressed" "UI/buttonclick.wav"
-      "sound_released"  "UI/buttonclickrelease.wav"
-            
-      "defaultFgColor_override" "46 43 42 255"
-      "armedFgColor_override" "235 226 202 255"
-      "depressedFgColor_override" "46 43 42 255"
-      "defaultBgColor_override" "0 0 0 0"
-      "armedBgColor_override" "0 0 0 0"
-      "depressedBgColor_override" "0 0 0 0"
-            
-      "image_drawcolor" "117 107 94 255"
-      "image_armedcolor"   "235 226 202 255"
-      "SubImage"
-      {
-         "ControlName"  "ImagePanel"
-         "fieldName"    "SubImage"
-         "xpos"         "110"
-         "ypos"         "2"
-         "zpos"         "1"
-         "wide"         "15"
-         "tall"         "15"
-         "visible"      "1"
-         "enabled"      "1"
-         "image"        "locked_icon"
-         "scaleImage"   "1"
-         "proportionaltoparent" "1"
-      }  
    }
 }
