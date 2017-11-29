@@ -7,7 +7,7 @@
       "fieldName"          "MatchmakingCategoryPanel"
       "xpos"               "0"
       "ypos"               "0"
-      "wide"               "f0"
+      "wide"               "f5"     //width of scroll bar in matchmakingcasualcriteria
       "tall"               "50"
       "proportionaltoparent"  "1"
 
