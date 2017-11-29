@@ -4,43 +4,33 @@
 {
    "MatchmakingGroupPanel"
    {
-      "fieldName"          "ScrollableImageListEntry"
       "xpos"               "0"
       "ypos"               "0"
-      "wide"               "f0"
+      "wide"               "f5"     //to fit scrollbar
       "tall"               "25"
       "proportionaltoparent"  "1"
    }
 
    "BGPanel"
    {
-      "fieldName"       "BGPanel"
-      "ControlName"     "EditablePanel"
-      "xpos"            "cs-0.5"
+      "xpos"            "0"
       "ypos"            "0"
-      "wide"            "p1.3"
+      "wide"            "f0"
       "tall"            "f0"
-
-      "proportionaltoparent"  "1"
-      "border"    "MainMenuBGBorder"
+      "border"    "noBorder"
+      "bgcolor_override"   "base2"
    }
 
-   "Checkbutton"
+   "Checkbutton"  //also controls the title text
    {
-      "ControlName"     "CExCheckButton"
-      "fieldName"    "Checkbutton"
-      "xpos"      "0"
-      "ypos"      "2"
-      "zpos"      "3"
       "wide"      "f0"
       "tall"      "20"
-      "proportionaltoparent"  "1"
-      "labeltext"    ""
-      "smallcheckimage" "1"
-      "fgcolor"   "TanLight"  
-      "font"      "HudFontSmallBold"
-
-      "sound_depressed" "UI/buttonclickrelease.wav"   
-      "button_activation_type"   "1"
+      "fgcolor_override"   "magenta"   //doesn't control font
+      //below from clientscheme control the color
+      //but changing will affect other elements
+      //CheckButton.HighlightFgColor  "base00"
+      //CheckButton.TextColor         "base00"
+      //CheckButton.SelectedTextColor "base00"
+      "font"      "incon16"
    }  
 }
