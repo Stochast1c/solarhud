@@ -76,7 +76,11 @@
       "enabled"      "0"
    }
    
-   "DisabledIcon"  //no idea
-   {
+   "DisabledIcon"  //when you can't use mm, e.g. gc down
+   {                 //disabled, red text is noticable enough to see it is down
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
    }
 }
