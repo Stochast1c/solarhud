@@ -1,4 +1,4 @@
-#base "../../default_hudfiles/resource/ui/matchmakingcategorypanel.res"
+#base "../../default_hudfiles/resource/ui/matchmakingcasualcriteria.res"
 
 "Resource/UI/MatchmakingCasualCriteria.res"
 {

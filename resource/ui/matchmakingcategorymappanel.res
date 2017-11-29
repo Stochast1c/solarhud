@@ -1,4 +1,4 @@
-#base "../../default_hudfiles/resource/ui/matchmakingcategorypanel.res"
+#base "../../default_hudfiles/resource/ui/matchmakingcategorymappanel.res"
 
 "Resource/UI/MatchmakingCategoryMapPanel.res"
 {
