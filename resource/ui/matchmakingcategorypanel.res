@@ -11,273 +11,129 @@
       "tall"               "50"
       "proportionaltoparent"  "1"
 
-      "collapsed_height"   "57"
+      "collapsed_height"   "57"  //expected size of the panel, less and it cuts of the bottom of the panel (sized with f0 (p1.17???), more and it starts showing the maps panel.
       "resize_time"  "0.2"
    
    }
 
    "TopContainer"
    {
-      "Controlname"  "EditablePanel"
-      "fieldName"    "TopContainer"
-      "xpos"         "0"
-      "ypos"         "0"
-      "zpos"         "2"
-      "wide"         "f0"
-      "tall"         "p1.17"
-      "visible"      "1"
-      "enabled"      "1"
-      "proportionaltoparent"  "1"
 
       "BGColor"
       {
-         "ControlName"  "EditablePanel"
-         "fieldName"    "BGColor"
+         "zpos"               "-2"
+         "bgcolor_override"   "base3"
+      }
+
+      "BGImage"   //remove the image
+      {
+         "wide"         "0"
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
+      }
+
+      "EntryToggleButton"  //show the maps button
+      {
          "xpos"         "0"
          "ypos"         "0"
          "zpos"         "-1"
          "wide"         "f0"
          "tall"         "f0"
-         "visible"      "1"
-         "enabled"      "1"
-         "mouseinputenabled"  "0"
-      
-         "proportionaltoparent"  "1"
-         "bgcolor_override"   "0 0 0 255"
-      }
 
-      "BGImage"
-      {
-         "ControlName"  "ImagePanel"
-         "fieldName"    "BGImage"
-         "xpos"         "0"
-         "ypos"         "0"
-         "zpos"         "0"
-         "wide"         "o4"
-         "tall"         "f0"
-         "visible"      "1"
-         "enabled"      "1"
-         "scaleImage"   "1"   
-         "proportionaltoparent"  "1"
-      }
+         "labeltext"    "↓"
+         "textinsetx"   "0"
+         "textinsety"   "-5"
+         "textAlignment"   "south"
+         "font"   "incon12"
 
-      "EntryToggleButton"
-      {
-         "ControlName"  "CExImageButton"
-         "fieldName"    "EntryToggleButton"
-         "xpos"         "0"
-         "ypos"         "rs1"
-         "zpos"         "100"
-         "wide"         "f0"
-         "tall"         "9"
-         "proportionaltoparent"  "1"
+         "border_default"  "noBorder"
+         "border_armed"    "noBorder"
 
-         "actionsignallevel"  "2"
-         "command"      "toggle_collapse"
-         "labeltext"    "#TF_Casual_ViewMaps"
-         "textAlignment"   "west"
-         "font"   "MMenuPlayListDesc"
-         "textinsetx"   "40"
-
-         "stay_armed_on_click"   "1"
-
-         "border_default"  "NoBorder"
-         "defaultBgColor_override"  "235 226 202 20"
-
-         "border_armed"    "NoBorder"
-         "armedBgColor_override" "LightOrange"
-         "selectedBGColor_override" "Orange"
-
-         "sound_armed"     "ui/item_info_mouseover.wav"
-         "sound_depressed" "UI/buttonclick.wav"
-         "sound_released"  "UI/buttonclickrelease.wav"
-
-         "image_default"   "glyph_expand"
-
-         "button_activation_type"   "1"
+         "defaultBgColor_override"  "base3"
+         "armedBgColor_override" "base2"
+         "selectedBGColor_override" "magenta"   //shouldn't ever show due to setting
 
          "SubImage"
          {
-            "ControlName"  "ImagePanel"
-            "fieldName"    "SubImage"
-            "xpos"         "6"
-            "ypos"         "cs-0.5"
-            "zpos"         "1"
-            "wide"         "o1"
-            "tall"         "p.9"
-            "visible"      "1"
-            "enabled"      "1"
-            "scaleImage"   "1"
-
-            "proportionaltoparent"  "1"
+            "visible"      "0"
+            "enabled"      "0"
          }  
       }
 
-      "Shade"
+      "Shade"  //randomly shows up, doesn't make any sense, disabled
       {
-         "fieldName"       "Shade"
-         "ControlName"     "EditablePanel"
-         "xpos"            "cs-0.5"
-         "ypos"            "0"
-         "zpos"            "0"
-         "wide"            "f0"
-         "tall"            "57"
-         "mouseinputenabled"  "0"
-
-         "proportionaltoparent"  "1"
-         "bgcolor_override"   "0 0 0 0"
+         "wide"            "0"
+         "tall"            "0"
+         "visible"         "0"
+         "enabled"         "0"
       }
 
-      "Checkbutton"
+      "Checkbutton"     //can't make this bigger
       {
          "ControlName"     "CExCheckButton"
          "fieldName"    "Checkbutton"
-         "xpos"      "r27"
-         "ypos"      "-1"
+         "xpos"      "0"
+         "ypos"      "0"
          "zpos"      "3"
-         "wide"      "25"
+         "wide"      "20"
          "tall"      "20"
-         "proportionaltoparent"  "1"
-         "labeltext"    ""
-         "smallcheckimage" "1"
-
-         "sound_depressed" "UI/buttonclickrelease.wav"   
-         "button_activation_type"   "1"
       }
 
-      "Title"
+      "Title"  //can't color this one use shadow instead
       {
-         "ControlName"  "CExLabel"
-         "fieldName"    "Title"
-         "xpos"         "rs1-24"
-         "ypos"         "2"
-         "zpos"         "3"
-         "wide"         "200"
-         "tall"         "15"
-         "visible"      "1"
-         "enabled"      "1"
-         "labelText"    "%title_token%"
-         "textinsetx"   "5"
-         "use_proportional_insets" "1"
-         "font"         "HudFontSmallestBold"
-         "textAlignment"   "east"
-         "dulltext"     "0"
-         "brighttext"   "0"
-         "default"      "1"
-         "proportionaltoparent" "1"
-         "mouseinputenabled"  "0"
-
-         "fgcolor"      "TanLight"
+         "wide"         "0"
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
       }  
 
       "TitleShadow"
       {
-         "ControlName"  "CExLabel"
-         "fieldName"    "TitleShadow"
-         "xpos"         "rs1-23"
-         "ypos"         "3"
-         "zpos"         "2"
-         "wide"         "200"
-         "tall"         "15"
-         "visible"      "1"
-         "enabled"      "1"
-         "labelText"    "%title_token%"
-         "textinsetx"   "5"
-         "use_proportional_insets" "1"
-         "font"         "HudFontSmallestBold"
-         "textAlignment"   "east"
-         "dulltext"     "0"
-         "brighttext"   "0"
-         "default"      "1"
-         "proportionaltoparent" "1"
-         "mouseinputenabled"  "0"
-
-         "fgcolor_override"      "Black"
+         "xpos"         "5"
+         "ypos"         "0"
+         "wide"            "f10"
+         "tall"            "20"
+         "textinsetx"   "0"
+         "font"         "incon20"
+         "textAlignment"   "center"
+         "fgcolor_override"      "violet"
       }
 
       "DescLabel"
       {
-         "ControlName"  "CExLabel"
-         "fieldName"    "DescLabel"
-         "font"         "MMenuPlayListDesc"
-         "labelText"    "%desc_token%"
-         "textAlignment"   "north-west"
-         "xpos"         "rs1-5"
-         "ypos"         "18"
-         "zpos"         "2"
-         "wide"         "120"
-         "tall"         "40"
-         "autoResize"   "0"
-         "pinCorner"    "0"
-         "visible"      "1"
-         "enabled"      "1"
-
-         "wrap"         "1"
-         "fgcolor_override" "TanLight"
-         "proportionaltoparent" "1"
-         "mouseinputenabled"  "0"
+         "xpos"            "5"
+         "ypos"            "20"
+         "wide"            "f10"
+         "tall"            "20"
+         "textinsetx"      "0"
+         "font"            "incon8"
+         "textAlignment"   "north"
+         "fgcolor_override" "base00"
+         "wrap"            "0"
+         "centerwrap"      "1"
       }
 
       "DescLabelShadow"
       {
-         "ControlName"  "CExLabel"
-         "fieldName"    "DescLabelShadow"
-         "font"         "MMenuPlayListDesc"
-         "labelText"    "%desc_token%"
-         "textAlignment"   "north-west"
-         "xpos"         "rs1-4"
-         "ypos"         "19"
-         "zpos"         "1"
-         "wide"         "120"
-         "tall"         "40"
-         "autoResize"   "0"
-         "pinCorner"    "0"
-         "visible"      "1"
-         "enabled"      "1"
-
-         "wrap"         "1"
-         "fgcolor_override" "Black"
-         "proportionaltoparent" "1"
-         "mouseinputenabled"  "0"
+         "wide"         "0"
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
       }
    }
 
    "PlayListDropShadow"
    {
-      "ControlName"  "EditablePanel"
-      "fieldName"    "PlaylistBGPanel"
-      "xpos"         "cs-0.5"
-      "ypos"         "p1.17-2"
-      "zpos"         "1"
-      "wide"         "p1.5"
-      "tall"         "1000"
-      "visible"      "1"
-      "PaintBackgroundType"   "2"
-      "border"    "InnerShadowBorder"
-      "proportionaltoparent"  "1"
-      "mouseinputenabled"  "0"
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
    }
 
    "MapsContainer"
    {
-      "Controlname"  "EditablePanel"
-      "fieldName"    "MapsContainer"
-      "xpos"         "0"
-      "ypos"         "0"
-      "zpos"         "0"
-      "wide"         "f0"
-      "tall"         "0"
-      "visible"      "1"
-      "enabled"      "1"
-      "proportionaltoparent"  "1"
-
-      "border"    "InnerShadowBorder"
-
-      "pinCorner"    "2"
-      "autoResize"   "1"
-
-      "skip_autoresize" "1"
-
-      "bgcolor_override"   "0 0 0 150"
+      "border"    "noBorder"
+      "bgcolor_override"   "base2"
    }
 }
