@@ -5,6 +5,22 @@
    "PlaylistBGPanel" //overall panel for casual maps
    {
 
+      "RankImage"
+      {
+         "wide"         "0"
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
+      }
+
+      "RankPanel"
+      {
+         "wide"         "0"
+         "tall"         "0"
+         "visible"      "0"
+         "enabled"      "0"
+      }
+
       "RestoreCasualSearchCriteria"    //load maps
       {
          "xpos"         "r32"
