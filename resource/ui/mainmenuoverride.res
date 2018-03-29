@@ -1641,8 +1641,31 @@
       "visible"      "0"
    }
    
+   "CycleRankTypeButton"
+   {
+      "wide"         "0"
+      "tall"         "0"   
+      "visible"      "0"
+   }
+
+   "RankTooltipPanel"
+   {
+      "wide"         "0"
+      "tall"         "0"   
+      "visible"      "0"
+   }
+
    "RankPanel"
    {
+      "wide"         "0"
+      "tall"         "0"   
+      "visible"      "0"
+   }
+
+   "Rankborder"
+   {
+      "wide"         "0"
+      "tall"         "0"   
       "visible"      "0"
    }
 
