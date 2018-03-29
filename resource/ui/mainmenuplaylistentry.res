@@ -10,6 +10,14 @@
       "enabled"      "0"
    }
 
+   "PlayListDropShadow"
+   {
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+   }
+
    "BGColor"      //bgcolor
    {
       "bgcolor_override"   "base2"
