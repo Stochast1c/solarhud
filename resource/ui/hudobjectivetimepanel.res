@@ -1,201 +1,142 @@
+#base "../../default_hudfiles/resource/ui/hudobjectivetimepanel.res"
+
 "Resource/UI/HudObjectiveTimePanel.res"
 {  
-   "TimePanelBG"
+   "TimePanelBG"    //disabled
    {
-      "ControlName"     "ScalableImagePanel"
-      "fieldName"    "TimePanelBG"
-      "xpos"         "99999"
-      "ypos"         "99999"
-      "zpos"         "-1"
-      "wide"         "78"
-      "tall"         "33"
+      "wide"         "0"
+      "tall"         "0"
       "visible"      "0"
       "enabled"      "0"
-      "image"        "../hud/objectives_timepanel_blue_bg"  
-      "scaleImage"      "1"   
    }
-   "TimePanelProgressBar"
+   "TimePanelProgressBar"   //disabled
    {
-      "ControlName"        "CTFProgressBar"
-      "fieldName"       "TimePanelProgressBar"
-      "xpos"            "67"
-      "ypos"            "16"
-      "zpos"            "4"   
-      "wide"            "20"
-      "tall"            "20"
-      "visible"         "0"
-      "enabled"         "0"
-      "scaleImage"         "1"
-      "image"           "../hud/objectives_timepanel_progressbar"
-      "color_active"       "TimerProgress.Active"
-      "color_inactive"     "TimerProgress.InActive"
-      "color_warning"         "TimerProgress.Warning"
-      "percent_warning"    "0.75"
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
    }
    "WaitingForPlayersLabel"
    {
-      "ControlName"     "CExLabel"
-      "fieldName"    "WaitingForPlayersLabel"
       "xpos"         "35"
       "ypos"         "40"
-      "zpos"         "5"
+      "xpos_minmode"         "35"
+      "ypos_minmode"         "40"
       "wide"         "46"
       "tall"         "19"
-      "visible"      "0"
-      "enabled"      "1"
-      "labelText"    "#game_WaitingForPlayers"
-      "textAlignment"      "center"
-      "dulltext"     "0"
-      "brighttext"      "0"
-      "wrap"         "0"
-      "font"         "incon10"
-      "fgcolor"      "orange"
-   }        
-   "WaitingForPlayersBG"
-   {
-      "ControlName"     "CTFImagePanel"
-      "fieldName"    "WaitingForPlayersBG"
-      "xpos"         "99999"
-      "ypos"         "99999"
-      "zpos"         "-1"
-      "wide"         "78"
-      "tall"         "20"
-      "visible"      "0"
-      "enabled"      "0"
-      "image"        "../hud/objectives_timepanel_suddendeath" 
-      "scaleImage"      "1"   
-   }
-   "OvertimeLabel"
-   {
-      "ControlName"     "CExLabel"
-      "fieldName"    "OvertimeLabel"
-      "xpos"         "35"
-      "ypos"         "40"
-      "zpos"         "5"
-      "wide"         "46"
-      "tall"         "19"
-      "visible"      "0"
-      "enabled"      "1"
-      "labelText"    "#game_Overtime"
-      "textAlignment"      "center"
-      "wrap"         "0"
-      "font"         "incon10"
-      "fgcolor"      "orange"
-   }        
-   "OvertimeBG"
-   {
-      "ControlName"     "CTFImagePanel"
-      "fieldName"    "OvertimeBG"
-      "xpos"         "99999"
-      "ypos"         "99999"
-      "zpos"         "-1"
-      "wide"         "78"
-      "tall"         "20"
-      "visible"      "0"
-      "enabled"      "0"
-      "image"        "../hud/objectives_timepanel_suddendeath" 
-      "scaleImage"      "1"   
-   }
-   "SuddenDeathLabel"
-   {
-      "ControlName"     "CExLabel"
-      "fieldName"    "SuddenDeathLabel"
-      "xpos"         "16"
-      "ypos"         "33"
-      "zpos"         "5"
-      "wide"         "78"
-      "tall"         "19"
-      "visible"      "0"
-      "enabled"      "1"
-      "labelText"    "#game_SuddenDeath"
-      "textAlignment"      "center"
-      "dulltext"     "0"
-      "brighttext"      "0"
-      "wrap"         "0"
-      "font"         "ClockSubTextSuddenDeath"
-   }        
-   "SuddenDeathBG"
-   {
-      "ControlName"     "CTFImagePanel"
-      "fieldName"    "SuddenDeathBG"
-      "xpos"         "99999"
-      "ypos"         "99999"
-      "zpos"         "-1"
-      "wide"         "78"
-      "tall"         "20"
-      "visible"      "0"
-      "enabled"      "0"
-      "image"        "../hud/objectives_timepanel_suddendeath" 
-      "scaleImage"      "1"   
-   }  
-   "SetupLabel"
-   {
-      "ControlName"  "CExLabel"
-      "fieldName"    "SetupLabel"
-      "xpos"         "35"
-      "ypos"         "40"
-      "zpos"         "5"
-      "wide"         "46"
-      "tall"         "19"
-      "visible"      "0"
-      "enabled"      "1"
-      "labelText"    "#game_Setup"
-      "textAlignment"      "center"
-      "wrap"         "0"
       "font"         "incon10"
       "fgcolor"      "orange"
 
       if_match
       {
-         "xpos"      "43"
-         "ypos"      "50"
+          "xpos"         "35"
+          "ypos"         "40"
+          "xpos_minmode"         "35"
+          "ypos_minmode"         "40"
+          "wide"         "46"
+          "tall"         "19"
+          "font"    "incon10"
       }
-   }  
-   "SetupBG"
+   }        
+   "WaitingForPlayersBG"    //disabled
    {
-      "ControlName"     "CTFImagePanel"
-      "fieldName"    "SetupBG"
-      "xpos"         "99999"
-      "ypos"         "99999"
-      "zpos"         "-1"
-      "wide"         "78"
-      "tall"         "20"
+      "wide"         "0"
+      "tall"         "0"
       "visible"      "0"
       "enabled"      "0"
-      "image"        "../hud/objectives_timepanel_suddendeath" 
-      "scaleImage"      "1"   
+   }
+   "OvertimeLabel"
+   {
+      "xpos"         "35"
+      "ypos"         "40"
+      "wide"         "46"
+      "tall"         "19"
+      "font"         "incon10"
+      "fgcolor"      "orange"
+
+      if_match
+      {
+          "xpos"         "35"
+          "ypos"         "40"
+          "xpos_minmode"         "35"
+          "ypos_minmode"         "40"
+          "wide"         "46"
+          "tall"         "19"
+          "font"    "incon10"
+      }
+   }        
+   "OvertimeBG"     //disabled
+   {
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+   }
+   "SuddenDeathLabel"
+   {
+   }        
+   "SuddenDeathBG"  //disabled
+   {
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
+   }  
+   "SetupLabel"
+   {
+      "xpos"         "35"
+      "ypos"         "40"
+      "xpos_minmode"         "35"
+      "ypos_minmode"         "40"
+      "wide"         "46"
+      "tall"         "19"
+      "font"         "incon10"
+      "fgcolor"      "orange"
+
+      if_match
+      {
+          "xpos"         "43"   //see previous commit for 
+          "ypos"         "50"   //why these values aren't the same
+          "xpos_minmode"         "43"
+          "ypos_minmode"         "50"
+          "wide"         "46"
+          "tall"         "19"
+          "font"    "incon10"
+      }
+   }  
+   "SetupBG"        //disabled
+   {
+      "wide"         "0"
+      "tall"         "0"
+      "visible"      "0"
+      "enabled"      "0"
    }
    "ServerTimeLimitLabel"
    {
-      "ControlName"  "CExLabel"
-      "fieldName"    "ServerTimeLimitLabel"
       "xpos"         "16"
       "ypos"         "12"
-      "zpos"         "5"
       "wide"         "78"
       "tall"         "19"
-      "visible"      "0"
-      "enabled"      "1"
-      "labelText"    "%servertimeleft%"
-      "textAlignment"      "center"
-      "dulltext"     "0"
-      "brighttext"      "0"
-      "wrap"         "0"
       "font"         "incon20"
+      "font_minmode"         "incon20"
       "fgcolor"      "cyan"
+
+      if_match
+      {
+          "xpos"         "16"
+          "ypos"         "12" 
+          "xpos_minmode"         "78"
+          "ypos_minmode"         "19"
+          "wide"         "78"
+          "tall"         "19"
+          "font"    "incon20"
+      }
    }  
-   "ServerTimeLimitLabelBG"
+   "ServerTimeLimitLabelBG"     //disabled
    {
-      "ControlName"     "CTFImagePanel"
-      "fieldName"    "ServerTimeLimitLabelBG"
-      "xpos"         "99999"
-      "ypos"         "99999"
-      "zpos"         "-1"
-      "wide"         "78"
-      "tall"         "20"
+      "wide"         "0"
+      "tall"         "0"
       "visible"      "0"
       "enabled"      "0"
-      "image"        "../hud/objectives_timepanel_suddendeath" 
-      "scaleImage"      "1"   
    }
 }
