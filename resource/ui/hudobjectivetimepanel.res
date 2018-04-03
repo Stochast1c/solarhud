@@ -111,12 +111,17 @@
       "visible"      "0"
       "enabled"      "0"
    }
-   "ServerTimeLimitLabel"
+   "ServerTimeLimitLabel"     //minmode disables this, skill modes use round time over map time 
    {
       "xpos"         "16"
       "ypos"         "12"
       "wide"         "78"
       "tall"         "19"
+      "xpos_minmode"         "2"
+      "ypos_minmode"         "12"
+      "wide_minmode"         "0"
+      "tall_minmode"         "0"
+      "textAlignment_minmode"    "east"
       "font"         "incon20"
       "font_minmode"         "incon20"
       "fgcolor"      "cyan"
@@ -125,10 +130,13 @@
       {
           "xpos"         "16"
           "ypos"         "12" 
-          "xpos_minmode"         "78"
-          "ypos_minmode"         "19"
           "wide"         "78"
           "tall"         "19"
+          "xpos_minmode"         "2"
+          "ypos_minmode"         "12"
+          "wide_minmode"         "0"
+          "tall_minmode"         "0"
+          "textAlignment_minmode"    "east"
           "font"    "incon20"
       }
    }  
