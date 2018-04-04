@@ -78,6 +78,24 @@
       }  
    }
 
+   "TeamStatus"
+   {
+      //panels get scaled to fit within the max_expand bounds
+      //unless 6 or less on team then it uses max_size
+      //gap size is 6v6_gap until panels hit max_expand
+      //then gap size and panel size decrease together until 
+      //12 or more on team then it uses 12v12_gap and scales panels to max_expand
+      "max_size"           "25"     //only works when team has 6 or less players
+      "team1_max_expand"   "220"    //max size is not 1920 / 2 nor is it 640 / 2, some weird number
+      "team2_max_expand"   "220"
+      "6v6_gap"      "1"
+      "12v12_gap"      "1"
+
+      //spaced to sit right on side of map time limit
+      "team1_base_x"       "c-25"    //blue
+      "team2_base_x"       "c25"      //red
+   }
+
    "BGFrame"
    {
       "border" "noborder"
