@@ -137,6 +137,31 @@
             }
          }
 
+         "MultiQueuesManageButton"  //appears over normal x button when in multiple queues, creates a context menu on click to select which queue to drop, exact same as closebutton
+         {
+            "ypos"         "5"
+            "labeltext"    "×"
+            "font"         "incon20"
+            "textAlignment"   "center"
+         
+            "border_default"  "base00border"
+            "border_armed"    "base01border"
+      
+            "paintbackground" "1"      //let's you change button bg
+            "defaultFgColor_override"     "base00"
+            "defaultBgColor_override"     "base3"
+            "armedFgColor_override"       "red"
+            "armedBgColor_override"       "base2"
+            "depressedFgColor_override"   "red"
+            "depressedBgColor_override"   "base2"
+
+            "SubImage"
+            {
+               "visible"      "0"
+               "enabled"      "0"
+            }           
+         }     
+
          "CloseButton"
          {
             "ypos"         "5"
