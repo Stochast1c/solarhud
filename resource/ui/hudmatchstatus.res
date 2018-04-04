@@ -86,8 +86,8 @@
       //then gap size and panel size decrease together until 
       //12 or more on team then it uses 12v12_gap and scales panels to max_expand
       "max_size"           "25"     //only works when team has 6 or less players
-      "team1_max_expand"   "220"    //max size is not 1920 / 2 nor is it 640 / 2, some weird number
-      "team2_max_expand"   "220"
+      "team1_max_expand"   "256"    //max size is not 1920 / 2 nor is it 640 / 2, some weird number
+      "team2_max_expand"   "256"    //just fits respawn time for 12v12
       "6v6_gap"      "1"
       "12v12_gap"      "1"
 
