@@ -165,9 +165,11 @@
       "tall_minmode"       "0"
    }
    
-   HudDeathNotice
+   HudDeathNotice    //killfeed
    {
-      "ypos"    "0"  
+      "MaxDeathNotices"    "6"
+         
+      "ypos"    "20"       //below the match hud, can't use if_match here 
       "visible_minmode"    "0"
       "enabled_minmode"    "0"
       "tall_minmode"       "0"
