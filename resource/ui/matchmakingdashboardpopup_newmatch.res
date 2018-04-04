@@ -54,16 +54,8 @@
 
          }
 
-         "JoinNowButton"
+         "SmallJoinButton"
          {
-
-            if_queued
-            {
-               //the default values, should be able to abandon even if you haven't crashed
-               "xpos"   "10"
-               "wide"   "90"
-            }
-            
             "font"         "incon12"
             "textAlignment"   "center"
 
@@ -76,6 +68,40 @@
             "armedBgColor_override"       "base3"
             "depressedFgColor_override"   "green"
             "depressedBgColor_override"   "base2"
+         }
+
+         "WideJoinButton"
+         {
+            "font"         "incon12"
+            "textAlignment"   "center"
+
+            //can't set border color?????
+ 
+            "paintbackground" "1"      //let's you change button bg
+            "defaultFgColor_override"     "green"
+            "defaultBgColor_override"     "base2"
+            "armedFgColor_override"       "green"
+            "armedBgColor_override"       "base3"
+            "depressedFgColor_override"   "green"
+            "depressedBgColor_override"   "base2"
+         }
+         "JoiningLabel"
+         {
+            "xpos"      "0"
+            "ypos"      "r16"
+            "wide"      "f0"
+            "tall"      "16"
+            "font"      "incon16"
+            "fgcolor_override"      "base00"
+            "textAlignment"         "center"
+         }
+         "Spinner"
+         {
+            "xpos"      "c-20"
+            "ypos"      "0"
+            "wide"      "40"
+            "tall"      "40"
+            "radius"    "10"
          }
       }
    }

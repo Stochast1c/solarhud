@@ -135,47 +135,47 @@ event ActiveTimerDim
 //=========================================================================
 event WinPanel_CompPos
 {
-	Animate WinPanel ypos 0 Linear 0 0
+   Animate WinPanel ypos 0 Linear 0 0
 }
 
 event WinPanel_NormalPos
 {
-	Animate WinPanel ypos 0 Linear 0 0
+   Animate WinPanel ypos 0 Linear 0 0
 }
 
 //=========================================================================
 
 event MMenu_PlayList_Expand
 {
-	Animate SafeMode				ypos 470 Spline 0 0.4
-	Animate VRBGPanel				ypos 633 Spline 0 0.4
-	Animate VRModeButton			ypos 639 Spline 0 0.4
-	Animate ShowPromoCodesButton	ypos 639 Spline 0 0.4
+   Animate SafeMode           ypos 470 Spline 0 0.4
+   Animate VRBGPanel          ypos 633 Spline 0 0.4
+   Animate VRModeButton       ypos 639 Spline 0 0.4
+   Animate ShowPromoCodesButton  ypos 639 Spline 0 0.4
 
-	Animate PlayListContainer Tall 260	 Spline	0.0 0.40
+   Animate PlayListContainer Tall 260   Spline  0.0 0.40
 
-	FireCommand 0 "soundentry Panel.SlideDown"
+   FireCommand 0 "soundentry Panel.SlideDown"
 }
 
 event MMenu_PlayList_Collapse
 {
-	Animate SafeMode				ypos 210 Spline 0 0.4
-	Animate VRBGPanel				ypos 373 Spline	0 0.4
-	Animate VRModeButton			ypos 379 Spline 0 0.4
-	Animate ShowPromoCodesButton	ypos 379 Spline 0 0.4
+   Animate SafeMode           ypos 210 Spline 0 0.4
+   Animate VRBGPanel          ypos 373 Spline   0 0.4
+   Animate VRModeButton       ypos 379 Spline 0 0.4
+   Animate ShowPromoCodesButton  ypos 379 Spline 0 0.4
 
-	Animate PlayListContainer Tall 0 Spline 0 0.4
+   Animate PlayListContainer Tall 0 Spline 0 0.4
 
-	FireCommand 0 "soundentry Panel.SlideUp"
+   FireCommand 0 "soundentry Panel.SlideUp"
 }
 
 event MMenu_PlayList_Collapse_Immediate
 {
-	Animate VRBGPanel				ypos 373 Spline	0 0
-	Animate VRModeButton			ypos 379 Spline 0 0
-	Animate ShowPromoCodesButton	ypos 379 Spline 0 0
+   Animate VRBGPanel          ypos 373 Spline   0 0
+   Animate VRModeButton       ypos 379 Spline 0 0
+   Animate ShowPromoCodesButton  ypos 379 Spline 0 0
 
-	Animate PlayListContainer Tall 0 Spline 0 0
+   Animate PlayListContainer Tall 0 Spline 0 0
 }
 
 //Fix for persistent animation changes on respawn
@@ -185,5 +185,28 @@ event HudSnapShotReminderIn
     RunEvent hudHealthBonusPulseStop 0.0
     RunEvent hudLowAmmoPulseStop 0.0
     RunEvent HudMedicChargedStop 0.0
+}
+
+//controls the match hud when players die/respawn
+event TeamStatus_PlayerDead
+{
+   SetVisible DeathPanel  0 0
+   SetVisible SkullPanel  0 0
+   SetVisible respawntime  1 0
+
+   Animate DeathPanel ypos 0 Accel 0 0.2
+   Animate SkullPanel ypos 0 Accel 0 0.2
+   Animate respawntime ypos 0 Accel 0 0.2
+}
+
+event TeamStatus_PlayerAlive
+{
+   Animate DeathPanel ypos 0 Accel 0 0.2
+   Animate SkullPanel ypos 0 Accel 0 0.2
+   Animate respawntime ypos 0 Accel 0 0.2
+
+   SetVisible DeathPanel  0 0.2
+   SetVisible SkullPanel  0 0.2
+   SetVisible respawntime 0 0.2
 }
 
