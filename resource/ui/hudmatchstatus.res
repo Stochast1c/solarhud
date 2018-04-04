@@ -94,6 +94,45 @@
       //spaced to sit right on side of map time limit
       "team1_base_x"       "c-25"    //blue
       "team2_base_x"       "c25"      //red
+
+      "playerpanels_kv"
+      {
+         "color_portrait_bg_red"    "red"              //alive bg color
+         "color_portrait_bg_red_dead"    "base3"           //bg color
+         "color_portrait_blend_dead_red"    "base1"    //portait color
+         "color_portrait_bg_blue"    "blue"
+         "color_portrait_bg_blue_dead"    "base3"   
+         "color_portrait_blend_dead_blue"    "base1"
+
+         "color_bar_health_high" "green"
+         "color_bar_health_med"  "yellow"
+         "color_bar_health_low"  "red"
+         "percentage_health_med" "0.6"
+         "percentage_health_low" "0.3"
+
+         "healthbar"
+         {  
+            "ypos"               "19"
+            "tall"               "5"            
+            "bgcolor_override"      "base3"
+         }
+         "overhealbar"
+         {  
+            "ypos"               "19"
+            "tall"               "5"            
+            "bgcolor_override"      "blank"
+            "fgcolor_override"      "blue"
+         }
+         "respawntime"     //animated by hudanimations, makes visible
+         {
+            "font"         "incon20"
+            "fgcolor"      "yellow"
+            "xpos"         "0"
+            "ypos"         "0"
+            "wide"         "f0"
+            "tall"         "19"
+         }
+      }
    }
 
    "BGFrame"
