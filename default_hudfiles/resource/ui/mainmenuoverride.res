@@ -11,6 +11,21 @@
       "wide"         "f0"
       "tall"         "480"
    }  
+
+   "RankModelPanel"     //required to not crash
+   {
+      "ControlName"  "CPvPRankPanel"
+      "fieldName"    "RankModelPanel"
+      "matchgroup"   "MatchGroup_Casual_12v12"
+   }
+
+   "RankPanel"          //required to not crash
+   {
+      "ControlName"  "CPvPRankPanel"
+      "fieldName"    "RankPanel"
+      "matchgroup"   "MatchGroup_Casual_12v12"
+   }
+
    "YouScrewedUp"
    {
       "controlName"     "CExButton"
@@ -23,8 +38,8 @@
   
       //doesn't support escape characters, but this works 
       "labelText"       "You must run extract_base_hudfiles.bat to use this hud!
-Please see the README for instructions!
-Click anywhere to quit TF2."
+                           Please see the README for instructions!
+                           Click anywhere to quit TF2."
       "font"         "incon64"
       "textAlignment"   "center"
       "wrap"         "1"
@@ -42,5 +57,4 @@ Click anywhere to quit TF2."
       "depressedFgColor_override"   "red"
       "depressedBgColor_override"   "base2"
    }
-
 }
