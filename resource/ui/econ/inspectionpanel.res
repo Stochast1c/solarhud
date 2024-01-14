@@ -168,7 +168,7 @@
          "fgcolor_override"   "yellow"
          "border"             "base01border"
          "bgcolor_override"   "base3"
-         "maxchars"     "18"
+         "maxchars"     "20"
 
          "consume_mode"
          {
